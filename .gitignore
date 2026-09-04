@@ -25,8 +25,8 @@ hygiene-reports/
 __pycache__/
 *.py[cod]
 .menu-last-script
-task-manager/TASK_EXECUTION_*.json
-task-manager/TASK_TICKET_COUNTERS.json
+task-manager/tasks/TASK_EXECUTION_*.json
+task-manager/tasks/TASK_TICKET_COUNTERS.json
 
 # IDE and operating-system files
 .idea/
