@@ -11,7 +11,7 @@ Qolling is a question and learning workspace with React frontends, a Spring Boot
 - `task-manager/` - local task board UI backed by Markdown task files.
 - `docs/` - cross-project human documentation and Codex project memory.
 
-The top-level `qolling` folder is not a git repository. `hera/`, `athena/`, and `zeus/` are the git repositories.
+The top-level `qolling` folder is the `qolling-workspace` Git meta-repository for shared tooling, documentation, CI, and business tests. Product repositories are registered as submodules: `hera/`, `athena/`, `zeus/`, `frontend-shared/`, and `blog/`.
 
 ## Local Start
 

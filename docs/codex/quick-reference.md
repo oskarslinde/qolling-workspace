@@ -4,7 +4,8 @@
 
 - `hera/`, `zeus/`, and `athena/` are git repositories.
 - Check `git status` only inside those repo roots.
-- The workspace root is not a git repository.
+- The workspace root is the `qolling-workspace` Git meta-repository for cross-project assets.
+- Check Git status at the workspace root for root-owned changes and inside a product repository for product-specific changes.
 
 ## Docs
 

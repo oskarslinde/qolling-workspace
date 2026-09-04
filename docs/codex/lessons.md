@@ -7,7 +7,7 @@
 
 ## Remember Qolling Git Boundaries
 
-- Pattern: The Qolling workspace root at `C:\Users\user\java\qolling` is not a git repository; repository roots currently include `hera/`, `zeus/`, `athena/`, `frontend-shared/`, and `blog/`.
+- Pattern: The Qolling workspace root at `C:\Users\user\java\qolling` is the `qolling-workspace` Git meta-repository; product repositories include `hera/`, `zeus/`, `athena/`, `frontend-shared/`, and `blog/` as submodules.
 - Prevention rule: Do not run or re-run root-level `git status` for Qolling. Check `git status` only inside the repo roots that the work will touch, and pause before code edits if that repo has unrelated changes.
 
 ## Keep Workspace Maps Updated Everywhere

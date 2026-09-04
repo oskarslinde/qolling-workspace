@@ -6,14 +6,14 @@ These instructions apply to the full Qolling repository unless a deeper `AGENTS.
 
 ## Repository Layout
 
-- The top-level `qolling` folder itself is not a git repository.
+- The top-level `qolling` folder is the `qolling-workspace` Git meta-repository for cross-project assets.
 - `hera/`, `zeus/`, `athena/`, `frontend-shared/`, and `blog/` are git repositories in this workspace.
 - `hera/`: Qolling social-learning frontend.
 - `athena/`: separate focused-learning frontend/product.
 - `zeus/`: shared Spring Boot backend and API contract source.
 - `frontend-shared/`: publishable product-neutral frontend packages, such as shared config and future headless logic.
 - `blog/`: standalone public Astro blog site.
-- Only check `git status` inside those repo roots when you need to inspect repo state.
+- Check `git status` at the workspace root for root-owned assets, and inside a product repository for product-specific changes.
 
 ## Repository Scope Protection
 
