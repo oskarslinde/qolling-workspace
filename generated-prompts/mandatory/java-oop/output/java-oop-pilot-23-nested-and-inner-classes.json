@@ -1,0 +1,227 @@
+[
+  {
+    "question": "Which statement best describes Nested and inner classes in practical Java OOP?",
+    "answers": [
+      {
+        "text": "Keep helper types nested only when they belong to the enclosing type while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Nested and inner classes mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Nested and inner classes should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Nested and inner classes only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Nested and inner classes when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "nested",
+      "inner",
+      "conceptual",
+      "conceptual nested and inner classes 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "nested-and-inner-classes",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-nested-and-inner-classes-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Nested and inner classes are useful when they improve object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\nclass Order {\n    static class NumberFormatter { String format(int id) { return \"ORD-\" + id; } }\n}\nvar formatter = new Order.NumberFormatter();\nSystem.out.println(formatter.format(7));\n```\n\nWhich option best explains the runtime behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates static nested, inner, local, and anonymous classes and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "nested",
+      "inner",
+      "code reading",
+      "code reading nested and inner classes 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "nested-and-inner-classes",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-nested-and-inner-classes-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Nested and inner classes through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\nclass Order {\n    static class NumberFormatter { String format(int id) { return \"ORD-\" + id; } }\n}\nvar formatter = new Order.NumberFormatter();\nSystem.out.println(formatter.format(7));\n```\n\nWhich option best explains the state boundary shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates static nested, inner, local, and anonymous classes and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "nested",
+      "inner",
+      "code reading",
+      "code reading nested and inner classes 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "nested-and-inner-classes",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-nested-and-inner-classes-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Nested and inner classes through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "You are implementing a small order-processing feature. Which approach best applies Nested and inner classes?\n\nChoose the option that best handles the implementation boundary.",
+    "answers": [
+      {
+        "text": "Create focused Java types that keep helper types nested only when they belong to the enclosing type, with dependencies and state represented explicitly.",
+        "correct": true
+      },
+      {
+        "text": "Put every rule into one static utility method and pass maps of loosely named values.",
+        "correct": false,
+        "wrongAnswerExplanation": "That hides object roles and makes validation, testing, and future changes harder."
+      },
+      {
+        "text": "Expose all fields publicly so controllers, services, and tests can update them directly.",
+        "correct": false,
+        "wrongAnswerExplanation": "Public mutable fields weaken invariants and make it difficult to know where state changed."
+      },
+      {
+        "text": "Choose inheritance or abstraction before identifying the actual object responsibility.",
+        "correct": false,
+        "wrongAnswerExplanation": "The design should start from the domain responsibility and only introduce inheritance or abstraction when it fits."
+      }
+    ],
+    "tags": [
+      "nested",
+      "inner",
+      "coding task",
+      "coding task nested and inner classes 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "nested-and-inner-classes",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "coding-task-nested-and-inner-classes-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "A good implementation of Nested and inner classes should make the object model clearer and reduce accidental coupling between callers and internals."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Nested and inner classes. The symptom is: non-static inner classes keep an enclosing instance reference. What is the best first fix?\n\nChoose the fix that best addresses the root cause.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "nested",
+      "inner",
+      "debugging",
+      "debugging nested and inner classes 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "nested-and-inner-classes",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-nested-and-inner-classes-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  }
+]

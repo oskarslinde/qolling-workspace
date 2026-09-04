@@ -1,0 +1,922 @@
+[
+  {
+    "question": "An ML engineer has an Amazon Comprehend custom model in Account A in the us-east-1 Region. The ML engineer needs to copy the model to Account B in the same Region. Which solution will meet this requirement with the LEAST development effort?",
+    "answers": [
+      {
+        "text": "Use Amazon S3 to make a copy of the model. Transfer the copy to Account B.",
+        "correct": false
+      },
+      {
+        "text": "Create a resource-based IAM policy. Use the Amazon Comprehend ImportModel API operation to copy the model to Account B.",
+        "correct": true
+      },
+      {
+        "text": "Use AWS DataSync to replicate the model from Account A to Account B.",
+        "correct": false
+      },
+      {
+        "text": "Create an AWS Site-to-Site VPN connection between Account A and Account B to transfer the model.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "Which AWS service is best suited for labeling large datasets for supervised learning?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Ground Truth",
+        "correct": true
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML engineer needs to monitor model drift in a deployed SageMaker endpoint. What should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Debugger",
+        "correct": false
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "A company is using Amazon SageMaker to deploy a machine learning model for real-time inference. They want to reduce costs while maintaining low latency. Which approach should they take?",
+    "answers": [
+      {
+        "text": "Use SageMaker multi-model endpoints",
+        "correct": true
+      },
+      {
+        "text": "Use SageMaker batch transform",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker asynchronous inference",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker real-time endpoints with auto-scaling",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "An ML engineer needs to track and compare multiple training runs with different hyperparameters. Which SageMaker feature should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Experiments",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Pipelines",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "A team is using Amazon SageMaker Clarify to evaluate a model. What can SageMaker Clarify help them detect?",
+    "answers": [
+      {
+        "text": "Bias in training data",
+        "correct": true
+      },
+      {
+        "text": "Bias in model predictions",
+        "correct": true
+      },
+      {
+        "text": "Model drift in production",
+        "correct": false
+      },
+      {
+        "text": "Hyperparameter tuning results",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "An ML engineer needs to securely share a SageMaker model between two AWS accounts. Which solution ensures the model is shared with minimal security risk?",
+    "answers": [
+      {
+        "text": "Use AWS Secrets Manager to store the model and share the secret across accounts.",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Model Registry with cross-account access policies.",
+        "correct": true
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled.",
+        "correct": false
+      },
+      {
+        "text": "Use AWS Glue to transfer the model between accounts.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following methods can be used to securely transfer large datasets between AWS accounts for machine learning purposes?",
+    "answers": [
+      {
+        "text": "Use AWS Snowball",
+        "correct": true
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled",
+        "correct": false
+      },
+      {
+        "text": "Use AWS DataSync with IAM roles",
+        "correct": true
+      },
+      {
+        "text": "Use AWS Lambda to transfer data",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML engineer needs to automate the deployment of machine learning models across multiple AWS accounts. Which service should they use?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "A company wants to deploy a real-time fraud detection model with low latency. Which combination of services is most appropriate?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker endpoint with auto-scaling",
+        "correct": true
+      },
+      {
+        "text": "Amazon Athena with scheduled queries",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3 with batch transform",
+        "correct": false
+      },
+      {
+        "text": "Amazon Kinesis Data Streams with Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon EMR with Spark MLlib",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "A company wants to reduce the cost of storing infrequently accessed training data. Which S3 storage class should they use?",
+    "answers": [
+      {
+        "text": "S3 Standard",
+        "correct": false
+      },
+      {
+        "text": "S3 Intelligent-Tiering",
+        "correct": true
+      },
+      {
+        "text": "S3 Glacier Instant Retrieval",
+        "correct": false
+      },
+      {
+        "text": "S3 One Zone-IA",
+        "correct": true
+      },
+      {
+        "text": "S3 Glacier Deep Archive",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "An ML model is overfitting the training data. Which techniques can help reduce overfitting?",
+    "answers": [
+      {
+        "text": "Add dropout layers",
+        "correct": true
+      },
+      {
+        "text": "Use L2 regularization",
+        "correct": true
+      },
+      {
+        "text": "Increase model complexity",
+        "correct": false
+      },
+      {
+        "text": "Use early stopping",
+        "correct": true
+      },
+      {
+        "text": "Train for more epochs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following are valid use cases for Amazon Comprehend?",
+    "answers": [
+      {
+        "text": "Sentiment analysis of customer reviews",
+        "correct": true
+      },
+      {
+        "text": "Image classification",
+        "correct": false
+      },
+      {
+        "text": "Entity recognition in documents",
+        "correct": true
+      },
+      {
+        "text": "Speech-to-text transcription",
+        "correct": false
+      },
+      {
+        "text": "Topic modeling of text data",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML team is concerned about both fairness in model predictions and detecting post-deployment data drift. Which combination of SageMaker tools should they use, and for what purpose?",
+    "answers": [
+      {
+        "text": "Use SageMaker Clarify for bias detection and SageMaker Model Monitor for drift detection.",
+        "correct": true
+      },
+      {
+        "text": "Use SageMaker Clarify for both bias and drift detection.",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Model Monitor for bias detection and Clarify for model explainability only.",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Pipelines to monitor both bias and drift automatically.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "An ML engineer wants to monitor and log all API calls made to SageMaker in multiple AWS accounts. Which service should they use?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "An ML engineer needs to monitor model drift in a deployed SageMaker endpoint across multiple AWS accounts. Which solution should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor with cross-account access policies",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "How does GPT-3 differ from its predecessors?",
+    "answers": [
+      {
+        "text": "It uses a different neural network architecture",
+        "correct": false
+      },
+      {
+        "text": "It has significantly more parameters, making it more powerful",
+        "correct": true
+      },
+      {
+        "text": "It is designed for image processing",
+        "correct": false
+      },
+      {
+        "text": "It is developed by a different company",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "GPT",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "A company is using Amazon SageMaker and millions of files to train an ML model. Each file is several megabytes in size. The files are stored in an Amazon S3 bucket. The company needs to improve training performance. Which solution will meet these requirements in the LEAST amount of time?",
+    "answers": [
+      {
+        "text": "Transfer the data to a new S3 bucket that provides S3 Express One Zone storage. Adjust the training job to use the new S3 bucket.",
+        "correct": false
+      },
+      {
+        "text": "Create an Amazon FSx for Lustre file system. Link the file system to the existing S3 bucket. Adjust the training job to read from the file system.",
+        "correct": true
+      },
+      {
+        "text": "Create an Amazon Elastic File System (Amazon EFS) file system. Transfer the existing data to the file system. Adjust the training job to read from the file system.",
+        "correct": false
+      },
+      {
+        "text": "Create an Amazon ElastiCache (Redis OSS) cluster. Link the Redis OSS cluster to the existing S3 bucket. Stream the data from the Redis OSS cluster directly to the training job.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "A company stores time-series data about user clicks in an Amazon S3 bucket. The raw data consists of millions of rows of user activity every day. ML engineers access the data to develop their ML models. The ML engineers need to generate daily reports and analyze click trends over the past 3 days by using Amazon Athena. The company must retain the data for 30 days before archiving the data. Which solution will provide the HIGHEST performance for data retrieval?",
+    "answers": [
+      {
+        "text": "Keep all the time-series data without partitioning in the S3 bucket. Manually move data that is older than 30 days to separate S3 buckets.",
+        "correct": false
+      },
+      {
+        "text": "Create AWS Lambda functions to copy the time-series data into separate S3 buckets. Apply S3 Lifecycle policies to archive data that is older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": false
+      },
+      {
+        "text": "Organize the time-series data into partitions by date prefix in the S3 bucket. Apply S3 Lifecycle policies to archive partitions that are older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": true
+      },
+      {
+        "text": "Put each day's time-series data into its own S3 bucket. Use S3 Lifecycle policies to archive S3 buckets that hold data that is older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "A company runs an Amazon SageMaker domain in a public subnet of a newly created VPC. The network is configured properly, and ML engineers can access the SageMaker domain. Recently, the company discovered suspicious traffic to the domain from a specific IP address. The company needs to block traffic from the specific IP address. Which update to the network configuration will meet this requirement?",
+    "answers": [
+      {
+        "text": "Create a security group inbound rule to deny traffic from the specific IP address. Assign the security group to the domain.",
+        "correct": false
+      },
+      {
+        "text": "Create a network ACL inbound rule to deny traffic from the specific IP address. Assign the rule to the default network ACL for the subnet where the domain is located.",
+        "correct": true
+      },
+      {
+        "text": "Create a shadow variant for the domain. Configure SageMaker Inference Recommender to send traffic from the specific IP address to the shadow endpoint.",
+        "correct": false
+      },
+      {
+        "text": "Create a VPC route table to deny inbound traffic from the specific IP address. Assign the route table to the domain.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service allows you to run SQL queries on data stored in S3 without loading it into a database?",
+    "answers": [
+      {
+        "text": "Amazon Athena",
+        "correct": true
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "A team is using SageMaker Studio for collaborative model development. What features does SageMaker Studio provide?",
+    "answers": [
+      {
+        "text": "Integrated Jupyter notebooks",
+        "correct": true
+      },
+      {
+        "text": "Real-time collaboration across users",
+        "correct": true
+      },
+      {
+        "text": "Built-in model explainability tools",
+        "correct": false
+      },
+      {
+        "text": "Support for Git-based version control",
+        "correct": true
+      },
+      {
+        "text": "Automatic data labeling",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service can be used to securely share machine learning datasets between multiple accounts?",
+    "answers": [
+      {
+        "text": "Amazon S3 with bucket policies",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service can be used to monitor and log all API calls made to SageMaker in multiple AWS accounts?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML engineer has trained a neural network using stochastic gradient descent (SGD). The neural network performs poorly on the test set. The values for training loss and validation loss remain high and show an oscillating pattern. The values decrease for a few epochs and then increase for a few epochs before repeating the same cycle. What should the ML engineer do to improve the training process?",
+    "answers": [
+      {
+        "text": "Introduce early stopping.",
+        "correct": false
+      },
+      {
+        "text": "Increase the size of the test set.",
+        "correct": false
+      },
+      {
+        "text": "Increase the learning rate.",
+        "correct": false
+      },
+      {
+        "text": "Decrease the learning rate.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "A data science team is training a model using Amazon SageMaker. They want to automatically tune hyperparameters to find the best model configuration. Which SageMaker feature should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Autopilot",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Experiments",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Debugger",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Automatic Model Tuning",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Pipelines",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following are benefits of using SageMaker Pipelines?",
+    "answers": [
+      {
+        "text": "Automates end-to-end ML workflows",
+        "correct": true
+      },
+      {
+        "text": "Supports CI/CD for ML models",
+        "correct": true
+      },
+      {
+        "text": "Provides real-time inference",
+        "correct": false
+      },
+      {
+        "text": "Enables hyperparameter tuning",
+        "correct": false
+      },
+      {
+        "text": "Integrates with SageMaker Model Registry",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "A data science team is using Amazon SageMaker to train a model on a large dataset stored in Amazon S3. They want to reduce the time it takes to preprocess the data before training. What is the most efficient solution?",
+    "answers": [
+      {
+        "text": "Use SageMaker Processing jobs to preprocess the data in parallel",
+        "correct": true
+      },
+      {
+        "text": "Download the data locally and preprocess it on a laptop",
+        "correct": false
+      },
+      {
+        "text": "Use AWS Glue to preprocess the data and write it back to S3",
+        "correct": true
+      },
+      {
+        "text": "Use Amazon Athena to query the data and export results to CSV",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 5
+  },
+  {
+    "question": "A company wants to use Amazon SageMaker to train a model on sensitive healthcare data. The data must not leave the company’s private network. What is the most secure way to meet this requirement?",
+    "answers": [
+      {
+        "text": "Use SageMaker with VPC-only mode enabled",
+        "correct": true
+      },
+      {
+        "text": "Use SageMaker Studio Lab",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker with public internet access",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Ground Truth with public labeling workforce",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service can be used to automate the deployment of machine learning models across multiple accounts?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML engineer needs to ensure that a SageMaker model deployed in Account A can be accessed by a Lambda function in Account B. Which solution meets this requirement?",
+    "answers": [
+      {
+        "text": "Use VPC peering between the accounts",
+        "correct": false
+      },
+      {
+        "text": "Use IAM roles with cross-account access policies",
+        "correct": true
+      },
+      {
+        "text": "Use AWS Direct Connect",
+        "correct": false
+      },
+      {
+        "text": "Use AWS Glue to transfer the model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service can be used to automate the creation, management, and deployment of machine learning models across multiple accounts?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "An ML engineer needs to securely transfer large datasets between AWS accounts for machine learning purposes. Which solution should they use?",
+    "answers": [
+      {
+        "text": "Use AWS Snowball",
+        "correct": true
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled",
+        "correct": false
+      },
+      {
+        "text": "Use AWS DataSync with IAM roles",
+        "correct": true
+      },
+      {
+        "text": "Use AWS Lambda to transfer data",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "You are fine-tuning a pre-trained GPT model for a customer service chatbot. Which training technique is most appropriate if you want to adapt the model with minimal training data?",
+    "answers": [
+      {
+        "text": "Freezing the initial layers and training the last few layers",
+        "correct": true
+      },
+      {
+        "text": "Training from scratch",
+        "correct": false
+      },
+      {
+        "text": "Training the entire model with new data",
+        "correct": false
+      },
+      {
+        "text": "Changing the tokenizer and training the whole model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  }
+]

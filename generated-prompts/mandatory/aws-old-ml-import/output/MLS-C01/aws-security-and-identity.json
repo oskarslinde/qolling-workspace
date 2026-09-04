@@ -1,0 +1,137 @@
+[
+  {
+    "question": "Which stakeholders should be involved in defining ML business goals?",
+    "answers": [
+      {
+        "text": "Data scientists",
+        "correct": true,
+        "explanation": "Data scientists identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Business analysts",
+        "correct": true,
+        "explanation": "Business analysts identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Product owners",
+        "correct": true,
+        "explanation": "Product owners identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Only the database administrator",
+        "correct": false,
+        "explanation": "Only the database administrator concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which stakeholders should be involved in defining ML business goals?"
+      ]
+    }
+  },
+  {
+    "question": "What are the key considerations for data preparation in the AWS Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "Data quality and consistency",
+        "correct": true,
+        "explanation": "Data quality and consistency identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data storage and retrieval",
+        "correct": true,
+        "explanation": "Data storage and retrieval identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data encryption",
+        "correct": false,
+        "explanation": "Data encryption concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Data visualization",
+        "correct": false,
+        "explanation": "Data visualization concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are the key considerations for data preparation in the AWS Machine Learning Lens?"
+      ]
+    }
+  },
+  {
+    "question": "What are the benefits of using the AWS Well-Architected Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "Improved performance and scalability",
+        "correct": true,
+        "explanation": "Improved performance and scalability identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Enhanced security and compliance",
+        "correct": true,
+        "explanation": "Enhanced security and compliance identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Reduced operational costs",
+        "correct": true,
+        "explanation": "Reduced operational costs identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Simplified user interface",
+        "correct": false,
+        "explanation": "Simplified user interface concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are the benefits of using the AWS Well-Architected Machine Learning Lens?"
+      ]
+    }
+  }
+]

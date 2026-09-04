@@ -1,0 +1,15 @@
+[submodule "hera"]
+	path = hera
+	url = https://github.com/oskarslinde/qolling-hera.git
+[submodule "zeus"]
+	path = zeus
+	url = https://github.com/oskarslinde/qolling-zeus.git
+[submodule "athena"]
+	path = athena
+	url = https://github.com/oskarslinde/athena.git
+[submodule "blog"]
+	path = blog
+	url = https://github.com/oskarslinde/qblog.git
+[submodule "frontend-shared"]
+	path = frontend-shared
+	url = https://github.com/oskarslinde/frontend-common.git

@@ -1,0 +1,1536 @@
+[
+  {
+    "question": "An ML engineer has an Amazon Comprehend custom model in Account A in the us-east-1 Region. The ML engineer needs to copy the model to Account B in the same Region. Which solution will meet this requirement with the LEAST development effort?",
+    "answers": [
+      {
+        "text": "Use Amazon S3 to make a copy of the model. Transfer the copy to Account B.",
+        "correct": false,
+        "explanation": "Use Amazon S3 to make a copy of the model. Transfer the copy to Account B. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting."
+      },
+      {
+        "text": "Create a resource-based IAM policy. Use the Amazon Comprehend ImportModel API operation to copy the model to Account B.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use AWS DataSync to replicate the model from Account A to Account B.",
+        "correct": false,
+        "explanation": "Use AWS DataSync to replicate the model from Account A to Account B. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "Create an AWS Site-to-Site VPN connection between Account A and Account B to transfer the model.",
+        "correct": false,
+        "explanation": "Create an AWS Site-to-Site VPN connection between Account A and Account B to transfer the model. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer has an Amazon Comprehend custom model in Account A in the us-east-1 Region. The ML engineer needs to copy the model to Account B in the same Region. Which solution will meet this requirement with the LEAST development effort?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is best suited for labeling large datasets for supervised learning?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Ground Truth",
+        "correct": true,
+        "explanation": "Amazon SageMaker Ground Truth identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Choose Amazon Rekognition when the requirement is to analyze images and videos to identify objects, faces, text, and activities. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Choose Amazon Comprehend when the requirement is to use natural language processing to discover insights and relationships in text. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Choose Amazon Textract when the requirement is to extract printed text, handwriting, and structured data from documents. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is best suited for labeling large datasets for supervised learning?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to monitor model drift in a deployed SageMaker endpoint. What should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor",
+        "correct": true,
+        "explanation": "SageMaker Model Monitor identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "SageMaker Clarify concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Debugger",
+        "correct": false,
+        "explanation": "SageMaker Debugger concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to monitor model drift in a deployed SageMaker endpoint. What should they use?"
+      ]
+    }
+  },
+  {
+    "question": "A company is using Amazon SageMaker to deploy a machine learning model for real-time inference. They want to reduce costs while maintaining low latency. Which approach should they take?",
+    "answers": [
+      {
+        "text": "Use SageMaker multi-model endpoints",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use SageMaker batch transform",
+        "correct": false,
+        "explanation": "Use SageMaker batch transform concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker asynchronous inference",
+        "correct": false,
+        "explanation": "Use SageMaker asynchronous inference concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker real-time endpoints with auto-scaling",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company is using Amazon SageMaker to deploy a machine learning model for real-time inference. They want to reduce costs while maintaining low latency. Which approach should they take?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to track and compare multiple training runs with different hyperparameters. Which SageMaker feature should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Experiments",
+        "correct": true,
+        "explanation": "SageMaker Experiments identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "SageMaker Pipelines",
+        "correct": false,
+        "explanation": "SageMaker Pipelines concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "SageMaker Clarify concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to track and compare multiple training runs with different hyperparameters. Which SageMaker feature should they use?"
+      ]
+    }
+  },
+  {
+    "question": "A team is using Amazon SageMaker Clarify to evaluate a model. What can SageMaker Clarify help them detect?",
+    "answers": [
+      {
+        "text": "Bias in training data",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Bias in model predictions",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Model drift in production",
+        "correct": false,
+        "explanation": "Model drift in production concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Hyperparameter tuning results",
+        "correct": false,
+        "explanation": "Hyperparameter tuning results concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A team is using Amazon SageMaker Clarify to evaluate a model. What can SageMaker Clarify help them detect?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to securely share a SageMaker model between two AWS accounts. Which solution ensures the model is shared with minimal security risk?",
+    "answers": [
+      {
+        "text": "Use AWS Secrets Manager to store the model and share the secret across accounts.",
+        "correct": false,
+        "explanation": "Use AWS Secrets Manager to store the model and share the secret across accounts. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker Model Registry with cross-account access policies.",
+        "correct": true,
+        "explanation": "Use SageMaker Model Registry with cross-account access policies. identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled.",
+        "correct": false,
+        "explanation": "Use Amazon S3 with public access enabled. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use AWS Glue to transfer the model between accounts.",
+        "correct": false,
+        "explanation": "Use AWS Glue to transfer the model between accounts. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to securely share a SageMaker model between two AWS accounts. Which solution ensures the model is shared with minimal security risk?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following methods can be used to securely transfer large datasets between AWS accounts for machine learning purposes?",
+    "answers": [
+      {
+        "text": "Use AWS Snowball",
+        "correct": true,
+        "explanation": "Use AWS Snowball identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled",
+        "correct": false,
+        "explanation": "Use Amazon S3 with public access enabled concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use AWS DataSync with IAM roles",
+        "correct": true,
+        "explanation": "Use AWS DataSync with IAM roles identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use AWS Lambda to transfer data",
+        "correct": false,
+        "explanation": "Use AWS Lambda to transfer data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following methods can be used to securely transfer large datasets between AWS accounts for machine learning purposes?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to automate the deployment of machine learning models across multiple AWS accounts. Which service should they use?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true,
+        "explanation": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. In this context, engineer, needs, automate, the determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false,
+        "explanation": "AWS DataSync concerns a separate capability from the one being tested. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "Choose AWS Direct Connect when the requirement is to establish a dedicated network connection from a location to AWS. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to automate the deployment of machine learning models across multiple AWS accounts. Which service should they use?"
+      ]
+    }
+  },
+  {
+    "question": "A company wants to deploy a real-time fraud detection model with low latency. Which combination of services is most appropriate?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker endpoint with auto-scaling",
+        "correct": true,
+        "explanation": "Amazon SageMaker endpoint with auto-scaling identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon Athena with scheduled queries",
+        "correct": false,
+        "explanation": "Amazon Athena with scheduled queries concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon S3 with batch transform",
+        "correct": false,
+        "explanation": "Amazon S3 with batch transform concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Kinesis Data Streams with Lambda",
+        "correct": true,
+        "explanation": "Amazon Kinesis Data Streams with Lambda identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company wants to deploy a real-time fraud detection model with low latency. Which combination of services is most appropriate?"
+      ]
+    }
+  },
+  {
+    "question": "A company wants to reduce the cost of storing infrequently accessed training data. Which S3 storage class should they use?",
+    "answers": [
+      {
+        "text": "S3 Standard",
+        "correct": false,
+        "explanation": "S3 Standard concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "S3 Intelligent-Tiering",
+        "correct": true,
+        "explanation": "S3 Intelligent-Tiering identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "S3 Glacier Instant Retrieval",
+        "correct": false,
+        "explanation": "S3 Glacier Instant Retrieval concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "S3 One Zone-IA",
+        "correct": true,
+        "explanation": "S3 One Zone-IA identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company wants to reduce the cost of storing infrequently accessed training data. Which S3 storage class should they use?"
+      ]
+    }
+  },
+  {
+    "question": "An ML model is overfitting the training data. Which techniques can help reduce overfitting?",
+    "answers": [
+      {
+        "text": "Add dropout layers",
+        "correct": true,
+        "explanation": "Add dropout layers identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use L2 regularization",
+        "correct": true,
+        "explanation": "Use L2 regularization identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Increase model complexity",
+        "correct": false,
+        "explanation": "Increase model complexity concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use early stopping",
+        "correct": true,
+        "explanation": "Use early stopping identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "ML Theory",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML model is overfitting the training data. Which techniques can help reduce overfitting?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid use cases for Amazon Comprehend?",
+    "answers": [
+      {
+        "text": "Sentiment analysis of customer reviews",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Image classification",
+        "correct": false,
+        "explanation": "Image classification concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Entity recognition in documents",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Topic modeling of text data",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid use cases for Amazon Comprehend?"
+      ]
+    }
+  },
+  {
+    "question": "An ML team is concerned about both fairness in model predictions and detecting post-deployment data drift. Which combination of SageMaker tools should they use, and for what purpose?",
+    "answers": [
+      {
+        "text": "Use SageMaker Clarify for bias detection and SageMaker Model Monitor for drift detection.",
+        "correct": true,
+        "explanation": "Use SageMaker Clarify for bias detection and SageMaker Model Monitor for drift detection. identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use SageMaker Clarify for both bias and drift detection.",
+        "correct": false,
+        "explanation": "Use SageMaker Clarify for both bias and drift detection. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker Model Monitor for bias detection and Clarify for model explainability only.",
+        "correct": false,
+        "explanation": "Use SageMaker Model Monitor for bias detection and Clarify for model explainability only. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker Pipelines to monitor both bias and drift automatically.",
+        "correct": false,
+        "explanation": "Use SageMaker Pipelines to monitor both bias and drift automatically. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML team is concerned about both fairness in model predictions and detecting post-deployment data drift. Which combination of SageMaker tools should they use, and for what purpose?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer wants to monitor and log all API calls made to SageMaker in multiple AWS accounts. Which service should they use?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. In this context, engineer, wants, monitor, and determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false,
+        "explanation": "Choose AWS X-Ray when the requirement is to trace requests across distributed applications to analyze latency and faults. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "Config records and evaluates resource configuration; CloudTrail logs API calls, CloudWatch monitors telemetry, and Trusted Advisor provides recommendations. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer wants to monitor and log all API calls made to SageMaker in multiple AWS accounts. Which service should they use?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to monitor model drift in a deployed SageMaker endpoint across multiple AWS accounts. Which solution should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor with cross-account access policies",
+        "correct": true,
+        "explanation": "SageMaker Model Monitor with cross-account access policies identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "SageMaker Clarify concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "Config records and evaluates resource configuration; CloudTrail logs API calls, CloudWatch monitors telemetry, and Trusted Advisor provides recommendations. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to monitor model drift in a deployed SageMaker endpoint across multiple AWS accounts. Which solution should they use?"
+      ]
+    }
+  },
+  {
+    "question": "How does GPT-3 differ from its predecessors?",
+    "answers": [
+      {
+        "text": "It uses a different neural network architecture",
+        "correct": false,
+        "explanation": "It uses a different neural network architecture concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It has significantly more parameters, making it more powerful",
+        "correct": true,
+        "explanation": "It has significantly more parameters, making it more powerful identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is designed for image processing",
+        "correct": false,
+        "explanation": "It is designed for image processing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is developed by a different company",
+        "correct": false,
+        "explanation": "It is developed by a different company concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "GPT",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "GPT",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does GPT-3 differ from its predecessors?"
+      ]
+    }
+  },
+  {
+    "question": "A company is using Amazon SageMaker and millions of files to train an ML model. Each file is several megabytes in size. The files are stored in an Amazon S3 bucket. The company needs to improve training performance. Which solution will meet these requirements in the LEAST amount of time?",
+    "answers": [
+      {
+        "text": "Transfer the data to a new S3 bucket that provides S3 Express One Zone storage. Adjust the training job to use the new S3 bucket.",
+        "correct": false,
+        "explanation": "Transfer the data to a new S3 bucket that provides S3 Express One Zone storage. Adjust the training job to use the new S3 bucket. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning."
+      },
+      {
+        "text": "Create an Amazon FSx for Lustre file system. Link the file system to the existing S3 bucket. Adjust the training job to read from the file system.",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. Create an Amazon FSx for Lustre file system. Link the file system to the existing S3 bucket. Adjust the training job to read from the file system.."
+      },
+      {
+        "text": "Create an Amazon Elastic File System (Amazon EFS) file system. Transfer the existing data to the file system. Adjust the training job to read from the file system.",
+        "correct": false,
+        "explanation": "Create an Amazon Elastic File System (Amazon EFS) file system. Transfer the existing data to the file system. Adjust the training job to read from the file system. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and."
+      },
+      {
+        "text": "Create an Amazon ElastiCache (Redis OSS) cluster. Link the Redis OSS cluster to the existing S3 bucket. Stream the data from the Redis OSS cluster directly to the training job.",
+        "correct": false,
+        "explanation": "Create an Amazon ElastiCache (Redis OSS) cluster. Link the Redis OSS cluster to the existing S3 bucket. Stream the data from the Redis OSS cluster directly to the training job. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company is using Amazon SageMaker and millions of files to train an ML model. Each file is several megabytes in size. The files are stored in an Amazon S3 bucket. The company needs to improve training performance. Which solution will meet these requirements in the LEAST amount of time?"
+      ]
+    }
+  },
+  {
+    "question": "A company stores time-series data about user clicks in an Amazon S3 bucket. The raw data consists of millions of rows of user activity every day. ML engineers access the data to develop their ML models. The ML engineers need to generate daily reports and analyze click trends over the past 3 days by using Amazon Athena. The company must retain the data for 30 days before archiving the data. Which solution will provide the HIGHEST performance for data retrieval?",
+    "answers": [
+      {
+        "text": "Keep all the time-series data without partitioning in the S3 bucket. Manually move data that is older than 30 days to separate S3 buckets.",
+        "correct": false,
+        "explanation": "Keep all the time-series data without partitioning in the S3 bucket. Manually move data that is older than 30 days to separate S3 buckets. concerns a separate capability from the one being tested. Amazon Athena exists to query data in Amazon S3 using standard SQL without."
+      },
+      {
+        "text": "Create AWS Lambda functions to copy the time-series data into separate S3 buckets. Apply S3 Lifecycle policies to archive data that is older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": false,
+        "explanation": "Create AWS Lambda functions to copy the time-series data into separate S3 buckets. Apply S3 Lifecycle policies to archive data that is older than 30 days to S3 Glacier Flexible Retrieval. concerns a separate capability from the one being tested. Amazon Athena exists to query data."
+      },
+      {
+        "text": "Organize the time-series data into partitions by date prefix in the S3 bucket. Apply S3 Lifecycle policies to archive partitions that are older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": true,
+        "explanation": "Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure. Organize the time-series data into partitions by date prefix in the S3 bucket. Apply S3 Lifecycle policies to archive partitions that are older than 30 days."
+      },
+      {
+        "text": "Put each day's time-series data into its own S3 bucket. Use S3 Lifecycle policies to archive S3 buckets that hold data that is older than 30 days to S3 Glacier Flexible Retrieval.",
+        "correct": false,
+        "explanation": "Put each day's time-series data into its own S3 bucket. Use S3 Lifecycle policies to archive S3 buckets that hold data that is older than 30 days to S3 Glacier Flexible Retrieval. concerns a separate capability from the one being tested. Amazon Athena exists to query."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company stores time-series data about user clicks in an Amazon S3 bucket. The raw data consists of millions of rows of user activity every day. ML engineers access the data to develop their ML models. The ML engineers need to generate daily reports and analyze click trends over the past 3 days by using Amazon Athena. The company must retain the data for 30 days before archiving the data. Which solution will provide the HIGHEST performance for data retrieval?"
+      ]
+    }
+  },
+  {
+    "question": "A company runs an Amazon SageMaker domain in a public subnet of a newly created VPC. The network is configured properly, and ML engineers can access the SageMaker domain. Recently, the company discovered suspicious traffic to the domain from a specific IP address. The company needs to block traffic from the specific IP address. Which update to the network configuration will meet this requirement?",
+    "answers": [
+      {
+        "text": "Create a security group inbound rule to deny traffic from the specific IP address. Assign the security group to the domain.",
+        "correct": false,
+        "explanation": "Create a security group inbound rule to deny traffic from the specific IP address. Assign the security group to the domain. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every."
+      },
+      {
+        "text": "Create a network ACL inbound rule to deny traffic from the specific IP address. Assign the rule to the default network ACL for the subnet where the domain is located.",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. Create a network ACL inbound rule to deny traffic from the specific IP address. Assign the rule to the default network ACL for the subnet where the."
+      },
+      {
+        "text": "Create a shadow variant for the domain. Configure SageMaker Inference Recommender to send traffic from the specific IP address to the shadow endpoint.",
+        "correct": false,
+        "explanation": "Create a shadow variant for the domain. Configure SageMaker Inference Recommender to send traffic from the specific IP address to the shadow endpoint. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without."
+      },
+      {
+        "text": "Create a VPC route table to deny inbound traffic from the specific IP address. Assign the route table to the domain.",
+        "correct": false,
+        "explanation": "Create a VPC route table to deny inbound traffic from the specific IP address. Assign the route table to the domain. concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company runs an Amazon SageMaker domain in a public subnet of a newly created VPC. The network is configured properly, and ML engineers can access the SageMaker domain. Recently, the company discovered suspicious traffic to the domain from a specific IP address. The company needs to block traffic from the specific IP address. Which update to the network configuration will meet this requirement?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service allows you to run SQL queries on data stored in S3 without loading it into a database?",
+    "answers": [
+      {
+        "text": "Amazon Athena",
+        "correct": true,
+        "explanation": "Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure. The two capabilities solve."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service allows you to run SQL queries on data stored in S3 without loading it into a database?"
+      ]
+    }
+  },
+  {
+    "question": "A team is using SageMaker Studio for collaborative model development. What features does SageMaker Studio provide?",
+    "answers": [
+      {
+        "text": "Integrated Jupyter notebooks",
+        "correct": true,
+        "explanation": "Integrated Jupyter notebooks identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Real-time collaboration across users",
+        "correct": true,
+        "explanation": "Real-time collaboration across users identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Built-in model explainability tools",
+        "correct": false,
+        "explanation": "Built-in model explainability tools concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Support for Git-based version control",
+        "correct": true,
+        "explanation": "Support for Git-based version control identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "SageMaker Features",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A team is using SageMaker Studio for collaborative model development. What features does SageMaker Studio provide?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can be used to securely share machine learning datasets between multiple accounts?",
+    "answers": [
+      {
+        "text": "Amazon S3 with bucket policies",
+        "correct": true,
+        "explanation": "Amazon S3 with bucket policies identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "Choose AWS Direct Connect when the requirement is to establish a dedicated network connection from a location to AWS. . The option addresses a different technical responsibility, whereas Exam Type provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to securely share machine learning datasets between multiple accounts?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can be used to monitor and log all API calls made to SageMaker in multiple AWS accounts?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. In this context, can, monitor, and, log determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false,
+        "explanation": "Choose AWS X-Ray when the requirement is to trace requests across distributed applications to analyze latency and faults. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "Config records and evaluates resource configuration; CloudTrail logs API calls, CloudWatch monitors telemetry, and Trusted Advisor provides recommendations. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to monitor and log all API calls made to SageMaker in multiple AWS accounts?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer has trained a neural network using stochastic gradient descent (SGD). The neural network performs poorly on the test set. The values for training loss and validation loss remain high and show an oscillating pattern. The values decrease for a few epochs and then increase for a few epochs before repeating the same cycle. What should the ML engineer do to improve the training process?",
+    "answers": [
+      {
+        "text": "Introduce early stopping.",
+        "correct": false,
+        "explanation": "Introduce early stopping. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Increase the size of the test set.",
+        "correct": false,
+        "explanation": "Increase the size of the test set. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Increase the learning rate.",
+        "correct": false,
+        "explanation": "Increase the learning rate. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Decrease the learning rate.",
+        "correct": true,
+        "explanation": "Decrease the learning rate. identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer has trained a neural network using stochastic gradient descent (SGD). The neural network performs poorly on the test set. The values for training loss and validation loss remain high and show an oscillating pattern. The values decrease for a few epochs and then increase for a few epochs before repeating the same cycle. What should the ML engineer do to improve the training process?"
+      ]
+    }
+  },
+  {
+    "question": "A data science team is training a model using Amazon SageMaker. They want to automatically tune hyperparameters to find the best model configuration. Which SageMaker feature should they use?",
+    "answers": [
+      {
+        "text": "SageMaker Autopilot",
+        "correct": false,
+        "explanation": "SageMaker Autopilot concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Experiments",
+        "correct": false,
+        "explanation": "SageMaker Experiments concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Debugger",
+        "correct": false,
+        "explanation": "SageMaker Debugger concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Automatic Model Tuning",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A data science team is training a model using Amazon SageMaker. They want to automatically tune hyperparameters to find the best model configuration. Which SageMaker feature should they use?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are benefits of using SageMaker Pipelines?",
+    "answers": [
+      {
+        "text": "Automates end-to-end ML workflows",
+        "correct": true,
+        "explanation": "Automates end-to-end ML workflows identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Supports CI/CD for ML models",
+        "correct": true,
+        "explanation": "Supports CI/CD for ML models identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Provides real-time inference",
+        "correct": false,
+        "explanation": "Provides real-time inference concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Integrates with SageMaker Model Registry",
+        "correct": true,
+        "explanation": "Integrates with SageMaker Model Registry identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are benefits of using SageMaker Pipelines?"
+      ]
+    }
+  },
+  {
+    "question": "A data science team is using Amazon SageMaker to train a model on a large dataset stored in Amazon S3. They want to reduce the time it takes to preprocess the data before training. What is the most efficient solution?",
+    "answers": [
+      {
+        "text": "Use SageMaker Processing jobs to preprocess the data in parallel",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Download the data locally and preprocess it on a laptop",
+        "correct": false,
+        "explanation": "Download the data locally and preprocess it on a laptop concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for."
+      },
+      {
+        "text": "Use AWS Glue to preprocess the data and write it back to S3",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use Amazon Athena to query the data and export results to CSV",
+        "correct": false,
+        "explanation": "Use Amazon Athena to query the data and export results to CSV concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 5,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: A data science team is using Amazon SageMaker to train a model on a large dataset stored in Amazon S3. They want to reduce the time it takes to preprocess the data before training. What is the most efficient solution?"
+      ]
+    }
+  },
+  {
+    "question": "A company wants to use Amazon SageMaker to train a model on sensitive healthcare data. The data must not leave the company’s private network. What is the most secure way to meet this requirement?",
+    "answers": [
+      {
+        "text": "Use SageMaker with VPC-only mode enabled",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use SageMaker Studio Lab",
+        "correct": false,
+        "explanation": "Use SageMaker Studio Lab concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker with public internet access",
+        "correct": false,
+        "explanation": "Use SageMaker with public internet access concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker Ground Truth with public labeling workforce",
+        "correct": false,
+        "explanation": "Use SageMaker Ground Truth with public labeling workforce concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: A company wants to use Amazon SageMaker to train a model on sensitive healthcare data. The data must not leave the company’s private network. What is the most secure way to meet this requirement?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can be used to automate the deployment of machine learning models across multiple accounts?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true,
+        "explanation": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. In this context, can, automate, the, deployment determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false,
+        "explanation": "AWS DataSync concerns a separate capability from the one being tested. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "Choose AWS Direct Connect when the requirement is to establish a dedicated network connection from a location to AWS. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to automate the deployment of machine learning models across multiple accounts?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to ensure that a SageMaker model deployed in Account A can be accessed by a Lambda function in Account B. Which solution meets this requirement?",
+    "answers": [
+      {
+        "text": "Use VPC peering between the accounts",
+        "correct": false,
+        "explanation": "Use VPC peering between the accounts concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use IAM roles with cross-account access policies",
+        "correct": true,
+        "explanation": "Use IAM roles with cross-account access policies identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use AWS Direct Connect",
+        "correct": false,
+        "explanation": "Use AWS Direct Connect concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use AWS Glue to transfer the model",
+        "correct": false,
+        "explanation": "Use AWS Glue to transfer the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to ensure that a SageMaker model deployed in Account A can be accessed by a Lambda function in Account B. Which solution meets this requirement?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can be used to automate the creation, management, and deployment of machine learning models across multiple accounts?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true,
+        "explanation": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. In this context, can, automate, the, creation determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "AWS DataSync",
+        "correct": false,
+        "explanation": "AWS DataSync concerns a separate capability from the one being tested. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "Choose AWS Direct Connect when the requirement is to establish a dedicated network connection from a location to AWS. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "AWS Services",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to automate the creation, management, and deployment of machine learning models across multiple accounts?"
+      ]
+    }
+  },
+  {
+    "question": "An ML engineer needs to securely transfer large datasets between AWS accounts for machine learning purposes. Which solution should they use?",
+    "answers": [
+      {
+        "text": "Use AWS Snowball",
+        "correct": true,
+        "explanation": "Use AWS Snowball identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use Amazon S3 with public access enabled",
+        "correct": false,
+        "explanation": "Use Amazon S3 with public access enabled concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use AWS DataSync with IAM roles",
+        "correct": true,
+        "explanation": "Use AWS DataSync with IAM roles identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use AWS Lambda to transfer data",
+        "correct": false,
+        "explanation": "Use AWS Lambda to transfer data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: An ML engineer needs to securely transfer large datasets between AWS accounts for machine learning purposes. Which solution should they use?"
+      ]
+    }
+  },
+  {
+    "question": "You are fine-tuning a pre-trained GPT model for a customer service chatbot. Which training technique is most appropriate if you want to adapt the model with minimal training data?",
+    "answers": [
+      {
+        "text": "Freezing the initial layers and training the last few layers",
+        "correct": true,
+        "explanation": "Freezing the initial layers and training the last few layers identifies the relevant Exam Type concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Training from scratch",
+        "correct": false,
+        "explanation": "Training from scratch concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Training the entire model with new data",
+        "correct": false,
+        "explanation": "Training the entire model with new data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Changing the tokenizer and training the whole model",
+        "correct": false,
+        "explanation": "Changing the tokenizer and training the whole model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Exam Type",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Exam Type"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Exam Type",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are fine-tuning a pre-trained GPT model for a customer service chatbot. Which training technique is most appropriate if you want to adapt the model with minimal training data?"
+      ]
+    }
+  }
+]

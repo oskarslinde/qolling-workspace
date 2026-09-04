@@ -1,0 +1,715 @@
+[
+  {
+    "question": "Which statement about Amazon EventBridge is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) uses publish/subscribe topics to fan out notifications to subscribed endpoints. Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "It is used to route events between applications and AWS services using event buses and rules.",
+        "correct": true,
+        "explanation": "Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to buffer and decouple application components with managed message queues.",
+        "correct": false,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) stores messages in durable queues so producers and consumers can operate independently. Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "It is used to coordinate multi-step application workflows as visual state machines.",
+        "correct": false,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon EventBridge",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon EventBridge"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon EventBridge exists to route events between applications and AWS services using event buses and rules.",
+    "answerSource": "https://aws.amazon.com/eventbridge/"
+  },
+  {
+    "question": "What is the primary purpose of Amazon Simple Notification Service (Amazon SNS)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Publish notifications to subscribers and deliver messages using a publish-subscribe model",
+        "correct": true,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "Route events between applications and AWS services using event buses and rules",
+        "correct": false,
+        "explanation": "Amazon EventBridge has a different primary responsibility: it is designed to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "Buffer and decouple application components with managed message queues",
+        "correct": false,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) has a different primary responsibility: it is designed to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "Coordinate multi-step application workflows as visual state machines",
+        "correct": false,
+        "explanation": "AWS Step Functions has a different primary responsibility: it is designed to coordinate multi-step application workflows as visual state machines."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Notification Service (Amazon SNS)",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Simple Notification Service (Amazon SNS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Simple Notification Service (Amazon SNS) exists to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+    "answerSource": "https://aws.amazon.com/sns/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to buffer and decouple application components with managed message queues?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) has a different primary responsibility: it is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false,
+        "explanation": "AWS Step Functions has a different primary responsibility: it is designed to coordinate multi-step application workflows as visual state machines."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge has a different primary responsibility: it is designed to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Queue Service (Amazon SQS) when the requirement is to buffer and decouple application components with managed message queues."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Queue Service (Amazon SQS)",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Simple Queue Service (Amazon SQS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Simple Queue Service (Amazon SQS) exists to buffer and decouple application components with managed message queues.",
+    "answerSource": "https://aws.amazon.com/sqs/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Step Functions?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Publish notifications to subscribers and deliver messages using a publish-subscribe model",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) has a different primary responsibility: it is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "Buffer and decouple application components with managed message queues",
+        "correct": false,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) has a different primary responsibility: it is designed to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "Coordinate multi-step application workflows as visual state machines",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Replicate and migrate physical, virtual, or cloud servers to AWS",
+        "correct": false,
+        "explanation": "That describes AWS Application Migration Service, which is designed to replicate and migrate physical, virtual, or cloud servers to AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "AWS Step Functions",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Step Functions"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines.",
+    "answerSource": "https://aws.amazon.com/step-functions/"
+  },
+  {
+    "question": "Which service is best for decoupling a producer from a consumer with a durable queue?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Queue Service (Amazon SQS) when the requirement is to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this question."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false,
+        "explanation": "AWS Step Functions is designed to coordinate multi-step application workflows as visual state machines, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Simple Queue Service (Amazon SQS) from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "SQS provides queues for decoupling; SNS broadcasts notifications, EventBridge routes events, and Step Functions coordinates workflows.",
+    "answerSource": "https://aws.amazon.com/sqs/"
+  },
+  {
+    "question": "Which service broadcasts a message to multiple subscribers using a publish-subscribe model?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Notification Service (Amazon SNS) when the requirement is to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS)",
+        "correct": false,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) is designed to buffer and decouple application components with managed message queues, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Simple Notification Service (Amazon SNS) from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "SNS publishes notifications to subscribers; SQS queues messages, EventBridge routes events, and API Gateway exposes APIs.",
+    "answerSource": "https://aws.amazon.com/sns/"
+  },
+  {
+    "question": "Which service coordinates a multi-step workflow with retries and state transitions?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon SQS",
+        "correct": false,
+        "explanation": "Amazon SQS is designed to buffer and decouple application components with managed message queues, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Step Functions from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages.",
+    "answerSource": "https://aws.amazon.com/step-functions/"
+  },
+  {
+    "question": "A team needs to route events between applications and AWS services using event buses and rules. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Application Migration Service",
+        "correct": false,
+        "explanation": "AWS Application Migration Service is designed to replicate and migrate physical, virtual, or cloud servers to AWS, so it does not match this question."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": true,
+        "explanation": "Choose Amazon EventBridge when the requirement is to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false,
+        "explanation": "AWS Step Functions is designed to coordinate multi-step application workflows as visual state machines, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon EventBridge",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon EventBridge for a requirement to route events between applications and AWS services using event buses and rules"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon EventBridge when the requirement is to route events between applications and AWS services using event buses and rules.",
+    "answerSource": "https://aws.amazon.com/eventbridge/"
+  },
+  {
+    "question": "Which AWS service should a team select to publish notifications to subscribers and deliver messages using a publish-subscribe model?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this question."
+      },
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": true,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false,
+        "explanation": "AWS Step Functions is designed to coordinate multi-step application workflows as visual state machines, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Notification Service (Amazon SNS)",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon Simple Notification Service (Amazon SNS) for a requirement to publish notifications to subscribers and deliver messages using a publish-subscribe model"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Simple Notification Service (Amazon SNS) when the requirement is to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+    "answerSource": "https://aws.amazon.com/sns/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to buffer and decouple application components with managed message queues?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Queue Service (Amazon SQS) when the requirement is to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling is designed to adjust resource capacity automatically to maintain availability and performance, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Queue Service (Amazon SQS)",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select Amazon Simple Queue Service (Amazon SQS) for a requirement to buffer and decouple application components with managed message queues"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Simple Queue Service (Amazon SQS) when the requirement is to buffer and decouple application components with managed message queues.",
+    "answerSource": "https://aws.amazon.com/sqs/"
+  },
+  {
+    "question": "A team needs to coordinate multi-step application workflows as visual state machines. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS)",
+        "correct": false,
+        "explanation": "Amazon Simple Notification Service (Amazon SNS) is designed to publish notifications to subscribers and deliver messages using a publish-subscribe model, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup is designed to centrally automate and manage backups across supported AWS services, so it does not match this question."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "AWS Step Functions",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Step Functions for a requirement to coordinate multi-step application workflows as visual state machines"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Step Functions when the requirement is to coordinate multi-step application workflows as visual state machines.",
+    "answerSource": "https://aws.amazon.com/step-functions/"
+  },
+  {
+    "question": "Which relationship between AWS Step Functions and Amazon EventBridge is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to coordinate multi-step application workflows as visual state machines.",
+        "correct": false,
+        "explanation": "That describes AWS Step Functions, but Amazon EventBridge is primarily used to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "Both services are primarily used to route events between applications and AWS services using event buses and rules.",
+        "correct": false,
+        "explanation": "That describes Amazon EventBridge, but AWS Step Functions is primarily used to coordinate multi-step application workflows as visual state machines."
+      },
+      {
+        "text": "AWS Step Functions is used to coordinate multi-step application workflows as visual state machines, whereas Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Step Functions is used to route events between applications and AWS services using event buses and rules, whereas Amazon EventBridge is used to coordinate multi-step application workflows as visual state machines.",
+        "correct": false,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "AWS Step Functions",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Step Functions from Amazon EventBridge"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Step Functions is used to coordinate multi-step application workflows as visual state machines, while Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
+    "answerSource": "https://aws.amazon.com/step-functions/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon EventBridge from Amazon Simple Notification Service (Amazon SNS)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Notification Service (Amazon SNS), but Amazon EventBridge is primarily used to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "Amazon EventBridge is used to route events between applications and AWS services using event buses and rules, whereas Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": true,
+        "explanation": "Amazon EventBridge is used to route events between applications and AWS services using event buses and rules, while Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model. For statement, correctly, distinguishes, EventBridge, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon EventBridge is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, whereas Amazon Simple Notification Service (Amazon SNS) is used to route events between applications and AWS services using event buses and rules.",
+        "correct": false,
+        "explanation": "The statement about Amazon EventBridge is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, whereas Amazon Simple Notification Service (Amazon SNS) is used to route events between applications and AWS services using event buses and rules. describes a different technical behavior."
+      },
+      {
+        "text": "Both services are primarily used to route events between applications and AWS services using event buses and rules.",
+        "correct": false,
+        "explanation": "That describes Amazon EventBridge, but Amazon Simple Notification Service (Amazon SNS) is primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon EventBridge",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon EventBridge from Amazon Simple Notification Service (Amazon SNS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon EventBridge is used to route events between applications and AWS services using event buses and rules, while Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+    "answerSource": "https://aws.amazon.com/eventbridge/"
+  },
+  {
+    "question": "A learner says Amazon Simple Notification Service (Amazon SNS) and Amazon Simple Queue Service (Amazon SQS) have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, whereas Amazon Simple Queue Service (Amazon SQS) is used to buffer and decouple application components with managed message queues.",
+        "correct": true,
+        "explanation": "This correctly separates the primary roles of Amazon Simple Notification Service (Amazon SNS) and Amazon Simple Queue Service (Amazon SQS)."
+      },
+      {
+        "text": "Amazon Simple Notification Service (Amazon SNS) is used to buffer and decouple application components with managed message queues, whereas Amazon Simple Queue Service (Amazon SQS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": false,
+        "explanation": "The statement about Amazon Simple Notification Service (Amazon SNS) is used to buffer and decouple application components with managed message queues, whereas Amazon Simple Queue Service (Amazon SQS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model. describes a different technical."
+      },
+      {
+        "text": "Both services are primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Notification Service (Amazon SNS), but Amazon Simple Queue Service (Amazon SQS) is primarily used to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "Both services are primarily used to buffer and decouple application components with managed message queues.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Queue Service (Amazon SQS), but Amazon Simple Notification Service (Amazon SNS) is primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Notification Service (Amazon SNS)",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon Simple Notification Service (Amazon SNS) from Amazon Simple Queue Service (Amazon SQS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, while Amazon Simple Queue Service (Amazon SQS) is used to buffer and decouple application components with managed message queues.",
+    "answerSource": "https://aws.amazon.com/sns/"
+  },
+  {
+    "question": "Which relationship between Amazon Simple Queue Service (Amazon SQS) and Amazon Simple Notification Service (Amazon SNS) is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, whereas Amazon Simple Notification Service (Amazon SNS) is used to buffer and decouple application components with managed message queues.",
+        "correct": false,
+        "explanation": "The statement about Amazon Simple Queue Service (Amazon SQS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model, whereas Amazon Simple Notification Service (Amazon SNS) is used to buffer and decouple application components with managed message queues. describes a different technical."
+      },
+      {
+        "text": "Both services are primarily used to buffer and decouple application components with managed message queues.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Queue Service (Amazon SQS), but Amazon Simple Notification Service (Amazon SNS) is primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model."
+      },
+      {
+        "text": "Both services are primarily used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Notification Service (Amazon SNS), but Amazon Simple Queue Service (Amazon SQS) is primarily used to buffer and decouple application components with managed message queues."
+      },
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS) is used to buffer and decouple application components with managed message queues, whereas Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+        "correct": true,
+        "explanation": "This correctly separates the primary roles of Amazon Simple Queue Service (Amazon SQS) and Amazon Simple Notification Service (Amazon SNS)."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Application Integration",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Application Integration",
+      "subtopic": "Amazon Simple Queue Service (Amazon SQS)",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon Simple Queue Service (Amazon SQS) from Amazon Simple Notification Service (Amazon SNS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Simple Queue Service (Amazon SQS) is used to buffer and decouple application components with managed message queues, while Amazon Simple Notification Service (Amazon SNS) is used to publish notifications to subscribers and deliver messages using a publish-subscribe model.",
+    "answerSource": "https://aws.amazon.com/sqs/"
+  }
+]

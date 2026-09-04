@@ -1,0 +1,362 @@
+[
+  {
+    "question": "Which of the following are best practices for designing ML systems for production?",
+    "answers": [
+      {
+        "text": "Monitoring model drift",
+        "correct": true,
+        "explanation": "Monitoring model drift identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ignoring data quality issues",
+        "correct": false,
+        "explanation": "Ignoring data quality issues concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automating retraining workflows",
+        "correct": true,
+        "explanation": "Automating retraining workflows identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Versioning datasets and models",
+        "correct": true,
+        "explanation": "Versioning datasets and models identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are best practices for designing ML systems for production?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid business goals that can be addressed using machine learning?",
+    "answers": [
+      {
+        "text": "Reducing customer churn",
+        "correct": true,
+        "explanation": "Reducing customer churn identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Improving product recommendations",
+        "correct": true,
+        "explanation": "Improving product recommendations identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Increasing manual data entry",
+        "correct": false,
+        "explanation": "Increasing manual data entry concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automating fraud detection",
+        "correct": true,
+        "explanation": "Automating fraud detection identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid business goals that can be addressed using machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "What is the first step in designing a machine learning system?",
+    "answers": [
+      {
+        "text": "Collecting and preparing data",
+        "correct": true,
+        "explanation": "Collecting and preparing data identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Choosing the right algorithm",
+        "correct": false,
+        "explanation": "Choosing the right algorithm concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Deploying the model",
+        "correct": false,
+        "explanation": "Deploying the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Monitoring the model's performance",
+        "correct": false,
+        "explanation": "Monitoring the model's performance concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the first step in designing a machine learning system?"
+      ]
+    }
+  },
+  {
+    "question": "How does Amazon A2I help in building machine learning workflows?",
+    "answers": [
+      {
+        "text": "By providing built-in human review workflows for common machine learning tasks.",
+        "correct": true,
+        "explanation": "By providing built-in human review workflows for common machine learning tasks. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "By offering pre-trained models for various tasks.",
+        "correct": false,
+        "explanation": "By offering pre-trained models for various tasks. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By enabling real-time model monitoring.",
+        "correct": false,
+        "explanation": "By enabling real-time model monitoring. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By providing tools for data labeling.",
+        "correct": false,
+        "explanation": "By providing tools for data labeling. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does Amazon A2I help in building machine learning workflows?"
+      ]
+    }
+  },
+  {
+    "question": "What is a common mistake when framing ML problems?",
+    "answers": [
+      {
+        "text": "Defining the problem as a prediction task",
+        "correct": false,
+        "explanation": "Defining the problem as a prediction task concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Choosing a model before understanding the data",
+        "correct": true,
+        "explanation": "Choosing a model before understanding the data identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Identifying the target variable",
+        "correct": false,
+        "explanation": "Identifying the target variable concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Consulting with domain experts",
+        "correct": false,
+        "explanation": "Consulting with domain experts concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a common mistake when framing ML problems?"
+      ]
+    }
+  },
+  {
+    "question": "What are key considerations when choosing a machine learning algorithm for a production system?",
+    "answers": [
+      {
+        "text": "Model interpretability",
+        "correct": true,
+        "explanation": "Model interpretability identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Training time",
+        "correct": true,
+        "explanation": "Training time identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Scalability of the algorithm",
+        "correct": true,
+        "explanation": "Scalability of the algorithm identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "The application's logo colors",
+        "correct": false,
+        "explanation": "The application's logo colors concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are key considerations when choosing a machine learning algorithm for a production system?"
+      ]
+    }
+  },
+  {
+    "question": "What is a common pitfall when identifying ML business goals?",
+    "answers": [
+      {
+        "text": "Focusing on data availability before defining the problem",
+        "correct": true,
+        "explanation": "Focusing on data availability before defining the problem identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Aligning goals with business KPIs",
+        "correct": false,
+        "explanation": "Aligning goals with business KPIs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Involving cross-functional teams",
+        "correct": false,
+        "explanation": "Involving cross-functional teams concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Defining measurable outcomes",
+        "correct": false,
+        "explanation": "Defining measurable outcomes concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a common pitfall when identifying ML business goals?"
+      ]
+    }
+  },
+  {
+    "question": "What are key elements to define when framing an ML problem?",
+    "answers": [
+      {
+        "text": "Input features",
+        "correct": true,
+        "explanation": "Input features identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Target variable",
+        "correct": true,
+        "explanation": "Target variable identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Business KPIs",
+        "correct": true,
+        "explanation": "Business KPIs identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model deployment region",
+        "correct": false,
+        "explanation": "Model deployment region concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are key elements to define when framing an ML problem?"
+      ]
+    }
+  }
+]

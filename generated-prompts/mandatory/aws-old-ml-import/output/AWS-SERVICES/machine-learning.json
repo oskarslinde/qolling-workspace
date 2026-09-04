@@ -1,0 +1,1383 @@
+[
+  {
+    "question": "Which AWS service is primarily designed to use natural language processing to discover insights and relationships in text?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Q",
+        "correct": false,
+        "explanation": "Amazon Q has a different primary responsibility: it is designed to provide generative AI assistance for work and development tasks."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Comprehend",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Comprehend"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text.",
+    "answerSource": "https://aws.amazon.com/comprehend/"
+  },
+  {
+    "question": "What is the primary purpose of Amazon Lex?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Use natural language processing to discover insights and relationships in text",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "Build conversational interfaces using voice and text",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Convert text into lifelike speech",
+        "correct": false,
+        "explanation": "Convert text into lifelike speech concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and text. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Provide generative ai assistance for work and development tasks",
+        "correct": false,
+        "explanation": "Amazon Q has a different primary responsibility: it is designed to provide generative AI assistance for work and development tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Lex",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Lex"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Lex exists to build conversational interfaces using voice and text.",
+    "answerSource": "https://aws.amazon.com/lex/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to convert text into lifelike speech?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": true,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Polly exists to convert text into lifelike speech. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM is designed to provide dedicated hardware security modules under customer control, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Polly",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Polly"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Polly exists to convert text into lifelike speech.",
+    "answerSource": "https://aws.amazon.com/polly/"
+  },
+  {
+    "question": "A team needs to provide generative AI assistance for work and development tasks. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Q exists to provide generative AI assistance for work and development tasks. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail is designed to record AWS API activity for governance, auditing, and operational investigation, so it does not match this question."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "Amazon Q",
+        "correct": true,
+        "explanation": "Amazon Q exists to provide generative AI assistance for work and development tasks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Q",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Q"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Q exists to provide generative AI assistance for work and development tasks.",
+    "answerSource": "https://aws.amazon.com/amazon-q/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to analyze images and videos to identify objects, faces, text, and activities?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": true,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Rekognition",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Rekognition"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities.",
+    "answerSource": "https://aws.amazon.com/rekognition/"
+  },
+  {
+    "question": "Which pairing correctly matches Amazon SageMaker AI with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Comprehend — build, train, deploy, and operate machine-learning models",
+        "correct": false,
+        "explanation": "Amazon Comprehend — build, train, deploy, and operate machine-learning models concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon SageMaker AI — build, train, deploy, and operate machine-learning models",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Lex — build, train, deploy, and operate machine-learning models",
+        "correct": false,
+        "explanation": "Amazon Lex — build, train, deploy, and operate machine-learning models concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Polly — build, train, deploy, and operate machine-learning models",
+        "correct": false,
+        "explanation": "Amazon Polly — build, train, deploy, and operate machine-learning models concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon SageMaker AI",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon SageMaker AI"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models.",
+    "answerSource": "https://aws.amazon.com/sagemaker/"
+  },
+  {
+    "question": "Which statement about Amazon Textract is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to extract printed text, handwriting, and structured data from documents.",
+        "correct": true,
+        "explanation": "Amazon Textract exists to extract printed text, handwriting, and structured data from documents. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used for natural language processing to discover insights and relationships in text.",
+        "correct": false,
+        "explanation": "It is used for natural language processing to discover insights and relationships in text. concerns a separate capability from the one being tested. Amazon Textract exists to extract printed text, handwriting, and structured data from documents. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "It is used to build conversational interfaces using voice and text.",
+        "correct": false,
+        "explanation": "It is used to build conversational interfaces using voice and text. concerns a separate capability from the one being tested. Amazon Textract exists to extract printed text, handwriting, and structured data from documents. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to convert text into lifelike speech.",
+        "correct": false,
+        "explanation": "It is used to convert text into lifelike speech. concerns a separate capability from the one being tested. Amazon Textract exists to extract printed text, handwriting, and structured data from documents. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Textract",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Textract"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Textract exists to extract printed text, handwriting, and structured data from documents.",
+    "answerSource": "https://aws.amazon.com/textract/"
+  },
+  {
+    "question": "What is the primary purpose of Amazon Transcribe?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Build conversational interfaces using voice and text",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Transcribe exists to convert speech to text using automatic speech recognition. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Convert text into lifelike speech",
+        "correct": false,
+        "explanation": "Convert text into lifelike speech concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use natural language processing to discover insights and relationships in text",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "Convert speech to text using automatic speech recognition",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Transcribe",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Transcribe"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Transcribe exists to convert speech to text using automatic speech recognition.",
+    "answerSource": "https://aws.amazon.com/transcribe/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to translate text between supported natural languages?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Translate exists to translate text between supported natural languages. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Choose Amazon Polly when the requirement is to convert text into lifelike speech. Choose Amazon Translate when the requirement is to translate text between supported natural languages. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": true,
+        "explanation": "Amazon Translate exists to translate text between supported natural languages. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend has a different primary responsibility: it is designed to use natural language processing to discover insights and relationships in text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Translate",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Translate"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Translate exists to translate text between supported natural languages.",
+    "answerSource": "https://aws.amazon.com/translate/"
+  },
+  {
+    "question": "Which service converts speech in an audio file into text?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Amazon Polly is designed to convert text into lifelike speech, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": false,
+        "explanation": "Amazon Translate is designed to translate text between supported natural languages, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex is designed to build conversational interfaces using voice and text, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Transcribe from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Transcribe performs speech-to-text; Polly converts text to speech, Translate handles languages, and Lex builds conversational interfaces.",
+    "answerSource": "https://aws.amazon.com/transcribe/"
+  },
+  {
+    "question": "Which service converts text into lifelike spoken audio?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": false,
+        "explanation": "Amazon Translate is designed to translate text between supported natural languages, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Amazon Rekognition is designed to analyze images and videos to identify objects, faces, text, and activities, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Polly from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Polly performs text-to-speech; Transcribe performs speech recognition, Translate translates text, and Rekognition analyzes images and videos.",
+    "answerSource": "https://aws.amazon.com/polly/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to use natural language processing to discover insights and relationships in text?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon SageMaker AI",
+        "correct": false,
+        "explanation": "Amazon SageMaker AI is designed to build, train, deploy, and operate machine-learning models, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Amazon Textract is designed to extract printed text, handwriting, and structured data from documents, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Comprehend",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select Amazon Comprehend for a requirement to use natural language processing to discover insights and relationships in text"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Comprehend when the requirement is to use natural language processing to discover insights and relationships in text.",
+    "answerSource": "https://aws.amazon.com/comprehend/"
+  },
+  {
+    "question": "A team needs to build conversational interfaces using voice and text. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Translate",
+        "correct": false,
+        "explanation": "Amazon Translate exists to translate text between supported natural languages. Amazon Lex exists to build conversational interfaces using voice and text. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend is designed to use natural language processing to discover insights and relationships in text, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Lex",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon Lex for a requirement to build conversational interfaces using voice and text"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Lex when the requirement is to build conversational interfaces using voice and text.",
+    "answerSource": "https://aws.amazon.com/lex/"
+  },
+  {
+    "question": "A team needs to convert text into lifelike speech. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Amazon Textract is designed to extract printed text, handwriting, and structured data from documents, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": true,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Amazon Rekognition is designed to analyze images and videos to identify objects, faces, text, and activities, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon SageMaker AI",
+        "correct": false,
+        "explanation": "Amazon SageMaker AI is designed to build, train, deploy, and operate machine-learning models, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Polly",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon Polly for a requirement to convert text into lifelike speech"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Polly when the requirement is to convert text into lifelike speech.",
+    "answerSource": "https://aws.amazon.com/polly/"
+  },
+  {
+    "question": "Which AWS service should a team select to provide generative AI assistance for work and development tasks?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Q",
+        "correct": true,
+        "explanation": "Amazon Q exists to provide generative AI assistance for work and development tasks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon SageMaker AI",
+        "correct": false,
+        "explanation": "Amazon SageMaker AI is designed to build, train, deploy, and operate machine-learning models, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Amazon Textract is designed to extract printed text, handwriting, and structured data from documents, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Q",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon Q for a requirement to provide generative AI assistance for work and development tasks"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Q when the requirement is to provide generative AI assistance for work and development tasks.",
+    "answerSource": "https://aws.amazon.com/amazon-q/"
+  },
+  {
+    "question": "A team needs to analyze images and videos to identify objects, faces, text, and activities. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend is designed to use natural language processing to discover insights and relationships in text, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Cost and Usage Reports",
+        "correct": false,
+        "explanation": "AWS Cost and Usage Reports is designed to deliver detailed AWS cost and usage data for analysis, so it does not match this question."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": true,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Rekognition",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon Rekognition for a requirement to analyze images and videos to identify objects, faces, text, and activities"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Rekognition when the requirement is to analyze images and videos to identify objects, faces, text, and activities.",
+    "answerSource": "https://aws.amazon.com/rekognition/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers build, train, deploy, and operate machine-learning models?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Amazon Textract is designed to extract printed text, handwriting, and structured data from documents, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon SageMaker AI",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Amazon Rekognition is designed to analyze images and videos to identify objects, faces, text, and activities, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon SageMaker AI",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select Amazon SageMaker AI for a requirement to build, train, deploy, and operate machine-learning models"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon SageMaker AI when the requirement is to build, train, deploy, and operate machine-learning models.",
+    "answerSource": "https://aws.amazon.com/sagemaker/"
+  },
+  {
+    "question": "A cloud practitioner must extract printed text, handwriting, and structured data from documents. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Choose Amazon Polly when the requirement is to convert text into lifelike speech. Choose Amazon Textract when the requirement is to extract printed text, handwriting, and structured data from documents. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": true,
+        "explanation": "Amazon Textract exists to extract printed text, handwriting, and structured data from documents. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Amazon Comprehend is designed to use natural language processing to discover insights and relationships in text, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Textract exists to extract printed text, handwriting, and structured data from documents. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Textract",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Textract for a requirement to extract printed text, handwriting, and structured data from documents"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Textract when the requirement is to extract printed text, handwriting, and structured data from documents.",
+    "answerSource": "https://aws.amazon.com/textract/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers convert speech to text using automatic speech recognition?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Transcribe",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. Amazon Transcribe exists to convert speech to text using automatic speech recognition. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. Amazon Transcribe exists to convert speech to text using automatic speech recognition. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Q",
+        "correct": false,
+        "explanation": "Amazon Q is designed to provide generative AI assistance for work and development tasks, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Transcribe",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select Amazon Transcribe for a requirement to convert speech to text using automatic speech recognition"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Transcribe when the requirement is to convert speech to text using automatic speech recognition.",
+    "answerSource": "https://aws.amazon.com/transcribe/"
+  },
+  {
+    "question": "A team needs to translate text between supported natural languages. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Choose Amazon Polly when the requirement is to convert text into lifelike speech. Choose Amazon Translate when the requirement is to translate text between supported natural languages. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Q",
+        "correct": false,
+        "explanation": "Amazon Q is designed to provide generative AI assistance for work and development tasks, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Amazon Rekognition is designed to analyze images and videos to identify objects, faces, text, and activities, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": true,
+        "explanation": "Amazon Translate exists to translate text between supported natural languages. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Translate",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon Translate for a requirement to translate text between supported natural languages"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Translate when the requirement is to translate text between supported natural languages.",
+    "answerSource": "https://aws.amazon.com/translate/"
+  },
+  {
+    "question": "When should a team choose Amazon Comprehend instead of Amazon Translate?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to use natural language processing to discover insights and relationships in text, rather than to translate text between supported natural languages.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to translate text between supported natural languages, rather than to use natural language processing to discover insights and relationships in text.",
+        "correct": false,
+        "explanation": "When the requirement is to translate text between supported natural languages, rather than to use natural language processing to discover insights and relationships in text. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Comprehend",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Comprehend from Amazon Translate"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Comprehend is used for natural language processing to discover insights and relationships in text, while Amazon Translate is used to translate text between supported natural languages.",
+    "answerSource": "https://aws.amazon.com/comprehend/"
+  },
+  {
+    "question": "A learner says Amazon Lex and Amazon Q have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide generative AI assistance for work and development tasks.",
+        "correct": false,
+        "explanation": "Both services are primarily used to provide generative AI assistance for work and development tasks. concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and text. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Lex is used to build conversational interfaces using voice and text, whereas Amazon Q is used to provide generative AI assistance for work and development tasks.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Lex is used to provide generative AI assistance for work and development tasks, whereas Amazon Q is used to build conversational interfaces using voice and text.",
+        "correct": false,
+        "explanation": "Amazon Lex is used to provide generative AI assistance for work and development tasks, whereas Amazon Q is used to build conversational interfaces using voice and text. concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and."
+      },
+      {
+        "text": "Both services are primarily used to build conversational interfaces using voice and text.",
+        "correct": false,
+        "explanation": "That describes Amazon Lex, but Amazon Q is primarily used to provide generative AI assistance for work and development tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Lex",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon Lex from Amazon Q"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Lex is used to build conversational interfaces using voice and text, while Amazon Q is used to provide generative AI assistance for work and development tasks.",
+    "answerSource": "https://aws.amazon.com/lex/"
+  },
+  {
+    "question": "Which relationship between Amazon Polly and Amazon Transcribe is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Polly is used to convert text into lifelike speech, whereas Amazon Transcribe is used to convert speech to text using automatic speech recognition.",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Polly is used to convert speech to text using automatic speech recognition, whereas Amazon Transcribe is used to convert text into lifelike speech.",
+        "correct": false,
+        "explanation": "Amazon Polly is used to convert speech to text using automatic speech recognition, whereas Amazon Transcribe is used to convert text into lifelike speech. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The."
+      },
+      {
+        "text": "Both services are primarily used to convert text into lifelike speech.",
+        "correct": false,
+        "explanation": "Both services are primarily used to convert text into lifelike speech. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both services are primarily used to convert speech to text using automatic speech recognition.",
+        "correct": false,
+        "explanation": "Both services are primarily used to convert speech to text using automatic speech recognition. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Polly",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon Polly from Amazon Transcribe"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Polly is used to convert text into lifelike speech, while Amazon Transcribe is used to convert speech to text using automatic speech recognition.",
+    "answerSource": "https://aws.amazon.com/polly/"
+  },
+  {
+    "question": "When should a team choose Amazon Q instead of Amazon Lex?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to build conversational interfaces using voice and text, rather than to provide generative AI assistance for work and development tasks.",
+        "correct": false,
+        "explanation": "When the requirement is to build conversational interfaces using voice and text, rather than to provide generative AI assistance for work and development tasks. concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and text. The distinction."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and text. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon Lex exists to build conversational interfaces using voice and text. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to provide generative AI assistance for work and development tasks, rather than to build conversational interfaces using voice and text.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Q",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Q from Amazon Lex"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Q is used to provide generative AI assistance for work and development tasks, while Amazon Lex is used to build conversational interfaces using voice and text.",
+    "answerSource": "https://aws.amazon.com/amazon-q/"
+  },
+  {
+    "question": "When should a team choose Amazon Rekognition instead of Amazon Textract?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to analyze images and videos to identify objects, faces, text, and activities, rather than to extract printed text, handwriting, and structured data from documents.",
+        "correct": true,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to extract printed text, handwriting, and structured data from documents, rather than to analyze images and videos to identify objects, faces, text, and activities.",
+        "correct": false,
+        "explanation": "Amazon Textract exists to extract printed text, handwriting, and structured data from documents. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Rekognition",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Rekognition from Amazon Textract"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Rekognition is used to analyze images and videos to identify objects, faces, text, and activities, while Amazon Textract is used to extract printed text, handwriting, and structured data from documents.",
+    "answerSource": "https://aws.amazon.com/rekognition/"
+  },
+  {
+    "question": "When should a team choose Amazon SageMaker AI instead of Amazon Q?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to build, train, deploy, and operate machine-learning models, rather than to provide generative AI assistance for work and development tasks.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to provide generative AI assistance for work and development tasks, rather than to build, train, deploy, and operate machine-learning models.",
+        "correct": false,
+        "explanation": "When the requirement is to provide generative AI assistance for work and development tasks, rather than to build, train, deploy, and operate machine-learning models. concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon SageMaker AI exists to build, train, deploy, and operate machine-learning models. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon SageMaker AI",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon SageMaker AI from Amazon Q"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon SageMaker AI is used to build, train, deploy, and operate machine-learning models, while Amazon Q is used to provide generative AI assistance for work and development tasks.",
+    "answerSource": "https://aws.amazon.com/sagemaker/"
+  },
+  {
+    "question": "When should a team choose Amazon Textract instead of Amazon Rekognition?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to extract printed text, handwriting, and structured data from documents, rather than to analyze images and videos to identify objects, faces, text, and activities.",
+        "correct": true,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to analyze images and videos to identify objects, faces, text, and activities, rather than to extract printed text, handwriting, and structured data from documents.",
+        "correct": false,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "Move databases and data stores to AWS while keeping source systems available",
+        "correct": false,
+        "explanation": "Move databases and data stores to AWS while keeping source systems available concerns a separate capability from the one being tested. Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Textract",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Textract from Amazon Rekognition"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Textract is used to extract printed text, handwriting, and structured data from documents, while Amazon Rekognition is used to analyze images and videos to identify objects, faces, text, and activities.",
+    "answerSource": "https://aws.amazon.com/textract/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon Transcribe from Amazon Polly?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Transcribe is used to convert text into lifelike speech, whereas Amazon Polly is used to convert speech to text using automatic speech recognition.",
+        "correct": false,
+        "explanation": "Amazon Transcribe is used to convert text into lifelike speech, whereas Amazon Polly is used to convert speech to text using automatic speech recognition. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The."
+      },
+      {
+        "text": "Both services are primarily used to convert speech to text using automatic speech recognition.",
+        "correct": false,
+        "explanation": "Both services are primarily used to convert speech to text using automatic speech recognition. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both services are primarily used to convert text into lifelike speech.",
+        "correct": false,
+        "explanation": "Both services are primarily used to convert text into lifelike speech. concerns a separate capability from the one being tested. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Transcribe is used to convert speech to text using automatic speech recognition, whereas Amazon Polly is used to convert text into lifelike speech.",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Transcribe",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Transcribe from Amazon Polly"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Transcribe is used to convert speech to text using automatic speech recognition, while Amazon Polly is used to convert text into lifelike speech.",
+    "answerSource": "https://aws.amazon.com/transcribe/"
+  },
+  {
+    "question": "A learner says Amazon Translate and Amazon Comprehend have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to translate text between supported natural languages.",
+        "correct": false,
+        "explanation": "That describes Amazon Translate, but Amazon Comprehend is primarily used for natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "Both services are primarily used for natural language processing to discover insights and relationships in text.",
+        "correct": false,
+        "explanation": "Both services are primarily used for natural language processing to discover insights and relationships in text. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The distinction is important when selecting."
+      },
+      {
+        "text": "Amazon Translate is used to translate text between supported natural languages, whereas Amazon Comprehend is used for natural language processing to discover insights and relationships in text.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Translate is used for natural language processing to discover insights and relationships in text, whereas Amazon Comprehend is used to translate text between supported natural languages.",
+        "correct": false,
+        "explanation": "Amazon Translate is used for natural language processing to discover insights and relationships in text, whereas Amazon Comprehend is used to translate text between supported natural languages. concerns a separate capability from the one being tested. Amazon Comprehend exists to use natural language processing to discover."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Machine Learning",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Machine Learning",
+      "subtopic": "Amazon Translate",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon Translate from Amazon Comprehend"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Translate is used to translate text between supported natural languages, while Amazon Comprehend is used for natural language processing to discover insights and relationships in text.",
+    "answerSource": "https://aws.amazon.com/translate/"
+  }
+]

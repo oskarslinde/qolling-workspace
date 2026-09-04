@@ -1,0 +1,145 @@
+[
+  {
+    "question": "Which AWS service is primarily designed to provide technical assistance, guidance, and support-plan benefits for AWS customers?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Athena",
+        "correct": false,
+        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "AWS Support",
+        "correct": true,
+        "explanation": "AWS Support exists to provide technical assistance, guidance, and support-plan benefits for AWS customers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false,
+        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Customer Enablement"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Customer Enablement",
+      "subtopic": "AWS Support",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Support"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Support exists to provide technical assistance, guidance, and support-plan benefits for AWS customers.",
+    "answerSource": "https://aws.amazon.com/premiumsupport/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to provide technical assistance, guidance, and support-plan benefits for AWS customers?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Support",
+        "correct": true,
+        "explanation": "AWS Support exists to provide technical assistance, guidance, and support-plan benefits for AWS customers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Transit Gateway",
+        "correct": false,
+        "explanation": "AWS Transit Gateway is designed to connect multiple VPCs and on-premises networks through a central network hub, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false,
+        "explanation": "AWS Trusted Advisor is designed to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, so it does not match this requirement."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": false,
+        "explanation": "AWS VPN is designed to create encrypted network connections between networks and AWS, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Customer Enablement",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Customer Enablement",
+      "subtopic": "AWS Support",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Support for a requirement to provide technical assistance, guidance, and support-plan benefits for AWS customers"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Support when the requirement is to provide technical assistance, guidance, and support-plan benefits for AWS customers.",
+    "answerSource": "https://aws.amazon.com/premiumsupport/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Support from AWS Trusted Advisor?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Support is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to provide technical assistance, guidance, and support-plan benefits for AWS customers.",
+        "correct": false,
+        "explanation": "The statement about AWS Support is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to provide technical assistance, guidance, and support-plan benefits for AWS customers. describes a different technical behavior from the capability required."
+      },
+      {
+        "text": "Both services are primarily used to provide technical assistance, guidance, and support-plan benefits for AWS customers.",
+        "correct": false,
+        "explanation": "That describes AWS Support, but AWS Trusted Advisor is primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience."
+      },
+      {
+        "text": "Both services are primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": false,
+        "explanation": "That describes AWS Trusted Advisor, but AWS Support is primarily used to provide technical assistance, guidance, and support-plan benefits for AWS customers."
+      },
+      {
+        "text": "AWS Support is used to provide technical assistance, guidance, and support-plan benefits for AWS customers, whereas AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": true,
+        "explanation": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Customer Enablement",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Customer Enablement",
+      "subtopic": "AWS Support",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Support from AWS Trusted Advisor"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Support is used to provide technical assistance, guidance, and support-plan benefits for AWS customers, while AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+    "answerSource": "https://aws.amazon.com/premiumsupport/"
+  }
+]

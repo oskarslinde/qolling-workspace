@@ -1,0 +1,35 @@
+# Local credentials and private key material
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Dependency, build, and runtime output
+**/node_modules/
+**/dist/
+**/target/
+**/coverage/
+**/test-results/
+**/playwright-report/
+**/artifacts/
+**/logs/
+*.log
+
+# Generated local reports and Python caches
+hygiene-reports/
+__pycache__/
+*.py[cod]
+.menu-last-script
+task-manager/TASK_EXECUTION_*.json
+task-manager/TASK_TICKET_COUNTERS.json
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

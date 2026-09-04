@@ -1,0 +1,662 @@
+[
+  {
+    "question": "Which statement best describes Polymorphism in practical Java OOP?",
+    "answers": [
+      {
+        "text": "Replace provider conditionals with polymorphic collaborators while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Polymorphism mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Polymorphism should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Polymorphism only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Polymorphism when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "conceptual",
+      "conceptual polymorphism 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-polymorphism-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Polymorphism is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "Why does Polymorphism matter when designing backend Java classes?",
+    "answers": [
+      {
+        "text": "Replace provider conditionals with polymorphic collaborators while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Polymorphism mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Polymorphism should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Polymorphism only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Polymorphism when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "conceptual",
+      "conceptual polymorphism 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-polymorphism-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Polymorphism is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "A team is reviewing object boundaries in a Spring Boot service. What is the best interpretation of Polymorphism?",
+    "answers": [
+      {
+        "text": "Replace provider conditionals with polymorphic collaborators while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Polymorphism mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Polymorphism should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Polymorphism only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Polymorphism when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "conceptual",
+      "conceptual polymorphism 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-polymorphism-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Polymorphism is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\ninterface Discount { int apply(int price); }\nclass NoDiscount implements Discount { public int apply(int price) { return price; } }\nclass TenOff implements Discount { public int apply(int price) { return price - 10; } }\nDiscount discount = new TenOff();\nSystem.out.println(discount.apply(100));\n```\n\nWhich option best explains the runtime behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates calling implementations through a shared parent or interface and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "code reading",
+      "code reading polymorphism 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-polymorphism-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Polymorphism through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\ninterface Discount { int apply(int price); }\nclass NoDiscount implements Discount { public int apply(int price) { return price; } }\nclass TenOff implements Discount { public int apply(int price) { return price - 10; } }\nDiscount discount = new TenOff();\nSystem.out.println(discount.apply(100));\n```\n\nWhich option best explains the state boundary shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates calling implementations through a shared parent or interface and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "code reading",
+      "code reading polymorphism 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-polymorphism-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Polymorphism through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\ninterface Discount { int apply(int price); }\nclass NoDiscount implements Discount { public int apply(int price) { return price; } }\nclass TenOff implements Discount { public int apply(int price) { return price - 10; } }\nDiscount discount = new TenOff();\nSystem.out.println(discount.apply(100));\n```\n\nWhich option best explains the declared type behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates calling implementations through a shared parent or interface and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "code reading",
+      "code reading polymorphism 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-polymorphism-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "The snippet is intended to test whether the reader follows Polymorphism through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\ninterface Discount { int apply(int price); }\nclass NoDiscount implements Discount { public int apply(int price) { return price; } }\nclass TenOff implements Discount { public int apply(int price) { return price - 10; } }\nDiscount discount = new TenOff();\nSystem.out.println(discount.apply(100));\n```\n\nWhich option best explains the collection behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates calling implementations through a shared parent or interface and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "code reading",
+      "code reading polymorphism 4"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-polymorphism-4"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "The snippet is intended to test whether the reader follows Polymorphism through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "You are implementing a small order-processing feature. Which approach best applies Polymorphism?\n\nChoose the option that best handles the implementation boundary.",
+    "answers": [
+      {
+        "text": "Create focused Java types that replace provider conditionals with polymorphic collaborators, with dependencies and state represented explicitly.",
+        "correct": true
+      },
+      {
+        "text": "Put every rule into one static utility method and pass maps of loosely named values.",
+        "correct": false,
+        "wrongAnswerExplanation": "That hides object roles and makes validation, testing, and future changes harder."
+      },
+      {
+        "text": "Expose all fields publicly so controllers, services, and tests can update them directly.",
+        "correct": false,
+        "wrongAnswerExplanation": "Public mutable fields weaken invariants and make it difficult to know where state changed."
+      },
+      {
+        "text": "Choose inheritance or abstraction before identifying the actual object responsibility.",
+        "correct": false,
+        "wrongAnswerExplanation": "The design should start from the domain responsibility and only introduce inheritance or abstraction when it fits."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "coding task",
+      "coding task polymorphism 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "coding-task-polymorphism-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "A good implementation of Polymorphism should make the object model clearer and reduce accidental coupling between callers and internals."
+  },
+  {
+    "question": "You are implementing a small order-processing feature. Which approach best applies Polymorphism?\n\nChoose the option that best handles the domain modeling choice.",
+    "answers": [
+      {
+        "text": "Create focused Java types that replace provider conditionals with polymorphic collaborators, with dependencies and state represented explicitly.",
+        "correct": true
+      },
+      {
+        "text": "Put every rule into one static utility method and pass maps of loosely named values.",
+        "correct": false,
+        "wrongAnswerExplanation": "That hides object roles and makes validation, testing, and future changes harder."
+      },
+      {
+        "text": "Expose all fields publicly so controllers, services, and tests can update them directly.",
+        "correct": false,
+        "wrongAnswerExplanation": "Public mutable fields weaken invariants and make it difficult to know where state changed."
+      },
+      {
+        "text": "Choose inheritance or abstraction before identifying the actual object responsibility.",
+        "correct": false,
+        "wrongAnswerExplanation": "The design should start from the domain responsibility and only introduce inheritance or abstraction when it fits."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "coding task",
+      "coding task polymorphism 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "coding-task-polymorphism-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "A good implementation of Polymorphism should make the object model clearer and reduce accidental coupling between callers and internals."
+  },
+  {
+    "question": "You are implementing a small order-processing feature. Which approach best applies Polymorphism?\n\nChoose the option that best handles the validation placement.",
+    "answers": [
+      {
+        "text": "Create focused Java types that replace provider conditionals with polymorphic collaborators, with dependencies and state represented explicitly.",
+        "correct": true
+      },
+      {
+        "text": "Put every rule into one static utility method and pass maps of loosely named values.",
+        "correct": false,
+        "wrongAnswerExplanation": "That hides object roles and makes validation, testing, and future changes harder."
+      },
+      {
+        "text": "Expose all fields publicly so controllers, services, and tests can update them directly.",
+        "correct": false,
+        "wrongAnswerExplanation": "Public mutable fields weaken invariants and make it difficult to know where state changed."
+      },
+      {
+        "text": "Choose inheritance or abstraction before identifying the actual object responsibility.",
+        "correct": false,
+        "wrongAnswerExplanation": "The design should start from the domain responsibility and only introduce inheritance or abstraction when it fits."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "coding task",
+      "coding task polymorphism 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "coding-task-polymorphism-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "A good implementation of Polymorphism should make the object model clearer and reduce accidental coupling between callers and internals."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Polymorphism. The symptom is: type checks duplicate dispatch logic and resist extension. What is the best first fix?\n\nChoose the fix that best addresses the root cause.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "debugging",
+      "debugging polymorphism 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-polymorphism-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Polymorphism. The symptom is: type checks duplicate dispatch logic and resist extension. What is the best first fix?\n\nChoose the fix that best addresses the contract repair.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "debugging",
+      "debugging polymorphism 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-polymorphism-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Polymorphism?\n\nChoose the design that best balances extension design for polymorphism.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use replace provider conditionals with polymorphic collaborators, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "design scenario",
+      "design scenario polymorphism 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-polymorphism-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Polymorphism should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Polymorphism?\n\nChoose the design that best balances layered architecture for polymorphism.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use replace provider conditionals with polymorphic collaborators, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "design scenario",
+      "design scenario polymorphism 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-polymorphism-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Polymorphism should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Polymorphism?\n\nChoose the design that best balances testability tradeoff for polymorphism.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use replace provider conditionals with polymorphic collaborators, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "polymorphism",
+      "design scenario",
+      "design scenario polymorphism 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "polymorphism",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-polymorphism-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Polymorphism should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  }
+]

@@ -1,0 +1,621 @@
+[
+  {
+    "question": "What is the primary purpose of AWS CLI?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Automate source, build, test, and deployment stages in a release pipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline has a different primary responsibility: it is designed to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "Trace requests across distributed applications to analyze latency and faults",
+        "correct": false,
+        "explanation": "AWS X-Ray has a different primary responsibility: it is designed to trace requests across distributed applications to analyze latency and faults."
+      },
+      {
+        "text": "Provide command-line access to AWS services and resources",
+        "correct": true,
+        "explanation": "AWS CLI exists to provide command-line access to AWS services and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Compile source code, run tests, and produce build artifacts in managed build environments",
+        "correct": false,
+        "explanation": "AWS CodeBuild has a different primary responsibility: it is designed to compile source code, run tests, and produce build artifacts in managed build environments."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CLI",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CLI"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CLI exists to provide command-line access to AWS services and resources.",
+    "answerSource": "https://aws.amazon.com/cli/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to compile source code, run tests, and produce build artifacts in managed build environments?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CLI",
+        "correct": false,
+        "explanation": "Choose AWS CLI when the requirement is to provide command-line access to AWS services and resources. Choose AWS CodeBuild when the requirement is to compile source code, run tests, and produce build artifacts in managed build environments. Those services use different integration patterns and address different."
+      },
+      {
+        "text": "AWS CodeBuild",
+        "correct": true,
+        "explanation": "AWS CodeBuild exists to compile source code, run tests, and produce build artifacts in managed build environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline has a different primary responsibility: it is designed to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false,
+        "explanation": "AWS X-Ray has a different primary responsibility: it is designed to trace requests across distributed applications to analyze latency and faults."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodeBuild",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CodeBuild"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS CodeBuild exists to compile source code, run tests, and produce build artifacts in managed build environments.",
+    "answerSource": "https://aws.amazon.com/codebuild/"
+  },
+  {
+    "question": "What is the primary purpose of AWS CodePipeline?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Automate source, build, test, and deployment stages in a release pipeline",
+        "correct": true,
+        "explanation": "AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Provide command-line access to AWS services and resources",
+        "correct": false,
+        "explanation": "AWS CLI exists to provide command-line access to AWS services and resources. AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Compile source code, run tests, and produce build artifacts in managed build environments",
+        "correct": false,
+        "explanation": "AWS CodeBuild has a different primary responsibility: it is designed to compile source code, run tests, and produce build artifacts in managed build environments."
+      },
+      {
+        "text": "Provide managed VPN access for individual users to AWS and on-premises networks",
+        "correct": false,
+        "explanation": "That describes AWS Client VPN, which is designed to provide managed VPN access for individual users to AWS and on-premises networks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodePipeline",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CodePipeline"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline.",
+    "answerSource": "https://aws.amazon.com/codepipeline/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to trace requests across distributed applications to analyze latency and faults?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild has a different primary responsibility: it is designed to compile source code, run tests, and produce build artifacts in managed build environments."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation is designed to define and provision AWS infrastructure as code using templates, so it does not match this question."
+      },
+      {
+        "text": "AWS CLI",
+        "correct": false,
+        "explanation": "Choose AWS CLI when the requirement is to provide command-line access to AWS services and resources. Choose AWS X-Ray when the requirement is to trace requests across distributed applications to analyze latency and faults. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS X-Ray",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS X-Ray"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults.",
+    "answerSource": "https://aws.amazon.com/xray/"
+  },
+  {
+    "question": "Which service compiles code and runs automated tests as a build step?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeDeploy",
+        "correct": false,
+        "explanation": "AWS CodeDeploy is designed to automate application deployments to supported compute services, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CodeCommit",
+        "correct": false,
+        "explanation": "AWS CodeCommit is designed to host private Git-compatible source repositories, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CodeBuild",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS CodeBuild from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "CodeBuild compiles and tests code; CodePipeline orchestrates stages, CodeDeploy deploys applications, and CodeCommit hosts source repositories.",
+    "answerSource": "https://aws.amazon.com/codebuild/"
+  },
+  {
+    "question": "A cloud practitioner must provide command-line access to AWS services and resources. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Compute Optimizer",
+        "correct": false,
+        "explanation": "AWS Compute Optimizer is designed to recommend better-sized AWS resources based on utilization data, so it does not match this question."
+      },
+      {
+        "text": "AWS CLI",
+        "correct": true,
+        "explanation": "AWS CLI exists to provide command-line access to AWS services and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild is designed to compile source code, run tests, and produce build artifacts in managed build environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CLI",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS CLI for a requirement to provide command-line access to AWS services and resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS CLI when the requirement is to provide command-line access to AWS services and resources.",
+    "answerSource": "https://aws.amazon.com/cli/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers compile source code, run tests, and produce build artifacts in managed build environments?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": true,
+        "explanation": "AWS CodeBuild exists to compile source code, run tests, and produce build artifacts in managed build environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CLI",
+        "correct": false,
+        "explanation": "AWS CLI is designed to provide command-line access to AWS services and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodeBuild",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS CodeBuild for a requirement to compile source code, run tests, and produce build artifacts in managed build environments"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS CodeBuild when the requirement is to compile source code, run tests, and produce build artifacts in managed build environments.",
+    "answerSource": "https://aws.amazon.com/codebuild/"
+  },
+  {
+    "question": "A team needs to automate source, build, test, and deployment stages in a release pipeline. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild is designed to compile source code, run tests, and produce build artifacts in managed build environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false,
+        "explanation": "AWS X-Ray is designed to trace requests across distributed applications to analyze latency and faults, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Control Tower",
+        "correct": false,
+        "explanation": "AWS Control Tower is designed to set up and govern a multi-account AWS environment using landing-zone guardrails, so it does not match this question."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": true,
+        "explanation": "AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodePipeline",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS CodePipeline for a requirement to automate source, build, test, and deployment stages in a release pipeline"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline.",
+    "answerSource": "https://aws.amazon.com/codepipeline/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers trace requests across distributed applications to analyze latency and faults?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild is designed to compile source code, run tests, and produce build artifacts in managed build environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Cost Explorer",
+        "correct": false,
+        "explanation": "AWS Cost Explorer is designed to visualize, filter, and analyze historical AWS costs and usage, so it does not match this question."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CLI",
+        "correct": false,
+        "explanation": "AWS CLI is designed to provide command-line access to AWS services and resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS X-Ray",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS X-Ray for a requirement to trace requests across distributed applications to analyze latency and faults"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS X-Ray when the requirement is to trace requests across distributed applications to analyze latency and faults.",
+    "answerSource": "https://aws.amazon.com/xray/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS CLI from AWS Management Console?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide a browser-based interface for managing AWS resources.",
+        "correct": false,
+        "explanation": "That describes AWS Management Console, but AWS CLI is primarily used to provide command-line access to AWS services and resources."
+      },
+      {
+        "text": "AWS CLI is used to provide command-line access to AWS services and resources, whereas AWS Management Console is used to provide a browser-based interface for managing AWS resources.",
+        "correct": true,
+        "explanation": "AWS Management Console exists to provide a browser-based interface for managing AWS resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CLI is used to provide a browser-based interface for managing AWS resources, whereas AWS Management Console is used to provide command-line access to AWS services and resources.",
+        "correct": false,
+        "explanation": "AWS CLI is used to provide a browser-based interface for managing AWS resources, whereas AWS Management Console is used to provide command-line access to AWS services and resources. concerns a separate capability from the one being tested. AWS Management Console exists to provide a browser-based interface."
+      },
+      {
+        "text": "Both services are primarily used to provide command-line access to AWS services and resources.",
+        "correct": false,
+        "explanation": "That describes AWS CLI, but AWS Management Console is primarily used to provide a browser-based interface for managing AWS resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CLI",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS CLI from AWS Management Console"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CLI is used to provide command-line access to AWS services and resources, while AWS Management Console is used to provide a browser-based interface for managing AWS resources.",
+    "answerSource": "https://aws.amazon.com/cli/"
+  },
+  {
+    "question": "Which relationship between AWS CodeBuild and AWS CodePipeline is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild is used to compile source code, run tests, and produce build artifacts in managed build environments, whereas AWS CodePipeline is used to automate source, build, test, and deployment stages in a release pipeline.",
+        "correct": true,
+        "explanation": "AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CodeBuild is used to automate source, build, test, and deployment stages in a release pipeline, whereas AWS CodePipeline is used to compile source code, run tests, and produce build artifacts in managed build environments.",
+        "correct": false,
+        "explanation": "The statement about AWS CodeBuild is used to automate source, build, test, and deployment stages in a release pipeline, whereas AWS CodePipeline is used to compile source code, run tests, and produce build artifacts in managed build environments. describes a different technical behavior from the capability."
+      },
+      {
+        "text": "Both services are primarily used to compile source code, run tests, and produce build artifacts in managed build environments.",
+        "correct": false,
+        "explanation": "That describes AWS CodeBuild, but AWS CodePipeline is primarily used to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "Both services are primarily used to automate source, build, test, and deployment stages in a release pipeline.",
+        "correct": false,
+        "explanation": "That describes AWS CodePipeline, but AWS CodeBuild is primarily used to compile source code, run tests, and produce build artifacts in managed build environments."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodeBuild",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS CodeBuild from AWS CodePipeline"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CodeBuild is used to compile source code, run tests, and produce build artifacts in managed build environments, while AWS CodePipeline is used to automate source, build, test, and deployment stages in a release pipeline.",
+    "answerSource": "https://aws.amazon.com/codebuild/"
+  },
+  {
+    "question": "When should a team choose AWS CodePipeline instead of AWS CodeBuild?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to compile source code, run tests, and produce build artifacts in managed build environments, rather than to automate source, build, test, and deployment stages in a release pipeline.",
+        "correct": false,
+        "explanation": "When the requirement is to compile source code, run tests, and produce build artifacts in managed build environments, rather than to automate source, build, test, and deployment stages in a release pipeline. concerns a separate capability from the one being tested. AWS CodePipeline exists to automate."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to automate source, build, test, and deployment stages in a release pipeline, rather than to compile source code, run tests, and produce build artifacts in managed build environments.",
+        "correct": true,
+        "explanation": "AWS CodePipeline exists to automate source, build, test, and deployment stages in a release pipeline. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS CodePipeline",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS CodePipeline from AWS CodeBuild"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CodePipeline is used to automate source, build, test, and deployment stages in a release pipeline, while AWS CodeBuild is used to compile source code, run tests, and produce build artifacts in managed build environments.",
+    "answerSource": "https://aws.amazon.com/codepipeline/"
+  },
+  {
+    "question": "When should a team choose AWS X-Ray instead of Amazon CloudWatch?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to trace requests across distributed applications to analyze latency and faults, rather than to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+        "correct": true,
+        "explanation": "Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications, rather than to trace requests across distributed applications to analyze latency and faults.",
+        "correct": false,
+        "explanation": "When the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications, rather than to trace requests across distributed applications to analyze latency and faults. concerns a separate capability from the one being tested. Amazon CloudWatch exists to monitor metrics, logs, events."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Developer Tools",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Developer Tools",
+      "subtopic": "AWS X-Ray",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS X-Ray from Amazon CloudWatch"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS X-Ray is used to trace requests across distributed applications to analyze latency and faults, while Amazon CloudWatch is used to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+    "answerSource": "https://aws.amazon.com/xray/"
+  }
+]

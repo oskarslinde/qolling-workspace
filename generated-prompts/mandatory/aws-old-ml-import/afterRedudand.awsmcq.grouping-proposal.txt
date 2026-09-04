@@ -1,0 +1,644 @@
+AWS QUESTION COLLECTION GROUPING PROPOSAL - AFTER REDUNDANT TAG REMOVAL
+======================================================================
+
+Source: original.awsmcq.json
+Scope: existing questions only. No questions were created, rewritten, or removed in this pass.
+Starting point: the deduplicated output set of 573 questions.
+Status: removed 35 Ignore tags, 3 Potential Duplicate tags, and 4 IDK tags from the nine output collection files.
+The original source JSON and the prior grouping proposals remain unchanged.
+
+Remaining review work
+---------------------
+- Exact duplicate removal is complete for the output files.
+- 175 questions have other than one marked-correct answer and need a single-select versus multi-select decision.
+- Factual accuracy, wording, distractors, and coverage improvements remain out of scope for this pass.
+
+Collection proposals after redundant tag removal
+-----------------------------------------------
+
+AWS ML certification scenarios (34 questions)
+---------------------------------------------
+Output file: output/aws-ml-certification-scenarios.json
+Rationale: Keep the scenario-based questions together for an exam-style review of realism, single-best-answer structure, and current AWS guidance.
+Questions:
+Q031 | An ML engineer has an Amazon Comprehend custom model in Account A in the us-east-1 Region. The ML engineer needs to copy the model to Account B in the same Region. Which solution will meet this requirement with the LEAST development effort?
+Q032 | Which AWS service is best suited for labeling large datasets for supervised learning?
+Q033 | An ML engineer needs to monitor model drift in a deployed SageMaker endpoint. What should they use?
+Q034 | A company is using Amazon SageMaker to deploy a machine learning model for real-time inference. They want to reduce costs while maintaining low latency. Which approach should they take? [2 marked-correct answers]
+Q035 | An ML engineer needs to track and compare multiple training runs with different hyperparameters. Which SageMaker feature should they use?
+Q036 | A team is using Amazon SageMaker Clarify to evaluate a model. What can SageMaker Clarify help them detect? [2 marked-correct answers]
+Q038 | An ML engineer needs to securely share a SageMaker model between two AWS accounts. Which solution ensures the model is shared with minimal security risk?
+Q039 | Which of the following methods can be used to securely transfer large datasets between AWS accounts for machine learning purposes? [2 marked-correct answers]
+Q040 | An ML engineer needs to automate the deployment of machine learning models across multiple AWS accounts. Which service should they use?
+Q096 | A company wants to deploy a real-time fraud detection model with low latency. Which combination of services is most appropriate? [2 marked-correct answers]
+Q097 | A company wants to reduce the cost of storing infrequently accessed training data. Which S3 storage class should they use? [2 marked-correct answers]
+Q098 | An ML model is overfitting the training data. Which techniques can help reduce overfitting? [3 marked-correct answers]
+Q099 | Which of the following are valid use cases for Amazon Comprehend? [3 marked-correct answers]
+Q101 | An ML team is concerned about both fairness in model predictions and detecting post-deployment data drift. Which combination of SageMaker tools should they use, and for what purpose?
+Q102 | An ML engineer wants to monitor and log all API calls made to SageMaker in multiple AWS accounts. Which service should they use?
+Q103 | An ML engineer needs to monitor model drift in a deployed SageMaker endpoint across multiple AWS accounts. Which solution should they use?
+Q117 | How does GPT-3 differ from its predecessors?
+Q206 | A company is using Amazon SageMaker and millions of files to train an ML model. Each file is several megabytes in size. The files are stored in an Amazon S3 bucket. The company needs to improve training performance. Which solution will meet these requirements in the LEAST amount of time?
+Q207 | A company stores time-series data about user clicks in an Amazon S3 bucket. The raw data consists of millions of rows of user activity every day. ML engineers access the data to develop their ML models. The ML engineers need to generate daily reports and analyze click trends over the past 3 days by using Amazon Athena. The company must retain the data for 30 days before archiving the data. Which solution will provide the HIGHEST performance for data retrieval?
+Q208 | A company runs an Amazon SageMaker domain in a public subnet of a newly created VPC. The network is configured properly, and ML engineers can access the SageMaker domain. Recently, the company discovered suspicious traffic to the domain from a specific IP address. The company needs to block traffic from the specific IP address. Which update to the network configuration will meet this requirement?
+Q209 | Which AWS service allows you to run SQL queries on data stored in S3 without loading it into a database?
+Q210 | A team is using SageMaker Studio for collaborative model development. What features does SageMaker Studio provide? [3 marked-correct answers]
+Q215 | Which AWS service can be used to securely share machine learning datasets between multiple accounts?
+Q216 | Which AWS service can be used to monitor and log all API calls made to SageMaker in multiple AWS accounts?
+Q337 | An ML engineer has trained a neural network using stochastic gradient descent (SGD). The neural network performs poorly on the test set. The values for training loss and validation loss remain high and show an oscillating pattern. The values decrease for a few epochs and then increase for a few epochs before repeating the same cycle. What should the ML engineer do to improve the training process?
+Q338 | A data science team is training a model using Amazon SageMaker. They want to automatically tune hyperparameters to find the best model configuration. Which SageMaker feature should they use?
+Q339 | Which of the following are benefits of using SageMaker Pipelines? [3 marked-correct answers]
+Q340 | A data science team is using Amazon SageMaker to train a model on a large dataset stored in Amazon S3. They want to reduce the time it takes to preprocess the data before training. What is the most efficient solution? [2 marked-correct answers]
+Q341 | A company wants to use Amazon SageMaker to train a model on sensitive healthcare data. The data must not leave the company’s private network. What is the most secure way to meet this requirement?
+Q343 | Which AWS service can be used to automate the deployment of machine learning models across multiple accounts?
+Q344 | An ML engineer needs to ensure that a SageMaker model deployed in Account A can be accessed by a Lambda function in Account B. Which solution meets this requirement?
+Q345 | Which AWS service can be used to automate the creation, management, and deployment of machine learning models across multiple accounts?
+Q346 | An ML engineer needs to securely transfer large datasets between AWS accounts for machine learning purposes. Which solution should they use? [2 marked-correct answers]
+Q362 | You are fine-tuning a pre-trained GPT model for a customer service chatbot. Which training technique is most appropriate if you want to adapt the model with minimal training data?
+
+Generative AI and Amazon Bedrock (58 questions)
+-----------------------------------------------
+Output file: output/generative-ai-and-amazon-bedrock.json
+Rationale: Foundation models, prompt and decoding concepts, Bedrock capabilities, agents, knowledge bases, and guardrails form one learner journey.
+Questions:
+Q052 | You need to build a model that can generate text based on a given prompt. Which SageMaker algorithm should you use?
+Q053 | What is the main advantage of using GPT models?
+Q054 | What does 'Top-p' (nucleus) sampling refer to in language model decoding?
+Q055 | Which AWS service would you use to quickly deploy a pre-trained model like GPT-J for text generation tasks?
+Q056 | In the context of self-attention, which matrices are used to compute the attention scores for each token?
+Q061 | Which of the following is a key benefit of using Amazon Bedrock?
+Q062 | Which security feature is included with Amazon Bedrock?
+Q063 | You're implementing a customer query system that uses Amazon Bedrock's LLM agents. The agent needs to use both a knowledge base and an external API for retrieving real-time data. How should you structure the agent to meet these requirements?
+Q064 | You are using Amazon Bedrock to build an AI system for generating marketing content. The system must ensure the content generated adheres to brand guidelines and avoids inappropriate language. Which feature of Amazon Bedrock would best serve this purpose?
+Q118 | What is a key feature of the Transformer architecture used in GPT models?
+Q119 | Which of the following is a common application of GPT models?
+Q120 | What is the significance of 'pre-training' in GPT models?
+Q121 | In a sequence-to-sequence transformer model used for translation, what is the role of the decoder?
+Q122 | When using masked self-attention in GPT models, what is the purpose of the mask?
+Q123 | You are tasked with summarizing large volumes of text data. Which model would you select from AWS’s offerings?
+Q124 | What is a key advantage of using self-attention in transformer models over traditional RNNs?
+Q125 | Which component in a transformer model is responsible for scaling the dot-product attention scores?
+Q126 | In the context of BERT, what does the acronym stand for?
+Q128 | Which type of neural network is most suitable for time-series forecasting?
+Q129 | When setting up a new LLM agent in Amazon Bedrock, you want it to dynamically decide which tool to use based on the user's query. Which component is responsible for guiding the LLM in making this decision?
+Q130 | You are tasked with deploying a Bedrock model that requires high availability and low-latency responses. Which deployment option should you choose?
+Q145 | You’re building a legal assistant that needs to answer questions based on thousands of legal documents stored in your system. What architecture would help your model retrieve relevant documents before generating a response?
+Q149 | Your company is deploying a chatbot using a foundation model on Amazon Bedrock. You want to ensure it doesn’t respond to inappropriate topics or hallucinate facts. Which Bedrock feature should you use to enforce these safety measures?
+Q229 | What does GPT stand for in the context of machine learning?
+Q230 | Which version of GPT introduced the concept of 'attention mechanism'?
+Q231 | What are tokens in the context of language models like GPT?
+Q233 | When using a Transformer model for text classification, which component is responsible for capturing the relationships between different tokens in a sentence?
+Q234 | You are using AWS SageMaker JumpStart to deploy a model for text generation. Which model type would you choose for multilingual text generation?
+Q235 | During the training of a transformer model, which aspect allows the model to consider the position of each token within the sequence?
+Q238 | Which type of neural network is most commonly used for image classification tasks?
+Q241 | Amazon Bedrock is designed to work with which type of data?
+Q242 | Amazon Bedrock allows for the deployment of models in which environments?
+Q243 | You are developing a customer support chatbot using Amazon Bedrock. The chatbot needs to respond accurately to specific customer inquiries using recent company data. Which approach would be most effective for this scenario?
+Q247 | You are building a chatbot using Amazon Bedrock that must access both structured and unstructured data sources. What is the best approach to integrate these data types?
+Q248 | You want to ensure that your Amazon Bedrock agent does not access certain tools in specific contexts. What should you use?
+Q250 | What is the purpose of using a vector database in a RAG architecture?
+Q251 | You want to deploy a Bedrock model that automatically scales based on usage and requires no infrastructure management. What should you use?
+Q262 | Which feature of Amazon Bedrock Guardrails helps filter out inappropriate language?
+Q263 | What are the requirements to create a RAG (Retrieval-Augmented Generation)?
+Q264 | What are the features of Amazon Bedrock?
+Q265 | What are LLM Agents?
+Q359 | Which company developed GPT models?
+Q360 | What is the primary architecture used in GPT models?
+Q361 | What is the primary use case of GPT models?
+Q369 | Which feature of Amazon Bedrock allows for easy integration with other AWS services?
+Q370 | Amazon Bedrock supports which type of machine learning models?
+Q371 | Amazon Bedrock provides pre-built models for which of the following tasks?
+Q372 | Which of the following is a common use case for Amazon Bedrock?
+Q375 | Your company wants to deploy a Bedrock-based AI system with the ability to write and execute Python code as part of its responses. Which feature should be enabled?
+Q434 | What is Amazon Bedrock primarily used for?
+Q435 | How does Amazon Bedrock handle model versioning?
+Q437 | While working with Amazon Bedrock, you need to frequently update your knowledge base with new company policies. What is the most efficient way to handle this?
+Q438 | You're working on a Bedrock model that needs to incorporate sensitive customer data during fine-tuning. What steps should you take to ensure the security of this data?
+Q439 | Your team is planning to deploy a generative AI model in a serverless environment using Amazon Bedrock. What advantage does this provide?
+Q440 | You are creating a custom model in Amazon Bedrock that will require additional training data. What type of training should you use if the data is not labeled?
+Q443 | Which component in Amazon Bedrock allows you to define how an LLM should interact with external tools?
+Q464 | You are building a legal assistant that needs to answer questions based on thousands of legal documents stored in your system. What architecture would help your model retrieve relevant documents before generating a response?
+Q467 | Which features are part of Amazon Bedrock Guardrails? [3 marked-correct answers]
+
+Amazon SageMaker platform and algorithms (148 questions)
+--------------------------------------------------------
+Output file: output/amazon-sagemaker-platform-and-algorithms.json
+Rationale: SageMaker features, managed ML lifecycle, built-in algorithms, endpoints, and legacy algorithm-specific content belong in one product-focused collection.
+Questions:
+Q001 | Which AWS service provides a fully managed environment for training and deploying machine learning models?
+Q008 | What is the main benefit of using SageMaker Autopilot?
+Q011 | What is SageMaker Model Monitor?
+Q012 | What is SageMaker Feature Store?
+Q013 | What is SageMaker Debugger?
+Q014 | What is SageMaker Experiments?
+Q015 | What is SageMaker JumpStart?
+Q016 | What is SageMaker Data Wrangler?
+Q018 | What is SageMaker Model Registry?
+Q024 | Which loss function does LogitBoost minimize?
+Q025 | Which of the following are key characteristics of LogitBoost? [3 marked-correct answers]
+Q026 | Which of the following can Object2Vec handle? [3 marked-correct answers]
+Q027 | What are examples of pairs of tokens or sequences used by Object2Vec? [3 marked-correct answers]
+Q028 | How many input channels does Object2Vec have?
+Q029 | Which encoder options are available for Object2Vec? [3 marked-correct answers]
+Q030 | What follows the comparator in Object2Vec's architecture?
+Q041 | You need to detect bounding boxes of multiple objects within an image and classify them. Which SageMaker algorithm should you use?
+Q042 | Which SageMaker algorithm is best suited for collaborative filtering in recommendation systems?
+Q043 | Which SageMaker algorithm is best suited for predicting customer churn?
+Q044 | Which SageMaker algorithm is used for image segmentation tasks?
+Q045 | Which SageMaker algorithm is best suited for predicting the next word in a sequence of text?
+Q046 | Which SageMaker algorithm helps prevent overfitting by controlling the step size shrinkage?
+Q047 | You need to classify images of handwritten digits. Which SageMaker algorithm should you use?
+Q048 | You need to build a model that can translate text from one language to another. Which SageMaker algorithm should you use?
+Q049 | You are tasked with training a SageMaker model to predict future values of a time series. Which algorithm should you choose?
+Q050 | Which input format is optimal for training a model using SageMaker's K-Means algorithm?
+Q051 | You need to build a model that can classify text documents into predefined categories. Which SageMaker algorithm should you use?
+Q071 | Which feature of Amazon SageMaker allows you to build, train, and deploy machine learning models quickly?
+Q072 | What does SageMaker Neo do?
+Q073 | Which feature of SageMaker provides a fully integrated development environment for machine learning?
+Q074 | What is SageMaker Autopilot?
+Q075 | What is SageMaker Neo?
+Q076 | What is SageMaker Pipelines?
+Q077 | What is SageMaker Edge Manager?
+Q084 | What are key characteristics of Gradient Boosting Machines (e.g., XGBoost, LightGBM, CatBoost)? [2 marked-correct answers]
+Q087 | Which of the following describes LogitBoost / AdaBoost?
+Q090 | Which AWS service is used for building and deploying machine learning models at scale?
+Q092 | Who introduced the LogitBoost algorithm?
+Q093 | What makes LogitBoost more statistically grounded than AdaBoost?
+Q094 | Which of the following are advantages of LogitBoost? [3 marked-correct answers]
+Q095 | What does Object2Vec transform complex objects into?
+Q104 | Which SageMaker algorithm would be most appropriate for predicting the next word in a sequence of text?
+Q105 | Which SageMaker algorithm is best suited for clustering similar items without labeled data?
+Q106 | Which SageMaker algorithm is best suited for anomaly detection in time series data?
+Q107 | Which SageMaker algorithm is used for detecting fraud in transactional data?
+Q108 | Which SageMaker algorithm is used for detecting anomalies in network traffic?
+Q109 | Which SageMaker algorithm is used for clustering similar items without labeled data?
+Q110 | Which SageMaker algorithm is best suited for organizing documents into topics in an unsupervised manner?
+Q111 | Which SageMaker algorithm is used for predicting user-item interactions in a sparse dataset?
+Q112 | You are building a recommendation system for an e-commerce website. Which SageMaker algorithm is best suited for this task?
+Q115 | You're working with a sparse dataset and need to predict user-item interactions. Which SageMaker algorithm is most appropriate?
+Q116 | When using SageMaker’s Object2Vec algorithm, what is the primary output?
+Q127 | Which technique is used to reduce the dimensionality of data while preserving its variance?
+Q131 | What is a primary use case for SageMaker Model Monitor?
+Q132 | For which use case is SageMaker JumpStart most appropriate?
+Q133 | What is a key advantage of using SageMaker’s Managed Spot Training?
+Q134 | Which of the following is a key benefit of using Docker containers in Amazon SageMaker?
+Q135 | What are SageMaker Components for Kubeflow Pipelines?
+Q146 | Your team needs to ensure that the machine learning models are not biased and provide fair predictions. Which SageMaker feature should you use?
+Q153 | You are deploying a SageMaker training job that handles sensitive data. Which of the following options would best ensure that the data is protected both at rest and in transit?
+Q154 | Which of the following is the most appropriate technique for ensuring that a specific SageMaker notebook instance has the least privilege required to perform its tasks?
+Q155 | What should you do to enable a SageMaker training job to access S3 resources in a secure manner?
+Q156 | You are configuring network isolation for a SageMaker training job to prevent data leaks. What is a potential drawback of enabling network isolation?
+Q179 | Which AWS service is best suited for building and deploying machine learning models at scale?
+Q180 | What AWS service provides managed Jupyter notebooks?
+Q182 | Which of the following are common types of supervised learning algorithms used in machine learning? [3 marked-correct answers]
+Q185 | Which algorithms can be used for binary classification? [2 marked-correct answers]
+Q188 | What is the purpose of SageMaker Ground Truth?
+Q189 | Which SageMaker feature helps in automating the machine learning model building process?
+Q190 | What is SageMaker Studio?
+Q191 | What is SageMaker Ground Truth?
+Q200 | How does LogitBoost improve the model at each iteration?
+Q201 | What are the typical base learners used in LogitBoost?
+Q202 | What is an advantage of LogitBoost over AdaBoost?
+Q203 | What is Object2Vec?
+Q204 | Which applications can Object2Vec be used for? [3 marked-correct answers]
+Q205 | Which instance types are recommended for training Object2Vec? [3 marked-correct answers]
+Q214 | Which of the following accurately describe the capabilities and limitations of SageMaker Data Wrangler? [4 marked-correct answers]
+Q217 | Which SageMaker algorithm is used to organize documents into topics in an unsupervised manner?
+Q218 | In SageMaker’s XGBoost, which hyperparameter helps prevent overfitting by controlling the step size shrinkage?
+Q219 | Which SageMaker algorithm is best suited for text classification tasks?
+Q220 | Which SageMaker algorithm is used for topic modeling in text data?
+Q221 | Which SageMaker algorithm is used for detecting bounding boxes of multiple objects within an image?
+Q224 | Which SageMaker algorithm is best suited for topic modeling in a large corpus of text documents?
+Q225 | You are tasked with building a chatbot that can understand and respond to user queries. Which SageMaker algorithm should you use?
+Q226 | Which SageMaker algorithm is best suited for predicting customer churn based on historical data?
+Q227 | Which SageMaker algorithm is best suited for predicting the likelihood of a binary outcome?
+Q228 | You need to build a model that can summarize long text documents. Which SageMaker algorithm should you use?
+Q236 | Which AWS service is designed for building, training, and deploying machine learning models at scale?
+Q239 | Which AWS service provides pre-trained models for natural language processing tasks like sentiment analysis and entity recognition?
+Q244 | What is the correct way to structure a Dockerfile for a SageMaker training container?
+Q246 | Which SageMaker feature allows you to compare a new model’s performance against an existing production model without impacting live traffic?
+Q249 | What is the primary benefit of using SageMaker Feature Store?
+Q252 | What is Amazon SageMaker Serverless Inference?
+Q268 | What can SageMaker Clarify help with? [2 marked-correct answers]
+Q282 | You are configuring a SageMaker notebook that requires access to a private S3 bucket and other AWS services in the same VPC. What is the best practice to ensure secure and efficient access?
+Q283 | To enhance the security of your SageMaker environment, you decide to log and monitor all API calls. Which AWS service should you use?
+Q284 | You are tasked with setting up a highly secure SageMaker environment for training a sensitive dataset. What combination of practices would you implement?
+Q324 | Which of the following is an example of unsupervised learning?
+Q328 | What is SageMaker Clarify?
+Q331 | Which of the following describes Linear Discriminant Analysis (LDA)?
+Q334 | What type of problems is LogitBoost designed for?
+Q335 | In which scenario would LogitBoost be a strong choice?
+Q336 | What type of inputs does Object2Vec require?
+Q342 | Which of the following accurately describe the capabilities and use cases of SageMaker Debugger? [4 marked-correct answers]
+Q347 | Which SageMaker input mode is recommended for training when you need high-performance access to data stored in a single Availability Zone?
+Q351 | Which SageMaker algorithm is used for image classification tasks?
+Q352 | Which SageMaker algorithm is best suited for predicting stock prices?
+Q353 | Which SageMaker algorithm is best suited for detecting sentiment in text data?
+Q354 | Which SageMaker algorithm is best suited for predicting future values of a time series?
+Q355 | Which SageMaker algorithm would you use for detecting anomalies in time series data?
+Q358 | Which SageMaker algorithm is best suited for detecting fraudulent transactions in financial data?
+Q376 | Which deployment method in SageMaker is most suitable for handling infrequent or unpredictable traffic with the ability to scale down to zero?
+Q377 | Which Amazon SageMaker feature helps automate the process of hyperparameter tuning?
+Q381 | What are SageMaker Projects?
+Q395 | You’re working on a fraud detection system. You need to preprocess incoming transaction data, run it through a model, and then post-process the results before storing them. Which SageMaker feature best supports this multi-step inference process?
+Q397 | You need to deploy a machine learning model that scales automatically based on the incoming traffic without managing servers. Which SageMaker feature should you use?
+Q400 | What are SageMaker Operators for Kubernetes used for?
+Q404 | During a hyperparameter tuning job, you want to monitor the CPU and memory utilization of the SageMaker instance. Which service would you use for this?
+Q441 | Which step is most critical before deploying a SageMaker model using a Docker container?
+Q442 | You need to monitor a deployed model for feature attribution drift. Which metric should you monitor using SageMaker Model Monitor?
+Q444 | You are using SageMaker Clarify. What is its primary function?
+Q445 | Which SageMaker deployment option is best for processing large datasets in a non-real-time manner?
+Q446 | Which SageMaker tool helps visualize and manage the steps in a machine learning workflow?
+Q447 | What is Amazon SageMaker Model Monitor?
+Q448 | What is Amazon SageMaker Clarify?
+Q449 | What is Amazon SageMaker Serverless Inference Recommender?
+Q451 | What are SageMaker Operators for Kubernetes?
+Q473 | What is the purpose of SageMaker Projects? [2 marked-correct answers]
+Q479 | Which encryption method is recommended for securing data in transit when using SageMaker?
+Q480 | You need to grant cross-account access to a KMS-encrypted S3 bucket used in a SageMaker job. What should you configure?
+Q507 | Which of the following is a feature of Amazon SageMaker? [2 marked-correct answers]
+Q508 | What is the role of SageMaker Model Monitor?
+Q510 | What is the purpose of Amazon SageMaker Model Monitor?
+Q513 | Which AWS services are commonly used to implement ML design principles such as modularity and automation? [3 marked-correct answers]
+Q519 | Which AWS service can automatically apply one-hot encoding during preprocessing?
+Q528 | How can scikit-learn models be integrated into AWS workflows? [2 marked-correct answers]
+Q530 | Which AWS service supports canary and linear deployments for ML models?
+Q548 | How can PyTorch models be deployed on AWS? [2 marked-correct answers]
+Q550 | How can TensorFlow models be deployed on AWS? [2 marked-correct answers]
+Q564 | Which AWS service provides tools for explainability of machine learning models?
+Q570 | Which AWS service helps you label data to frame supervised learning problems?
+Q572 | Which AWS services can be used for data preprocessing in a machine learning workflow? [3 marked-correct answers]
+Q577 | Which AWS service is commonly used for building and training machine learning models?
+Q586 | What is Amazon SageMaker?
+Q588 | Which algorithm is NOT supported by Amazon SageMaker?
+Q592 | Which AWS service helps in detecting bias in machine learning models?
+Q593 | How does Amazon SageMaker Clarify help in building responsible AI?
+
+ML frameworks and compute (40 questions)
+----------------------------------------
+Output file: output/ml-frameworks-and-compute.json
+Rationale: PyTorch, TensorFlow, scikit-learn, deployment tooling, and compute-instance choices are implementation-focused rather than SageMaker product knowledge.
+Questions:
+Q152 | Your organization wants to ensure that a specific instance type is used for all EC2 instances in a particular environment. Which AWS Config feature would you use?
+Q166 | Which of the following are characteristics of Network ACLs (NACLs) in AWS? [3 marked-correct answers]
+Q167 | What is the primary function of a CloudWatch Alarm?
+Q175 | What should you check if an EC2 instance is unreachable via SSH? [3 marked-correct answers]
+Q272 | What is the purpose of Amazon Security Groups? [2 marked-correct answers]
+Q276 | You are setting up CloudWatch Logs for an EC2 instance. Which agent should you use to collect both system-level metrics and log data?
+Q279 | To optimize costs, you want to automatically shut down underutilized EC2 instances. Which CloudWatch feature should you use?
+Q300 | Which of the following scenarios require an Internet Gateway? [2 marked-correct answers]
+Q314 | What types of activities does Amazon CloudTrail log? [3 marked-correct answers]
+Q317 | Which of the following are valid use cases for CloudTrail Insights? [3 marked-correct answers]
+Q414 | Which of the following can assume an IAM role? [4 marked-correct answers]
+Q419 | Which of the following actions can a CloudWatch Alarm perform when triggered? [3 marked-correct answers]
+Q485 | Which of the following are valid ways to assign permissions in AWS? [3 marked-correct answers]
+Q495 | What are common anti-patterns when using Amazon EC2? [2 marked-correct answers]
+Q503 | How can AWS Budgets notify users when a budget threshold is exceeded?
+Q506 | What is the primary function of AWS Trusted Advisor?
+Q523 | Which AWS EC2 instance family is optimized for general-purpose workloads?
+Q524 | Which instance types are commonly used for inference workloads in machine learning? [2 marked-correct answers]
+Q525 | What is the purpose of the `torch.autograd` module?
+Q526 | What is the purpose of TensorBoard in the TensorFlow ecosystem?
+Q527 | Which module in scikit-learn is used for splitting datasets into training and test sets?
+Q533 | What is the primary purpose of AWS Budgets?
+Q535 | What does a Usage Budget in AWS Budgets track?
+Q536 | What is the purpose of a Savings Plans Utilization Budget?
+Q541 | What is Amazon Augmented AI (A2I)?
+Q547 | What is PyTorch primarily used for?
+Q549 | What is TensorFlow primarily used for?
+Q551 | What is the purpose of `Pipeline` in scikit-learn?
+Q556 | Which of the following can you track using AWS Budgets? [3 marked-correct answers]
+Q575 | Which PyTorch module is used to define neural network layers?
+Q576 | Which TensorFlow component is used for model deployment?
+Q581 | What is the primary function of AWS Cost Explorer?
+Q585 | Which of the following are benefits of using AWS Trusted Advisor? [3 marked-correct answers]
+Q601 | Which EC2 instance types are best suited for deep learning training workloads? [2 marked-correct answers]
+Q602 | What are typical use cases for C-series EC2 instances? [2 marked-correct answers]
+Q603 | What are benefits of using Spot Instances for ML training? [2 marked-correct answers]
+Q604 | Which of the following are key features of PyTorch? [3 marked-correct answers]
+Q605 | Which of the following are features of TensorFlow? [3 marked-correct answers]
+Q606 | What is scikit-learn primarily used for?
+Q607 | Which of the following are features provided by scikit-learn? [3 marked-correct answers]
+
+AWS security and identity (92 questions)
+----------------------------------------
+Output file: output/aws-security-and-identity.json
+Rationale: IAM, network controls, encryption, secrets, WAF, and security practices should be reviewed against one consistent security baseline.
+Questions:
+Q139 | How do you define a VPC in an AWS CDK stack using Java?
+Q144 | What is a KMS key?
+Q151 | What are some common AWS service troubleshooting steps? [3 marked-correct answers]
+Q158 | Which of the following are best practices when using AWS KMS? [3 marked-correct answers]
+Q159 | What is the primary function of an IAM policy in AWS?
+Q160 | What is the difference between an IAM user and an IAM role? [2 marked-correct answers]
+Q161 | Which of the following are features of AWS Secrets Manager? [3 marked-correct answers]
+Q162 | Which AWS services can integrate with AWS Secrets Manager to retrieve secrets securely? [3 marked-correct answers]
+Q163 | How does AWS Secrets Manager help improve security posture? [3 marked-correct answers]
+Q164 | Which of the following are common attack types that AWS WAF can help mitigate? [3 marked-correct answers]
+Q165 | What is the primary function of an Internet Gateway in AWS?
+Q169 | What is Amazon QuickSight Q designed to do?
+Q170 | Which use cases are ideal for Amazon QuickSight Q? [3 marked-correct answers]
+Q172 | What are things you should not do when using Amazon S3? [2 marked-correct answers]
+Q173 | Which of the following are 'no-to-dos' when deploying applications on AWS? [3 marked-correct answers]
+Q176 | Which of the following are valid CloudTrail event types? [3 marked-correct answers]
+Q177 | How does CloudTrail Insights help in security operations?
+Q178 | How does AWS Config help with compliance?
+Q257 | What are Amazon Security Groups?
+Q261 | Which AWS service can help troubleshoot issues with your applications by providing detailed logs and metrics?
+Q273 | What are Data Permissions in Lake Formation used for?
+Q281 | To ensure your CloudWatch Logs are encrypted with a specific KMS key, what should you configure?
+Q285 | Which of the following is an example of static data masking?
+Q288 | Which of the following are best practices for securing your AWS root account? [2 marked-correct answers]
+Q289 | Which of the following are considered least privilege principles in AWS? [3 marked-correct answers]
+Q290 | What is the primary purpose of AWS KMS?
+Q291 | Which of the following are valid types of keys in AWS KMS? [3 marked-correct answers]
+Q292 | Which of the following statements about IAM roles are true? [2 marked-correct answers]
+Q293 | How do IAM roles differ from IAM users? [3 marked-correct answers]
+Q294 | Which of the following are core components of AWS IAM? [4 marked-correct answers]
+Q295 | What is the purpose of IAM policies in AWS? [2 marked-correct answers]
+Q296 | What is a Man-in-the-Middle (MITM) attack?
+Q297 | Which of the following are common techniques used in MITM attacks? [3 marked-correct answers]
+Q298 | What are best practices when using AWS Secrets Manager? [3 marked-correct answers]
+Q299 | Which of the following are true about NAT Gateways? [2 marked-correct answers]
+Q303 | Which of the following are features of AWS X-Ray? [3 marked-correct answers]
+Q306 | Which of the following are features of Amazon QuickSight Q? [3 marked-correct answers]
+Q310 | Which of the following are considered anti-patterns when using Amazon S3? [2 marked-correct answers]
+Q311 | Which of the following should you avoid when managing IAM policies? [2 marked-correct answers]
+Q312 | What could cause a Lambda function to time out? [2 marked-correct answers]
+Q315 | What are common use cases for analyzing CloudTrail logs? [3 marked-correct answers]
+Q316 | What should you check if CloudTrail is not logging events as expected? [4 marked-correct answers]
+Q389 | Which class is used to define an IAM role in AWS CDK using Java?
+Q394 | Which type of permissions can be set in AWS Lake Formation?
+Q408 | Which AWS services can help detect and respond to security incidents? [3 marked-correct answers]
+Q409 | What are the benefits of using IAM roles instead of IAM users for applications running on EC2? [3 marked-correct answers]
+Q410 | Which AWS services can integrate with AWS KMS for encryption? [4 marked-correct answers]
+Q411 | What is envelope encryption in the context of AWS KMS?
+Q412 | What is a permission in the context of AWS IAM?
+Q413 | Which of the following are best practices for using AWS IAM? [3 marked-correct answers]
+Q415 | Which of the following scenarios could indicate a potential MITM attack? [3 marked-correct answers]
+Q416 | Which tools or technologies help detect or prevent MITM attacks? [3 marked-correct answers]
+Q417 | What is the primary purpose of AWS WAF?
+Q418 | Which AWS services can be protected using AWS WAF? [3 marked-correct answers]
+Q420 | What must be defined when creating a CloudWatch Alarm? [3 marked-correct answers]
+Q421 | What is the primary purpose of AWS X-Ray?
+Q423 | What is Amazon QuickSight primarily used for?
+Q424 | Which of the following are features of Amazon QuickSight? [3 marked-correct answers]
+Q425 | Which of the following are best practices when using Amazon QuickSight? [3 marked-correct answers]
+Q428 | Which practices should be avoided when using Amazon RDS? [2 marked-correct answers]
+Q430 | Which of the following can help troubleshoot failed S3 uploads? [3 marked-correct answers]
+Q432 | What is the primary function of AWS Config?
+Q459 | What is PII?
+Q460 | What is the principle of least privilege?
+Q462 | A junior developer accidentally deleted a production database. Upon investigation, you find they had full admin access. Which security principle was violated?
+Q470 | What are Amazon Security Groups used for?
+Q482 | Which AWS service allows you to set alarms based on metrics such as CPU utilization or disk I/O?
+Q483 | Which of the following best describes the difference between CloudTrail and CloudWatch?
+Q484 | What are recommended ways to secure data stored in Amazon S3? [3 marked-correct answers]
+Q486 | What are effective ways to protect against MITM attacks? [3 marked-correct answers]
+Q487 | What is the primary purpose of AWS Secrets Manager?
+Q488 | What are key components of an AWS WAF rule configuration? [3 marked-correct answers]
+Q489 | Which of the following are best practices when using AWS WAF? [3 marked-correct answers]
+Q490 | Which of the following are differences between Security Groups and Network ACLs? [3 marked-correct answers]
+Q491 | What kind of insights can AWS X-Ray provide? [3 marked-correct answers]
+Q496 | Which of the following are anti-patterns in AWS architecture design? [3 marked-correct answers]
+Q498 | What is the primary purpose of AWS CloudTrail Insights?
+Q499 | What types of events does CloudTrail Insights analyze? [2 marked-correct answers]
+Q500 | Which of the following are features of AWS Config? [3 marked-correct answers]
+Q502 | Which of the following statements are true about CloudWatch, CloudTrail, and Config? [3 marked-correct answers]
+Q505 | Which of the following are features of AWS Cost Explorer? [3 marked-correct answers]
+Q534 | What types of budgets can be created in AWS Budgets? [3 marked-correct answers]
+Q537 | Which of the following are categories of checks provided by AWS Trusted Advisor? [3 marked-correct answers]
+Q554 | What types of rules can be created in AWS Config? [2 marked-correct answers]
+Q563 | Which AWS service can be used to ensure data privacy and security in AI applications?
+Q568 | Which stakeholders should be involved in defining ML business goals? [4 marked-correct answers]
+Q578 | Which AWS service is primarily used for monitoring metrics and setting alarms?
+Q580 | Which of the following are valid AWS Budget types? [3 marked-correct answers]
+Q582 | Which of the following can you do with AWS Cost Explorer? [3 marked-correct answers]
+Q610 | Which pillar of the AWS Well-Architected Framework focuses on security?
+Q611 | What are the key considerations for data preparation in the AWS Machine Learning Lens? [2 marked-correct answers]
+Q612 | What are the benefits of using the AWS Well-Architected Machine Learning Lens? [3 marked-correct answers]
+
+AWS operations, governance, and cost (40 questions)
+---------------------------------------------------
+Output file: output/aws-operations-governance-and-cost.json
+Rationale: Observability, audit, configuration governance, deployments, budgets, Cost Explorer, Trusted Advisor, and Well-Architected guidance share an operations focus.
+Questions:
+Q091 | Which AWS service is designed for real-time application monitoring and observability?
+Q140 | What is the main function of AWS CodePipeline?
+Q168 | Which of the following are best practices when using AWS X-Ray? [3 marked-correct answers]
+Q181 | Which AWS service can be used to automate the deployment of machine learning models?
+Q199 | Which AWS service is designed to help you manage and automate backups across AWS services?
+Q245 | Which AWS service is used to orchestrate steps in a machine learning pipeline, such as model training and deployment?
+Q267 | You’re a DevOps engineer setting up a CI/CD pipeline. You want to automate code builds, tests, and deployments every time a developer pushes to Git. Which AWS service should you use?
+Q277 | Your application is experiencing intermittent high latency. You need to analyze the logs to find patterns over time. Which CloudWatch feature would you use?
+Q278 | You want to stream real-time log data from CloudWatch Logs to Amazon S3 for archival. What approach should you take?
+Q280 | Your company needs to monitor and manage costs associated with AWS usage. Which service should you use?
+Q287 | Which AWS service provides a near real-time stream of system and application logs?
+Q301 | Which of the following are valid states for a CloudWatch Alarm? [3 marked-correct answers]
+Q302 | Which of the following are best practices when using CloudWatch Alarms? [3 marked-correct answers]
+Q390 | Which AWS service is used to build, test, and deploy code in a continuous integration and continuous delivery (CI/CD) pipeline?
+Q407 | If you want to detect unusual API activity, such as a spike in failed login attempts, which AWS service should you use?
+Q422 | Which AWS services can be integrated with AWS X-Ray for tracing? [3 marked-correct answers]
+Q429 | Which steps can help troubleshoot slow performance in Amazon RDS? [3 marked-correct answers]
+Q431 | Which AWS service integrates directly with CloudTrail Insights for alerting?
+Q463 | You are tasked with setting up a CI/CD pipeline that automatically builds, tests, and deploys your application. Which AWS service should you use?
+Q474 | What is AWS CDK used for? [2 marked-correct answers]
+Q477 | You need to ensure that a specific S3 bucket is not publicly accessible. Which AWS service can help you audit this?
+Q478 | Which AWS service should you use to detect unusual activity, like unauthorized access attempts, in your account?
+Q481 | Which AWS service is primarily used to monitor and log API activity across your AWS account?
+Q497 | Which AWS services can be used to analyze CloudTrail logs? [3 marked-correct answers]
+Q501 | Which AWS services integrate with AWS Config for remediation? [2 marked-correct answers]
+Q504 | Which AWS Budget type helps you monitor your actual or forecasted AWS spending?
+Q529 | What is a key characteristic of a canary deployment?
+Q531 | Which AWS services provide visibility into resource changes and user activity? [2 marked-correct answers]
+Q532 | Which AWS service would you use to detect unusual API activity?
+Q552 | In a canary deployment, what happens if the new version causes errors?
+Q553 | What is the purpose of the AWS Well-Architected Machine Learning Lens?
+Q555 | What is the main difference between AWS Config and AWS CloudTrail?
+Q557 | Which AWS Budget types are specifically designed for Reserved Instances (RIs)? [2 marked-correct answers]
+Q558 | How far back can AWS Cost Explorer provide cost and usage data?
+Q559 | Which AWS service is best suited for visualizing historical cost trends?
+Q579 | Which AWS services integrate with AWS Budgets for automation and notifications? [2 marked-correct answers]
+Q583 | Which AWS support plans include full access to all Trusted Advisor checks? [2 marked-correct answers]
+Q584 | How can users receive notifications about Trusted Advisor check status changes?
+Q608 | What is the main benefit of using linear deployment in ML model updates?
+Q609 | What is a common use case for linear deployments in ML workflows?
+
+AWS data engineering and analytics (34 questions)
+-------------------------------------------------
+Output file: output/aws-data-engineering-and-analytics.json
+Rationale: Storage, ETL, streaming, warehousing, data transfer, and analytics services form a coherent data-platform collection.
+Questions:
+Q002 | Which AWS service is designed for real-time data processing and analytics?
+Q007 | Which AWS service is used for scalable object storage?
+Q022 | Which AWS service provides a fully managed graph database service?
+Q023 | Which AWS service is used for secure, durable, and scalable object storage?
+Q037 | Which of the following are valid differences between Amazon Glue and Amazon Kinesis? [3 marked-correct answers]
+Q065 | Which AWS service is ideal for storing large amounts of training data for ML models?
+Q070 | Which AWS service is designed for real-time data processing?
+Q082 | What is Amazon CloudFront?
+Q088 | Which AWS service provides a fully managed extract, transform, and load (ETL) service?
+Q138 | How do you define an S3 bucket in an AWS CDK stack using Java?
+Q142 | Which service in AWS helps you build a data lake?
+Q147 | Your company wants to build a data lake that supports fine-grained access control for different departments. Which AWS service should you use?
+Q150 | What is Model Monitor Data Capture used for? [2 marked-correct answers]
+Q171 | Which of the following are key features of Amazon Redshift? [2 marked-correct answers]
+Q187 | Which AWS service is used for deploying and managing containerized applications?
+Q212 | Which AWS service is primarily used for real-time ingestion and processing of streaming data?
+Q213 | How does Amazon Glue differ from Amazon Kinesis in terms of data processing?
+Q304 | Which data sources can Amazon QuickSight connect to? [4 marked-correct answers]
+Q305 | What are the benefits of using SPICE in Amazon QuickSight? [3 marked-correct answers]
+Q307 | Which of the following can improve query performance in Amazon Redshift? [3 marked-correct answers]
+Q308 | Which AWS services integrate natively with Amazon Redshift for data ingestion? [3 marked-correct answers]
+Q309 | What are the benefits of using Redshift Spectrum? [2 marked-correct answers]
+Q313 | What should you investigate if an application using Amazon SQS is not receiving messages? [3 marked-correct answers]
+Q332 | Which AWS service provides a managed service for running Apache Spark and Apache Hadoop clusters?
+Q333 | Which AWS service provides a petabyte-scale data warehouse solution?
+Q367 | Which AWS service is used for real-time data processing and analytics?
+Q403 | Your team uses Amazon QuickSight for business analytics. You want to enable anomaly detection on sales data to automatically identify unusual spikes in sales. Which feature of QuickSight should you use?
+Q461 | Your data engineering team is tasked with building a secure data lake that supports fine-grained access control for different departments. Which AWS service should you use to simplify this process?
+Q492 | What are the benefits of using Amazon QuickSight Q? [3 marked-correct answers]
+Q493 | Which of the following are required to use QuickSight Q effectively? [2 marked-correct answers]
+Q494 | What are common use cases for Amazon Redshift? [2 marked-correct answers]
+Q517 | What is the purpose of feature engineering in data processing? [2 marked-correct answers]
+Q542 | Which AWS service can be integrated with Amazon A2I for document processing?
+Q598 | Which AWS service is commonly used for large-scale data transformation and ETL tasks?
+
+Machine learning foundations and data preparation (58 questions)
+----------------------------------------------------------------
+Output file: output/machine-learning-foundations-and-data-preparation.json
+Rationale: Problem types, metrics, model behavior, feature engineering, preprocessing, and evaluation should be repaired independently of AWS service details.
+Questions:
+Q003 | In binary classification, what does the confusion matrix help you evaluate? [4 marked-correct answers]
+Q004 | Which of the following are common threshold-based metrics used in binary classification? [4 marked-correct answers]
+Q005 | What does R-squared (R²) measure in a regression model?
+Q006 | What is the F1 Score used for in classification problems?
+Q009 | Which of the following is an example of a regression problem?
+Q010 | Which of the following is an example of a binary classification problem?
+Q020 | What is a key characteristic of Decision Trees?
+Q021 | Which of the following describes Support Vector Machines (SVM)? [2 marked-correct answers]
+Q057 | What is the primary purpose of using a learning rate scheduler during model training?
+Q059 | In the context of deep learning, what is the purpose of batch normalization?
+Q060 | What is the main benefit of using attention mechanisms in neural networks?
+Q066 | What is Mean Squared Error (MSE) in regression analysis?
+Q067 | What does recall measure in a classification model?
+Q068 | What are supervised learning algorithms in machine learning?
+Q083 | What is a key characteristic of Logistic Regression?
+Q085 | Which of the following describes Feedforward Neural Networks (MLPs)? [2 marked-correct answers]
+Q086 | What is a key characteristic of K-Nearest Neighbors (KNN)? [2 marked-correct answers]
+Q100 | Which of the following are valid types of machine learning problems? [7 marked-correct answers]
+Q183 | What are key characteristics of overfitting in a machine learning model? [2 marked-correct answers]
+Q184 | What does the ROC curve represent in binary classification? [2 marked-correct answers]
+Q186 | What does accuracy measure in a classification model?
+Q196 | Which of the following describes Random Forest?
+Q197 | What is a key characteristic of Naive Bayes? [2 marked-correct answers]
+Q211 | What does it mean when a machine learning model makes probabilistic predictions?
+Q232 | What are embeddings in the context of natural language processing models?
+Q237 | In the context of neural networks, what is the role of an activation function?
+Q240 | In the context of deep learning, what is the role of a loss function?
+Q318 | Which evaluation metrics are appropriate for a binary classification problem? [4 marked-correct answers]
+Q319 | What is binary classification in machine learning?
+Q321 | What does precision measure in a binary classification model?
+Q325 | Which of the following is an example of a multi-class classification problem?
+Q327 | Which of the following is an example of a clustering problem?
+Q363 | Which technique is used to prevent overfitting in neural networks by randomly setting some activations to zero during training?
+Q364 | What is the main advantage of using transfer learning in deep learning?
+Q365 | Which technique is used to improve the generalization of a model by combining predictions from multiple models?
+Q368 | What is the purpose of using a validation set during model training?
+Q378 | What are Inference Pipelines?
+Q383 | What is a Blue/Green rollout?
+Q427 | What are anti-patterns when using AWS Lambda? [3 marked-correct answers]
+Q450 | What is Model Monitor Data Capture?
+Q509 | How can accountability be achieved in AI systems?
+Q511 | Which of the following are use cases for Amazon A2I? [3 marked-correct answers]
+Q512 | Which principles are essential when designing scalable machine learning systems on AWS? [2 marked-correct answers]
+Q516 | Which of the following are common data preprocessing steps in a machine learning pipeline? [3 marked-correct answers]
+Q518 | What is the purpose of one-hot encoding in machine learning?
+Q520 | What is a potential drawback of one-hot encoding?
+Q521 | When should you avoid using one-hot encoding?
+Q538 | Which of the following is a best practice for feature engineering? [2 marked-correct answers]
+Q543 | Why is it important to define success metrics when identifying ML business goals? [2 marked-correct answers]
+Q544 | Which of the following are examples of classification problems? [2 marked-correct answers]
+Q545 | Which techniques are used to handle missing data? [3 marked-correct answers]
+Q561 | Why is it important to split the data into training and testing sets?
+Q562 | What is the purpose of hyperparameter tuning?
+Q567 | What is the first step in identifying a machine learning business goal?
+Q569 | What is the primary goal when framing a machine learning problem?
+Q574 | Which of the following are characteristics of one-hot encoding? [2 marked-correct answers]
+Q589 | Which technique can be used to prevent overfitting in machine learning models? [2 marked-correct answers]
+Q595 | What is the benefit of using feature stores in ML system design? [2 marked-correct answers]
+
+AWS cloud services and architecture (69 questions)
+--------------------------------------------------
+Output file: output/aws-cloud-services-and-architecture.json
+Rationale: The remaining broad AWS service and architecture questions are suitable for a cloud-foundations collection after the specialized topics are extracted.
+Questions:
+Q019 | Which of the following are features of Amazon CloudFront? [2 marked-correct answers]
+Q058 | What is the role of the encoder in a sequence-to-sequence model?
+Q069 | What is the main function of Amazon RDS?
+Q089 | Which AWS service is designed to help you build and run applications without thinking about servers?
+Q136 | What is Docker Daemon?
+Q137 | What is AWS Fargate?
+Q141 | What is MWAA in AWS?
+Q143 | What does BASE stand for in NoSQL databases?
+Q148 | You need to ensure that your containerized applications are highly available and can scale automatically. Which container orchestration service should you use?
+Q157 | What is the primary goal of data masking?
+Q174 | What should you avoid when designing for scalability in AWS? [3 marked-correct answers]
+Q195 | What types of content can be delivered using Amazon CloudFront? [4 marked-correct answers]
+Q198 | Which AWS service provides a managed service for running containerized applications?
+Q254 | What is Kubernetes?
+Q255 | What is Amazon EKS?
+Q256 | What are Amazon Roles?
+Q258 | What is CloudFormation?
+Q259 | Which of the following is a component of a state machine in AWS Step Functions? [4 marked-correct answers]
+Q260 | Which state in AWS Step Functions allows you to perform a task?
+Q266 | Your team is debating between using Kubernetes and Amazon ECS for container orchestration. You need fine-grained control and want to integrate with open-source tools. Which option is more suitable?
+Q269 | Which statements are true about Docker vs Virtual Machines? [3 marked-correct answers]
+Q270 | Which states are part of AWS Step Functions? [8 marked-correct answers]
+Q271 | What are Amazon Roles used for? [2 marked-correct answers]
+Q274 | What is the difference between ACID and BASE transactions?
+Q275 | What are common Git commands? [4 marked-correct answers]
+Q286 | Which technique is commonly used in data anonymization?
+Q322 | What is the primary purpose of Amazon EC2?
+Q323 | What is the purpose of Amazon CloudFront?
+Q326 | Which of the following is an example of a time series forecasting problem?
+Q366 | In the context of NLP, what is the purpose of tokenization?
+Q382 | What is the difference between Docker and Virtual Machines?
+Q384 | What is Amazon ECS?
+Q386 | What is AWS CDK?
+Q387 | How do you define an AWS CDK stack in Java?
+Q388 | Which method is used to add a resource to an AWS CDK stack in Java?
+Q391 | Which AWS service allows you to connect applications using events from your own applications, integrated SaaS applications, and AWS services?
+Q392 | What is a DAG in Apache Airflow?
+Q393 | What is the first step in building a data lake using AWS Lake Formation?
+Q399 | Which of the following are features of AWS Fargate? [3 marked-correct answers]
+Q401 | What is AWS CloudFormation used for?
+Q402 | Which of the following are types of State Machine states in AWS Step Functions? [8 marked-correct answers]
+Q405 | What is a key difference between anonymization and pseudonymization?
+Q406 | Which regulation emphasizes the importance of data anonymization for protecting personal data?
+Q426 | Which of the following are anti-patterns in Amazon DynamoDB usage? [2 marked-correct answers]
+Q433 | Which AWS service is designed for building conversational interfaces using voice and text?
+Q452 | What is Docker?
+Q453 | What is Amazon ECR?
+Q454 | What is Amazon EFS?
+Q455 | What is the primary purpose of AWS CodeDeploy?
+Q456 | What is AWS Step Functions used for?
+Q457 | Which of the following properties are part of ACID transactions? [4 marked-correct answers]
+Q458 | Which Git command is used to create a new branch?
+Q468 | Which features are specific to AWS CDK for Java? [3 marked-correct answers]
+Q469 | What is Amazon ECR used for?
+Q471 | Which of the following are common Git commands? [4 marked-correct answers]
+Q472 | What is MWAA (Managed Workflows for Apache Airflow) used for?
+Q514 | Which of the following are best practices for designing ML systems for production? [3 marked-correct answers]
+Q515 | Which of the following are valid business goals that can be addressed using machine learning? [3 marked-correct answers]
+Q539 | What is Responsible AI?
+Q540 | What does fairness in AI entail?
+Q560 | What is the first step in designing a machine learning system?
+Q565 | How does Amazon A2I help in building machine learning workflows?
+Q566 | What is the role of human reviewers in Amazon A2I?
+Q571 | What is a common mistake when framing ML problems?
+Q590 | Which of the following are core dimensions of Responsible AI? [3 marked-correct answers]
+Q591 | Why is transparency important in AI systems?
+Q594 | What are key considerations when choosing a machine learning algorithm for a production system? [4 marked-correct answers]
+Q596 | What is a common pitfall when identifying ML business goals?
+Q597 | What are key elements to define when framing an ML problem? [3 marked-correct answers]

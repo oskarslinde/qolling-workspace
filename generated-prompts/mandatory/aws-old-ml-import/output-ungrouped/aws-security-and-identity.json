@@ -1,0 +1,2554 @@
+[
+  {
+    "question": "How do you define a VPC in an AWS CDK stack using Java?",
+    "answers": [
+      {
+        "text": "new Vpc(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": true
+      },
+      {
+        "text": "Vpc.create(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": false
+      },
+      {
+        "text": "Vpc.define(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": false
+      },
+      {
+        "text": "new VPC(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a KMS key?",
+    "answers": [
+      {
+        "text": "A managed encryption key used to encrypt and decrypt data in AWS services.",
+        "correct": true
+      },
+      {
+        "text": "A key used to access AWS resources and manage IAM roles.",
+        "correct": false
+      },
+      {
+        "text": "A key used to authenticate API requests to AWS services.",
+        "correct": false
+      },
+      {
+        "text": "A key used to configure network security groups in AWS.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are some common AWS service troubleshooting steps?",
+    "answers": [
+      {
+        "text": "Check service health status",
+        "correct": true
+      },
+      {
+        "text": "Review CloudWatch logs",
+        "correct": true
+      },
+      {
+        "text": "Restart the service",
+        "correct": true
+      },
+      {
+        "text": "Update IAM policies",
+        "correct": false
+      },
+      {
+        "text": "Reconfigure VPC settings",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are best practices when using AWS KMS?",
+    "answers": [
+      {
+        "text": "Rotate keys regularly",
+        "correct": true
+      },
+      {
+        "text": "Use the same key for all applications",
+        "correct": false
+      },
+      {
+        "text": "Enable key policies with least privilege",
+        "correct": true
+      },
+      {
+        "text": "Disable logging for security",
+        "correct": false
+      },
+      {
+        "text": "Use separate keys for different environments (e.g., dev, prod)",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of an IAM policy in AWS?",
+    "answers": [
+      {
+        "text": "To define what actions are allowed or denied on AWS resources",
+        "correct": true
+      },
+      {
+        "text": "To assign users to groups",
+        "correct": false
+      },
+      {
+        "text": "To monitor API activity",
+        "correct": false
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the difference between an IAM user and an IAM role?",
+    "answers": [
+      {
+        "text": "Users have long-term credentials; roles provide temporary credentials",
+        "correct": true
+      },
+      {
+        "text": "Roles are used only for S3 access",
+        "correct": false
+      },
+      {
+        "text": "Users cannot be assigned policies",
+        "correct": false
+      },
+      {
+        "text": "Roles can be assumed by AWS services or federated users",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are features of AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "Automatic rotation of secrets",
+        "correct": true
+      },
+      {
+        "text": "Audit logging with AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "Storing unencrypted secrets",
+        "correct": false
+      },
+      {
+        "text": "Integration with AWS Lambda for rotation logic",
+        "correct": true
+      },
+      {
+        "text": "Manual encryption only",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services can integrate with AWS Secrets Manager to retrieve secrets securely?",
+    "answers": [
+      {
+        "text": "Amazon RDS",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How does AWS Secrets Manager help improve security posture?",
+    "answers": [
+      {
+        "text": "By eliminating the need to hardcode credentials in code",
+        "correct": true
+      },
+      {
+        "text": "By providing centralized secret management",
+        "correct": true
+      },
+      {
+        "text": "By automatically granting admin access to all users",
+        "correct": false
+      },
+      {
+        "text": "By enabling secure and auditable access to secrets",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are common attack types that AWS WAF can help mitigate?",
+    "answers": [
+      {
+        "text": "SQL injection",
+        "correct": true
+      },
+      {
+        "text": "Cross-site scripting (XSS)",
+        "correct": true
+      },
+      {
+        "text": "DDoS attacks",
+        "correct": false
+      },
+      {
+        "text": "Command injection",
+        "correct": false
+      },
+      {
+        "text": "HTTP flood",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of an Internet Gateway in AWS?",
+    "answers": [
+      {
+        "text": "To allow communication between instances in a VPC and the internet",
+        "correct": true
+      },
+      {
+        "text": "To encrypt traffic between VPCs",
+        "correct": false
+      },
+      {
+        "text": "To route traffic between private subnets",
+        "correct": false
+      },
+      {
+        "text": "To manage DNS resolution",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon QuickSight Q designed to do?",
+    "answers": [
+      {
+        "text": "Allow users to ask business questions in natural language",
+        "correct": true
+      },
+      {
+        "text": "Stream real-time data to dashboards",
+        "correct": false
+      },
+      {
+        "text": "Manage IAM roles and permissions",
+        "correct": false
+      },
+      {
+        "text": "Encrypt data in transit",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which use cases are ideal for Amazon QuickSight Q?",
+    "answers": [
+      {
+        "text": "Sales performance analysis",
+        "correct": true
+      },
+      {
+        "text": "Customer support metrics",
+        "correct": true
+      },
+      {
+        "text": "Infrastructure provisioning",
+        "correct": false
+      },
+      {
+        "text": "Marketing campaign insights",
+        "correct": true
+      },
+      {
+        "text": "IAM policy enforcement",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are things you should not do when using Amazon S3?",
+    "answers": [
+      {
+        "text": "Disable bucket versioning for critical data",
+        "correct": true
+      },
+      {
+        "text": "Use lifecycle policies for data management",
+        "correct": false
+      },
+      {
+        "text": "Make buckets publicly accessible without restrictions",
+        "correct": true
+      },
+      {
+        "text": "Enable server-side encryption",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are 'no-to-dos' when deploying applications on AWS?",
+    "answers": [
+      {
+        "text": "Hardcoding credentials in source code",
+        "correct": true
+      },
+      {
+        "text": "Using environment variables for secrets",
+        "correct": true
+      },
+      {
+        "text": "Using AWS Secrets Manager for credentials",
+        "correct": false
+      },
+      {
+        "text": "Storing secrets in plaintext in S3",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid CloudTrail event types?",
+    "answers": [
+      {
+        "text": "Management events",
+        "correct": true
+      },
+      {
+        "text": "Data events",
+        "correct": true
+      },
+      {
+        "text": "Insight events",
+        "correct": true
+      },
+      {
+        "text": "Billing events",
+        "correct": false
+      },
+      {
+        "text": "Security group events",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How does CloudTrail Insights help in security operations?",
+    "answers": [
+      {
+        "text": "By automatically blocking suspicious IPs",
+        "correct": false
+      },
+      {
+        "text": "By highlighting anomalous API usage patterns",
+        "correct": true
+      },
+      {
+        "text": "By generating IAM policies",
+        "correct": false
+      },
+      {
+        "text": "By providing detailed billing reports",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How does AWS Config help with compliance?",
+    "answers": [
+      {
+        "text": "By evaluating resource configurations against desired settings",
+        "correct": true
+      },
+      {
+        "text": "By encrypting all data in transit",
+        "correct": false
+      },
+      {
+        "text": "By generating IAM policies",
+        "correct": false
+      },
+      {
+        "text": "By providing a managed firewall",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are Amazon Security Groups?",
+    "answers": [
+      {
+        "text": "Virtual firewalls that control inbound and outbound traffic for AWS resources.",
+        "correct": true
+      },
+      {
+        "text": "A service for managing user access to AWS resources.",
+        "correct": false
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false
+      },
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service can help troubleshoot issues with your applications by providing detailed logs and metrics?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are Data Permissions in Lake Formation used for?",
+    "answers": [
+      {
+        "text": "To control access to data in the data lake",
+        "correct": true
+      },
+      {
+        "text": "To store data in S3",
+        "correct": false
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false
+      },
+      {
+        "text": "To define IAM policies",
+        "correct": false
+      },
+      {
+        "text": "To manage user identities",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "To ensure your CloudWatch Logs are encrypted with a specific KMS key, what should you configure?",
+    "answers": [
+      {
+        "text": "CloudWatch Logs Agent",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Logs Encryption",
+        "correct": true
+      },
+      {
+        "text": "CloudWatch Unified Agent",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an example of static data masking?",
+    "answers": [
+      {
+        "text": "Masking data in real-time as it is accessed",
+        "correct": false
+      },
+      {
+        "text": "Replacing sensitive data in a database copy used for testing",
+        "correct": true
+      },
+      {
+        "text": "Encrypting data during transmission",
+        "correct": false
+      },
+      {
+        "text": "Using a firewall to block unauthorized access",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are best practices for securing your AWS root account?",
+    "answers": [
+      {
+        "text": "Enable multi-factor authentication (MFA)",
+        "correct": true
+      },
+      {
+        "text": "Use the root account for daily administrative tasks",
+        "correct": false
+      },
+      {
+        "text": "Delete the root account",
+        "correct": false
+      },
+      {
+        "text": "Create and use IAM users for regular access",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are considered least privilege principles in AWS?",
+    "answers": [
+      {
+        "text": "Grant only the permissions required to perform a task",
+        "correct": true
+      },
+      {
+        "text": "Use managed policies for all users",
+        "correct": false
+      },
+      {
+        "text": "Regularly review and refine IAM policies",
+        "correct": true
+      },
+      {
+        "text": "Assign AdministratorAccess to all developers",
+        "correct": false
+      },
+      {
+        "text": "Use IAM Access Analyzer to identify unused permissions",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of AWS KMS?",
+    "answers": [
+      {
+        "text": "To manage and store encryption keys securely",
+        "correct": true
+      },
+      {
+        "text": "To monitor network traffic",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false
+      },
+      {
+        "text": "To provide DDoS protection",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are valid types of keys in AWS KMS?",
+    "answers": [
+      {
+        "text": "Customer managed keys (CMKs)",
+        "correct": true
+      },
+      {
+        "text": "AWS managed keys",
+        "correct": true
+      },
+      {
+        "text": "User-defined symmetric keys",
+        "correct": false
+      },
+      {
+        "text": "Hardware security module (HSM) keys",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following statements about IAM roles are true?",
+    "answers": [
+      {
+        "text": "IAM roles can be assumed by AWS services",
+        "correct": true
+      },
+      {
+        "text": "IAM roles require a username and password",
+        "correct": false
+      },
+      {
+        "text": "IAM roles provide temporary security credentials",
+        "correct": true
+      },
+      {
+        "text": "IAM roles are used only for billing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How do IAM roles differ from IAM users?",
+    "answers": [
+      {
+        "text": "Roles are intended to be assumed temporarily",
+        "correct": true
+      },
+      {
+        "text": "Users have long-term credentials",
+        "correct": true
+      },
+      {
+        "text": "Roles are used only for S3 access",
+        "correct": false
+      },
+      {
+        "text": "Users cannot be assigned policies",
+        "correct": false
+      },
+      {
+        "text": "Roles can be assumed by AWS services",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are core components of AWS IAM?",
+    "answers": [
+      {
+        "text": "Users",
+        "correct": true
+      },
+      {
+        "text": "Roles",
+        "correct": true
+      },
+      {
+        "text": "Policies",
+        "correct": true
+      },
+      {
+        "text": "Buckets",
+        "correct": false
+      },
+      {
+        "text": "Groups",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of IAM policies in AWS?",
+    "answers": [
+      {
+        "text": "To define permissions for users, groups, and roles",
+        "correct": true
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false
+      },
+      {
+        "text": "To encrypt data in S3",
+        "correct": false
+      },
+      {
+        "text": "To control access to AWS resources",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a Man-in-the-Middle (MITM) attack?",
+    "answers": [
+      {
+        "text": "An attack where the attacker secretly intercepts and possibly alters communication between two parties",
+        "correct": true
+      },
+      {
+        "text": "An attack that floods a server with traffic",
+        "correct": false
+      },
+      {
+        "text": "An attack that installs malware on a device",
+        "correct": false
+      },
+      {
+        "text": "An attack that steals credentials through phishing emails",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are common techniques used in MITM attacks?",
+    "answers": [
+      {
+        "text": "ARP spoofing",
+        "correct": true
+      },
+      {
+        "text": "DNS spoofing",
+        "correct": true
+      },
+      {
+        "text": "SQL injection",
+        "correct": false
+      },
+      {
+        "text": "Session hijacking",
+        "correct": true
+      },
+      {
+        "text": "Brute force attack",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are best practices when using AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "Enable automatic rotation of secrets",
+        "correct": true
+      },
+      {
+        "text": "Use IAM policies to restrict access to secrets",
+        "correct": true
+      },
+      {
+        "text": "Store secrets in plain text in environment variables",
+        "correct": false
+      },
+      {
+        "text": "Log secrets to CloudWatch for debugging",
+        "correct": false
+      },
+      {
+        "text": "Use encryption with AWS KMS",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are true about NAT Gateways?",
+    "answers": [
+      {
+        "text": "They allow instances in a private subnet to access the internet",
+        "correct": true
+      },
+      {
+        "text": "They allow inbound traffic from the internet to private subnets",
+        "correct": false
+      },
+      {
+        "text": "They require an Elastic IP address",
+        "correct": true
+      },
+      {
+        "text": "They are used to route traffic between VPCs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are features of AWS X-Ray?",
+    "answers": [
+      {
+        "text": "Request tracing",
+        "correct": true
+      },
+      {
+        "text": "Service maps",
+        "correct": true
+      },
+      {
+        "text": "Real-time log streaming",
+        "correct": false
+      },
+      {
+        "text": "Latency analysis",
+        "correct": true
+      },
+      {
+        "text": "IAM policy generation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are features of Amazon QuickSight Q?",
+    "answers": [
+      {
+        "text": "Natural language query interface",
+        "correct": true
+      },
+      {
+        "text": "Automatic chart generation",
+        "correct": true
+      },
+      {
+        "text": "Manual SQL query writing",
+        "correct": false
+      },
+      {
+        "text": "Integration with SPICE datasets",
+        "correct": true
+      },
+      {
+        "text": "IAM policy editing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are considered anti-patterns when using Amazon S3?",
+    "answers": [
+      {
+        "text": "Storing frequently accessed small files individually",
+        "correct": true
+      },
+      {
+        "text": "Using S3 for static website hosting",
+        "correct": false
+      },
+      {
+        "text": "Using S3 without versioning for critical data",
+        "correct": true
+      },
+      {
+        "text": "Enabling server-side encryption",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following should you avoid when managing IAM policies?",
+    "answers": [
+      {
+        "text": "Granting full administrative access to all users",
+        "correct": true
+      },
+      {
+        "text": "Using least privilege principle",
+        "correct": false
+      },
+      {
+        "text": "Attaching policies directly to individual users",
+        "correct": true
+      },
+      {
+        "text": "Using IAM groups for access control",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What could cause a Lambda function to time out?",
+    "answers": [
+      {
+        "text": "Function exceeds the configured timeout setting",
+        "correct": true
+      },
+      {
+        "text": "IAM role lacks permissions",
+        "correct": false
+      },
+      {
+        "text": "Function is stuck in an infinite loop",
+        "correct": true
+      },
+      {
+        "text": "Too many concurrent executions",
+        "correct": false
+      },
+      {
+        "text": "Missing environment variables",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are common use cases for analyzing CloudTrail logs?",
+    "answers": [
+      {
+        "text": "Auditing user activity",
+        "correct": true
+      },
+      {
+        "text": "Monitoring EC2 CPU usage",
+        "correct": false
+      },
+      {
+        "text": "Detecting unauthorized access",
+        "correct": true
+      },
+      {
+        "text": "Debugging failed API calls",
+        "correct": true
+      },
+      {
+        "text": "Managing IAM roles",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What should you check if CloudTrail is not logging events as expected?",
+    "answers": [
+      {
+        "text": "Trail is enabled and logging to the correct S3 bucket",
+        "correct": true
+      },
+      {
+        "text": "IAM permissions for CloudTrail to write to S3",
+        "correct": true
+      },
+      {
+        "text": "CloudTrail is configured in the correct region",
+        "correct": true
+      },
+      {
+        "text": "CloudTrail is integrated with AWS Shield",
+        "correct": false
+      },
+      {
+        "text": "S3 bucket policy allows CloudTrail access",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which class is used to define an IAM role in AWS CDK using Java?",
+    "answers": [
+      {
+        "text": "Role",
+        "correct": true
+      },
+      {
+        "text": "IAMRole",
+        "correct": false
+      },
+      {
+        "text": "RoleDefinition",
+        "correct": false
+      },
+      {
+        "text": "IAM",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which type of permissions can be set in AWS Lake Formation?",
+    "answers": [
+      {
+        "text": "Data permissions",
+        "correct": true
+      },
+      {
+        "text": "IAM permissions",
+        "correct": false
+      },
+      {
+        "text": "Bucket permissions",
+        "correct": false
+      },
+      {
+        "text": "Role permissions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services can help detect and respond to security incidents?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS Shield",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the benefits of using IAM roles instead of IAM users for applications running on EC2?",
+    "answers": [
+      {
+        "text": "IAM roles provide temporary credentials",
+        "correct": true
+      },
+      {
+        "text": "IAM roles are easier to rotate than access keys",
+        "correct": true
+      },
+      {
+        "text": "IAM users are more secure than roles",
+        "correct": false
+      },
+      {
+        "text": "IAM roles can be assumed by services",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS services can integrate with AWS KMS for encryption?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is envelope encryption in the context of AWS KMS?",
+    "answers": [
+      {
+        "text": "Encrypting data using multiple layers of IAM policies",
+        "correct": false
+      },
+      {
+        "text": "Encrypting data with a data key, which is then encrypted with a master key",
+        "correct": true
+      },
+      {
+        "text": "Encrypting data using SSL/TLS",
+        "correct": false
+      },
+      {
+        "text": "Encrypting IAM credentials before storage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a permission in the context of AWS IAM?",
+    "answers": [
+      {
+        "text": "A user’s login credentials",
+        "correct": false
+      },
+      {
+        "text": "A specific action allowed on a resource",
+        "correct": true
+      },
+      {
+        "text": "A group of users",
+        "correct": false
+      },
+      {
+        "text": "A billing alert",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are best practices for using AWS IAM?",
+    "answers": [
+      {
+        "text": "Enable MFA for all users",
+        "correct": true
+      },
+      {
+        "text": "Use the root account for daily tasks",
+        "correct": false
+      },
+      {
+        "text": "Apply the principle of least privilege",
+        "correct": true
+      },
+      {
+        "text": "Share IAM user credentials",
+        "correct": false
+      },
+      {
+        "text": "Rotate access keys regularly",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following scenarios could indicate a potential MITM attack?",
+    "answers": [
+      {
+        "text": "A user receives a certificate warning when accessing a secure website",
+        "correct": true
+      },
+      {
+        "text": "A website loads unusually slowly and behaves erratically",
+        "correct": true
+      },
+      {
+        "text": "A user is redirected to a different login page than expected",
+        "correct": true
+      },
+      {
+        "text": "A user receives a 404 error on a webpage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which tools or technologies help detect or prevent MITM attacks?",
+    "answers": [
+      {
+        "text": "SSL/TLS certificates",
+        "correct": true
+      },
+      {
+        "text": "Intrusion Detection Systems (IDS)",
+        "correct": true
+      },
+      {
+        "text": "Packet sniffers",
+        "correct": false
+      },
+      {
+        "text": "Public key infrastructure (PKI)",
+        "correct": true
+      },
+      {
+        "text": "Unsecured HTTP connections",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of AWS WAF?",
+    "answers": [
+      {
+        "text": "To protect web applications from common web exploits",
+        "correct": true
+      },
+      {
+        "text": "To manage IAM users and roles",
+        "correct": false
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS services can be protected using AWS WAF?",
+    "answers": [
+      {
+        "text": "Amazon CloudFront",
+        "correct": true
+      },
+      {
+        "text": "Application Load Balancer (ALB)",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What must be defined when creating a CloudWatch Alarm?",
+    "answers": [
+      {
+        "text": "A metric to monitor",
+        "correct": true
+      },
+      {
+        "text": "A threshold value",
+        "correct": true
+      },
+      {
+        "text": "An IAM user",
+        "correct": false
+      },
+      {
+        "text": "An action to take when the alarm state changes",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of AWS X-Ray?",
+    "answers": [
+      {
+        "text": "To trace requests as they travel through your application",
+        "correct": true
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon QuickSight primarily used for?",
+    "answers": [
+      {
+        "text": "Business intelligence and data visualization",
+        "correct": true
+      },
+      {
+        "text": "Managing IAM roles",
+        "correct": false
+      },
+      {
+        "text": "Encrypting data at rest",
+        "correct": false
+      },
+      {
+        "text": "Monitoring network traffic",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are features of Amazon QuickSight?",
+    "answers": [
+      {
+        "text": "SPICE (Super-fast, Parallel, In-memory Calculation Engine)",
+        "correct": true
+      },
+      {
+        "text": "Machine Learning Insights",
+        "correct": true
+      },
+      {
+        "text": "Real-time log monitoring",
+        "correct": false
+      },
+      {
+        "text": "Interactive dashboards",
+        "correct": true
+      },
+      {
+        "text": "IAM policy generation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are best practices when using Amazon QuickSight?",
+    "answers": [
+      {
+        "text": "Use SPICE for frequently accessed datasets",
+        "correct": true
+      },
+      {
+        "text": "Grant broad access to all dashboards",
+        "correct": false
+      },
+      {
+        "text": "Leverage ML Insights for anomaly detection",
+        "correct": true
+      },
+      {
+        "text": "Use row-level security to control data access",
+        "correct": true
+      },
+      {
+        "text": "Avoid using calculated fields",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which practices should be avoided when using Amazon RDS?",
+    "answers": [
+      {
+        "text": "Disabling automated backups",
+        "correct": true
+      },
+      {
+        "text": "Using Multi-AZ deployments for high availability",
+        "correct": false
+      },
+      {
+        "text": "Storing application logs in the database",
+        "correct": true
+      },
+      {
+        "text": "Enabling encryption at rest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following can help troubleshoot failed S3 uploads?",
+    "answers": [
+      {
+        "text": "Check IAM permissions for PutObject",
+        "correct": true
+      },
+      {
+        "text": "Verify bucket policy allows uploads",
+        "correct": true
+      },
+      {
+        "text": "Ensure the object key is unique",
+        "correct": false
+      },
+      {
+        "text": "Check if the bucket is versioned",
+        "correct": false
+      },
+      {
+        "text": "Inspect error messages from SDK or CLI",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of AWS Config?",
+    "answers": [
+      {
+        "text": "To assess, audit, and evaluate the configurations of AWS resources",
+        "correct": true
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM users and roles",
+        "correct": false
+      },
+      {
+        "text": "To monitor billing and usage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is PII?",
+    "answers": [
+      {
+        "text": "Personally Identifiable Information, which includes data that can be used to identify an individual.",
+        "correct": true
+      },
+      {
+        "text": "Publicly Indexed Information, which includes data that is publicly available on the internet.",
+        "correct": false
+      },
+      {
+        "text": "Protected Internal Information, which includes data that is protected by internal security measures.",
+        "correct": false
+      },
+      {
+        "text": "Private Infrastructure Information, which includes data related to private cloud infrastructure.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the principle of least privilege?",
+    "answers": [
+      {
+        "text": "A security principle that ensures users and systems have the minimum access necessary to perform their tasks.",
+        "correct": true
+      },
+      {
+        "text": "A principle that ensures all users have equal access to resources and data.",
+        "correct": false
+      },
+      {
+        "text": "A principle that ensures systems are isolated from each other to prevent unauthorized access.",
+        "correct": false
+      },
+      {
+        "text": "A principle that ensures data is encrypted at rest and in transit.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "A junior developer accidentally deleted a production database. Upon investigation, you find they had full admin access. Which security principle was violated?",
+    "answers": [
+      {
+        "text": "Principle of Least Privilege",
+        "correct": true
+      },
+      {
+        "text": "Zero Trust",
+        "correct": false
+      },
+      {
+        "text": "Role-Based Access Control",
+        "correct": false
+      },
+      {
+        "text": "Identity Federation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What are Amazon Security Groups used for?",
+    "answers": [
+      {
+        "text": "Controlling inbound and outbound traffic for instances",
+        "correct": true
+      },
+      {
+        "text": "Managing user identities",
+        "correct": false
+      },
+      {
+        "text": "Defining permissions for AWS services",
+        "correct": false
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service allows you to set alarms based on metrics such as CPU utilization or disk I/O?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false
+      },
+      {
+        "text": "AWS Shield",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following best describes the difference between CloudTrail and CloudWatch?",
+    "answers": [
+      {
+        "text": "CloudTrail monitors system metrics, while CloudWatch logs API calls.",
+        "correct": false
+      },
+      {
+        "text": "CloudTrail is used for compliance auditing, while CloudWatch is used for performance monitoring.",
+        "correct": true
+      },
+      {
+        "text": "CloudTrail is a billing service, while CloudWatch is a security service.",
+        "correct": false
+      },
+      {
+        "text": "CloudTrail and CloudWatch are both used only for EC2 monitoring.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are recommended ways to secure data stored in Amazon S3?",
+    "answers": [
+      {
+        "text": "Enable server-side encryption",
+        "correct": true
+      },
+      {
+        "text": "Use bucket policies to restrict access",
+        "correct": true
+      },
+      {
+        "text": "Make the bucket public for easier access",
+        "correct": false
+      },
+      {
+        "text": "Enable versioning",
+        "correct": false
+      },
+      {
+        "text": "Use access logging to monitor requests",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are effective ways to protect against MITM attacks?",
+    "answers": [
+      {
+        "text": "Use HTTPS and SSL/TLS encryption",
+        "correct": true
+      },
+      {
+        "text": "Avoid using public Wi-Fi for sensitive transactions",
+        "correct": true
+      },
+      {
+        "text": "Use VPNs to encrypt traffic",
+        "correct": true
+      },
+      {
+        "text": "Disable firewalls",
+        "correct": false
+      },
+      {
+        "text": "Use outdated software",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the primary purpose of AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "To store and manage sensitive information such as API keys and database credentials",
+        "correct": true
+      },
+      {
+        "text": "To monitor network traffic",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM users and groups",
+        "correct": false
+      },
+      {
+        "text": "To encrypt EBS volumes",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are key components of an AWS WAF rule configuration?",
+    "answers": [
+      {
+        "text": "Rule groups",
+        "correct": true
+      },
+      {
+        "text": "Web ACLs",
+        "correct": true
+      },
+      {
+        "text": "Security groups",
+        "correct": false
+      },
+      {
+        "text": "Conditions",
+        "correct": true
+      },
+      {
+        "text": "IAM policies",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are best practices when using AWS WAF?",
+    "answers": [
+      {
+        "text": "Use managed rule groups for common threats",
+        "correct": true
+      },
+      {
+        "text": "Monitor WAF logs with Amazon CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "Allow all traffic by default",
+        "correct": false
+      },
+      {
+        "text": "Test rules in count mode before enforcing",
+        "correct": true
+      },
+      {
+        "text": "Disable logging to reduce costs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are differences between Security Groups and Network ACLs?",
+    "answers": [
+      {
+        "text": "Security Groups are stateful; NACLs are stateless",
+        "correct": true
+      },
+      {
+        "text": "NACLs support deny rules; Security Groups do not",
+        "correct": true
+      },
+      {
+        "text": "Security Groups apply at the subnet level",
+        "correct": false
+      },
+      {
+        "text": "NACLs evaluate rules in order; Security Groups evaluate all rules",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What kind of insights can AWS X-Ray provide?",
+    "answers": [
+      {
+        "text": "Performance bottlenecks",
+        "correct": true
+      },
+      {
+        "text": "User identity verification",
+        "correct": false
+      },
+      {
+        "text": "Error rates and exceptions",
+        "correct": true
+      },
+      {
+        "text": "Request latency",
+        "correct": true
+      },
+      {
+        "text": "Data encryption status",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are anti-patterns in AWS architecture design?",
+    "answers": [
+      {
+        "text": "Designing for high availability",
+        "correct": false
+      },
+      {
+        "text": "Using a single Availability Zone for all resources",
+        "correct": true
+      },
+      {
+        "text": "Ignoring cost optimization strategies",
+        "correct": true
+      },
+      {
+        "text": "Implementing monitoring and logging",
+        "correct": false
+      },
+      {
+        "text": "Hardcoding credentials in application code",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of AWS CloudTrail Insights?",
+    "answers": [
+      {
+        "text": "To detect unusual operational activity in your AWS account",
+        "correct": true
+      },
+      {
+        "text": "To provide real-time threat detection",
+        "correct": false
+      },
+      {
+        "text": "To store logs in Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What types of events does CloudTrail Insights analyze?",
+    "answers": [
+      {
+        "text": "Read-only events",
+        "correct": false
+      },
+      {
+        "text": "Write management events",
+        "correct": true
+      },
+      {
+        "text": "Data plane events",
+        "correct": false
+      },
+      {
+        "text": "Unusual patterns in write API calls",
+        "correct": true
+      },
+      {
+        "text": "IAM policy changes",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are features of AWS Config?",
+    "answers": [
+      {
+        "text": "Resource configuration history",
+        "correct": true
+      },
+      {
+        "text": "Compliance auditing",
+        "correct": true
+      },
+      {
+        "text": "Real-time threat detection",
+        "correct": false
+      },
+      {
+        "text": "Automated remediation",
+        "correct": true
+      },
+      {
+        "text": "Data encryption at rest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following statements are true about CloudWatch, CloudTrail, and Config?",
+    "answers": [
+      {
+        "text": "CloudWatch monitors performance metrics and logs",
+        "correct": true
+      },
+      {
+        "text": "CloudTrail records API activity across AWS services",
+        "correct": true
+      },
+      {
+        "text": "AWS Config evaluates resource compliance and configuration history",
+        "correct": true
+      },
+      {
+        "text": "CloudTrail is used for setting alarms",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch tracks IAM policy changes",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following are features of AWS Cost Explorer?",
+    "answers": [
+      {
+        "text": "Filtering costs by service",
+        "correct": true
+      },
+      {
+        "text": "Forecasting future AWS spending",
+        "correct": true
+      },
+      {
+        "text": "Creating IAM policies",
+        "correct": false
+      },
+      {
+        "text": "Monitoring real-time CPU usage",
+        "correct": false
+      },
+      {
+        "text": "Grouping costs by linked accounts",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What types of budgets can be created in AWS Budgets?",
+    "answers": [
+      {
+        "text": "Cost budgets",
+        "correct": true
+      },
+      {
+        "text": "Usage budgets",
+        "correct": true
+      },
+      {
+        "text": "Reservation budgets",
+        "correct": true
+      },
+      {
+        "text": "IAM budgets",
+        "correct": false
+      },
+      {
+        "text": "Security budgets",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are categories of checks provided by AWS Trusted Advisor?",
+    "answers": [
+      {
+        "text": "Cost Optimization",
+        "correct": true
+      },
+      {
+        "text": "Performance",
+        "correct": true
+      },
+      {
+        "text": "Security",
+        "correct": true
+      },
+      {
+        "text": "Machine Learning",
+        "correct": false
+      },
+      {
+        "text": "Compliance Auditing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What types of rules can be created in AWS Config?",
+    "answers": [
+      {
+        "text": "Managed rules provided by AWS",
+        "correct": true
+      },
+      {
+        "text": "Custom rules using AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "IAM policy rules",
+        "correct": false
+      },
+      {
+        "text": "CloudFormation template rules",
+        "correct": false
+      },
+      {
+        "text": "S3 bucket lifecycle rules",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service can be used to ensure data privacy and security in AI applications?",
+    "answers": [
+      {
+        "text": "AWS Key Management Service (KMS)",
+        "correct": true
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which stakeholders should be involved in defining ML business goals?",
+    "answers": [
+      {
+        "text": "Data scientists",
+        "correct": true
+      },
+      {
+        "text": "Business analysts",
+        "correct": true
+      },
+      {
+        "text": "IT security personnel",
+        "correct": false
+      },
+      {
+        "text": "Product owners",
+        "correct": true
+      },
+      {
+        "text": "End users",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is primarily used for monitoring metrics and setting alarms?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid AWS Budget types?",
+    "answers": [
+      {
+        "text": "Cost Budget",
+        "correct": true
+      },
+      {
+        "text": "Usage Budget",
+        "correct": true
+      },
+      {
+        "text": "RI Coverage Budget",
+        "correct": true
+      },
+      {
+        "text": "IAM Budget",
+        "correct": false
+      },
+      {
+        "text": "Security Budget",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following can you do with AWS Cost Explorer?",
+    "answers": [
+      {
+        "text": "View daily and monthly AWS usage",
+        "correct": true
+      },
+      {
+        "text": "Forecast future costs",
+        "correct": true
+      },
+      {
+        "text": "Set IAM permissions",
+        "correct": false
+      },
+      {
+        "text": "Create compliance rules",
+        "correct": false
+      },
+      {
+        "text": "Filter costs by tag",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which pillar of the AWS Well-Architected Framework focuses on security?",
+    "answers": [
+      {
+        "text": "Operational Excellence",
+        "correct": false
+      },
+      {
+        "text": "Security",
+        "correct": true
+      },
+      {
+        "text": "Reliability",
+        "correct": false
+      },
+      {
+        "text": "Performance Efficiency",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the key considerations for data preparation in the AWS Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "Data quality and consistency",
+        "correct": true
+      },
+      {
+        "text": "Data storage and retrieval",
+        "correct": true
+      },
+      {
+        "text": "Data encryption",
+        "correct": false
+      },
+      {
+        "text": "Data visualization",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What are the benefits of using the AWS Well-Architected Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "Improved performance and scalability",
+        "correct": true
+      },
+      {
+        "text": "Enhanced security and compliance",
+        "correct": true
+      },
+      {
+        "text": "Reduced operational costs",
+        "correct": true
+      },
+      {
+        "text": "Simplified user interface",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  }
+]

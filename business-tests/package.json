@@ -1,0 +1,23 @@
+{
+  "name": "qolling-business-tests",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "check:feature-coverage": "node scripts/check-feature-coverage.mjs",
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke.spec.ts",
+    "screenshots": "playwright test tests/screenshots.spec.ts",
+    "screenshots:update": "playwright test tests/screenshots.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "codegen": "playwright codegen http://127.0.0.1:5173",
+    "install:browsers": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.0",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.0"
+  }
+}

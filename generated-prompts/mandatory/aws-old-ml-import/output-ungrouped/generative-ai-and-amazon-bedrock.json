@@ -1,0 +1,1487 @@
+[
+  {
+    "question": "You need to build a model that can generate text based on a given prompt. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "LDA",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is the main advantage of using GPT models?",
+    "answers": [
+      {
+        "text": "They can process images more efficiently",
+        "correct": false
+      },
+      {
+        "text": "They can generate human-like text based on input prompts",
+        "correct": true
+      },
+      {
+        "text": "They require less computational power",
+        "correct": false
+      },
+      {
+        "text": "They are primarily used for clustering tasks",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does 'Top-p' (nucleus) sampling refer to in language model decoding?",
+    "answers": [
+      {
+        "text": "A method that selects the top p most frequent words from the training data.",
+        "correct": false
+      },
+      {
+        "text": "A sampling technique that chooses from the smallest set of tokens whose cumulative probability exceeds a threshold p.",
+        "correct": true
+      },
+      {
+        "text": "A method that always selects the token with the highest probability.",
+        "correct": false
+      },
+      {
+        "text": "A technique for compressing token embeddings during training.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service would you use to quickly deploy a pre-trained model like GPT-J for text generation tasks?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker JumpStart",
+        "correct": true
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In the context of self-attention, which matrices are used to compute the attention scores for each token?",
+    "answers": [
+      {
+        "text": "Query and Value",
+        "correct": false
+      },
+      {
+        "text": "Query and Key",
+        "correct": true
+      },
+      {
+        "text": "Key and Value",
+        "correct": false
+      },
+      {
+        "text": "Embedding and Value",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a key benefit of using Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Manual scaling of resources",
+        "correct": false
+      },
+      {
+        "text": "Automated model tuning",
+        "correct": true
+      },
+      {
+        "text": "Limited integration options",
+        "correct": false
+      },
+      {
+        "text": "High upfront costs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which security feature is included with Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Data encryption at rest",
+        "correct": true
+      },
+      {
+        "text": "Manual access control",
+        "correct": false
+      },
+      {
+        "text": "No security features",
+        "correct": false
+      },
+      {
+        "text": "Third-party security integration",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You're implementing a customer query system that uses Amazon Bedrock's LLM agents. The agent needs to use both a knowledge base and an external API for retrieving real-time data. How should you structure the agent to meet these requirements?",
+    "answers": [
+      {
+        "text": "Create a single action group combining the knowledge base and the API.",
+        "correct": false
+      },
+      {
+        "text": "Use separate action groups for the knowledge base and API, guiding the LLM on when to use each.",
+        "correct": true
+      },
+      {
+        "text": "Hardcode the API calls within the LLM prompt.",
+        "correct": false
+      },
+      {
+        "text": "Train the LLM to handle both tasks without external action groups.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are using Amazon Bedrock to build an AI system for generating marketing content. The system must ensure the content generated adheres to brand guidelines and avoids inappropriate language. Which feature of Amazon Bedrock would best serve this purpose?",
+    "answers": [
+      {
+        "text": "Content filtering guardrails.",
+        "correct": true
+      },
+      {
+        "text": "Fine-tuning with labeled data.",
+        "correct": false
+      },
+      {
+        "text": "RAG with an up-to-date database.",
+        "correct": false
+      },
+      {
+        "text": "Integrating SageMaker Canvas.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is a key feature of the Transformer architecture used in GPT models?",
+    "answers": [
+      {
+        "text": "It uses convolutional layers to process data",
+        "correct": false
+      },
+      {
+        "text": "It processes input data in parallel using self-attention mechanisms",
+        "correct": true
+      },
+      {
+        "text": "It relies on recurrent connections to maintain context",
+        "correct": false
+      },
+      {
+        "text": "It uses decision trees for classification tasks",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a common application of GPT models?",
+    "answers": [
+      {
+        "text": "Predicting stock prices",
+        "correct": false
+      },
+      {
+        "text": "Generating code snippets",
+        "correct": true
+      },
+      {
+        "text": "Classifying medical images",
+        "correct": false
+      },
+      {
+        "text": "Detecting fraudulent transactions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the significance of 'pre-training' in GPT models?",
+    "answers": [
+      {
+        "text": "It allows the model to learn from labeled data",
+        "correct": false
+      },
+      {
+        "text": "It enables the model to learn from a large corpus of text before fine-tuning on specific tasks",
+        "correct": true
+      },
+      {
+        "text": "It reduces the computational requirements for training",
+        "correct": false
+      },
+      {
+        "text": "It is used to improve image processing capabilities",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "In a sequence-to-sequence transformer model used for translation, what is the role of the decoder?",
+    "answers": [
+      {
+        "text": "To generate the target sequence from the source sequence",
+        "correct": true
+      },
+      {
+        "text": "To encode the input sequence into a fixed-size vector",
+        "correct": false
+      },
+      {
+        "text": "To compute the attention weights for the input tokens",
+        "correct": false
+      },
+      {
+        "text": "To normalize the output probabilities using softmax",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "When using masked self-attention in GPT models, what is the purpose of the mask?",
+    "answers": [
+      {
+        "text": "To reduce the model size",
+        "correct": false
+      },
+      {
+        "text": "To prevent overfitting",
+        "correct": false
+      },
+      {
+        "text": "To allow tokens to focus only on past tokens",
+        "correct": true
+      },
+      {
+        "text": "To speed up the training process",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are tasked with summarizing large volumes of text data. Which model would you select from AWS’s offerings?",
+    "answers": [
+      {
+        "text": "Claude",
+        "correct": false
+      },
+      {
+        "text": "Jurassic-2",
+        "correct": false
+      },
+      {
+        "text": "Amazon Titan",
+        "correct": true
+      },
+      {
+        "text": "Stable Diffusion",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "AIF-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is a key advantage of using self-attention in transformer models over traditional RNNs?",
+    "answers": [
+      {
+        "text": "Decreasing model sizes",
+        "correct": false
+      },
+      {
+        "text": "Parallelizable computation",
+        "correct": true
+      },
+      {
+        "text": "Better sequence modeling with fewer parameters",
+        "correct": false
+      },
+      {
+        "text": "Elimination of the need for tokenization",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which component in a transformer model is responsible for scaling the dot-product attention scores?",
+    "answers": [
+      {
+        "text": "Softmax Layer",
+        "correct": false
+      },
+      {
+        "text": "Positional Encoding",
+        "correct": false
+      },
+      {
+        "text": "Scaling Factor",
+        "correct": true
+      },
+      {
+        "text": "Layer Normalization",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In the context of BERT, what does the acronym stand for?",
+    "answers": [
+      {
+        "text": "Bidirectional Encoder Representations from Transformers",
+        "correct": true
+      },
+      {
+        "text": "Binary Encoding for Recurrent Transformers",
+        "correct": false
+      },
+      {
+        "text": "Bidirectional Embedding Representations from Transformers",
+        "correct": false
+      },
+      {
+        "text": "Binary Embedding Representations from Transformers",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which type of neural network is most suitable for time-series forecasting?",
+    "answers": [
+      {
+        "text": "Convolutional Neural Network (CNN)",
+        "correct": false
+      },
+      {
+        "text": "Recurrent Neural Network (RNN)",
+        "correct": true
+      },
+      {
+        "text": "Generative Adversarial Network (GAN)",
+        "correct": false
+      },
+      {
+        "text": "Transformer Network",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "When setting up a new LLM agent in Amazon Bedrock, you want it to dynamically decide which tool to use based on the user's query. Which component is responsible for guiding the LLM in making this decision?",
+    "answers": [
+      {
+        "text": "Action Groups",
+        "correct": true
+      },
+      {
+        "text": "Vector Database",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Canvas",
+        "correct": false
+      },
+      {
+        "text": "Knowledge Base",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are tasked with deploying a Bedrock model that requires high availability and low-latency responses. Which deployment option should you choose?",
+    "answers": [
+      {
+        "text": "Provisioned Throughput",
+        "correct": false
+      },
+      {
+        "text": "On-Demand Throughput",
+        "correct": false
+      },
+      {
+        "text": "Serverless Deployment",
+        "correct": false
+      },
+      {
+        "text": "Model Evaluation with high availability settings",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "You’re building a legal assistant that needs to answer questions based on thousands of legal documents stored in your system. What architecture would help your model retrieve relevant documents before generating a response?",
+    "answers": [
+      {
+        "text": "Fine-tuned LLM",
+        "correct": false
+      },
+      {
+        "text": "Retrieval-Augmented Generation (RAG)",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "Amazon Guardrails",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Your company is deploying a chatbot using a foundation model on Amazon Bedrock. You want to ensure it doesn’t respond to inappropriate topics or hallucinate facts. Which Bedrock feature should you use to enforce these safety measures?",
+    "answers": [
+      {
+        "text": "Guardrails (e.g., topic filtering, contextual grounding)",
+        "correct": true
+      },
+      {
+        "text": "Model Monitor",
+        "correct": false
+      },
+      {
+        "text": "IAM Policies",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What does GPT stand for in the context of machine learning?",
+    "answers": [
+      {
+        "text": "Generative Pre-trained Transformer",
+        "correct": true
+      },
+      {
+        "text": "General Purpose Transformer",
+        "correct": false
+      },
+      {
+        "text": "Generative Predictive Transformer",
+        "correct": false
+      },
+      {
+        "text": "General Pre-trained Tokenizer",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "GPT",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which version of GPT introduced the concept of 'attention mechanism'?",
+    "answers": [
+      {
+        "text": "GPT-1",
+        "correct": false
+      },
+      {
+        "text": "GPT-2",
+        "correct": false
+      },
+      {
+        "text": "GPT-3",
+        "correct": false
+      },
+      {
+        "text": "Attention mechanism is a core part of the Transformer architecture, not specific to a GPT version",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are tokens in the context of language models like GPT?",
+    "answers": [
+      {
+        "text": "Tokens are the individual neurons in a neural network.",
+        "correct": false
+      },
+      {
+        "text": "Tokens are the hardware units used to train large models.",
+        "correct": false
+      },
+      {
+        "text": "Tokens are pieces of text (like words or subwords) that are processed by the model.",
+        "correct": true
+      },
+      {
+        "text": "Tokens are the output labels used in classification tasks.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "When using a Transformer model for text classification, which component is responsible for capturing the relationships between different tokens in a sentence?",
+    "answers": [
+      {
+        "text": "Feed-Forward Neural Network",
+        "correct": false
+      },
+      {
+        "text": "Positional Encoding",
+        "correct": false
+      },
+      {
+        "text": "Self-Attention",
+        "correct": true
+      },
+      {
+        "text": "Softmax Layer",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are using AWS SageMaker JumpStart to deploy a model for text generation. Which model type would you choose for multilingual text generation?",
+    "answers": [
+      {
+        "text": "GPT-3",
+        "correct": false
+      },
+      {
+        "text": "Amazon Titan",
+        "correct": false
+      },
+      {
+        "text": "Jurassic-2",
+        "correct": true
+      },
+      {
+        "text": "Claude",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "During the training of a transformer model, which aspect allows the model to consider the position of each token within the sequence?",
+    "answers": [
+      {
+        "text": "Token embedding",
+        "correct": false
+      },
+      {
+        "text": "Self-attention",
+        "correct": false
+      },
+      {
+        "text": "Positional encoding",
+        "correct": true
+      },
+      {
+        "text": "Multi-headed attention",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which type of neural network is most commonly used for image classification tasks?",
+    "answers": [
+      {
+        "text": "Recurrent Neural Network (RNN)",
+        "correct": false
+      },
+      {
+        "text": "Convolutional Neural Network (CNN)",
+        "correct": true
+      },
+      {
+        "text": "Generative Adversarial Network (GAN)",
+        "correct": false
+      },
+      {
+        "text": "Transformer Network",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Amazon Bedrock is designed to work with which type of data?",
+    "answers": [
+      {
+        "text": "Structured data only",
+        "correct": false
+      },
+      {
+        "text": "Unstructured data only",
+        "correct": false
+      },
+      {
+        "text": "Both structured and unstructured data",
+        "correct": true
+      },
+      {
+        "text": "Time-series data only",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Amazon Bedrock allows for the deployment of models in which environments?",
+    "answers": [
+      {
+        "text": "On-premises only",
+        "correct": false
+      },
+      {
+        "text": "Cloud only",
+        "correct": false
+      },
+      {
+        "text": "Both on-premises and cloud",
+        "correct": true
+      },
+      {
+        "text": "Edge devices only",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are developing a customer support chatbot using Amazon Bedrock. The chatbot needs to respond accurately to specific customer inquiries using recent company data. Which approach would be most effective for this scenario?",
+    "answers": [
+      {
+        "text": "Fine-tuning the foundational model with proprietary data.",
+        "correct": false
+      },
+      {
+        "text": "Using Retrieval-Augmented Generation (RAG) with a vector database.",
+        "correct": true
+      },
+      {
+        "text": "Manually coding responses for common inquiries.",
+        "correct": false
+      },
+      {
+        "text": "Relying on pre-trained models without any modifications.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are building a chatbot using Amazon Bedrock that must access both structured and unstructured data sources. What is the best approach to integrate these data types?",
+    "answers": [
+      {
+        "text": "Use a fine-tuned model trained on both data types.",
+        "correct": false
+      },
+      {
+        "text": "Store all data in a relational database and query it directly.",
+        "correct": false
+      },
+      {
+        "text": "Use RAG with a vector database for unstructured data and API calls for structured data.",
+        "correct": true
+      },
+      {
+        "text": "Convert all data to text and embed it into the model prompt.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You want to ensure that your Amazon Bedrock agent does not access certain tools in specific contexts. What should you use?",
+    "answers": [
+      {
+        "text": "Action Group Filters",
+        "correct": true
+      },
+      {
+        "text": "Guardrails",
+        "correct": false
+      },
+      {
+        "text": "IAM Roles",
+        "correct": false
+      },
+      {
+        "text": "Prompt Engineering",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is the purpose of using a vector database in a RAG architecture?",
+    "answers": [
+      {
+        "text": "To store model weights",
+        "correct": false
+      },
+      {
+        "text": "To retrieve relevant context for LLMs",
+        "correct": true
+      },
+      {
+        "text": "To manage API calls",
+        "correct": false
+      },
+      {
+        "text": "To fine-tune the model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "You want to deploy a Bedrock model that automatically scales based on usage and requires no infrastructure management. What should you use?",
+    "answers": [
+      {
+        "text": "Provisioned Throughput",
+        "correct": false
+      },
+      {
+        "text": "Serverless Deployment",
+        "correct": true
+      },
+      {
+        "text": "On-Demand Inference",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Neo",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which feature of Amazon Bedrock Guardrails helps filter out inappropriate language?",
+    "answers": [
+      {
+        "text": "Word filtering",
+        "correct": true
+      },
+      {
+        "text": "Topic filtering",
+        "correct": false
+      },
+      {
+        "text": "Contextual Grounding Check",
+        "correct": false
+      },
+      {
+        "text": "Sentiment Analysis",
+        "correct": false
+      },
+      {
+        "text": "Entity Recognition",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the requirements to create a RAG (Retrieval-Augmented Generation)?",
+    "answers": [
+      {
+        "text": "A data source, a vector database, and an LLM.",
+        "correct": true
+      },
+      {
+        "text": "A pre-trained model, a relational database, and a web server.",
+        "correct": false
+      },
+      {
+        "text": "A fine-tuned model, a NoSQL database, and a REST API.",
+        "correct": false
+      },
+      {
+        "text": "A custom model, a file storage system, and a message queue.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are the features of Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Base models, custom models, imported models, playgrounds, safeguards, builder tools, assessment & deployment.",
+        "correct": true
+      },
+      {
+        "text": "Pre-trained models, data labeling, model monitoring, endpoint management.",
+        "correct": false
+      },
+      {
+        "text": "Model training, hyperparameter tuning, real-time inference, batch processing.",
+        "correct": false
+      },
+      {
+        "text": "Data preprocessing, feature engineering, model evaluation, deployment pipelines.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are LLM Agents?",
+    "answers": [
+      {
+        "text": "Agents that use Large Language Models to perform tasks such as answering questions, generating text, and interacting with users.",
+        "correct": true
+      },
+      {
+        "text": "Agents that manage network security and monitor traffic in cloud environments.",
+        "correct": false
+      },
+      {
+        "text": "Agents that automate deployment pipelines and manage CI/CD processes.",
+        "correct": false
+      },
+      {
+        "text": "Agents that handle data preprocessing and feature engineering for machine learning models.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which company developed GPT models?",
+    "answers": [
+      {
+        "text": "Google",
+        "correct": false
+      },
+      {
+        "text": "Amazon",
+        "correct": false
+      },
+      {
+        "text": "OpenAI",
+        "correct": true
+      },
+      {
+        "text": "Microsoft",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary architecture used in GPT models?",
+    "answers": [
+      {
+        "text": "Recurrent Neural Network (RNN)",
+        "correct": false
+      },
+      {
+        "text": "Convolutional Neural Network (CNN)",
+        "correct": false
+      },
+      {
+        "text": "Transformer",
+        "correct": true
+      },
+      {
+        "text": "Support Vector Machine (SVM)",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the primary use case of GPT models?",
+    "answers": [
+      {
+        "text": "Image classification",
+        "correct": false
+      },
+      {
+        "text": "Text generation",
+        "correct": true
+      },
+      {
+        "text": "Speech recognition",
+        "correct": false
+      },
+      {
+        "text": "Object detection",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which feature of Amazon Bedrock allows for easy integration with other AWS services?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "AWS SDKs",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Amazon Bedrock supports which type of machine learning models?",
+    "answers": [
+      {
+        "text": "Supervised learning models only",
+        "correct": false
+      },
+      {
+        "text": "Unsupervised learning models only",
+        "correct": false
+      },
+      {
+        "text": "Both supervised and unsupervised learning models",
+        "correct": true
+      },
+      {
+        "text": "Reinforcement learning models only",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Amazon Bedrock provides pre-built models for which of the following tasks?",
+    "answers": [
+      {
+        "text": "Image recognition",
+        "correct": false
+      },
+      {
+        "text": "Text generation",
+        "correct": true
+      },
+      {
+        "text": "Video processing",
+        "correct": false
+      },
+      {
+        "text": "Audio analysis",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a common use case for Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Web hosting",
+        "correct": false
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false
+      },
+      {
+        "text": "Predictive analytics",
+        "correct": true
+      },
+      {
+        "text": "Email marketing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Your company wants to deploy a Bedrock-based AI system with the ability to write and execute Python code as part of its responses. Which feature should be enabled?",
+    "answers": [
+      {
+        "text": "Action Groups with a Code Interpreter",
+        "correct": true
+      },
+      {
+        "text": "Model Evaluation for code execution",
+        "correct": false
+      },
+      {
+        "text": "Knowledge Base with embedded Python scripts",
+        "correct": false
+      },
+      {
+        "text": "RAG with integrated code modules",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is Amazon Bedrock primarily used for?",
+    "answers": [
+      {
+        "text": "Data warehousing",
+        "correct": false
+      },
+      {
+        "text": "Machine learning model deployment",
+        "correct": true
+      },
+      {
+        "text": "Web hosting",
+        "correct": false
+      },
+      {
+        "text": "Database management",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How does Amazon Bedrock handle model versioning?",
+    "answers": [
+      {
+        "text": "Manual version control",
+        "correct": false
+      },
+      {
+        "text": "Automated version control",
+        "correct": true
+      },
+      {
+        "text": "No version control",
+        "correct": false
+      },
+      {
+        "text": "Third-party version control",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "While working with Amazon Bedrock, you need to frequently update your knowledge base with new company policies. What is the most efficient way to handle this?",
+    "answers": [
+      {
+        "text": "Fine-tuning the model every time a policy changes.",
+        "correct": false
+      },
+      {
+        "text": "Manually adding new policies to the LLM's training dataset.",
+        "correct": false
+      },
+      {
+        "text": "Using SageMaker Canvas to modify the model.",
+        "correct": false
+      },
+      {
+        "text": "Updating the vector database used for Retrieval-Augmented Generation (RAG).",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You're working on a Bedrock model that needs to incorporate sensitive customer data during fine-tuning. What steps should you take to ensure the security of this data?",
+    "answers": [
+      {
+        "text": "Use a VPC and PrivateLink for data transfer during fine-tuning.",
+        "correct": false
+      },
+      {
+        "text": "Encrypt the data using Amazon KMS and then fine-tune the model.",
+        "correct": false
+      },
+      {
+        "text": "Ensure data is anonymized before fine-tuning.",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Canvas to fine-tune the model in a secure environment.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Your team is planning to deploy a generative AI model in a serverless environment using Amazon Bedrock. What advantage does this provide?",
+    "answers": [
+      {
+        "text": "Increased control over the underlying hardware.",
+        "correct": false
+      },
+      {
+        "text": "Lower latency in model inference.",
+        "correct": false
+      },
+      {
+        "text": "Automatic scaling without managing infrastructure.",
+        "correct": true
+      },
+      {
+        "text": "Ability to use custom GPU configurations.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are creating a custom model in Amazon Bedrock that will require additional training data. What type of training should you use if the data is not labeled?",
+    "answers": [
+      {
+        "text": "Fine-Tuning",
+        "correct": false
+      },
+      {
+        "text": "RAG-based Retrieval",
+        "correct": false
+      },
+      {
+        "text": "Action Group Training",
+        "correct": false
+      },
+      {
+        "text": "Continued Pre-Training",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which component in Amazon Bedrock allows you to define how an LLM should interact with external tools?",
+    "answers": [
+      {
+        "text": "Guardrails",
+        "correct": false
+      },
+      {
+        "text": "Action Groups",
+        "correct": true
+      },
+      {
+        "text": "Knowledge Base",
+        "correct": false
+      },
+      {
+        "text": "Prompt Templates",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are building a legal assistant that needs to answer questions based on thousands of legal documents stored in your system. What architecture would help your model retrieve relevant documents before generating a response?",
+    "answers": [
+      {
+        "text": "Fine-tuned LLM",
+        "correct": false
+      },
+      {
+        "text": "Retrieval-Augmented Generation (RAG)",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "Amazon Guardrails",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which features are part of Amazon Bedrock Guardrails?",
+    "answers": [
+      {
+        "text": "Word filtering",
+        "correct": true
+      },
+      {
+        "text": "Topic filtering",
+        "correct": true
+      },
+      {
+        "text": "Contextual grounding check",
+        "correct": true
+      },
+      {
+        "text": "Data encryption",
+        "correct": false
+      },
+      {
+        "text": "Model monitoring",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  }
+]

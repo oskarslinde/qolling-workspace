@@ -1,0 +1,497 @@
+[
+  {
+    "question": "Which statement best describes the relationship between a Java class and an object?",
+    "answers": [
+      {
+        "text": "A class is a blueprint that defines state and behavior; an object is a runtime instance of that class.",
+        "correct": true
+      },
+      {
+        "text": "A class exists only after an object is created, while an object defines the reusable blueprint.",
+        "correct": false,
+        "wrongAnswerExplanation": "This reverses the relationship. The class is the reusable blueprint, and objects are created from it at runtime."
+      },
+      {
+        "text": "A class stores field values for one specific entity, while an object stores only method definitions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Actual field values belong to objects. The class defines fields and methods, but it does not represent one specific runtime entity."
+      },
+      {
+        "text": "A class and an object are interchangeable terms in Java.",
+        "correct": false,
+        "wrongAnswerExplanation": "They are related but not interchangeable. A class is a definition; an object is an instance of that definition."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "conceptual",
+      "class vs object"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "A class defines the structure and behavior that instances can have. An object is the concrete runtime instance that carries actual field values.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "class-vs-object"
+      ]
+    }
+  },
+  {
+    "question": "A service creates two `UserProfile` objects from the same class. Which statement is true?",
+    "answers": [
+      {
+        "text": "They can hold different field values even though they were created from the same class.",
+        "correct": true
+      },
+      {
+        "text": "They must always contain identical field values because they share the same class definition.",
+        "correct": false,
+        "wrongAnswerExplanation": "Objects from the same class share structure and behavior, but each object has its own separate instance state."
+      },
+      {
+        "text": "Only one of them can call the class methods at runtime.",
+        "correct": false,
+        "wrongAnswerExplanation": "Any object created from the class can call its instance methods, assuming access rules allow it."
+      },
+      {
+        "text": "Creating the second object automatically replaces the first object.",
+        "correct": false,
+        "wrongAnswerExplanation": "Creating a new object does not replace an existing object. Both can exist independently if references to them are kept."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "conceptual",
+      "instance state"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Objects created from the same class share the same structure and behavior definition, but each object has its own instance state.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "instance-state"
+      ]
+    }
+  },
+  {
+    "question": "Why is it useful to model `Order`, `Customer`, and `Invoice` as separate classes in a backend application?",
+    "answers": [
+      {
+        "text": "Each class can represent a distinct concept with its own state and behavior, making the model clearer and easier to maintain.",
+        "correct": true
+      },
+      {
+        "text": "Java requires every business noun to become a class, even when no behavior or data differs.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java does not require every noun to become a class. Classes should model useful concepts with meaningful state, behavior, or responsibility."
+      },
+      {
+        "text": "Separate classes prevent objects from interacting with one another.",
+        "correct": false,
+        "wrongAnswerExplanation": "Objects can still interact through methods and references. Separate classes mainly improve responsibility boundaries."
+      },
+      {
+        "text": "Using more classes automatically improves performance by reducing memory usage.",
+        "correct": false,
+        "wrongAnswerExplanation": "More classes do not automatically improve performance or reduce memory usage. The main benefit here is clearer modeling and maintainability."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "conceptual",
+      "modeling business concepts"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Classes are most useful when they give separate concepts clear responsibilities and boundaries. The benefit is maintainability and expressiveness, not automatic performance.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "modeling-business-concepts"
+      ]
+    }
+  },
+  {
+    "question": "What is printed by this code?\n\n```java\nclass Counter {\n    int value;\n}\n\nCounter a = new Counter();\nCounter b = new Counter();\na.value = 3;\nb.value = 7;\nSystem.out.println(a.value + b.value);\n```",
+    "answers": [
+      {
+        "text": "10",
+        "correct": true
+      },
+      {
+        "text": "3",
+        "correct": false,
+        "wrongAnswerExplanation": "This ignores `b.value`. The expression adds both values: `a.value` is 3 and `b.value` is 7."
+      },
+      {
+        "text": "7",
+        "correct": false,
+        "wrongAnswerExplanation": "This ignores `a.value`. The expression adds both values: 3 plus 7."
+      },
+      {
+        "text": "The code does not compile because two objects cannot be created from one class.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java allows many objects to be created from the same class. Calling `new Counter()` twice creates two separate instances."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "code reading",
+      "independent instance state"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "`a` and `b` are separate objects, so assigning `value` on one does not change the other. Their values are 3 and 7, which sum to 10.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "independent-instance-state"
+      ]
+    }
+  },
+  {
+    "question": "What is printed by this code?\n\n```java\nclass Book {\n    String title;\n}\n\nBook first = new Book();\nfirst.title = \"Clean Code\";\nBook second = first;\nsecond.title = \"Effective Java\";\nSystem.out.println(first.title);\n```",
+    "answers": [
+      {
+        "text": "Effective Java",
+        "correct": true
+      },
+      {
+        "text": "Clean Code",
+        "correct": false,
+        "wrongAnswerExplanation": "`second = first` does not create a copy. Both variables refer to the same object, so changing `second.title` also changes what `first.title` sees."
+      },
+      {
+        "text": "null",
+        "correct": false,
+        "wrongAnswerExplanation": "`title` was assigned first to `Clean Code` and then changed to `Effective Java`. It is not null at print time."
+      },
+      {
+        "text": "The code does not compile because objects cannot be assigned to another variable.",
+        "correct": false,
+        "wrongAnswerExplanation": "Object references can be assigned to another variable. The assignment copies the reference, not the object."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "code reading",
+      "object references"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "`first` and `second` refer to the same object. Changing the object's `title` through `second` is visible through `first` as well.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "object-references"
+      ]
+    }
+  },
+  {
+    "question": "What is the main difference between these two members in `Product`?\n\n```java\nclass Product {\n    String name;\n    void rename(String newName) {\n        name = newName;\n    }\n}\n```",
+    "answers": [
+      {
+        "text": "`name` stores object state, while `rename` defines behavior that can change that state.",
+        "correct": true
+      },
+      {
+        "text": "`name` defines behavior, while `rename` stores object state.",
+        "correct": false,
+        "wrongAnswerExplanation": "This reverses the roles. `name` is a field that stores data, while `rename` is a method that performs behavior."
+      },
+      {
+        "text": "Both members store state and neither defines behavior.",
+        "correct": false,
+        "wrongAnswerExplanation": "`name` stores state, but `rename` is a method. Methods define behavior rather than storing object data directly."
+      },
+      {
+        "text": "Both members are classes because they appear inside a class body.",
+        "correct": false,
+        "wrongAnswerExplanation": "Members inside a class are not automatically classes. Here, `name` is a field and `rename` is a method."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "code reading",
+      "fields vs methods"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Fields hold data for an object. Methods define actions the object can perform, often reading or changing that data.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "fields-vs-methods"
+      ]
+    }
+  },
+  {
+    "question": "You need a class to represent a temperature reading with a numeric value and a unit, and you want callers to retrieve both pieces of data later. Which implementation is the best starting point?",
+    "answers": [
+      {
+        "text": "A `TemperatureReading` class with `value` and `unit` fields plus methods that expose the needed behavior.",
+        "correct": true
+      },
+      {
+        "text": "A single `double` variable, because objects should not contain more than one piece of state.",
+        "correct": false,
+        "wrongAnswerExplanation": "Objects can contain multiple related pieces of state. A single `double` would lose the unit information."
+      },
+      {
+        "text": "Two unrelated local variables created separately wherever a reading is needed.",
+        "correct": false,
+        "wrongAnswerExplanation": "Separate local variables scatter related data and make the model easier to misuse. A class keeps the value and unit together."
+      },
+      {
+        "text": "A class with no fields and only a comment explaining what a reading means.",
+        "correct": false,
+        "wrongAnswerExplanation": "A comment does not store runtime data. The class needs fields or behavior to represent the actual temperature reading."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "coding task",
+      "modeling related state"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "When pieces of data belong together and describe one concept, a class is a natural way to keep that state and related behavior together.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "modeling-related-state"
+      ]
+    }
+  },
+  {
+    "question": "Which code most appropriately creates two separate `CartItem` objects that can later hold different quantities?",
+    "answers": [
+      {
+        "text": "```java\nCartItem first = new CartItem();\nCartItem second = new CartItem();\n```",
+        "correct": true
+      },
+      {
+        "text": "```java\nCartItem first = new CartItem();\nCartItem second = first;\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "This creates only one object. `second = first` makes both variables point to the same `CartItem`."
+      },
+      {
+        "text": "```java\nCartItem first;\nCartItem second = first;\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "`first` is declared but not initialized. A local variable must be assigned before it can be used."
+      },
+      {
+        "text": "```java\nCartItem first = CartItem;\nCartItem second = CartItem;\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "`CartItem` is a type name, not an object expression. You need `new CartItem()` to create an instance."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "coding task",
+      "creating distinct objects"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Calling `new` twice creates two distinct objects. Assigning one variable to another would make both references point to the same object instead.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "creating-distinct-objects"
+      ]
+    }
+  },
+  {
+    "question": "A developer expects `draft` and `published` to be independent documents, but changing `published.title` also changes `draft.title`.\n\n```java\nDocument draft = new Document();\ndraft.title = \"Initial\";\nDocument published = draft;\npublished.title = \"Released\";\n```\n\nWhat is the root cause?",
+    "answers": [
+      {
+        "text": "`draft` and `published` reference the same object, so both variables observe the same state.",
+        "correct": true
+      },
+      {
+        "text": "Fields inside Java objects are always shared across every instance of the class.",
+        "correct": false,
+        "wrongAnswerExplanation": "Instance fields are not automatically shared. The shared state happens here because both variables reference the same object."
+      },
+      {
+        "text": "Assigning a field after object creation is not allowed in Java.",
+        "correct": false,
+        "wrongAnswerExplanation": "Assigning to an accessible mutable field is allowed. The issue is not the field assignment, but the shared object reference."
+      },
+      {
+        "text": "The class must be abstract for two objects to exist independently.",
+        "correct": false,
+        "wrongAnswerExplanation": "Abstract classes cannot be directly instantiated. Independent objects are created by calling `new` separately on a concrete class."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "debugging",
+      "reference aliasing"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The assignment `published = draft` copies the reference, not the object. Both variables point at the same `Document` instance.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "reference-aliasing"
+      ]
+    }
+  },
+  {
+    "question": "A method returns a `Session` object, but callers report a `NullPointerException` when they access `session.userId`. The method contains:\n\n```java\nSession session;\nreturn session;\n```\n\nWhat is the real issue?",
+    "answers": [
+      {
+        "text": "The local variable is declared but never initialized with an object before it is returned.",
+        "correct": true
+      },
+      {
+        "text": "Objects in Java cannot contain fields such as `userId`.",
+        "correct": false,
+        "wrongAnswerExplanation": "Objects can contain fields. The problem is that no `Session` object was created before returning the variable."
+      },
+      {
+        "text": "Returning objects from methods is illegal unless the class is `final`.",
+        "correct": false,
+        "wrongAnswerExplanation": "Methods can return object references regardless of whether the class is `final`. The issue is missing initialization."
+      },
+      {
+        "text": "A class must have at least two fields before an object can be created.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java classes do not need two fields to be instantiated. A class can have zero, one, or many fields."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "debugging",
+      "object initialization"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "Declaring a variable does not create an object. The method needs to assign a real `Session` instance before returning it.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "object-initialization"
+      ]
+    }
+  },
+  {
+    "question": "A team stores `customerName`, `customerEmail`, `shippingStreet`, and `shippingPostalCode` directly on `Order`, even though the same customer and address concepts are reused elsewhere. Which redesign is most appropriate?",
+    "answers": [
+      {
+        "text": "Introduce separate `Customer` and `Address` classes and let `Order` reference them where that better matches the domain.",
+        "correct": true
+      },
+      {
+        "text": "Move every field into static variables so all orders can reuse the same values.",
+        "correct": false,
+        "wrongAnswerExplanation": "Static variables would share values across all orders, which is usually incorrect for customer and address data."
+      },
+      {
+        "text": "Keep adding unrelated fields to `Order` because fewer classes always make systems simpler.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically mean simpler design. Overloading one class with multiple concepts often makes the model harder to maintain."
+      },
+      {
+        "text": "Replace all classes with primitive variables because objects are useful only for inheritance.",
+        "correct": false,
+        "wrongAnswerExplanation": "Objects are useful for modeling related state and behavior, not only for inheritance. `Customer` and `Address` are meaningful domain concepts."
+      }
+    ],
+    "tags": [
+      "classes",
+      "objects",
+      "design scenario",
+      "separating domain concepts"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "Classes are useful boundaries for distinct concepts. Extracting `Customer` and `Address` makes the model more expressive, reusable, and easier to evolve.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "classes-and-objects",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "separating-domain-concepts"
+      ]
+    }
+  }
+]

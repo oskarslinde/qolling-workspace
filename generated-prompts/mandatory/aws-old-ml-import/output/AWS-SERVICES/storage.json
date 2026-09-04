@@ -1,0 +1,1287 @@
+[
+  {
+    "question": "Which statement about AWS Backup is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to provide persistent block storage volumes for EC2 instances.",
+        "correct": false,
+        "explanation": "It is used to provide persistent block storage volumes for EC2 instances. concerns a separate capability from the one being tested. AWS Backup exists to centrally automate and manage backups across supported AWS services. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to centrally automate and manage backups across supported AWS services.",
+        "correct": true,
+        "explanation": "AWS Backup exists to centrally automate and manage backups across supported AWS services. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to provide elastic shared file storage for AWS compute resources.",
+        "correct": false,
+        "explanation": "It is used to provide elastic shared file storage for AWS compute resources. concerns a separate capability from the one being tested. AWS Backup exists to centrally automate and manage backups across supported AWS services. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to replicate workloads and recover them in AWS after disruptive events.",
+        "correct": false,
+        "explanation": "It is used to replicate workloads and recover them in AWS after disruptive events. concerns a separate capability from the one being tested. AWS Backup exists to centrally automate and manage backups across supported AWS services. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Backup",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Backup"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Backup exists to centrally automate and manage backups across supported AWS services.",
+    "answerSource": "https://aws.amazon.com/backup/"
+  },
+  {
+    "question": "What is the primary purpose of Amazon Elastic Block Store (Amazon EBS)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provide persistent block storage volumes for EC2 instances",
+        "correct": true,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) exists to provide persistent block storage volumes for EC2 instances. In this context, the, primary, purpose, Elastic determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Centrally automate and manage backups across supported AWS services",
+        "correct": false,
+        "explanation": "AWS Backup has a different primary responsibility: it is designed to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "Provide elastic shared file storage for AWS compute resources",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) has a different primary responsibility: it is designed to provide elastic shared file storage for AWS compute resources."
+      },
+      {
+        "text": "Replicate workloads and recover them in AWS after disruptive events",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery has a different primary responsibility: it is designed to replicate workloads and recover them in AWS after disruptive events."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic Block Store (Amazon EBS)",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Elastic Block Store (Amazon EBS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Elastic Block Store (Amazon EBS) exists to provide persistent block storage volumes for EC2 instances.",
+    "answerSource": "https://aws.amazon.com/ebs/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide elastic shared file storage for AWS compute resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) has a different primary responsibility: it is designed to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery has a different primary responsibility: it is designed to replicate workloads and recover them in AWS after disruptive events."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup has a different primary responsibility: it is designed to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": true,
+        "explanation": "Choose Amazon Elastic File System (Amazon EFS) when the requirement is to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic File System (Amazon EFS)",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Elastic File System (Amazon EFS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Elastic File System (Amazon EFS) exists to provide elastic shared file storage for AWS compute resources.",
+    "answerSource": "https://aws.amazon.com/efs/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Elastic Disaster Recovery?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provide persistent block storage volumes for EC2 instances",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) has a different primary responsibility: it is designed to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "Provide elastic shared file storage for AWS compute resources",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) has a different primary responsibility: it is designed to provide elastic shared file storage for AWS compute resources."
+      },
+      {
+        "text": "Replicate workloads and recover them in AWS after disruptive events",
+        "correct": true,
+        "explanation": "AWS Elastic Disaster Recovery exists to replicate workloads and recover them in AWS after disruptive events. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Improve availability and performance for internet applications using the AWS global network",
+        "correct": false,
+        "explanation": "That describes AWS Global Accelerator, which is designed to improve availability and performance for internet applications using the AWS global network."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Elastic Disaster Recovery",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Elastic Disaster Recovery"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Elastic Disaster Recovery exists to replicate workloads and recover them in AWS after disruptive events.",
+    "answerSource": "https://aws.amazon.com/drs/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide managed file systems for specialized workloads?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup has a different primary responsibility: it is designed to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "Amazon FSx",
+        "correct": true,
+        "explanation": "Amazon FSx exists to provide managed file systems for specialized workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) has a different primary responsibility: it is designed to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) has a different primary responsibility: it is designed to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon FSx",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon FSx"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon FSx exists to provide managed file systems for specialized workloads.",
+    "answerSource": "https://aws.amazon.com/fsx/"
+  },
+  {
+    "question": "A team needs to store and retrieve virtually any amount of object data with high durability. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup has a different primary responsibility: it is designed to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) has a different primary responsibility: it is designed to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) has a different primary responsibility: it is designed to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon S3"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability.",
+    "answerSource": "https://aws.amazon.com/s3/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide low-cost long-term archival storage with retrieval options?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) has a different primary responsibility: it is designed to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) has a different primary responsibility: it is designed to provide elastic shared file storage for AWS compute resources."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup has a different primary responsibility: it is designed to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": true,
+        "explanation": "Amazon S3 Glacier exists to provide low-cost long-term archival storage with retrieval options. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3 Glacier",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon S3 Glacier"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon S3 Glacier exists to provide low-cost long-term archival storage with retrieval options.",
+    "answerSource": "https://aws.amazon.com/s3-glacier/"
+  },
+  {
+    "question": "Which pairing correctly matches AWS Storage Gateway with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS) — connect on-premises applications to cloud storage through hybrid storage protocols",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) — connect on-premises applications to cloud storage through hybrid storage protocols concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The distinction is important when."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS) — connect on-premises applications to cloud storage through hybrid storage protocols",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) — connect on-premises applications to cloud storage through hybrid storage protocols concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The distinction is important when."
+      },
+      {
+        "text": "AWS Storage Gateway — connect on-premises applications to cloud storage through hybrid storage protocols",
+        "correct": true,
+        "explanation": "AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Backup — connect on-premises applications to cloud storage through hybrid storage protocols",
+        "correct": false,
+        "explanation": "AWS Backup — connect on-premises applications to cloud storage through hybrid storage protocols concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The distinction is important when selecting services for an."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Storage Gateway",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Storage Gateway"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols.",
+    "answerSource": "https://aws.amazon.com/storagegateway/"
+  },
+  {
+    "question": "Which service provides object storage rather than block or shared file storage?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) is designed to provide persistent block storage volumes for EC2 instances, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) is designed to provide elastic shared file storage for AWS compute resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon FSx",
+        "correct": false,
+        "explanation": "Amazon FSx is designed to provide managed file systems for specialized workloads, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon S3 from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems.",
+    "answerSource": "https://aws.amazon.com/s3/"
+  },
+  {
+    "question": "Which service is persistent block storage designed primarily for EC2 instances?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": true,
+        "explanation": "EBS provides block volumes for EC2; S3 is object storage, EFS is shared file storage, and Storage Gateway connects on-premises applications to cloud storage."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) is designed to provide elastic shared file storage for AWS compute resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": false,
+        "explanation": "AWS Storage Gateway is designed to connect on-premises applications to cloud storage through hybrid storage protocols, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Elastic Block Store (Amazon EBS) from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "EBS provides block volumes for EC2; S3 is object storage, EFS is shared file storage, and Storage Gateway connects on-premises applications to cloud storage.",
+    "answerSource": "https://aws.amazon.com/ebs/"
+  },
+  {
+    "question": "Which service automatically backs up supported AWS resources from a central service?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": false,
+        "explanation": "AWS Storage Gateway is designed to connect on-premises applications to cloud storage through hybrid storage protocols, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": true,
+        "explanation": "AWS Backup centrally manages backups; S3 stores objects, Elastic Disaster Recovery recovers replicated workloads, and Storage Gateway supports hybrid storage."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Backup from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Backup centrally manages backups; S3 stores objects, Elastic Disaster Recovery recovers replicated workloads, and Storage Gateway supports hybrid storage.",
+    "answerSource": "https://aws.amazon.com/backup/"
+  },
+  {
+    "question": "A team needs to centrally automate and manage backups across supported AWS services. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": false,
+        "explanation": "AWS Storage Gateway is designed to connect on-premises applications to cloud storage through hybrid storage protocols, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": true,
+        "explanation": "AWS Backup centrally manages backups; S3 stores objects, Elastic Disaster Recovery recovers replicated workloads, and Storage Gateway supports hybrid storage."
+      },
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": false,
+        "explanation": "Amazon S3 Glacier is designed to provide low-cost long-term archival storage with retrieval options, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Backup",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Backup for a requirement to centrally automate and manage backups across supported AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Backup when the requirement is to centrally automate and manage backups across supported AWS services.",
+    "answerSource": "https://aws.amazon.com/backup/"
+  },
+  {
+    "question": "A team needs to provide persistent block storage volumes for EC2 instances. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": true,
+        "explanation": "EBS provides block volumes for EC2; S3 is object storage, EFS is shared file storage, and Storage Gateway connects on-premises applications to cloud storage."
+      },
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": false,
+        "explanation": "Amazon S3 Glacier is designed to provide low-cost long-term archival storage with retrieval options, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup is designed to centrally automate and manage backups across supported AWS services, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic Block Store (Amazon EBS)",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon Elastic Block Store (Amazon EBS) for a requirement to provide persistent block storage volumes for EC2 instances"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Elastic Block Store (Amazon EBS) when the requirement is to provide persistent block storage volumes for EC2 instances.",
+    "answerSource": "https://aws.amazon.com/ebs/"
+  },
+  {
+    "question": "A cloud practitioner must provide elastic shared file storage for AWS compute resources. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": true,
+        "explanation": "Choose Amazon Elastic File System (Amazon EFS) when the requirement is to provide elastic shared file storage for AWS compute resources."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": false,
+        "explanation": "AWS Storage Gateway is designed to connect on-premises applications to cloud storage through hybrid storage protocols, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) is designed to provide persistent block storage volumes for EC2 instances, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon FSx",
+        "correct": false,
+        "explanation": "Choose Amazon FSx when the requirement is to provide managed file systems for specialized workloads. Choose Amazon Elastic File System (Amazon EFS) when the requirement is to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic File System (Amazon EFS)",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Elastic File System (Amazon EFS) for a requirement to provide elastic shared file storage for AWS compute resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Elastic File System (Amazon EFS) when the requirement is to provide elastic shared file storage for AWS compute resources.",
+    "answerSource": "https://aws.amazon.com/efs/"
+  },
+  {
+    "question": "A team needs to replicate workloads and recover them in AWS after disruptive events. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": false,
+        "explanation": "Amazon S3 Glacier is designed to provide low-cost long-term archival storage with retrieval options, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup is designed to centrally automate and manage backups across supported AWS services, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": true,
+        "explanation": "Choose AWS Elastic Disaster Recovery when the requirement is to replicate workloads and recover them in AWS after disruptive events."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Elastic Disaster Recovery",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Elastic Disaster Recovery for a requirement to replicate workloads and recover them in AWS after disruptive events"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Elastic Disaster Recovery when the requirement is to replicate workloads and recover them in AWS after disruptive events.",
+    "answerSource": "https://aws.amazon.com/drs/"
+  },
+  {
+    "question": "Which AWS service should a team select to provide managed file systems for specialized workloads?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": false,
+        "explanation": "Amazon S3 Glacier is designed to provide low-cost long-term archival storage with retrieval options, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup is designed to centrally automate and manage backups across supported AWS services, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon FSx",
+        "correct": true,
+        "explanation": "Amazon FSx exists to provide managed file systems for specialized workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon FSx",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon FSx for a requirement to provide managed file systems for specialized workloads"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon FSx when the requirement is to provide managed file systems for specialized workloads.",
+    "answerSource": "https://aws.amazon.com/fsx/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to store and retrieve virtually any amount of object data with high durability?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Firewall Manager",
+        "correct": false,
+        "explanation": "AWS Firewall Manager is designed to centrally configure and manage firewall rules across accounts and resources, so it does not match this question."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false,
+        "explanation": "AWS Backup is designed to centrally automate and manage backups across supported AWS services, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select Amazon S3 for a requirement to store and retrieve virtually any amount of object data with high durability"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon S3 when the requirement is to store and retrieve virtually any amount of object data with high durability.",
+    "answerSource": "https://aws.amazon.com/s3/"
+  },
+  {
+    "question": "A cloud practitioner must provide low-cost long-term archival storage with retrieval options. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": true,
+        "explanation": "Amazon S3 Glacier exists to provide low-cost long-term archival storage with retrieval options. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": false,
+        "explanation": "AWS Storage Gateway is designed to connect on-premises applications to cloud storage through hybrid storage protocols, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Elastic Block Store (Amazon EBS)",
+        "correct": false,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) is designed to provide persistent block storage volumes for EC2 instances, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3 Glacier",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon S3 Glacier for a requirement to provide low-cost long-term archival storage with retrieval options"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon S3 Glacier when the requirement is to provide low-cost long-term archival storage with retrieval options.",
+    "answerSource": "https://aws.amazon.com/s3-glacier/"
+  },
+  {
+    "question": "Which AWS service should a team select to connect on-premises applications to cloud storage through hybrid storage protocols?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Elastic File System (Amazon EFS)",
+        "correct": false,
+        "explanation": "Amazon Elastic File System (Amazon EFS) is designed to provide elastic shared file storage for AWS compute resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon FSx",
+        "correct": false,
+        "explanation": "Amazon FSx exists to provide managed file systems for specialized workloads. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Storage Gateway",
+        "correct": true,
+        "explanation": "AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Storage Gateway",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS Storage Gateway for a requirement to connect on-premises applications to cloud storage through hybrid storage protocols"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Storage Gateway when the requirement is to connect on-premises applications to cloud storage through hybrid storage protocols.",
+    "answerSource": "https://aws.amazon.com/storagegateway/"
+  },
+  {
+    "question": "A learner says AWS Backup and AWS Elastic Disaster Recovery have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to centrally automate and manage backups across supported AWS services.",
+        "correct": false,
+        "explanation": "That describes AWS Backup, but AWS Elastic Disaster Recovery is primarily used to replicate workloads and recover them in AWS after disruptive events."
+      },
+      {
+        "text": "Both services are primarily used to replicate workloads and recover them in AWS after disruptive events.",
+        "correct": false,
+        "explanation": "That describes AWS Elastic Disaster Recovery, but AWS Backup is primarily used to centrally automate and manage backups across supported AWS services."
+      },
+      {
+        "text": "AWS Backup is used to centrally automate and manage backups across supported AWS services, whereas AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events.",
+        "correct": true,
+        "explanation": "AWS Elastic Disaster Recovery exists to replicate workloads and recover them in AWS after disruptive events. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Backup is used to replicate workloads and recover them in AWS after disruptive events, whereas AWS Elastic Disaster Recovery is used to centrally automate and manage backups across supported AWS services.",
+        "correct": false,
+        "explanation": "AWS Backup is used to replicate workloads and recover them in AWS after disruptive events, whereas AWS Elastic Disaster Recovery is used to centrally automate and manage backups across supported AWS services. concerns a separate capability from the one being tested. AWS Elastic Disaster Recovery exists."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Backup",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Backup from AWS Elastic Disaster Recovery"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Backup is used to centrally automate and manage backups across supported AWS services, while AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events.",
+    "answerSource": "https://aws.amazon.com/backup/"
+  },
+  {
+    "question": "A learner says AWS Elastic Disaster Recovery and AWS Backup have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to centrally automate and manage backups across supported AWS services.",
+        "correct": false,
+        "explanation": "That describes AWS Backup, but AWS Elastic Disaster Recovery is primarily used to replicate workloads and recover them in AWS after disruptive events."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events, whereas AWS Backup is used to centrally automate and manage backups across supported AWS services.",
+        "correct": true,
+        "explanation": "AWS Elastic Disaster Recovery exists to replicate workloads and recover them in AWS after disruptive events. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery is used to centrally automate and manage backups across supported AWS services, whereas AWS Backup is used to replicate workloads and recover them in AWS after disruptive events.",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is used to centrally automate and manage backups across supported AWS services, whereas AWS Backup is used to replicate workloads and recover them in AWS after disruptive events. concerns a separate capability from the one being tested. AWS Elastic Disaster Recovery exists."
+      },
+      {
+        "text": "Both services are primarily used to replicate workloads and recover them in AWS after disruptive events.",
+        "correct": false,
+        "explanation": "That describes AWS Elastic Disaster Recovery, but AWS Backup is primarily used to centrally automate and manage backups across supported AWS services."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Elastic Disaster Recovery",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Elastic Disaster Recovery from AWS Backup"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events, while AWS Backup is used to centrally automate and manage backups across supported AWS services.",
+    "answerSource": "https://aws.amazon.com/drs/"
+  },
+  {
+    "question": "When should a team choose AWS Storage Gateway instead of Amazon S3?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to connect on-premises applications to cloud storage through hybrid storage protocols, rather than to store and retrieve virtually any amount of object data with high durability.",
+        "correct": true,
+        "explanation": "AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to store and retrieve virtually any amount of object data with high durability, rather than to connect on-premises applications to cloud storage through hybrid storage protocols.",
+        "correct": false,
+        "explanation": "When the requirement is to store and retrieve virtually any amount of object data with high durability, rather than to connect on-premises applications to cloud storage through hybrid storage protocols. concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Storage Gateway exists to connect on-premises applications to cloud storage through hybrid storage protocols. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "AWS Storage Gateway",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Storage Gateway from Amazon S3"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Storage Gateway is used to connect on-premises applications to cloud storage through hybrid storage protocols, while Amazon S3 is used to store and retrieve virtually any amount of object data with high durability.",
+    "answerSource": "https://aws.amazon.com/storagegateway/"
+  },
+  {
+    "question": "When should a team choose Amazon Elastic Block Store (Amazon EBS) instead of Amazon Elastic File System (Amazon EFS)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to provide elastic shared file storage for AWS compute resources, rather than to provide persistent block storage volumes for EC2 instances.",
+        "correct": false,
+        "explanation": "That is when Amazon Elastic File System (Amazon EFS), not Amazon Elastic Block Store (Amazon EBS), is the closer fit."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested."
+      },
+      {
+        "text": "When the requirement is to provide persistent block storage volumes for EC2 instances, rather than to provide elastic shared file storage for AWS compute resources.",
+        "correct": true,
+        "explanation": "Amazon Elastic Block Store (Amazon EBS) is used to provide persistent block storage volumes for EC2 instances, while Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic Block Store (Amazon EBS)",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Elastic Block Store (Amazon EBS) from Amazon Elastic File System (Amazon EFS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Elastic Block Store (Amazon EBS) is used to provide persistent block storage volumes for EC2 instances, while Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources.",
+    "answerSource": "https://aws.amazon.com/ebs/"
+  },
+  {
+    "question": "Which relationship between Amazon Elastic File System (Amazon EFS) and Amazon Elastic Block Store (Amazon EBS) is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide elastic shared file storage for AWS compute resources.",
+        "correct": false,
+        "explanation": "That describes Amazon Elastic File System (Amazon EFS), but Amazon Elastic Block Store (Amazon EBS) is primarily used to provide persistent block storage volumes for EC2 instances."
+      },
+      {
+        "text": "Both services are primarily used to provide persistent block storage volumes for EC2 instances.",
+        "correct": false,
+        "explanation": "That describes Amazon Elastic Block Store (Amazon EBS), but Amazon Elastic File System (Amazon EFS) is primarily used to provide elastic shared file storage for AWS compute resources."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources, whereas Amazon Elastic Block Store (Amazon EBS) is used to provide persistent block storage volumes for EC2 instances.",
+        "correct": true,
+        "explanation": "This correctly separates the primary roles of Amazon Elastic File System (Amazon EFS) and Amazon Elastic Block Store (Amazon EBS)."
+      },
+      {
+        "text": "Amazon Elastic File System (Amazon EFS) is used to provide persistent block storage volumes for EC2 instances, whereas Amazon Elastic Block Store (Amazon EBS) is used to provide elastic shared file storage for AWS compute resources.",
+        "correct": false,
+        "explanation": "The statement about Amazon Elastic File System (Amazon EFS) is used to provide persistent block storage volumes for EC2 instances, whereas Amazon Elastic Block Store (Amazon EBS) is used to provide elastic shared file storage for AWS compute resources. describes a different technical behavior from the."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon Elastic File System (Amazon EFS)",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon Elastic File System (Amazon EFS) from Amazon Elastic Block Store (Amazon EBS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources, while Amazon Elastic Block Store (Amazon EBS) is used to provide persistent block storage volumes for EC2 instances.",
+    "answerSource": "https://aws.amazon.com/efs/"
+  },
+  {
+    "question": "A learner says Amazon FSx and Amazon Elastic File System (Amazon EFS) have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide elastic shared file storage for AWS compute resources.",
+        "correct": false,
+        "explanation": "That describes Amazon Elastic File System (Amazon EFS), but Amazon FSx is primarily used to provide managed file systems for specialized workloads."
+      },
+      {
+        "text": "Amazon FSx is used to provide managed file systems for specialized workloads, whereas Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources.",
+        "correct": true,
+        "explanation": "Amazon FSx is used to provide managed file systems for specialized workloads, while Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources. For learner, says, FSx, and, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon FSx is used to provide elastic shared file storage for AWS compute resources, whereas Amazon Elastic File System (Amazon EFS) is used to provide managed file systems for specialized workloads.",
+        "correct": false,
+        "explanation": "Amazon FSx is used to provide elastic shared file storage for AWS compute resources, whereas Amazon Elastic File System (Amazon EFS) is used to provide managed file systems for specialized workloads. concerns a separate capability from the one being tested. Amazon FSx is used to provide."
+      },
+      {
+        "text": "Both services are primarily used to provide managed file systems for specialized workloads.",
+        "correct": false,
+        "explanation": "That describes Amazon FSx, but Amazon Elastic File System (Amazon EFS) is primarily used to provide elastic shared file storage for AWS compute resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon FSx",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon FSx from Amazon Elastic File System (Amazon EFS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon FSx is used to provide managed file systems for specialized workloads, while Amazon Elastic File System (Amazon EFS) is used to provide elastic shared file storage for AWS compute resources.",
+    "answerSource": "https://aws.amazon.com/fsx/"
+  },
+  {
+    "question": "A learner says Amazon S3 and Amazon S3 Glacier have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3 is used to store and retrieve virtually any amount of object data with high durability, whereas Amazon S3 Glacier is used to provide low-cost long-term archival storage with retrieval options.",
+        "correct": true,
+        "explanation": "Amazon S3 Glacier exists to provide low-cost long-term archival storage with retrieval options. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon S3 is used to provide low-cost long-term archival storage with retrieval options, whereas Amazon S3 Glacier is used to store and retrieve virtually any amount of object data with high durability.",
+        "correct": false,
+        "explanation": "Amazon S3 is used to provide low-cost long-term archival storage with retrieval options, whereas Amazon S3 Glacier is used to store and retrieve virtually any amount of object data with high durability. concerns a separate capability from the one being tested. Amazon S3 Glacier exists to."
+      },
+      {
+        "text": "Both services are primarily used to store and retrieve virtually any amount of object data with high durability.",
+        "correct": false,
+        "explanation": "That describes Amazon S3, but Amazon S3 Glacier is primarily used to provide low-cost long-term archival storage with retrieval options."
+      },
+      {
+        "text": "Both services are primarily used to provide low-cost long-term archival storage with retrieval options.",
+        "correct": false,
+        "explanation": "That describes Amazon S3 Glacier, but Amazon S3 is primarily used to store and retrieve virtually any amount of object data with high durability."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon S3 from Amazon S3 Glacier"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon S3 is used to store and retrieve virtually any amount of object data with high durability, while Amazon S3 Glacier is used to provide low-cost long-term archival storage with retrieval options.",
+    "answerSource": "https://aws.amazon.com/s3/"
+  },
+  {
+    "question": "Which relationship between Amazon S3 Glacier and Amazon S3 is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon S3 Glacier is used to store and retrieve virtually any amount of object data with high durability, whereas Amazon S3 is used to provide low-cost long-term archival storage with retrieval options.",
+        "correct": false,
+        "explanation": "Amazon S3 Glacier is used to store and retrieve virtually any amount of object data with high durability, whereas Amazon S3 is used to provide low-cost long-term archival storage with retrieval options. concerns a separate capability from the one being tested. Amazon S3 Glacier exists to."
+      },
+      {
+        "text": "Both services are primarily used to provide low-cost long-term archival storage with retrieval options.",
+        "correct": false,
+        "explanation": "That describes Amazon S3 Glacier, but Amazon S3 is primarily used to store and retrieve virtually any amount of object data with high durability."
+      },
+      {
+        "text": "Both services are primarily used to store and retrieve virtually any amount of object data with high durability.",
+        "correct": false,
+        "explanation": "That describes Amazon S3, but Amazon S3 Glacier is primarily used to provide low-cost long-term archival storage with retrieval options."
+      },
+      {
+        "text": "Amazon S3 Glacier is used to provide low-cost long-term archival storage with retrieval options, whereas Amazon S3 is used to store and retrieve virtually any amount of object data with high durability.",
+        "correct": true,
+        "explanation": "Amazon S3 Glacier exists to provide low-cost long-term archival storage with retrieval options. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Storage",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Storage",
+      "subtopic": "Amazon S3 Glacier",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon S3 Glacier from Amazon S3"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon S3 Glacier is used to provide low-cost long-term archival storage with retrieval options, while Amazon S3 is used to store and retrieve virtually any amount of object data with high durability.",
+    "answerSource": "https://aws.amazon.com/s3-glacier/"
+  }
+]

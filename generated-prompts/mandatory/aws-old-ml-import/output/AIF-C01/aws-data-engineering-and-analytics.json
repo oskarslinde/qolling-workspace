@@ -1,0 +1,186 @@
+[
+  {
+    "question": "What are the benefits of using Amazon QuickSight Q?",
+    "answers": [
+      {
+        "text": "Faster insights without needing technical skills",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Real-time log monitoring",
+        "correct": false,
+        "explanation": "Real-time log monitoring concerns a separate capability from the one being tested. Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Self-service analytics for business users",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Natural language support for data exploration",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AWS Analytics"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon QuickSight",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What are the benefits of using SPICE in Amazon QuickSight?",
+    "answers": [
+      {
+        "text": "Faster performance for large datasets",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Offline data analysis",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: SPICE is QuickSight's managed in-memory engine for fast, scalable interactive analysis rather than offline analysis."
+      },
+      {
+        "text": "In-memory data storage",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Scalable and cost-effective analytics",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AWS Analytics"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon QuickSight",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which data sources can Amazon QuickSight connect to?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "This is correct because QuickSight connects to supported data sources such as S3, RDS, and Redshift, whereas EC2 is compute infrastructure."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "explanation": "This is correct because QuickSight connects to supported data sources such as S3, RDS, and Redshift, whereas EC2 is compute infrastructure."
+      },
+      {
+        "text": "Redshift",
+        "correct": true,
+        "explanation": "This is correct because QuickSight connects to supported data sources such as S3, RDS, and Redshift, whereas EC2 is compute infrastructure."
+      },
+      {
+        "text": "Amazon EC2 instances",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: QuickSight connects to supported data sources such as S3, RDS, and Redshift, whereas EC2 is compute infrastructure."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AWS Analytics"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon QuickSight",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Your team uses Amazon QuickSight for business analytics. You want to enable anomaly detection on sales data to automatically identify unusual spikes in sales. Which feature of QuickSight should you use?",
+    "answers": [
+      {
+        "text": "SPICE",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: QuickSight ML Insights provides anomaly detection; SPICE is storage/performance and Q is natural-language querying."
+      },
+      {
+        "text": "AutoGraph",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: QuickSight ML Insights provides anomaly detection; SPICE is storage/performance and Q is natural-language querying."
+      },
+      {
+        "text": "Machine Learning Insights",
+        "correct": true,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "QuickSight Q",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: QuickSight ML Insights provides anomaly detection; SPICE is storage/performance and Q is natural-language querying."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AWS Analytics"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon QuickSight",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/quicksight/latest/user/welcome.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  }
+]

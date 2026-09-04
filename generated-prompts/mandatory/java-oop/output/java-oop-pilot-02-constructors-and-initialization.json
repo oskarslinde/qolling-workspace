@@ -1,0 +1,407 @@
+[
+  {
+    "question": "What is the main purpose of a constructor in a Java class?",
+    "answers": [
+      {
+        "text": "To initialize a new object into a valid starting state when it is created.",
+        "correct": true
+      },
+      {
+        "text": "To destroy an object when it is no longer referenced.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java does not use constructors for cleanup. Object cleanup is handled by garbage collection, and deterministic resource cleanup should use patterns such as try-with-resources."
+      },
+      {
+        "text": "To define behavior that can be called only after an object has been garbage collected.",
+        "correct": false,
+        "wrongAnswerExplanation": "Constructors run during object creation, not after garbage collection. Normal methods define behavior that can be called after the object exists."
+      },
+      {
+        "text": "To store shared values that are automatically copied across every instance of the class.",
+        "correct": false,
+        "wrongAnswerExplanation": "Constructors can assign instance fields, but they do not automatically create shared state across all instances. Shared state is usually represented with static members."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "conceptual",
+      "constructor purpose"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "A constructor runs when a new object is created and is commonly used to put required fields into a valid initial state.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "constructor-purpose"
+      ]
+    }
+  },
+  {
+    "question": "Which statement about default constructors is true in Java?",
+    "answers": [
+      {
+        "text": "If a class declares no constructors, the compiler provides a no-argument constructor.",
+        "correct": true
+      },
+      {
+        "text": "The compiler always provides a no-argument constructor, even when the class declares another constructor.",
+        "correct": false,
+        "wrongAnswerExplanation": "Once a class declares any constructor, Java does not automatically add a no-argument constructor."
+      },
+      {
+        "text": "A default constructor always initializes every field with non-null business values.",
+        "correct": false,
+        "wrongAnswerExplanation": "A compiler-provided default constructor does not know business rules. Fields receive Java default values unless initialized elsewhere."
+      },
+      {
+        "text": "Default constructors are available only in abstract classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "Concrete classes can also receive a compiler-provided default constructor when they declare no constructors."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "conceptual",
+      "default constructor"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Java adds a no-argument constructor only when the class declares no constructors at all. If you add a parameterized constructor and still need a no-argument constructor, you must declare it explicitly.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "default-constructor"
+      ]
+    }
+  },
+  {
+    "question": "What is printed by this code?\n\n```java\nclass User {\n    String name;\n    int loginCount;\n\n    User(String name) {\n        this.name = name;\n    }\n}\n\nUser user = new User(\"Mara\");\nSystem.out.println(user.name + \":\" + user.loginCount);\n```",
+    "answers": [
+      {
+        "text": "Mara:0",
+        "correct": true
+      },
+      {
+        "text": "Mara:null",
+        "correct": false,
+        "wrongAnswerExplanation": "`loginCount` is an `int`, so its default value is `0`, not `null`."
+      },
+      {
+        "text": "null:0",
+        "correct": false,
+        "wrongAnswerExplanation": "The constructor assigns `this.name` from the argument, so `name` is `Mara`."
+      },
+      {
+        "text": "The code does not compile because every field must be assigned inside the constructor.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java fields have default values. Although explicit initialization is often clearer, instance fields do not have to be assigned in every constructor for the code to compile."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "code reading",
+      "field default values"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The constructor assigns `name` to `Mara`. The `int` field `loginCount` is not explicitly assigned, so it keeps Java's default value of `0`.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "field-default-values"
+      ]
+    }
+  },
+  {
+    "question": "What happens when this code is compiled?\n\n```java\nclass Invoice {\n    private final String number;\n\n    Invoice(String number) {\n        this.number = number;\n    }\n}\n\nInvoice invoice = new Invoice();\n```",
+    "answers": [
+      {
+        "text": "It does not compile because `Invoice` has no no-argument constructor.",
+        "correct": true
+      },
+      {
+        "text": "It compiles because Java adds a no-argument constructor whenever one is requested with `new`.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java does not add constructors based on call sites. Because `Invoice` declares a constructor with a parameter, no default no-argument constructor is generated."
+      },
+      {
+        "text": "It compiles and sets `number` to an empty string.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java does not automatically convert a missing constructor argument into an empty string."
+      },
+      {
+        "text": "It compiles only if `number` is later assigned through reflection.",
+        "correct": false,
+        "wrongAnswerExplanation": "Reflection does not make this constructor call valid. The source code must match an available constructor signature."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "code reading",
+      "missing no argument constructor"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Declaring `Invoice(String number)` suppresses the compiler-provided no-argument constructor. The call `new Invoice()` has no matching constructor.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "missing-no-argument-constructor"
+      ]
+    }
+  },
+  {
+    "question": "What is printed by this code?\n\n```java\nclass Account {\n    String owner = \"unknown\";\n\n    Account(String owner) {\n        owner = owner;\n    }\n}\n\nAccount account = new Account(\"Nora\");\nSystem.out.println(account.owner);\n```",
+    "answers": [
+      {
+        "text": "unknown",
+        "correct": true
+      },
+      {
+        "text": "Nora",
+        "correct": false,
+        "wrongAnswerExplanation": "The assignment `owner = owner` assigns the parameter to itself. It does not update the field. The field keeps its initializer value."
+      },
+      {
+        "text": "null",
+        "correct": false,
+        "wrongAnswerExplanation": "The field has an initializer of `unknown`, so it is not null."
+      },
+      {
+        "text": "The code does not compile because a constructor parameter cannot have the same name as a field.",
+        "correct": false,
+        "wrongAnswerExplanation": "A parameter can have the same name as a field, but the field must be referenced with `this.owner` when it is shadowed."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "code reading",
+      "this and shadowing"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "The constructor parameter shadows the field. Without `this.owner = owner`, the assignment updates only the local parameter, leaving the field as `unknown`.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "this-and-shadowing"
+      ]
+    }
+  },
+  {
+    "question": "Which implementation best creates a `Money` class whose objects must always have both an amount and a currency at construction time?",
+    "answers": [
+      {
+        "text": "```java\nclass Money {\n    private final BigDecimal amount;\n    private final String currency;\n\n    Money(BigDecimal amount, String currency) {\n        this.amount = amount;\n        this.currency = currency;\n    }\n}\n```",
+        "correct": true
+      },
+      {
+        "text": "```java\nclass Money {\n    BigDecimal amount;\n    String currency;\n}\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "This allows callers to create a `Money` object without setting either required value."
+      },
+      {
+        "text": "```java\nclass Money {\n    static BigDecimal amount;\n    static String currency;\n}\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "Static fields would be shared across all `Money` objects, which is not appropriate for per-object amount and currency values."
+      },
+      {
+        "text": "```java\nclass Money {\n    private final BigDecimal amount;\n    private final String currency;\n\n    Money() {\n    }\n}\n```",
+        "correct": false,
+        "wrongAnswerExplanation": "A no-argument constructor cannot leave `final` fields unassigned. It also fails the requirement that callers provide both values at construction time."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "coding task",
+      "required constructor arguments"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Required state should be accepted through the constructor and assigned to instance fields. Using `final` fields also communicates that the values must be initialized during construction.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "required-constructor-arguments"
+      ]
+    }
+  },
+  {
+    "question": "A developer expects every `RegistrationRequest` to have a non-null `email`, but this code sometimes creates invalid objects:\n\n```java\nclass RegistrationRequest {\n    private final String email;\n\n    RegistrationRequest(String email) {\n        this.email = email;\n    }\n}\n```\n\nWhat is the most direct fix inside the constructor?",
+    "answers": [
+      {
+        "text": "Validate the constructor argument, for example with `this.email = Objects.requireNonNull(email);`.",
+        "correct": true
+      },
+      {
+        "text": "Make `email` static so all requests share one validated value.",
+        "correct": false,
+        "wrongAnswerExplanation": "A static field would share state across all requests and would not validate each object's required data."
+      },
+      {
+        "text": "Remove the constructor so Java generates a default one.",
+        "correct": false,
+        "wrongAnswerExplanation": "A default constructor would make it easier to create an object without required state, which is the opposite of the goal."
+      },
+      {
+        "text": "Rename the field to `validatedEmail` without changing the constructor logic.",
+        "correct": false,
+        "wrongAnswerExplanation": "Renaming the field does not enforce the invariant. The constructor must reject or handle invalid input."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "debugging",
+      "constructor validation"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "Constructors are a natural place to enforce basic invariants for required fields. If `email` must never be null, the constructor should reject null input before the object escapes.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "constructor-validation"
+      ]
+    }
+  },
+  {
+    "question": "A class has two constructors, but one forgets to initialize a required field:\n\n```java\nclass ApiClient {\n    private final String baseUrl;\n    private final int timeoutSeconds;\n\n    ApiClient(String baseUrl) {\n        this.baseUrl = baseUrl;\n    }\n\n    ApiClient(String baseUrl, int timeoutSeconds) {\n        this.baseUrl = baseUrl;\n        this.timeoutSeconds = timeoutSeconds;\n    }\n}\n```\n\nWhat is the best root-cause fix?",
+    "answers": [
+      {
+        "text": "Delegate from the one-argument constructor to the two-argument constructor with a default timeout.",
+        "correct": true
+      },
+      {
+        "text": "Remove `final` from `timeoutSeconds` so the compiler stops requiring initialization.",
+        "correct": false,
+        "wrongAnswerExplanation": "Removing `final` hides the initialization problem and allows partially initialized objects. The constructor should initialize required state."
+      },
+      {
+        "text": "Set `timeoutSeconds` from outside the object after construction.",
+        "correct": false,
+        "wrongAnswerExplanation": "Required construction state should not depend on callers remembering a separate mutation step."
+      },
+      {
+        "text": "Make `timeoutSeconds` static so it does not need to be initialized per object.",
+        "correct": false,
+        "wrongAnswerExplanation": "A static field would represent shared class state, not each client's timeout. It does not fix the constructor design."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "debugging",
+      "constructor chaining"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "Constructor chaining keeps initialization rules in one place. The one-argument constructor can call `this(baseUrl, 30);`, ensuring both fields are initialized consistently.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "constructor-chaining"
+      ]
+    }
+  },
+  {
+    "question": "A Spring Boot application has a service with several required collaborators. Which constructor design is usually the best fit for reliable dependency injection and testability?",
+    "answers": [
+      {
+        "text": "Use one constructor that takes the required collaborators and assigns them to final fields.",
+        "correct": true
+      },
+      {
+        "text": "Use a no-argument constructor and let each method create its own collaborator with `new`.",
+        "correct": false,
+        "wrongAnswerExplanation": "Creating collaborators inside methods hides dependencies and makes the service harder to test or configure."
+      },
+      {
+        "text": "Store collaborators in public static fields so tests can replace them globally.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable collaborators make tests order-dependent and can leak state between application paths."
+      },
+      {
+        "text": "Avoid constructors and pass every collaborator into every service method call.",
+        "correct": false,
+        "wrongAnswerExplanation": "Passing stable required dependencies into every method creates noisy APIs and weakens the object boundary. Constructor injection better represents required object state."
+      }
+    ],
+    "tags": [
+      "constructors",
+      "initialization",
+      "design scenario",
+      "constructor injection"
+    ],
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "Constructor injection makes required dependencies explicit, supports immutable fields, and lets tests provide controlled collaborators without relying on hidden construction or global mutable state.",
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "constructors-and-initialization",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "constructor-injection"
+      ]
+    }
+  }
+]

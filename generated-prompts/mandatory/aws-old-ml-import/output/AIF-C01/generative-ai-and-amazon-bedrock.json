@@ -1,0 +1,3474 @@
+[
+  {
+    "question": "What does 'Top-p' (nucleus) sampling refer to in language model decoding?",
+    "answers": [
+      {
+        "text": "A method that selects the top p most frequent words from the training data.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: top-p (nucleus) sampling chooses from the smallest token set whose cumulative probability reaches the configured threshold."
+      },
+      {
+        "text": "A sampling technique that chooses from the smallest set of tokens whose cumulative probability exceeds a threshold p.",
+        "correct": true,
+        "explanation": "This is correct because top-p (nucleus) sampling chooses from the smallest token set whose cumulative probability reaches the configured threshold."
+      },
+      {
+        "text": "A method that always selects the token with the highest probability.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: top-p (nucleus) sampling chooses from the smallest token set whose cumulative probability reaches the configured threshold."
+      },
+      {
+        "text": "A technique for compressing token embeddings during training.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: top-p (nucleus) sampling chooses from the smallest token set whose cumulative probability reaches the configured threshold."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI and foundation models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which company developed GPT models?",
+    "answers": [
+      {
+        "text": "Google",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: OpenAI developed the GPT model family; other listed companies have different AI products or partnerships."
+      },
+      {
+        "text": "Amazon",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: OpenAI developed the GPT model family; other listed companies have different AI products or partnerships."
+      },
+      {
+        "text": "OpenAI",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, company, developed, GPT, models determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Microsoft",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: OpenAI developed the GPT model family; other listed companies have different AI products or partnerships."
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Generative AI (GenAI). Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Generating new content versus predicting a label/value.",
+        "correct": true,
+        "explanation": "Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Generative AI (GenAI)",
+      "1.1.03"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI (GenAI)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Generating new content versus predicting a label/value."
+      ]
+    },
+    "answerDescription": "1.1.03: Generative AI (GenAI).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team needs a system to draft a new product description from a short brief. Which AI approach is the best fit?",
+    "answers": [
+      {
+        "text": "Generative AI",
+        "correct": true,
+        "explanation": "GenAI creates new output rather than assigning a label or grouping data. In this context, team, needs, system, draft determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Binary classification only",
+        "correct": false,
+        "explanation": "Binary classification only concerns a separate capability from the one being tested. GenAI creates new output rather than assigning a label or grouping data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A fixed-rule workflow only",
+        "correct": false,
+        "explanation": "A fixed-rule workflow only concerns a separate capability from the one being tested. GenAI creates new output rather than assigning a label or grouping data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Clustering only",
+        "correct": false,
+        "explanation": "Clustering only concerns a separate capability from the one being tested. GenAI creates new output rather than assigning a label or grouping data. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Generative AI",
+      "AIF-C01",
+      "1.1.03"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI",
+      "subtopic": "Content generation",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select GenAI for new-content generation"
+      ]
+    },
+    "answerDescription": "GenAI creates new output rather than assigning a label or grouping data.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Generative AI (GenAI)?",
+    "answers": [
+      {
+        "text": "Generating new content versus predicting a label/value.",
+        "correct": true,
+        "explanation": "Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Generative AI (GenAI)",
+      "1.1.03"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI (GenAI)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Generating new content versus predicting a label/value."
+      ]
+    },
+    "answerDescription": "1.1.03: Generative AI (GenAI).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Generative AI (GenAI) in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Generating new content versus predicting a label/value.",
+        "correct": true,
+        "explanation": "Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Generative AI creates new content such as text, images, audio, or code from learned patterns and prompts."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Generative AI (GenAI)",
+      "1.1.03"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI (GenAI)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Generating new content versus predicting a label/value."
+      ]
+    },
+    "answerDescription": "1.1.03: Generative AI (GenAI).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Large language model (LLM). Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Language-focused FM, its inputs/outputs, and suitable language tasks.",
+        "correct": true,
+        "explanation": "A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Large language model (LLM)",
+      "1.1.08"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Large language model (LLM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Language-focused FM, its inputs/outputs, and suitable language tasks."
+      ]
+    },
+    "answerDescription": "1.1.08: Large language model (LLM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Large language model (LLM), which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Language-focused FM, its inputs/outputs, and suitable language tasks.",
+        "correct": true,
+        "explanation": "A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Large language model (LLM)",
+      "1.1.08"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Large language model (LLM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Language-focused FM, its inputs/outputs, and suitable language tasks."
+      ]
+    },
+    "answerDescription": "1.1.08: Large language model (LLM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Large language model (LLM) from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Language-focused FM, its inputs/outputs, and suitable language tasks.",
+        "correct": true,
+        "explanation": "A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A large language model is trained on extensive text to predict and generate language, enabling tasks such as summarization, translation, and question answering. The option addresses."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Large language model (LLM)",
+      "1.1.08"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Large language model (LLM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Language-focused FM, its inputs/outputs, and suitable language tasks."
+      ]
+    },
+    "answerDescription": "1.1.08: Large language model (LLM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which two tasks are typical uses of a large language model (LLM)?",
+    "answers": [
+      {
+        "text": "Summarizing a long text document",
+        "correct": true,
+        "explanation": "LLMs are suited to language understanding and generation tasks. In this context, two, tasks, are, typical determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Drafting a response to a customer question",
+        "correct": true,
+        "explanation": "LLMs are suited to language understanding and generation tasks. In this context, two, tasks, are, typical determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Measuring the temperature of a physical server",
+        "correct": false,
+        "explanation": "Measuring the temperature of a physical server concerns a separate capability from the one being tested. LLMs are suited to language understanding and generation tasks. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Replacing all access-control policies",
+        "correct": false,
+        "explanation": "Replacing all access-control policies concerns a separate capability from the one being tested. LLMs are suited to language understanding and generation tasks. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "LLM",
+      "AIF-C01",
+      "1.1.08"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Large language models",
+      "subtopic": "Language tasks",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Identify appropriate LLM tasks"
+      ]
+    },
+    "answerDescription": "LLMs are suited to language understanding and generation tasks.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Foundation model (FM). Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Broad pre-trained model adapted to many downstream tasks.",
+        "correct": true,
+        "explanation": "A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Foundation model (FM)",
+      "1.1.09"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Foundation model (FM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Broad pre-trained model adapted to many downstream tasks."
+      ]
+    },
+    "answerDescription": "1.1.09: Foundation model (FM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Foundation model (FM)?",
+    "answers": [
+      {
+        "text": "Broad pre-trained model adapted to many downstream tasks.",
+        "correct": true,
+        "explanation": "A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Foundation model (FM)",
+      "1.1.09"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Foundation model (FM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Broad pre-trained model adapted to many downstream tasks."
+      ]
+    },
+    "answerDescription": "1.1.09: Foundation model (FM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Foundation model (FM) in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Broad pre-trained model adapted to many downstream tasks.",
+        "correct": true,
+        "explanation": "A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A foundation model is broadly pre-trained on large datasets and can be adapted or prompted for many downstream tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Foundation model (FM)",
+      "1.1.09"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Foundation model (FM)",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Broad pre-trained model adapted to many downstream tasks."
+      ]
+    },
+    "answerDescription": "1.1.09: Foundation model (FM).",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Why is a foundation model called a foundation model?",
+    "answers": [
+      {
+        "text": "It is broadly pre-trained and can be adapted to multiple downstream tasks",
+        "correct": true,
+        "explanation": "A foundation model is broadly trained and reusable across downstream tasks. In this context, Why, foundation, model, called determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "It can perform only a single fixed classification",
+        "correct": false,
+        "explanation": "It can perform only a single fixed classification concerns a separate capability from the one being tested. A foundation model is broadly trained and reusable across downstream tasks. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It never requires evaluation for a new use case",
+        "correct": false,
+        "explanation": "It never requires evaluation for a new use case concerns a separate capability from the one being tested. A foundation model is broadly trained and reusable across downstream tasks. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is limited to numerical time-series data",
+        "correct": false,
+        "explanation": "It is limited to numerical time-series data concerns a separate capability from the one being tested. A foundation model is broadly trained and reusable across downstream tasks. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Foundation models",
+      "AIF-C01",
+      "1.1.09"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Foundation models",
+      "subtopic": "Reuse and adaptation",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Define a foundation model"
+      ]
+    },
+    "answerDescription": "A foundation model is broadly trained and reusable across downstream tasks.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A system must plan a multi-step task, call an inventory API, and adjust its next action from the result. Which concept best describes it?",
+    "answers": [
+      {
+        "text": "Agentic AI",
+        "correct": true,
+        "explanation": "Agentic AI combines goals, reasoning, tool use, and actions. In this context, system, must, plan, multi-step determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "A static dashboard",
+        "correct": false,
+        "explanation": "A static dashboard concerns a separate capability from the one being tested. Agentic AI combines goals, reasoning, tool use, and actions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Batch data storage",
+        "correct": false,
+        "explanation": "Batch data storage concerns a separate capability from the one being tested. Agentic AI combines goals, reasoning, tool use, and actions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A fixed decision tree with no external actions",
+        "correct": false,
+        "explanation": "A fixed decision tree with no external actions concerns a separate capability from the one being tested. Agentic AI combines goals, reasoning, tool use, and actions. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Agentic AI",
+      "AIF-C01",
+      "1.1.10"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Agentic AI",
+      "subtopic": "Goals and tool use",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Recognize an agentic AI workflow"
+      ]
+    },
+    "answerDescription": "Agentic AI combines goals, reasoning, tool use, and actions.",
+    "answerSource": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ai-agents-products.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Agentic AI, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Goal-driven agents that reason, use tools, and act within defined controls.",
+        "correct": true,
+        "explanation": "Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Agentic AI",
+      "1.1.10"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Agentic AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Goal-driven agents that reason, use tools, and act within defined controls."
+      ]
+    },
+    "answerDescription": "1.1.10: Agentic AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Agentic AI?",
+    "answers": [
+      {
+        "text": "Goal-driven agents that reason, use tools, and act within defined controls.",
+        "correct": true,
+        "explanation": "Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Agentic AI",
+      "1.1.10"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Agentic AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Goal-driven agents that reason, use tools, and act within defined controls."
+      ]
+    },
+    "answerDescription": "1.1.10: Agentic AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Agentic AI from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Goal-driven agents that reason, use tools, and act within defined controls.",
+        "correct": true,
+        "explanation": "Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Agentic AI",
+      "1.1.10"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Agentic AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Goal-driven agents that reason, use tools, and act within defined controls."
+      ]
+    },
+    "answerDescription": "1.1.10: Agentic AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Agentic AI in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Goal-driven agents that reason, use tools, and act within defined controls.",
+        "correct": true,
+        "explanation": "Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Agentic AI uses models that can plan, select actions, invoke tools, and iteratively pursue a goal within defined controls."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Agentic AI",
+      "1.1.10"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Agentic AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Goal-driven agents that reason, use tools, and act within defined controls."
+      ]
+    },
+    "answerDescription": "1.1.10: Agentic AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which type of neural network is most suitable for time-series forecasting?",
+    "answers": [
+      {
+        "text": "Convolutional Neural Network (CNN)",
+        "correct": false,
+        "explanation": "Review the explanation for each option to understand the answer set. Review the explanation for each option to understand the answer set. The option addresses a different technical responsibility, whereas Generative AI and foundation models provides the capability required by this workload."
+      },
+      {
+        "text": "Recurrent Neural Network (RNN)",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, type, neural, network, most determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Generative Adversarial Network (GAN)",
+        "correct": false,
+        "explanation": "Generative Adversarial Network (GAN) concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Transformer Network",
+        "correct": false,
+        "explanation": "Transformer Network concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "1.1.21"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI and foundation models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Knowledge bases. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Retrieving approved organizational knowledge for answers or assistance.",
+        "correct": true,
+        "explanation": "A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Knowledge bases",
+      "1.2.12"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Knowledge bases",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Retrieving approved organizational knowledge for answers or assistance."
+      ]
+    },
+    "answerDescription": "1.2.12: Knowledge bases.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Knowledge bases?",
+    "answers": [
+      {
+        "text": "Retrieving approved organizational knowledge for answers or assistance.",
+        "correct": true,
+        "explanation": "A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Knowledge bases",
+      "1.2.12"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Knowledge bases",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Retrieving approved organizational knowledge for answers or assistance."
+      ]
+    },
+    "answerDescription": "1.2.12: Knowledge bases.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Knowledge bases from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Retrieving approved organizational knowledge for answers or assistance.",
+        "correct": true,
+        "explanation": "A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Knowledge bases",
+      "1.2.12"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Knowledge bases",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Retrieving approved organizational knowledge for answers or assistance."
+      ]
+    },
+    "answerDescription": "1.2.12: Knowledge bases.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Knowledge bases in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Retrieving approved organizational knowledge for answers or assistance.",
+        "correct": true,
+        "explanation": "A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A knowledge base stores curated documents or facts that can be retrieved to ground model responses in relevant organizational information."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Knowledge bases",
+      "1.2.12"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Knowledge bases",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Retrieving approved organizational knowledge for answers or assistance."
+      ]
+    },
+    "answerDescription": "1.2.12: Knowledge bases.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering AI agents in business workflows. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Selecting an agent for multi-step, tool-using work rather than a single model response.",
+        "correct": true,
+        "explanation": "AI agents in business workflows is defined here as: Selecting an agent for multi-step, tool-using work rather than a single model response."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AI agents in business workflows",
+      "1.2.13"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI agents in business workflows",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Selecting an agent for multi-step, tool-using work rather than a single model response."
+      ]
+    },
+    "answerDescription": "1.2.13: AI agents in business workflows.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving AI agents in business workflows, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Selecting an agent for multi-step, tool-using work rather than a single model response.",
+        "correct": true,
+        "explanation": "AI agents in business workflows is defined here as: Selecting an agent for multi-step, tool-using work rather than a single model response."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AI agents in business workflows",
+      "1.2.13"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI agents in business workflows",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Selecting an agent for multi-step, tool-using work rather than a single model response."
+      ]
+    },
+    "answerDescription": "1.2.13: AI agents in business workflows.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of AI agents in business workflows?",
+    "answers": [
+      {
+        "text": "Selecting an agent for multi-step, tool-using work rather than a single model response.",
+        "correct": true,
+        "explanation": "AI agents in business workflows is defined here as: Selecting an agent for multi-step, tool-using work rather than a single model response."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AI agents in business workflows",
+      "1.2.13"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI agents in business workflows",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Selecting an agent for multi-step, tool-using work rather than a single model response."
+      ]
+    },
+    "answerDescription": "1.2.13: AI agents in business workflows.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes AI agents in business workflows from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Selecting an agent for multi-step, tool-using work rather than a single model response.",
+        "correct": true,
+        "explanation": "AI agents in business workflows is defined here as: Selecting an agent for multi-step, tool-using work rather than a single model response."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AI agents in business workflows",
+      "1.2.13"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI agents in business workflows",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Selecting an agent for multi-step, tool-using work rather than a single model response."
+      ]
+    },
+    "answerDescription": "1.2.13: AI agents in business workflows.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes AI agents in business workflows in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Selecting an agent for multi-step, tool-using work rather than a single model response.",
+        "correct": true,
+        "explanation": "AI agents in business workflows is defined here as: Selecting an agent for multi-step, tool-using work rather than a single model response."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. AI agents can plan and execute multi-step tasks using tools and data sources, but require boundaries, monitoring, and human oversight for business workflows. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AI agents in business workflows",
+      "1.2.13"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI agents in business workflows",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Selecting an agent for multi-step, tool-using work rather than a single model response."
+      ]
+    },
+    "answerDescription": "1.2.13: AI agents in business workflows.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Traditional ML versus FM. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Traditional ML versus FM. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Traditional ML versus FM, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Traditional ML versus FM?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Traditional ML versus FM from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Traditional ML versus FM from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Traditional ML versus FM in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Choose by explainability, task fit, regulation, data, cost, and operational constraints.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Traditional machine learning typically trains a model for a narrow task, while foundation models are broadly pre-trained and can be adapted to many tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Traditional ML versus FM",
+      "1.2.20"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Traditional ML versus FM",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Choose by explainability, task fit, regulation, data, cost, and operational constraints."
+      ]
+    },
+    "answerDescription": "1.2.20: Traditional ML versus FM.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Open-source pre-trained FMs. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Benefits and considerations of selecting an existing open model.",
+        "correct": true,
+        "explanation": "Benefits and considerations of selecting an existing open model. identifies the relevant Open-source pre-trained FMs concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Open-source pre-trained FMs",
+      "1.3.03"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Open-source pre-trained FMs",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Benefits and considerations of selecting an existing open model."
+      ]
+    },
+    "answerDescription": "1.3.03: Open-source pre-trained FMs.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Open-source pre-trained FMs, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Benefits and considerations of selecting an existing open model.",
+        "correct": true,
+        "explanation": "Benefits and considerations of selecting an existing open model. identifies the relevant Open-source pre-trained FMs concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Open-source pre-trained FMs",
+      "1.3.03"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Open-source pre-trained FMs",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Benefits and considerations of selecting an existing open model."
+      ]
+    },
+    "answerDescription": "1.3.03: Open-source pre-trained FMs.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Open-source pre-trained FMs?",
+    "answers": [
+      {
+        "text": "Benefits and considerations of selecting an existing open model.",
+        "correct": true,
+        "explanation": "Benefits and considerations of selecting an existing open model. identifies the relevant Open-source pre-trained FMs concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Open-source pre-trained FMs",
+      "1.3.03"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Open-source pre-trained FMs",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Benefits and considerations of selecting an existing open model."
+      ]
+    },
+    "answerDescription": "1.3.03: Open-source pre-trained FMs.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Open-source pre-trained FMs from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Benefits and considerations of selecting an existing open model.",
+        "correct": true,
+        "explanation": "Benefits and considerations of selecting an existing open model. identifies the relevant Open-source pre-trained FMs concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.03: Open-source pre-trained FMs. The option addresses a different technical responsibility, whereas Open-source pre-trained FMs provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Open-source pre-trained FMs",
+      "1.3.03"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Open-source pre-trained FMs",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Benefits and considerations of selecting an existing open model."
+      ]
+    },
+    "answerDescription": "1.3.03: Open-source pre-trained FMs.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Custom model training. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "When a custom-trained model is appropriate versus using a managed/pre-trained model.",
+        "correct": true,
+        "explanation": "When a custom-trained model is appropriate versus using a managed/pre-trained model. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Custom model training",
+      "1.3.04"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Custom model training",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "When a custom-trained model is appropriate versus using a managed/pre-trained model."
+      ]
+    },
+    "answerDescription": "1.3.04: Custom model training.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Custom model training, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "When a custom-trained model is appropriate versus using a managed/pre-trained model.",
+        "correct": true,
+        "explanation": "When a custom-trained model is appropriate versus using a managed/pre-trained model. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "It should be evaluated against the task requirements and relevant data. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Custom model training",
+      "1.3.04"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Custom model training",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "When a custom-trained model is appropriate versus using a managed/pre-trained model."
+      ]
+    },
+    "answerDescription": "1.3.04: Custom model training.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Custom model training from an unrelated concept?",
+    "answers": [
+      {
+        "text": "When a custom-trained model is appropriate versus using a managed/pre-trained model.",
+        "correct": true,
+        "explanation": "When a custom-trained model is appropriate versus using a managed/pre-trained model. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Custom model training",
+      "1.3.04"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Custom model training",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "When a custom-trained model is appropriate versus using a managed/pre-trained model."
+      ]
+    },
+    "answerDescription": "1.3.04: Custom model training.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Custom model training in an AI/ML context?",
+    "answers": [
+      {
+        "text": "When a custom-trained model is appropriate versus using a managed/pre-trained model.",
+        "correct": true,
+        "explanation": "When a custom-trained model is appropriate versus using a managed/pre-trained model. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "It should be evaluated against the task requirements and relevant data. identifies the relevant Custom model training concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. 1.3.04: Custom model training. The option addresses a different technical responsibility, whereas Custom model training provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Custom model training",
+      "1.3.04"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Custom model training",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "When a custom-trained model is appropriate versus using a managed/pre-trained model."
+      ]
+    },
+    "answerDescription": "1.3.04: Custom model training.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "In the context of NLP, what is the purpose of tokenization?",
+    "answers": [
+      {
+        "text": "To split text into individual tokens",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, context, NLP, purpose determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "To encode text into vectors",
+        "correct": false,
+        "explanation": "To encode text into vectors concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To normalize text",
+        "correct": false,
+        "explanation": "To normalize text concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To remove stop words",
+        "correct": false,
+        "explanation": "To remove stop words concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Natural Language Processing"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/nlp-course/chapter1/4",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What are tokens in the context of language models like GPT?",
+    "answers": [
+      {
+        "text": "Tokens are the individual neurons in a neural network.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: tokens are pieces of text, such as words or subwords, that a language model processes."
+      },
+      {
+        "text": "Tokens are the hardware units used to train large models.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: tokens are pieces of text, such as words or subwords, that a language model processes."
+      },
+      {
+        "text": "Tokens are pieces of text (like words or subwords) that are processed by the model.",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, are, tokens, the, context determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Tokens are the output labels used in classification tasks.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: tokens are pieces of text, such as words or subwords, that a language model processes."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "2.1.01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A RAG application has high retrieval precision but misses relevant facts because documents are split into very small chunks. Which change is most likely to improve recall while preserving source grounding?",
+    "answers": [
+      {
+        "text": "Increase the chunk size and evaluate the resulting retrieval quality",
+        "correct": true,
+        "explanation": "Larger chunks can preserve more surrounding context and improve recall, but the team should evaluate the precision and grounding trade-off."
+      },
+      {
+        "text": "Remove the vector index and use random document selection",
+        "correct": false,
+        "explanation": "Remove the vector index and use random document selection concerns a separate capability from the one being tested. Chunk size is a retrieval-quality trade-off; measure recall and precision after changing it. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Set model temperature to zero and change no retrieval settings",
+        "correct": false,
+        "explanation": "Set model temperature to zero and change no retrieval settings concerns a separate capability from the one being tested. Chunk size is a retrieval-quality trade-off; measure recall and precision after changing it. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Delete source citations from generated responses",
+        "correct": false,
+        "explanation": "Delete source citations from generated responses concerns a separate capability from the one being tested. Chunk size is a retrieval-quality trade-off; measure recall and precision after changing it. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "RAG",
+      "AIF-C01",
+      "2.1.02"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Retrieval-Augmented Generation",
+      "subtopic": "Chunking trade-offs",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Reason about chunking effects on RAG retrieval"
+      ]
+    },
+    "answerDescription": "Chunk size is a retrieval-quality trade-off; measure recall and precision after changing it.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "In the context of BERT, what does the acronym stand for?",
+    "answers": [
+      {
+        "text": "Bidirectional Encoder Representations from Transformers",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, context, BERT, acronym determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Binary Encoding for Recurrent Transformers",
+        "correct": false,
+        "explanation": "Binary Encoding for Recurrent Transformers concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Bidirectional Embedding Representations from Transformers",
+        "correct": false,
+        "explanation": "Bidirectional Embedding Representations from Transformers concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Binary Embedding Representations from Transformers",
+        "correct": false,
+        "explanation": "Binary Embedding Representations from Transformers concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key feature of the Transformer architecture used in GPT models?",
+    "answers": [
+      {
+        "text": "It uses convolutional layers to process data",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: transformers use self-attention to process token positions in parallel rather than recurrent or convolutional processing."
+      },
+      {
+        "text": "It processes input data in parallel using self-attention mechanisms",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, key, feature, the, Transformer determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "It relies on recurrent connections to maintain context",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: transformers use self-attention to process token positions in parallel rather than recurrent or convolutional processing."
+      },
+      {
+        "text": "It uses decision trees for classification tasks",
+        "correct": false,
+        "explanation": "It uses decision trees for classification tasks concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01",
+      "2.1.05"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the primary architecture used in GPT models?",
+    "answers": [
+      {
+        "text": "Recurrent Neural Network (RNN)",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is a decoder-only transformer model, not an RNN, CNN, or support-vector machine."
+      },
+      {
+        "text": "Convolutional Neural Network (CNN)",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is a decoder-only transformer model, not an RNN, CNN, or support-vector machine."
+      },
+      {
+        "text": "Transformer",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, primary, architecture, GPT determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Support Vector Machine (SVM)",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is a decoder-only transformer model, not an RNN, CNN, or support-vector machine."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "2.1.05"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which version of GPT introduced the concept of 'attention mechanism'?",
+    "answers": [
+      {
+        "text": "GPT-1",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention predates GPT and is a transformer mechanism rather than an innovation of a specific GPT release."
+      },
+      {
+        "text": "GPT-2",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention predates GPT and is a transformer mechanism rather than an innovation of a specific GPT release."
+      },
+      {
+        "text": "GPT-3",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention predates GPT and is a transformer mechanism rather than an innovation of a specific GPT release."
+      },
+      {
+        "text": "Attention mechanism is a core part of the Transformer architecture, not specific to a GPT version",
+        "correct": true,
+        "explanation": "This is correct because attention predates GPT and is a transformer mechanism rather than an innovation of a specific GPT release."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "2.1.05"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "In a sequence-to-sequence transformer model used for translation, what is the role of the decoder?",
+    "answers": [
+      {
+        "text": "To generate the target sequence from the source sequence",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, sequence-to-sequence, transformer, model, for determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "To encode the input sequence into a fixed-size vector",
+        "correct": false,
+        "explanation": "To encode the input sequence into a fixed-size vector concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To compute the attention weights for the input tokens",
+        "correct": false,
+        "explanation": "To compute the attention weights for the input tokens concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To normalize the output probabilities using softmax",
+        "correct": false,
+        "explanation": "To normalize the output probabilities using softmax concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05a"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "When using masked self-attention in GPT models, what is the purpose of the mask?",
+    "answers": [
+      {
+        "text": "To reduce the model size",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a causal mask prevents a token from attending to future tokens so autoregressive prediction uses only earlier context."
+      },
+      {
+        "text": "To prevent overfitting",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a causal mask prevents a token from attending to future tokens so autoregressive prediction uses only earlier context."
+      },
+      {
+        "text": "To allow tokens to focus only on past tokens",
+        "correct": true,
+        "explanation": "This is correct because a causal mask prevents a token from attending to future tokens so autoregressive prediction uses only earlier context."
+      },
+      {
+        "text": "To speed up the training process",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a causal mask prevents a token from attending to future tokens so autoregressive prediction uses only earlier context."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "2.1.05a"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "In the context of self-attention, which matrices are used to compute the attention scores for each token?",
+    "answers": [
+      {
+        "text": "Query and Value",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention calculates compatibility scores from queries and keys before using values."
+      },
+      {
+        "text": "Query and Key",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, context, self-attention, matrices determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Key and Value",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention calculates compatibility scores from queries and keys before using values."
+      },
+      {
+        "text": "Embedding and Value",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention calculates compatibility scores from queries and keys before using values."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05b"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key advantage of using self-attention in transformer models over traditional RNNs?",
+    "answers": [
+      {
+        "text": "Decreasing model sizes",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention enables parallel computation across sequence positions, unlike the sequential recurrence of RNNs."
+      },
+      {
+        "text": "Parallelizable computation",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, key, advantage, using, self-attention determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Better sequence modeling with fewer parameters",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention enables parallel computation across sequence positions, unlike the sequential recurrence of RNNs."
+      },
+      {
+        "text": "Elimination of the need for tokenization",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention enables parallel computation across sequence positions, unlike the sequential recurrence of RNNs."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05b"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the main benefit of using attention mechanisms in neural networks?",
+    "answers": [
+      {
+        "text": "Reducing model size",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention focuses computation on relevant sequence positions, improving sequential modeling rather than reducing size or replacing training."
+      },
+      {
+        "text": "Improving interpretability",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention focuses computation on relevant sequence positions, improving sequential modeling rather than reducing size or replacing training."
+      },
+      {
+        "text": "Enhancing performance on sequential data",
+        "correct": true,
+        "explanation": "This is correct because attention focuses computation on relevant sequence positions, improving sequential modeling rather than reducing size or replacing training."
+      },
+      {
+        "text": "Simplifying training",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: attention focuses computation on relevant sequence positions, improving sequential modeling rather than reducing size or replacing training."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05b"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://scikit-learn.org/stable/supervised_learning.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "When using a Transformer model for text classification, which component is responsible for capturing the relationships between different tokens in a sentence?",
+    "answers": [
+      {
+        "text": "Feed-Forward Neural Network",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention captures relationships between tokens, whereas the other listed components have different roles."
+      },
+      {
+        "text": "Positional Encoding",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention captures relationships between tokens, whereas the other listed components have different roles."
+      },
+      {
+        "text": "Self-Attention",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, using, Transformer, model, for determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Softmax Layer",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: self-attention captures relationships between tokens, whereas the other listed components have different roles."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05b"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which component in a transformer model is responsible for scaling the dot-product attention scores?",
+    "answers": [
+      {
+        "text": "Softmax Layer",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention divides query-key scores by a scaling factor before applying softmax."
+      },
+      {
+        "text": "Positional Encoding",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention divides query-key scores by a scaling factor before applying softmax."
+      },
+      {
+        "text": "Scaling Factor",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, component, transformer, model, responsible determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Layer Normalization",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: scaled dot-product attention divides query-key scores by a scaling factor before applying softmax."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05b"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "During the training of a transformer model, which aspect allows the model to consider the position of each token within the sequence?",
+    "answers": [
+      {
+        "text": "Token embedding",
+        "correct": false,
+        "explanation": "Token embedding concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Self-attention",
+        "correct": false,
+        "explanation": "Review the explanation for each option to understand the answer set. Review the explanation for each option to understand the answer set. The option addresses a different technical responsibility, whereas Transformer language models provides the capability required by this workload."
+      },
+      {
+        "text": "Positional encoding",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, During, the, training, transformer determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Multi-headed attention",
+        "correct": false,
+        "explanation": "Multi-headed attention concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.05c"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the main advantage of using GPT models?",
+    "answers": [
+      {
+        "text": "They can process images more efficiently",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT models generate coherent text from prompts and context; they are not primarily clustering or image-classification models."
+      },
+      {
+        "text": "They can generate human-like text based on input prompts",
+        "correct": true,
+        "explanation": "This is correct because GPT models generate coherent text from prompts and context; they are not primarily clustering or image-classification models."
+      },
+      {
+        "text": "They require less computational power",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT models generate coherent text from prompts and context; they are not primarily clustering or image-classification models."
+      },
+      {
+        "text": "They are primarily used for clustering tasks",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT models generate coherent text from prompts and context; they are not primarily clustering or image-classification models."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "2.1.08"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the primary use case of GPT models?",
+    "answers": [
+      {
+        "text": "Image classification",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is primarily a text-generation model rather than an image, speech-recognition, or object-detection model."
+      },
+      {
+        "text": "Text generation",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, primary, use, case determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Speech recognition",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is primarily a text-generation model rather than an image, speech-recognition, or object-detection model."
+      },
+      {
+        "text": "Object detection",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: GPT is primarily a text-generation model rather than an image, speech-recognition, or object-detection model."
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01",
+      "2.1.08"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which of the following is a common application of GPT models?",
+    "answers": [
+      {
+        "text": "Predicting stock prices",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a common GPT use case is generating code or text from prompt context, not conventional forecasting or discriminative classification."
+      },
+      {
+        "text": "Generating code snippets",
+        "correct": true,
+        "explanation": "This is correct because a common GPT use case is generating code or text from prompt context, not conventional forecasting or discriminative classification."
+      },
+      {
+        "text": "Classifying medical images",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a common GPT use case is generating code or text from prompt context, not conventional forecasting or discriminative classification."
+      },
+      {
+        "text": "Detecting fraudulent transactions",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a common GPT use case is generating code or text from prompt context, not conventional forecasting or discriminative classification."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "GPT",
+      "AIF-C01",
+      "2.1.08"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "You need an Amazon-provided foundation model for summarizing large volumes of text. Which model family is the best fit?",
+    "answers": [
+      {
+        "text": "Claude",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: Amazon Titan is the Amazon-provided Bedrock model family among the listed choices and supports text summarization."
+      },
+      {
+        "text": "Jurassic-2",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: Amazon Titan is the Amazon-provided Bedrock model family among the listed choices and supports text summarization."
+      },
+      {
+        "text": "Amazon Titan",
+        "correct": true,
+        "explanation": "This is correct because Amazon Titan is the Amazon-provided Bedrock model family among the listed choices and supports text summarization."
+      },
+      {
+        "text": "Stable Diffusion",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: Amazon Titan is the Amazon-provided Bedrock model family among the listed choices and supports text summarization."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "AIF-C01",
+      "3.1.01"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI and foundation models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A chatbot repeatedly sends a long, unchanged system instruction and reference document before each user question. Which Amazon Bedrock feature can reduce repeated input processing for supported models?",
+    "answers": [
+      {
+        "text": "Prompt caching",
+        "correct": true,
+        "explanation": "Prompt caching reuses repeated eligible prefixes for supported on-demand models. In this context, chatbot, repeatedly, sends, long determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Model fine-tuning",
+        "correct": false,
+        "explanation": "Model fine-tuning concerns a separate capability from the one being tested. Prompt caching reuses repeated eligible prefixes for supported on-demand models. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "CloudTrail Insights",
+        "correct": false,
+        "explanation": "CloudTrail Insights concerns a separate capability from the one being tested. Prompt caching reuses repeated eligible prefixes for supported on-demand models. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "S3 Lifecycle policies",
+        "correct": false,
+        "explanation": "S3 Lifecycle policies concerns a separate capability from the one being tested. Prompt caching reuses repeated eligible prefixes for supported on-demand models. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Bedrock",
+      "Performance",
+      "AIF-C01",
+      "3.1.03"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock prompt caching",
+      "subtopic": "Latency and cost",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Choose prompt caching for repeated context"
+      ]
+    },
+    "answerDescription": "Prompt caching reuses repeated eligible prefixes for supported on-demand models.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "In Amazon Bedrock Prompt management, what is the practical effect of setting a higher temperature?",
+    "answers": [
+      {
+        "text": "It generally allows more varied token choices in generated output",
+        "correct": true,
+        "explanation": "Temperature controls output variation, not retrieval, encryption, or factual guarantees. In this context, Bedrock, Prompt, management, the determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "It encrypts the prompt before sending it to the model",
+        "correct": false,
+        "explanation": "It encrypts the prompt before sending it to the model concerns a separate capability from the one being tested. Temperature controls output variation, not retrieval, encryption, or factual guarantees. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It guarantees that the response is factually correct",
+        "correct": false,
+        "explanation": "It guarantees that the response is factually correct concerns a separate capability from the one being tested. Temperature controls output variation, not retrieval, encryption, or factual guarantees. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It retrieves more documents from a Knowledge Base",
+        "correct": false,
+        "explanation": "It retrieves more documents from a Knowledge Base concerns a separate capability from the one being tested. Temperature controls output variation, not retrieval, encryption, or factual guarantees. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Bedrock",
+      "Prompt engineering",
+      "AIF-C01",
+      "3.1.04"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Inference parameters",
+      "subtopic": "Temperature",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Explain the effect of temperature on generation"
+      ]
+    },
+    "answerDescription": "Temperature controls output variation, not retrieval, encryption, or factual guarantees.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-create.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What are the requirements to create a RAG (Retrieval-Augmented Generation)?",
+    "answers": [
+      {
+        "text": "A data source, a vector database, and an LLM.",
+        "correct": true,
+        "explanation": "This is correct because RAG combines a retrievable data source, vector/embedding retrieval, and an LLM that generates with retrieved context."
+      },
+      {
+        "text": "A pre-trained model, a relational database, and a web server.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG combines a retrievable data source, vector/embedding retrieval, and an LLM that generates with retrieved context."
+      },
+      {
+        "text": "A fine-tuned model, a NoSQL database, and a REST API.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG combines a retrievable data source, vector/embedding retrieval, and an LLM that generates with retrieved context."
+      },
+      {
+        "text": "A custom model, a file storage system, and a message queue.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG combines a retrievable data source, vector/embedding retrieval, and an LLM that generates with retrieved context."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "3.1.06"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Retrieval-Augmented Generation",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "YouÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢re building a legal assistant that needs to answer questions based on thousands of legal documents stored in your system. What architecture would help your model retrieve relevant documents before generating a response?",
+    "answers": [
+      {
+        "text": "Fine-tuned LLM",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG retrieves relevant documents at request time and provides them as grounding context to a generation model."
+      },
+      {
+        "text": "Retrieval-Augmented Generation (RAG)",
+        "correct": true,
+        "explanation": "This is correct because RAG retrieves relevant documents at request time and provides them as grounding context to a generation model."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG retrieves relevant documents at request time and provides them as grounding context to a generation model."
+      },
+      {
+        "text": "Amazon Guardrails",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: RAG retrieves relevant documents at request time and provides them as grounding context to a generation model."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "3.1.06"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Retrieval-Augmented Generation",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A company wants to ground a foundation model's answers in policy documents stored in its data source without continually fine-tuning the model. Which Amazon Bedrock capability should it use?",
+    "answers": [
+      {
+        "text": "Knowledge Bases for Amazon Bedrock",
+        "correct": true,
+        "explanation": "Knowledge Bases retrieve private source content to ground generated answers. In this context, company, wants, ground, foundation determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Bedrock Model Evaluation only",
+        "correct": false,
+        "explanation": "Amazon Bedrock Model Evaluation only concerns a separate capability from the one being tested. Knowledge Bases retrieve private source content to ground generated answers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Bedrock Guardrails only",
+        "correct": false,
+        "explanation": "Amazon Bedrock Guardrails only concerns a separate capability from the one being tested. Knowledge Bases retrieve private source content to ground generated answers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A larger foundation model without retrieval",
+        "correct": false,
+        "explanation": "A larger foundation model without retrieval concerns a separate capability from the one being tested. Knowledge Bases retrieve private source content to ground generated answers. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Bedrock",
+      "RAG",
+      "AIF-C01",
+      "3.1.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock Knowledge Bases",
+      "subtopic": "RAG use cases",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select a managed grounding capability for private data"
+      ]
+    },
+    "answerDescription": "Knowledge Bases retrieve private source content to ground generated answers.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the purpose of using a vector database in a RAG architecture?",
+    "answers": [
+      {
+        "text": "To store model weights",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a vector database stores/searches embeddings to retrieve relevant RAG context, not model weights or API state."
+      },
+      {
+        "text": "To retrieve relevant context for LLMs",
+        "correct": true,
+        "explanation": "This is correct because a vector database stores/searches embeddings to retrieve relevant RAG context, not model weights or API state."
+      },
+      {
+        "text": "To manage API calls",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a vector database stores/searches embeddings to retrieve relevant RAG context, not model weights or API state."
+      },
+      {
+        "text": "To fine-tune the model",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a vector database stores/searches embeddings to retrieve relevant RAG context, not model weights or API state."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "3.1.08"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Retrieval-Augmented Generation",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What are LLM Agents?",
+    "answers": [
+      {
+        "text": "Agents that use Large Language Models to perform tasks such as answering questions, generating text, and interacting with users.",
+        "correct": true,
+        "explanation": "This is correct because LLM agents use a language model to reason over instructions and perform actions such as responding or invoking tools."
+      },
+      {
+        "text": "Agents that manage network security and monitor traffic in cloud environments.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: LLM agents use a language model to reason over instructions and perform actions such as responding or invoking tools."
+      },
+      {
+        "text": "Agents that automate deployment pipelines and manage CI/CD processes.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: LLM agents use a language model to reason over instructions and perform actions such as responding or invoking tools."
+      },
+      {
+        "text": "Agents that handle data preprocessing and feature engineering for machine learning models.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: LLM agents use a language model to reason over instructions and perform actions such as responding or invoking tools."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "3.1.10"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI and foundation models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which two capabilities are provided by Amazon Bedrock Prompt management?",
+    "answers": [
+      {
+        "text": "Reusable prompts with variables",
+        "correct": true,
+        "explanation": "Prompt management supports reusable variable prompts and testable variants. In this context, two, capabilities, are, provided determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Prompt variants that can be tested and compared",
+        "correct": true,
+        "explanation": "Prompt management supports reusable variable prompts and testable variants. In this context, two, capabilities, are, provided determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Automatic retraining of a foundation model on private data",
+        "correct": false,
+        "explanation": "Automatic retraining of a foundation model on private data concerns a separate capability from the one being tested. Prompt management supports reusable variable prompts and testable variants. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A guarantee that every prompt receives the same model output",
+        "correct": false,
+        "explanation": "A guarantee that every prompt receives the same model output concerns a separate capability from the one being tested. Prompt management supports reusable variable prompts and testable variants. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Bedrock",
+      "Prompt engineering",
+      "AIF-C01",
+      "3.2.11"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock Prompt management",
+      "subtopic": "Prompt reuse and variants",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Identify Prompt management capabilities"
+      ]
+    },
+    "answerDescription": "Prompt management supports reusable variable prompts and testable variants.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the significance of 'pre-training' in GPT models?",
+    "answers": [
+      {
+        "text": "It allows the model to learn from labeled data",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: pre-training learns broad language patterns from large text corpora before later adaptation to narrower tasks."
+      },
+      {
+        "text": "It enables the model to learn from a large corpus of text before fine-tuning on specific tasks",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, the, significance, pre-training, GPT determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "It reduces the computational requirements for training",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: pre-training learns broad language patterns from large text corpora before later adaptation to narrower tasks."
+      },
+      {
+        "text": "It is used to improve image processing capabilities",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: pre-training learns broad language patterns from large text corpora before later adaptation to narrower tasks."
+      }
+    ],
+    "tags": [
+      "GPT",
+      "AIF-C01",
+      "3.3.01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Transformer language models",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is the main advantage of using transfer learning in deep learning?",
+    "answers": [
+      {
+        "text": "Reducing the need for large datasets",
+        "correct": true,
+        "explanation": "This is correct because transfer learning reuses pretrained representations and can reduce task-specific data needs rather than increasing complexity or eliminating training."
+      },
+      {
+        "text": "Increasing model complexity",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: transfer learning reuses pretrained representations and can reduce task-specific data needs rather than increasing complexity or eliminating training."
+      },
+      {
+        "text": "Enhancing model interpretability",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: transfer learning reuses pretrained representations and can reduce task-specific data needs rather than increasing complexity or eliminating training."
+      },
+      {
+        "text": "Simplifying the training process",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: transfer learning reuses pretrained representations and can reduce task-specific data needs rather than increasing complexity or eliminating training."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01",
+      "3.3.06"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Machine learning foundations",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://scikit-learn.org/stable/supervised_learning.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  }
+]

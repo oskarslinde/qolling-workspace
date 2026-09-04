@@ -1,0 +1,3725 @@
+[
+  {
+    "question": "How do you define a VPC in an AWS CDK stack using Java?",
+    "answers": [
+      {
+        "text": "new Vpc(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": true,
+        "explanation": "new Vpc(this, \"MyVpc\", VpcProps.builder().build()); identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Vpc.create(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": false,
+        "explanation": "Vpc.create(this, \"MyVpc\", VpcProps.builder().build()); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Vpc.define(this, \"MyVpc\", VpcProps.builder().build());",
+        "correct": false,
+        "explanation": "Vpc.define(this, \"MyVpc\", VpcProps.builder().build()); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Vpc vpc = Vpc.builder().build();",
+        "correct": false,
+        "explanation": "Vpc vpc = Vpc.builder().build(); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How do you define a VPC in an AWS CDK stack using Java?"
+      ]
+    }
+  },
+  {
+    "question": "What is a KMS key?",
+    "answers": [
+      {
+        "text": "A managed encryption key used to encrypt and decrypt data in AWS services.",
+        "correct": true,
+        "explanation": "A managed encryption key used to encrypt and decrypt data in AWS services. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A key used to access AWS resources and manage IAM roles.",
+        "correct": false,
+        "explanation": "A key used to access AWS resources and manage IAM roles. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A key used to authenticate API requests to AWS services.",
+        "correct": false,
+        "explanation": "A key used to authenticate API requests to AWS services. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A key used to configure network security groups in AWS.",
+        "correct": false,
+        "explanation": "A key used to configure network security groups in AWS. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a KMS key?"
+      ]
+    }
+  },
+  {
+    "question": "What are some common AWS service troubleshooting steps?",
+    "answers": [
+      {
+        "text": "Check service health status",
+        "correct": true,
+        "explanation": "Check service health status identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Review CloudWatch logs",
+        "correct": true,
+        "explanation": "Review CloudWatch logs identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Restart the service",
+        "correct": true,
+        "explanation": "Restart the service identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Update IAM policies",
+        "correct": false,
+        "explanation": "Update IAM policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are some common AWS service troubleshooting steps?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are best practices when using AWS KMS?",
+    "answers": [
+      {
+        "text": "Rotate keys regularly",
+        "correct": true,
+        "explanation": "Rotate keys regularly identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use the same key for all applications",
+        "correct": false,
+        "explanation": "Use the same key for all applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Enable key policies with least privilege",
+        "correct": true,
+        "explanation": "Enable key policies with least privilege identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use separate keys for different environments (e.g., dev, prod)",
+        "correct": true,
+        "explanation": "Use separate keys for different environments (e.g., dev, prod) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are best practices when using AWS KMS?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary function of an IAM policy in AWS?",
+    "answers": [
+      {
+        "text": "To define what actions are allowed or denied on AWS resources",
+        "correct": true,
+        "explanation": "To define what actions are allowed or denied on AWS resources identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To assign users to groups",
+        "correct": false,
+        "explanation": "To assign users to groups concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To monitor API activity",
+        "correct": false,
+        "explanation": "To monitor API activity concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false,
+        "explanation": "To encrypt data at rest concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary function of an IAM policy in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What is the difference between an IAM user and an IAM role?",
+    "answers": [
+      {
+        "text": "Users have long-term credentials; roles provide temporary credentials",
+        "correct": true,
+        "explanation": "Users have long-term credentials; roles provide temporary credentials identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Roles are used only for S3 access",
+        "correct": false,
+        "explanation": "Roles are used only for S3 access concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Users cannot be assigned policies",
+        "correct": false,
+        "explanation": "Users cannot be assigned policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Roles can be assumed by AWS services or federated users",
+        "correct": true,
+        "explanation": "Roles can be assumed by AWS services or federated users identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the difference between an IAM user and an IAM role?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are features of AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "Automatic rotation of secrets",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Audit logging with AWS CloudTrail",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Storing unencrypted secrets",
+        "correct": false,
+        "explanation": "Storing unencrypted secrets concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Integration with AWS Lambda for rotation logic",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of AWS Secrets Manager?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS services can integrate with AWS Secrets Manager to retrieve secrets securely?",
+    "answers": [
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS services can integrate with AWS Secrets Manager to retrieve secrets securely?"
+      ]
+    }
+  },
+  {
+    "question": "How does AWS Secrets Manager help improve security posture?",
+    "answers": [
+      {
+        "text": "By eliminating the need to hardcode credentials in code",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "By providing centralized secret management",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "By automatically granting admin access to all users",
+        "correct": false,
+        "explanation": "By automatically granting admin access to all users concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By enabling secure and auditable access to secrets",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does AWS Secrets Manager help improve security posture?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are common attack types that AWS WAF can help mitigate?",
+    "answers": [
+      {
+        "text": "SQL injection",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Cross-site scripting (XSS)",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "DDoS attacks",
+        "correct": false,
+        "explanation": "DDoS attacks concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "HTTP flood",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are common attack types that AWS WAF can help mitigate?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary function of an Internet Gateway in AWS?",
+    "answers": [
+      {
+        "text": "To allow communication between instances in a VPC and the internet",
+        "correct": true,
+        "explanation": "To allow communication between instances in a VPC and the internet identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To encrypt traffic between VPCs",
+        "correct": false,
+        "explanation": "To encrypt traffic between VPCs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To route traffic between private subnets",
+        "correct": false,
+        "explanation": "To route traffic between private subnets concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage DNS resolution",
+        "correct": false,
+        "explanation": "To manage DNS resolution concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary function of an Internet Gateway in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What are things you should not do when using Amazon S3?",
+    "answers": [
+      {
+        "text": "Disable bucket versioning for critical data",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use lifecycle policies for data management",
+        "correct": false,
+        "explanation": "Use lifecycle policies for data management concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Make buckets publicly accessible without restrictions",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Enable server-side encryption",
+        "correct": false,
+        "explanation": "Choose Amazon S3 when the requirement is to store and retrieve virtually any amount of object data with high durability. Choose Amazon S3 when the requirement is to store and retrieve virtually any amount of object data with high durability. Those services use different integration patterns."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are things you should not do when using Amazon S3?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are 'no-to-dos' when deploying applications on AWS?",
+    "answers": [
+      {
+        "text": "Hardcoding credentials in source code",
+        "correct": true,
+        "explanation": "Hardcoding credentials in source code identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using environment variables for secrets",
+        "correct": true,
+        "explanation": "Using environment variables for secrets identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using AWS Secrets Manager for credentials",
+        "correct": false,
+        "explanation": "Using AWS Secrets Manager for credentials concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing secrets in plaintext in S3",
+        "correct": true,
+        "explanation": "Storing secrets in plaintext in S3 identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are 'no-to-dos' when deploying applications on AWS?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid CloudTrail event types?",
+    "answers": [
+      {
+        "text": "Management events",
+        "correct": true,
+        "explanation": "Management events identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data events",
+        "correct": true,
+        "explanation": "Data events identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Insight events",
+        "correct": true,
+        "explanation": "Insight events identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Billing events",
+        "correct": false,
+        "explanation": "Billing events concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid CloudTrail event types?"
+      ]
+    }
+  },
+  {
+    "question": "How does CloudTrail Insights help in security operations?",
+    "answers": [
+      {
+        "text": "By automatically blocking suspicious IPs",
+        "correct": false,
+        "explanation": "By automatically blocking suspicious IPs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By highlighting anomalous API usage patterns",
+        "correct": true,
+        "explanation": "By highlighting anomalous API usage patterns identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "By generating IAM policies",
+        "correct": false,
+        "explanation": "By generating IAM policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By providing detailed billing reports",
+        "correct": false,
+        "explanation": "By providing detailed billing reports concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does CloudTrail Insights help in security operations?"
+      ]
+    }
+  },
+  {
+    "question": "How does AWS Config help with compliance?",
+    "answers": [
+      {
+        "text": "By evaluating resource configurations against desired settings",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "By encrypting all data in transit",
+        "correct": false,
+        "explanation": "By encrypting all data in transit concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By generating IAM policies",
+        "correct": false,
+        "explanation": "By generating IAM policies concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "By providing a managed firewall",
+        "correct": false,
+        "explanation": "By providing a managed firewall concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does AWS Config help with compliance?"
+      ]
+    }
+  },
+  {
+    "question": "What are Amazon Security Groups?",
+    "answers": [
+      {
+        "text": "Virtual firewalls that control inbound and outbound traffic for AWS resources.",
+        "correct": true,
+        "explanation": "Virtual firewalls that control inbound and outbound traffic for AWS resources. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A service for managing user access to AWS resources.",
+        "correct": false,
+        "explanation": "A service for managing user access to AWS resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring and managing AWS resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": false,
+        "explanation": "A managed Kubernetes service. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are Amazon Security Groups?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can help troubleshoot issues with your applications by providing detailed logs and metrics?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. In this context, can, help, troubleshoot, issues determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false,
+        "explanation": "AWS IAM concerns a separate capability from the one being tested. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can help troubleshoot issues with your applications by providing detailed logs and metrics?"
+      ]
+    }
+  },
+  {
+    "question": "What are Data Permissions in Lake Formation used for?",
+    "answers": [
+      {
+        "text": "To control access to data in the data lake",
+        "correct": true,
+        "explanation": "To control access to data in the data lake identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To store data in S3",
+        "correct": false,
+        "explanation": "To store data in S3 concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false,
+        "explanation": "To create virtual machines concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To define IAM policies",
+        "correct": false,
+        "explanation": "To define IAM policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are Data Permissions in Lake Formation used for?"
+      ]
+    }
+  },
+  {
+    "question": "To ensure your CloudWatch Logs are encrypted with a specific KMS key, what should you configure?",
+    "answers": [
+      {
+        "text": "CloudWatch Logs Agent",
+        "correct": false,
+        "explanation": "CloudWatch Logs Agent concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      },
+      {
+        "text": "CloudWatch Logs Encryption",
+        "correct": true,
+        "explanation": "CloudWatch Logs Encryption identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "CloudWatch Unified Agent",
+        "correct": false,
+        "explanation": "CloudWatch Unified Agent concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: To ensure your CloudWatch Logs are encrypted with a specific KMS key, what should you configure?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is an example of static data masking?",
+    "answers": [
+      {
+        "text": "Masking data in real-time as it is accessed",
+        "correct": false,
+        "explanation": "Masking data in real-time as it is accessed concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Replacing sensitive data in a database copy used for testing",
+        "correct": true,
+        "explanation": "Replacing sensitive data in a database copy used for testing identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Encrypting data during transmission",
+        "correct": false,
+        "explanation": "Encrypting data during transmission concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using a firewall to block unauthorized access",
+        "correct": false,
+        "explanation": "Using a firewall to block unauthorized access concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is an example of static data masking?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are best practices for securing your AWS root account?",
+    "answers": [
+      {
+        "text": "Enable multi-factor authentication (MFA)",
+        "correct": true,
+        "explanation": "Enable multi-factor authentication (MFA) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use the root account for daily administrative tasks",
+        "correct": false,
+        "explanation": "Use the root account for daily administrative tasks concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Delete the root account",
+        "correct": false,
+        "explanation": "Delete the root account concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Create and use IAM users for regular access",
+        "correct": true,
+        "explanation": "Create and use IAM users for regular access identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are best practices for securing your AWS root account?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are considered least privilege principles in AWS?",
+    "answers": [
+      {
+        "text": "Grant only the permissions required to perform a task",
+        "correct": true,
+        "explanation": "Grant only the permissions required to perform a task identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use managed policies for all users",
+        "correct": false,
+        "explanation": "Use managed policies for all users concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Regularly review and refine IAM policies",
+        "correct": true,
+        "explanation": "Regularly review and refine IAM policies identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use IAM Access Analyzer to identify unused permissions",
+        "correct": true,
+        "explanation": "Use IAM Access Analyzer to identify unused permissions identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are considered least privilege principles in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS KMS?",
+    "answers": [
+      {
+        "text": "To manage and store encryption keys securely",
+        "correct": true,
+        "explanation": "To manage and store encryption keys securely identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To monitor network traffic",
+        "correct": false,
+        "explanation": "To monitor network traffic concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false,
+        "explanation": "To manage IAM roles concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To provide DDoS protection",
+        "correct": false,
+        "explanation": "To provide DDoS protection concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS KMS?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid types of keys in AWS KMS?",
+    "answers": [
+      {
+        "text": "Customer managed keys (CMKs)",
+        "correct": true,
+        "explanation": "Customer managed keys (CMKs) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS managed keys",
+        "correct": true,
+        "explanation": "AWS managed keys identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "User-defined symmetric keys",
+        "correct": false,
+        "explanation": "User-defined symmetric keys concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Hardware security module (HSM) keys",
+        "correct": true,
+        "explanation": "Hardware security module (HSM) keys identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid types of keys in AWS KMS?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following statements about IAM roles are true?",
+    "answers": [
+      {
+        "text": "IAM roles can be assumed by AWS services",
+        "correct": true,
+        "explanation": "IAM roles can be assumed by AWS services identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM roles require a username and password",
+        "correct": false,
+        "explanation": "IAM roles require a username and password concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "IAM roles provide temporary security credentials",
+        "correct": true,
+        "explanation": "IAM roles provide temporary security credentials identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM roles are used only for billing",
+        "correct": false,
+        "explanation": "IAM roles are used only for billing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following statements about IAM roles are true?"
+      ]
+    }
+  },
+  {
+    "question": "How do IAM roles differ from IAM users?",
+    "answers": [
+      {
+        "text": "Roles are intended to be assumed temporarily",
+        "correct": true,
+        "explanation": "Roles are intended to be assumed temporarily identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Users have long-term credentials",
+        "correct": true,
+        "explanation": "Users have long-term credentials identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Roles are used only for S3 access",
+        "correct": false,
+        "explanation": "Roles are used only for S3 access concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Roles can be assumed by AWS services",
+        "correct": true,
+        "explanation": "Roles can be assumed by AWS services identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How do IAM roles differ from IAM users?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are core components of AWS IAM?",
+    "answers": [
+      {
+        "text": "Users",
+        "correct": true,
+        "explanation": "Users identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Roles",
+        "correct": true,
+        "explanation": "Roles identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Policies",
+        "correct": true,
+        "explanation": "Policies identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "An Amazon S3 bucket",
+        "correct": false,
+        "explanation": "An Amazon S3 bucket concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are core components of AWS IAM?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of IAM policies in AWS?",
+    "answers": [
+      {
+        "text": "To define permissions for users, groups, and roles",
+        "correct": true,
+        "explanation": "To define permissions for users, groups, and roles identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false,
+        "explanation": "To monitor billing usage concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To encrypt data in S3",
+        "correct": false,
+        "explanation": "To encrypt data in S3 concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To control access to AWS resources",
+        "correct": true,
+        "explanation": "To control access to AWS resources identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of IAM policies in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What is a Man-in-the-Middle (MITM) attack?",
+    "answers": [
+      {
+        "text": "An attack where the attacker secretly intercepts and possibly alters communication between two parties",
+        "correct": true,
+        "explanation": "An attack where the attacker secretly intercepts and possibly alters communication between two parties identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "An attack that floods a server with traffic",
+        "correct": false,
+        "explanation": "An attack that floods a server with traffic concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "An attack that installs malware on a device",
+        "correct": false,
+        "explanation": "An attack that installs malware on a device concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "An attack that steals credentials through phishing emails",
+        "correct": false,
+        "explanation": "An attack that steals credentials through phishing emails concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a Man-in-the-Middle (MITM) attack?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are common techniques used in MITM attacks?",
+    "answers": [
+      {
+        "text": "ARP spoofing",
+        "correct": true,
+        "explanation": "ARP spoofing identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "DNS spoofing",
+        "correct": true,
+        "explanation": "DNS spoofing identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "SQL injection",
+        "correct": false,
+        "explanation": "SQL injection concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Session hijacking",
+        "correct": true,
+        "explanation": "Session hijacking identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are common techniques used in MITM attacks?"
+      ]
+    }
+  },
+  {
+    "question": "What are best practices when using AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "Enable automatic rotation of secrets",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use IAM policies to restrict access to secrets",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Store secrets in plain text in environment variables",
+        "correct": false,
+        "explanation": "Store secrets in plain text in environment variables concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use encryption with AWS KMS",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are best practices when using AWS Secrets Manager?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are true about NAT Gateways?",
+    "answers": [
+      {
+        "text": "They allow instances in a private subnet to access the internet",
+        "correct": true,
+        "explanation": "They allow instances in a private subnet to access the internet identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "They allow inbound traffic from the internet to private subnets",
+        "correct": false,
+        "explanation": "They allow inbound traffic from the internet to private subnets concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "They require an Elastic IP address",
+        "correct": true,
+        "explanation": "They require an Elastic IP address identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "They are used to route traffic between VPCs",
+        "correct": false,
+        "explanation": "They are used to route traffic between VPCs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are true about NAT Gateways?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are features of AWS X-Ray?",
+    "answers": [
+      {
+        "text": "Request tracing",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Service maps",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Real-time log streaming",
+        "correct": false,
+        "explanation": "Real-time log streaming concerns a separate capability from the one being tested. AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Latency analysis",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of AWS X-Ray?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are considered anti-patterns when using Amazon S3?",
+    "answers": [
+      {
+        "text": "Storing frequently accessed small files individually",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Using S3 for static website hosting",
+        "correct": false,
+        "explanation": "Using S3 for static website hosting concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using S3 without versioning for critical data",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Enabling server-side encryption",
+        "correct": false,
+        "explanation": "Enabling server-side encryption concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are considered anti-patterns when using Amazon S3?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following should you avoid when managing IAM policies?",
+    "answers": [
+      {
+        "text": "Granting full administrative access to all users",
+        "correct": true,
+        "explanation": "Granting full administrative access to all users identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using least privilege principle",
+        "correct": false,
+        "explanation": "Using least privilege principle concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Attaching policies directly to individual users",
+        "correct": true,
+        "explanation": "Attaching policies directly to individual users identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using IAM groups for access control",
+        "correct": false,
+        "explanation": "Using IAM groups for access control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following should you avoid when managing IAM policies?"
+      ]
+    }
+  },
+  {
+    "question": "What could cause a Lambda function to time out?",
+    "answers": [
+      {
+        "text": "Function exceeds the configured timeout setting",
+        "correct": true,
+        "explanation": "Function exceeds the configured timeout setting identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM role lacks permissions",
+        "correct": false,
+        "explanation": "IAM role lacks permissions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Function is stuck in an infinite loop",
+        "correct": true,
+        "explanation": "Function is stuck in an infinite loop identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Too many concurrent executions",
+        "correct": false,
+        "explanation": "Too many concurrent executions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: What could cause a Lambda function to time out?"
+      ]
+    }
+  },
+  {
+    "question": "What are common use cases for analyzing CloudTrail logs?",
+    "answers": [
+      {
+        "text": "Auditing user activity",
+        "correct": true,
+        "explanation": "Auditing user activity identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Monitoring EC2 CPU usage",
+        "correct": false,
+        "explanation": "Monitoring EC2 CPU usage concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Detecting unauthorized access",
+        "correct": true,
+        "explanation": "Detecting unauthorized access identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Debugging failed API calls",
+        "correct": true,
+        "explanation": "Debugging failed API calls identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are common use cases for analyzing CloudTrail logs?"
+      ]
+    }
+  },
+  {
+    "question": "What should you check if CloudTrail is not logging events as expected?",
+    "answers": [
+      {
+        "text": "Trail is enabled and logging to the correct S3 bucket",
+        "correct": true,
+        "explanation": "Trail is enabled and logging to the correct S3 bucket identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM permissions for CloudTrail to write to S3",
+        "correct": true,
+        "explanation": "IAM permissions for CloudTrail to write to S3 identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "CloudTrail is configured in the correct region",
+        "correct": true,
+        "explanation": "CloudTrail is configured in the correct region identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "The application's CSS stylesheet",
+        "correct": false,
+        "explanation": "The application's CSS stylesheet concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What should you check if CloudTrail is not logging events as expected?"
+      ]
+    }
+  },
+  {
+    "question": "Which class is used to define an IAM role in AWS CDK using Java?",
+    "answers": [
+      {
+        "text": "Role",
+        "correct": true,
+        "explanation": "Role identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAMRole",
+        "correct": false,
+        "explanation": "IAMRole concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "RoleDefinition",
+        "correct": false,
+        "explanation": "RoleDefinition concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "IAM",
+        "correct": false,
+        "explanation": "IAM concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which class is used to define an IAM role in AWS CDK using Java?"
+      ]
+    }
+  },
+  {
+    "question": "Which type of permissions can be set in AWS Lake Formation?",
+    "answers": [
+      {
+        "text": "Data permissions",
+        "correct": true,
+        "explanation": "Data permissions identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM permissions",
+        "correct": false,
+        "explanation": "IAM permissions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Bucket permissions",
+        "correct": false,
+        "explanation": "Bucket permissions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Role permissions",
+        "correct": false,
+        "explanation": "Role permissions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which type of permissions can be set in AWS Lake Formation?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS services can help detect and respond to security incidents?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. In this context, services, can, help, detect determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": true,
+        "explanation": "AWS CloudWatch identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Shield",
+        "correct": true,
+        "explanation": "Choose AWS Shield when the requirement is to protect applications against distributed denial-of-service attacks. In this context, services, can, help, detect determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. For services, can, help, detect, this affects the workload's architecture, operational behavior, and service selection."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS services can help detect and respond to security incidents?"
+      ]
+    }
+  },
+  {
+    "question": "What are the benefits of using IAM roles instead of IAM users for applications running on EC2?",
+    "answers": [
+      {
+        "text": "IAM roles provide temporary credentials",
+        "correct": true,
+        "explanation": "IAM roles provide temporary credentials identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM roles are easier to rotate than access keys",
+        "correct": true,
+        "explanation": "IAM roles are easier to rotate than access keys identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM users are more secure than roles",
+        "correct": false,
+        "explanation": "IAM users are more secure than roles concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "IAM roles can be assumed by services",
+        "correct": true,
+        "explanation": "IAM roles can be assumed by services identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are the benefits of using IAM roles instead of IAM users for applications running on EC2?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS services can integrate with AWS KMS for encryption?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. For services, can, integrate, KMS, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. In this context, services, can, integrate, KMS determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. In this context, services, can, integrate, KMS determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Route 53 domain registration",
+        "correct": false,
+        "explanation": "Amazon Route 53 domain registration concerns a separate capability from the one being tested. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS services can integrate with AWS KMS for encryption?"
+      ]
+    }
+  },
+  {
+    "question": "What is envelope encryption in the context of AWS KMS?",
+    "answers": [
+      {
+        "text": "Encrypting data using multiple layers of IAM policies",
+        "correct": false,
+        "explanation": "Encrypting data using multiple layers of IAM policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Encrypting data with a data key, which is then encrypted with a master key",
+        "correct": true,
+        "explanation": "Encrypting data with a data key, which is then encrypted with a master key identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Encrypting data using SSL/TLS",
+        "correct": false,
+        "explanation": "Encrypting data using SSL/TLS concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Encrypting IAM credentials before storage",
+        "correct": false,
+        "explanation": "Encrypting IAM credentials before storage concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is envelope encryption in the context of AWS KMS?"
+      ]
+    }
+  },
+  {
+    "question": "What is a permission in the context of AWS IAM?",
+    "answers": [
+      {
+        "text": "A user’s login credentials",
+        "correct": false,
+        "explanation": "A user’s login credentials concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A specific action allowed on a resource",
+        "correct": true,
+        "explanation": "A specific action allowed on a resource identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A group of users",
+        "correct": false,
+        "explanation": "A group of users concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A billing alert",
+        "correct": false,
+        "explanation": "A billing alert concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a permission in the context of AWS IAM?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are best practices for using AWS IAM?",
+    "answers": [
+      {
+        "text": "Enable MFA for all users",
+        "correct": true,
+        "explanation": "Enable MFA for all users identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use the root account for daily tasks",
+        "correct": false,
+        "explanation": "Use the root account for daily tasks concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Apply the principle of least privilege",
+        "correct": true,
+        "explanation": "Apply the principle of least privilege identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Rotate access keys regularly",
+        "correct": true,
+        "explanation": "Rotate access keys regularly identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are best practices for using AWS IAM?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following scenarios could indicate a potential MITM attack?",
+    "answers": [
+      {
+        "text": "A user receives a certificate warning when accessing a secure website",
+        "correct": true,
+        "explanation": "A user receives a certificate warning when accessing a secure website identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A website loads unusually slowly and behaves erratically",
+        "correct": true,
+        "explanation": "A website loads unusually slowly and behaves erratically identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A user is redirected to a different login page than expected",
+        "correct": true,
+        "explanation": "A user is redirected to a different login page than expected identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A user receives a 404 error on a webpage",
+        "correct": false,
+        "explanation": "A user receives a 404 error on a webpage concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following scenarios could indicate a potential MITM attack?"
+      ]
+    }
+  },
+  {
+    "question": "Which tools or technologies help detect or prevent MITM attacks?",
+    "answers": [
+      {
+        "text": "SSL/TLS certificates",
+        "correct": true,
+        "explanation": "SSL/TLS certificates identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Intrusion Detection Systems (IDS)",
+        "correct": true,
+        "explanation": "Intrusion Detection Systems (IDS) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Packet sniffers",
+        "correct": false,
+        "explanation": "Packet sniffers concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Public key infrastructure (PKI)",
+        "correct": true,
+        "explanation": "Public key infrastructure (PKI) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which tools or technologies help detect or prevent MITM attacks?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS WAF?",
+    "answers": [
+      {
+        "text": "To protect web applications from common web exploits",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To manage IAM users and roles",
+        "correct": false,
+        "explanation": "To manage IAM users and roles concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false,
+        "explanation": "To encrypt data at rest concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false,
+        "explanation": "To monitor billing usage concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS WAF?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS services can be protected using AWS WAF?",
+    "answers": [
+      {
+        "text": "Amazon CloudFront",
+        "correct": true,
+        "explanation": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects."
+      },
+      {
+        "text": "Application Load Balancer (ALB)",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon QuickSight exists to create interactive business intelligence dashboards and visualizations. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS services can be protected using AWS WAF?"
+      ]
+    }
+  },
+  {
+    "question": "What must be defined when creating a CloudWatch Alarm?",
+    "answers": [
+      {
+        "text": "A metric to monitor",
+        "correct": true,
+        "explanation": "A metric to monitor identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A threshold value",
+        "correct": true,
+        "explanation": "A threshold value identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "An IAM user",
+        "correct": false,
+        "explanation": "An IAM user concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "An action to take when the alarm state changes",
+        "correct": true,
+        "explanation": "An action to take when the alarm state changes identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: What must be defined when creating a CloudWatch Alarm?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS X-Ray?",
+    "answers": [
+      {
+        "text": "To trace requests as they travel through your application",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To encrypt data at rest",
+        "correct": false,
+        "explanation": "To encrypt data at rest concerns a separate capability from the one being tested. AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false,
+        "explanation": "To manage IAM roles concerns a separate capability from the one being tested. AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To monitor billing usage",
+        "correct": false,
+        "explanation": "To monitor billing usage concerns a separate capability from the one being tested. AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS X-Ray?"
+      ]
+    }
+  },
+  {
+    "question": "Which practices should be avoided when using Amazon RDS?",
+    "answers": [
+      {
+        "text": "Disabling automated backups",
+        "correct": true,
+        "explanation": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Using Multi-AZ deployments for high availability",
+        "correct": false,
+        "explanation": "Using Multi-AZ deployments for high availability concerns a separate capability from the one being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing application logs in the database",
+        "correct": true,
+        "explanation": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Enabling encryption at rest",
+        "correct": false,
+        "explanation": "Enabling encryption at rest concerns a separate capability from the one being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which practices should be avoided when using Amazon RDS?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following can help troubleshoot failed S3 uploads?",
+    "answers": [
+      {
+        "text": "Check IAM permissions for PutObject",
+        "correct": true,
+        "explanation": "Check IAM permissions for PutObject identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Verify bucket policy allows uploads",
+        "correct": true,
+        "explanation": "Verify bucket policy allows uploads identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ensure the object key is unique",
+        "correct": false,
+        "explanation": "Ensure the object key is unique concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Inspect error messages from SDK or CLI",
+        "correct": true,
+        "explanation": "Inspect error messages from SDK or CLI identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following can help troubleshoot failed S3 uploads?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary function of AWS Config?",
+    "answers": [
+      {
+        "text": "To assess, audit, and evaluate the configurations of AWS resources",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false,
+        "explanation": "To deploy machine learning models concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage IAM users and roles",
+        "correct": false,
+        "explanation": "To manage IAM users and roles concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To monitor billing and usage",
+        "correct": false,
+        "explanation": "To monitor billing and usage concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary function of AWS Config?"
+      ]
+    }
+  },
+  {
+    "question": "What is PII?",
+    "answers": [
+      {
+        "text": "Personally Identifiable Information, which includes data that can be used to identify an individual.",
+        "correct": true,
+        "explanation": "Personally Identifiable Information, which includes data that can be used to identify an individual. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Publicly Indexed Information, which includes data that is publicly available on the internet.",
+        "correct": false,
+        "explanation": "Publicly Indexed Information, which includes data that is publicly available on the internet. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Protected Internal Information, which includes data that is protected by internal security measures.",
+        "correct": false,
+        "explanation": "Protected Internal Information, which includes data that is protected by internal security measures. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Private Infrastructure Information, which includes data related to private cloud infrastructure.",
+        "correct": false,
+        "explanation": "Private Infrastructure Information, which includes data related to private cloud infrastructure. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is PII?"
+      ]
+    }
+  },
+  {
+    "question": "What is the principle of least privilege?",
+    "answers": [
+      {
+        "text": "A security principle that ensures users and systems have the minimum access necessary to perform their tasks.",
+        "correct": true,
+        "explanation": "A security principle that ensures users and systems have the minimum access necessary to perform their tasks. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A principle that ensures all users have equal access to resources and data.",
+        "correct": false,
+        "explanation": "A principle that ensures all users have equal access to resources and data. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A principle that ensures systems are isolated from each other to prevent unauthorized access.",
+        "correct": false,
+        "explanation": "A principle that ensures systems are isolated from each other to prevent unauthorized access. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A principle that ensures data is encrypted at rest and in transit.",
+        "correct": false,
+        "explanation": "A principle that ensures data is encrypted at rest and in transit. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the principle of least privilege?"
+      ]
+    }
+  },
+  {
+    "question": "A junior developer accidentally deleted a production database. Upon investigation, you find they had full admin access. Which security principle was violated?",
+    "answers": [
+      {
+        "text": "Principle of Least Privilege",
+        "correct": true,
+        "explanation": "Principle of Least Privilege identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Zero Trust",
+        "correct": false,
+        "explanation": "Zero Trust concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Role-Based Access Control",
+        "correct": false,
+        "explanation": "Role-Based Access Control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Identity Federation",
+        "correct": false,
+        "explanation": "Identity Federation concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: A junior developer accidentally deleted a production database. Upon investigation, you find they had full admin access. Which security principle was violated?"
+      ]
+    }
+  },
+  {
+    "question": "What are Amazon Security Groups used for?",
+    "answers": [
+      {
+        "text": "Controlling inbound and outbound traffic for instances",
+        "correct": true,
+        "explanation": "Controlling inbound and outbound traffic for instances identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Managing user identities",
+        "correct": false,
+        "explanation": "Managing user identities concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Defining permissions for AWS services",
+        "correct": false,
+        "explanation": "Defining permissions for AWS services concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false,
+        "explanation": "Storing Docker container images concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are Amazon Security Groups used for?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service allows you to set alarms based on metrics such as CPU utilization or disk I/O?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": true,
+        "explanation": "AWS CloudWatch identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false,
+        "explanation": "AWS IAM concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Shield",
+        "correct": false,
+        "explanation": "Choose AWS Shield when the requirement is to protect applications against distributed denial-of-service attacks. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service allows you to set alarms based on metrics such as CPU utilization or disk I/O?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following best describes the difference between CloudTrail and CloudWatch?",
+    "answers": [
+      {
+        "text": "CloudTrail monitors system metrics, while CloudWatch logs API calls.",
+        "correct": false,
+        "explanation": "CloudTrail monitors system metrics, while CloudWatch logs API calls. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "CloudTrail is used for compliance auditing, while CloudWatch is used for performance monitoring.",
+        "correct": true,
+        "explanation": "CloudTrail is used for compliance auditing, while CloudWatch is used for performance monitoring. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "CloudTrail is a billing service, while CloudWatch is a security service.",
+        "correct": false,
+        "explanation": "CloudTrail is a billing service, while CloudWatch is a security service. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "CloudTrail and CloudWatch are both used only for EC2 monitoring.",
+        "correct": false,
+        "explanation": "CloudTrail and CloudWatch are both used only for EC2 monitoring. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following best describes the difference between CloudTrail and CloudWatch?"
+      ]
+    }
+  },
+  {
+    "question": "What are recommended ways to secure data stored in Amazon S3?",
+    "answers": [
+      {
+        "text": "Enable server-side encryption",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Use bucket policies to restrict access",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Make the bucket public for easier access",
+        "correct": false,
+        "explanation": "Make the bucket public for easier access concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use access logging to monitor requests",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are recommended ways to secure data stored in Amazon S3?"
+      ]
+    }
+  },
+  {
+    "question": "What are effective ways to protect against MITM attacks?",
+    "answers": [
+      {
+        "text": "Use HTTPS and SSL/TLS encryption",
+        "correct": true,
+        "explanation": "Use HTTPS and SSL/TLS encryption identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Avoid using public Wi-Fi for sensitive transactions",
+        "correct": true,
+        "explanation": "Avoid using public Wi-Fi for sensitive transactions identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Use VPNs to encrypt traffic",
+        "correct": true,
+        "explanation": "Use VPNs to encrypt traffic identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Disable firewalls",
+        "correct": false,
+        "explanation": "Disable firewalls concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are effective ways to protect against MITM attacks?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS Secrets Manager?",
+    "answers": [
+      {
+        "text": "To store and manage sensitive information such as API keys and database credentials",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To monitor network traffic",
+        "correct": false,
+        "explanation": "To monitor network traffic concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage IAM users and groups",
+        "correct": false,
+        "explanation": "To manage IAM users and groups concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To encrypt EBS volumes",
+        "correct": false,
+        "explanation": "To encrypt EBS volumes concerns a separate capability from the one being tested. AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS Secrets Manager?"
+      ]
+    }
+  },
+  {
+    "question": "What are key components of an AWS WAF rule configuration?",
+    "answers": [
+      {
+        "text": "Rule groups",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Web ACLs",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Security groups",
+        "correct": false,
+        "explanation": "Security groups concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Conditions",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are key components of an AWS WAF rule configuration?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are best practices when using AWS WAF?",
+    "answers": [
+      {
+        "text": "Use managed rule groups for common threats",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Monitor WAF logs with Amazon CloudWatch",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Allow all traffic by default",
+        "correct": false,
+        "explanation": "Allow all traffic by default concerns a separate capability from the one being tested. AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Test rules in count mode before enforcing",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are best practices when using AWS WAF?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are differences between Security Groups and Network ACLs?",
+    "answers": [
+      {
+        "text": "Security Groups are stateful; NACLs are stateless",
+        "correct": true,
+        "explanation": "Security Groups are stateful; NACLs are stateless identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "NACLs support deny rules; Security Groups do not",
+        "correct": true,
+        "explanation": "NACLs support deny rules; Security Groups do not identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Security Groups apply at the subnet level",
+        "correct": false,
+        "explanation": "Security Groups apply at the subnet level concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "NACLs evaluate rules in order; Security Groups evaluate all rules",
+        "correct": true,
+        "explanation": "NACLs evaluate rules in order; Security Groups evaluate all rules identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are differences between Security Groups and Network ACLs?"
+      ]
+    }
+  },
+  {
+    "question": "What kind of insights can AWS X-Ray provide?",
+    "answers": [
+      {
+        "text": "Performance bottlenecks",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "User identity verification",
+        "correct": false,
+        "explanation": "User identity verification concerns a separate capability from the one being tested. AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Error rates and exceptions",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Request latency",
+        "correct": true,
+        "explanation": "AWS X-Ray exists to trace requests across distributed applications to analyze latency and faults. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: What kind of insights can AWS X-Ray provide?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are anti-patterns in AWS architecture design?",
+    "answers": [
+      {
+        "text": "Designing for high availability",
+        "correct": false,
+        "explanation": "Designing for high availability concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using a single Availability Zone for all resources",
+        "correct": true,
+        "explanation": "Using a single Availability Zone for all resources identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ignoring cost optimization strategies",
+        "correct": true,
+        "explanation": "Ignoring cost optimization strategies identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Hardcoding credentials in application code",
+        "correct": true,
+        "explanation": "Hardcoding credentials in application code identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are anti-patterns in AWS architecture design?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS CloudTrail Insights?",
+    "answers": [
+      {
+        "text": "To detect unusual operational activity in your AWS account",
+        "correct": true,
+        "explanation": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To provide real-time threat detection",
+        "correct": false,
+        "explanation": "To provide real-time threat detection concerns a separate capability from the one being tested. AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To store logs in Amazon S3",
+        "correct": false,
+        "explanation": "To store logs in Amazon S3 concerns a separate capability from the one being tested. AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false,
+        "explanation": "To manage IAM roles concerns a separate capability from the one being tested. AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS CloudTrail Insights?"
+      ]
+    }
+  },
+  {
+    "question": "What types of events does CloudTrail Insights analyze?",
+    "answers": [
+      {
+        "text": "Read-only events",
+        "correct": false,
+        "explanation": "Read-only events concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Write management events",
+        "correct": true,
+        "explanation": "Write management events identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data plane events",
+        "correct": false,
+        "explanation": "Data plane events concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Unusual patterns in write API calls",
+        "correct": true,
+        "explanation": "Unusual patterns in write API calls identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What types of events does CloudTrail Insights analyze?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are features of AWS Config?",
+    "answers": [
+      {
+        "text": "Resource configuration history",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Compliance auditing",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Real-time threat detection",
+        "correct": false,
+        "explanation": "Real-time threat detection concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automated remediation",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of AWS Config?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following statements are true about CloudWatch, CloudTrail, and Config?",
+    "answers": [
+      {
+        "text": "CloudWatch monitors performance metrics and logs",
+        "correct": true,
+        "explanation": "CloudWatch monitors performance metrics and logs identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "CloudTrail records API activity across AWS services",
+        "correct": true,
+        "explanation": "CloudTrail records API activity across AWS services identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Config evaluates resource compliance and configuration history",
+        "correct": true,
+        "explanation": "AWS Config evaluates resource compliance and configuration history identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "CloudTrail is used for setting alarms",
+        "correct": false,
+        "explanation": "CloudTrail is used for setting alarms concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following statements are true about CloudWatch, CloudTrail, and Config?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are features of AWS Cost Explorer?",
+    "answers": [
+      {
+        "text": "Filtering costs by service",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Forecasting future AWS spending",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Creating IAM policies",
+        "correct": false,
+        "explanation": "Creating IAM policies concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Grouping costs by linked accounts",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of AWS Cost Explorer?"
+      ]
+    }
+  },
+  {
+    "question": "What types of budgets can be created in AWS Budgets?",
+    "answers": [
+      {
+        "text": "Cost budgets",
+        "correct": true,
+        "explanation": "AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Usage budgets",
+        "correct": true,
+        "explanation": "AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Reservation budgets",
+        "correct": true,
+        "explanation": "AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "IAM budgets",
+        "correct": false,
+        "explanation": "IAM budgets concerns a separate capability from the one being tested. AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What types of budgets can be created in AWS Budgets?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are categories of checks provided by AWS Trusted Advisor?",
+    "answers": [
+      {
+        "text": "Cost Optimization",
+        "correct": true,
+        "explanation": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Performance",
+        "correct": true,
+        "explanation": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Security",
+        "correct": true,
+        "explanation": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Machine Learning",
+        "correct": false,
+        "explanation": "Machine Learning concerns a separate capability from the one being tested. AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are categories of checks provided by AWS Trusted Advisor?"
+      ]
+    }
+  },
+  {
+    "question": "What types of rules can be created in AWS Config?",
+    "answers": [
+      {
+        "text": "Managed rules provided by AWS",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Custom rules using AWS Lambda",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "IAM policy rules",
+        "correct": false,
+        "explanation": "IAM policy rules concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "CloudFormation template rules",
+        "correct": false,
+        "explanation": "CloudFormation template rules concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What types of rules can be created in AWS Config?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service can be used to ensure data privacy and security in AI applications?",
+    "answers": [
+      {
+        "text": "AWS Key Management Service (KMS)",
+        "correct": true,
+        "explanation": "AWS Key Management Service (KMS) identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Choose Amazon Rekognition when the requirement is to analyze images and videos to identify objects, faces, text, and activities. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Polly performs text-to-speech; Transcribe performs speech recognition, Translate translates text, and Rekognition analyzes images and videos. . The option addresses a different technical responsibility, whereas New provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to ensure data privacy and security in AI applications?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is primarily used for monitoring metrics and setting alarms?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true,
+        "explanation": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. In this context, primarily, for, monitoring, metrics determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "Config records and evaluates resource configuration; CloudTrail logs API calls, CloudWatch monitors telemetry, and Trusted Advisor provides recommendations. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      },
+      {
+        "text": "AWS IAM",
+        "correct": false,
+        "explanation": "AWS IAM concerns a separate capability from the one being tested. Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is primarily used for monitoring metrics and setting alarms?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid AWS Budget types?",
+    "answers": [
+      {
+        "text": "Cost Budget",
+        "correct": true,
+        "explanation": "Cost Budget identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Usage Budget",
+        "correct": true,
+        "explanation": "Usage Budget identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "RI Coverage Budget",
+        "correct": true,
+        "explanation": "RI Coverage Budget identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "IAM Budget",
+        "correct": false,
+        "explanation": "IAM Budget concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid AWS Budget types?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following can you do with AWS Cost Explorer?",
+    "answers": [
+      {
+        "text": "View daily and monthly AWS usage",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Forecast future costs",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Set IAM permissions",
+        "correct": false,
+        "explanation": "Set IAM permissions concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Filter costs by tag",
+        "correct": true,
+        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following can you do with AWS Cost Explorer?"
+      ]
+    }
+  },
+  {
+    "question": "Which pillar of the AWS Well-Architected Framework focuses on security?",
+    "answers": [
+      {
+        "text": "Operational Excellence",
+        "correct": false,
+        "explanation": "Operational Excellence concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Security",
+        "correct": true,
+        "explanation": "Security identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Reliability",
+        "correct": false,
+        "explanation": "Reliability concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Performance Efficiency",
+        "correct": false,
+        "explanation": "Performance Efficiency concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which pillar of the AWS Well-Architected Framework focuses on security?"
+      ]
+    }
+  }
+]

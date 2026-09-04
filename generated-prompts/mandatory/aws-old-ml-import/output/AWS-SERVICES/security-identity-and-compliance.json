@@ -1,0 +1,2858 @@
+[
+  {
+    "question": "Which AWS service is primarily designed to provide on-demand access to AWS compliance reports and agreements?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact",
+        "correct": true,
+        "explanation": "AWS Artifact exists to provide on-demand access to AWS compliance reports and agreements. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. Choose AWS Artifact when the requirement is to provide on-demand access to AWS compliance reports and agreements. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS Artifact when the requirement is to provide on-demand access to AWS compliance reports and agreements. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Artifact",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Artifact"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Artifact exists to provide on-demand access to AWS compliance reports and agreements.",
+    "answerSource": "https://aws.amazon.com/artifact/"
+  },
+  {
+    "question": "A team needs to provision, manage, and renew TLS certificates for AWS resources. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets. Those services use different integration patterns and address different workload."
+      },
+      {
+        "text": "AWS Elastic Beanstalk",
+        "correct": false,
+        "explanation": "Choose AWS Elastic Beanstalk when the requirement is to deploy and operate web applications while AWS manages much of the underlying infrastructure. ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": true,
+        "explanation": "ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Certificate Manager (ACM)",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Certificate Manager (ACM)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Certificate Manager (ACM) exists to provision, manage, and renew TLS certificates for AWS resources.",
+    "answerSource": "https://aws.amazon.com/acm/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide dedicated hardware security modules under customer control?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": true,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS CloudHSM",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CloudHSM"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control.",
+    "answerSource": "https://aws.amazon.com/cloudhsm/"
+  },
+  {
+    "question": "Which pairing correctly matches Amazon Cognito with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact — add sign-up, sign-in, and access control for applications",
+        "correct": false,
+        "explanation": "AWS Artifact — add sign-up, sign-in, and access control for applications concerns a separate capability from the one being tested. Amazon Cognito exists to add sign-up, sign-in, and access control for applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Cognito — add sign-up, sign-in, and access control for applications",
+        "correct": true,
+        "explanation": "Amazon Cognito exists to add sign-up, sign-in, and access control for applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM) — add sign-up, sign-in, and access control for applications",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) — add sign-up, sign-in, and access control for applications concerns a separate capability from the one being tested. Amazon Cognito exists to add sign-up, sign-in, and access control for applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS CloudHSM — add sign-up, sign-in, and access control for applications",
+        "correct": false,
+        "explanation": "AWS CloudHSM — add sign-up, sign-in, and access control for applications concerns a separate capability from the one being tested. Amazon Cognito exists to add sign-up, sign-in, and access control for applications. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Cognito",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Cognito"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Cognito exists to add sign-up, sign-in, and access control for applications.",
+    "answerSource": "https://aws.amazon.com/cognito/"
+  },
+  {
+    "question": "Which statement about Amazon Detective is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to investigate security findings by analyzing related activity and resources.",
+        "correct": true,
+        "explanation": "Amazon Detective exists to investigate security findings by analyzing related activity and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to provide on-demand access to AWS compliance reports and agreements.",
+        "correct": false,
+        "explanation": "It is used to provide on-demand access to AWS compliance reports and agreements. concerns a separate capability from the one being tested. Amazon Detective exists to investigate security findings by analyzing related activity and resources. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provision, manage, and renew TLS certificates for AWS resources.",
+        "correct": false,
+        "explanation": "It is used to provision, manage, and renew TLS certificates for AWS resources. concerns a separate capability from the one being tested. Amazon Detective exists to investigate security findings by analyzing related activity and resources. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provide dedicated hardware security modules under customer control.",
+        "correct": false,
+        "explanation": "It is used to provide dedicated hardware security modules under customer control. concerns a separate capability from the one being tested. Amazon Detective exists to investigate security findings by analyzing related activity and resources. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Detective",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Detective"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Detective exists to investigate security findings by analyzing related activity and resources.",
+    "answerSource": "https://aws.amazon.com/detective/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Directory Service?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provision, manage, and renew TLS certificates for AWS resources",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "Provide dedicated hardware security modules under customer control",
+        "correct": false,
+        "explanation": "Provide dedicated hardware security modules under customer control concerns a separate capability from the one being tested. AWS Directory Service exists to provide managed directory services and Microsoft Active Directory integration. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Provide on-demand access to AWS compliance reports and agreements",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "Provide managed directory services and microsoft active directory integration",
+        "correct": true,
+        "explanation": "AWS Directory Service exists to provide managed directory services and Microsoft Active Directory integration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Directory Service",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Directory Service"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Directory Service exists to provide managed directory services and Microsoft Active Directory integration.",
+    "answerSource": "https://aws.amazon.com/directoryservice/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to centrally configure and manage firewall rules across accounts and resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Firewall Manager",
+        "correct": true,
+        "explanation": "AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Firewall Manager",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Firewall Manager"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources.",
+    "answerSource": "https://aws.amazon.com/firewall-manager/"
+  },
+  {
+    "question": "What is the primary purpose of Amazon GuardDuty?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provide on-demand access to AWS compliance reports and agreements",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "Continuously detect suspicious activity and threats in AWS environments",
+        "correct": true,
+        "explanation": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Provision, manage, and renew TLS certificates for AWS resources",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "Provide dedicated hardware security modules under customer control",
+        "correct": false,
+        "explanation": "Provide dedicated hardware security modules under customer control concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon GuardDuty",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon GuardDuty"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/guardduty/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to control authentication and authorization for AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Identity and Access Management (IAM)",
+        "correct": true,
+        "explanation": "Choose AWS Identity and Access Management (IAM) when the requirement is to control authentication and authorization for AWS resources. In this context, primarily, designed, control, authentication determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. Choose AWS Identity and Access Management (IAM) when the requirement is to control authentication and authorization for AWS resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Identity and Access Management (IAM)",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Identity and Access Management (IAM)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Identity and Access Management (IAM) exists to control authentication and authorization for AWS resources.",
+    "answerSource": "https://aws.amazon.com/iam/"
+  },
+  {
+    "question": "A team needs to centrally manage workforce access to AWS accounts and applications. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS IAM Identity Center",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS IAM Identity Center"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications.",
+    "answerSource": "https://aws.amazon.com/singlesignon/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to automatically scan workloads for software vulnerabilities and unintended network exposure?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. Amazon Inspector exists to automatically scan workloads for software vulnerabilities and unintended network exposure. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": true,
+        "explanation": "Amazon Inspector exists to automatically scan workloads for software vulnerabilities and unintended network exposure. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Inspector",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Inspector"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Inspector exists to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+    "answerSource": "https://aws.amazon.com/inspector/"
+  },
+  {
+    "question": "Which pairing correctly matches AWS Key Management Service (AWS KMS) with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact — create and control cryptographic keys used to protect data",
+        "correct": false,
+        "explanation": "AWS Artifact — create and control cryptographic keys used to protect data concerns a separate capability from the one being tested. AWS Key Management Service (AWS KMS) exists to create and control cryptographic keys used to protect data. The distinction is important when selecting services for."
+      },
+      {
+        "text": "AWS Key Management Service (AWS KMS) — create and control cryptographic keys used to protect data",
+        "correct": true,
+        "explanation": "AWS Key Management Service (AWS KMS) exists to create and control cryptographic keys used to protect data. In this context, pairing, correctly, matches, Key determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM) — create and control cryptographic keys used to protect data",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) — create and control cryptographic keys used to protect data concerns a separate capability from the one being tested. AWS Key Management Service (AWS KMS) exists to create and control cryptographic keys used to protect data. The distinction is important when selecting."
+      },
+      {
+        "text": "AWS CloudHSM — create and control cryptographic keys used to protect data",
+        "correct": false,
+        "explanation": "AWS CloudHSM — create and control cryptographic keys used to protect data concerns a separate capability from the one being tested. AWS Key Management Service (AWS KMS) exists to create and control cryptographic keys used to protect data. The distinction is important when selecting services for."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Key Management Service (AWS KMS)",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Key Management Service (AWS KMS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Key Management Service (AWS KMS) exists to create and control cryptographic keys used to protect data.",
+    "answerSource": "https://aws.amazon.com/kms/"
+  },
+  {
+    "question": "Which statement about Amazon Macie is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to discover and protect sensitive data stored in Amazon S3.",
+        "correct": true,
+        "explanation": "Amazon Macie exists to discover and protect sensitive data stored in Amazon S3. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to provide on-demand access to AWS compliance reports and agreements.",
+        "correct": false,
+        "explanation": "It is used to provide on-demand access to AWS compliance reports and agreements. concerns a separate capability from the one being tested. Amazon Macie exists to discover and protect sensitive data stored in Amazon S3. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provision, manage, and renew TLS certificates for AWS resources.",
+        "correct": false,
+        "explanation": "It is used to provision, manage, and renew TLS certificates for AWS resources. concerns a separate capability from the one being tested. Amazon Macie exists to discover and protect sensitive data stored in Amazon S3. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provide dedicated hardware security modules under customer control.",
+        "correct": false,
+        "explanation": "It is used to provide dedicated hardware security modules under customer control. concerns a separate capability from the one being tested. Amazon Macie exists to discover and protect sensitive data stored in Amazon S3. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Macie",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Macie"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Macie exists to discover and protect sensitive data stored in Amazon S3.",
+    "answerSource": "https://aws.amazon.com/macie/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Resource Access Manager (AWS RAM)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provision, manage, and renew TLS certificates for AWS resources",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "Provide dedicated hardware security modules under customer control",
+        "correct": false,
+        "explanation": "Provide dedicated hardware security modules under customer control concerns a separate capability from the one being tested. AWS Resource Access Manager (AWS RAM) exists to share supported AWS resources across accounts and organizational units. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Provide on-demand access to AWS compliance reports and agreements",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "Share supported AWS resources across accounts and organizational units",
+        "correct": true,
+        "explanation": "AWS Resource Access Manager (AWS RAM) exists to share supported AWS resources across accounts and organizational units. In this context, the, primary, purpose, Resource determine the required service responsibility, data flow, or model behavior for the workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Resource Access Manager (AWS RAM)",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Resource Access Manager (AWS RAM)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Resource Access Manager (AWS RAM) exists to share supported AWS resources across accounts and organizational units.",
+    "answerSource": "https://aws.amazon.com/ram/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to securely store, retrieve, and rotate application secrets?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. Choose AWS Secrets Manager when the requirement is to securely store, retrieve, and rotate application secrets. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Secrets Manager",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Secrets Manager"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets.",
+    "answerSource": "https://aws.amazon.com/secrets-manager/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Security Hub?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provide on-demand access to AWS compliance reports and agreements",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "Aggregate and prioritize security findings across AWS services",
+        "correct": true,
+        "explanation": "AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Provision, manage, and renew TLS certificates for AWS resources",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "Provide dedicated hardware security modules under customer control",
+        "correct": false,
+        "explanation": "Provide dedicated hardware security modules under customer control concerns a separate capability from the one being tested. AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Security Hub",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Security Hub"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Security Hub exists to aggregate and prioritize security findings across AWS services.",
+    "answerSource": "https://aws.amazon.com/security-hub/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to protect applications against distributed denial-of-service attacks?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Shield",
+        "correct": true,
+        "explanation": "AWS Shield exists to protect applications against distributed denial-of-service attacks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. AWS Shield exists to protect applications against distributed denial-of-service attacks. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Shield",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Shield"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Shield exists to protect applications against distributed denial-of-service attacks.",
+    "answerSource": "https://aws.amazon.com/shield/"
+  },
+  {
+    "question": "A team needs to filter HTTP and HTTPS requests to protect web applications. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) has a different primary responsibility: it is designed to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control. Choose AWS WAF when the requirement is to filter HTTP and HTTPS requests to protect web applications. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact has a different primary responsibility: it is designed to provide on-demand access to AWS compliance reports and agreements."
+      },
+      {
+        "text": "AWS WAF",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS WAF",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS WAF"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications.",
+    "answerSource": "https://aws.amazon.com/waf/"
+  },
+  {
+    "question": "Which service centrally manages workforce access to multiple AWS accounts?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "Amazon Cognito is designed to add sign-up, sign-in, and access control for applications, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Organizations",
+        "correct": false,
+        "explanation": "AWS Organizations is designed to centrally manage multiple AWS accounts and apply policies and consolidated billing, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Identity and Access Management (IAM)",
+        "correct": false,
+        "explanation": "AWS Identity and Access Management (IAM) is designed to control authentication and authorization for AWS resources, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS IAM Identity Center from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "IAM Identity Center manages workforce access across accounts; IAM controls permissions, Cognito serves application users, and Organizations groups accounts.",
+    "answerSource": "https://aws.amazon.com/singlesignon/"
+  },
+  {
+    "question": "Which service is primarily for application user sign-up and sign-in rather than AWS administrator permissions?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Identity and Access Management (IAM)",
+        "correct": false,
+        "explanation": "AWS Identity and Access Management (IAM) is designed to control authentication and authorization for AWS resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": true,
+        "explanation": "Cognito handles application identities; IAM handles AWS permissions, IAM Identity Center handles workforce access, and Directory Service provides managed directories."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": false,
+        "explanation": "AWS IAM Identity Center is designed to centrally manage workforce access to AWS accounts and applications, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Directory Service",
+        "correct": false,
+        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Cognito from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Cognito handles application identities; IAM handles AWS permissions, IAM Identity Center handles workforce access, and Directory Service provides managed directories.",
+    "answerSource": "https://aws.amazon.com/cognito/"
+  },
+  {
+    "question": "Which service detects suspicious activity and potential threats continuously?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon GuardDuty",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Security Hub",
+        "correct": false,
+        "explanation": "AWS Security Hub is designed to aggregate and prioritize security findings across AWS services, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon GuardDuty from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "GuardDuty detects threats; Inspector scans vulnerabilities, Detective investigates findings, and Security Hub aggregates security findings.",
+    "answerSource": "https://aws.amazon.com/guardduty/"
+  },
+  {
+    "question": "Which service aggregates and prioritizes security findings from multiple AWS services?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon GuardDuty",
+        "correct": false,
+        "explanation": "Amazon GuardDuty is designed to continuously detect suspicious activity and threats in AWS environments, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Security Hub",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Security Hub from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Security Hub aggregates findings; GuardDuty detects threats, Detective investigates activity, and Config evaluates resource configuration.",
+    "answerSource": "https://aws.amazon.com/security-hub/"
+  },
+  {
+    "question": "Which service provides managed TLS certificates for supported AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM is designed to provide dedicated hardware security modules under customer control, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": false,
+        "explanation": "AWS Secrets Manager is designed to securely store, retrieve, and rotate application secrets, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": true,
+        "explanation": "ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets."
+      },
+      {
+        "text": "AWS Key Management Service (AWS KMS)",
+        "correct": false,
+        "explanation": "AWS Key Management Service (AWS KMS) is designed to create and control cryptographic keys used to protect data, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Certificate Manager (ACM) from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets.",
+    "answerSource": "https://aws.amazon.com/acm/"
+  },
+  {
+    "question": "Which service stores and rotates database passwords and API keys?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Key Management Service (AWS KMS)",
+        "correct": false,
+        "explanation": "AWS Key Management Service (AWS KMS) is designed to create and control cryptographic keys used to protect data, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Secrets Manager from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Secrets Manager stores and rotates secrets; KMS manages cryptographic keys, ACM manages certificates, and Macie discovers sensitive S3 data.",
+    "answerSource": "https://aws.amazon.com/secrets-manager/"
+  },
+  {
+    "question": "A cloud practitioner must provide on-demand access to AWS compliance reports and agreements. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact",
+        "correct": true,
+        "explanation": "AWS Artifact exists to provide on-demand access to AWS compliance reports and agreements. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": false,
+        "explanation": "AWS IAM Identity Center is designed to centrally manage workforce access to AWS accounts and applications, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Identity and Access Management (IAM)",
+        "correct": false,
+        "explanation": "AWS Identity and Access Management (IAM) is designed to control authentication and authorization for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Key Management Service (AWS KMS)",
+        "correct": false,
+        "explanation": "AWS Key Management Service (AWS KMS) is designed to create and control cryptographic keys used to protect data, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Artifact",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Artifact for a requirement to provide on-demand access to AWS compliance reports and agreements"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Artifact when the requirement is to provide on-demand access to AWS compliance reports and agreements.",
+    "answerSource": "https://aws.amazon.com/artifact/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers provision, manage, and renew TLS certificates for AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Shield",
+        "correct": false,
+        "explanation": "Choose AWS Shield when the requirement is to protect applications against distributed denial-of-service attacks. ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets."
+      },
+      {
+        "text": "AWS WAF",
+        "correct": false,
+        "explanation": "AWS WAF is designed to filter HTTP and HTTPS requests to protect web applications, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "Amazon Cognito is designed to add sign-up, sign-in, and access control for applications, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": true,
+        "explanation": "ACM manages TLS certificates; KMS manages encryption keys, CloudHSM provides dedicated hardware security modules, and Secrets Manager stores application secrets."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Certificate Manager (ACM)",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS Certificate Manager (ACM) for a requirement to provision, manage, and renew TLS certificates for AWS resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Certificate Manager (ACM) when the requirement is to provision, manage, and renew TLS certificates for AWS resources.",
+    "answerSource": "https://aws.amazon.com/acm/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to provide dedicated hardware security modules under customer control?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon GuardDuty",
+        "correct": false,
+        "explanation": "Amazon GuardDuty is designed to continuously detect suspicious activity and threats in AWS environments, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": true,
+        "explanation": "AWS CloudHSM exists to provide dedicated hardware security modules under customer control. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS CloudHSM",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS CloudHSM for a requirement to provide dedicated hardware security modules under customer control"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS CloudHSM when the requirement is to provide dedicated hardware security modules under customer control.",
+    "answerSource": "https://aws.amazon.com/cloudhsm/"
+  },
+  {
+    "question": "Which AWS service should a team select to add sign-up, sign-in, and access control for applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": true,
+        "explanation": "Cognito handles application identities; IAM handles AWS permissions, IAM Identity Center handles workforce access, and Directory Service provides managed directories."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Cognito",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon Cognito for a requirement to add sign-up, sign-in, and access control for applications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Cognito when the requirement is to add sign-up, sign-in, and access control for applications.",
+    "answerSource": "https://aws.amazon.com/cognito/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers investigate security findings by analyzing related activity and resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Detective",
+        "correct": true,
+        "explanation": "Amazon Detective exists to investigate security findings by analyzing related activity and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM is designed to provide dedicated hardware security modules under customer control, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Directory Service",
+        "correct": false,
+        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Firewall Manager",
+        "correct": false,
+        "explanation": "AWS Firewall Manager is designed to centrally configure and manage firewall rules across accounts and resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Detective",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select Amazon Detective for a requirement to investigate security findings by analyzing related activity and resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Detective when the requirement is to investigate security findings by analyzing related activity and resources.",
+    "answerSource": "https://aws.amazon.com/detective/"
+  },
+  {
+    "question": "A cloud practitioner must provide managed directory services and Microsoft Active Directory integration. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Resource Access Manager (AWS RAM)",
+        "correct": false,
+        "explanation": "AWS Resource Access Manager (AWS RAM) is designed to share supported AWS resources across accounts and organizational units, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": false,
+        "explanation": "AWS Secrets Manager is designed to securely store, retrieve, and rotate application secrets, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Security Hub",
+        "correct": false,
+        "explanation": "AWS Security Hub is designed to aggregate and prioritize security findings across AWS services, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Directory Service",
+        "correct": true,
+        "explanation": "AWS Directory Service exists to provide managed directory services and Microsoft Active Directory integration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Directory Service",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Directory Service for a requirement to provide managed directory services and Microsoft Active Directory integration"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Directory Service when the requirement is to provide managed directory services and Microsoft Active Directory integration.",
+    "answerSource": "https://aws.amazon.com/directoryservice/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to centrally configure and manage firewall rules across accounts and resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "Amazon Cognito is designed to add sign-up, sign-in, and access control for applications, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Firewall Manager",
+        "correct": true,
+        "explanation": "AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS WAF",
+        "correct": false,
+        "explanation": "AWS WAF is designed to filter HTTP and HTTPS requests to protect web applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Firewall Manager",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Firewall Manager for a requirement to centrally configure and manage firewall rules across accounts and resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Firewall Manager when the requirement is to centrally configure and manage firewall rules across accounts and resources.",
+    "answerSource": "https://aws.amazon.com/firewall-manager/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to continuously detect suspicious activity and threats in AWS environments?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon GuardDuty",
+        "correct": true,
+        "explanation": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon GuardDuty",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select Amazon GuardDuty for a requirement to continuously detect suspicious activity and threats in AWS environments"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon GuardDuty when the requirement is to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/guardduty/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to control authentication and authorization for AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Identity and Access Management (IAM)",
+        "correct": true,
+        "explanation": "Choose AWS Identity and Access Management (IAM) when the requirement is to control authentication and authorization for AWS resources. In this context, the, best, solution, primary determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Identity and Access Management (IAM)",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Identity and Access Management (IAM) for a requirement to control authentication and authorization for AWS resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Identity and Access Management (IAM) when the requirement is to control authentication and authorization for AWS resources.",
+    "answerSource": "https://aws.amazon.com/iam/"
+  },
+  {
+    "question": "Which AWS service should a team select to centrally manage workforce access to AWS accounts and applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS IAM Identity Center",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS IAM Identity Center for a requirement to centrally manage workforce access to AWS accounts and applications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS IAM Identity Center when the requirement is to centrally manage workforce access to AWS accounts and applications.",
+    "answerSource": "https://aws.amazon.com/singlesignon/"
+  },
+  {
+    "question": "A cloud practitioner must automatically scan workloads for software vulnerabilities and unintended network exposure. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": true,
+        "explanation": "Amazon Inspector exists to automatically scan workloads for software vulnerabilities and unintended network exposure. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Inspector",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Inspector for a requirement to automatically scan workloads for software vulnerabilities and unintended network exposure"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Inspector when the requirement is to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+    "answerSource": "https://aws.amazon.com/inspector/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers create and control cryptographic keys used to protect data?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Directory Service",
+        "correct": false,
+        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Key Management Service (AWS KMS)",
+        "correct": true,
+        "explanation": "Choose AWS Key Management Service (AWS KMS) when the requirement is to create and control cryptographic keys used to protect data."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM)",
+        "correct": false,
+        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudHSM",
+        "correct": false,
+        "explanation": "AWS CloudHSM is designed to provide dedicated hardware security modules under customer control, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Key Management Service (AWS KMS)",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS Key Management Service (AWS KMS) for a requirement to create and control cryptographic keys used to protect data"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Key Management Service (AWS KMS) when the requirement is to create and control cryptographic keys used to protect data.",
+    "answerSource": "https://aws.amazon.com/kms/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to discover and protect sensitive data stored in Amazon S3?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Macie",
+        "correct": true,
+        "explanation": "Amazon Macie exists to discover and protect sensitive data stored in Amazon S3. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Directory Service",
+        "correct": false,
+        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Firewall Manager",
+        "correct": false,
+        "explanation": "AWS Firewall Manager is designed to centrally configure and manage firewall rules across accounts and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS IAM Identity Center",
+        "correct": false,
+        "explanation": "AWS IAM Identity Center is designed to centrally manage workforce access to AWS accounts and applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Macie",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select Amazon Macie for a requirement to discover and protect sensitive data stored in Amazon S3"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Macie when the requirement is to discover and protect sensitive data stored in Amazon S3.",
+    "answerSource": "https://aws.amazon.com/macie/"
+  },
+  {
+    "question": "A cloud practitioner must share supported AWS resources across accounts and organizational units. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Shield",
+        "correct": false,
+        "explanation": "Choose AWS Shield when the requirement is to protect applications against distributed denial-of-service attacks. Choose AWS Resource Access Manager (AWS RAM) when the requirement is to share supported AWS resources across accounts and organizational units."
+      },
+      {
+        "text": "AWS WAF",
+        "correct": false,
+        "explanation": "AWS WAF is designed to filter HTTP and HTTPS requests to protect web applications, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "Amazon Cognito is designed to add sign-up, sign-in, and access control for applications, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Resource Access Manager (AWS RAM)",
+        "correct": true,
+        "explanation": "Choose AWS Resource Access Manager (AWS RAM) when the requirement is to share supported AWS resources across accounts and organizational units."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Resource Access Manager (AWS RAM)",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Resource Access Manager (AWS RAM) for a requirement to share supported AWS resources across accounts and organizational units"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Resource Access Manager (AWS RAM) when the requirement is to share supported AWS resources across accounts and organizational units.",
+    "answerSource": "https://aws.amazon.com/ram/"
+  },
+  {
+    "question": "A team needs to securely store, retrieve, and rotate application secrets. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon GuardDuty",
+        "correct": false,
+        "explanation": "Amazon GuardDuty is designed to continuously detect suspicious activity and threats in AWS environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": true,
+        "explanation": "AWS Secrets Manager exists to securely store, retrieve, and rotate application secrets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Cognito",
+        "correct": false,
+        "explanation": "Amazon Cognito is designed to add sign-up, sign-in, and access control for applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Secrets Manager",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Secrets Manager for a requirement to securely store, retrieve, and rotate application secrets"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Secrets Manager when the requirement is to securely store, retrieve, and rotate application secrets.",
+    "answerSource": "https://aws.amazon.com/secrets-manager/"
+  },
+  {
+    "question": "Which AWS service should a team select to aggregate and prioritize security findings across AWS services?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Fargate",
+        "correct": false,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. AWS Security Hub exists to aggregate and prioritize security findings across AWS services. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Security Hub",
+        "correct": true,
+        "explanation": "AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon GuardDuty",
+        "correct": false,
+        "explanation": "Amazon GuardDuty is designed to continuously detect suspicious activity and threats in AWS environments, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Security Hub",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS Security Hub for a requirement to aggregate and prioritize security findings across AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Security Hub when the requirement is to aggregate and prioritize security findings across AWS services.",
+    "answerSource": "https://aws.amazon.com/security-hub/"
+  },
+  {
+    "question": "A cloud practitioner must protect applications against distributed denial-of-service attacks. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Shield",
+        "correct": true,
+        "explanation": "AWS Shield exists to protect applications against distributed denial-of-service attacks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "explanation": "Amazon Macie is designed to discover and protect sensitive data stored in Amazon S3, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Artifact",
+        "correct": false,
+        "explanation": "AWS Artifact is designed to provide on-demand access to AWS compliance reports and agreements, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Shield",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Shield for a requirement to protect applications against distributed denial-of-service attacks"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Shield when the requirement is to protect applications against distributed denial-of-service attacks.",
+    "answerSource": "https://aws.amazon.com/shield/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to filter HTTP and HTTPS requests to protect web applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Key Management Service (AWS KMS)",
+        "correct": false,
+        "explanation": "AWS Key Management Service (AWS KMS) is designed to create and control cryptographic keys used to protect data, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Resource Access Manager (AWS RAM)",
+        "correct": false,
+        "explanation": "AWS Resource Access Manager (AWS RAM) is designed to share supported AWS resources across accounts and organizational units, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Secrets Manager",
+        "correct": false,
+        "explanation": "AWS Secrets Manager is designed to securely store, retrieve, and rotate application secrets, so it does not match this requirement."
+      },
+      {
+        "text": "AWS WAF",
+        "correct": true,
+        "explanation": "AWS WAF exists to filter HTTP and HTTPS requests to protect web applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS WAF",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS WAF for a requirement to filter HTTP and HTTPS requests to protect web applications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS WAF when the requirement is to filter HTTP and HTTPS requests to protect web applications.",
+    "answerSource": "https://aws.amazon.com/waf/"
+  },
+  {
+    "question": "When should a team choose AWS Artifact instead of AWS Security Hub?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to provide on-demand access to AWS compliance reports and agreements, rather than to aggregate and prioritize security findings across AWS services.",
+        "correct": true,
+        "explanation": "AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to aggregate and prioritize security findings across AWS services, rather than to provide on-demand access to AWS compliance reports and agreements.",
+        "correct": false,
+        "explanation": "When the requirement is to aggregate and prioritize security findings across AWS services, rather than to provide on-demand access to AWS compliance reports and agreements. concerns a separate capability from the one being tested. AWS Security Hub exists to aggregate and prioritize security findings across AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Artifact",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Artifact from AWS Security Hub"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Artifact is used to provide on-demand access to AWS compliance reports and agreements, while AWS Security Hub is used to aggregate and prioritize security findings across AWS services.",
+    "answerSource": "https://aws.amazon.com/artifact/"
+  },
+  {
+    "question": "A learner says AWS Certificate Manager (ACM) and AWS Key Management Service (AWS KMS) have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to create and control cryptographic keys used to protect data.",
+        "correct": false,
+        "explanation": "That describes AWS Key Management Service (AWS KMS), but AWS Certificate Manager (ACM) is primarily used to provision, manage, and renew TLS certificates for AWS resources."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM) is used to provision, manage, and renew TLS certificates for AWS resources, whereas AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+        "correct": true,
+        "explanation": "AWS Certificate Manager (ACM) is used to provision, manage, and renew TLS certificates for AWS resources, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data. For learner, says, Certificate, Manager, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "AWS Certificate Manager (ACM) is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to provision, manage, and renew TLS certificates for AWS resources.",
+        "correct": false,
+        "explanation": "The statement about AWS Certificate Manager (ACM) is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to provision, manage, and renew TLS certificates for AWS resources. describes a different technical behavior from the capability."
+      },
+      {
+        "text": "Both services are primarily used to provision, manage, and renew TLS certificates for AWS resources.",
+        "correct": false,
+        "explanation": "That describes AWS Certificate Manager (ACM), but AWS Key Management Service (AWS KMS) is primarily used to create and control cryptographic keys used to protect data."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Certificate Manager (ACM)",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Certificate Manager (ACM) from AWS Key Management Service (AWS KMS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Certificate Manager (ACM) is used to provision, manage, and renew TLS certificates for AWS resources, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+    "answerSource": "https://aws.amazon.com/acm/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS CloudHSM from AWS Key Management Service (AWS KMS)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudHSM is used to provide dedicated hardware security modules under customer control, whereas AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+        "correct": true,
+        "explanation": "AWS CloudHSM is used to provide dedicated hardware security modules under customer control, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data. For statement, correctly, distinguishes, CloudHSM, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "AWS CloudHSM is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to provide dedicated hardware security modules under customer control.",
+        "correct": false,
+        "explanation": "AWS CloudHSM is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to provide dedicated hardware security modules under customer control. concerns a separate capability from the one being tested. AWS CloudHSM is used to."
+      },
+      {
+        "text": "Both services are primarily used to provide dedicated hardware security modules under customer control.",
+        "correct": false,
+        "explanation": "That describes AWS CloudHSM, but AWS Key Management Service (AWS KMS) is primarily used to create and control cryptographic keys used to protect data."
+      },
+      {
+        "text": "Both services are primarily used to create and control cryptographic keys used to protect data.",
+        "correct": false,
+        "explanation": "That describes AWS Key Management Service (AWS KMS), but AWS CloudHSM is primarily used to provide dedicated hardware security modules under customer control."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS CloudHSM",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS CloudHSM from AWS Key Management Service (AWS KMS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CloudHSM is used to provide dedicated hardware security modules under customer control, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+    "answerSource": "https://aws.amazon.com/cloudhsm/"
+  },
+  {
+    "question": "When should a team choose AWS Directory Service instead of AWS IAM Identity Center?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to centrally manage workforce access to AWS accounts and applications, rather than to provide managed directory services and Microsoft Active Directory integration.",
+        "correct": false,
+        "explanation": "When the requirement is to centrally manage workforce access to AWS accounts and applications, rather than to provide managed directory services and Microsoft Active Directory integration. concerns a separate capability from the one being tested. AWS IAM Identity Center exists to centrally manage workforce access to."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to provide managed directory services and Microsoft Active Directory integration, rather than to centrally manage workforce access to AWS accounts and applications.",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Directory Service",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Directory Service from AWS IAM Identity Center"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Directory Service is used to provide managed directory services and Microsoft Active Directory integration, while AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications.",
+    "answerSource": "https://aws.amazon.com/directoryservice/"
+  },
+  {
+    "question": "When should a team choose AWS Firewall Manager instead of AWS WAF?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to centrally configure and manage firewall rules across accounts and resources, rather than to filter HTTP and HTTPS requests to protect web applications.",
+        "correct": true,
+        "explanation": "AWS Firewall Manager exists to centrally configure and manage firewall rules across accounts and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to filter HTTP and HTTPS requests to protect web applications, rather than to centrally configure and manage firewall rules across accounts and resources.",
+        "correct": false,
+        "explanation": "When the requirement is to filter HTTP and HTTPS requests to protect web applications, rather than to centrally configure and manage firewall rules across accounts and resources. concerns a separate capability from the one being tested. AWS Firewall Manager exists to centrally configure and manage firewall."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Firewall Manager",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Firewall Manager from AWS WAF"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Firewall Manager is used to centrally configure and manage firewall rules across accounts and resources, while AWS WAF is used to filter HTTP and HTTPS requests to protect web applications.",
+    "answerSource": "https://aws.amazon.com/firewall-manager/"
+  },
+  {
+    "question": "When should a team choose AWS IAM Identity Center instead of AWS Identity and Access Management (IAM)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested."
+      },
+      {
+        "text": "When the requirement is to centrally manage workforce access to AWS accounts and applications, rather than to control authentication and authorization for AWS resources.",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications, while AWS Identity and Access Management (IAM) is used to control authentication and authorization for AWS resources."
+      },
+      {
+        "text": "When the requirement is to control authentication and authorization for AWS resources, rather than to centrally manage workforce access to AWS accounts and applications.",
+        "correct": false,
+        "explanation": "When the requirement is to control authentication and authorization for AWS resources, rather than to centrally manage workforce access to AWS accounts and applications. concerns a separate capability from the one being tested. AWS IAM Identity Center is used to centrally manage workforce access to AWS."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS IAM Identity Center",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS IAM Identity Center from AWS Identity and Access Management (IAM)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications, while AWS Identity and Access Management (IAM) is used to control authentication and authorization for AWS resources.",
+    "answerSource": "https://aws.amazon.com/singlesignon/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Identity and Access Management (IAM) from AWS IAM Identity Center?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Identity and Access Management (IAM) is used to control authentication and authorization for AWS resources, whereas AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications.",
+        "correct": true,
+        "explanation": "AWS Identity and Access Management (IAM) is used to control authentication and authorization for AWS resources, while AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications. For statement, correctly, distinguishes, Identity, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "AWS Identity and Access Management (IAM) is used to centrally manage workforce access to AWS accounts and applications, whereas AWS IAM Identity Center is used to control authentication and authorization for AWS resources.",
+        "correct": false,
+        "explanation": "AWS Identity and Access Management (IAM) is used to centrally manage workforce access to AWS accounts and applications, whereas AWS IAM Identity Center is used to control authentication and authorization for AWS resources. concerns a separate capability from the one being tested. AWS Identity and Access."
+      },
+      {
+        "text": "Both services are primarily used to control authentication and authorization for AWS resources.",
+        "correct": false,
+        "explanation": "That describes AWS Identity and Access Management (IAM), but AWS IAM Identity Center is primarily used to centrally manage workforce access to AWS accounts and applications."
+      },
+      {
+        "text": "Both services are primarily used to centrally manage workforce access to AWS accounts and applications.",
+        "correct": false,
+        "explanation": "That describes AWS IAM Identity Center, but AWS Identity and Access Management (IAM) is primarily used to control authentication and authorization for AWS resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Identity and Access Management (IAM)",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Identity and Access Management (IAM) from AWS IAM Identity Center"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Identity and Access Management (IAM) is used to control authentication and authorization for AWS resources, while AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications.",
+    "answerSource": "https://aws.amazon.com/iam/"
+  },
+  {
+    "question": "Which relationship between AWS Key Management Service (AWS KMS) and AWS CloudHSM is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Key Management Service (AWS KMS) is used to provide dedicated hardware security modules under customer control, whereas AWS CloudHSM is used to create and control cryptographic keys used to protect data.",
+        "correct": false,
+        "explanation": "AWS Key Management Service (AWS KMS) is used to provide dedicated hardware security modules under customer control, whereas AWS CloudHSM is used to create and control cryptographic keys used to protect data. concerns a separate capability from the one being tested. AWS Key Management Service (AWS."
+      },
+      {
+        "text": "Both services are primarily used to create and control cryptographic keys used to protect data.",
+        "correct": false,
+        "explanation": "That describes AWS Key Management Service (AWS KMS), but AWS CloudHSM is primarily used to provide dedicated hardware security modules under customer control."
+      },
+      {
+        "text": "Both services are primarily used to provide dedicated hardware security modules under customer control.",
+        "correct": false,
+        "explanation": "That describes AWS CloudHSM, but AWS Key Management Service (AWS KMS) is primarily used to create and control cryptographic keys used to protect data."
+      },
+      {
+        "text": "AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data, whereas AWS CloudHSM is used to provide dedicated hardware security modules under customer control.",
+        "correct": true,
+        "explanation": "AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data, while AWS CloudHSM is used to provide dedicated hardware security modules under customer control. For relationship, between, Key, Management, this affects the workload's architecture, operational behavior, and service selection."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Key Management Service (AWS KMS)",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Key Management Service (AWS KMS) from AWS CloudHSM"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data, while AWS CloudHSM is used to provide dedicated hardware security modules under customer control.",
+    "answerSource": "https://aws.amazon.com/kms/"
+  },
+  {
+    "question": "When should a team choose AWS Resource Access Manager (AWS RAM) instead of AWS Organizations?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested."
+      },
+      {
+        "text": "When the requirement is to share supported AWS resources across accounts and organizational units, rather than to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+        "correct": true,
+        "explanation": "AWS Resource Access Manager (AWS RAM) is used to share supported AWS resources across accounts and organizational units, while AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing."
+      },
+      {
+        "text": "When the requirement is to centrally manage multiple AWS accounts and apply policies and consolidated billing, rather than to share supported AWS resources across accounts and organizational units.",
+        "correct": false,
+        "explanation": "When the requirement is to centrally manage multiple AWS accounts and apply policies and consolidated billing, rather than to share supported AWS resources across accounts and organizational units. concerns a separate capability from the one being tested. AWS Resource Access Manager (AWS RAM) is used to."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Resource Access Manager (AWS RAM)",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Resource Access Manager (AWS RAM) from AWS Organizations"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Resource Access Manager (AWS RAM) is used to share supported AWS resources across accounts and organizational units, while AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+    "answerSource": "https://aws.amazon.com/ram/"
+  },
+  {
+    "question": "A learner says AWS Secrets Manager and AWS Key Management Service (AWS KMS) have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to create and control cryptographic keys used to protect data.",
+        "correct": false,
+        "explanation": "That describes AWS Key Management Service (AWS KMS), but AWS Secrets Manager is primarily used to securely store, retrieve, and rotate application secrets."
+      },
+      {
+        "text": "AWS Secrets Manager is used to securely store, retrieve, and rotate application secrets, whereas AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+        "correct": true,
+        "explanation": "AWS Secrets Manager is used to securely store, retrieve, and rotate application secrets, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data. For learner, says, Secrets, Manager, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "AWS Secrets Manager is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to securely store, retrieve, and rotate application secrets.",
+        "correct": false,
+        "explanation": "AWS Secrets Manager is used to create and control cryptographic keys used to protect data, whereas AWS Key Management Service (AWS KMS) is used to securely store, retrieve, and rotate application secrets. concerns a separate capability from the one being tested. AWS Secrets Manager is used."
+      },
+      {
+        "text": "Both services are primarily used to securely store, retrieve, and rotate application secrets.",
+        "correct": false,
+        "explanation": "That describes AWS Secrets Manager, but AWS Key Management Service (AWS KMS) is primarily used to create and control cryptographic keys used to protect data."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Secrets Manager",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Secrets Manager from AWS Key Management Service (AWS KMS)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Secrets Manager is used to securely store, retrieve, and rotate application secrets, while AWS Key Management Service (AWS KMS) is used to create and control cryptographic keys used to protect data.",
+    "answerSource": "https://aws.amazon.com/secrets-manager/"
+  },
+  {
+    "question": "Which relationship between AWS Security Hub and Amazon GuardDuty is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Security Hub is used to aggregate and prioritize security findings across AWS services, whereas Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": true,
+        "explanation": "AWS Security Hub exists to aggregate and prioritize security findings across AWS services. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Security Hub is used to continuously detect suspicious activity and threats in AWS environments, whereas Amazon GuardDuty is used to aggregate and prioritize security findings across AWS services.",
+        "correct": false,
+        "explanation": "AWS Security Hub is used to continuously detect suspicious activity and threats in AWS environments, whereas Amazon GuardDuty is used to aggregate and prioritize security findings across AWS services. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity."
+      },
+      {
+        "text": "Both services are primarily used to aggregate and prioritize security findings across AWS services.",
+        "correct": false,
+        "explanation": "That describes AWS Security Hub, but Amazon GuardDuty is primarily used to continuously detect suspicious activity and threats in AWS environments."
+      },
+      {
+        "text": "Both services are primarily used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": false,
+        "explanation": "That describes Amazon GuardDuty, but AWS Security Hub is primarily used to aggregate and prioritize security findings across AWS services."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Security Hub",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Security Hub from Amazon GuardDuty"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Security Hub is used to aggregate and prioritize security findings across AWS services, while Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/security-hub/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Shield from AWS WAF?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Shield is used to filter HTTP and HTTPS requests to protect web applications, whereas AWS WAF is used to protect applications against distributed denial-of-service attacks.",
+        "correct": false,
+        "explanation": "AWS Shield is used to filter HTTP and HTTPS requests to protect web applications, whereas AWS WAF is used to protect applications against distributed denial-of-service attacks. concerns a separate capability from the one being tested. AWS Shield exists to protect applications against distributed denial-of-service attacks. The."
+      },
+      {
+        "text": "Both services are primarily used to protect applications against distributed denial-of-service attacks.",
+        "correct": false,
+        "explanation": "That describes AWS Shield, but AWS WAF is primarily used to filter HTTP and HTTPS requests to protect web applications."
+      },
+      {
+        "text": "Both services are primarily used to filter HTTP and HTTPS requests to protect web applications.",
+        "correct": false,
+        "explanation": "Both services are primarily used to filter HTTP and HTTPS requests to protect web applications. concerns a separate capability from the one being tested. AWS Shield exists to protect applications against distributed denial-of-service attacks. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Shield is used to protect applications against distributed denial-of-service attacks, whereas AWS WAF is used to filter HTTP and HTTPS requests to protect web applications.",
+        "correct": true,
+        "explanation": "AWS Shield exists to protect applications against distributed denial-of-service attacks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS Shield",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Shield from AWS WAF"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Shield is used to protect applications against distributed denial-of-service attacks, while AWS WAF is used to filter HTTP and HTTPS requests to protect web applications.",
+    "answerSource": "https://aws.amazon.com/shield/"
+  },
+  {
+    "question": "A learner says AWS WAF and AWS Shield have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to filter HTTP and HTTPS requests to protect web applications.",
+        "correct": false,
+        "explanation": "Both services are primarily used to filter HTTP and HTTPS requests to protect web applications. concerns a separate capability from the one being tested. AWS Shield exists to protect applications against distributed denial-of-service attacks. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both services are primarily used to protect applications against distributed denial-of-service attacks.",
+        "correct": false,
+        "explanation": "That describes AWS Shield, but AWS WAF is primarily used to filter HTTP and HTTPS requests to protect web applications."
+      },
+      {
+        "text": "AWS WAF is used to filter HTTP and HTTPS requests to protect web applications, whereas AWS Shield is used to protect applications against distributed denial-of-service attacks.",
+        "correct": true,
+        "explanation": "AWS Shield exists to protect applications against distributed denial-of-service attacks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS WAF is used to protect applications against distributed denial-of-service attacks, whereas AWS Shield is used to filter HTTP and HTTPS requests to protect web applications.",
+        "correct": false,
+        "explanation": "AWS WAF is used to protect applications against distributed denial-of-service attacks, whereas AWS Shield is used to filter HTTP and HTTPS requests to protect web applications. concerns a separate capability from the one being tested. AWS Shield exists to protect applications against distributed denial-of-service attacks. The."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "AWS WAF",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS WAF from AWS Shield"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS WAF is used to filter HTTP and HTTPS requests to protect web applications, while AWS Shield is used to protect applications against distributed denial-of-service attacks.",
+    "answerSource": "https://aws.amazon.com/waf/"
+  },
+  {
+    "question": "Which relationship between Amazon Cognito and AWS IAM Identity Center is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to centrally manage workforce access to AWS accounts and applications.",
+        "correct": false,
+        "explanation": "That describes AWS IAM Identity Center, but Amazon Cognito is primarily used to add sign-up, sign-in, and access control for applications."
+      },
+      {
+        "text": "Amazon Cognito is used to add sign-up, sign-in, and access control for applications, whereas AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications.",
+        "correct": true,
+        "explanation": "AWS IAM Identity Center exists to centrally manage workforce access to AWS accounts and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Cognito is used to centrally manage workforce access to AWS accounts and applications, whereas AWS IAM Identity Center is used to add sign-up, sign-in, and access control for applications.",
+        "correct": false,
+        "explanation": "Amazon Cognito is used to centrally manage workforce access to AWS accounts and applications, whereas AWS IAM Identity Center is used to add sign-up, sign-in, and access control for applications. concerns a separate capability from the one being tested. AWS IAM Identity Center exists to centrally."
+      },
+      {
+        "text": "Both services are primarily used to add sign-up, sign-in, and access control for applications.",
+        "correct": false,
+        "explanation": "That describes Amazon Cognito, but AWS IAM Identity Center is primarily used to centrally manage workforce access to AWS accounts and applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Cognito",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon Cognito from AWS IAM Identity Center"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Cognito is used to add sign-up, sign-in, and access control for applications, while AWS IAM Identity Center is used to centrally manage workforce access to AWS accounts and applications.",
+    "answerSource": "https://aws.amazon.com/cognito/"
+  },
+  {
+    "question": "A learner says Amazon Detective and Amazon GuardDuty have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Detective is used to investigate security findings by analyzing related activity and resources, whereas Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": true,
+        "explanation": "Amazon Detective exists to investigate security findings by analyzing related activity and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Detective is used to continuously detect suspicious activity and threats in AWS environments, whereas Amazon GuardDuty is used to investigate security findings by analyzing related activity and resources.",
+        "correct": false,
+        "explanation": "Amazon Detective is used to continuously detect suspicious activity and threats in AWS environments, whereas Amazon GuardDuty is used to investigate security findings by analyzing related activity and resources. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity."
+      },
+      {
+        "text": "Both services are primarily used to investigate security findings by analyzing related activity and resources.",
+        "correct": false,
+        "explanation": "That describes Amazon Detective, but Amazon GuardDuty is primarily used to continuously detect suspicious activity and threats in AWS environments."
+      },
+      {
+        "text": "Both services are primarily used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": false,
+        "explanation": "That describes Amazon GuardDuty, but Amazon Detective is primarily used to investigate security findings by analyzing related activity and resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Detective",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon Detective from Amazon GuardDuty"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Detective is used to investigate security findings by analyzing related activity and resources, while Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/detective/"
+  },
+  {
+    "question": "Which relationship between Amazon GuardDuty and Amazon Inspector is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon GuardDuty is used to automatically scan workloads for software vulnerabilities and unintended network exposure, whereas Amazon Inspector is used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": false,
+        "explanation": "Amazon GuardDuty is used to automatically scan workloads for software vulnerabilities and unintended network exposure, whereas Amazon Inspector is used to continuously detect suspicious activity and threats in AWS environments. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious."
+      },
+      {
+        "text": "Both services are primarily used to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": false,
+        "explanation": "That describes Amazon GuardDuty, but Amazon Inspector is primarily used to automatically scan workloads for software vulnerabilities and unintended network exposure."
+      },
+      {
+        "text": "Both services are primarily used to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+        "correct": false,
+        "explanation": "That describes Amazon Inspector, but Amazon GuardDuty is primarily used to continuously detect suspicious activity and threats in AWS environments."
+      },
+      {
+        "text": "Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments, whereas Amazon Inspector is used to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+        "correct": true,
+        "explanation": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon GuardDuty",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon GuardDuty from Amazon Inspector"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments, while Amazon Inspector is used to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+    "answerSource": "https://aws.amazon.com/guardduty/"
+  },
+  {
+    "question": "When should a team choose Amazon Inspector instead of Amazon GuardDuty?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to automatically scan workloads for software vulnerabilities and unintended network exposure, rather than to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": true,
+        "explanation": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to continuously detect suspicious activity and threats in AWS environments, rather than to automatically scan workloads for software vulnerabilities and unintended network exposure.",
+        "correct": false,
+        "explanation": "When the requirement is to continuously detect suspicious activity and threats in AWS environments, rather than to automatically scan workloads for software vulnerabilities and unintended network exposure. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Inspector",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Inspector from Amazon GuardDuty"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Inspector is used to automatically scan workloads for software vulnerabilities and unintended network exposure, while Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/inspector/"
+  },
+  {
+    "question": "When should a team choose Amazon Macie instead of Amazon GuardDuty?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to discover and protect sensitive data stored in Amazon S3, rather than to continuously detect suspicious activity and threats in AWS environments.",
+        "correct": true,
+        "explanation": "Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to continuously detect suspicious activity and threats in AWS environments, rather than to discover and protect sensitive data stored in Amazon S3.",
+        "correct": false,
+        "explanation": "When the requirement is to continuously detect suspicious activity and threats in AWS environments, rather than to discover and protect sensitive data stored in Amazon S3. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon GuardDuty exists to continuously detect suspicious activity and threats in AWS environments. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Security, Identity, and Compliance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Security, Identity, and Compliance",
+      "subtopic": "Amazon Macie",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Macie from Amazon GuardDuty"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Macie is used to discover and protect sensitive data stored in Amazon S3, while Amazon GuardDuty is used to continuously detect suspicious activity and threats in AWS environments.",
+    "answerSource": "https://aws.amazon.com/macie/"
+  }
+]

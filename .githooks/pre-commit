@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! command -v docker >/dev/null 2>&1; then
+  echo "Docker is required to run the staged-secret scan." >&2
+  exit 1
+fi
+
+repo_root="$(git rev-parse --show-toplevel)"
+
+MSYS_NO_PATHCONV=1 docker run --rm \
+  -v "${repo_root}:/repo" \
+  -w /repo \
+  zricethezav/gitleaks:v8.30.0 \
+  protect --staged --redact --no-banner

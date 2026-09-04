@@ -1,0 +1,288 @@
+[
+  {
+    "question": "Which AWS service is primarily designed to provide a cloud contact center for customer communications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon EMR",
+        "correct": false,
+        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+      },
+      {
+        "text": "Amazon Connect",
+        "correct": true,
+        "explanation": "Amazon Connect exists to provide a cloud contact center for customer communications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": false,
+        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Connect",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Connect"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Connect exists to provide a cloud contact center for customer communications.",
+    "answerSource": "https://aws.amazon.com/connect/"
+  },
+  {
+    "question": "A team needs to send and receive email through a managed email service. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Athena",
+        "correct": false,
+        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "Amazon Simple Email Service (Amazon SES)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Email Service (Amazon SES) when the requirement is to send and receive email through a managed email service."
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false,
+        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Simple Email Service (Amazon SES)",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Simple Email Service (Amazon SES)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Simple Email Service (Amazon SES) exists to send and receive email through a managed email service.",
+    "answerSource": "https://aws.amazon.com/ses/"
+  },
+  {
+    "question": "A cloud practitioner must provide a cloud contact center for customer communications. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Connect",
+        "correct": true,
+        "explanation": "Amazon Connect exists to provide a cloud contact center for customer communications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Detective",
+        "correct": false,
+        "explanation": "Amazon Detective is designed to investigate security findings by analyzing related activity and resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is designed to provide a managed document database compatible with MongoDB workloads, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "Amazon DynamoDB is designed to provide a managed serverless NoSQL key-value and document database, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Connect",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Connect for a requirement to provide a cloud contact center for customer communications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Connect when the requirement is to provide a cloud contact center for customer communications.",
+    "answerSource": "https://aws.amazon.com/connect/"
+  },
+  {
+    "question": "Which AWS service should be selected when the requirement is to send and receive email through a managed email service?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Simple Queue Service (Amazon SQS)",
+        "correct": false,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) is designed to buffer and decouple application components with managed message queues, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Textract",
+        "correct": false,
+        "explanation": "Amazon Textract is designed to extract printed text, handwriting, and structured data from documents, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Transcribe",
+        "correct": false,
+        "explanation": "Amazon Transcribe is designed to convert speech to text using automatic speech recognition, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Simple Email Service (Amazon SES)",
+        "correct": true,
+        "explanation": "Choose Amazon Simple Email Service (Amazon SES) when the requirement is to send and receive email through a managed email service."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Simple Email Service (Amazon SES)",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon Simple Email Service (Amazon SES) for a requirement to send and receive email through a managed email service"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Simple Email Service (Amazon SES) when the requirement is to send and receive email through a managed email service.",
+    "answerSource": "https://aws.amazon.com/ses/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon Connect from Amazon Simple Email Service (Amazon SES)?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide a cloud contact center for customer communications.",
+        "correct": false,
+        "explanation": "That describes Amazon Connect, but Amazon Simple Email Service (Amazon SES) is primarily used to send and receive email through a managed email service."
+      },
+      {
+        "text": "Both services are primarily used to send and receive email through a managed email service.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Email Service (Amazon SES), but Amazon Connect is primarily used to provide a cloud contact center for customer communications."
+      },
+      {
+        "text": "Amazon Connect is used to provide a cloud contact center for customer communications, whereas Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service.",
+        "correct": true,
+        "explanation": "Amazon Connect is used to provide a cloud contact center for customer communications, while Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service. For statement, correctly, distinguishes, Connect, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon Connect is used to send and receive email through a managed email service, whereas Amazon Simple Email Service (Amazon SES) is used to provide a cloud contact center for customer communications.",
+        "correct": false,
+        "explanation": "Amazon Connect is used to send and receive email through a managed email service, whereas Amazon Simple Email Service (Amazon SES) is used to provide a cloud contact center for customer communications. concerns a separate capability from the one being tested. Amazon Connect is used to."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Connect",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Connect from Amazon Simple Email Service (Amazon SES)"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Connect is used to provide a cloud contact center for customer communications, while Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service.",
+    "answerSource": "https://aws.amazon.com/connect/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon Simple Email Service (Amazon SES) from Amazon Connect?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide a cloud contact center for customer communications.",
+        "correct": false,
+        "explanation": "That describes Amazon Connect, but Amazon Simple Email Service (Amazon SES) is primarily used to send and receive email through a managed email service."
+      },
+      {
+        "text": "Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service, whereas Amazon Connect is used to provide a cloud contact center for customer communications.",
+        "correct": true,
+        "explanation": "Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service, while Amazon Connect is used to provide a cloud contact center for customer communications. For statement, correctly, distinguishes, Simple, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon Simple Email Service (Amazon SES) is used to provide a cloud contact center for customer communications, whereas Amazon Connect is used to send and receive email through a managed email service.",
+        "correct": false,
+        "explanation": "Amazon Simple Email Service (Amazon SES) is used to provide a cloud contact center for customer communications, whereas Amazon Connect is used to send and receive email through a managed email service. concerns a separate capability from the one being tested. Amazon Simple Email Service (Amazon."
+      },
+      {
+        "text": "Both services are primarily used to send and receive email through a managed email service.",
+        "correct": false,
+        "explanation": "That describes Amazon Simple Email Service (Amazon SES), but Amazon Connect is primarily used to provide a cloud contact center for customer communications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Business Applications",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Business Applications",
+      "subtopic": "Amazon Simple Email Service (Amazon SES)",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Simple Email Service (Amazon SES) from Amazon Connect"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Simple Email Service (Amazon SES) is used to send and receive email through a managed email service, while Amazon Connect is used to provide a cloud contact center for customer communications.",
+    "answerSource": "https://aws.amazon.com/ses/"
+  }
+]

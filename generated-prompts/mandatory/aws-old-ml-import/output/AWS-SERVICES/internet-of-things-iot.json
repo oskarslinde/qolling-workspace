@@ -1,0 +1,145 @@
+[
+  {
+    "question": "What is the primary purpose of AWS IoT Core?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Query data in Amazon S3 using standard SQL without managing database infrastructure",
+        "correct": false,
+        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "Connect devices to the cloud and enable secure messaging and device interaction",
+        "correct": true,
+        "explanation": "AWS IoT Core exists to connect devices to the cloud and enable secure messaging and device interaction. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop",
+        "correct": false,
+        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "Discover, prepare, transform, and catalog data for analytics workflows",
+        "correct": false,
+        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Internet of Things (IoT)"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Internet of Things (IoT)",
+      "subtopic": "AWS IoT Core",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS IoT Core"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS IoT Core exists to connect devices to the cloud and enable secure messaging and device interaction.",
+    "answerSource": "https://aws.amazon.com/iot-core/"
+  },
+  {
+    "question": "A cloud practitioner must connect devices to the cloud and enable secure messaging and device interaction. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS IoT Core",
+        "correct": true,
+        "explanation": "Choose AWS IoT Core when the requirement is to connect devices to the cloud and enable secure messaging and device interaction."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "AWS Lambda is designed to run code in response to events without provisioning or managing servers, so it does not match this requirement."
+      },
+      {
+        "text": "AWS License Manager",
+        "correct": false,
+        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Internet of Things (IoT)",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Internet of Things (IoT)",
+      "subtopic": "AWS IoT Core",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS IoT Core for a requirement to connect devices to the cloud and enable secure messaging and device interaction"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS IoT Core when the requirement is to connect devices to the cloud and enable secure messaging and device interaction.",
+    "answerSource": "https://aws.amazon.com/iot-core/"
+  },
+  {
+    "question": "A learner says AWS IoT Core and Amazon EventBridge have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS IoT Core is used to route events between applications and AWS services using event buses and rules, whereas Amazon EventBridge is used to connect devices to the cloud and enable secure messaging and device interaction.",
+        "correct": false,
+        "explanation": "The statement about AWS IoT Core is used to route events between applications and AWS services using event buses and rules, whereas Amazon EventBridge is used to connect devices to the cloud and enable secure messaging and device interaction. describes a different technical behavior from the."
+      },
+      {
+        "text": "Both services are primarily used to connect devices to the cloud and enable secure messaging and device interaction.",
+        "correct": false,
+        "explanation": "That describes AWS IoT Core, but Amazon EventBridge is primarily used to route events between applications and AWS services using event buses and rules."
+      },
+      {
+        "text": "Both services are primarily used to route events between applications and AWS services using event buses and rules.",
+        "correct": false,
+        "explanation": "That describes Amazon EventBridge, but AWS IoT Core is primarily used to connect devices to the cloud and enable secure messaging and device interaction."
+      },
+      {
+        "text": "AWS IoT Core is used to connect devices to the cloud and enable secure messaging and device interaction, whereas Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
+        "correct": true,
+        "explanation": "Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Internet of Things (IoT)",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Internet of Things (IoT)",
+      "subtopic": "AWS IoT Core",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS IoT Core from Amazon EventBridge"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS IoT Core is used to connect devices to the cloud and enable secure messaging and device interaction, while Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
+    "answerSource": "https://aws.amazon.com/iot-core/"
+  }
+]

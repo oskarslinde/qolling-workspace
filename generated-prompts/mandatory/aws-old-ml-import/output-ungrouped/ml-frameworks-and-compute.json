@@ -1,0 +1,1073 @@
+[
+  {
+    "question": "Your organization wants to ensure that a specific instance type is used for all EC2 instances in a particular environment. Which AWS Config feature would you use?",
+    "answers": [
+      {
+        "text": "AWS Config Rules",
+        "correct": true
+      },
+      {
+        "text": "AWS Config Resource Compliance",
+        "correct": false
+      },
+      {
+        "text": "AWS Config Aggregator",
+        "correct": false
+      },
+      {
+        "text": "AWS Config Snapshot",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following are characteristics of Network ACLs (NACLs) in AWS?",
+    "answers": [
+      {
+        "text": "They operate at the subnet level",
+        "correct": true
+      },
+      {
+        "text": "They are stateful",
+        "correct": false
+      },
+      {
+        "text": "They allow both allow and deny rules",
+        "correct": true
+      },
+      {
+        "text": "They are attached to EC2 instances",
+        "correct": false
+      },
+      {
+        "text": "They evaluate rules in order",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of a CloudWatch Alarm?",
+    "answers": [
+      {
+        "text": "To trigger actions based on metric thresholds",
+        "correct": true
+      },
+      {
+        "text": "To store logs from EC2 instances",
+        "correct": false
+      },
+      {
+        "text": "To encrypt data in transit",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What should you check if an EC2 instance is unreachable via SSH?",
+    "answers": [
+      {
+        "text": "Security group rules for port 22",
+        "correct": true
+      },
+      {
+        "text": "IAM role permissions",
+        "correct": false
+      },
+      {
+        "text": "Network ACLs blocking inbound traffic",
+        "correct": true
+      },
+      {
+        "text": "Instance state is 'stopped'",
+        "correct": true
+      },
+      {
+        "text": "S3 bucket policy",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of Amazon Security Groups?",
+    "answers": [
+      {
+        "text": "To control inbound and outbound traffic to AWS resources",
+        "correct": true
+      },
+      {
+        "text": "To manage user identities",
+        "correct": false
+      },
+      {
+        "text": "To store data in the cloud",
+        "correct": false
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false
+      },
+      {
+        "text": "To define firewall rules for EC2 instances",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "You are setting up CloudWatch Logs for an EC2 instance. Which agent should you use to collect both system-level metrics and log data?",
+    "answers": [
+      {
+        "text": "CloudWatch Logs Agent",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Unified Agent",
+        "correct": true
+      },
+      {
+        "text": "AWS SDK",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Metrics",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "To optimize costs, you want to automatically shut down underutilized EC2 instances. Which CloudWatch feature should you use?",
+    "answers": [
+      {
+        "text": "CloudWatch Logs",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Metrics",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Dashboards",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Alarms",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following scenarios require an Internet Gateway?",
+    "answers": [
+      {
+        "text": "Hosting a public-facing web server on EC2",
+        "correct": true
+      },
+      {
+        "text": "Allowing Lambda functions to access the internet",
+        "correct": false
+      },
+      {
+        "text": "Allowing EC2 instances in a private subnet to access the internet",
+        "correct": false
+      },
+      {
+        "text": "Enabling SSH access to a public EC2 instance",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What types of activities does Amazon CloudTrail log?",
+    "answers": [
+      {
+        "text": "API calls made via AWS Management Console",
+        "correct": true
+      },
+      {
+        "text": "Operating system logs from EC2 instances",
+        "correct": false
+      },
+      {
+        "text": "AWS SDK and CLI calls",
+        "correct": true
+      },
+      {
+        "text": "Network traffic between VPCs",
+        "correct": false
+      },
+      {
+        "text": "Events from AWS services like Lambda and S3",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are valid use cases for CloudTrail Insights?",
+    "answers": [
+      {
+        "text": "Detecting spikes in API call volume",
+        "correct": true
+      },
+      {
+        "text": "Monitoring changes in user behavior",
+        "correct": true
+      },
+      {
+        "text": "Encrypting data at rest",
+        "correct": false
+      },
+      {
+        "text": "Provisioning EC2 instances",
+        "correct": false
+      },
+      {
+        "text": "Identifying unusual write management events",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following can assume an IAM role?",
+    "answers": [
+      {
+        "text": "An EC2 instance",
+        "correct": true
+      },
+      {
+        "text": "An IAM user in the same account",
+        "correct": true
+      },
+      {
+        "text": "A Lambda function",
+        "correct": true
+      },
+      {
+        "text": "An S3 bucket",
+        "correct": false
+      },
+      {
+        "text": "A federated user from an external identity provider",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following actions can a CloudWatch Alarm perform when triggered?",
+    "answers": [
+      {
+        "text": "Send a notification to an SNS topic",
+        "correct": true
+      },
+      {
+        "text": "Automatically stop an EC2 instance",
+        "correct": true
+      },
+      {
+        "text": "Launch a new S3 bucket",
+        "correct": false
+      },
+      {
+        "text": "Trigger an Auto Scaling policy",
+        "correct": true
+      },
+      {
+        "text": "Modify IAM policies",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid ways to assign permissions in AWS?",
+    "answers": [
+      {
+        "text": "Attach a policy directly to a user",
+        "correct": true
+      },
+      {
+        "text": "Attach a policy to a group",
+        "correct": true
+      },
+      {
+        "text": "Attach a policy to a role",
+        "correct": true
+      },
+      {
+        "text": "Assign permissions through EC2 instance metadata only",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are common anti-patterns when using Amazon EC2?",
+    "answers": [
+      {
+        "text": "Hardcoding IP addresses in application code",
+        "correct": true
+      },
+      {
+        "text": "Using Auto Scaling Groups",
+        "correct": false
+      },
+      {
+        "text": "Running all workloads on a single EC2 instance",
+        "correct": true
+      },
+      {
+        "text": "Using IAM roles for EC2",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How can AWS Budgets notify users when a budget threshold is exceeded?",
+    "answers": [
+      {
+        "text": "By sending alerts via Amazon SNS",
+        "correct": true
+      },
+      {
+        "text": "By automatically deleting resources",
+        "correct": false
+      },
+      {
+        "text": "By updating IAM policies",
+        "correct": false
+      },
+      {
+        "text": "By launching new EC2 instances",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of AWS Trusted Advisor?",
+    "answers": [
+      {
+        "text": "To provide real-time guidance to help provision resources following AWS best practices",
+        "correct": true
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false
+      },
+      {
+        "text": "To monitor EC2 instance health",
+        "correct": false
+      },
+      {
+        "text": "To manage IAM users",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS EC2 instance family is optimized for general-purpose workloads?",
+    "answers": [
+      {
+        "text": "T-series (e.g., t3, t4g)",
+        "correct": true
+      },
+      {
+        "text": "P-series",
+        "correct": false
+      },
+      {
+        "text": "C-series",
+        "correct": false
+      },
+      {
+        "text": "R-series",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which instance types are commonly used for inference workloads in machine learning?",
+    "answers": [
+      {
+        "text": "Inf1 and Inf2 instances",
+        "correct": true
+      },
+      {
+        "text": "P4 instances",
+        "correct": false
+      },
+      {
+        "text": "G5 instances",
+        "correct": true
+      },
+      {
+        "text": "T3 instances",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of the `torch.autograd` module?",
+    "answers": [
+      {
+        "text": "To perform automatic differentiation",
+        "correct": true
+      },
+      {
+        "text": "To manage data loading",
+        "correct": false
+      },
+      {
+        "text": "To define neural network layers",
+        "correct": false
+      },
+      {
+        "text": "To visualize training metrics",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of TensorBoard in the TensorFlow ecosystem?",
+    "answers": [
+      {
+        "text": "To visualize training metrics and model graphs",
+        "correct": true
+      },
+      {
+        "text": "To deploy models to production",
+        "correct": false
+      },
+      {
+        "text": "To preprocess datasets",
+        "correct": false
+      },
+      {
+        "text": "To convert models to ONNX format",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which module in scikit-learn is used for splitting datasets into training and test sets?",
+    "answers": [
+      {
+        "text": "sklearn.model_selection",
+        "correct": true
+      },
+      {
+        "text": "sklearn.preprocessing",
+        "correct": false
+      },
+      {
+        "text": "sklearn.metrics",
+        "correct": false
+      },
+      {
+        "text": "sklearn.pipeline",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of AWS Budgets?",
+    "answers": [
+      {
+        "text": "To set custom cost and usage budgets and receive alerts when thresholds are exceeded",
+        "correct": true
+      },
+      {
+        "text": "To manage IAM roles and permissions",
+        "correct": false
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false
+      },
+      {
+        "text": "To monitor EC2 instance health",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does a Usage Budget in AWS Budgets track?",
+    "answers": [
+      {
+        "text": "The amount of AWS services consumed",
+        "correct": true
+      },
+      {
+        "text": "The cost of AWS services",
+        "correct": false
+      },
+      {
+        "text": "The number of IAM users",
+        "correct": false
+      },
+      {
+        "text": "The number of EC2 instances launched",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of a Savings Plans Utilization Budget?",
+    "answers": [
+      {
+        "text": "To track how much of your Savings Plans are being used",
+        "correct": true
+      },
+      {
+        "text": "To monitor EC2 instance performance",
+        "correct": false
+      },
+      {
+        "text": "To evaluate IAM policy compliance",
+        "correct": false
+      },
+      {
+        "text": "To track S3 storage usage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon Augmented AI (A2I)?",
+    "answers": [
+      {
+        "text": "A service that makes it easy to build the workflows required for human review of machine learning predictions.",
+        "correct": true
+      },
+      {
+        "text": "A service that provides on-demand cloud computing platforms and APIs.",
+        "correct": false
+      },
+      {
+        "text": "A service that allows you to run containerized applications on a cluster of Amazon EC2 instances.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is PyTorch primarily used for?",
+    "answers": [
+      {
+        "text": "Building and training deep learning models",
+        "correct": true
+      },
+      {
+        "text": "Managing cloud infrastructure",
+        "correct": false
+      },
+      {
+        "text": "Creating static websites",
+        "correct": false
+      },
+      {
+        "text": "Data visualization",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is TensorFlow primarily used for?",
+    "answers": [
+      {
+        "text": "Building and training machine learning and deep learning models",
+        "correct": true
+      },
+      {
+        "text": "Managing cloud infrastructure",
+        "correct": false
+      },
+      {
+        "text": "Creating mobile applications",
+        "correct": false
+      },
+      {
+        "text": "Data encryption",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of `Pipeline` in scikit-learn?",
+    "answers": [
+      {
+        "text": "To chain preprocessing and modeling steps",
+        "correct": true
+      },
+      {
+        "text": "To visualize model performance",
+        "correct": false
+      },
+      {
+        "text": "To deploy models to production",
+        "correct": false
+      },
+      {
+        "text": "To manage cloud resources",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following can you track using AWS Budgets?",
+    "answers": [
+      {
+        "text": "Cost budgets",
+        "correct": true
+      },
+      {
+        "text": "Usage budgets",
+        "correct": true
+      },
+      {
+        "text": "Savings Plans utilization",
+        "correct": true
+      },
+      {
+        "text": "IAM policy changes",
+        "correct": false
+      },
+      {
+        "text": "EC2 instance performance",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which PyTorch module is used to define neural network layers?",
+    "answers": [
+      {
+        "text": "torch.nn",
+        "correct": true
+      },
+      {
+        "text": "torch.optim",
+        "correct": false
+      },
+      {
+        "text": "torch.utils.data",
+        "correct": false
+      },
+      {
+        "text": "torch.cuda",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which TensorFlow component is used for model deployment?",
+    "answers": [
+      {
+        "text": "TensorFlow Serving",
+        "correct": true
+      },
+      {
+        "text": "TensorFlow Lite",
+        "correct": false
+      },
+      {
+        "text": "TensorBoard",
+        "correct": false
+      },
+      {
+        "text": "TensorFlow Datasets",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary function of AWS Cost Explorer?",
+    "answers": [
+      {
+        "text": "To visualize and analyze AWS spending over time",
+        "correct": true
+      },
+      {
+        "text": "To manage IAM roles",
+        "correct": false
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false
+      },
+      {
+        "text": "To monitor EC2 instance health",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are benefits of using AWS Trusted Advisor?",
+    "answers": [
+      {
+        "text": "Improved security posture",
+        "correct": true
+      },
+      {
+        "text": "Cost savings through resource optimization",
+        "correct": true
+      },
+      {
+        "text": "Automated deployment of EC2 instances",
+        "correct": false
+      },
+      {
+        "text": "Real-time application performance tuning",
+        "correct": false
+      },
+      {
+        "text": "Service limit monitoring",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which EC2 instance types are best suited for deep learning training workloads?",
+    "answers": [
+      {
+        "text": "P-series (e.g., p3, p4)",
+        "correct": true
+      },
+      {
+        "text": "G-series (e.g., g5)",
+        "correct": true
+      },
+      {
+        "text": "T-series",
+        "correct": false
+      },
+      {
+        "text": "M-series",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are typical use cases for C-series EC2 instances?",
+    "answers": [
+      {
+        "text": "Compute-intensive applications",
+        "correct": true
+      },
+      {
+        "text": "Memory-intensive databases",
+        "correct": false
+      },
+      {
+        "text": "Graphics rendering",
+        "correct": false
+      },
+      {
+        "text": "Batch processing and high-performance computing",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are benefits of using Spot Instances for ML training?",
+    "answers": [
+      {
+        "text": "Lower cost compared to On-Demand instances",
+        "correct": true
+      },
+      {
+        "text": "Guaranteed availability",
+        "correct": false
+      },
+      {
+        "text": "Ideal for fault-tolerant training jobs",
+        "correct": true
+      },
+      {
+        "text": "Best suited for real-time inference",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are key features of PyTorch?",
+    "answers": [
+      {
+        "text": "Dynamic computation graph",
+        "correct": true
+      },
+      {
+        "text": "Tight integration with NumPy",
+        "correct": true
+      },
+      {
+        "text": "Built-in support for GPU acceleration",
+        "correct": true
+      },
+      {
+        "text": "Automatic deployment to AWS Lambda",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are features of TensorFlow?",
+    "answers": [
+      {
+        "text": "Support for both eager and graph execution",
+        "correct": true
+      },
+      {
+        "text": "Built-in tools for model visualization",
+        "correct": true
+      },
+      {
+        "text": "Limited support for GPU acceleration",
+        "correct": false
+      },
+      {
+        "text": "Integration with Keras for high-level APIs",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is scikit-learn primarily used for?",
+    "answers": [
+      {
+        "text": "Classical machine learning algorithms and data preprocessing",
+        "correct": true
+      },
+      {
+        "text": "Deep learning model training",
+        "correct": false
+      },
+      {
+        "text": "Cloud infrastructure management",
+        "correct": false
+      },
+      {
+        "text": "Image rendering",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are features provided by scikit-learn?",
+    "answers": [
+      {
+        "text": "Classification and regression algorithms",
+        "correct": true
+      },
+      {
+        "text": "Clustering and dimensionality reduction",
+        "correct": true
+      },
+      {
+        "text": "Neural network training with GPUs",
+        "correct": false
+      },
+      {
+        "text": "Model evaluation and cross-validation",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  }
+]

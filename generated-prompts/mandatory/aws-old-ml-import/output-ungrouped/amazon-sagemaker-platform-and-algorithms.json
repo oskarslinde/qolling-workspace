@@ -1,0 +1,3765 @@
+[
+  {
+    "question": "Which AWS service provides a fully managed environment for training and deploying machine learning models?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the main benefit of using SageMaker Autopilot?",
+    "answers": [
+      {
+        "text": "It automates the entire machine learning model building process",
+        "correct": true
+      },
+      {
+        "text": "It labels training data",
+        "correct": false
+      },
+      {
+        "text": "It optimizes models for edge devices",
+        "correct": false
+      },
+      {
+        "text": "It provides a development environment",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "A tool for continuously monitoring the quality of machine learning models in production",
+        "correct": true
+      },
+      {
+        "text": "A tool for preparing and transforming data for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A feature that automates the entire machine learning model building process",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Feature Store?",
+    "answers": [
+      {
+        "text": "A repository for storing and managing machine learning features",
+        "correct": true
+      },
+      {
+        "text": "A tool for preparing and transforming data for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A tool for detecting bias and explaining predictions in machine learning models",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Debugger?",
+    "answers": [
+      {
+        "text": "A tool for debugging and profiling machine learning models",
+        "correct": true
+      },
+      {
+        "text": "A tool for preparing and transforming data for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A repository for storing and managing machine learning features",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Experiments?",
+    "answers": [
+      {
+        "text": "A tool for organizing, tracking, and comparing machine learning experiments",
+        "correct": true
+      },
+      {
+        "text": "A service for building, managing, and automating end-to-end machine learning workflows",
+        "correct": false
+      },
+      {
+        "text": "A tool for debugging and profiling machine learning models",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker JumpStart?",
+    "answers": [
+      {
+        "text": "A feature that provides pre-built solutions and models to accelerate machine learning projects",
+        "correct": true
+      },
+      {
+        "text": "A service for optimizing, securing, and monitoring machine learning models on edge devices",
+        "correct": false
+      },
+      {
+        "text": "A tool for organizing, tracking, and comparing machine learning experiments",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Data Wrangler?",
+    "answers": [
+      {
+        "text": "A tool for preparing and transforming data for machine learning",
+        "correct": true
+      },
+      {
+        "text": "A feature that automates the entire machine learning model building process",
+        "correct": false
+      },
+      {
+        "text": "A fully integrated development environment for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A tool for debugging and profiling machine learning models",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Model Registry?",
+    "answers": [
+      {
+        "text": "A centralized repository for managing and deploying machine learning models",
+        "correct": true
+      },
+      {
+        "text": "A feature that provides pre-built solutions and models to accelerate machine learning projects",
+        "correct": false
+      },
+      {
+        "text": "A service for optimizing, securing, and monitoring machine learning models on edge devices",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which loss function does LogitBoost minimize?",
+    "answers": [
+      {
+        "text": "Log-likelihood loss",
+        "correct": true
+      },
+      {
+        "text": "Exponential loss",
+        "correct": false
+      },
+      {
+        "text": "Mean squared error",
+        "correct": false
+      },
+      {
+        "text": "Hinge loss",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are key characteristics of LogitBoost?",
+    "answers": [
+      {
+        "text": "Optimizes the logistic loss",
+        "correct": true
+      },
+      {
+        "text": "Produces probabilistic predictions",
+        "correct": true
+      },
+      {
+        "text": "Uses decision trees as base learners",
+        "correct": true
+      },
+      {
+        "text": "Minimizes exponential loss",
+        "correct": false
+      },
+      {
+        "text": "Uses backpropagation for updates",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following can Object2Vec handle?",
+    "answers": [
+      {
+        "text": "Individual words",
+        "correct": true
+      },
+      {
+        "text": "Entire documents",
+        "correct": true
+      },
+      {
+        "text": "User profiles",
+        "correct": true
+      },
+      {
+        "text": "Specific types of neural networks",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are examples of pairs of tokens or sequences used by Object2Vec?",
+    "answers": [
+      {
+        "text": "Sentence pairs",
+        "correct": true
+      },
+      {
+        "text": "Label-description pairs",
+        "correct": true
+      },
+      {
+        "text": "User-item pairs",
+        "correct": true
+      },
+      {
+        "text": "Individual words",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "Medium",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How many input channels does Object2Vec have?",
+    "answers": [
+      {
+        "text": "One",
+        "correct": false
+      },
+      {
+        "text": "Two",
+        "correct": true
+      },
+      {
+        "text": "Three",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which encoder options are available for Object2Vec?",
+    "answers": [
+      {
+        "text": "Average pooled embeddings",
+        "correct": true
+      },
+      {
+        "text": "CNN",
+        "correct": true
+      },
+      {
+        "text": "Bidirectional LSTM",
+        "correct": true
+      },
+      {
+        "text": "Sparse embeddings",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What follows the comparator in Object2Vec's architecture?",
+    "answers": [
+      {
+        "text": "A feedforward neural network",
+        "correct": true
+      },
+      {
+        "text": "A convolutional neural network",
+        "correct": false
+      },
+      {
+        "text": "A recurrent neural network",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to detect bounding boxes of multiple objects within an image and classify them. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Image Classification",
+        "correct": false
+      },
+      {
+        "text": "Object Detection",
+        "correct": true
+      },
+      {
+        "text": "Semantic Segmentation",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for collaborative filtering in recommendation systems?",
+    "answers": [
+      {
+        "text": "Factorization Machines",
+        "correct": true
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting customer churn?",
+    "answers": [
+      {
+        "text": "XGBoost",
+        "correct": true
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "Factorization Machines",
+        "correct": false
+      },
+      {
+        "text": "DeepAR",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for image segmentation tasks?",
+    "answers": [
+      {
+        "text": "Semantic Segmentation",
+        "correct": true
+      },
+      {
+        "text": "Object Detection",
+        "correct": false
+      },
+      {
+        "text": "Image Classification",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting the next word in a sequence of text?",
+    "answers": [
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "Random Cut Forest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm helps prevent overfitting by controlling the step size shrinkage?",
+    "answers": [
+      {
+        "text": "eta",
+        "correct": true
+      },
+      {
+        "text": "max_depth",
+        "correct": false
+      },
+      {
+        "text": "subsample",
+        "correct": false
+      },
+      {
+        "text": "gamma",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to classify images of handwritten digits. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Image Classification",
+        "correct": true
+      },
+      {
+        "text": "Object Detection",
+        "correct": false
+      },
+      {
+        "text": "Semantic Segmentation",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You need to build a model that can translate text from one language to another. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "LDA",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are tasked with training a SageMaker model to predict future values of a time series. Which algorithm should you choose?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "DeepAR",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which input format is optimal for training a model using SageMaker's K-Means algorithm?",
+    "answers": [
+      {
+        "text": "CSV",
+        "correct": false
+      },
+      {
+        "text": "JSON Lines",
+        "correct": false
+      },
+      {
+        "text": "RecordIO-Protobuf",
+        "correct": true
+      },
+      {
+        "text": "Image format",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "K-Means",
+      "Input Format",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to build a model that can classify text documents into predefined categories. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": true
+      },
+      {
+        "text": "LDA",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which feature of Amazon SageMaker allows you to build, train, and deploy machine learning models quickly?",
+    "answers": [
+      {
+        "text": "SageMaker Studio",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Ground Truth",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Neo",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Autopilot",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What does SageMaker Neo do?",
+    "answers": [
+      {
+        "text": "Optimizes machine learning models for edge devices",
+        "correct": true
+      },
+      {
+        "text": "Labels training data",
+        "correct": false
+      },
+      {
+        "text": "Automates model building",
+        "correct": false
+      },
+      {
+        "text": "Provides a fully integrated development environment",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which feature of SageMaker provides a fully integrated development environment for machine learning?",
+    "answers": [
+      {
+        "text": "SageMaker Studio",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Ground Truth",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Neo",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Autopilot",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is SageMaker Autopilot?",
+    "answers": [
+      {
+        "text": "A feature that automates the entire machine learning model building process",
+        "correct": true
+      },
+      {
+        "text": "A fully integrated development environment for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A tool for labeling training data using human labelers and machine learning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Neo?",
+    "answers": [
+      {
+        "text": "A feature that optimizes machine learning models for edge devices",
+        "correct": true
+      },
+      {
+        "text": "A tool for labeling training data using human labelers and machine learning",
+        "correct": false
+      },
+      {
+        "text": "A fully integrated development environment for machine learning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Pipelines?",
+    "answers": [
+      {
+        "text": "A service for building, managing, and automating end-to-end machine learning workflows",
+        "correct": true
+      },
+      {
+        "text": "A tool for debugging and profiling machine learning models",
+        "correct": false
+      },
+      {
+        "text": "A repository for storing and managing machine learning features",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Edge Manager?",
+    "answers": [
+      {
+        "text": "A service for optimizing, securing, and monitoring machine learning models on edge devices",
+        "correct": true
+      },
+      {
+        "text": "A tool for organizing, tracking, and comparing machine learning experiments",
+        "correct": false
+      },
+      {
+        "text": "A service for building, managing, and automating end-to-end machine learning workflows",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are key characteristics of Gradient Boosting Machines (e.g., XGBoost, LightGBM, CatBoost)?",
+    "answers": [
+      {
+        "text": "Powerful and widely used in competitions",
+        "correct": true
+      },
+      {
+        "text": "Handles missing data and categorical variables well",
+        "correct": true
+      },
+      {
+        "text": "Effective in high-dimensional spaces",
+        "correct": false
+      },
+      {
+        "text": "Assumes feature independence",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following describes LogitBoost / AdaBoost?",
+    "answers": [
+      {
+        "text": "Boosting methods that improve weak learners",
+        "correct": true
+      },
+      {
+        "text": "Ensemble of decision trees",
+        "correct": false
+      },
+      {
+        "text": "Handles missing data and categorical variables well",
+        "correct": false
+      },
+      {
+        "text": "Based on Bayes’ theorem",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used for building and deploying machine learning models at scale?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "AWS DeepRacer",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Who introduced the LogitBoost algorithm?",
+    "answers": [
+      {
+        "text": "Jerome Friedman, Trevor Hastie, and Robert Tibshirani",
+        "correct": true
+      },
+      {
+        "text": "Leo Breiman and Adele Cutler",
+        "correct": false
+      },
+      {
+        "text": "Yoav Freund and Robert Schapire",
+        "correct": false
+      },
+      {
+        "text": "Geoffrey Hinton and Yann LeCun",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What makes LogitBoost more statistically grounded than AdaBoost?",
+    "answers": [
+      {
+        "text": "Optimizes the logistic loss",
+        "correct": true
+      },
+      {
+        "text": "Uses decision trees as base learners",
+        "correct": false
+      },
+      {
+        "text": "Uses Newton-Raphson updates",
+        "correct": false
+      },
+      {
+        "text": "Produces probabilistic predictions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are advantages of LogitBoost?",
+    "answers": [
+      {
+        "text": "Produces well-calibrated probabilities",
+        "correct": true
+      },
+      {
+        "text": "Can outperform AdaBoost in some classification tasks",
+        "correct": true
+      },
+      {
+        "text": "Works well with imbalanced datasets when tuned properly",
+        "correct": true
+      },
+      {
+        "text": "Minimizes exponential loss",
+        "correct": false
+      },
+      {
+        "text": "Uses backpropagation for updates",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What does Object2Vec transform complex objects into?",
+    "answers": [
+      {
+        "text": "Dense, low-dimensional vector representations",
+        "correct": true
+      },
+      {
+        "text": "Sparse, high-dimensional vector representations",
+        "correct": false
+      },
+      {
+        "text": "Dense, high-dimensional vector representations",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which SageMaker algorithm would be most appropriate for predicting the next word in a sequence of text?",
+    "answers": [
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "Random Cut Forest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for clustering similar items without labeled data?",
+    "answers": [
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for anomaly detection in time series data?",
+    "answers": [
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "Random Cut Forest",
+        "correct": true
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for detecting fraud in transactional data?",
+    "answers": [
+      {
+        "text": "Random Cut Forest",
+        "correct": true
+      },
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for detecting anomalies in network traffic?",
+    "answers": [
+      {
+        "text": "Random Cut Forest",
+        "correct": true
+      },
+      {
+        "text": "IP Insights",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for clustering similar items without labeled data?",
+    "answers": [
+      {
+        "text": "K-Means",
+        "correct": true
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for organizing documents into topics in an unsupervised manner?",
+    "answers": [
+      {
+        "text": "LDA",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "IP Insights",
+        "correct": false
+      },
+      {
+        "text": "Object2Vec",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for predicting user-item interactions in a sparse dataset?",
+    "answers": [
+      {
+        "text": "Factorization Machines",
+        "correct": true
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "Neural Topic Model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are building a recommendation system for an e-commerce website. Which SageMaker algorithm is best suited for this task?",
+    "answers": [
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "Factorization Machines",
+        "correct": true
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You're working with a sparse dataset and need to predict user-item interactions. Which SageMaker algorithm is most appropriate?",
+    "answers": [
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "Factorization Machines",
+        "correct": true
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "Neural Topic Model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "When using SageMaker’s Object2Vec algorithm, what is the primary output?",
+    "answers": [
+      {
+        "text": "A classification label",
+        "correct": false
+      },
+      {
+        "text": "A sequence of tokens",
+        "correct": false
+      },
+      {
+        "text": "A low-dimensional embedding of high-dimensional objects",
+        "correct": true
+      },
+      {
+        "text": "A set of bounding boxes",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which technique is used to reduce the dimensionality of data while preserving its variance?",
+    "answers": [
+      {
+        "text": "Principal Component Analysis (PCA)",
+        "correct": true
+      },
+      {
+        "text": "K-Means Clustering",
+        "correct": false
+      },
+      {
+        "text": "Gradient Descent",
+        "correct": false
+      },
+      {
+        "text": "Dropout",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a primary use case for SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "Optimizing models for specific hardware",
+        "correct": false
+      },
+      {
+        "text": "Detecting data drift in deployed models",
+        "correct": true
+      },
+      {
+        "text": "Automating model training pipelines",
+        "correct": false
+      },
+      {
+        "text": "Running models on edge devices",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "For which use case is SageMaker JumpStart most appropriate?",
+    "answers": [
+      {
+        "text": "Custom model training from scratch",
+        "correct": false
+      },
+      {
+        "text": "Real-time anomaly detection",
+        "correct": false
+      },
+      {
+        "text": "Deploying pre-trained models to pre-configured endpoints",
+        "correct": true
+      },
+      {
+        "text": "Optimizing models for edge devices",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key advantage of using SageMaker’s Managed Spot Training?",
+    "answers": [
+      {
+        "text": "Spot instances guarantee uninterrupted training.",
+        "correct": false
+      },
+      {
+        "text": "Training cost can be reduced by up to 90%.",
+        "correct": true
+      },
+      {
+        "text": "Spot instances automatically scale based on traffic.",
+        "correct": false
+      },
+      {
+        "text": "Managed Spot Training only works with GPU instances.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a key benefit of using Docker containers in Amazon SageMaker?",
+    "answers": [
+      {
+        "text": "Containers are tied to a specific instance type.",
+        "correct": false
+      },
+      {
+        "text": "Containers allow the use of any script or algorithm regardless of runtime or language.",
+        "correct": true
+      },
+      {
+        "text": "Containers must use SageMaker built-in algorithms only.",
+        "correct": false
+      },
+      {
+        "text": "Containers cannot be used for inference tasks.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are SageMaker Components for Kubeflow Pipelines?",
+    "answers": [
+      {
+        "text": "Pre-built components that integrate SageMaker with Kubeflow Pipelines for machine learning workflows.",
+        "correct": true
+      },
+      {
+        "text": "A set of tools for deploying Kubernetes applications.",
+        "correct": false
+      },
+      {
+        "text": "A monitoring service for Kubeflow Pipelines.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Your team needs to ensure that the machine learning models are not biased and provide fair predictions. Which SageMaker feature should you use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Serverless Inference",
+        "correct": false
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are deploying a SageMaker training job that handles sensitive data. Which of the following options would best ensure that the data is protected both at rest and in transit?",
+    "answers": [
+      {
+        "text": "Enable KMS encryption for data at rest and TLS/SSL for data in transit.",
+        "correct": true
+      },
+      {
+        "text": "Use S3 bucket policies for access control and VPC endpoints for data transfer.",
+        "correct": false
+      },
+      {
+        "text": "Store data in an unencrypted S3 bucket but ensure VPC isolation.",
+        "correct": false
+      },
+      {
+        "text": "Use IAM roles to limit access and KMS for encryption in transit.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is the most appropriate technique for ensuring that a specific SageMaker notebook instance has the least privilege required to perform its tasks?",
+    "answers": [
+      {
+        "text": "Assign the <code>AdministratorAccess</code> policy to the notebook instance role.",
+        "correct": false
+      },
+      {
+        "text": "Use the <code>AmazonSageMakerFullAccess</code> policy to the notebook instance role.",
+        "correct": false
+      },
+      {
+        "text": "Use IAM Access Analyzer to generate a custom least-privilege policy based on access activity.",
+        "correct": true
+      },
+      {
+        "text": "Assign the <code>AmazonSageMakerReadOnly</code> policy to the notebook instance role.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What should you do to enable a SageMaker training job to access S3 resources in a secure manner?",
+    "answers": [
+      {
+        "text": "Assign an appropriate IAM role to the SageMaker instance.",
+        "correct": true
+      },
+      {
+        "text": "Provide the job with an IAM user’s access key and secret key.",
+        "correct": false
+      },
+      {
+        "text": "Disable VPC access for the training job.",
+        "correct": false
+      },
+      {
+        "text": "Use S3 bucket policies only for access control.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are configuring network isolation for a SageMaker training job to prevent data leaks. What is a potential drawback of enabling network isolation?",
+    "answers": [
+      {
+        "text": "Increased training cost and time.",
+        "correct": true
+      },
+      {
+        "text": "The job will lose access to S3.",
+        "correct": false
+      },
+      {
+        "text": "IAM roles cannot be assigned to the job.",
+        "correct": false
+      },
+      {
+        "text": "The job cannot use VPC endpoints.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service is best suited for building and deploying machine learning models at scale?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What AWS service provides managed Jupyter notebooks?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Studio",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "AWS CodeCommit",
+        "correct": false
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are common types of supervised learning algorithms used in machine learning?",
+    "answers": [
+      {
+        "text": "Linear Regression",
+        "correct": true
+      },
+      {
+        "text": "K-Means Clustering",
+        "correct": false
+      },
+      {
+        "text": "Decision Trees",
+        "correct": true
+      },
+      {
+        "text": "Principal Component Analysis (PCA)",
+        "correct": false
+      },
+      {
+        "text": "Support Vector Machines (SVM)",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Hard",
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which algorithms can be used for binary classification?",
+    "answers": [
+      {
+        "text": "Logistic Regression",
+        "correct": true
+      },
+      {
+        "text": "Linear Regression",
+        "correct": false
+      },
+      {
+        "text": "Support Vector Machine (SVM)",
+        "correct": true
+      },
+      {
+        "text": "K-Means Clustering",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of SageMaker Ground Truth?",
+    "answers": [
+      {
+        "text": "To build, train, and deploy models",
+        "correct": false
+      },
+      {
+        "text": "To label training data using human labelers and machine learning",
+        "correct": true
+      },
+      {
+        "text": "To optimize models for edge devices",
+        "correct": false
+      },
+      {
+        "text": "To automate the model building process",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which SageMaker feature helps in automating the machine learning model building process?",
+    "answers": [
+      {
+        "text": "SageMaker Autopilot",
+        "correct": true
+      },
+      {
+        "text": "SageMaker Ground Truth",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Neo",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Studio",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Medium",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is SageMaker Studio?",
+    "answers": [
+      {
+        "text": "A fully integrated development environment for machine learning",
+        "correct": true
+      },
+      {
+        "text": "A feature that automates the entire machine learning model building process",
+        "correct": false
+      },
+      {
+        "text": "A tool for labeling training data using human labelers and machine learning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "Easy",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is SageMaker Ground Truth?",
+    "answers": [
+      {
+        "text": "A tool for labeling training data using human labelers and machine learning",
+        "correct": true
+      },
+      {
+        "text": "A feature that automates the entire machine learning model building process",
+        "correct": false
+      },
+      {
+        "text": "A fully integrated development environment for machine learning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How does LogitBoost improve the model at each iteration?",
+    "answers": [
+      {
+        "text": "Using Newton-Raphson updates",
+        "correct": true
+      },
+      {
+        "text": "Using gradient descent",
+        "correct": false
+      },
+      {
+        "text": "Using stochastic gradient descent",
+        "correct": false
+      },
+      {
+        "text": "Using backpropagation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the typical base learners used in LogitBoost?",
+    "answers": [
+      {
+        "text": "Decision stumps or shallow trees",
+        "correct": true
+      },
+      {
+        "text": "Support vector machines",
+        "correct": false
+      },
+      {
+        "text": "Neural networks",
+        "correct": false
+      },
+      {
+        "text": "K-nearest neighbors",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is an advantage of LogitBoost over AdaBoost?",
+    "answers": [
+      {
+        "text": "Produces well-calibrated probabilities",
+        "correct": true
+      },
+      {
+        "text": "Minimizes exponential loss",
+        "correct": false
+      },
+      {
+        "text": "Uses neural networks as base learners",
+        "correct": false
+      },
+      {
+        "text": "Uses gradient descent for updates",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Object2Vec?",
+    "answers": [
+      {
+        "text": "A general-purpose embedding algorithm",
+        "correct": true
+      },
+      {
+        "text": "A specific type of neural network",
+        "correct": false
+      },
+      {
+        "text": "A data preprocessing technique",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which applications can Object2Vec be used for?",
+    "answers": [
+      {
+        "text": "Nearest neighbor search",
+        "correct": true
+      },
+      {
+        "text": "Clustering and visualization",
+        "correct": true
+      },
+      {
+        "text": "Genre prediction",
+        "correct": true
+      },
+      {
+        "text": "Data preprocessing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which instance types are recommended for training Object2Vec?",
+    "answers": [
+      {
+        "text": "ml.m5.2xlarge",
+        "correct": true
+      },
+      {
+        "text": "p2.xlarge",
+        "correct": true
+      },
+      {
+        "text": "g4",
+        "correct": true
+      },
+      {
+        "text": "t2.micro",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following accurately describe the capabilities and limitations of SageMaker Data Wrangler?",
+    "answers": [
+      {
+        "text": "It provides a visual interface for data exploration, transformation, and feature engineering.",
+        "correct": true
+      },
+      {
+        "text": "It supports integration with Amazon Athena, Amazon S3, and Redshift for data import.",
+        "correct": true
+      },
+      {
+        "text": "It can be used to deploy machine learning models directly to production endpoints.",
+        "correct": false
+      },
+      {
+        "text": "It allows exporting data transformation workflows as SageMaker Pipelines components.",
+        "correct": true
+      },
+      {
+        "text": "It is primarily used for hyperparameter tuning and model evaluation.",
+        "correct": false
+      },
+      {
+        "text": "It supports built-in data quality and bias reports.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used to organize documents into topics in an unsupervised manner?",
+    "answers": [
+      {
+        "text": "LDA",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "IP Insights",
+        "correct": false
+      },
+      {
+        "text": "Object2Vec",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In SageMaker’s XGBoost, which hyperparameter helps prevent overfitting by controlling the step size shrinkage?",
+    "answers": [
+      {
+        "text": "max_depth",
+        "correct": false
+      },
+      {
+        "text": "subsample",
+        "correct": false
+      },
+      {
+        "text": "eta",
+        "correct": true
+      },
+      {
+        "text": "gamma",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for text classification tasks?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": true
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for topic modeling in text data?",
+    "answers": [
+      {
+        "text": "LDA",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "IP Insights",
+        "correct": false
+      },
+      {
+        "text": "Object2Vec",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for detecting bounding boxes of multiple objects within an image?",
+    "answers": [
+      {
+        "text": "Object Detection",
+        "correct": true
+      },
+      {
+        "text": "Image Classification",
+        "correct": false
+      },
+      {
+        "text": "Semantic Segmentation",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for topic modeling in a large corpus of text documents?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "LDA",
+        "correct": true
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are tasked with building a chatbot that can understand and respond to user queries. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "Random Cut Forest",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting customer churn based on historical data?",
+    "answers": [
+      {
+        "text": "Linear Learner",
+        "correct": true
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Customer Churn",
+      "Prediction",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting the likelihood of a binary outcome?",
+    "answers": [
+      {
+        "text": "Linear Learner",
+        "correct": true
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to build a model that can summarize long text documents. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Seq2Seq",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "LDA",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Text Summarization",
+      "NLP",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service is designed for building, training, and deploying machine learning models at scale?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service provides pre-trained models for natural language processing tasks like sentiment analysis and entity recognition?",
+    "answers": [
+      {
+        "text": "Amazon Translate",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the correct way to structure a Dockerfile for a SageMaker training container?",
+    "answers": [
+      {
+        "text": "Specify the training script using ENV SAGEMAKER_PROGRAM",
+        "correct": true
+      },
+      {
+        "text": "Store the training data in /opt/ml/model",
+        "correct": false
+      },
+      {
+        "text": "Run the Docker container using CMD instead of ENTRYPOINT",
+        "correct": false
+      },
+      {
+        "text": "Set up a virtual environment within the Docker container",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which SageMaker feature allows you to compare a new model’s performance against an existing production model without impacting live traffic?",
+    "answers": [
+      {
+        "text": "Canary Deployment",
+        "correct": false
+      },
+      {
+        "text": "Linear Deployment",
+        "correct": false
+      },
+      {
+        "text": "Blue/Green Deployment",
+        "correct": false
+      },
+      {
+        "text": "Shadow Testing",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary benefit of using SageMaker Feature Store?",
+    "answers": [
+      {
+        "text": "It stores model artifacts.",
+        "correct": false
+      },
+      {
+        "text": "It enables real-time and batch access to features.",
+        "correct": true
+      },
+      {
+        "text": "It manages endpoint scaling.",
+        "correct": false
+      },
+      {
+        "text": "It monitors model drift.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon SageMaker Serverless Inference?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Serverless Inference is a deployment option that automatically provisions and scales compute capacity for inference requests. It is ideal for applications with intermittent or unpredictable traffic, as it eliminates the need to manage infrastructure and scales down to zero when not in use.",
+        "correct": true
+      },
+      {
+        "text": "Amazon SageMaker Serverless Inference is a tool that continuously trains models in the background and deploys them to endpoints without user input. It is primarily used for real-time model retraining.",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker Serverless Inference is a monitoring dashboard that visualizes endpoint traffic and allows manual scaling of inference instances. It is mainly used for performance tuning.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What can SageMaker Clarify help with?",
+    "answers": [
+      {
+        "text": "Detecting bias in machine learning models",
+        "correct": true
+      },
+      {
+        "text": "Explaining model predictions",
+        "correct": true
+      },
+      {
+        "text": "Improving model accuracy",
+        "correct": false
+      },
+      {
+        "text": "Monitoring model performance",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are configuring a SageMaker notebook that requires access to a private S3 bucket and other AWS services in the same VPC. What is the best practice to ensure secure and efficient access?",
+    "answers": [
+      {
+        "text": "Use an internet gateway and public IP addresses.",
+        "correct": false
+      },
+      {
+        "text": "Enable multi-factor authentication (MFA) for the notebook instance.",
+        "correct": false
+      },
+      {
+        "text": "Assign a custom policy that allows unrestricted S3 access.",
+        "correct": false
+      },
+      {
+        "text": "Use a VPC endpoint to access S3 and other services.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "To enhance the security of your SageMaker environment, you decide to log and monitor all API calls. Which AWS service should you use?",
+    "answers": [
+      {
+        "text": "AWS WAF",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "AWS Shield",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are tasked with setting up a highly secure SageMaker environment for training a sensitive dataset. What combination of practices would you implement?",
+    "answers": [
+      {
+        "text": "Use public subnets and disable encryption.",
+        "correct": false
+      },
+      {
+        "text": "Store credentials in environment variables and use public IP addresses.",
+        "correct": false
+      },
+      {
+        "text": "Use a single IAM role with AdministratorAccess and disable logging.",
+        "correct": false
+      },
+      {
+        "text": "Enable network isolation, use KMS encryption, and assign least-privilege IAM roles.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is an example of unsupervised learning?",
+    "answers": [
+      {
+        "text": "K-Means Clustering",
+        "correct": true
+      },
+      {
+        "text": "Linear Regression",
+        "correct": false
+      },
+      {
+        "text": "Decision Trees",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is SageMaker Clarify?",
+    "answers": [
+      {
+        "text": "A tool for detecting bias and explaining predictions in machine learning models",
+        "correct": true
+      },
+      {
+        "text": "A tool for preparing and transforming data for machine learning",
+        "correct": false
+      },
+      {
+        "text": "A feature that optimizes machine learning models for edge devices",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following describes Linear Discriminant Analysis (LDA)?",
+    "answers": [
+      {
+        "text": "Assumes normal distribution of features",
+        "correct": true
+      },
+      {
+        "text": "Outputs probabilities for class membership",
+        "correct": false
+      },
+      {
+        "text": "Ensemble of decision trees",
+        "correct": false
+      },
+      {
+        "text": "Can model complex relationships",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What type of problems is LogitBoost designed for?",
+    "answers": [
+      {
+        "text": "Classification problems, particularly binary classification",
+        "correct": true
+      },
+      {
+        "text": "Regression problems",
+        "correct": false
+      },
+      {
+        "text": "Clustering problems",
+        "correct": false
+      },
+      {
+        "text": "Dimensionality reduction",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "In which scenario would LogitBoost be a strong choice?",
+    "answers": [
+      {
+        "text": "Building a spam filter with probabilistic predictions",
+        "correct": true
+      },
+      {
+        "text": "Predicting house prices",
+        "correct": false
+      },
+      {
+        "text": "Clustering customer data",
+        "correct": false
+      },
+      {
+        "text": "Reducing dimensionality of a dataset",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What type of inputs does Object2Vec require?",
+    "answers": [
+      {
+        "text": "Tokenized integer inputs",
+        "correct": true
+      },
+      {
+        "text": "Raw text inputs",
+        "correct": false
+      },
+      {
+        "text": "Image inputs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Object2Vec",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following accurately describe the capabilities and use cases of SageMaker Debugger?",
+    "answers": [
+      {
+        "text": "It enables real-time monitoring of training jobs by capturing system and framework metrics.",
+        "correct": true
+      },
+      {
+        "text": "It can automatically detect training issues such as vanishing gradients or overfitting.",
+        "correct": true
+      },
+      {
+        "text": "It is primarily used for managing feature storage and retrieval across ML pipelines.",
+        "correct": false
+      },
+      {
+        "text": "It supports integration with TensorBoard for visualizing training metrics.",
+        "correct": true
+      },
+      {
+        "text": "It is designed to monitor deployed models in production for data drift.",
+        "correct": false
+      },
+      {
+        "text": "It provides profiling reports to optimize resource usage during training.",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Medium",
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker input mode is recommended for training when you need high-performance access to data stored in a single Availability Zone?",
+    "answers": [
+      {
+        "text": "S3 File Mode",
+        "correct": false
+      },
+      {
+        "text": "Pipe Mode",
+        "correct": false
+      },
+      {
+        "text": "Amazon FSx for Lustre",
+        "correct": true
+      },
+      {
+        "text": "S3 Fast File Mode",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is used for image classification tasks?",
+    "answers": [
+      {
+        "text": "Object Detection",
+        "correct": false
+      },
+      {
+        "text": "Image Classification",
+        "correct": true
+      },
+      {
+        "text": "Semantic Segmentation",
+        "correct": false
+      },
+      {
+        "text": "PCA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting stock prices?",
+    "answers": [
+      {
+        "text": "DeepAR",
+        "correct": true
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for detecting sentiment in text data?",
+    "answers": [
+      {
+        "text": "BlazingText",
+        "correct": true
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for predicting future values of a time series?",
+    "answers": [
+      {
+        "text": "DeepAR",
+        "correct": true
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm would you use for detecting anomalies in time series data?",
+    "answers": [
+      {
+        "text": "DeepAR",
+        "correct": false
+      },
+      {
+        "text": "Random Cut Forest",
+        "correct": true
+      },
+      {
+        "text": "Seq2Seq",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker algorithm is best suited for detecting fraudulent transactions in financial data?",
+    "answers": [
+      {
+        "text": "Random Cut Forest",
+        "correct": true
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "K-Means",
+        "correct": false
+      },
+      {
+        "text": "BlazingText",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which deployment method in SageMaker is most suitable for handling infrequent or unpredictable traffic with the ability to scale down to zero?",
+    "answers": [
+      {
+        "text": "Real-Time Inference",
+        "correct": false
+      },
+      {
+        "text": "Serverless Inference",
+        "correct": true
+      },
+      {
+        "text": "Batch Transform",
+        "correct": false
+      },
+      {
+        "text": "Asynchronous Inference",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which Amazon SageMaker feature helps automate the process of hyperparameter tuning?",
+    "answers": [
+      {
+        "text": "SageMaker Pipelines",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Autopilot",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Experiments",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Automatic Model Tuning",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are SageMaker Projects?",
+    "answers": [
+      {
+        "text": "Templates that help you set up and manage end-to-end machine learning workflows.",
+        "correct": true
+      },
+      {
+        "text": "A set of pre-trained models for specific applications.",
+        "correct": false
+      },
+      {
+        "text": "A monitoring service for machine learning models.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "You’re working on a fraud detection system. You need to preprocess incoming transaction data, run it through a model, and then post-process the results before storing them. Which SageMaker feature best supports this multi-step inference process?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Inference Pipelines",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You need to deploy a machine learning model that scales automatically based on the incoming traffic without managing servers. Which SageMaker feature should you use?",
+    "answers": [
+      {
+        "text": "SageMaker Model Monitor",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Serverless Inference",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What are SageMaker Operators for Kubernetes used for?",
+    "answers": [
+      {
+        "text": "Integrating SageMaker with Kubernetes",
+        "correct": true
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "During a hyperparameter tuning job, you want to monitor the CPU and memory utilization of the SageMaker instance. Which service would you use for this?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS KMS",
+        "correct": false
+      },
+      {
+        "text": "AWS Shield",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which step is most critical before deploying a SageMaker model using a Docker container?",
+    "answers": [
+      {
+        "text": "Validate the model using SageMaker JumpStart.",
+        "correct": false
+      },
+      {
+        "text": "Ensure the model is stored in /opt/ml/model within the container.",
+        "correct": true
+      },
+      {
+        "text": "Set up Auto Scaling policies for the endpoint.",
+        "correct": false
+      },
+      {
+        "text": "Use SageMaker Neo to compile the model.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to monitor a deployed model for feature attribution drift. Which metric should you monitor using SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "Kullback-Leibler Divergence (KL)",
+        "correct": true
+      },
+      {
+        "text": "Total Variation Distance (TVD)",
+        "correct": false
+      },
+      {
+        "text": "Conditional Demographic Disparity (CDD)",
+        "correct": false
+      },
+      {
+        "text": "Normalized Discounted Cumulative Gain (NDCG)",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You are using SageMaker Clarify. What is its primary function?",
+    "answers": [
+      {
+        "text": "Model deployment",
+        "correct": false
+      },
+      {
+        "text": "Data labeling",
+        "correct": false
+      },
+      {
+        "text": "Bias detection and explainability",
+        "correct": true
+      },
+      {
+        "text": "Feature engineering",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which SageMaker deployment option is best for processing large datasets in a non-real-time manner?",
+    "answers": [
+      {
+        "text": "Real-Time Inference",
+        "correct": false
+      },
+      {
+        "text": "Batch Transform",
+        "correct": true
+      },
+      {
+        "text": "Serverless Inference",
+        "correct": false
+      },
+      {
+        "text": "Shadow Testing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which SageMaker tool helps visualize and manage the steps in a machine learning workflow?",
+    "answers": [
+      {
+        "text": "SageMaker Studio",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Pipelines",
+        "correct": true
+      },
+      {
+        "text": "SageMaker JumpStart",
+        "correct": false
+      },
+      {
+        "text": "SageMaker Ground Truth",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Amazon SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Model Monitor is a fully managed capability of SageMaker that automatically detects concept drift and data quality issues in deployed machine learning models. It continuously monitors the data being sent to the model endpoint and compares it to the data used during training. It can alert users when anomalies are detected, helping maintain model performance over time.",
+        "correct": true
+      },
+      {
+        "text": "Amazon SageMaker Model Monitor is a tool that retrains your machine learning models automatically whenever it detects a drop in accuracy. It uses reinforcement learning to adjust model parameters in real time and deploys the updated model without user intervention.",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker Model Monitor is a visualization dashboard that provides real-time charts of model predictions and allows users to manually label incoming data for supervised learning. It is primarily used for labeling and annotation tasks.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon SageMaker Clarify?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Clarify is a tool that helps detect bias in machine learning datasets and models, and provides explainability reports for model predictions. It supports fairness and transparency in ML workflows by analyzing feature importance and bias metrics.",
+        "correct": true
+      },
+      {
+        "text": "Amazon SageMaker Clarify is a service that automatically scales inference endpoints based on traffic and latency requirements. It is primarily used for optimizing deployment performance.",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker Clarify is a data labeling tool that allows users to annotate datasets for supervised learning tasks. It is mainly used for preparing training data.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon SageMaker Serverless Inference Recommender?",
+    "answers": [
+      {
+        "text": "A feature that recommends the best instance types and configurations for deploying models based on the workload and performance requirements.",
+        "correct": true
+      },
+      {
+        "text": "A tool that automatically scales inference endpoints based on traffic and latency requirements.",
+        "correct": false
+      },
+      {
+        "text": "A data labeling tool that allows users to annotate datasets for supervised learning tasks.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are SageMaker Operators for Kubernetes?",
+    "answers": [
+      {
+        "text": "Tools that allow you to manage SageMaker resources using Kubernetes-native APIs.",
+        "correct": true
+      },
+      {
+        "text": "A set of pre-trained models for Kubernetes applications.",
+        "correct": false
+      },
+      {
+        "text": "A monitoring service for Kubernetes clusters.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of SageMaker Projects?",
+    "answers": [
+      {
+        "text": "To manage machine learning workflows",
+        "correct": true
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false
+      },
+      {
+        "text": "To store data in the cloud",
+        "correct": false
+      },
+      {
+        "text": "To automate CI/CD pipelines for ML models",
+        "correct": true
+      },
+      {
+        "text": "To monitor cloud resources",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which encryption method is recommended for securing data in transit when using SageMaker?",
+    "answers": [
+      {
+        "text": "Server-side encryption (SSE) with S3",
+        "correct": false
+      },
+      {
+        "text": "Client-side encryption",
+        "correct": false
+      },
+      {
+        "text": "TLS/SSL encryption",
+        "correct": true
+      },
+      {
+        "text": "Encryption with IAM roles",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You need to grant cross-account access to a KMS-encrypted S3 bucket used in a SageMaker job. What should you configure?",
+    "answers": [
+      {
+        "text": "Create an S3 bucket policy allowing access from the other account.",
+        "correct": false
+      },
+      {
+        "text": "Add the other account's IAM roles to the KMS key policy.",
+        "correct": true
+      },
+      {
+        "text": "Use AWS Shield to protect the bucket.",
+        "correct": false
+      },
+      {
+        "text": "Enable CloudTrail logging for the bucket.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is a feature of Amazon SageMaker?",
+    "answers": [
+      {
+        "text": "Automatic model tuning",
+        "correct": true
+      },
+      {
+        "text": "Real-time predictions",
+        "correct": true
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false
+      },
+      {
+        "text": "Serverless computing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the role of SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "To monitor the performance of machine learning models in production.",
+        "correct": true
+      },
+      {
+        "text": "To automatically tune hyperparameters of machine learning models.",
+        "correct": false
+      },
+      {
+        "text": "To provide a fully managed data labeling service.",
+        "correct": false
+      },
+      {
+        "text": "To deploy machine learning models on edge devices.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of Amazon SageMaker Model Monitor?",
+    "answers": [
+      {
+        "text": "To monitor the quality of machine learning models in production",
+        "correct": true
+      },
+      {
+        "text": "To label training data for machine learning",
+        "correct": false
+      },
+      {
+        "text": "To deploy machine learning models",
+        "correct": false
+      },
+      {
+        "text": "To provide real-time predictions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS services are commonly used to implement ML design principles such as modularity and automation?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon SageMaker Pipelines",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2 Spot Instances",
+        "correct": false
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service can automatically apply one-hot encoding during preprocessing?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Data Wrangler",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How can scikit-learn models be integrated into AWS workflows?",
+    "answers": [
+      {
+        "text": "By packaging them in Docker containers for SageMaker",
+        "correct": true
+      },
+      {
+        "text": "By uploading them directly to Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "By using AWS Glue for training",
+        "correct": false
+      },
+      {
+        "text": "By deploying them with SageMaker endpoints",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service supports canary and linear deployments for ML models?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How can PyTorch models be deployed on AWS?",
+    "answers": [
+      {
+        "text": "Using Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "Using AWS Lambda with TorchScript",
+        "correct": true
+      },
+      {
+        "text": "Using Amazon S3 directly",
+        "correct": false
+      },
+      {
+        "text": "Using AWS Glue",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How can TensorFlow models be deployed on AWS?",
+    "answers": [
+      {
+        "text": "Using Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "Using AWS Lambda with TensorFlow Lite",
+        "correct": true
+      },
+      {
+        "text": "Using Amazon S3 directly",
+        "correct": false
+      },
+      {
+        "text": "Using AWS Glue",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service provides tools for explainability of machine learning models?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Clarify",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service helps you label data to frame supervised learning problems?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Ground Truth",
+        "correct": true
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services can be used for data preprocessing in a machine learning workflow?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Processing",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon Lex",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is commonly used for building and training machine learning models?",
+    "answers": [
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "Amazon SageMaker",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Amazon SageMaker?",
+    "answers": [
+      {
+        "text": "A fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly.",
+        "correct": true
+      },
+      {
+        "text": "A service that allows you to run containerized applications on a cluster of Amazon EC2 instances.",
+        "correct": false
+      },
+      {
+        "text": "A service that provides on-demand cloud computing platforms and APIs.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which algorithm is NOT supported by Amazon SageMaker?",
+    "answers": [
+      {
+        "text": "Linear Learner",
+        "correct": false
+      },
+      {
+        "text": "XGBoost",
+        "correct": false
+      },
+      {
+        "text": "K-means",
+        "correct": false
+      },
+      {
+        "text": "PageRank",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service helps in detecting bias in machine learning models?",
+    "answers": [
+      {
+        "text": "Amazon SageMaker Clarify",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How does Amazon SageMaker Clarify help in building responsible AI?",
+    "answers": [
+      {
+        "text": "By detecting bias in datasets and models",
+        "correct": true
+      },
+      {
+        "text": "By providing tools for data labeling",
+        "correct": false
+      },
+      {
+        "text": "By offering pre-trained models for various tasks",
+        "correct": false
+      },
+      {
+        "text": "By enabling real-time model monitoring",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  }
+]

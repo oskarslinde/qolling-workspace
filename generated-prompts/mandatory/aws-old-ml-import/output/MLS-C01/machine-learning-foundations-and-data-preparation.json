@@ -1,0 +1,1171 @@
+[
+  {
+    "question": "In binary classification, what does the confusion matrix help you evaluate?",
+    "answers": [
+      {
+        "text": "True Positives",
+        "correct": true,
+        "explanation": "True Positives identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "False Negatives",
+        "correct": true,
+        "explanation": "False Negatives identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "True Negatives",
+        "correct": true,
+        "explanation": "True Negatives identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Mean squared error of a regression model",
+        "correct": false,
+        "explanation": "Mean Squared Error (MSE) averages squared prediction errors. It measures residual error, whereas R-squared measures the proportion of observed variance explained by regression predictions."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: In binary classification, what does the confusion matrix help you evaluate?"
+      ]
+    }
+  },
+  {
+    "question": "What does R-squared (R²) measure in a regression model?",
+    "answers": [
+      {
+        "text": "The proportion of variance in the dependent variable explained by the model",
+        "correct": true,
+        "explanation": "R-squared measures the proportion of variance in the dependent variable explained by regression predictions. It summarizes goodness of fit rather than the size of individual prediction errors."
+      },
+      {
+        "text": "The average squared difference between predicted and actual values",
+        "correct": false,
+        "explanation": "This describes Mean Squared Error (MSE), which averages squared prediction errors and therefore measures regression error rather than explained variance. R-squared measures the proportion of variance in the dependent variable explained by regression predictions. It summarizes goodness of fit rather than the size of individual prediction."
+      },
+      {
+        "text": "The number of correct classifications",
+        "correct": false,
+        "explanation": "This describes classification accuracy, the proportion of examples assigned the correct class. Accuracy evaluates classification outcomes, whereas R-squared evaluates explained variance in regression. R-squared measures the proportion of variance in the dependent variable explained by regression predictions. It summarizes goodness of fit rather than the size."
+      },
+      {
+        "text": "The correlation coefficient between two variables",
+        "correct": false,
+        "explanation": "A correlation coefficient measures linear association between two variables. R-squared measures the proportion of variance explained by a fitted regression model, which is a different model-quality measure. R-squared measures the proportion of variance in the dependent variable explained by regression predictions. It summarizes goodness of fit."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does R-squared (R²) measure in a regression model?"
+      ]
+    }
+  },
+  {
+    "question": "What is the F1 Score used for in classification problems?",
+    "answers": [
+      {
+        "text": "It balances precision and recall into a single metric",
+        "correct": true,
+        "explanation": "Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds."
+      },
+      {
+        "text": "It measures the variance explained by the model",
+        "correct": false,
+        "explanation": "It measures the variance explained by the model concerns a separate capability from the one being tested. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The distinction is important when selecting services."
+      },
+      {
+        "text": "It calculates the average error in predictions",
+        "correct": false,
+        "explanation": "It calculates the average error in predictions concerns a separate capability from the one being tested. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The distinction is important when selecting services for."
+      },
+      {
+        "text": "The number of features in the input data",
+        "correct": false,
+        "explanation": "The number of features in the input data concerns a separate capability from the one being tested. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The distinction is important when selecting services."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the F1 Score used for in classification problems?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of using a learning rate scheduler during model training?",
+    "answers": [
+      {
+        "text": "To increase the model size",
+        "correct": false,
+        "explanation": "To increase the model size concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To adjust the learning rate dynamically",
+        "correct": true,
+        "explanation": "To adjust the learning rate dynamically identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To reduce the number of epochs",
+        "correct": false,
+        "explanation": "To reduce the number of epochs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To change the optimizer",
+        "correct": false,
+        "explanation": "To change the optimizer concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of using a learning rate scheduler during model training?"
+      ]
+    }
+  },
+  {
+    "question": "What does recall measure in a classification model?",
+    "answers": [
+      {
+        "text": "The proportion of actual positives that were correctly identified",
+        "correct": true,
+        "explanation": "The proportion of actual positives that were correctly identified identifies the relevant Hard concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "The proportion of predicted positives that are correct",
+        "correct": false,
+        "explanation": "The proportion of predicted positives that are correct concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The overall accuracy of the model",
+        "correct": false,
+        "explanation": "The overall accuracy of the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The average size of each input record",
+        "correct": false,
+        "explanation": "The average size of each input record concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Hard",
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Hard"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Hard",
+      "subtopic": "ML Theory",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does recall measure in a classification model?"
+      ]
+    }
+  },
+  {
+    "question": "What are supervised learning algorithms in machine learning?",
+    "answers": [
+      {
+        "text": "Algorithms that learn from labeled training data to make predictions",
+        "correct": true,
+        "explanation": "Algorithms that learn from labeled training data to make predictions identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Algorithms that group data without using labels",
+        "correct": false,
+        "explanation": "Algorithms that group data without using labels concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Algorithms that generate new data from existing data",
+        "correct": false,
+        "explanation": "Algorithms that generate new data from existing data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Algorithms that learn without any examples or observations",
+        "correct": false,
+        "explanation": "Algorithms that learn without any examples or observations concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "Medium",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "Medium",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are supervised learning algorithms in machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid types of machine learning problems?",
+    "answers": [
+      {
+        "text": "Clustering problem",
+        "correct": true,
+        "explanation": "Clustering problem identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Binary classification problem",
+        "correct": true,
+        "explanation": "Binary classification problem identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Regression problem",
+        "correct": true,
+        "explanation": "Regression problem identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A DNS resolution problem",
+        "correct": false,
+        "explanation": "A DNS resolution problem concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid types of machine learning problems?"
+      ]
+    }
+  },
+  {
+    "question": "What are key characteristics of overfitting in a machine learning model?",
+    "answers": [
+      {
+        "text": "High accuracy on training data but poor performance on test data",
+        "correct": true,
+        "explanation": "High accuracy on training data but poor performance on test data identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model generalizes well to unseen data",
+        "correct": false,
+        "explanation": "Model generalizes well to unseen data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Model captures noise in the training data",
+        "correct": true,
+        "explanation": "Model captures noise in the training data identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model has low variance",
+        "correct": false,
+        "explanation": "Model has low variance concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are key characteristics of overfitting in a machine learning model?"
+      ]
+    }
+  },
+  {
+    "question": "What does the ROC curve represent in binary classification?",
+    "answers": [
+      {
+        "text": "Trade-off between true positive rate and false positive rate",
+        "correct": true,
+        "explanation": "Trade-off between true positive rate and false positive rate identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model complexity vs. accuracy",
+        "correct": false,
+        "explanation": "Model complexity vs. accuracy concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Precision vs. Recall",
+        "correct": false,
+        "explanation": "Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds."
+      },
+      {
+        "text": "Performance of a classifier across different thresholds",
+        "correct": true,
+        "explanation": "Performance of a classifier across different thresholds identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does the ROC curve represent in binary classification?"
+      ]
+    }
+  },
+  {
+    "question": "What does it mean when a machine learning model makes probabilistic predictions?",
+    "answers": [
+      {
+        "text": "The model provides a probability score for each possible outcome, indicating its confidence.",
+        "correct": true,
+        "explanation": "The model provides a probability score for each possible outcome, indicating its confidence. identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "The model always returns a single, fixed class label with no uncertainty.",
+        "correct": false,
+        "explanation": "The model always returns a single, fixed class label with no uncertainty. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The model randomly selects an output from the training data.",
+        "correct": false,
+        "explanation": "The model randomly selects an output from the training data. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The model uses probabilities to determine which features to include in training.",
+        "correct": false,
+        "explanation": "The model uses probabilities to determine which features to include in training. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does it mean when a machine learning model makes probabilistic predictions?"
+      ]
+    }
+  },
+  {
+    "question": "What are embeddings in the context of natural language processing models?",
+    "answers": [
+      {
+        "text": "Embeddings are visual representations of neural network layers.",
+        "correct": false,
+        "explanation": "Embeddings are visual representations of neural network layers. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Embeddings are random noise added to input data to improve generalization.",
+        "correct": false,
+        "explanation": "Embeddings are random noise added to input data to improve generalization. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Embeddings are dense vector representations of tokens that capture semantic meaning.",
+        "correct": true,
+        "explanation": "Embeddings are dense vector representations of tokens that capture semantic meaning. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Embeddings are the final output predictions of a language model.",
+        "correct": false,
+        "explanation": "Embeddings are the final output predictions of a language model. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are embeddings in the context of natural language processing models?"
+      ]
+    }
+  },
+  {
+    "question": "What is binary classification in machine learning?",
+    "answers": [
+      {
+        "text": "A task where the model predicts one of two possible classes",
+        "correct": true,
+        "explanation": "A task where the model predicts one of two possible classes identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A task where the model predicts a continuous value",
+        "correct": false,
+        "explanation": "A task where the model predicts a continuous value concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A task where the model clusters data into groups",
+        "correct": false,
+        "explanation": "A task where the model clusters data into groups concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A task where the model predicts a continuous numeric value",
+        "correct": false,
+        "explanation": "A task where the model predicts a continuous numeric value concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is binary classification in machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "What does precision measure in a binary classification model?",
+    "answers": [
+      {
+        "text": "The proportion of true positives among all predicted positives",
+        "correct": true,
+        "explanation": "The proportion of true positives among all predicted positives identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "The proportion of true positives among all actual positives",
+        "correct": false,
+        "explanation": "The proportion of true positives among all actual positives concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The proportion of correct predictions overall",
+        "correct": false,
+        "explanation": "The proportion of correct predictions overall concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The proportion of all records that are actual positives",
+        "correct": false,
+        "explanation": "The proportion of all records that are actual positives concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does precision measure in a binary classification model?"
+      ]
+    }
+  },
+  {
+    "question": "Which technique is used to prevent overfitting in neural networks by randomly setting some activations to zero during training?",
+    "answers": [
+      {
+        "text": "Dropout",
+        "correct": true,
+        "explanation": "Dropout identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Batch Normalization",
+        "correct": false,
+        "explanation": "Batch Normalization concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Weight Decay",
+        "correct": false,
+        "explanation": "Weight Decay concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Gradient Clipping",
+        "correct": false,
+        "explanation": "Gradient Clipping concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "ML Theory",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which technique is used to prevent overfitting in neural networks by randomly setting some activations to zero during training?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of using a validation set during model training?",
+    "answers": [
+      {
+        "text": "To train the model",
+        "correct": false,
+        "explanation": "To train the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To test the model",
+        "correct": false,
+        "explanation": "To test the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To tune hyperparameters",
+        "correct": true,
+        "explanation": "To tune hyperparameters identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To evaluate model performance",
+        "correct": false,
+        "explanation": "To evaluate model performance concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of using a validation set during model training?"
+      ]
+    }
+  },
+  {
+    "question": "What is Model Monitor Data Capture?",
+    "answers": [
+      {
+        "text": "A feature that captures real-time inference data from deployed models, enabling analysis of input and output data for monitoring and debugging purposes.",
+        "correct": true,
+        "explanation": "A feature that captures real-time inference data from deployed models, enabling analysis of input and output data for monitoring and debugging purposes. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool that retrains your machine learning models automatically whenever it detects a drop in accuracy.",
+        "correct": false,
+        "explanation": "A tool that retrains your machine learning models automatically whenever it detects a drop in accuracy. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A visualization dashboard that provides real-time charts of model predictions and allows users to manually label incoming data for supervised learning.",
+        "correct": false,
+        "explanation": "A visualization dashboard that provides real-time charts of model predictions and allows users to manually label incoming data for supervised learning. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A feature that deletes inference requests after they are processed",
+        "correct": false,
+        "explanation": "A feature that deletes inference requests after they are processed concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Model Monitor Data Capture?"
+      ]
+    }
+  },
+  {
+    "question": "Which principles are essential when designing scalable machine learning systems on AWS?",
+    "answers": [
+      {
+        "text": "Decoupling components using managed services",
+        "correct": true,
+        "explanation": "Decoupling components using managed services identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Hardcoding configurations into the model",
+        "correct": false,
+        "explanation": "Hardcoding configurations into the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using serverless architectures where possible",
+        "correct": true,
+        "explanation": "Using serverless architectures where possible identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Storing training data on local disks",
+        "correct": false,
+        "explanation": "Storing training data on local disks concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which principles are essential when designing scalable machine learning systems on AWS?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are common data preprocessing steps in a machine learning pipeline?",
+    "answers": [
+      {
+        "text": "Handling missing values",
+        "correct": true,
+        "explanation": "Handling missing values identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Feature scaling",
+        "correct": true,
+        "explanation": "Feature scaling identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model deployment",
+        "correct": false,
+        "explanation": "Model deployment concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Encoding categorical variables",
+        "correct": true,
+        "explanation": "Encoding categorical variables identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are common data preprocessing steps in a machine learning pipeline?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of one-hot encoding in machine learning?",
+    "answers": [
+      {
+        "text": "To convert categorical variables into a numerical format",
+        "correct": true,
+        "explanation": "To convert categorical variables into a numerical format identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To normalize numerical features",
+        "correct": false,
+        "explanation": "To normalize numerical features concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To reduce the dimensionality of the dataset",
+        "correct": false,
+        "explanation": "To reduce the dimensionality of the dataset concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To encode text data into binary format",
+        "correct": false,
+        "explanation": "To encode text data into binary format concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of one-hot encoding in machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a best practice for feature engineering?",
+    "answers": [
+      {
+        "text": "Using domain knowledge to create meaningful features",
+        "correct": true,
+        "explanation": "Using domain knowledge to create meaningful features identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ignoring missing values in the dataset",
+        "correct": false,
+        "explanation": "Ignoring missing values in the dataset concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using one-hot encoding for categorical variables",
+        "correct": true,
+        "explanation": "Using one-hot encoding for categorical variables identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using all available features without selection",
+        "correct": false,
+        "explanation": "Using all available features without selection concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is a best practice for feature engineering?"
+      ]
+    }
+  },
+  {
+    "question": "Why is it important to define success metrics when identifying ML business goals?",
+    "answers": [
+      {
+        "text": "To evaluate model performance against business outcomes",
+        "correct": true,
+        "explanation": "To evaluate model performance against business outcomes identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To ensure the model is complex enough",
+        "correct": false,
+        "explanation": "To ensure the model is complex enough concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To reduce the need for data preprocessing",
+        "correct": false,
+        "explanation": "To reduce the need for data preprocessing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To align stakeholders on expected results",
+        "correct": true,
+        "explanation": "To align stakeholders on expected results identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: Why is it important to define success metrics when identifying ML business goals?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of hyperparameter tuning?",
+    "answers": [
+      {
+        "text": "To optimize the performance of the machine learning model",
+        "correct": true,
+        "explanation": "To optimize the performance of the machine learning model identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To reduce the size of the dataset",
+        "correct": false,
+        "explanation": "To reduce the size of the dataset concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To select the best features for the model",
+        "correct": false,
+        "explanation": "To select the best features for the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To deploy the model to production",
+        "correct": false,
+        "explanation": "To deploy the model to production concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of hyperparameter tuning?"
+      ]
+    }
+  },
+  {
+    "question": "What is the first step in identifying a machine learning business goal?",
+    "answers": [
+      {
+        "text": "Collecting training data",
+        "correct": false,
+        "explanation": "Collecting training data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Understanding the business problem",
+        "correct": true,
+        "explanation": "Understanding the business problem identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Choosing a machine learning algorithm",
+        "correct": false,
+        "explanation": "Choosing a machine learning algorithm concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Deploying a model to production",
+        "correct": false,
+        "explanation": "Deploying a model to production concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the first step in identifying a machine learning business goal?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary goal when framing a machine learning problem?",
+    "answers": [
+      {
+        "text": "To select the most complex algorithm",
+        "correct": false,
+        "explanation": "To select the most complex algorithm concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To translate a business problem into a solvable ML task",
+        "correct": true,
+        "explanation": "To translate a business problem into a solvable ML task identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To deploy a model to production",
+        "correct": false,
+        "explanation": "To deploy a model to production concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To collect as much data as possible",
+        "correct": false,
+        "explanation": "To collect as much data as possible concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary goal when framing a machine learning problem?"
+      ]
+    }
+  },
+  {
+    "question": "Which technique can be used to prevent overfitting in machine learning models?",
+    "answers": [
+      {
+        "text": "Cross-validation",
+        "correct": true,
+        "explanation": "Cross-validation identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Using a smaller dataset",
+        "correct": false,
+        "explanation": "Using a smaller dataset concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Increasing the complexity of the model",
+        "correct": false,
+        "explanation": "Increasing the complexity of the model concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Regularization",
+        "correct": true,
+        "explanation": "Regularization identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which technique can be used to prevent overfitting in machine learning models?"
+      ]
+    }
+  },
+  {
+    "question": "What is the benefit of using feature stores in ML system design?",
+    "answers": [
+      {
+        "text": "They reduce model accuracy",
+        "correct": false,
+        "explanation": "They reduce model accuracy concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "They help with feature reuse across teams",
+        "correct": true,
+        "explanation": "They help with feature reuse across teams identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "They eliminate the need for data preprocessing",
+        "correct": false,
+        "explanation": "They eliminate the need for data preprocessing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "They ensure consistency between training and inference",
+        "correct": true,
+        "explanation": "They ensure consistency between training and inference identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the benefit of using feature stores in ML system design?"
+      ]
+    }
+  }
+]

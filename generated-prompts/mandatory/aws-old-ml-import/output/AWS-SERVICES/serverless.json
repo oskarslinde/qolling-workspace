@@ -1,0 +1,335 @@
+[
+  {
+    "question": "Which AWS service is primarily designed to run containers without managing the underlying servers?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Fargate",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": false,
+        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false,
+        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Fargate",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Fargate"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Fargate exists to run containers without managing the underlying servers.",
+    "answerSource": "https://aws.amazon.com/fargate/"
+  },
+  {
+    "question": "Which pairing correctly matches AWS Lambda with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon EMR — run code in response to events without provisioning or managing servers",
+        "correct": false,
+        "explanation": "Amazon EMR — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
+      },
+      {
+        "text": "AWS Glue — run code in response to events without provisioning or managing servers",
+        "correct": false,
+        "explanation": "AWS Glue — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
+      },
+      {
+        "text": "Amazon Athena — run code in response to events without provisioning or managing servers",
+        "correct": false,
+        "explanation": "Amazon Athena — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
+      },
+      {
+        "text": "AWS Lambda — run code in response to events without provisioning or managing servers",
+        "correct": true,
+        "explanation": "AWS Lambda exists to run code in response to events without provisioning or managing servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Lambda",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Lambda"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Lambda exists to run code in response to events without provisioning or managing servers.",
+    "answerSource": "https://aws.amazon.com/lambda/"
+  },
+  {
+    "question": "Which service is the best fit for running code in response to events without managing servers?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Fargate",
+        "correct": false,
+        "explanation": "AWS Fargate is designed to run containers without managing the underlying servers, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false,
+        "explanation": "Choose AWS Batch when the requirement is to run large numbers of batch computing jobs while managing compute resources for you. Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "Amazon EC2 is designed to provide resizable virtual servers and control over their operating environments, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Distinguish AWS Lambda from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs.",
+    "answerSource": "https://aws.amazon.com/lambda/"
+  },
+  {
+    "question": "Which AWS service should a team select to run containers without managing the underlying servers?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "AWS Glue is designed to discover, prepare, transform, and catalog data for analytics workflows, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Fargate",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Firewall Manager",
+        "correct": false,
+        "explanation": "AWS Firewall Manager is designed to centrally configure and manage firewall rules across accounts and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Fargate",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS Fargate for a requirement to run containers without managing the underlying servers"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Fargate when the requirement is to run containers without managing the underlying servers.",
+    "answerSource": "https://aws.amazon.com/fargate/"
+  },
+  {
+    "question": "A team needs to run code in response to events without provisioning or managing servers. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": true,
+        "explanation": "AWS Lambda exists to run code in response to events without provisioning or managing servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Marketplace",
+        "correct": false,
+        "explanation": "AWS Marketplace is designed to discover, purchase, and deploy third-party software and services for AWS, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Migration Hub",
+        "correct": false,
+        "explanation": "AWS Migration Hub is designed to track migration progress across multiple AWS migration tools, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Lambda",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Lambda for a requirement to run code in response to events without provisioning or managing servers"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Lambda when the requirement is to run code in response to events without provisioning or managing servers.",
+    "answerSource": "https://aws.amazon.com/lambda/"
+  },
+  {
+    "question": "Which relationship between AWS Fargate and AWS Lambda is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Fargate is used to run code in response to events without provisioning or managing servers, whereas AWS Lambda is used to run containers without managing the underlying servers.",
+        "correct": false,
+        "explanation": "AWS Fargate is used to run code in response to events without provisioning or managing servers, whereas AWS Lambda is used to run containers without managing the underlying servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing."
+      },
+      {
+        "text": "Both services are primarily used to run containers without managing the underlying servers.",
+        "correct": false,
+        "explanation": "That describes AWS Fargate, but AWS Lambda is primarily used to run code in response to events without provisioning or managing servers."
+      },
+      {
+        "text": "Both services are primarily used to run code in response to events without provisioning or managing servers.",
+        "correct": false,
+        "explanation": "Both services are primarily used to run code in response to events without provisioning or managing servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "AWS Fargate is used to run containers without managing the underlying servers, whereas AWS Lambda is used to run code in response to events without provisioning or managing servers.",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Fargate",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Fargate from AWS Lambda"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Fargate is used to run containers without managing the underlying servers, while AWS Lambda is used to run code in response to events without provisioning or managing servers.",
+    "answerSource": "https://aws.amazon.com/fargate/"
+  },
+  {
+    "question": "When should a team choose AWS Lambda instead of AWS Fargate?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to run code in response to events without provisioning or managing servers, rather than to run containers without managing the underlying servers.",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to run containers without managing the underlying servers, rather than to run code in response to events without provisioning or managing servers.",
+        "correct": false,
+        "explanation": "When the requirement is to run containers without managing the underlying servers, rather than to run code in response to events without provisioning or managing servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers.."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Lambda",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Lambda from AWS Fargate"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Lambda is used to run code in response to events without provisioning or managing servers, while AWS Fargate is used to run containers without managing the underlying servers.",
+    "answerSource": "https://aws.amazon.com/lambda/"
+  }
+]

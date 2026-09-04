@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Which statement best describes Framework/proxy limitations in practical Java OOP?",
+    "answers": [
+      {
+        "text": "Design proxied behavior around public bean-to-bean calls while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Framework/proxy limitations mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Framework/proxy limitations should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Framework/proxy limitations only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Framework/proxy limitations when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "conceptual",
+      "conceptual framework proxy limitations 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-framework-proxy-limitations-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Framework/proxy limitations are useful when they improve object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\nclass BillingService {\n    public void charge() { saveCharge(); }\n    public void saveCharge() { /* expected transactional advice here */ }\n}\nnew BillingService().charge();\n```\n\nWhich option best explains the runtime behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates Spring proxies, final methods/classes, and self-invocation and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "code reading",
+      "code reading framework proxy limitations 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-framework-proxy-limitations-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Framework/proxy limitations through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Framework/proxy limitations. The symptom is: self-invocation bypasses proxy advice such as transactions. What is the best first fix?\n\nChoose the fix that best addresses the root cause.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "debugging",
+      "debugging framework proxy limitations 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-framework-proxy-limitations-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Framework/proxy limitations. The symptom is: self-invocation bypasses proxy advice such as transactions. What is the best first fix?\n\nChoose the fix that best addresses the contract repair.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "debugging",
+      "debugging framework proxy limitations 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-framework-proxy-limitations-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Framework/proxy limitations?\n\nChoose the design that best balances extension design for framework proxy limitations.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use design proxied behavior around public bean-to-bean calls, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "design scenario",
+      "design scenario framework proxy limitations 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-framework-proxy-limitations-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Framework/proxy limitations should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Framework/proxy limitations?\n\nChoose the design that best balances layered architecture for framework proxy limitations.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use design proxied behavior around public bean-to-bean calls, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "framework",
+      "proxy",
+      "design scenario",
+      "design scenario framework proxy limitations 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "framework-proxy-limitations",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-framework-proxy-limitations-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Framework/proxy limitations should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  }
+]

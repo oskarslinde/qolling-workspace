@@ -1,0 +1,1069 @@
+[
+  {
+    "question": "Which AWS service is designed for real-time application monitoring and observability?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "Amazon SNS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the main function of AWS CodePipeline?",
+    "answers": [
+      {
+        "text": "Automating the build, test, and deploy phases of your release process.",
+        "correct": true
+      },
+      {
+        "text": "Storing and versioning source code.",
+        "correct": false
+      },
+      {
+        "text": "Monitoring application performance.",
+        "correct": false
+      },
+      {
+        "text": "Managing infrastructure as code.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are best practices when using AWS X-Ray?",
+    "answers": [
+      {
+        "text": "Instrument all critical services and functions",
+        "correct": true
+      },
+      {
+        "text": "Use sampling to reduce overhead",
+        "correct": true
+      },
+      {
+        "text": "Disable tracing in production environments",
+        "correct": false
+      },
+      {
+        "text": "Use X-Ray with CloudWatch for enhanced observability",
+        "correct": true
+      },
+      {
+        "text": "Store trace data in S3 manually",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service can be used to automate the deployment of machine learning models?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is designed to help you manage and automate backups across AWS services?",
+    "answers": [
+      {
+        "text": "AWS Backup",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "Medium",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used to orchestrate steps in a machine learning pipeline, such as model training and deployment?",
+    "answers": [
+      {
+        "text": "AWS Step Functions",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false
+      },
+      {
+        "text": "Amazon MWAA",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You’re a DevOps engineer setting up a CI/CD pipeline. You want to automate code builds, tests, and deployments every time a developer pushes to Git. Which AWS service should you use?",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false
+      },
+      {
+        "text": "AWS CodeCommit",
+        "correct": false
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Your application is experiencing intermittent high latency. You need to analyze the logs to find patterns over time. Which CloudWatch feature would you use?",
+    "answers": [
+      {
+        "text": "CloudWatch Logs Insights",
+        "correct": true
+      },
+      {
+        "text": "CloudWatch Logs",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Alarms",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Dashboards",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "You want to stream real-time log data from CloudWatch Logs to Amazon S3 for archival. What approach should you take?",
+    "answers": [
+      {
+        "text": "Use CloudWatch Logs Subscriptions.",
+        "correct": true
+      },
+      {
+        "text": "Set up a CloudWatch Dashboard.",
+        "correct": false
+      },
+      {
+        "text": "Use CloudWatch Metric Streams.",
+        "correct": false
+      },
+      {
+        "text": "Use the CloudWatch Logs Export feature.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 4
+  },
+  {
+    "question": "Your company needs to monitor and manage costs associated with AWS usage. Which service should you use?",
+    "answers": [
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false
+      },
+      {
+        "text": "AWS Cost Explorer",
+        "correct": true
+      },
+      {
+        "text": "CloudWatch Metrics",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service provides a near real-time stream of system and application logs?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudWatch Logs",
+        "correct": true
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid states for a CloudWatch Alarm?",
+    "answers": [
+      {
+        "text": "OK",
+        "correct": true
+      },
+      {
+        "text": "ALARM",
+        "correct": true
+      },
+      {
+        "text": "INSUFFICIENT_DATA",
+        "correct": true
+      },
+      {
+        "text": "PENDING",
+        "correct": false
+      },
+      {
+        "text": "FAILED",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are best practices when using CloudWatch Alarms?",
+    "answers": [
+      {
+        "text": "Use descriptive names for alarms",
+        "correct": true
+      },
+      {
+        "text": "Set alarms on critical metrics like CPU and memory usage",
+        "correct": true
+      },
+      {
+        "text": "Disable alarms to reduce costs",
+        "correct": false
+      },
+      {
+        "text": "Use SNS to notify multiple recipients",
+        "correct": true
+      },
+      {
+        "text": "Create alarms only in the root account",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used to build, test, and deploy code in a continuous integration and continuous delivery (CI/CD) pipeline?",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false
+      },
+      {
+        "text": "AWS CodeCommit",
+        "correct": false
+      },
+      {
+        "text": "AWS CodeDeploy",
+        "correct": false
+      },
+      {
+        "text": "All of the above",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "If you want to detect unusual API activity, such as a spike in failed login attempts, which AWS service should you use?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail Insights",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudWatch Logs",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS GuardDuty",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services can be integrated with AWS X-Ray for tracing?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which steps can help troubleshoot slow performance in Amazon RDS?",
+    "answers": [
+      {
+        "text": "Check CloudWatch metrics for CPU and memory usage",
+        "correct": true
+      },
+      {
+        "text": "Enable Multi-AZ deployment",
+        "correct": false
+      },
+      {
+        "text": "Analyze slow query logs",
+        "correct": true
+      },
+      {
+        "text": "Upgrade to a larger instance class",
+        "correct": true
+      },
+      {
+        "text": "Disable backups",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service integrates directly with CloudTrail Insights for alerting?",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "You are tasked with setting up a CI/CD pipeline that automatically builds, tests, and deploys your application. Which AWS service should you use?",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false
+      },
+      {
+        "text": "AWS CodeCommit",
+        "correct": false
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is AWS CDK used for?",
+    "answers": [
+      {
+        "text": "To define cloud infrastructure using code",
+        "correct": true
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false
+      },
+      {
+        "text": "To store data in the cloud",
+        "correct": false
+      },
+      {
+        "text": "To automate CI/CD pipelines",
+        "correct": true
+      },
+      {
+        "text": "To monitor cloud resources",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "You need to ensure that a specific S3 bucket is not publicly accessible. Which AWS service can help you audit this?",
+    "answers": [
+      {
+        "text": "CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      },
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which AWS service should you use to detect unusual activity, like unauthorized access attempts, in your account?",
+    "answers": [
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "CloudWatch Alarms",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail Insights",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is primarily used to monitor and log API activity across your AWS account?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services can be used to analyze CloudTrail logs?",
+    "answers": [
+      {
+        "text": "Amazon Athena",
+        "correct": true
+      },
+      {
+        "text": "AWS CloudWatch Logs Insights",
+        "correct": true
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services integrate with AWS Config for remediation?",
+    "answers": [
+      {
+        "text": "AWS Systems Manager Automation",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS Budget type helps you monitor your actual or forecasted AWS spending?",
+    "answers": [
+      {
+        "text": "Cost Budget",
+        "correct": true
+      },
+      {
+        "text": "Usage Budget",
+        "correct": false
+      },
+      {
+        "text": "RI Utilization Budget",
+        "correct": false
+      },
+      {
+        "text": "Savings Plans Coverage Budget",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key characteristic of a canary deployment?",
+    "answers": [
+      {
+        "text": "Releasing the new version to a small subset of users first",
+        "correct": true
+      },
+      {
+        "text": "Deploying the new version to all users at once",
+        "correct": false
+      },
+      {
+        "text": "Rolling back automatically without monitoring",
+        "correct": false
+      },
+      {
+        "text": "Using only on-premise infrastructure",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS services provide visibility into resource changes and user activity?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true
+      },
+      {
+        "text": "AWS Config",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service would you use to detect unusual API activity?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail Insights",
+        "correct": true
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS Shield",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In a canary deployment, what happens if the new version causes errors?",
+    "answers": [
+      {
+        "text": "The deployment can be rolled back before full rollout",
+        "correct": true
+      },
+      {
+        "text": "The system ignores the errors",
+        "correct": false
+      },
+      {
+        "text": "The new version is deployed to all users anyway",
+        "correct": false
+      },
+      {
+        "text": "The old version is deleted immediately",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of the AWS Well-Architected Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "To provide best practices for architecting machine learning workloads on AWS.",
+        "correct": true
+      },
+      {
+        "text": "To offer guidelines for deploying web applications on AWS.",
+        "correct": false
+      },
+      {
+        "text": "To help in managing databases on AWS.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the main difference between AWS Config and AWS CloudTrail?",
+    "answers": [
+      {
+        "text": "AWS Config tracks resource configurations over time, while CloudTrail logs API calls",
+        "correct": true
+      },
+      {
+        "text": "AWS Config is used for billing, while CloudTrail is for monitoring",
+        "correct": false
+      },
+      {
+        "text": "CloudTrail encrypts data, while Config does not",
+        "correct": false
+      },
+      {
+        "text": "AWS Config is a compute service, while CloudTrail is a storage service",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS Budget types are specifically designed for Reserved Instances (RIs)?",
+    "answers": [
+      {
+        "text": "RI Utilization Budget",
+        "correct": true
+      },
+      {
+        "text": "RI Coverage Budget",
+        "correct": true
+      },
+      {
+        "text": "Cost Budget",
+        "correct": false
+      },
+      {
+        "text": "Savings Plans Utilization Budget",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How far back can AWS Cost Explorer provide cost and usage data?",
+    "answers": [
+      {
+        "text": "Up to 12 months",
+        "correct": false
+      },
+      {
+        "text": "Up to 13 months",
+        "correct": true
+      },
+      {
+        "text": "Up to 6 months",
+        "correct": false
+      },
+      {
+        "text": "Up to 24 months",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is best suited for visualizing historical cost trends?",
+    "answers": [
+      {
+        "text": "AWS Cost Explorer",
+        "correct": true
+      },
+      {
+        "text": "AWS Budgets",
+        "correct": false
+      },
+      {
+        "text": "AWS Config",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services integrate with AWS Budgets for automation and notifications?",
+    "answers": [
+      {
+        "text": "Amazon SNS",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS support plans include full access to all Trusted Advisor checks?",
+    "answers": [
+      {
+        "text": "Business Support",
+        "correct": true
+      },
+      {
+        "text": "Enterprise Support",
+        "correct": true
+      },
+      {
+        "text": "Basic Support",
+        "correct": false
+      },
+      {
+        "text": "Developer Support",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How can users receive notifications about Trusted Advisor check status changes?",
+    "answers": [
+      {
+        "text": "By configuring Amazon CloudWatch and SNS",
+        "correct": true
+      },
+      {
+        "text": "By enabling AWS Config rules",
+        "correct": false
+      },
+      {
+        "text": "By using AWS Lambda triggers",
+        "correct": false
+      },
+      {
+        "text": "By subscribing to AWS Marketplace",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the main benefit of using linear deployment in ML model updates?",
+    "answers": [
+      {
+        "text": "Gradual traffic shifting reduces risk",
+        "correct": true
+      },
+      {
+        "text": "All users get the update immediately",
+        "correct": false
+      },
+      {
+        "text": "It requires no monitoring",
+        "correct": false
+      },
+      {
+        "text": "It eliminates the need for version control",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a common use case for linear deployments in ML workflows?",
+    "answers": [
+      {
+        "text": "Gradually increasing traffic to a new model version",
+        "correct": true
+      },
+      {
+        "text": "Training models on large datasets",
+        "correct": false
+      },
+      {
+        "text": "Labeling data for supervised learning",
+        "correct": false
+      },
+      {
+        "text": "Performing hyperparameter tuning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  }
+]

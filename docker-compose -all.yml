@@ -1,0 +1,35 @@
+services:
+  zeus:
+    build:
+      context: ./zeus
+      dockerfile: Dockerfile
+    container_name: qolling-zeus
+    environment:
+      SPRING_DATA_MONGODB_URI: ${SPRING_DATA_MONGODB_URI}
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE}
+    volumes:
+      - ./zeus/uploads/images:/app/uploads/images
+      - ./zeus/logs:/app/logs
+    ports:
+      - "8080:8080"
+      - "5005:5005"  # debug port
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/actuator/health"]
+      interval: 20s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+
+  hera:
+    build:
+      context: ./hera
+      dockerfile: Dockerfile
+    container_name: qolling-hera
+    depends_on:
+      - zeus
+    ports:
+      - "3000:80"   # Nginx serves production build
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped

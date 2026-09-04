@@ -1,0 +1,1503 @@
+[
+  {
+    "question": "In binary classification, what does the confusion matrix help you evaluate?",
+    "answers": [
+      {
+        "text": "True Positives",
+        "correct": true
+      },
+      {
+        "text": "False Negatives",
+        "correct": true
+      },
+      {
+        "text": "Clustering accuracy",
+        "correct": false
+      },
+      {
+        "text": "True Negatives",
+        "correct": true
+      },
+      {
+        "text": "False Positives",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are common threshold-based metrics used in binary classification?",
+    "answers": [
+      {
+        "text": "Precision",
+        "correct": true
+      },
+      {
+        "text": "Recall",
+        "correct": true
+      },
+      {
+        "text": "F1 Score",
+        "correct": true
+      },
+      {
+        "text": "Silhouette Score",
+        "correct": false
+      },
+      {
+        "text": "ROC AUC",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "Hard",
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What does R-squared (R²) measure in a regression model?",
+    "answers": [
+      {
+        "text": "The proportion of variance in the dependent variable explained by the model",
+        "correct": true
+      },
+      {
+        "text": "The average squared difference between predicted and actual values",
+        "correct": false
+      },
+      {
+        "text": "The number of correct classifications",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the F1 Score used for in classification problems?",
+    "answers": [
+      {
+        "text": "It balances precision and recall into a single metric",
+        "correct": true
+      },
+      {
+        "text": "It measures the variance explained by the model",
+        "correct": false
+      },
+      {
+        "text": "It calculates the average error in predictions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is an example of a regression problem?",
+    "answers": [
+      {
+        "text": "Predicting the price of a house",
+        "correct": true
+      },
+      {
+        "text": "Classifying emails as spam or not",
+        "correct": false
+      },
+      {
+        "text": "Grouping customers into segments",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an example of a binary classification problem?",
+    "answers": [
+      {
+        "text": "Predicting whether a transaction is fraudulent or not",
+        "correct": true
+      },
+      {
+        "text": "Predicting the price of a house",
+        "correct": false
+      },
+      {
+        "text": "Grouping customers into segments",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key characteristic of Decision Trees?",
+    "answers": [
+      {
+        "text": "Easy to interpret",
+        "correct": true
+      },
+      {
+        "text": "Reduces overfitting and improves accuracy",
+        "correct": false
+      },
+      {
+        "text": "Handles missing data and categorical variables well",
+        "correct": false
+      },
+      {
+        "text": "Computationally expensive for large datasets",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following describes Support Vector Machines (SVM)?",
+    "answers": [
+      {
+        "text": "Effective in high-dimensional spaces",
+        "correct": true
+      },
+      {
+        "text": "Can use kernels to handle non-linear decision boundaries",
+        "correct": true
+      },
+      {
+        "text": "Outputs probabilities for class membership",
+        "correct": false
+      },
+      {
+        "text": "Can model complex relationships",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of using a learning rate scheduler during model training?",
+    "answers": [
+      {
+        "text": "To increase the model size",
+        "correct": false
+      },
+      {
+        "text": "To adjust the learning rate dynamically",
+        "correct": true
+      },
+      {
+        "text": "To reduce the number of epochs",
+        "correct": false
+      },
+      {
+        "text": "To change the optimizer",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "In the context of deep learning, what is the purpose of batch normalization?",
+    "answers": [
+      {
+        "text": "To initialize weights",
+        "correct": false
+      },
+      {
+        "text": "To normalize activations",
+        "correct": true
+      },
+      {
+        "text": "To reduce overfitting",
+        "correct": false
+      },
+      {
+        "text": "To increase model complexity",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the main benefit of using attention mechanisms in neural networks?",
+    "answers": [
+      {
+        "text": "Reducing model size",
+        "correct": false
+      },
+      {
+        "text": "Improving interpretability",
+        "correct": false
+      },
+      {
+        "text": "Enhancing performance on sequential data",
+        "correct": true
+      },
+      {
+        "text": "Simplifying training",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Mean Squared Error (MSE) in regression analysis?",
+    "answers": [
+      {
+        "text": "The average of the squared differences between predicted and actual values",
+        "correct": true
+      },
+      {
+        "text": "The percentage of correct predictions",
+        "correct": false
+      },
+      {
+        "text": "The number of false positives",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does recall measure in a classification model?",
+    "answers": [
+      {
+        "text": "The proportion of actual positives that were correctly identified",
+        "correct": true
+      },
+      {
+        "text": "The proportion of predicted positives that are correct",
+        "correct": false
+      },
+      {
+        "text": "The overall accuracy of the model",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Hard",
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are supervised learning algorithms in machine learning?",
+    "answers": [
+      {
+        "text": "Algorithms that learn from labeled training data to make predictions",
+        "correct": true
+      },
+      {
+        "text": "Algorithms that group data without using labels",
+        "correct": false
+      },
+      {
+        "text": "Algorithms that generate new data from existing data",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "Medium",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a key characteristic of Logistic Regression?",
+    "answers": [
+      {
+        "text": "Simple and interpretable",
+        "correct": true
+      },
+      {
+        "text": "Assumes normal distribution of features",
+        "correct": false
+      },
+      {
+        "text": "Can overfit without pruning",
+        "correct": false
+      },
+      {
+        "text": "Effective in high-dimensional spaces",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following describes Feedforward Neural Networks (MLPs)?",
+    "answers": [
+      {
+        "text": "Can model complex relationships",
+        "correct": true
+      },
+      {
+        "text": "Requires more data and tuning",
+        "correct": true
+      },
+      {
+        "text": "Simple and interpretable",
+        "correct": false
+      },
+      {
+        "text": "Assumes normal distribution of features",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key characteristic of K-Nearest Neighbors (KNN)?",
+    "answers": [
+      {
+        "text": "Simple and intuitive",
+        "correct": true
+      },
+      {
+        "text": "Computationally expensive for large datasets",
+        "correct": true
+      },
+      {
+        "text": "Can overfit without pruning",
+        "correct": false
+      },
+      {
+        "text": "Effective in high-dimensional spaces",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are valid types of machine learning problems?",
+    "answers": [
+      {
+        "text": "Clustering problem",
+        "correct": true
+      },
+      {
+        "text": "Binary classification problem",
+        "correct": true
+      },
+      {
+        "text": "Regression problem",
+        "correct": true
+      },
+      {
+        "text": "Triangular optimization problem",
+        "correct": false
+      },
+      {
+        "text": "Multi-class classification problem",
+        "correct": true
+      },
+      {
+        "text": "Dimensionality reduction problem",
+        "correct": true
+      },
+      {
+        "text": "Circular prediction problem",
+        "correct": false
+      },
+      {
+        "text": "Reinforcement learning problem",
+        "correct": true
+      },
+      {
+        "text": "Feature inflation problem",
+        "correct": false
+      },
+      {
+        "text": "Anomaly detection problem",
+        "correct": true
+      },
+      {
+        "text": "Hyperparameter confusion problem",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are key characteristics of overfitting in a machine learning model?",
+    "answers": [
+      {
+        "text": "High accuracy on training data but poor performance on test data",
+        "correct": true
+      },
+      {
+        "text": "Model generalizes well to unseen data",
+        "correct": false
+      },
+      {
+        "text": "Model captures noise in the training data",
+        "correct": true
+      },
+      {
+        "text": "Model has low variance",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does the ROC curve represent in binary classification?",
+    "answers": [
+      {
+        "text": "Trade-off between true positive rate and false positive rate",
+        "correct": true
+      },
+      {
+        "text": "Model complexity vs. accuracy",
+        "correct": false
+      },
+      {
+        "text": "Precision vs. Recall",
+        "correct": false
+      },
+      {
+        "text": "Performance of a classifier across different thresholds",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does accuracy measure in a classification model?",
+    "answers": [
+      {
+        "text": "The proportion of total predictions that were correct",
+        "correct": true
+      },
+      {
+        "text": "The proportion of true positives among predicted positives",
+        "correct": false
+      },
+      {
+        "text": "The average squared error of predictions",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "Medium",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following describes Random Forest?",
+    "answers": [
+      {
+        "text": "Ensemble of decision trees",
+        "correct": true
+      },
+      {
+        "text": "Can overfit without pruning",
+        "correct": false
+      },
+      {
+        "text": "Simple and intuitive",
+        "correct": false
+      },
+      {
+        "text": "Based on Bayes’ theorem",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key characteristic of Naive Bayes?",
+    "answers": [
+      {
+        "text": "Based on Bayes’ theorem",
+        "correct": true
+      },
+      {
+        "text": "Assumes feature independence",
+        "correct": true
+      },
+      {
+        "text": "Can model complex relationships",
+        "correct": false
+      },
+      {
+        "text": "Ensemble of decision trees",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does it mean when a machine learning model makes probabilistic predictions?",
+    "answers": [
+      {
+        "text": "The model provides a probability score for each possible outcome, indicating its confidence.",
+        "correct": true
+      },
+      {
+        "text": "The model always returns a single, fixed class label with no uncertainty.",
+        "correct": false
+      },
+      {
+        "text": "The model randomly selects an output from the training data.",
+        "correct": false
+      },
+      {
+        "text": "The model uses probabilities to determine which features to include in training.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are embeddings in the context of natural language processing models?",
+    "answers": [
+      {
+        "text": "Embeddings are visual representations of neural network layers.",
+        "correct": false
+      },
+      {
+        "text": "Embeddings are random noise added to input data to improve generalization.",
+        "correct": false
+      },
+      {
+        "text": "Embeddings are dense vector representations of tokens that capture semantic meaning.",
+        "correct": true
+      },
+      {
+        "text": "Embeddings are the final output predictions of a language model.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "In the context of neural networks, what is the role of an activation function?",
+    "answers": [
+      {
+        "text": "To initialize weights",
+        "correct": false
+      },
+      {
+        "text": "To introduce non-linearity",
+        "correct": true
+      },
+      {
+        "text": "To normalize inputs",
+        "correct": false
+      },
+      {
+        "text": "To compute gradients",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In the context of deep learning, what is the role of a loss function?",
+    "answers": [
+      {
+        "text": "To initialize weights",
+        "correct": false
+      },
+      {
+        "text": "To compute gradients",
+        "correct": true
+      },
+      {
+        "text": "To measure model performance",
+        "correct": false
+      },
+      {
+        "text": "To normalize inputs",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which evaluation metrics are appropriate for a binary classification problem?",
+    "answers": [
+      {
+        "text": "Accuracy",
+        "correct": true
+      },
+      {
+        "text": "Mean Squared Error (MSE)",
+        "correct": false
+      },
+      {
+        "text": "Precision",
+        "correct": true
+      },
+      {
+        "text": "Recall",
+        "correct": true
+      },
+      {
+        "text": "R-squared",
+        "correct": false
+      },
+      {
+        "text": "F1 Score",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is binary classification in machine learning?",
+    "answers": [
+      {
+        "text": "A task where the model predicts one of two possible classes",
+        "correct": true
+      },
+      {
+        "text": "A task where the model predicts a continuous value",
+        "correct": false
+      },
+      {
+        "text": "A task where the model clusters data into groups",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does precision measure in a binary classification model?",
+    "answers": [
+      {
+        "text": "The proportion of true positives among all predicted positives",
+        "correct": true
+      },
+      {
+        "text": "The proportion of true positives among all actual positives",
+        "correct": false
+      },
+      {
+        "text": "The proportion of correct predictions overall",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is an example of a multi-class classification problem?",
+    "answers": [
+      {
+        "text": "Classifying types of fruits",
+        "correct": true
+      },
+      {
+        "text": "Predicting the price of a house",
+        "correct": false
+      },
+      {
+        "text": "Predicting whether an email is spam or not",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an example of a clustering problem?",
+    "answers": [
+      {
+        "text": "Grouping customers into segments",
+        "correct": true
+      },
+      {
+        "text": "Predicting the price of a house",
+        "correct": false
+      },
+      {
+        "text": "Classifying emails as spam or not",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which technique is used to prevent overfitting in neural networks by randomly setting some activations to zero during training?",
+    "answers": [
+      {
+        "text": "Dropout",
+        "correct": true
+      },
+      {
+        "text": "Batch Normalization",
+        "correct": false
+      },
+      {
+        "text": "Weight Decay",
+        "correct": false
+      },
+      {
+        "text": "Gradient Clipping",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the main advantage of using transfer learning in deep learning?",
+    "answers": [
+      {
+        "text": "Reducing the need for large datasets",
+        "correct": true
+      },
+      {
+        "text": "Increasing model complexity",
+        "correct": false
+      },
+      {
+        "text": "Enhancing model interpretability",
+        "correct": false
+      },
+      {
+        "text": "Simplifying the training process",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which technique is used to improve the generalization of a model by combining predictions from multiple models?",
+    "answers": [
+      {
+        "text": "Regularization",
+        "correct": false
+      },
+      {
+        "text": "Ensemble Learning",
+        "correct": true
+      },
+      {
+        "text": "Data Augmentation",
+        "correct": false
+      },
+      {
+        "text": "Hyperparameter Tuning",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of using a validation set during model training?",
+    "answers": [
+      {
+        "text": "To train the model",
+        "correct": false
+      },
+      {
+        "text": "To test the model",
+        "correct": false
+      },
+      {
+        "text": "To tune hyperparameters",
+        "correct": true
+      },
+      {
+        "text": "To evaluate model performance",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are Inference Pipelines?",
+    "answers": [
+      {
+        "text": "A feature that allows you to deploy multiple models in a sequence for inference, enabling complex workflows such as data preprocessing, model inference, and post-processing.",
+        "correct": true
+      },
+      {
+        "text": "A tool that continuously trains models in the background and deploys them to endpoints without user input.",
+        "correct": false
+      },
+      {
+        "text": "A monitoring dashboard that visualizes endpoint traffic and allows manual scaling of inference instances.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a Blue/Green rollout?",
+    "answers": [
+      {
+        "text": "A deployment strategy that reduces downtime and risk by running two identical environments.",
+        "correct": true
+      },
+      {
+        "text": "A method for scaling applications horizontally.",
+        "correct": false
+      },
+      {
+        "text": "A technique for managing database transactions.",
+        "correct": false
+      },
+      {
+        "text": "A process for encrypting data at rest.",
+        "correct": false
+      },
+      {
+        "text": "A strategy for load balancing network traffic.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are anti-patterns when using AWS Lambda?",
+    "answers": [
+      {
+        "text": "Keeping Lambda functions stateless",
+        "correct": false
+      },
+      {
+        "text": "Using long-running processes inside Lambda",
+        "correct": true
+      },
+      {
+        "text": "Packaging large dependencies unnecessarily",
+        "correct": true
+      },
+      {
+        "text": "Using environment variables for configuration",
+        "correct": false
+      },
+      {
+        "text": "Tightly coupling Lambda with a specific service",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Model Monitor Data Capture?",
+    "answers": [
+      {
+        "text": "A feature that captures real-time inference data from deployed models, enabling analysis of input and output data for monitoring and debugging purposes.",
+        "correct": true
+      },
+      {
+        "text": "A tool that retrains your machine learning models automatically whenever it detects a drop in accuracy.",
+        "correct": false
+      },
+      {
+        "text": "A visualization dashboard that provides real-time charts of model predictions and allows users to manually label incoming data for supervised learning.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How can accountability be achieved in AI systems?",
+    "answers": [
+      {
+        "text": "By having clear policies and procedures for addressing issues that arise.",
+        "correct": true
+      },
+      {
+        "text": "By making AI systems entertaining.",
+        "correct": false
+      },
+      {
+        "text": "By ensuring AI systems are profitable.",
+        "correct": false
+      },
+      {
+        "text": "By ensuring AI systems are transparent.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are use cases for Amazon A2I?",
+    "answers": [
+      {
+        "text": "Document processing",
+        "correct": true
+      },
+      {
+        "text": "Content moderation",
+        "correct": true
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false
+      },
+      {
+        "text": "Fraud detection",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which principles are essential when designing scalable machine learning systems on AWS?",
+    "answers": [
+      {
+        "text": "Decoupling components using managed services",
+        "correct": true
+      },
+      {
+        "text": "Hardcoding configurations into the model",
+        "correct": false
+      },
+      {
+        "text": "Using serverless architectures where possible",
+        "correct": true
+      },
+      {
+        "text": "Storing training data on local disks",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are common data preprocessing steps in a machine learning pipeline?",
+    "answers": [
+      {
+        "text": "Handling missing values",
+        "correct": true
+      },
+      {
+        "text": "Feature scaling",
+        "correct": true
+      },
+      {
+        "text": "Model deployment",
+        "correct": false
+      },
+      {
+        "text": "Encoding categorical variables",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of one-hot encoding in machine learning?",
+    "answers": [
+      {
+        "text": "To convert categorical variables into a numerical format",
+        "correct": true
+      },
+      {
+        "text": "To normalize numerical features",
+        "correct": false
+      },
+      {
+        "text": "To reduce the dimensionality of the dataset",
+        "correct": false
+      },
+      {
+        "text": "To encode text data into binary format",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a potential drawback of one-hot encoding?",
+    "answers": [
+      {
+        "text": "It introduces bias into the model",
+        "correct": false
+      },
+      {
+        "text": "It increases the dimensionality of the dataset",
+        "correct": true
+      },
+      {
+        "text": "It reduces model accuracy",
+        "correct": false
+      },
+      {
+        "text": "It is incompatible with neural networks",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "When should you avoid using one-hot encoding?",
+    "answers": [
+      {
+        "text": "When the categorical variable has a large number of unique values",
+        "correct": true
+      },
+      {
+        "text": "When using tree-based models",
+        "correct": false
+      },
+      {
+        "text": "When the categories are unordered",
+        "correct": false
+      },
+      {
+        "text": "When the model requires numerical input",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a best practice for feature engineering?",
+    "answers": [
+      {
+        "text": "Using domain knowledge to create meaningful features",
+        "correct": true
+      },
+      {
+        "text": "Ignoring missing values in the dataset",
+        "correct": false
+      },
+      {
+        "text": "Using one-hot encoding for categorical variables",
+        "correct": true
+      },
+      {
+        "text": "Using all available features without selection",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Why is it important to define success metrics when identifying ML business goals?",
+    "answers": [
+      {
+        "text": "To evaluate model performance against business outcomes",
+        "correct": true
+      },
+      {
+        "text": "To ensure the model is complex enough",
+        "correct": false
+      },
+      {
+        "text": "To reduce the need for data preprocessing",
+        "correct": false
+      },
+      {
+        "text": "To align stakeholders on expected results",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are examples of classification problems?",
+    "answers": [
+      {
+        "text": "Predicting whether a transaction is fraudulent",
+        "correct": true
+      },
+      {
+        "text": "Forecasting next month’s sales",
+        "correct": false
+      },
+      {
+        "text": "Identifying spam emails",
+        "correct": true
+      },
+      {
+        "text": "Recommending products to users",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which techniques are used to handle missing data?",
+    "answers": [
+      {
+        "text": "Imputation with mean or median",
+        "correct": true
+      },
+      {
+        "text": "Removing rows with missing values",
+        "correct": true
+      },
+      {
+        "text": "Replacing missing values with zeros without analysis",
+        "correct": false
+      },
+      {
+        "text": "Using models to predict missing values",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Why is it important to split the data into training and testing sets?",
+    "answers": [
+      {
+        "text": "To evaluate the model's performance on unseen data",
+        "correct": true
+      },
+      {
+        "text": "To ensure the model is overfitting",
+        "correct": false
+      },
+      {
+        "text": "To reduce the size of the dataset",
+        "correct": false
+      },
+      {
+        "text": "To improve the model's accuracy",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of hyperparameter tuning?",
+    "answers": [
+      {
+        "text": "To optimize the performance of the machine learning model",
+        "correct": true
+      },
+      {
+        "text": "To reduce the size of the dataset",
+        "correct": false
+      },
+      {
+        "text": "To select the best features for the model",
+        "correct": false
+      },
+      {
+        "text": "To deploy the model to production",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the first step in identifying a machine learning business goal?",
+    "answers": [
+      {
+        "text": "Collecting training data",
+        "correct": false
+      },
+      {
+        "text": "Understanding the business problem",
+        "correct": true
+      },
+      {
+        "text": "Choosing a machine learning algorithm",
+        "correct": false
+      },
+      {
+        "text": "Deploying a model to production",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the primary goal when framing a machine learning problem?",
+    "answers": [
+      {
+        "text": "To select the most complex algorithm",
+        "correct": false
+      },
+      {
+        "text": "To translate a business problem into a solvable ML task",
+        "correct": true
+      },
+      {
+        "text": "To deploy a model to production",
+        "correct": false
+      },
+      {
+        "text": "To collect as much data as possible",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are characteristics of one-hot encoding?",
+    "answers": [
+      {
+        "text": "Creates a new binary column for each category",
+        "correct": true
+      },
+      {
+        "text": "Can lead to high dimensionality with many categories",
+        "correct": true
+      },
+      {
+        "text": "Preserves ordinal relationships between categories",
+        "correct": false
+      },
+      {
+        "text": "Is suitable for numerical features",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which technique can be used to prevent overfitting in machine learning models?",
+    "answers": [
+      {
+        "text": "Cross-validation",
+        "correct": true
+      },
+      {
+        "text": "Using a smaller dataset",
+        "correct": false
+      },
+      {
+        "text": "Increasing the complexity of the model",
+        "correct": false
+      },
+      {
+        "text": "Regularization",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the benefit of using feature stores in ML system design?",
+    "answers": [
+      {
+        "text": "They reduce model accuracy",
+        "correct": false
+      },
+      {
+        "text": "They help with feature reuse across teams",
+        "correct": true
+      },
+      {
+        "text": "They eliminate the need for data preprocessing",
+        "correct": false
+      },
+      {
+        "text": "They ensure consistency between training and inference",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  }
+]

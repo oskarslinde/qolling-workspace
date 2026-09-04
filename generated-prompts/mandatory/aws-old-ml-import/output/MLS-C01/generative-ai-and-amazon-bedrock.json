@@ -1,0 +1,1419 @@
+[
+  {
+    "question": "You need to build a model that can generate text based on a given prompt. Which SageMaker algorithm should you use?",
+    "answers": [
+      {
+        "text": "Seq2Seq",
+        "correct": true,
+        "explanation": "Seq2Seq identifies the relevant SageMaker Algorithm concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "BlazingText",
+        "correct": false,
+        "explanation": "BlazingText concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "LDA",
+        "correct": false,
+        "explanation": "LDA concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Linear Learner",
+        "correct": false,
+        "explanation": "Linear Learner concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "SageMaker Algorithm",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "SageMaker Algorithm"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "SageMaker Algorithm",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You need to build a model that can generate text based on a given prompt. Which SageMaker algorithm should you use?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service would you use to quickly deploy a pre-trained model like GPT-J for text generation tasks?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon SageMaker JumpStart",
+        "correct": true,
+        "explanation": "Amazon SageMaker JumpStart identifies the relevant AWS Services concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Choose Amazon Comprehend when the requirement is to use natural language processing to discover insights and relationships in text. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Translate",
+        "correct": false,
+        "explanation": "Choose Amazon Translate when the requirement is to translate text between supported natural languages. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "AWS Services",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service would you use to quickly deploy a pre-trained model like GPT-J for text generation tasks?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a key benefit of using Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Manual scaling of resources",
+        "correct": false,
+        "explanation": "Manual scaling of resources concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automated model tuning",
+        "correct": true,
+        "explanation": "Automated model tuning identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Limited integration options",
+        "correct": false,
+        "explanation": "Limited integration options concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "High upfront costs",
+        "correct": false,
+        "explanation": "High upfront costs concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is a key benefit of using Amazon Bedrock?"
+      ]
+    }
+  },
+  {
+    "question": "Which security feature is included with Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Data encryption at rest",
+        "correct": true,
+        "explanation": "Data encryption at rest identifies the relevant Amazon Bedrock concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Manual access control",
+        "correct": false,
+        "explanation": "Manual access control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "No security features",
+        "correct": false,
+        "explanation": "No security features concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Third-party security integration",
+        "correct": false,
+        "explanation": "Third-party security integration concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Amazon Bedrock"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Amazon Bedrock",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which security feature is included with Amazon Bedrock?"
+      ]
+    }
+  },
+  {
+    "question": "You're implementing a customer query system that uses Amazon Bedrock's LLM agents. The agent needs to use both a knowledge base and an external API for retrieving real-time data. How should you structure the agent to meet these requirements?",
+    "answers": [
+      {
+        "text": "Create a single action group combining the knowledge base and the API.",
+        "correct": false,
+        "explanation": "Create a single action group combining the knowledge base and the API. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use separate action groups for the knowledge base and API, guiding the LLM on when to use each.",
+        "correct": true,
+        "explanation": "Use separate action groups for the knowledge base and API, guiding the LLM on when to use each. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Hardcode the API calls within the LLM prompt.",
+        "correct": false,
+        "explanation": "Hardcode the API calls within the LLM prompt. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Train the LLM to handle both tasks without external action groups.",
+        "correct": false,
+        "explanation": "Train the LLM to handle both tasks without external action groups. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You're implementing a customer query system that uses Amazon Bedrock's LLM agents. The agent needs to use both a knowledge base and an external API for retrieving real-time data. How should you structure the agent to meet these requirements?"
+      ]
+    }
+  },
+  {
+    "question": "You are using Amazon Bedrock to build an AI system for generating marketing content. The system must ensure the content generated adheres to brand guidelines and avoids inappropriate language. Which feature of Amazon Bedrock would best serve this purpose?",
+    "answers": [
+      {
+        "text": "Content filtering guardrails.",
+        "correct": true,
+        "explanation": "Content filtering guardrails. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Fine-tuning with labeled data.",
+        "correct": false,
+        "explanation": "Fine-tuning with labeled data. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "RAG with an up-to-date database.",
+        "correct": false,
+        "explanation": "RAG with an up-to-date database. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Integrating SageMaker Canvas.",
+        "correct": false,
+        "explanation": "Integrating SageMaker Canvas. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are using Amazon Bedrock to build an AI system for generating marketing content. The system must ensure the content generated adheres to brand guidelines and avoids inappropriate language. Which feature of Amazon Bedrock would best serve this purpose?"
+      ]
+    }
+  },
+  {
+    "question": "When setting up a new LLM agent in Amazon Bedrock, you want it to dynamically decide which tool to use based on the user's query. Which component is responsible for guiding the LLM in making this decision?",
+    "answers": [
+      {
+        "text": "Action Groups",
+        "correct": true,
+        "explanation": "Action Groups identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Vector Database",
+        "correct": false,
+        "explanation": "Vector Database concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Canvas",
+        "correct": false,
+        "explanation": "SageMaker Canvas concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Knowledge Base",
+        "correct": false,
+        "explanation": "Knowledge Base concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: When setting up a new LLM agent in Amazon Bedrock, you want it to dynamically decide which tool to use based on the user's query. Which component is responsible for guiding the LLM in making this decision?"
+      ]
+    }
+  },
+  {
+    "question": "You are tasked with deploying a Bedrock model that requires high availability and low-latency responses. Which deployment option should you choose?",
+    "answers": [
+      {
+        "text": "Provisioned Throughput",
+        "correct": false,
+        "explanation": "Provisioned Throughput concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "On-Demand Throughput",
+        "correct": false,
+        "explanation": "On-Demand Throughput concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Serverless Deployment",
+        "correct": false,
+        "explanation": "Serverless Deployment concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Model Evaluation with high availability settings",
+        "correct": true,
+        "explanation": "Model Evaluation with high availability settings identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 4,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are tasked with deploying a Bedrock model that requires high availability and low-latency responses. Which deployment option should you choose?"
+      ]
+    }
+  },
+  {
+    "question": "Your company is deploying a chatbot using a foundation model on Amazon Bedrock. You want to ensure it doesn’t respond to inappropriate topics or hallucinate facts. Which Bedrock feature should you use to enforce these safety measures?",
+    "answers": [
+      {
+        "text": "Guardrails (e.g., topic filtering, contextual grounding)",
+        "correct": true,
+        "explanation": "Guardrails (e.g., topic filtering, contextual grounding) identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model Monitor",
+        "correct": false,
+        "explanation": "Model Monitor concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "IAM Policies",
+        "correct": false,
+        "explanation": "IAM Policies concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "SageMaker Clarify concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Your company is deploying a chatbot using a foundation model on Amazon Bedrock. You want to ensure it doesn’t respond to inappropriate topics or hallucinate facts. Which Bedrock feature should you use to enforce these safety measures?"
+      ]
+    }
+  },
+  {
+    "question": "What does GPT stand for in the context of machine learning?",
+    "answers": [
+      {
+        "text": "Generative Pre-trained Transformer",
+        "correct": true,
+        "explanation": "Generative Pre-trained Transformer identifies the relevant GPT concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "General Purpose Transformer",
+        "correct": false,
+        "explanation": "General Purpose Transformer concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Generative Predictive Transformer",
+        "correct": false,
+        "explanation": "Generative Predictive Transformer concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "General Pre-trained Tokenizer",
+        "correct": false,
+        "explanation": "General Pre-trained Tokenizer concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "GPT",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "GPT"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "GPT",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does GPT stand for in the context of machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "You are using AWS SageMaker JumpStart to deploy a model for text generation. Which model type would you choose for multilingual text generation?",
+    "answers": [
+      {
+        "text": "GPT-3",
+        "correct": false,
+        "explanation": "GPT-3 concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Titan",
+        "correct": false,
+        "explanation": "Review the explanation for each option to understand the answer set. . The option addresses a different technical responsibility, whereas SageMaker Features provides the capability required by this workload."
+      },
+      {
+        "text": "Jurassic-2",
+        "correct": true,
+        "explanation": "Jurassic-2 identifies the relevant SageMaker Features concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Claude",
+        "correct": false,
+        "explanation": "Claude concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "SageMaker Features",
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "SageMaker Features"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "SageMaker Features",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are using AWS SageMaker JumpStart to deploy a model for text generation. Which model type would you choose for multilingual text generation?"
+      ]
+    }
+  },
+  {
+    "question": "Amazon Bedrock is designed to work with which type of data?",
+    "answers": [
+      {
+        "text": "Structured data only",
+        "correct": false,
+        "explanation": "Structured data only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Unstructured data only",
+        "correct": false,
+        "explanation": "Unstructured data only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both structured and unstructured data",
+        "correct": true,
+        "explanation": "Both structured and unstructured data identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Time-series data only",
+        "correct": false,
+        "explanation": "Time-series data only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Amazon Bedrock is designed to work with which type of data?"
+      ]
+    }
+  },
+  {
+    "question": "Amazon Bedrock allows for the deployment of models in which environments?",
+    "answers": [
+      {
+        "text": "On-premises only",
+        "correct": false,
+        "explanation": "On-premises only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Cloud only",
+        "correct": false,
+        "explanation": "Cloud only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both on-premises and cloud",
+        "correct": true,
+        "explanation": "Both on-premises and cloud identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Edge devices only",
+        "correct": false,
+        "explanation": "Edge devices only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Amazon Bedrock allows for the deployment of models in which environments?"
+      ]
+    }
+  },
+  {
+    "question": "You are developing a customer support chatbot using Amazon Bedrock. The chatbot needs to respond accurately to specific customer inquiries using recent company data. Which approach would be most effective for this scenario?",
+    "answers": [
+      {
+        "text": "Fine-tuning the foundational model with proprietary data.",
+        "correct": false,
+        "explanation": "Fine-tuning the foundational model with proprietary data. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using Retrieval-Augmented Generation (RAG) with a vector database.",
+        "correct": true,
+        "explanation": "Using Retrieval-Augmented Generation (RAG) with a vector database. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Manually coding responses for common inquiries.",
+        "correct": false,
+        "explanation": "Manually coding responses for common inquiries. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Relying on pre-trained models without any modifications.",
+        "correct": false,
+        "explanation": "Relying on pre-trained models without any modifications. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are developing a customer support chatbot using Amazon Bedrock. The chatbot needs to respond accurately to specific customer inquiries using recent company data. Which approach would be most effective for this scenario?"
+      ]
+    }
+  },
+  {
+    "question": "You are building a chatbot using Amazon Bedrock that must access both structured and unstructured data sources. What is the best approach to integrate these data types?",
+    "answers": [
+      {
+        "text": "Use a fine-tuned model trained on both data types.",
+        "correct": false,
+        "explanation": "Use a fine-tuned model trained on both data types. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Store all data in a relational database and query it directly.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. . The option addresses a different technical responsibility, whereas MLS-C01 provides the capability required by this workload."
+      },
+      {
+        "text": "Use RAG with a vector database for unstructured data and API calls for structured data.",
+        "correct": true,
+        "explanation": "Use RAG with a vector database for unstructured data and API calls for structured data. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Convert all data to text and embed it into the model prompt.",
+        "correct": false,
+        "explanation": "Convert all data to text and embed it into the model prompt. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are building a chatbot using Amazon Bedrock that must access both structured and unstructured data sources. What is the best approach to integrate these data types?"
+      ]
+    }
+  },
+  {
+    "question": "You want to ensure that your Amazon Bedrock agent does not access certain tools in specific contexts. What should you use?",
+    "answers": [
+      {
+        "text": "Action Group Filters",
+        "correct": true,
+        "explanation": "Action Group Filters identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Guardrails",
+        "correct": false,
+        "explanation": "Guardrails concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "IAM Roles",
+        "correct": false,
+        "explanation": "IAM Roles concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Prompt Engineering",
+        "correct": false,
+        "explanation": "Prompt Engineering concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You want to ensure that your Amazon Bedrock agent does not access certain tools in specific contexts. What should you use?"
+      ]
+    }
+  },
+  {
+    "question": "You want to deploy a Bedrock model that automatically scales based on usage and requires no infrastructure management. What should you use?",
+    "answers": [
+      {
+        "text": "Provisioned Throughput",
+        "correct": false,
+        "explanation": "Provisioned Throughput concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Serverless Deployment",
+        "correct": true,
+        "explanation": "Serverless Deployment identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "On-Demand Inference",
+        "correct": false,
+        "explanation": "On-Demand Inference concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "SageMaker Neo",
+        "correct": false,
+        "explanation": "SageMaker Neo concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You want to deploy a Bedrock model that automatically scales based on usage and requires no infrastructure management. What should you use?"
+      ]
+    }
+  },
+  {
+    "question": "Which feature of Amazon Bedrock Guardrails helps filter out inappropriate language?",
+    "answers": [
+      {
+        "text": "Word filtering",
+        "correct": true,
+        "explanation": "Word filtering identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Topic filtering",
+        "correct": false,
+        "explanation": "Topic filtering concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Contextual Grounding Check",
+        "correct": false,
+        "explanation": "Contextual Grounding Check concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Sentiment Analysis",
+        "correct": false,
+        "explanation": "Sentiment Analysis concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which feature of Amazon Bedrock Guardrails helps filter out inappropriate language?"
+      ]
+    }
+  },
+  {
+    "question": "What are the features of Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Base models, custom models, imported models, playgrounds, safeguards, builder tools, assessment & deployment.",
+        "correct": true,
+        "explanation": "Base models, custom models, imported models, playgrounds, safeguards, builder tools, assessment & deployment. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Pre-trained models, data labeling, model monitoring, endpoint management.",
+        "correct": false,
+        "explanation": "Pre-trained models, data labeling, model monitoring, endpoint management. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Model training, hyperparameter tuning, real-time inference, batch processing.",
+        "correct": false,
+        "explanation": "Model training, hyperparameter tuning, real-time inference, batch processing. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Data preprocessing, feature engineering, model evaluation, deployment pipelines.",
+        "correct": false,
+        "explanation": "Data preprocessing, feature engineering, model evaluation, deployment pipelines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are the features of Amazon Bedrock?"
+      ]
+    }
+  },
+  {
+    "question": "Which feature of Amazon Bedrock allows for easy integration with other AWS services?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. . The option addresses a different technical responsibility, whereas Amazon Bedrock provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas Amazon Bedrock provides the capability required by this workload."
+      },
+      {
+        "text": "AWS SDKs",
+        "correct": true,
+        "explanation": "AWS SDKs identifies the relevant Amazon Bedrock concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. . The option addresses a different technical responsibility, whereas Amazon Bedrock provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Amazon Bedrock"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Amazon Bedrock",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which feature of Amazon Bedrock allows for easy integration with other AWS services?"
+      ]
+    }
+  },
+  {
+    "question": "Amazon Bedrock supports which type of machine learning models?",
+    "answers": [
+      {
+        "text": "Supervised learning models only",
+        "correct": false,
+        "explanation": "Supervised learning models only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Unsupervised learning models only",
+        "correct": false,
+        "explanation": "Unsupervised learning models only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Both supervised and unsupervised learning models",
+        "correct": true,
+        "explanation": "Both supervised and unsupervised learning models identifies the relevant Amazon Bedrock concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Reinforcement learning models only",
+        "correct": false,
+        "explanation": "Reinforcement learning models only concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Amazon Bedrock"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Amazon Bedrock",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Amazon Bedrock supports which type of machine learning models?"
+      ]
+    }
+  },
+  {
+    "question": "Amazon Bedrock provides pre-built models for which of the following tasks?",
+    "answers": [
+      {
+        "text": "Image recognition",
+        "correct": false,
+        "explanation": "Image recognition concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Text generation",
+        "correct": true,
+        "explanation": "Review the explanation for each option to understand the answer set. In this context, Bedrock, provides, pre-built, models determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Video processing",
+        "correct": false,
+        "explanation": "Video processing concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Audio analysis",
+        "correct": false,
+        "explanation": "Audio analysis concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Amazon Bedrock provides pre-built models for which of the following tasks?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a common use case for Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "Web hosting",
+        "correct": false,
+        "explanation": "Web hosting concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false,
+        "explanation": "Data warehousing consolidates data for analytical queries and reporting, commonly with services such as Amazon Redshift. It is not a content-delivery capability. . The option addresses a different technical responsibility, whereas Amazon Bedrock provides the capability required by this workload."
+      },
+      {
+        "text": "Predictive analytics",
+        "correct": true,
+        "explanation": "Predictive analytics identifies the relevant Amazon Bedrock concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Email marketing",
+        "correct": false,
+        "explanation": "Email marketing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Amazon Bedrock"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Amazon Bedrock",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is a common use case for Amazon Bedrock?"
+      ]
+    }
+  },
+  {
+    "question": "Your company wants to deploy a Bedrock-based AI system with the ability to write and execute Python code as part of its responses. Which feature should be enabled?",
+    "answers": [
+      {
+        "text": "Action Groups with a Code Interpreter",
+        "correct": true,
+        "explanation": "Action Groups with a Code Interpreter identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Model Evaluation for code execution",
+        "correct": false,
+        "explanation": "Model Evaluation for code execution concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Knowledge Base with embedded Python scripts",
+        "correct": false,
+        "explanation": "Knowledge Base with embedded Python scripts concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "RAG with integrated code modules",
+        "correct": false,
+        "explanation": "RAG with integrated code modules concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Your company wants to deploy a Bedrock-based AI system with the ability to write and execute Python code as part of its responses. Which feature should be enabled?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon Bedrock primarily used for?",
+    "answers": [
+      {
+        "text": "Data warehousing",
+        "correct": false,
+        "explanation": "Data warehousing consolidates data for analytical queries and reporting, commonly with services such as Amazon Redshift. It is not a content-delivery capability. . The option addresses a different technical responsibility, whereas Amazon Bedrock provides the capability required by this workload."
+      },
+      {
+        "text": "Machine learning model deployment",
+        "correct": true,
+        "explanation": "Machine learning model deployment identifies the relevant Amazon Bedrock concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Web hosting",
+        "correct": false,
+        "explanation": "Web hosting concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Database management",
+        "correct": false,
+        "explanation": "Database management concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Amazon Bedrock",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Amazon Bedrock"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "Amazon Bedrock",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon Bedrock primarily used for?"
+      ]
+    }
+  },
+  {
+    "question": "How does Amazon Bedrock handle model versioning?",
+    "answers": [
+      {
+        "text": "Manual version control",
+        "correct": false,
+        "explanation": "Manual version control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automated version control",
+        "correct": true,
+        "explanation": "Automated version control identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "No version control",
+        "correct": false,
+        "explanation": "No version control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Third-party version control",
+        "correct": false,
+        "explanation": "Third-party version control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How does Amazon Bedrock handle model versioning?"
+      ]
+    }
+  },
+  {
+    "question": "While working with Amazon Bedrock, you need to frequently update your knowledge base with new company policies. What is the most efficient way to handle this?",
+    "answers": [
+      {
+        "text": "Fine-tuning the model every time a policy changes.",
+        "correct": false,
+        "explanation": "Fine-tuning the model every time a policy changes. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Manually adding new policies to the LLM's training dataset.",
+        "correct": false,
+        "explanation": "Manually adding new policies to the LLM's training dataset. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using SageMaker Canvas to modify the model.",
+        "correct": false,
+        "explanation": "Using SageMaker Canvas to modify the model. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Updating the vector database used for Retrieval-Augmented Generation (RAG).",
+        "correct": true,
+        "explanation": "Updating the vector database used for Retrieval-Augmented Generation (RAG). identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: While working with Amazon Bedrock, you need to frequently update your knowledge base with new company policies. What is the most efficient way to handle this?"
+      ]
+    }
+  },
+  {
+    "question": "You're working on a Bedrock model that needs to incorporate sensitive customer data during fine-tuning. What steps should you take to ensure the security of this data?",
+    "answers": [
+      {
+        "text": "Use a VPC and PrivateLink for data transfer during fine-tuning.",
+        "correct": false,
+        "explanation": "Use a VPC and PrivateLink for data transfer during fine-tuning. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Encrypt the data using Amazon KMS and then fine-tune the model.",
+        "correct": false,
+        "explanation": "Encrypt the data using Amazon KMS and then fine-tune the model. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Ensure data is anonymized before fine-tuning.",
+        "correct": false,
+        "explanation": "Ensure data is anonymized before fine-tuning. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use SageMaker Canvas to fine-tune the model in a secure environment.",
+        "correct": true,
+        "explanation": "Use SageMaker Canvas to fine-tune the model in a secure environment. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You're working on a Bedrock model that needs to incorporate sensitive customer data during fine-tuning. What steps should you take to ensure the security of this data?"
+      ]
+    }
+  },
+  {
+    "question": "Your team is planning to deploy a generative AI model in a serverless environment using Amazon Bedrock. What advantage does this provide?",
+    "answers": [
+      {
+        "text": "Increased control over the underlying hardware.",
+        "correct": false,
+        "explanation": "Increased control over the underlying hardware. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Lower latency in model inference.",
+        "correct": false,
+        "explanation": "Lower latency in model inference. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Automatic scaling without managing infrastructure.",
+        "correct": true,
+        "explanation": "Automatic scaling without managing infrastructure. identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ability to use custom GPU configurations.",
+        "correct": false,
+        "explanation": "Ability to use custom GPU configurations. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Your team is planning to deploy a generative AI model in a serverless environment using Amazon Bedrock. What advantage does this provide?"
+      ]
+    }
+  },
+  {
+    "question": "You are creating a custom model in Amazon Bedrock that will require additional training data. What type of training should you use if the data is not labeled?",
+    "answers": [
+      {
+        "text": "Fine-Tuning",
+        "correct": false,
+        "explanation": "Fine-Tuning concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "RAG-based Retrieval",
+        "correct": false,
+        "explanation": "RAG-based Retrieval concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Action Group Training",
+        "correct": false,
+        "explanation": "Action Group Training concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Continued Pre-Training",
+        "correct": true,
+        "explanation": "Continued Pre-Training identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You are creating a custom model in Amazon Bedrock that will require additional training data. What type of training should you use if the data is not labeled?"
+      ]
+    }
+  },
+  {
+    "question": "Which component in Amazon Bedrock allows you to define how an LLM should interact with external tools?",
+    "answers": [
+      {
+        "text": "Guardrails",
+        "correct": false,
+        "explanation": "Guardrails concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Action Groups",
+        "correct": true,
+        "explanation": "Action Groups identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Knowledge Base",
+        "correct": false,
+        "explanation": "Knowledge Base concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Prompt Templates",
+        "correct": false,
+        "explanation": "Prompt Templates concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which component in Amazon Bedrock allows you to define how an LLM should interact with external tools?"
+      ]
+    }
+  },
+  {
+    "question": "Which features are part of Amazon Bedrock Guardrails?",
+    "answers": [
+      {
+        "text": "Word filtering",
+        "correct": true,
+        "explanation": "Word filtering identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Topic filtering",
+        "correct": true,
+        "explanation": "Topic filtering identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Contextual grounding check",
+        "correct": true,
+        "explanation": "Contextual grounding check identifies the relevant MLS-C01 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data encryption",
+        "correct": false,
+        "explanation": "Data encryption concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which features are part of Amazon Bedrock Guardrails?"
+      ]
+    }
+  }
+]

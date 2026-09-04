@@ -1,0 +1,3695 @@
+[
+  {
+    "question": "What are Inference Pipelines?",
+    "answers": [
+      {
+        "text": "A feature that allows you to deploy multiple models in a sequence for inference, enabling complex workflows such as data preprocessing, model inference, and post-processing.",
+        "correct": true,
+        "explanation": "This is correct because an inference pipeline chains preprocessing, inference, and postprocessing stages; it is not a retraining, monitoring, or storage feature."
+      },
+      {
+        "text": "A tool that continuously trains models in the background and deploys them to endpoints without user input.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: an inference pipeline chains preprocessing, inference, and postprocessing stages; it is not a retraining, monitoring, or storage feature."
+      },
+      {
+        "text": "A monitoring dashboard that visualizes endpoint traffic and allows manual scaling of inference instances.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: an inference pipeline chains preprocessing, inference, and postprocessing stages; it is not a retraining, monitoring, or storage feature."
+      },
+      {
+        "text": "A feature that stores training data in a relational database",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: an inference pipeline chains preprocessing, inference, and postprocessing stages; it is not a retraining, monitoring, or storage feature."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "1.3.01"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Machine learning foundations",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/inference-pipeline.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Why is it important to split the data into training and testing sets?",
+    "answers": [
+      {
+        "text": "To evaluate the model's performance on unseen data",
+        "correct": true,
+        "explanation": "This is correct because a held-out test set estimates performance on unseen data and helps identify overfitting rather than forcing it or improving accuracy itself."
+      },
+      {
+        "text": "To ensure the model is overfitting",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a held-out test set estimates performance on unseen data and helps identify overfitting rather than forcing it or improving accuracy itself."
+      },
+      {
+        "text": "To reduce the size of the dataset",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a held-out test set estimates performance on unseen data and helps identify overfitting rather than forcing it or improving accuracy itself."
+      },
+      {
+        "text": "To improve the model's accuracy",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: a held-out test set estimates performance on unseen data and helps identify overfitting rather than forcing it or improving accuracy itself."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01",
+      "1.3.02"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Machine learning foundations",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://scikit-learn.org/stable/supervised_learning.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What does accuracy measure in a classification model?",
+    "answers": [
+      {
+        "text": "The proportion of total predictions that were correct",
+        "correct": true,
+        "explanation": "This is correct because accuracy is the fraction of all predictions that are correct, unlike precision, recall, or squared error."
+      },
+      {
+        "text": "The proportion of true positives among predicted positives",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: accuracy is the fraction of all predictions that are correct, unlike precision, recall, or squared error."
+      },
+      {
+        "text": "The average squared error of predictions",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: accuracy is the fraction of all predictions that are correct, unlike precision, recall, or squared error."
+      },
+      {
+        "text": "The fraction of predicted positives that are true positives",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: accuracy is the fraction of all predictions that are correct, unlike precision, recall, or squared error."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "Medium",
+      "AIF-C01",
+      "1.3.11"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Machine-learning evaluation and problem types",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://scikit-learn.org/stable/supervised_learning.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering SageMaker AI. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "When its managed ML capabilities fit a use case at a high level.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "SageMaker AI",
+      "1.2.14"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "SageMaker AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "When its managed ML capabilities fit a use case at a high level."
+      ]
+    },
+    "answerDescription": "1.2.14: SageMaker AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving SageMaker AI, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "When its managed ML capabilities fit a use case at a high level.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "SageMaker AI",
+      "1.2.14"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "SageMaker AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "When its managed ML capabilities fit a use case at a high level."
+      ]
+    },
+    "answerDescription": "1.2.14: SageMaker AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes SageMaker AI from an unrelated concept?",
+    "answers": [
+      {
+        "text": "When its managed ML capabilities fit a use case at a high level.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "SageMaker AI",
+      "1.2.14"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "SageMaker AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "When its managed ML capabilities fit a use case at a high level."
+      ]
+    },
+    "answerDescription": "1.2.14: SageMaker AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes SageMaker AI in an AI/ML context?",
+    "answers": [
+      {
+        "text": "When its managed ML capabilities fit a use case at a high level.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "SageMaker AI",
+      "1.2.14"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "SageMaker AI",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "When its managed ML capabilities fit a use case at a high level."
+      ]
+    },
+    "answerDescription": "1.2.14: SageMaker AI.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Amazon Transcribe?",
+    "answers": [
+      {
+        "text": "Speech-to-text service selection.",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option addresses a different technical responsibility, whereas Amazon Transcribe provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Transcribe exists to convert speech to text using automatic speech recognition."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option addresses a different technical responsibility, whereas Amazon Transcribe provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Transcribe",
+      "1.2.15"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Transcribe",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Speech-to-text service selection."
+      ]
+    },
+    "answerDescription": "1.2.15: Amazon Transcribe.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Amazon Transcribe in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Speech-to-text service selection.",
+        "correct": true,
+        "explanation": "Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option addresses a different technical responsibility, whereas Amazon Transcribe provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Transcribe exists to convert speech to text using automatic speech recognition."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Transcribe exists to convert speech to text using automatic speech recognition. The option addresses a different technical responsibility, whereas Amazon Transcribe provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Transcribe",
+      "1.2.15"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Transcribe",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Speech-to-text service selection."
+      ]
+    },
+    "answerDescription": "1.2.15: Amazon Transcribe.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Amazon Translate. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Text translation service selection.",
+        "correct": true,
+        "explanation": "Amazon Translate exists to translate text between supported natural languages. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Translate exists to translate text between supported natural languages. The option addresses a different technical responsibility, whereas Amazon Translate provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Translate exists to translate text between supported natural languages."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Translate exists to translate text between supported natural languages. The option addresses a different technical responsibility, whereas Amazon Translate provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Translate",
+      "1.2.16"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Translate",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Text translation service selection."
+      ]
+    },
+    "answerDescription": "1.2.16: Amazon Translate.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Amazon Translate from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Text translation service selection.",
+        "correct": true,
+        "explanation": "Amazon Translate exists to translate text between supported natural languages. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Translate exists to translate text between supported natural languages. The option addresses a different technical responsibility, whereas Amazon Translate provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Translate exists to translate text between supported natural languages."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Translate exists to translate text between supported natural languages. The option addresses a different technical responsibility, whereas Amazon Translate provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Translate",
+      "1.2.16"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Translate",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Text translation service selection."
+      ]
+    },
+    "answerDescription": "1.2.16: Amazon Translate.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Amazon Comprehend, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Managed NLP analysis, such as entity or sentiment extraction.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Comprehend",
+      "1.2.17"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Comprehend",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Managed NLP analysis, such as entity or sentiment extraction."
+      ]
+    },
+    "answerDescription": "1.2.17: Amazon Comprehend.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Amazon Comprehend?",
+    "answers": [
+      {
+        "text": "Managed NLP analysis, such as entity or sentiment extraction.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Comprehend",
+      "1.2.17"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Comprehend",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Managed NLP analysis, such as entity or sentiment extraction."
+      ]
+    },
+    "answerDescription": "1.2.17: Amazon Comprehend.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Amazon Comprehend in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Managed NLP analysis, such as entity or sentiment extraction.",
+        "correct": true,
+        "explanation": "Amazon Comprehend exists to use natural language processing to discover insights and relationships in text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Comprehend exists to use natural language processing to discover insights and relationships in text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Comprehend",
+      "1.2.17"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Comprehend",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Managed NLP analysis, such as entity or sentiment extraction."
+      ]
+    },
+    "answerDescription": "1.2.17: Amazon Comprehend.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Amazon Lex. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Conversational bot interface and intent-based interaction.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Lex exists to build conversational interfaces using voice and text. The option addresses a different technical responsibility, whereas Amazon Lex provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Lex exists to build conversational interfaces using voice and text."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Lex",
+      "1.2.18"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Lex",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Conversational bot interface and intent-based interaction."
+      ]
+    },
+    "answerDescription": "1.2.18: Amazon Lex.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Amazon Lex, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Conversational bot interface and intent-based interaction.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Lex exists to build conversational interfaces using voice and text. The option addresses a different technical responsibility, whereas Amazon Lex provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Lex exists to build conversational interfaces using voice and text."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Lex exists to build conversational interfaces using voice and text. The option addresses a different technical responsibility, whereas Amazon Lex provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Lex",
+      "1.2.18"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Lex",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Conversational bot interface and intent-based interaction."
+      ]
+    },
+    "answerDescription": "1.2.18: Amazon Lex.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Amazon Lex from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Conversational bot interface and intent-based interaction.",
+        "correct": true,
+        "explanation": "Amazon Lex exists to build conversational interfaces using voice and text. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Lex exists to build conversational interfaces using voice and text. The option addresses a different technical responsibility, whereas Amazon Lex provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Lex exists to build conversational interfaces using voice and text."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Lex exists to build conversational interfaces using voice and text. The option addresses a different technical responsibility, whereas Amazon Lex provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Lex",
+      "1.2.18"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Lex",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Conversational bot interface and intent-based interaction."
+      ]
+    },
+    "answerDescription": "1.2.18: Amazon Lex.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Amazon Polly?",
+    "answers": [
+      {
+        "text": "Text-to-speech service selection.",
+        "correct": true,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Polly",
+      "1.2.19"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Polly",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Text-to-speech service selection."
+      ]
+    },
+    "answerDescription": "1.2.19: Amazon Polly.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Amazon Polly in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Text-to-speech service selection.",
+        "correct": true,
+        "explanation": "Amazon Polly exists to convert text into lifelike speech. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon Polly exists to convert text into lifelike speech. The option addresses a different technical responsibility, whereas Amazon Polly provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Amazon Polly",
+      "1.2.19"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Polly",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Text-to-speech service selection."
+      ]
+    },
+    "answerDescription": "1.2.19: Amazon Polly.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Pipeline stages. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload. For team, considering, Pipeline, stages., this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. For team, considering, Pipeline, stages., this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Pipeline stages",
+      "1.3.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Pipeline stages",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle."
+      ]
+    },
+    "answerDescription": "1.3.01: Pipeline stages.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Pipeline stages, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. For For, workload, involving, Pipeline, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Pipeline stages",
+      "1.3.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Pipeline stages",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle."
+      ]
+    },
+    "answerDescription": "1.3.01: Pipeline stages.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Pipeline stages?",
+    "answers": [
+      {
+        "text": "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. For key, limitation, boundary, Pipeline, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Pipeline stages",
+      "1.3.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Pipeline stages",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle."
+      ]
+    },
+    "answerDescription": "1.3.01: Pipeline stages.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Pipeline stages from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. For option, correctly, distinguishes, Pipeline, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Pipeline stages",
+      "1.3.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Pipeline stages",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle."
+      ]
+    },
+    "answerDescription": "1.3.01: Pipeline stages.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Pipeline stages in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle.",
+        "correct": true,
+        "explanation": "A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback. For statement, best, describes, Pipeline, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A machine-learning lifecycle moves from problem definition and data preparation through development, evaluation, deployment, monitoring, and feedback."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Pipeline stages",
+      "1.3.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Pipeline stages",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Problem, data, development, evaluation, deployment, monitoring, and feedback as a lifecycle."
+      ]
+    },
+    "answerDescription": "1.3.01: Pipeline stages.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Data preparation in the lifecycle, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Data quality/readiness as an input to training and evaluation, not implementation techniques.",
+        "correct": true,
+        "explanation": "Data preparation in the lifecycle is defined here as: Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Data preparation in the lifecycle",
+      "1.3.02"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Data preparation in the lifecycle",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      ]
+    },
+    "answerDescription": "1.3.02: Data preparation in the lifecycle.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Data preparation in the lifecycle?",
+    "answers": [
+      {
+        "text": "Data quality/readiness as an input to training and evaluation, not implementation techniques.",
+        "correct": true,
+        "explanation": "Data preparation in the lifecycle is defined here as: Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Data preparation cleans, transforms, and validates input data so model training uses representative, usable features. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Data preparation in the lifecycle",
+      "1.3.02"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Data preparation in the lifecycle",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      ]
+    },
+    "answerDescription": "1.3.02: Data preparation in the lifecycle.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Data preparation in the lifecycle in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Data quality/readiness as an input to training and evaluation, not implementation techniques.",
+        "correct": true,
+        "explanation": "Data preparation in the lifecycle is defined here as: Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Data preparation cleans, transforms, and validates input data so model training uses representative, usable features."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Data preparation in the lifecycle",
+      "1.3.02"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Data preparation in the lifecycle",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Data quality/readiness as an input to training and evaluation, not implementation techniques."
+      ]
+    },
+    "answerDescription": "1.3.02: Data preparation in the lifecycle.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Managed API production model. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Consuming a managed model/API versus hosting a model yourself.",
+        "correct": true,
+        "explanation": "A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Managed API production model",
+      "1.3.05"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Managed API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Consuming a managed model/API versus hosting a model yourself."
+      ]
+    },
+    "answerDescription": "1.3.05: Managed API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Managed API production model?",
+    "answers": [
+      {
+        "text": "Consuming a managed model/API versus hosting a model yourself.",
+        "correct": true,
+        "explanation": "A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Managed API production model",
+      "1.3.05"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Managed API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Consuming a managed model/API versus hosting a model yourself."
+      ]
+    },
+    "answerDescription": "1.3.05: Managed API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Managed API production model from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Consuming a managed model/API versus hosting a model yourself.",
+        "correct": true,
+        "explanation": "A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Managed API production model",
+      "1.3.05"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Managed API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Consuming a managed model/API versus hosting a model yourself."
+      ]
+    },
+    "answerDescription": "1.3.05: Managed API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Managed API production model in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Consuming a managed model/API versus hosting a model yourself.",
+        "correct": true,
+        "explanation": "A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A managed model API exposes inference through a provider-operated endpoint, reducing infrastructure management for production applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Managed API production model",
+      "1.3.05"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Managed API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Consuming a managed model/API versus hosting a model yourself."
+      ]
+    },
+    "answerDescription": "1.3.05: Managed API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Self-hosted API production model. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Operational ownership and trade-offs of hosting a model/API.",
+        "correct": true,
+        "explanation": "A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The option addresses a different."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Self-hosted API production model",
+      "1.3.06"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Self-hosted API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Operational ownership and trade-offs of hosting a model/API."
+      ]
+    },
+    "answerDescription": "1.3.06: Self-hosted API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Self-hosted API production model, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Operational ownership and trade-offs of hosting a model/API.",
+        "correct": true,
+        "explanation": "A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The option addresses a different."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Self-hosted API production model",
+      "1.3.06"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Self-hosted API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Operational ownership and trade-offs of hosting a model/API."
+      ]
+    },
+    "answerDescription": "1.3.06: Self-hosted API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Self-hosted API production model?",
+    "answers": [
+      {
+        "text": "Operational ownership and trade-offs of hosting a model/API.",
+        "correct": true,
+        "explanation": "A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The option addresses a different."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Self-hosted API production model",
+      "1.3.06"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Self-hosted API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Operational ownership and trade-offs of hosting a model/API."
+      ]
+    },
+    "answerDescription": "1.3.06: Self-hosted API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Self-hosted API production model in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Operational ownership and trade-offs of hosting a model/API.",
+        "correct": true,
+        "explanation": "A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance. The option addresses a different."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. A self-hosted model API runs on infrastructure the team operates, giving more deployment control but adding responsibility for scaling and maintenance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Self-hosted API production model",
+      "1.3.06"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Self-hosted API production model",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Operational ownership and trade-offs of hosting a model/API."
+      ]
+    },
+    "answerDescription": "1.3.06: Self-hosted API production model.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering AWS services by lifecycle stage. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For team, considering, services, lifecycle, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering AWS services by lifecycle stage. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For team, considering, services, lifecycle, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving AWS services by lifecycle stage, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For For, workload, involving, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of AWS services by lifecycle stage?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For key, limitation, boundary, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes AWS services by lifecycle stage from an unrelated concept?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. The option describes a capability that follows from this service's architecture and primary workload responsibility. For option, correctly, distinguishes, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For option, correctly, distinguishes, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes AWS services by lifecycle stage from an unrelated concept?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For option, correctly, distinguishes, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes AWS services by lifecycle stage in an AI/ML context?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For statement, best, describes, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes AWS services by lifecycle stage in an AI/ML context?",
+    "answers": [
+      {
+        "text": "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro.",
+        "correct": true,
+        "explanation": "AWS services by lifecycle stage is defined here as: High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models. For statement, best, describes, services, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Amazon SageMaker AI provides managed capabilities to build, train, tune, deploy, and monitor machine learning models."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "AWS services by lifecycle stage",
+      "1.3.07"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AWS services by lifecycle stage",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "High-level service mapping: Bedrock, SageMaker AI, Amazon Q, Amazon Quick, and Kiro."
+      ]
+    },
+    "answerDescription": "1.3.07: AWS services by lifecycle stage.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Experimentation and repeatability. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Experiments, reproducibility, and repeatable processes as MLOps concepts.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload. For team, considering, Experimentation, and, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. For team, considering, Experimentation, and, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Experimentation and repeatability",
+      "1.3.08"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Experimentation and repeatability",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Experiments, reproducibility, and repeatable processes as MLOps concepts."
+      ]
+    },
+    "answerDescription": "1.3.08: Experimentation and repeatability.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Experimentation and repeatability, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Experiments, reproducibility, and repeatable processes as MLOps concepts.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. For For, workload, involving, Experimentation, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Experimentation and repeatability",
+      "1.3.08"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Experimentation and repeatability",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Experiments, reproducibility, and repeatable processes as MLOps concepts."
+      ]
+    },
+    "answerDescription": "1.3.08: Experimentation and repeatability.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Experimentation and repeatability?",
+    "answers": [
+      {
+        "text": "Experiments, reproducibility, and repeatable processes as MLOps concepts.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. For key, limitation, boundary, Experimentation, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Experimentation and repeatability",
+      "1.3.08"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Experimentation and repeatability",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Experiments, reproducibility, and repeatable processes as MLOps concepts."
+      ]
+    },
+    "answerDescription": "1.3.08: Experimentation and repeatability.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Experimentation and repeatability in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Experiments, reproducibility, and repeatable processes as MLOps concepts.",
+        "correct": true,
+        "explanation": "Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes. For statement, best, describes, Experimentation, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Repeatable ML experiments record data, code, parameters, and results so teams can compare runs and reproduce model outcomes."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Experimentation and repeatability",
+      "1.3.08"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Experimentation and repeatability",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Experiments, reproducibility, and repeatable processes as MLOps concepts."
+      ]
+    },
+    "answerDescription": "1.3.08: Experimentation and repeatability.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Scalability, technical debt, and production readiness. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Operational concepts that distinguish a prototype from a sustainable ML system.",
+        "correct": true,
+        "explanation": "Scalability, technical debt, and production readiness is defined here as: Operational concepts that distinguish a prototype from a sustainable ML system."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Scalability, technical debt, and production readiness",
+      "1.3.09"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Scalability, technical debt, and production readiness",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Operational concepts that distinguish a prototype from a sustainable ML system."
+      ]
+    },
+    "answerDescription": "1.3.09: Scalability, technical debt, and production readiness.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Scalability, technical debt, and production readiness, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Operational concepts that distinguish a prototype from a sustainable ML system.",
+        "correct": true,
+        "explanation": "Scalability, technical debt, and production readiness is defined here as: Operational concepts that distinguish a prototype from a sustainable ML system."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Scalability, technical debt, and production readiness",
+      "1.3.09"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Scalability, technical debt, and production readiness",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Operational concepts that distinguish a prototype from a sustainable ML system."
+      ]
+    },
+    "answerDescription": "1.3.09: Scalability, technical debt, and production readiness.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Scalability, technical debt, and production readiness?",
+    "answers": [
+      {
+        "text": "Operational concepts that distinguish a prototype from a sustainable ML system.",
+        "correct": true,
+        "explanation": "Scalability, technical debt, and production readiness is defined here as: Operational concepts that distinguish a prototype from a sustainable ML system."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Scalability, technical debt, and production readiness",
+      "1.3.09"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Scalability, technical debt, and production readiness",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Operational concepts that distinguish a prototype from a sustainable ML system."
+      ]
+    },
+    "answerDescription": "1.3.09: Scalability, technical debt, and production readiness.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Scalability, technical debt, and production readiness from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Operational concepts that distinguish a prototype from a sustainable ML system.",
+        "correct": true,
+        "explanation": "Scalability, technical debt, and production readiness is defined here as: Operational concepts that distinguish a prototype from a sustainable ML system."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Scalability, technical debt, and production readiness",
+      "1.3.09"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Scalability, technical debt, and production readiness",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Operational concepts that distinguish a prototype from a sustainable ML system."
+      ]
+    },
+    "answerDescription": "1.3.09: Scalability, technical debt, and production readiness.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Scalability, technical debt, and production readiness in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Operational concepts that distinguish a prototype from a sustainable ML system.",
+        "correct": true,
+        "explanation": "Scalability, technical debt, and production readiness is defined here as: Operational concepts that distinguish a prototype from a sustainable ML system."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Production ML systems need scalable infrastructure, monitoring, maintainable dependencies, and controls for accumulated technical debt."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Scalability, technical debt, and production readiness",
+      "1.3.09"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Scalability, technical debt, and production readiness",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Operational concepts that distinguish a prototype from a sustainable ML system."
+      ]
+    },
+    "answerDescription": "1.3.09: Scalability, technical debt, and production readiness.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Model monitoring and retraining. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Detecting degradation and deciding when a model needs review or retraining.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Model monitoring and retraining",
+      "1.3.10"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Model monitoring and retraining",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Detecting degradation and deciding when a model needs review or retraining."
+      ]
+    },
+    "answerDescription": "1.3.10: Model monitoring and retraining.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Model monitoring and retraining, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Detecting degradation and deciding when a model needs review or retraining.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Model monitoring and retraining",
+      "1.3.10"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Model monitoring and retraining",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Detecting degradation and deciding when a model needs review or retraining."
+      ]
+    },
+    "answerDescription": "1.3.10: Model monitoring and retraining.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Model monitoring and retraining?",
+    "answers": [
+      {
+        "text": "Detecting degradation and deciding when a model needs review or retraining.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Model monitoring and retraining",
+      "1.3.10"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Model monitoring and retraining",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Detecting degradation and deciding when a model needs review or retraining."
+      ]
+    },
+    "answerDescription": "1.3.10: Model monitoring and retraining.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Model monitoring and retraining from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Detecting degradation and deciding when a model needs review or retraining.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The option addresses a."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Model monitoring and retraining",
+      "1.3.10"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Model monitoring and retraining",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Detecting degradation and deciding when a model needs review or retraining."
+      ]
+    },
+    "answerDescription": "1.3.10: Model monitoring and retraining.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Model monitoring and retraining in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Detecting degradation and deciding when a model needs review or retraining.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Model monitoring detects data drift, quality changes, or degraded predictions; retraining refreshes a model when new data or performance evidence justifies it. The option addresses a."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Model monitoring and retraining",
+      "1.3.10"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Model monitoring and retraining",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Detecting degradation and deciding when a model needs review or retraining."
+      ]
+    },
+    "answerDescription": "1.3.10: Model monitoring and retraining.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Accuracy, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Overall correct-prediction metric and its limitation with uneven classes.",
+        "correct": true,
+        "explanation": "Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Accuracy",
+      "1.3.11"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Accuracy",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Overall correct-prediction metric and its limitation with uneven classes."
+      ]
+    },
+    "answerDescription": "1.3.11: Accuracy.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Accuracy?",
+    "answers": [
+      {
+        "text": "Overall correct-prediction metric and its limitation with uneven classes.",
+        "correct": true,
+        "explanation": "Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Accuracy",
+      "1.3.11"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Accuracy",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Overall correct-prediction metric and its limitation with uneven classes."
+      ]
+    },
+    "answerDescription": "1.3.11: Accuracy.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Accuracy from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Overall correct-prediction metric and its limitation with uneven classes.",
+        "correct": true,
+        "explanation": "Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Accuracy is the proportion of all predictions that are correct; it can be misleading when classes are strongly imbalanced."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Accuracy",
+      "1.3.11"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Accuracy",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Overall correct-prediction metric and its limitation with uneven classes."
+      ]
+    },
+    "answerDescription": "1.3.11: Accuracy.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Precision. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Correctness among positive predictions and false-positive trade-off.",
+        "correct": true,
+        "explanation": "Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload. For team, considering, Precision., consideration, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. For team, considering, Precision., consideration, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Precision",
+      "1.3.12"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Precision",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Correctness among positive predictions and false-positive trade-off."
+      ]
+    },
+    "answerDescription": "1.3.12: Precision.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Precision, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Correctness among positive predictions and false-positive trade-off.",
+        "correct": true,
+        "explanation": "Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Precision",
+      "1.3.12"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Precision",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Correctness among positive predictions and false-positive trade-off."
+      ]
+    },
+    "answerDescription": "1.3.12: Precision.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Precision from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Correctness among positive predictions and false-positive trade-off.",
+        "correct": true,
+        "explanation": "Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Precision",
+      "1.3.12"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Precision",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Correctness among positive predictions and false-positive trade-off."
+      ]
+    },
+    "answerDescription": "1.3.12: Precision.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Precision in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Correctness among positive predictions and false-positive trade-off.",
+        "correct": true,
+        "explanation": "Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Precision is the fraction of predicted positive results that are truly positive, so it measures the reliability of positive predictions."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Precision",
+      "1.3.12"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Precision",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Correctness among positive predictions and false-positive trade-off."
+      ]
+    },
+    "answerDescription": "1.3.12: Precision.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Recall. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Ability to find actual positives and false-negative trade-off.",
+        "correct": true,
+        "explanation": "Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. For team, considering, Recall., consideration, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Recall",
+      "1.3.13"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Recall",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Ability to find actual positives and false-negative trade-off."
+      ]
+    },
+    "answerDescription": "1.3.13: Recall.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Recall?",
+    "answers": [
+      {
+        "text": "Ability to find actual positives and false-negative trade-off.",
+        "correct": true,
+        "explanation": "Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The option addresses a different technical."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Recall",
+      "1.3.13"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Recall",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Ability to find actual positives and false-negative trade-off."
+      ]
+    },
+    "answerDescription": "1.3.13: Recall.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Recall from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Ability to find actual positives and false-negative trade-off.",
+        "correct": true,
+        "explanation": "Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Recall",
+      "1.3.13"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Recall",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Ability to find actual positives and false-negative trade-off."
+      ]
+    },
+    "answerDescription": "1.3.13: Recall.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Recall in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Ability to find actual positives and false-negative trade-off.",
+        "correct": true,
+        "explanation": "Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class. The option addresses a different technical."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Recall is the fraction of actual positive cases found by the model, so it measures coverage of the positive class."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Recall",
+      "1.3.13"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Recall",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Ability to find actual positives and false-negative trade-off."
+      ]
+    },
+    "answerDescription": "1.3.13: Recall.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving F1 score, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Precision-recall balance and when it is useful.",
+        "correct": true,
+        "explanation": "Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For For, workload, involving, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For For, workload, involving, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "F1 score",
+      "1.3.14"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "F1 score",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Precision-recall balance and when it is useful."
+      ]
+    },
+    "answerDescription": "1.3.14: F1 score.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of F1 score?",
+    "answers": [
+      {
+        "text": "Precision-recall balance and when it is useful.",
+        "correct": true,
+        "explanation": "Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For key, limitation, boundary, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For key, limitation, boundary, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "F1 score",
+      "1.3.14"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "F1 score",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Precision-recall balance and when it is useful."
+      ]
+    },
+    "answerDescription": "1.3.14: F1 score.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes F1 score in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Precision-recall balance and when it is useful.",
+        "correct": true,
+        "explanation": "Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For statement, best, describes, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "The F1 score is the harmonic mean of precision and recall and balances false positives against false negatives in classification. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. For statement, best, describes, score, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Precision measures how many predicted positive results are actually positive. Recall instead measures how many actual positive cases a classifier successfully finds. The option addresses a."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "F1 score",
+      "1.3.14"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "F1 score",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Precision-recall balance and when it is useful."
+      ]
+    },
+    "answerDescription": "1.3.14: F1 score.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Business outcome metrics. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team is considering Business outcome metrics. Which consideration is most relevant?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "For a workload involving Business outcome metrics, which approach best fits the stated scope?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It should be evaluated against the task requirements and relevant data.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "What is a key limitation or boundary of Business outcome metrics?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT04",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which option correctly distinguishes Business outcome metrics from an unrelated concept?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement best describes Business outcome metrics in an AI/ML context?",
+    "answers": [
+      {
+        "text": "Cost per user, development cost, feedback, and ROI alongside model metrics.",
+        "correct": true,
+        "explanation": "Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The stated option is a lifecycle activity or service behavior that applies this concept in an AWS workload."
+      },
+      {
+        "text": "It is a fixed network-routing configuration.",
+        "correct": false,
+        "explanation": "Network routing controls how traffic reaches network destinations through components such as routes, gateways, and load balancers. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      },
+      {
+        "text": "It removes the need for data quality and evaluation.",
+        "correct": false,
+        "explanation": "Data quality checks and model evaluation remain necessary because training data and predictions can contain errors, bias, or performance regressions. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction. The option addresses a."
+      },
+      {
+        "text": "It is only an AWS billing and pricing mechanism.",
+        "correct": false,
+        "explanation": "Billing and pricing capabilities track, analyze, or control cloud spending and usage rather than performing machine-learning work. Business outcome metrics measure whether an AI system improves a real objective such as cost, conversion, fraud loss, latency, or customer satisfaction."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AIF-C01",
+      "Business outcome metrics",
+      "1.3.15"
+    ],
+    "difficulty": 1,
+    "categories": [
+      "AI Fundamentals"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Business outcome metrics",
+      "subtopic": "Domain 1 capacity coverage",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Cost per user, development cost, feedback, and ROI alongside model metrics."
+      ]
+    },
+    "answerDescription": "1.3.15: Business outcome metrics.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  }
+]

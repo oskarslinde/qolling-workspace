@@ -1,0 +1,1716 @@
+[
+  {
+    "question": "What is the primary purpose of Amazon API Gateway?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Create, publish, secure, monitor, and manage apis at scale",
+        "correct": true,
+        "explanation": "Amazon API Gateway exists to create, publish, secure, monitor, and manage APIs at scale. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Deliver content globally with low latency through a content delivery network",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Establish a dedicated network connection from a location to AWS",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "Improve availability and performance for internet applications using the AWS global network",
+        "correct": false,
+        "explanation": "AWS Global Accelerator has a different primary responsibility: it is designed to improve availability and performance for internet applications using the AWS global network."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon API Gateway",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon API Gateway"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon API Gateway exists to create, publish, secure, monitor, and manage APIs at scale.",
+    "answerSource": "https://aws.amazon.com/api-gateway/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to deliver content globally with low latency through a content delivery network?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator has a different primary responsibility: it is designed to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": true,
+        "explanation": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon CloudFront",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon CloudFront"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network.",
+    "answerSource": "https://aws.amazon.com/cloudfront/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Direct Connect?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Deliver content globally with low latency through a content delivery network",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Improve availability and performance for internet applications using the AWS global network",
+        "correct": false,
+        "explanation": "AWS Global Accelerator has a different primary responsibility: it is designed to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "Establish a dedicated network connection from a location to AWS",
+        "correct": true,
+        "explanation": "AWS Direct Connect exists to establish a dedicated network connection from a location to AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Deliver detailed AWS cost and usage data for analysis",
+        "correct": false,
+        "explanation": "That describes AWS Cost and Usage Reports, which is designed to deliver detailed AWS cost and usage data for analysis."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Direct Connect",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Direct Connect"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Direct Connect exists to establish a dedicated network connection from a location to AWS.",
+    "answerSource": "https://aws.amazon.com/directconnect/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to improve availability and performance for internet applications using the AWS global network?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": true,
+        "explanation": "Choose AWS Global Accelerator when the requirement is to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "AWS Database Migration Service (AWS DMS)",
+        "correct": false,
+        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available. AWS Global Accelerator exists to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Global Accelerator",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Global Accelerator"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Global Accelerator exists to improve availability and performance for internet applications using the AWS global network.",
+    "answerSource": "https://aws.amazon.com/global-accelerator/"
+  },
+  {
+    "question": "A team needs to provide private connectivity to supported services without exposing traffic to the public internet. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS PrivateLink",
+        "correct": true,
+        "explanation": "Choose AWS PrivateLink when the requirement is to provide private connectivity to supported services without exposing traffic to the public internet."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS PrivateLink",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS PrivateLink"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS PrivateLink exists to provide private connectivity to supported services without exposing traffic to the public internet.",
+    "answerSource": "https://aws.amazon.com/privatelink/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide scalable DNS, domain registration, and health-checking services?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "Amazon Route 53",
+        "correct": true,
+        "explanation": "Route 53 provides DNS and health checks; CloudFront delivers content, Direct Connect provides dedicated connectivity, and API Gateway manages APIs."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon Route 53",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Route 53"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Route 53 exists to provide scalable DNS, domain registration, and health-checking services.",
+    "answerSource": "https://aws.amazon.com/route53/"
+  },
+  {
+    "question": "Which pairing correctly matches AWS Transit Gateway with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudFront — connect multiple VPCs and on-premises networks through a central network hub",
+        "correct": false,
+        "explanation": "Amazon CloudFront — connect multiple VPCs and on-premises networks through a central network hub concerns a separate capability from the one being tested. AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The distinction is important when selecting services."
+      },
+      {
+        "text": "AWS Direct Connect — connect multiple VPCs and on-premises networks through a central network hub",
+        "correct": false,
+        "explanation": "AWS Direct Connect — connect multiple VPCs and on-premises networks through a central network hub concerns a separate capability from the one being tested. AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The distinction is important when selecting."
+      },
+      {
+        "text": "AWS Transit Gateway — connect multiple VPCs and on-premises networks through a central network hub",
+        "correct": true,
+        "explanation": "AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon API Gateway — connect multiple VPCs and on-premises networks through a central network hub",
+        "correct": false,
+        "explanation": "Amazon API Gateway — connect multiple VPCs and on-premises networks through a central network hub concerns a separate capability from the one being tested. AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The distinction is important when selecting."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Transit Gateway",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Transit Gateway"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub.",
+    "answerSource": "https://aws.amazon.com/transit-gateway/"
+  },
+  {
+    "question": "Which statement about Amazon VPC is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to create, publish, secure, monitor, and manage APIs at scale.",
+        "correct": false,
+        "explanation": "It is used to create, publish, secure, monitor, and manage APIs at scale. concerns a separate capability from the one being tested. Amazon VPC exists to provide logically isolated virtual networking for AWS resources. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provide logically isolated virtual networking for AWS resources.",
+        "correct": true,
+        "explanation": "Amazon VPC exists to provide logically isolated virtual networking for AWS resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "It is used to deliver content globally with low latency through a content delivery network. concerns a separate capability from the one being tested. Amazon VPC exists to provide logically isolated virtual networking for AWS resources. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "It is used to establish a dedicated network connection from a location to AWS.",
+        "correct": false,
+        "explanation": "It is used to establish a dedicated network connection from a location to AWS. concerns a separate capability from the one being tested. Amazon VPC exists to provide logically isolated virtual networking for AWS resources. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon VPC",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon VPC"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon VPC exists to provide logically isolated virtual networking for AWS resources.",
+    "answerSource": "https://aws.amazon.com/vpc/"
+  },
+  {
+    "question": "What is the primary purpose of AWS VPN?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Create encrypted network connections between networks and AWS",
+        "correct": true,
+        "explanation": "AWS VPN exists to create encrypted network connections between networks and AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Create, publish, secure, monitor, and manage apis at scale",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "Deliver content globally with low latency through a content delivery network",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Establish a dedicated network connection from a location to AWS",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS VPN",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS VPN exists to create encrypted network connections between networks and AWS.",
+    "answerSource": "https://aws.amazon.com/vpn/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to connect an on-premises network to an AWS VPC through encrypted tunnels?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      },
+      {
+        "text": "AWS Site-to-Site VPN",
+        "correct": true,
+        "explanation": "Choose AWS Site-to-Site VPN when the requirement is to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Site-to-Site VPN",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Site-to-Site VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Site-to-Site VPN exists to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+    "answerSource": "https://aws.amazon.com/site-to-site-vpn/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Client VPN?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Deliver content globally with low latency through a content delivery network",
+        "correct": false,
+        "explanation": "Amazon CloudFront has a different primary responsibility: it is designed to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Establish a dedicated network connection from a location to AWS",
+        "correct": false,
+        "explanation": "AWS Direct Connect has a different primary responsibility: it is designed to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "Provide managed VPN access for individual users to AWS and on-premises networks",
+        "correct": true,
+        "explanation": "AWS Client VPN exists to provide managed VPN access for individual users to AWS and on-premises networks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Create, publish, secure, monitor, and manage apis at scale",
+        "correct": false,
+        "explanation": "Amazon API Gateway has a different primary responsibility: it is designed to create, publish, secure, monitor, and manage APIs at scale."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Client VPN",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Client VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Client VPN exists to provide managed VPN access for individual users to AWS and on-premises networks.",
+    "answerSource": "https://aws.amazon.com/client-vpn/"
+  },
+  {
+    "question": "Which service creates a globally distributed content-delivery cache for web assets?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Route 53",
+        "correct": false,
+        "explanation": "Amazon Route 53 is designed to provide scalable DNS, domain registration, and health-checking services, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": true,
+        "explanation": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "Amazon S3 is designed to store and retrieve virtually any amount of object data with high durability, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon CloudFront from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects.",
+    "answerSource": "https://aws.amazon.com/cloudfront/"
+  },
+  {
+    "question": "Which service translates domain names into IP addresses and supports DNS health checks?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Route 53",
+        "correct": true,
+        "explanation": "Route 53 provides DNS and health checks; CloudFront delivers content, Direct Connect provides dedicated connectivity, and API Gateway manages APIs."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront is designed to deliver content globally with low latency through a content delivery network, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect is designed to establish a dedicated network connection from a location to AWS, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Directory Service",
+        "correct": false,
+        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon Route 53 from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Route 53 provides DNS and health checks; CloudFront delivers content, Direct Connect provides dedicated connectivity, and API Gateway manages APIs.",
+    "answerSource": "https://aws.amazon.com/route53/"
+  },
+  {
+    "question": "Which service provides a private, isolated virtual network for AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Transit Gateway",
+        "correct": false,
+        "explanation": "AWS Transit Gateway is designed to connect multiple VPCs and on-premises networks through a central network hub, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Route 53",
+        "correct": false,
+        "explanation": "Amazon Route 53 is designed to provide scalable DNS, domain registration, and health-checking services, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS PrivateLink",
+        "correct": false,
+        "explanation": "AWS PrivateLink is designed to provide private connectivity to supported services without exposing traffic to the public internet, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon VPC",
+        "correct": true,
+        "explanation": "A VPC is the isolated network boundary; PrivateLink provides private service connectivity, Transit Gateway connects networks, and Route 53 provides DNS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon VPC from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "A VPC is the isolated network boundary; PrivateLink provides private service connectivity, Transit Gateway connects networks, and Route 53 provides DNS.",
+    "answerSource": "https://aws.amazon.com/vpc/"
+  },
+  {
+    "question": "A team needs to create, publish, secure, monitor, and manage APIs at scale. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match this requirement."
+      },
+      {
+        "text": "AWS PrivateLink",
+        "correct": false,
+        "explanation": "AWS PrivateLink is designed to provide private connectivity to supported services without exposing traffic to the public internet, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": true,
+        "explanation": "Amazon API Gateway exists to create, publish, secure, monitor, and manage APIs at scale. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect is designed to establish a dedicated network connection from a location to AWS, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon API Gateway",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon API Gateway for a requirement to create, publish, secure, monitor, and manage APIs at scale"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon API Gateway when the requirement is to create, publish, secure, monitor, and manage APIs at scale.",
+    "answerSource": "https://aws.amazon.com/api-gateway/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers deliver content globally with low latency through a content delivery network?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": true,
+        "explanation": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects."
+      },
+      {
+        "text": "AWS Transit Gateway",
+        "correct": false,
+        "explanation": "AWS Transit Gateway is designed to connect multiple VPCs and on-premises networks through a central network hub, so it does not match this requirement."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": false,
+        "explanation": "AWS VPN is designed to create encrypted network connections between networks and AWS, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon CloudFront",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select Amazon CloudFront for a requirement to deliver content globally with low latency through a content delivery network"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon CloudFront when the requirement is to deliver content globally with low latency through a content delivery network.",
+    "answerSource": "https://aws.amazon.com/cloudfront/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to establish a dedicated network connection from a location to AWS?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Direct Connect",
+        "correct": true,
+        "explanation": "AWS Direct Connect exists to establish a dedicated network connection from a location to AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Site-to-Site VPN",
+        "correct": false,
+        "explanation": "AWS Site-to-Site VPN is designed to connect an on-premises network to an AWS VPC through encrypted tunnels, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Transit Gateway",
+        "correct": false,
+        "explanation": "AWS Transit Gateway is designed to connect multiple VPCs and on-premises networks through a central network hub, so it does not match this requirement."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": false,
+        "explanation": "AWS VPN is designed to create encrypted network connections between networks and AWS, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Direct Connect",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Direct Connect for a requirement to establish a dedicated network connection from a location to AWS"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Direct Connect when the requirement is to establish a dedicated network connection from a location to AWS.",
+    "answerSource": "https://aws.amazon.com/directconnect/"
+  },
+  {
+    "question": "A cloud practitioner must improve availability and performance for internet applications using the AWS global network. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon VPC",
+        "correct": false,
+        "explanation": "Amazon VPC is designed to provide logically isolated virtual networking for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Client VPN",
+        "correct": false,
+        "explanation": "AWS Client VPN is designed to provide managed VPN access for individual users to AWS and on-premises networks, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect is designed to establish a dedicated network connection from a location to AWS, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": true,
+        "explanation": "Choose AWS Global Accelerator when the requirement is to improve availability and performance for internet applications using the AWS global network."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Global Accelerator",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Global Accelerator for a requirement to improve availability and performance for internet applications using the AWS global network"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Global Accelerator when the requirement is to improve availability and performance for internet applications using the AWS global network.",
+    "answerSource": "https://aws.amazon.com/global-accelerator/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to provide private connectivity to supported services without exposing traffic to the public internet?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Transit Gateway",
+        "correct": false,
+        "explanation": "AWS Transit Gateway is designed to connect multiple VPCs and on-premises networks through a central network hub, so it does not match this requirement."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": false,
+        "explanation": "AWS VPN is designed to create encrypted network connections between networks and AWS, so it does not match this requirement."
+      },
+      {
+        "text": "AWS PrivateLink",
+        "correct": true,
+        "explanation": "Choose AWS PrivateLink when the requirement is to provide private connectivity to supported services without exposing traffic to the public internet."
+      },
+      {
+        "text": "AWS Site-to-Site VPN",
+        "correct": false,
+        "explanation": "AWS Site-to-Site VPN is designed to connect an on-premises network to an AWS VPC through encrypted tunnels, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS PrivateLink",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS PrivateLink for a requirement to provide private connectivity to supported services without exposing traffic to the public internet"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS PrivateLink when the requirement is to provide private connectivity to supported services without exposing traffic to the public internet.",
+    "answerSource": "https://aws.amazon.com/privatelink/"
+  },
+  {
+    "question": "Which AWS service should a team select to provide scalable DNS, domain registration, and health-checking services?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon VPC",
+        "correct": false,
+        "explanation": "Amazon VPC is designed to provide logically isolated virtual networking for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Route 53",
+        "correct": true,
+        "explanation": "Route 53 provides DNS and health checks; CloudFront delivers content, Direct Connect provides dedicated connectivity, and API Gateway manages APIs."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront is designed to deliver content globally with low latency through a content delivery network, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon Route 53",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon Route 53 for a requirement to provide scalable DNS, domain registration, and health-checking services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon Route 53 when the requirement is to provide scalable DNS, domain registration, and health-checking services.",
+    "answerSource": "https://aws.amazon.com/route53/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers connect multiple VPCs and on-premises networks through a central network hub?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Transit Gateway",
+        "correct": true,
+        "explanation": "Choose AWS Transit Gateway when the requirement is to connect multiple VPCs and on-premises networks through a central network hub."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": false,
+        "explanation": "AWS VPN is designed to create encrypted network connections between networks and AWS, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Elastic Beanstalk",
+        "correct": false,
+        "explanation": "AWS Elastic Beanstalk exists to deploy and operate web applications while AWS manages much of the underlying infrastructure. AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Transit Gateway",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS Transit Gateway for a requirement to connect multiple VPCs and on-premises networks through a central network hub"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Transit Gateway when the requirement is to connect multiple VPCs and on-premises networks through a central network hub.",
+    "answerSource": "https://aws.amazon.com/transit-gateway/"
+  },
+  {
+    "question": "Which AWS service should a team select to provide logically isolated virtual networking for AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon API Gateway",
+        "correct": false,
+        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront is designed to deliver content globally with low latency through a content delivery network, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Elastic Disaster Recovery",
+        "correct": false,
+        "explanation": "AWS Elastic Disaster Recovery is designed to replicate workloads and recover them in AWS after disruptive events, so it does not match this question."
+      },
+      {
+        "text": "Amazon VPC",
+        "correct": true,
+        "explanation": "A VPC is the isolated network boundary; PrivateLink provides private service connectivity, Transit Gateway connects networks, and Route 53 provides DNS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon VPC",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon VPC for a requirement to provide logically isolated virtual networking for AWS resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon VPC when the requirement is to provide logically isolated virtual networking for AWS resources.",
+    "answerSource": "https://aws.amazon.com/vpc/"
+  },
+  {
+    "question": "Which AWS service should a team select to create encrypted network connections between networks and AWS?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Route 53",
+        "correct": false,
+        "explanation": "Amazon Route 53 is designed to provide scalable DNS, domain registration, and health-checking services, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon VPC",
+        "correct": false,
+        "explanation": "Amazon VPC is designed to provide logically isolated virtual networking for AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS VPN",
+        "correct": true,
+        "explanation": "AWS VPN exists to create encrypted network connections between networks and AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "Amazon CloudFront is designed to deliver content globally with low latency through a content delivery network, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS VPN",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS VPN for a requirement to create encrypted network connections between networks and AWS"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS VPN when the requirement is to create encrypted network connections between networks and AWS.",
+    "answerSource": "https://aws.amazon.com/vpn/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers connect an on-premises network to an AWS VPC through encrypted tunnels?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Site-to-Site VPN",
+        "correct": true,
+        "explanation": "Choose AWS Site-to-Site VPN when the requirement is to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      },
+      {
+        "text": "AWS Client VPN",
+        "correct": false,
+        "explanation": "AWS Client VPN is designed to provide managed VPN access for individual users to AWS and on-premises networks, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Direct Connect",
+        "correct": false,
+        "explanation": "AWS Direct Connect is designed to establish a dedicated network connection from a location to AWS, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Site-to-Site VPN",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS Site-to-Site VPN for a requirement to connect an on-premises network to an AWS VPC through encrypted tunnels"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Site-to-Site VPN when the requirement is to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+    "answerSource": "https://aws.amazon.com/site-to-site-vpn/"
+  },
+  {
+    "question": "A team needs to provide managed VPN access for individual users to AWS and on-premises networks. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Client VPN",
+        "correct": true,
+        "explanation": "Choose AWS Client VPN when the requirement is to provide managed VPN access for individual users to AWS and on-premises networks."
+      },
+      {
+        "text": "AWS Global Accelerator",
+        "correct": false,
+        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match this requirement."
+      },
+      {
+        "text": "AWS PrivateLink",
+        "correct": false,
+        "explanation": "AWS PrivateLink is designed to provide private connectivity to supported services without exposing traffic to the public internet, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Site-to-Site VPN",
+        "correct": false,
+        "explanation": "AWS Site-to-Site VPN is designed to connect an on-premises network to an AWS VPC through encrypted tunnels, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Client VPN",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Client VPN for a requirement to provide managed VPN access for individual users to AWS and on-premises networks"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Client VPN when the requirement is to provide managed VPN access for individual users to AWS and on-premises networks.",
+    "answerSource": "https://aws.amazon.com/client-vpn/"
+  },
+  {
+    "question": "Which relationship between AWS Client VPN and AWS Site-to-Site VPN is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Client VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to provide managed VPN access for individual users to AWS and on-premises networks.",
+        "correct": false,
+        "explanation": "The statement about AWS Client VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to provide managed VPN access for individual users to AWS and on-premises networks. describes a different technical behavior from the."
+      },
+      {
+        "text": "Both services are primarily used to provide managed VPN access for individual users to AWS and on-premises networks.",
+        "correct": false,
+        "explanation": "That describes AWS Client VPN, but AWS Site-to-Site VPN is primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      },
+      {
+        "text": "Both services are primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": false,
+        "explanation": "That describes AWS Site-to-Site VPN, but AWS Client VPN is primarily used to provide managed VPN access for individual users to AWS and on-premises networks."
+      },
+      {
+        "text": "AWS Client VPN is used to provide managed VPN access for individual users to AWS and on-premises networks, whereas AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": true,
+        "explanation": "AWS Site-to-Site VPN exists to connect an on-premises network to an AWS VPC through encrypted tunnels. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Client VPN",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Client VPN from AWS Site-to-Site VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Client VPN is used to provide managed VPN access for individual users to AWS and on-premises networks, while AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+    "answerSource": "https://aws.amazon.com/client-vpn/"
+  },
+  {
+    "question": "Which relationship between AWS Direct Connect and AWS Site-to-Site VPN is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to establish a dedicated network connection from a location to AWS.",
+        "correct": false,
+        "explanation": "That describes AWS Direct Connect, but AWS Site-to-Site VPN is primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      },
+      {
+        "text": "Both services are primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": false,
+        "explanation": "That describes AWS Site-to-Site VPN, but AWS Direct Connect is primarily used to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "AWS Direct Connect is used to establish a dedicated network connection from a location to AWS, whereas AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": true,
+        "explanation": "AWS Site-to-Site VPN exists to connect an on-premises network to an AWS VPC through encrypted tunnels. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Direct Connect is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to establish a dedicated network connection from a location to AWS.",
+        "correct": false,
+        "explanation": "The statement about AWS Direct Connect is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to establish a dedicated network connection from a location to AWS. describes a different technical behavior from the capability required."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Direct Connect",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Direct Connect from AWS Site-to-Site VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Direct Connect is used to establish a dedicated network connection from a location to AWS, while AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+    "answerSource": "https://aws.amazon.com/directconnect/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Global Accelerator from Amazon CloudFront?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "That describes Amazon CloudFront, but AWS Global Accelerator is primarily used to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "AWS Global Accelerator is used to improve availability and performance for internet applications using the AWS global network, whereas Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+        "correct": true,
+        "explanation": "AWS Global Accelerator exists to improve availability and performance for internet applications using the AWS global network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Global Accelerator is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to improve availability and performance for internet applications using the AWS global network.",
+        "correct": false,
+        "explanation": "The statement about AWS Global Accelerator is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to improve availability and performance for internet applications using the AWS global network. describes a different technical behavior from the capability."
+      },
+      {
+        "text": "Both services are primarily used to improve availability and performance for internet applications using the AWS global network.",
+        "correct": false,
+        "explanation": "That describes AWS Global Accelerator, but Amazon CloudFront is primarily used to deliver content globally with low latency through a content delivery network."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Global Accelerator",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Global Accelerator from Amazon CloudFront"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Global Accelerator is used to improve availability and performance for internet applications using the AWS global network, while Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+    "answerSource": "https://aws.amazon.com/global-accelerator/"
+  },
+  {
+    "question": "Which relationship between AWS PrivateLink and AWS Transit Gateway is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS PrivateLink is used to provide private connectivity to supported services without exposing traffic to the public internet, whereas AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": true,
+        "explanation": "AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS PrivateLink is used to connect multiple VPCs and on-premises networks through a central network hub, whereas AWS Transit Gateway is used to provide private connectivity to supported services without exposing traffic to the public internet.",
+        "correct": false,
+        "explanation": "The statement about AWS PrivateLink is used to connect multiple VPCs and on-premises networks through a central network hub, whereas AWS Transit Gateway is used to provide private connectivity to supported services without exposing traffic to the public internet. describes a different technical behavior from the."
+      },
+      {
+        "text": "Both services are primarily used to provide private connectivity to supported services without exposing traffic to the public internet.",
+        "correct": false,
+        "explanation": "That describes AWS PrivateLink, but AWS Transit Gateway is primarily used to connect multiple VPCs and on-premises networks through a central network hub."
+      },
+      {
+        "text": "Both services are primarily used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": false,
+        "explanation": "That describes AWS Transit Gateway, but AWS PrivateLink is primarily used to provide private connectivity to supported services without exposing traffic to the public internet."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS PrivateLink",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS PrivateLink from AWS Transit Gateway"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS PrivateLink is used to provide private connectivity to supported services without exposing traffic to the public internet, while AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub.",
+    "answerSource": "https://aws.amazon.com/privatelink/"
+  },
+  {
+    "question": "A learner says AWS Site-to-Site VPN and AWS Direct Connect have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Site-to-Site VPN is used to establish a dedicated network connection from a location to AWS, whereas AWS Direct Connect is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": false,
+        "explanation": "The statement about AWS Site-to-Site VPN is used to establish a dedicated network connection from a location to AWS, whereas AWS Direct Connect is used to connect an on-premises network to an AWS VPC through encrypted tunnels. describes a different technical behavior from the capability required."
+      },
+      {
+        "text": "Both services are primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": false,
+        "explanation": "That describes AWS Site-to-Site VPN, but AWS Direct Connect is primarily used to establish a dedicated network connection from a location to AWS."
+      },
+      {
+        "text": "Both services are primarily used to establish a dedicated network connection from a location to AWS.",
+        "correct": false,
+        "explanation": "That describes AWS Direct Connect, but AWS Site-to-Site VPN is primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      },
+      {
+        "text": "AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Direct Connect is used to establish a dedicated network connection from a location to AWS.",
+        "correct": true,
+        "explanation": "AWS Site-to-Site VPN exists to connect an on-premises network to an AWS VPC through encrypted tunnels. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Site-to-Site VPN",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Site-to-Site VPN from AWS Direct Connect"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, while AWS Direct Connect is used to establish a dedicated network connection from a location to AWS.",
+    "answerSource": "https://aws.amazon.com/site-to-site-vpn/"
+  },
+  {
+    "question": "Which relationship between AWS Transit Gateway and AWS PrivateLink is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": false,
+        "explanation": "That describes AWS Transit Gateway, but AWS PrivateLink is primarily used to provide private connectivity to supported services without exposing traffic to the public internet."
+      },
+      {
+        "text": "Both services are primarily used to provide private connectivity to supported services without exposing traffic to the public internet.",
+        "correct": false,
+        "explanation": "That describes AWS PrivateLink, but AWS Transit Gateway is primarily used to connect multiple VPCs and on-premises networks through a central network hub."
+      },
+      {
+        "text": "AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub, whereas AWS PrivateLink is used to provide private connectivity to supported services without exposing traffic to the public internet.",
+        "correct": true,
+        "explanation": "AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Transit Gateway is used to provide private connectivity to supported services without exposing traffic to the public internet, whereas AWS PrivateLink is used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": false,
+        "explanation": "The statement about AWS Transit Gateway is used to provide private connectivity to supported services without exposing traffic to the public internet, whereas AWS PrivateLink is used to connect multiple VPCs and on-premises networks through a central network hub. describes a different technical behavior from the."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS Transit Gateway",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Transit Gateway from AWS PrivateLink"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub, while AWS PrivateLink is used to provide private connectivity to supported services without exposing traffic to the public internet.",
+    "answerSource": "https://aws.amazon.com/transit-gateway/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS VPN from AWS Site-to-Site VPN?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": false,
+        "explanation": "That describes AWS Site-to-Site VPN, but AWS VPN is primarily used to create encrypted network connections between networks and AWS."
+      },
+      {
+        "text": "AWS VPN is used to create encrypted network connections between networks and AWS, whereas AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+        "correct": true,
+        "explanation": "AWS Site-to-Site VPN exists to connect an on-premises network to an AWS VPC through encrypted tunnels. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to create encrypted network connections between networks and AWS.",
+        "correct": false,
+        "explanation": "AWS VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels, whereas AWS Site-to-Site VPN is used to create encrypted network connections between networks and AWS. concerns a separate capability from the one being tested. AWS Site-to-Site VPN exists to connect."
+      },
+      {
+        "text": "Both services are primarily used to create encrypted network connections between networks and AWS.",
+        "correct": false,
+        "explanation": "That describes AWS VPN, but AWS Site-to-Site VPN is primarily used to connect an on-premises network to an AWS VPC through encrypted tunnels."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "AWS VPN",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS VPN from AWS Site-to-Site VPN"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS VPN is used to create encrypted network connections between networks and AWS, while AWS Site-to-Site VPN is used to connect an on-premises network to an AWS VPC through encrypted tunnels.",
+    "answerSource": "https://aws.amazon.com/vpn/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon API Gateway from Amazon CloudFront?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon API Gateway is used to create, publish, secure, monitor, and manage APIs at scale, whereas Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+        "correct": true,
+        "explanation": "Amazon API Gateway exists to create, publish, secure, monitor, and manage APIs at scale. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon API Gateway is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to create, publish, secure, monitor, and manage APIs at scale.",
+        "correct": false,
+        "explanation": "Amazon API Gateway is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to create, publish, secure, monitor, and manage APIs at scale. concerns a separate capability from the one being tested. Amazon API Gateway exists to."
+      },
+      {
+        "text": "Both services are primarily used to create, publish, secure, monitor, and manage APIs at scale.",
+        "correct": false,
+        "explanation": "That describes Amazon API Gateway, but Amazon CloudFront is primarily used to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Both services are primarily used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "That describes Amazon CloudFront, but Amazon API Gateway is primarily used to create, publish, secure, monitor, and manage APIs at scale."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon API Gateway",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon API Gateway from Amazon CloudFront"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon API Gateway is used to create, publish, secure, monitor, and manage APIs at scale, while Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+    "answerSource": "https://aws.amazon.com/api-gateway/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon CloudFront from AWS Global Accelerator?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudFront is used to improve availability and performance for internet applications using the AWS global network, whereas AWS Global Accelerator is used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "The statement about Amazon CloudFront is used to improve availability and performance for internet applications using the AWS global network, whereas AWS Global Accelerator is used to deliver content globally with low latency through a content delivery network. describes a different technical behavior from the capability."
+      },
+      {
+        "text": "Both services are primarily used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "That describes Amazon CloudFront, but AWS Global Accelerator is primarily used to improve availability and performance for internet applications using the AWS global network."
+      },
+      {
+        "text": "Both services are primarily used to improve availability and performance for internet applications using the AWS global network.",
+        "correct": false,
+        "explanation": "That describes AWS Global Accelerator, but Amazon CloudFront is primarily used to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Amazon CloudFront is used to deliver content globally with low latency through a content delivery network, whereas AWS Global Accelerator is used to improve availability and performance for internet applications using the AWS global network.",
+        "correct": true,
+        "explanation": "AWS Global Accelerator exists to improve availability and performance for internet applications using the AWS global network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon CloudFront",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon CloudFront from AWS Global Accelerator"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon CloudFront is used to deliver content globally with low latency through a content delivery network, while AWS Global Accelerator is used to improve availability and performance for internet applications using the AWS global network.",
+    "answerSource": "https://aws.amazon.com/cloudfront/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon Route 53 from Amazon CloudFront?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide scalable DNS, domain registration, and health-checking services.",
+        "correct": false,
+        "explanation": "That describes Amazon Route 53, but Amazon CloudFront is primarily used to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "Both services are primarily used to deliver content globally with low latency through a content delivery network.",
+        "correct": false,
+        "explanation": "That describes Amazon CloudFront, but Amazon Route 53 is primarily used to provide scalable DNS, domain registration, and health-checking services."
+      },
+      {
+        "text": "Amazon Route 53 is used to provide scalable DNS, domain registration, and health-checking services, whereas Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Route 53 is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to provide scalable DNS, domain registration, and health-checking services.",
+        "correct": false,
+        "explanation": "Amazon Route 53 is used to deliver content globally with low latency through a content delivery network, whereas Amazon CloudFront is used to provide scalable DNS, domain registration, and health-checking services. concerns a separate capability from the one being tested. Amazon CloudFront exists to deliver content."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon Route 53",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Route 53 from Amazon CloudFront"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Route 53 is used to provide scalable DNS, domain registration, and health-checking services, while Amazon CloudFront is used to deliver content globally with low latency through a content delivery network.",
+    "answerSource": "https://aws.amazon.com/route53/"
+  },
+  {
+    "question": "Which relationship between Amazon VPC and AWS Transit Gateway is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": false,
+        "explanation": "That describes AWS Transit Gateway, but Amazon VPC is primarily used to provide logically isolated virtual networking for AWS resources."
+      },
+      {
+        "text": "Amazon VPC is used to provide logically isolated virtual networking for AWS resources, whereas AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub.",
+        "correct": true,
+        "explanation": "AWS Transit Gateway exists to connect multiple VPCs and on-premises networks through a central network hub. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon VPC is used to connect multiple VPCs and on-premises networks through a central network hub, whereas AWS Transit Gateway is used to provide logically isolated virtual networking for AWS resources.",
+        "correct": false,
+        "explanation": "Amazon VPC is used to connect multiple VPCs and on-premises networks through a central network hub, whereas AWS Transit Gateway is used to provide logically isolated virtual networking for AWS resources. concerns a separate capability from the one being tested. AWS Transit Gateway exists to connect."
+      },
+      {
+        "text": "Both services are primarily used to provide logically isolated virtual networking for AWS resources.",
+        "correct": false,
+        "explanation": "That describes Amazon VPC, but AWS Transit Gateway is primarily used to connect multiple VPCs and on-premises networks through a central network hub."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Networking and Content Delivery",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Networking and Content Delivery",
+      "subtopic": "Amazon VPC",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon VPC from AWS Transit Gateway"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon VPC is used to provide logically isolated virtual networking for AWS resources, while AWS Transit Gateway is used to connect multiple VPCs and on-premises networks through a central network hub.",
+    "answerSource": "https://aws.amazon.com/vpc/"
+  }
+]

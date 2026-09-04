@@ -1,0 +1,1870 @@
+[
+  {
+    "question": "Which of the following are features of Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "Low latency content delivery",
+        "correct": true
+      },
+      {
+        "text": "High transfer speeds",
+        "correct": true
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false
+      },
+      {
+        "text": "Scalable object storage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the role of the encoder in a sequence-to-sequence model?",
+    "answers": [
+      {
+        "text": "To generate the target sequence",
+        "correct": false
+      },
+      {
+        "text": "To encode the input sequence",
+        "correct": true
+      },
+      {
+        "text": "To compute attention weights",
+        "correct": false
+      },
+      {
+        "text": "To normalize output probabilities",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the main function of Amazon RDS?",
+    "answers": [
+      {
+        "text": "To manage relational databases in the cloud",
+        "correct": true
+      },
+      {
+        "text": "To provide scalable object storage",
+        "correct": false
+      },
+      {
+        "text": "To deliver content with low latency",
+        "correct": false
+      },
+      {
+        "text": "To provide scalable computing capacity",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service is designed to help you build and run applications without thinking about servers?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Amazon ECS",
+        "correct": false
+      },
+      {
+        "text": "AWS Fargate",
+        "correct": false
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Docker Daemon?",
+    "answers": [
+      {
+        "text": "A background service that manages Docker containers.",
+        "correct": true
+      },
+      {
+        "text": "A tool for building Docker images.",
+        "correct": false
+      },
+      {
+        "text": "A monitoring service for Docker containers.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is AWS Fargate?",
+    "answers": [
+      {
+        "text": "A serverless compute engine for containers.",
+        "correct": true
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "A database management system.",
+        "correct": false
+      },
+      {
+        "text": "A programming language for cloud development.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is MWAA in AWS?",
+    "answers": [
+      {
+        "text": "Managed Workflows for Apache Airflow",
+        "correct": true
+      },
+      {
+        "text": "Managed Web Application Architecture",
+        "correct": false
+      },
+      {
+        "text": "Managed Workflows for AWS Applications",
+        "correct": false
+      },
+      {
+        "text": "Managed Web Application Automation",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does BASE stand for in NoSQL databases?",
+    "answers": [
+      {
+        "text": "Basically Available, Soft state, Eventually consistent",
+        "correct": true
+      },
+      {
+        "text": "Basic Availability, Strong state, Eventual consistency",
+        "correct": false
+      },
+      {
+        "text": "Basic Availability, Soft state, Eventual consistency",
+        "correct": false
+      },
+      {
+        "text": "Basic Availability, Soft state, Eventual consistency",
+        "correct": false
+      },
+      {
+        "text": "Basic Availability, Soft state, Eventual consistency",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "You need to ensure that your containerized applications are highly available and can scale automatically. Which container orchestration service should you use?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Kubernetes (e.g., Amazon EKS)",
+        "correct": true
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is the primary goal of data masking?",
+    "answers": [
+      {
+        "text": "To permanently delete sensitive data",
+        "correct": false
+      },
+      {
+        "text": "To obscure sensitive data while maintaining its usability",
+        "correct": true
+      },
+      {
+        "text": "To encrypt data for secure transmission",
+        "correct": false
+      },
+      {
+        "text": "To compress data for storage efficiency",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What should you avoid when designing for scalability in AWS?",
+    "answers": [
+      {
+        "text": "Using tightly coupled components",
+        "correct": true
+      },
+      {
+        "text": "Designing stateless applications",
+        "correct": false
+      },
+      {
+        "text": "Relying on a single point of failure",
+        "correct": true
+      },
+      {
+        "text": "Using Elastic Load Balancing",
+        "correct": false
+      },
+      {
+        "text": "Ignoring horizontal scaling options",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What types of content can be delivered using Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "Data",
+        "correct": true
+      },
+      {
+        "text": "Videos",
+        "correct": true
+      },
+      {
+        "text": "Applications",
+        "correct": true
+      },
+      {
+        "text": "APIs",
+        "correct": true
+      },
+      {
+        "text": "Relational databases",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service provides a managed service for running containerized applications?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": true
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "AWS Fargate",
+        "correct": false
+      },
+      {
+        "text": "Amazon EKS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Kubernetes?",
+    "answers": [
+      {
+        "text": "An open-source system for automating deployment, scaling, and management of containerized applications.",
+        "correct": true
+      },
+      {
+        "text": "A proprietary cloud service for managing virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "A tool for monitoring network traffic.",
+        "correct": false
+      },
+      {
+        "text": "A database management system.",
+        "correct": false
+      },
+      {
+        "text": "A programming language for web development.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon EKS?",
+    "answers": [
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": true
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "A database management system.",
+        "correct": false
+      },
+      {
+        "text": "A programming language for cloud development.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are Amazon Roles?",
+    "answers": [
+      {
+        "text": "A way to grant permissions to AWS services and users.",
+        "correct": true
+      },
+      {
+        "text": "A service for managing and deploying Docker containers.",
+        "correct": false
+      },
+      {
+        "text": "A tool for monitoring application performance.",
+        "correct": false
+      },
+      {
+        "text": "A managed database service.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is CloudFormation?",
+    "answers": [
+      {
+        "text": "A service that helps you model and set up your Amazon Web Services resources.",
+        "correct": true
+      },
+      {
+        "text": "A tool for monitoring application performance.",
+        "correct": false
+      },
+      {
+        "text": "A managed database service.",
+        "correct": false
+      },
+      {
+        "text": "A service for deploying and managing applications in Docker containers.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a component of a state machine in AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true
+      },
+      {
+        "text": "Choice",
+        "correct": true
+      },
+      {
+        "text": "Wait",
+        "correct": true
+      },
+      {
+        "text": "All of the above",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which state in AWS Step Functions allows you to perform a task?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true
+      },
+      {
+        "text": "Choice",
+        "correct": false
+      },
+      {
+        "text": "Wait",
+        "correct": false
+      },
+      {
+        "text": "Parallel",
+        "correct": false
+      },
+      {
+        "text": "Map",
+        "correct": false
+      },
+      {
+        "text": "Pass",
+        "correct": false
+      },
+      {
+        "text": "Succeed",
+        "correct": false
+      },
+      {
+        "text": "Fail",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Your team is debating between using Kubernetes and Amazon ECS for container orchestration. You need fine-grained control and want to integrate with open-source tools. Which option is more suitable?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Kubernetes (e.g., Amazon EKS)",
+        "correct": true
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Which statements are true about Docker vs Virtual Machines?",
+    "answers": [
+      {
+        "text": "Docker containers are more lightweight than virtual machines",
+        "correct": true
+      },
+      {
+        "text": "Docker containers share the host OS kernel",
+        "correct": true
+      },
+      {
+        "text": "Virtual machines provide stronger isolation than Docker containers",
+        "correct": true
+      },
+      {
+        "text": "Docker containers require a hypervisor",
+        "correct": false
+      },
+      {
+        "text": "Virtual machines are faster to start than Docker containers",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which states are part of AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true
+      },
+      {
+        "text": "Choice",
+        "correct": true
+      },
+      {
+        "text": "Wait",
+        "correct": true
+      },
+      {
+        "text": "Parallel",
+        "correct": true
+      },
+      {
+        "text": "Map",
+        "correct": true
+      },
+      {
+        "text": "Pass",
+        "correct": true
+      },
+      {
+        "text": "Succeed",
+        "correct": true
+      },
+      {
+        "text": "Fail",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are Amazon Roles used for?",
+    "answers": [
+      {
+        "text": "Defining permissions for AWS services",
+        "correct": true
+      },
+      {
+        "text": "Managing user identities",
+        "correct": true
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the difference between ACID and BASE transactions?",
+    "answers": [
+      {
+        "text": "ACID is for relational databases, BASE is for NoSQL databases",
+        "correct": true
+      },
+      {
+        "text": "ACID is faster than BASE",
+        "correct": false
+      },
+      {
+        "text": "BASE is more secure than ACID",
+        "correct": false
+      },
+      {
+        "text": "ACID is for cloud storage, BASE is for on-premises storage",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are common Git commands?",
+    "answers": [
+      {
+        "text": "git clone",
+        "correct": true
+      },
+      {
+        "text": "git commit",
+        "correct": true
+      },
+      {
+        "text": "git push",
+        "correct": true
+      },
+      {
+        "text": "git pull",
+        "correct": true
+      },
+      {
+        "text": "git deploy",
+        "correct": false
+      },
+      {
+        "text": "git build",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which technique is commonly used in data anonymization?",
+    "answers": [
+      {
+        "text": "Tokenization",
+        "correct": false
+      },
+      {
+        "text": "Generalization",
+        "correct": true
+      },
+      {
+        "text": "Compression",
+        "correct": false
+      },
+      {
+        "text": "Indexing",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the primary purpose of Amazon EC2?",
+    "answers": [
+      {
+        "text": "To provide scalable computing capacity in the cloud",
+        "correct": true
+      },
+      {
+        "text": "To store and retrieve any amount of data",
+        "correct": false
+      },
+      {
+        "text": "To manage relational databases",
+        "correct": false
+      },
+      {
+        "text": "To deliver content with low latency",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "To deliver content with low latency",
+        "correct": true
+      },
+      {
+        "text": "To manage relational databases",
+        "correct": false
+      },
+      {
+        "text": "To provide scalable object storage",
+        "correct": false
+      },
+      {
+        "text": "To provide scalable computing capacity",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is an example of a time series forecasting problem?",
+    "answers": [
+      {
+        "text": "Predicting stock prices",
+        "correct": true
+      },
+      {
+        "text": "Classifying emails as spam or not",
+        "correct": false
+      },
+      {
+        "text": "Grouping customers into segments",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "In the context of NLP, what is the purpose of tokenization?",
+    "answers": [
+      {
+        "text": "To split text into individual tokens",
+        "correct": true
+      },
+      {
+        "text": "To encode text into vectors",
+        "correct": false
+      },
+      {
+        "text": "To normalize text",
+        "correct": false
+      },
+      {
+        "text": "To remove stop words",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the difference between Docker and Virtual Machines?",
+    "answers": [
+      {
+        "text": "Docker containers share the host OS kernel, while virtual machines have separate OS instances.",
+        "correct": true
+      },
+      {
+        "text": "Docker containers are slower to start than virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "Docker containers require more resources than virtual machines.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon ECS?",
+    "answers": [
+      {
+        "text": "A fully managed container orchestration service.",
+        "correct": true
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "A database management system.",
+        "correct": false
+      },
+      {
+        "text": "A programming language for cloud development.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is AWS CDK?",
+    "answers": [
+      {
+        "text": "A framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation.",
+        "correct": true
+      },
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": false
+      },
+      {
+        "text": "A service for running serverless applications.",
+        "correct": false
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How do you define an AWS CDK stack in Java?",
+    "answers": [
+      {
+        "text": "Extend the Stack class and call the super constructor with scope, id, and props.",
+        "correct": true
+      },
+      {
+        "text": "Implement the Stack interface and override the build method.",
+        "correct": false
+      },
+      {
+        "text": "Create a new instance of the Stack class and pass the scope, id, and props.",
+        "correct": false
+      },
+      {
+        "text": "Use the StackBuilder class to define the stack.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which method is used to add a resource to an AWS CDK stack in Java?",
+    "answers": [
+      {
+        "text": "addResource",
+        "correct": false
+      },
+      {
+        "text": "createResource",
+        "correct": false
+      },
+      {
+        "text": "defineResource",
+        "correct": false
+      },
+      {
+        "text": "add",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service allows you to connect applications using events from your own applications, integrated SaaS applications, and AWS services?",
+    "answers": [
+      {
+        "text": "AWS EventBridge",
+        "correct": true
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon SNS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a DAG in Apache Airflow?",
+    "answers": [
+      {
+        "text": "Directed Acyclic Graph",
+        "correct": true
+      },
+      {
+        "text": "Data Aggregation Graph",
+        "correct": false
+      },
+      {
+        "text": "Dynamic Application Graph",
+        "correct": false
+      },
+      {
+        "text": "Distributed Acyclic Graph",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the first step in building a data lake using AWS Lake Formation?",
+    "answers": [
+      {
+        "text": "Define the data lake",
+        "correct": true
+      },
+      {
+        "text": "Ingest data",
+        "correct": false
+      },
+      {
+        "text": "Set up permissions",
+        "correct": false
+      },
+      {
+        "text": "Catalog the data",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are features of AWS Fargate?",
+    "answers": [
+      {
+        "text": "Serverless compute engine for containers",
+        "correct": true
+      },
+      {
+        "text": "Requires you to manage servers",
+        "correct": false
+      },
+      {
+        "text": "Supports Amazon ECS",
+        "correct": true
+      },
+      {
+        "text": "Supports Amazon EKS",
+        "correct": true
+      },
+      {
+        "text": "Requires manual scaling",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is AWS CloudFormation used for?",
+    "answers": [
+      {
+        "text": "Defining and provisioning AWS infrastructure using code",
+        "correct": true
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are types of State Machine states in AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true
+      },
+      {
+        "text": "Choice",
+        "correct": true
+      },
+      {
+        "text": "Wait",
+        "correct": true
+      },
+      {
+        "text": "Parallel",
+        "correct": true
+      },
+      {
+        "text": "Map",
+        "correct": true
+      },
+      {
+        "text": "Pass",
+        "correct": true
+      },
+      {
+        "text": "Succeed",
+        "correct": true
+      },
+      {
+        "text": "Fail",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is a key difference between anonymization and pseudonymization?",
+    "answers": [
+      {
+        "text": "Anonymization allows data to be re-identified later",
+        "correct": false
+      },
+      {
+        "text": "Pseudonymization replaces identifiers but allows re-identification",
+        "correct": true
+      },
+      {
+        "text": "Anonymization is reversible",
+        "correct": false
+      },
+      {
+        "text": "Pseudonymization deletes the original data",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which regulation emphasizes the importance of data anonymization for protecting personal data?",
+    "answers": [
+      {
+        "text": "HIPAA",
+        "correct": false
+      },
+      {
+        "text": "GDPR",
+        "correct": true
+      },
+      {
+        "text": "SOX",
+        "correct": false
+      },
+      {
+        "text": "PCI DSS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are anti-patterns in Amazon DynamoDB usage?",
+    "answers": [
+      {
+        "text": "Using large item sizes exceeding 400KB",
+        "correct": true
+      },
+      {
+        "text": "Designing access patterns before table schema",
+        "correct": false
+      },
+      {
+        "text": "Using scan operations for frequent queries",
+        "correct": true
+      },
+      {
+        "text": "Using partition keys with high cardinality",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is designed for building conversational interfaces using voice and text?",
+    "answers": [
+      {
+        "text": "Amazon Lex",
+        "correct": true
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Docker?",
+    "answers": [
+      {
+        "text": "A platform for developing, shipping, and running applications in containers.",
+        "correct": true
+      },
+      {
+        "text": "A virtual machine management tool.",
+        "correct": false
+      },
+      {
+        "text": "A cloud storage service.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon ECR?",
+    "answers": [
+      {
+        "text": "A fully managed Docker container registry.",
+        "correct": true
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false
+      },
+      {
+        "text": "A database management system.",
+        "correct": false
+      },
+      {
+        "text": "A programming language for cloud development.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is Amazon EFS?",
+    "answers": [
+      {
+        "text": "A scalable file storage service for use with Amazon EC2.",
+        "correct": true
+      },
+      {
+        "text": "A managed database service that supports multiple database engines.",
+        "correct": false
+      },
+      {
+        "text": "A service for deploying and managing applications in Docker containers.",
+        "correct": false
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the primary purpose of AWS CodeDeploy?",
+    "answers": [
+      {
+        "text": "Automating the deployment of applications to various compute services.",
+        "correct": true
+      },
+      {
+        "text": "Managing source code repositories.",
+        "correct": false
+      },
+      {
+        "text": "Building and testing code.",
+        "correct": false
+      },
+      {
+        "text": "Orchestrating complex workflows.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is AWS Step Functions used for?",
+    "answers": [
+      {
+        "text": "Orchestrating complex workflows by coordinating multiple AWS services.",
+        "correct": true
+      },
+      {
+        "text": "Deploying applications to various compute services.",
+        "correct": false
+      },
+      {
+        "text": "Storing and versioning source code.",
+        "correct": false
+      },
+      {
+        "text": "Building and testing code.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following properties are part of ACID transactions?",
+    "answers": [
+      {
+        "text": "Atomicity",
+        "correct": true
+      },
+      {
+        "text": "Consistency",
+        "correct": true
+      },
+      {
+        "text": "Isolation",
+        "correct": true
+      },
+      {
+        "text": "Durability",
+        "correct": true
+      },
+      {
+        "text": "Scalability",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which Git command is used to create a new branch?",
+    "answers": [
+      {
+        "text": "git branch <branch_name>",
+        "correct": true
+      },
+      {
+        "text": "git checkout <branch_name>",
+        "correct": false
+      },
+      {
+        "text": "git merge <branch_name>",
+        "correct": false
+      },
+      {
+        "text": "git init <branch_name>",
+        "correct": false
+      },
+      {
+        "text": "git add <branch_name>",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which features are specific to AWS CDK for Java?",
+    "answers": [
+      {
+        "text": "Strongly typed constructs",
+        "correct": true
+      },
+      {
+        "text": "Object-oriented programming",
+        "correct": true
+      },
+      {
+        "text": "Integration with Maven",
+        "correct": true
+      },
+      {
+        "text": "Support for Lambda functions",
+        "correct": false
+      },
+      {
+        "text": "Declarative syntax",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Amazon ECR used for?",
+    "answers": [
+      {
+        "text": "Storing Docker container images",
+        "correct": true
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false
+      },
+      {
+        "text": "Monitoring cloud resources",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are common Git commands?",
+    "answers": [
+      {
+        "text": "git clone",
+        "correct": true
+      },
+      {
+        "text": "git commit",
+        "correct": true
+      },
+      {
+        "text": "git push",
+        "correct": true
+      },
+      {
+        "text": "git pull",
+        "correct": true
+      },
+      {
+        "text": "git run",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is MWAA (Managed Workflows for Apache Airflow) used for?",
+    "answers": [
+      {
+        "text": "Running Apache Airflow workflows on AWS",
+        "correct": true
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are best practices for designing ML systems for production?",
+    "answers": [
+      {
+        "text": "Monitoring model drift",
+        "correct": true
+      },
+      {
+        "text": "Ignoring data quality issues",
+        "correct": false
+      },
+      {
+        "text": "Automating retraining workflows",
+        "correct": true
+      },
+      {
+        "text": "Using a single environment for development and production",
+        "correct": false
+      },
+      {
+        "text": "Versioning datasets and models",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid business goals that can be addressed using machine learning?",
+    "answers": [
+      {
+        "text": "Reducing customer churn",
+        "correct": true
+      },
+      {
+        "text": "Improving product recommendations",
+        "correct": true
+      },
+      {
+        "text": "Increasing manual data entry",
+        "correct": false
+      },
+      {
+        "text": "Automating fraud detection",
+        "correct": true
+      },
+      {
+        "text": "Maximizing model complexity",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Responsible AI?",
+    "answers": [
+      {
+        "text": "AI that is designed and deployed in a manner that is ethical, transparent, and accountable.",
+        "correct": true
+      },
+      {
+        "text": "AI that is used for entertainment purposes.",
+        "correct": false
+      },
+      {
+        "text": "AI that is only used in scientific research.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What does fairness in AI entail?",
+    "answers": [
+      {
+        "text": "Ensuring that AI systems do not discriminate against any group.",
+        "correct": true
+      },
+      {
+        "text": "Making AI systems entertaining.",
+        "correct": false
+      },
+      {
+        "text": "Ensuring AI systems are profitable.",
+        "correct": false
+      },
+      {
+        "text": "Ensuring AI systems are transparent.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the first step in designing a machine learning system?",
+    "answers": [
+      {
+        "text": "Collecting and preparing data",
+        "correct": true
+      },
+      {
+        "text": "Choosing the right algorithm",
+        "correct": false
+      },
+      {
+        "text": "Deploying the model",
+        "correct": false
+      },
+      {
+        "text": "Monitoring the model's performance",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "How does Amazon A2I help in building machine learning workflows?",
+    "answers": [
+      {
+        "text": "By providing built-in human review workflows for common machine learning tasks.",
+        "correct": true
+      },
+      {
+        "text": "By offering pre-trained models for various tasks.",
+        "correct": false
+      },
+      {
+        "text": "By enabling real-time model monitoring.",
+        "correct": false
+      },
+      {
+        "text": "By providing tools for data labeling.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is the role of human reviewers in Amazon A2I?",
+    "answers": [
+      {
+        "text": "To review low-confidence predictions made by machine learning models.",
+        "correct": true
+      },
+      {
+        "text": "To deploy machine learning models.",
+        "correct": false
+      },
+      {
+        "text": "To provide real-time predictions.",
+        "correct": false
+      },
+      {
+        "text": "To monitor the quality of machine learning models in production.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is a common mistake when framing ML problems?",
+    "answers": [
+      {
+        "text": "Defining the problem as a prediction task",
+        "correct": false
+      },
+      {
+        "text": "Choosing a model before understanding the data",
+        "correct": true
+      },
+      {
+        "text": "Identifying the target variable",
+        "correct": false
+      },
+      {
+        "text": "Consulting with domain experts",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are core dimensions of Responsible AI?",
+    "answers": [
+      {
+        "text": "Fairness",
+        "correct": true
+      },
+      {
+        "text": "Transparency",
+        "correct": true
+      },
+      {
+        "text": "Accountability",
+        "correct": true
+      },
+      {
+        "text": "Profitability",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Why is transparency important in AI systems?",
+    "answers": [
+      {
+        "text": "It helps build trust with users and stakeholders.",
+        "correct": true
+      },
+      {
+        "text": "It ensures that AI systems are profitable.",
+        "correct": false
+      },
+      {
+        "text": "It allows for better entertainment value.",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are key considerations when choosing a machine learning algorithm for a production system?",
+    "answers": [
+      {
+        "text": "Model interpretability",
+        "correct": true
+      },
+      {
+        "text": "Training time",
+        "correct": true
+      },
+      {
+        "text": "Popularity of the algorithm",
+        "correct": false
+      },
+      {
+        "text": "Scalability of the algorithm",
+        "correct": true
+      },
+      {
+        "text": "Amount of labeled data available",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is a common pitfall when identifying ML business goals?",
+    "answers": [
+      {
+        "text": "Focusing on data availability before defining the problem",
+        "correct": true
+      },
+      {
+        "text": "Aligning goals with business KPIs",
+        "correct": false
+      },
+      {
+        "text": "Involving cross-functional teams",
+        "correct": false
+      },
+      {
+        "text": "Defining measurable outcomes",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What are key elements to define when framing an ML problem?",
+    "answers": [
+      {
+        "text": "Input features",
+        "correct": true
+      },
+      {
+        "text": "Target variable",
+        "correct": true
+      },
+      {
+        "text": "Business KPIs",
+        "correct": true
+      },
+      {
+        "text": "Model deployment region",
+        "correct": false
+      },
+      {
+        "text": "Data visualization tools",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  }
+]

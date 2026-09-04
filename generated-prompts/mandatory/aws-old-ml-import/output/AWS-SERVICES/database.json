@@ -1,0 +1,954 @@
+[
+  {
+    "question": "What is the primary purpose of Amazon Aurora?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provide a managed serverless NoSQL key-value and document database",
+        "correct": false,
+        "explanation": "Amazon DynamoDB has a different primary responsibility: it is designed to provide a managed serverless NoSQL key-value and document database."
+      },
+      {
+        "text": "Provide managed in-memory caching for applications",
+        "correct": false,
+        "explanation": "Provide managed in-memory caching for applications concerns a separate capability from the one being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Provide a MySQL- and PostgreSQL-compatible managed relational database engine",
+        "correct": true,
+        "explanation": "Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Provide a managed document database compatible with MongoDB workloads",
+        "correct": false,
+        "explanation": "Amazon DocumentDB has a different primary responsibility: it is designed to provide a managed document database compatible with MongoDB workloads."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Aurora",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Aurora"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+    "answerSource": "https://aws.amazon.com/aurora/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide a managed document database compatible with MongoDB workloads?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora has a different primary responsibility: it is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": true,
+        "explanation": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "Amazon DynamoDB has a different primary responsibility: it is designed to provide a managed serverless NoSQL key-value and document database."
+      },
+      {
+        "text": "Amazon ElastiCache",
+        "correct": false,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DocumentDB",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon DocumentDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads.",
+    "answerSource": "https://aws.amazon.com/documentdb/"
+  },
+  {
+    "question": "A team needs to provide a managed serverless NoSQL key-value and document database. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DynamoDB",
+        "correct": true,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database."
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora has a different primary responsibility: it is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB has a different primary responsibility: it is designed to provide a managed document database compatible with MongoDB workloads."
+      },
+      {
+        "text": "AWS Budgets",
+        "correct": false,
+        "explanation": "AWS Budgets is designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DynamoDB",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon DynamoDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database.",
+    "answerSource": "https://aws.amazon.com/dynamodb/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide managed in-memory caching for applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB has a different primary responsibility: it is designed to provide a managed document database compatible with MongoDB workloads."
+      },
+      {
+        "text": "AWS CLI",
+        "correct": false,
+        "explanation": "AWS CLI is designed to provide command-line access to AWS services and resources, so it does not match this question."
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora has a different primary responsibility: it is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Amazon ElastiCache",
+        "correct": true,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon ElastiCache",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon ElastiCache"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon ElastiCache exists to provide managed in-memory caching for applications.",
+    "answerSource": "https://aws.amazon.com/elasticache/"
+  },
+  {
+    "question": "Which pairing correctly matches Amazon Neptune with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DocumentDB — provide a managed graph database for highly connected data",
+        "correct": false,
+        "explanation": "Amazon DocumentDB — provide a managed graph database for highly connected data concerns a separate capability from the one being tested. Amazon Neptune exists to provide a managed graph database for highly connected data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon DynamoDB — provide a managed graph database for highly connected data",
+        "correct": false,
+        "explanation": "Amazon DynamoDB — provide a managed graph database for highly connected data concerns a separate capability from the one being tested. Amazon Neptune exists to provide a managed graph database for highly connected data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Neptune — provide a managed graph database for highly connected data",
+        "correct": true,
+        "explanation": "Amazon Neptune exists to provide a managed graph database for highly connected data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Aurora — provide a managed graph database for highly connected data",
+        "correct": false,
+        "explanation": "Amazon Aurora — provide a managed graph database for highly connected data concerns a separate capability from the one being tested. Amazon Neptune exists to provide a managed graph database for highly connected data. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Neptune",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon Neptune"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon Neptune exists to provide a managed graph database for highly connected data.",
+    "answerSource": "https://aws.amazon.com/neptune/"
+  },
+  {
+    "question": "Which statement about Amazon RDS is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases."
+      },
+      {
+        "text": "It is used to simplify setup, operation, and scaling of relational databases.",
+        "correct": true,
+        "explanation": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to provide a managed document database compatible with MongoDB workloads.",
+        "correct": false,
+        "explanation": "It is used to provide a managed document database compatible with MongoDB workloads. concerns a separate capability from the one being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to provide a managed serverless NoSQL key-value and document database.",
+        "correct": false,
+        "explanation": "It is used to provide a managed serverless NoSQL key-value and document database. concerns a separate capability from the one being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon RDS",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon RDS"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases.",
+    "answerSource": "https://aws.amazon.com/rds/"
+  },
+  {
+    "question": "Which service is a managed relational database service rather than a NoSQL database?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "Amazon DynamoDB is designed to provide a managed serverless NoSQL key-value and document database, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is designed to provide a managed document database compatible with MongoDB workloads, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Neptune",
+        "correct": false,
+        "explanation": "Amazon Neptune is designed to provide a managed graph database for highly connected data, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon RDS from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database.",
+    "answerSource": "https://aws.amazon.com/rds/"
+  },
+  {
+    "question": "Which service is designed for key-value and document data with serverless scaling?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Amazon Redshift is designed to run analytics and data-warehouse queries across large structured datasets, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon Neptune",
+        "correct": false,
+        "explanation": "Amazon Neptune is designed to provide a managed graph database for highly connected data, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "Amazon RDS is designed to simplify setup, operation, and scaling of relational databases, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": true,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish Amazon DynamoDB from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database.",
+    "answerSource": "https://aws.amazon.com/dynamodb/"
+  },
+  {
+    "question": "A cloud practitioner must provide a MySQL- and PostgreSQL-compatible managed relational database engine. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is designed to provide a managed document database compatible with MongoDB workloads, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "Amazon DynamoDB is designed to provide a managed serverless NoSQL key-value and document database, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": true,
+        "explanation": "Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "Amazon RDS is designed to simplify setup, operation, and scaling of relational databases, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Aurora",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Aurora for a requirement to provide a MySQL- and PostgreSQL-compatible managed relational database engine"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Aurora when the requirement is to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+    "answerSource": "https://aws.amazon.com/aurora/"
+  },
+  {
+    "question": "A team needs to provide a managed document database compatible with MongoDB workloads. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Neptune",
+        "correct": false,
+        "explanation": "Amazon Neptune is designed to provide a managed graph database for highly connected data, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": true,
+        "explanation": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "Amazon DynamoDB is designed to provide a managed serverless NoSQL key-value and document database, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon ElastiCache",
+        "correct": false,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DocumentDB",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon DocumentDB for a requirement to provide a managed document database compatible with MongoDB workloads"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon DocumentDB when the requirement is to provide a managed document database compatible with MongoDB workloads.",
+    "answerSource": "https://aws.amazon.com/documentdb/"
+  },
+  {
+    "question": "Which AWS service should a team select to provide a managed serverless NoSQL key-value and document database?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DynamoDB",
+        "correct": true,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database."
+      },
+      {
+        "text": "Amazon ElastiCache",
+        "correct": false,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Amazon Neptune",
+        "correct": false,
+        "explanation": "Amazon Neptune is designed to provide a managed graph database for highly connected data, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "Amazon RDS is designed to simplify setup, operation, and scaling of relational databases, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DynamoDB",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Amazon DynamoDB for a requirement to provide a managed serverless NoSQL key-value and document database"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon DynamoDB when the requirement is to provide a managed serverless NoSQL key-value and document database.",
+    "answerSource": "https://aws.amazon.com/dynamodb/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers provide managed in-memory caching for applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is designed to provide a managed document database compatible with MongoDB workloads, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild is designed to compile source code, run tests, and produce build artifacts in managed build environments, so it does not match this question."
+      },
+      {
+        "text": "Amazon ElastiCache",
+        "correct": true,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon ElastiCache",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select Amazon ElastiCache for a requirement to provide managed in-memory caching for applications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose Amazon ElastiCache when the requirement is to provide managed in-memory caching for applications.",
+    "answerSource": "https://aws.amazon.com/elasticache/"
+  },
+  {
+    "question": "A cloud practitioner must provide a managed graph database for highly connected data. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is designed to provide a managed document database compatible with MongoDB workloads, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Neptune",
+        "correct": true,
+        "explanation": "Amazon Neptune exists to provide a managed graph database for highly connected data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "Amazon RDS is designed to simplify setup, operation, and scaling of relational databases, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Neptune",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon Neptune for a requirement to provide a managed graph database for highly connected data"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon Neptune when the requirement is to provide a managed graph database for highly connected data.",
+    "answerSource": "https://aws.amazon.com/neptune/"
+  },
+  {
+    "question": "A cloud practitioner must simplify setup, operation, and scaling of relational databases. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match this question."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "explanation": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Neptune",
+        "correct": false,
+        "explanation": "Amazon Neptune is designed to provide a managed graph database for highly connected data, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "explanation": "Amazon Aurora is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon RDS",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select Amazon RDS for a requirement to simplify setup, operation, and scaling of relational databases"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon RDS when the requirement is to simplify setup, operation, and scaling of relational databases.",
+    "answerSource": "https://aws.amazon.com/rds/"
+  },
+  {
+    "question": "When should a team choose Amazon Aurora instead of Amazon RDS?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to provide a MySQL- and PostgreSQL-compatible managed relational database engine, rather than to simplify setup, operation, and scaling of relational databases.",
+        "correct": true,
+        "explanation": "Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to simplify setup, operation, and scaling of relational databases, rather than to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Aurora",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon Aurora from Amazon RDS"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Aurora is used to provide a MySQL- and PostgreSQL-compatible managed relational database engine, while Amazon RDS is used to simplify setup, operation, and scaling of relational databases.",
+    "answerSource": "https://aws.amazon.com/aurora/"
+  },
+  {
+    "question": "Which relationship between Amazon DocumentDB and Amazon DynamoDB is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon DocumentDB is used to provide a managed serverless NoSQL key-value and document database, whereas Amazon DynamoDB is used to provide a managed document database compatible with MongoDB workloads.",
+        "correct": false,
+        "explanation": "Amazon DocumentDB is used to provide a managed serverless NoSQL key-value and document database, whereas Amazon DynamoDB is used to provide a managed document database compatible with MongoDB workloads. concerns a separate capability from the one being tested. Amazon DocumentDB exists to provide a managed document."
+      },
+      {
+        "text": "Both services are primarily used to provide a managed document database compatible with MongoDB workloads.",
+        "correct": false,
+        "explanation": "That describes Amazon DocumentDB, but Amazon DynamoDB is primarily used to provide a managed serverless NoSQL key-value and document database."
+      },
+      {
+        "text": "Both services are primarily used to provide a managed serverless NoSQL key-value and document database.",
+        "correct": false,
+        "explanation": "That describes Amazon DynamoDB, but Amazon DocumentDB is primarily used to provide a managed document database compatible with MongoDB workloads."
+      },
+      {
+        "text": "Amazon DocumentDB is used to provide a managed document database compatible with MongoDB workloads, whereas Amazon DynamoDB is used to provide a managed serverless NoSQL key-value and document database.",
+        "correct": true,
+        "explanation": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DocumentDB",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon DocumentDB from Amazon DynamoDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon DocumentDB is used to provide a managed document database compatible with MongoDB workloads, while Amazon DynamoDB is used to provide a managed serverless NoSQL key-value and document database.",
+    "answerSource": "https://aws.amazon.com/documentdb/"
+  },
+  {
+    "question": "When should a team choose Amazon DynamoDB instead of Amazon DocumentDB?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to provide a managed serverless NoSQL key-value and document database, rather than to provide a managed document database compatible with MongoDB workloads.",
+        "correct": true,
+        "explanation": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to provide a managed document database compatible with MongoDB workloads, rather than to provide a managed serverless NoSQL key-value and document database.",
+        "correct": false,
+        "explanation": "When the requirement is to provide a managed document database compatible with MongoDB workloads, rather than to provide a managed serverless NoSQL key-value and document database. concerns a separate capability from the one being tested. Amazon DocumentDB exists to provide a managed document database compatible with."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon DynamoDB",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish Amazon DynamoDB from Amazon DocumentDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon DynamoDB is used to provide a managed serverless NoSQL key-value and document database, while Amazon DocumentDB is used to provide a managed document database compatible with MongoDB workloads.",
+    "answerSource": "https://aws.amazon.com/dynamodb/"
+  },
+  {
+    "question": "Which relationship between Amazon ElastiCache and Amazon DynamoDB is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide a managed serverless NoSQL key-value and document database.",
+        "correct": false,
+        "explanation": "Both services are primarily used to provide a managed serverless NoSQL key-value and document database. concerns a separate capability from the one being tested. Amazon ElastiCache exists to provide managed in-memory caching for applications. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon ElastiCache is used to provide managed in-memory caching for applications, whereas Amazon DynamoDB is used to provide a managed serverless NoSQL key-value and document database.",
+        "correct": true,
+        "explanation": "Amazon ElastiCache exists to provide managed in-memory caching for applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon ElastiCache is used to provide a managed serverless NoSQL key-value and document database, whereas Amazon DynamoDB is used to provide managed in-memory caching for applications.",
+        "correct": false,
+        "explanation": "Amazon ElastiCache is used to provide a managed serverless NoSQL key-value and document database, whereas Amazon DynamoDB is used to provide managed in-memory caching for applications. concerns a separate capability from the one being tested. Amazon ElastiCache exists to provide managed in-memory caching for applications. The."
+      },
+      {
+        "text": "Both services are primarily used to provide managed in-memory caching for applications.",
+        "correct": false,
+        "explanation": "That describes Amazon ElastiCache, but Amazon DynamoDB is primarily used to provide a managed serverless NoSQL key-value and document database."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon ElastiCache",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Amazon ElastiCache from Amazon DynamoDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon ElastiCache is used to provide managed in-memory caching for applications, while Amazon DynamoDB is used to provide a managed serverless NoSQL key-value and document database.",
+    "answerSource": "https://aws.amazon.com/elasticache/"
+  },
+  {
+    "question": "Which statement correctly distinguishes Amazon Neptune from Amazon DocumentDB?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon Neptune is used to provide a managed graph database for highly connected data, whereas Amazon DocumentDB is used to provide a managed document database compatible with MongoDB workloads.",
+        "correct": true,
+        "explanation": "Amazon DocumentDB exists to provide a managed document database compatible with MongoDB workloads. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Neptune is used to provide a managed document database compatible with MongoDB workloads, whereas Amazon DocumentDB is used to provide a managed graph database for highly connected data.",
+        "correct": false,
+        "explanation": "Amazon Neptune is used to provide a managed document database compatible with MongoDB workloads, whereas Amazon DocumentDB is used to provide a managed graph database for highly connected data. concerns a separate capability from the one being tested. Amazon DocumentDB exists to provide a managed document."
+      },
+      {
+        "text": "Both services are primarily used to provide a managed graph database for highly connected data.",
+        "correct": false,
+        "explanation": "That describes Amazon Neptune, but Amazon DocumentDB is primarily used to provide a managed document database compatible with MongoDB workloads."
+      },
+      {
+        "text": "Both services are primarily used to provide a managed document database compatible with MongoDB workloads.",
+        "correct": false,
+        "explanation": "That describes Amazon DocumentDB, but Amazon Neptune is primarily used to provide a managed graph database for highly connected data."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon Neptune",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish Amazon Neptune from Amazon DocumentDB"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon Neptune is used to provide a managed graph database for highly connected data, while Amazon DocumentDB is used to provide a managed document database compatible with MongoDB workloads.",
+    "answerSource": "https://aws.amazon.com/neptune/"
+  },
+  {
+    "question": "A learner says Amazon RDS and Amazon Aurora have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon RDS is used to provide a MySQL- and PostgreSQL-compatible managed relational database engine, whereas Amazon Aurora is used to simplify setup, operation, and scaling of relational databases.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Both services are primarily used to simplify setup, operation, and scaling of relational databases.",
+        "correct": false,
+        "explanation": "That describes Amazon RDS, but Amazon Aurora is primarily used to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Both services are primarily used to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine."
+      },
+      {
+        "text": "Amazon RDS is used to simplify setup, operation, and scaling of relational databases, whereas Amazon Aurora is used to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+        "correct": true,
+        "explanation": "Amazon Aurora exists to provide a MySQL- and PostgreSQL-compatible managed relational database engine. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Database",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Database",
+      "subtopic": "Amazon RDS",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon RDS from Amazon Aurora"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon RDS is used to simplify setup, operation, and scaling of relational databases, while Amazon Aurora is used to provide a MySQL- and PostgreSQL-compatible managed relational database engine.",
+    "answerSource": "https://aws.amazon.com/rds/"
+  }
+]

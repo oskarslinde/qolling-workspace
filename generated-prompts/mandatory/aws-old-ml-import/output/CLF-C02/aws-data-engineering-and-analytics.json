@@ -1,0 +1,902 @@
+[
+  {
+    "question": "Which AWS service is used for scalable object storage?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "EC2 provides virtual servers and operating-system control; Lambda and Fargate abstract servers, while Beanstalk manages application deployment infrastructure. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. The two capabilities."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is used for scalable object storage?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service provides a fully managed graph database service?",
+    "answers": [
+      {
+        "text": "Amazon Neptune",
+        "correct": true,
+        "explanation": "Choose Amazon Neptune when the requirement is to provide a managed graph database for highly connected data. In this context, provides, fully, managed, graph determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. Choose Amazon Neptune when the requirement is to provide a managed graph database for highly connected data."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database. Choose Amazon Neptune when the requirement is to provide a managed graph database for highly connected data. The option addresses a different technical."
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. Choose Amazon Neptune when the requirement is to provide a managed graph database for highly connected data."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service provides a fully managed graph database service?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is used for secure, durable, and scalable object storage?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      },
+      {
+        "text": "Amazon EBS",
+        "correct": false,
+        "explanation": "Amazon EBS concerns a separate capability from the one being tested. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Glacier",
+        "correct": false,
+        "explanation": "Amazon Glacier concerns a separate capability from the one being tested. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems."
+      }
+    ],
+    "tags": [
+      "Easy",
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Easy"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "Easy",
+      "subtopic": "AWS Services",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is used for secure, durable, and scalable object storage?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are valid differences between Amazon Glue and Amazon Kinesis?",
+    "answers": [
+      {
+        "text": "Amazon Glue is serverless ETL; Amazon Kinesis is real-time data streaming",
+        "correct": true,
+        "explanation": "Amazon Kinesis exists to collect and process streaming data in near real time. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Glue supports data cataloging; Amazon Kinesis does not",
+        "correct": true,
+        "explanation": "Amazon Kinesis exists to collect and process streaming data in near real time. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon Kinesis is used for batch processing; Amazon Glue is used for real-time analytics",
+        "correct": false,
+        "explanation": "Amazon Kinesis is used for batch processing; Amazon Glue is used for real-time analytics concerns a separate capability from the one being tested. Amazon Kinesis exists to collect and process streaming data in near real time. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "Amazon Kinesis integrates with Lambda for real-time processing; Glue integrates with Apache Spark",
+        "correct": true,
+        "explanation": "Amazon Kinesis exists to collect and process streaming data in near real time. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are valid differences between Amazon Glue and Amazon Kinesis?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "A content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "A fully managed data warehouse service",
+        "correct": false,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "A scalable object storage service",
+        "correct": false,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "A service that runs SQL queries directly against relational tables.",
+        "correct": false,
+        "explanation": "A service that runs SQL queries directly against relational tables. concerns a separate capability from the one being tested. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "Easy",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "Easy",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon CloudFront?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service provides a fully managed extract, transform, and load (ETL) service?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": true,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. In this context, provides, fully, managed, extract determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false,
+        "explanation": "Choose Amazon Kinesis when the requirement is to collect and process streaming data in near real time. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false,
+        "explanation": "Choose Amazon EMR when the requirement is to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service provides a fully managed extract, transform, and load (ETL) service?"
+      ]
+    }
+  },
+  {
+    "question": "How do you define an S3 bucket in an AWS CDK stack using Java?",
+    "answers": [
+      {
+        "text": "new Bucket(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": true,
+        "explanation": "new Bucket(this, \"MyBucket\", BucketProps.builder().build()); identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Bucket.create(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false,
+        "explanation": "Bucket.create(this, \"MyBucket\", BucketProps.builder().build()); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Bucket.define(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false,
+        "explanation": "Bucket.define(this, \"MyBucket\", BucketProps.builder().build()); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "new S3Bucket(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false,
+        "explanation": "new S3Bucket(this, \"MyBucket\", BucketProps.builder().build()); concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How do you define an S3 bucket in an AWS CDK stack using Java?"
+      ]
+    }
+  },
+  {
+    "question": "Which service in AWS helps you build a data lake?",
+    "answers": [
+      {
+        "text": "AWS Lake Formation",
+        "correct": true,
+        "explanation": "AWS Lake Formation identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload. For helps, you, build, data, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which service in AWS helps you build a data lake?"
+      ]
+    }
+  },
+  {
+    "question": "Your company wants to build a data lake that supports fine-grained access control for different departments. Which AWS service should you use?",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Lake Formation",
+        "correct": true,
+        "explanation": "AWS Lake Formation identifies the relevant AWS Services concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": false,
+        "explanation": "Choose Amazon Athena when the requirement is to query data in Amazon S3 using standard SQL without managing database infrastructure. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Your company wants to build a data lake that supports fine-grained access control for different departments. Which AWS service should you use?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are key features of Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Columnar storage",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Row-level locking",
+        "correct": false,
+        "explanation": "Row-level locking concerns a separate capability from the one being tested. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Massively Parallel Processing (MPP)",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Automatic schema inference",
+        "correct": false,
+        "explanation": "Automatic schema inference concerns a separate capability from the one being tested. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are key features of Amazon Redshift?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is used for deploying and managing containerized applications?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": true,
+        "explanation": "Amazon ECS identifies the relevant AWS Services concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "CloudFront is a content delivery network; Route 53 provides DNS, Global Accelerator improves application network paths, and S3 stores objects. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is used for deploying and managing containerized applications?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following can improve query performance in Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Using distribution keys effectively",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Storing data in JSON format",
+        "correct": false,
+        "explanation": "Storing data in JSON format concerns a separate capability from the one being tested. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using sort keys",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Vacuuming tables regularly",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following can improve query performance in Amazon Redshift?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS services integrate natively with Amazon Redshift for data ingestion?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis Data Firehose",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. For services, integrate, natively, Redshift, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Amazon Rekognition exists to analyze images and videos to identify objects, faces, text, and activities. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS services integrate natively with Amazon Redshift for data ingestion?"
+      ]
+    }
+  },
+  {
+    "question": "What are the benefits of using Redshift Spectrum?",
+    "answers": [
+      {
+        "text": "Querying data directly in S3 without loading it into Redshift",
+        "correct": true,
+        "explanation": "Querying data directly in S3 without loading it into Redshift identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Real-time streaming analytics",
+        "correct": false,
+        "explanation": "Real-time streaming analytics concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Cost-effective querying of large datasets",
+        "correct": true,
+        "explanation": "Cost-effective querying of large datasets identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Automatic machine learning model training",
+        "correct": false,
+        "explanation": "Automatic machine learning model training concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are the benefits of using Redshift Spectrum?"
+      ]
+    }
+  },
+  {
+    "question": "What should you investigate if an application using Amazon SQS is not receiving messages?",
+    "answers": [
+      {
+        "text": "Queue permissions and access policy",
+        "correct": true,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) stores messages in durable queues so producers and consumers can operate independently. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Message retention period",
+        "correct": false,
+        "explanation": "Message retention period concerns a separate capability from the one being tested. Amazon Simple Queue Service (Amazon SQS) stores messages in durable queues so producers and consumers can operate independently. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Dead-letter queue configuration",
+        "correct": true,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) stores messages in durable queues so producers and consumers can operate independently. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Visibility timeout settings",
+        "correct": true,
+        "explanation": "Amazon Simple Queue Service (Amazon SQS) stores messages in durable queues so producers and consumers can operate independently. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: What should you investigate if an application using Amazon SQS is not receiving messages?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service provides a managed service for running Apache Spark and Apache Hadoop clusters?",
+    "answers": [
+      {
+        "text": "Amazon EMR",
+        "correct": true,
+        "explanation": "Choose Amazon EMR when the requirement is to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. Choose Amazon EMR when the requirement is to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. Choose Amazon EMR when the requirement is to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop. The two."
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false,
+        "explanation": "Choose Amazon Kinesis when the requirement is to collect and process streaming data in near real time. Choose Amazon EMR when the requirement is to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service provides a managed service for running Apache Spark and Apache Hadoop clusters?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service provides a petabyte-scale data warehouse solution?",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": true,
+        "explanation": "Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. The option addresses a different technical."
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "explanation": "DynamoDB is a managed serverless key-value and document database; RDS is relational, Redshift is an analytics warehouse, and Neptune is a graph database. Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. The."
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "explanation": "S3 stores objects; EBS provides block volumes, EFS provides shared elastic file storage, and FSx provides managed specialized file systems. Redshift is an analytical data warehouse; Athena queries S3, DynamoDB is an operational NoSQL database, and OpenSearch supports search and log analytics. The two capabilities solve."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service provides a petabyte-scale data warehouse solution?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are required to use QuickSight Q effectively?",
+    "answers": [
+      {
+        "text": "Well-prepared datasets with clear metadata",
+        "correct": true,
+        "explanation": "Well-prepared datasets with clear metadata identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Training the model with custom scripts",
+        "correct": false,
+        "explanation": "Training the model with custom scripts concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Defined topics and business terms",
+        "correct": true,
+        "explanation": "Defined topics and business terms identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Manual SQL queries for every question",
+        "correct": false,
+        "explanation": "Manual SQL queries for every question concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are required to use QuickSight Q effectively?"
+      ]
+    }
+  },
+  {
+    "question": "What are common use cases for Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Real-time video processing",
+        "correct": false,
+        "explanation": "Real-time video processing concerns a separate capability from the one being tested. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Data warehousing",
+        "correct": true,
+        "explanation": "Data warehousing consolidates data for analytical queries and reporting, commonly with services such as Amazon Redshift. It is not a content-delivery capability."
+      },
+      {
+        "text": "Business intelligence reporting",
+        "correct": true,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Transactional database operations",
+        "correct": false,
+        "explanation": "Transactional database operations concerns a separate capability from the one being tested. Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are common use cases for Amazon Redshift?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is commonly used for large-scale data transformation and ETL tasks?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": true,
+        "explanation": "Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows. In this context, commonly, for, large-scale, data determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false,
+        "explanation": "Choose Amazon Rekognition when the requirement is to analyze images and videos to identify objects, faces, text, and activities. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Polly performs text-to-speech; Transcribe performs speech recognition, Translate translates text, and Rekognition analyzes images and videos. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Choose Amazon Comprehend when the requirement is to use natural language processing to discover insights and relationships in text. Choose AWS Glue when the requirement is to discover, prepare, transform, and catalog data for analytics workflows."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is commonly used for large-scale data transformation and ETL tasks?"
+      ]
+    }
+  }
+]

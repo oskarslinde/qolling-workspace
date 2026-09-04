@@ -1,0 +1,932 @@
+[
+  {
+    "question": "Which AWS service is designed for real-time data processing and analytics?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used for scalable object storage?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service provides a fully managed graph database service?",
+    "answers": [
+      {
+        "text": "Amazon Neptune",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon DocumentDB",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used for secure, durable, and scalable object storage?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon EBS",
+        "correct": false
+      },
+      {
+        "text": "Amazon Glacier",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "AWS Backup",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "Easy",
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following are valid differences between Amazon Glue and Amazon Kinesis?",
+    "answers": [
+      {
+        "text": "Amazon Glue is serverless ETL; Amazon Kinesis is real-time data streaming",
+        "correct": true
+      },
+      {
+        "text": "Amazon Glue supports data cataloging; Amazon Kinesis does not",
+        "correct": true
+      },
+      {
+        "text": "Amazon Kinesis is used for batch processing; Amazon Glue is used for real-time analytics",
+        "correct": false
+      },
+      {
+        "text": "Amazon Glue requires manual server provisioning; Amazon Kinesis is fully managed",
+        "correct": false
+      },
+      {
+        "text": "Amazon Kinesis integrates with Lambda for real-time processing; Glue integrates with Apache Spark",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is ideal for storing large amounts of training data for ML models?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false
+      },
+      {
+        "text": "AWS Elastic Beanstalk",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is designed for real-time data processing?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What is Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "A content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds",
+        "correct": true
+      },
+      {
+        "text": "A fully managed data warehouse service",
+        "correct": false
+      },
+      {
+        "text": "A scalable object storage service",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "Easy",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service provides a fully managed extract, transform, and load (ETL) service?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": true
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon EMR",
+        "correct": false
+      },
+      {
+        "text": "AWS Data Pipeline",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How do you define an S3 bucket in an AWS CDK stack using Java?",
+    "answers": [
+      {
+        "text": "new Bucket(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": true
+      },
+      {
+        "text": "Bucket.create(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false
+      },
+      {
+        "text": "Bucket.define(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false
+      },
+      {
+        "text": "new S3Bucket(this, \"MyBucket\", BucketProps.builder().build());",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which service in AWS helps you build a data lake?",
+    "answers": [
+      {
+        "text": "AWS Lake Formation",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Your company wants to build a data lake that supports fine-grained access control for different departments. Which AWS service should you use?",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "AWS Lake Formation",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What is Model Monitor Data Capture used for?",
+    "answers": [
+      {
+        "text": "To capture data from model endpoints for monitoring",
+        "correct": true
+      },
+      {
+        "text": "To store data in S3",
+        "correct": false
+      },
+      {
+        "text": "To create virtual machines",
+        "correct": false
+      },
+      {
+        "text": "To preprocess data for training",
+        "correct": false
+      },
+      {
+        "text": "To analyze model performance",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are key features of Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Columnar storage",
+        "correct": true
+      },
+      {
+        "text": "Row-level locking",
+        "correct": false
+      },
+      {
+        "text": "Massively Parallel Processing (MPP)",
+        "correct": true
+      },
+      {
+        "text": "Automatic schema inference",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used for deploying and managing containerized applications?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is primarily used for real-time ingestion and processing of streaming data?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis",
+        "correct": true
+      },
+      {
+        "text": "Amazon Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "How does Amazon Glue differ from Amazon Kinesis in terms of data processing?",
+    "answers": [
+      {
+        "text": "Amazon Glue is designed for batch ETL jobs, while Amazon Kinesis is optimized for real-time streaming data",
+        "correct": true
+      },
+      {
+        "text": "Amazon Glue is used for real-time analytics, while Amazon Kinesis is used for data cataloging",
+        "correct": false
+      },
+      {
+        "text": "Amazon Glue stores data in S3, while Amazon Kinesis stores data in DynamoDB",
+        "correct": false
+      },
+      {
+        "text": "Amazon Glue is a messaging service, while Amazon Kinesis is a data lake",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which data sources can Amazon QuickSight connect to?",
+    "answers": [
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false
+      },
+      {
+        "text": "Redshift",
+        "correct": true
+      },
+      {
+        "text": "Salesforce",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the benefits of using SPICE in Amazon QuickSight?",
+    "answers": [
+      {
+        "text": "Faster performance for large datasets",
+        "correct": true
+      },
+      {
+        "text": "Offline data analysis",
+        "correct": false
+      },
+      {
+        "text": "In-memory data storage",
+        "correct": true
+      },
+      {
+        "text": "Real-time data streaming",
+        "correct": false
+      },
+      {
+        "text": "Scalable and cost-effective analytics",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following can improve query performance in Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Using distribution keys effectively",
+        "correct": true
+      },
+      {
+        "text": "Storing data in JSON format",
+        "correct": false
+      },
+      {
+        "text": "Using sort keys",
+        "correct": true
+      },
+      {
+        "text": "Avoiding compression",
+        "correct": false
+      },
+      {
+        "text": "Vacuuming tables regularly",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS services integrate natively with Amazon Redshift for data ingestion?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis Data Firehose",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": true
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are the benefits of using Redshift Spectrum?",
+    "answers": [
+      {
+        "text": "Querying data directly in S3 without loading it into Redshift",
+        "correct": true
+      },
+      {
+        "text": "Real-time streaming analytics",
+        "correct": false
+      },
+      {
+        "text": "Cost-effective querying of large datasets",
+        "correct": true
+      },
+      {
+        "text": "Automatic machine learning model training",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What should you investigate if an application using Amazon SQS is not receiving messages?",
+    "answers": [
+      {
+        "text": "Queue permissions and access policy",
+        "correct": true
+      },
+      {
+        "text": "Message retention period",
+        "correct": false
+      },
+      {
+        "text": "Dead-letter queue configuration",
+        "correct": true
+      },
+      {
+        "text": "Visibility timeout settings",
+        "correct": true
+      },
+      {
+        "text": "S3 bucket region mismatch",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service provides a managed service for running Apache Spark and Apache Hadoop clusters?",
+    "answers": [
+      {
+        "text": "Amazon EMR",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "Amazon Kinesis",
+        "correct": false
+      },
+      {
+        "text": "AWS Data Pipeline",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service provides a petabyte-scale data warehouse solution?",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": true
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is used for real-time data processing and analytics?",
+    "answers": [
+      {
+        "text": "Amazon Kinesis",
+        "correct": true
+      },
+      {
+        "text": "Amazon S3",
+        "correct": false
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Your team uses Amazon QuickSight for business analytics. You want to enable anomaly detection on sales data to automatically identify unusual spikes in sales. Which feature of QuickSight should you use?",
+    "answers": [
+      {
+        "text": "SPICE",
+        "correct": false
+      },
+      {
+        "text": "AutoGraph",
+        "correct": false
+      },
+      {
+        "text": "Machine Learning Insights",
+        "correct": true
+      },
+      {
+        "text": "QuickSight Q",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "Your data engineering team is tasked with building a secure data lake that supports fine-grained access control for different departments. Which AWS service should you use to simplify this process?",
+    "answers": [
+      {
+        "text": "Amazon Redshift",
+        "correct": false
+      },
+      {
+        "text": "AWS Lake Formation",
+        "correct": true
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 3
+  },
+  {
+    "question": "What are the benefits of using Amazon QuickSight Q?",
+    "answers": [
+      {
+        "text": "Faster insights without needing technical skills",
+        "correct": true
+      },
+      {
+        "text": "Real-time log monitoring",
+        "correct": false
+      },
+      {
+        "text": "Self-service analytics for business users",
+        "correct": true
+      },
+      {
+        "text": "Manual dashboard coding",
+        "correct": false
+      },
+      {
+        "text": "Natural language support for data exploration",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are required to use QuickSight Q effectively?",
+    "answers": [
+      {
+        "text": "Well-prepared datasets with clear metadata",
+        "correct": true
+      },
+      {
+        "text": "Training the model with custom scripts",
+        "correct": false
+      },
+      {
+        "text": "Defined topics and business terms",
+        "correct": true
+      },
+      {
+        "text": "Manual SQL queries for every question",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "What are common use cases for Amazon Redshift?",
+    "answers": [
+      {
+        "text": "Real-time video processing",
+        "correct": false
+      },
+      {
+        "text": "Data warehousing",
+        "correct": true
+      },
+      {
+        "text": "Business intelligence reporting",
+        "correct": true
+      },
+      {
+        "text": "Transactional database operations",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of feature engineering in data processing?",
+    "answers": [
+      {
+        "text": "To improve model interpretability and performance",
+        "correct": true
+      },
+      {
+        "text": "To reduce the size of the training dataset",
+        "correct": false
+      },
+      {
+        "text": "To deploy the model faster",
+        "correct": false
+      },
+      {
+        "text": "To create new input variables from existing data",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1
+  },
+  {
+    "question": "Which AWS service can be integrated with Amazon A2I for document processing?",
+    "answers": [
+      {
+        "text": "Amazon Textract",
+        "correct": true
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      },
+      {
+        "text": "AWS Glue",
+        "correct": false
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2
+  },
+  {
+    "question": "Which AWS service is commonly used for large-scale data transformation and ETL tasks?",
+    "answers": [
+      {
+        "text": "AWS Glue",
+        "correct": true
+      },
+      {
+        "text": "Amazon Rekognition",
+        "correct": false
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2
+  }
+]

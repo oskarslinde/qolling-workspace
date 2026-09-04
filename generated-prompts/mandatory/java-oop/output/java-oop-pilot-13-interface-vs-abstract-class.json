@@ -1,0 +1,542 @@
+[
+  {
+    "question": "Which statement best describes Interface vs abstract class in practical Java OOP?",
+    "answers": [
+      {
+        "text": "Prefer interfaces for capability contracts and abstract classes for shared state/flow while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Interface vs abstract class mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Interface vs abstract class should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Interface vs abstract class only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Interface vs abstract class when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "conceptual",
+      "conceptual interface vs abstract class 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-interface-vs-abstract-class-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Interface vs abstract class is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "Why does Interface vs abstract class matter when designing backend Java classes?",
+    "answers": [
+      {
+        "text": "Prefer interfaces for capability contracts and abstract classes for shared state/flow while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Interface vs abstract class mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Interface vs abstract class should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Interface vs abstract class only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Interface vs abstract class when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "conceptual",
+      "conceptual interface vs abstract class 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-interface-vs-abstract-class-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Interface vs abstract class is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "A team is reviewing object boundaries in a Spring Boot service. What is the best interpretation of Interface vs abstract class?",
+    "answers": [
+      {
+        "text": "Prefer interfaces for capability contracts and abstract classes for shared state/flow while keeping the object's responsibility clear.",
+        "correct": true
+      },
+      {
+        "text": "Use Interface vs abstract class mainly to make classes larger and reduce the number of files.",
+        "correct": false,
+        "wrongAnswerExplanation": "The goal is not larger classes. Interface vs abstract class should improve boundaries, behavior, and maintainability."
+      },
+      {
+        "text": "Apply Interface vs abstract class only in interview examples because production Java relies mostly on global functions.",
+        "correct": false,
+        "wrongAnswerExplanation": "Production Java applications rely heavily on classes, objects, services, interfaces, and domain models."
+      },
+      {
+        "text": "Ignore Interface vs abstract class when working with Spring because the framework replaces object-oriented design.",
+        "correct": false,
+        "wrongAnswerExplanation": "Spring uses OOP concepts such as classes, interfaces, dependency injection, and object collaboration rather than replacing them."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "conceptual",
+      "conceptual interface vs abstract class 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "conceptual",
+      "coverageObjectives": [
+        "conceptual-interface-vs-abstract-class-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Interface vs abstract class is useful when it improves object boundaries and keeps behavior understandable in real Java systems. The practical target is maintainable code, not textbook terminology."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\nclass Example1 {\n    private String name;\n    Example1(String name) { this.name = name; }\n    String describe() { return name.toUpperCase(); }\n}\nSystem.out.println(new Example1(\"api\").describe());\n```\n\nWhich option best explains the runtime behavior shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates contract choice versus shared implementation choice and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "code reading",
+      "code reading interface vs abstract class 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-interface-vs-abstract-class-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Interface vs abstract class through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "What is the most important OOP behavior shown by this code?\n\n```java\nclass Example2 {\n    private String name;\n    Example2(String name) { this.name = name; }\n    String describe() { return name.toUpperCase(); }\n}\nSystem.out.println(new Example2(\"api\").describe());\n```\n\nWhich option best explains the state boundary shown here?",
+    "answers": [
+      {
+        "text": "It demonstrates contract choice versus shared implementation choice and should be read in terms of object state, declared types, and runtime behavior.",
+        "correct": true
+      },
+      {
+        "text": "It proves Java always copies whole objects when variables are assigned.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java object variables hold references. Assignment behavior depends on references, not automatic deep copying."
+      },
+      {
+        "text": "It shows that fields and methods are selected only by file name.",
+        "correct": false,
+        "wrongAnswerExplanation": "Java member behavior is determined by declarations, access rules, overload resolution, and runtime dispatch where applicable."
+      },
+      {
+        "text": "It cannot compile because OOP features are unavailable in ordinary backend classes.",
+        "correct": false,
+        "wrongAnswerExplanation": "These OOP features are normal Java language features and are commonly used in backend code."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "code reading",
+      "code reading interface vs abstract class 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "code-reading",
+      "coverageObjectives": [
+        "code-reading-interface-vs-abstract-class-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 2,
+    "answerDescription": "The snippet is intended to test whether the reader follows Interface vs abstract class through concrete Java syntax rather than relying on a slogan."
+  },
+  {
+    "question": "You are implementing a small order-processing feature. Which approach best applies Interface vs abstract class?\n\nChoose the option that best handles the implementation boundary.",
+    "answers": [
+      {
+        "text": "Create focused Java types that prefer interfaces for capability contracts and abstract classes for shared state/flow, with dependencies and state represented explicitly.",
+        "correct": true
+      },
+      {
+        "text": "Put every rule into one static utility method and pass maps of loosely named values.",
+        "correct": false,
+        "wrongAnswerExplanation": "That hides object roles and makes validation, testing, and future changes harder."
+      },
+      {
+        "text": "Expose all fields publicly so controllers, services, and tests can update them directly.",
+        "correct": false,
+        "wrongAnswerExplanation": "Public mutable fields weaken invariants and make it difficult to know where state changed."
+      },
+      {
+        "text": "Choose inheritance or abstraction before identifying the actual object responsibility.",
+        "correct": false,
+        "wrongAnswerExplanation": "The design should start from the domain responsibility and only introduce inheritance or abstraction when it fits."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "coding task",
+      "coding task interface vs abstract class 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "coding-task",
+      "coverageObjectives": [
+        "coding-task-interface-vs-abstract-class-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 3,
+    "answerDescription": "A good implementation of Interface vs abstract class should make the object model clearer and reduce accidental coupling between callers and internals."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Interface vs abstract class. The symptom is: choosing abstract classes too early limits future inheritance. What is the best first fix?\n\nChoose the fix that best addresses the root cause.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "debugging",
+      "debugging interface vs abstract class 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-interface-vs-abstract-class-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A production bug appears after a refactor involving Interface vs abstract class. The symptom is: choosing abstract classes too early limits future inheritance. What is the best first fix?\n\nChoose the fix that best addresses the contract repair.",
+    "answers": [
+      {
+        "text": "Fix the object design so it directly addresses the violated responsibility or contract, then add a focused regression test.",
+        "correct": true
+      },
+      {
+        "text": "Catch the exception broadly and return a default successful result.",
+        "correct": false,
+        "wrongAnswerExplanation": "That masks the design bug and can create incorrect product behavior."
+      },
+      {
+        "text": "Add comments explaining that callers should avoid the broken path.",
+        "correct": false,
+        "wrongAnswerExplanation": "Comments do not enforce object contracts or prevent the same bug from recurring."
+      },
+      {
+        "text": "Move the code into a larger service so fewer classes are involved.",
+        "correct": false,
+        "wrongAnswerExplanation": "Fewer classes do not automatically fix a broken responsibility, contract, or state boundary."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "debugging",
+      "debugging interface vs abstract class 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "debugging",
+      "coverageObjectives": [
+        "debugging-interface-vs-abstract-class-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 4,
+    "answerDescription": "The root-cause fix should make the object model enforce the intended behavior rather than relying on callers to remember fragile rules."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Interface vs abstract class?\n\nChoose the design that best balances extension design for interface vs abstract class.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use prefer interfaces for capability contracts and abstract classes for shared state/flow, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "design scenario",
+      "design scenario interface vs abstract class 1"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-interface-vs-abstract-class-1"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Interface vs abstract class should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Interface vs abstract class?\n\nChoose the design that best balances layered architecture for interface vs abstract class.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use prefer interfaces for capability contracts and abstract classes for shared state/flow, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "design scenario",
+      "design scenario interface vs abstract class 2"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-interface-vs-abstract-class-2"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Interface vs abstract class should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Interface vs abstract class?\n\nChoose the design that best balances testability tradeoff for interface vs abstract class.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use prefer interfaces for capability contracts and abstract classes for shared state/flow, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "design scenario",
+      "design scenario interface vs abstract class 3"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-interface-vs-abstract-class-3"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Interface vs abstract class should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  },
+  {
+    "question": "A team is designing a Spring Boot module that must evolve over several releases. Which design choice best uses Interface vs abstract class?\n\nChoose the design that best balances future change for interface vs abstract class.",
+    "answers": [
+      {
+        "text": "Model the stable responsibilities explicitly, use prefer interfaces for capability contracts and abstract classes for shared state/flow, and keep extension points narrow enough to test.",
+        "correct": true
+      },
+      {
+        "text": "Create a broad base class for every possible future variation even though only one implementation exists.",
+        "correct": false,
+        "wrongAnswerExplanation": "Speculative inheritance adds coupling before the design has proven it needs that extension point."
+      },
+      {
+        "text": "Let controllers manipulate persistence objects directly because it avoids mapping code.",
+        "correct": false,
+        "wrongAnswerExplanation": "That couples API behavior to persistence details and usually makes validation and evolution harder."
+      },
+      {
+        "text": "Use global mutable state so every class can share configuration and collaborators.",
+        "correct": false,
+        "wrongAnswerExplanation": "Global mutable state makes behavior harder to reason about and often creates test pollution."
+      }
+    ],
+    "tags": [
+      "interface",
+      "abstract",
+      "design scenario",
+      "design scenario interface vs abstract class 4"
+    ],
+    "metadata": {
+      "track": "Java",
+      "topic": "java-oop",
+      "subtopic": "interface-vs-abstract-class",
+      "questionType": "design-scenario",
+      "coverageObjectives": [
+        "design-scenario-interface-vs-abstract-class-4"
+      ]
+    },
+    "categories": [
+      "Java",
+      "OOP"
+    ],
+    "difficulty": 5,
+    "answerDescription": "For design scenarios, Interface vs abstract class should be judged by whether it keeps responsibilities clear, supports realistic extension, and remains testable."
+  }
+]

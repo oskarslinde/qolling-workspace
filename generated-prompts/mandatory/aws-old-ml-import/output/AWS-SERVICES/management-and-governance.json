@@ -1,0 +1,2431 @@
+[
+  {
+    "question": "What is the primary purpose of AWS Auto Scaling?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Define and provision AWS infrastructure as code using templates",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "Adjust resource capacity automatically to maintain availability and performance",
+        "correct": true,
+        "explanation": "AWS Auto Scaling exists to adjust resource capacity automatically to maintain availability and performance. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Record AWS API activity for governance, auditing, and operational investigation",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Monitor metrics, logs, events, and alarms for AWS resources and applications",
+        "correct": false,
+        "explanation": "Amazon CloudWatch has a different primary responsibility: it is designed to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Auto Scaling",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Auto Scaling"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Auto Scaling exists to adjust resource capacity automatically to maintain availability and performance.",
+    "answerSource": "https://aws.amazon.com/autoscaling/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to define and provision AWS infrastructure as code using templates?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": true,
+        "explanation": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch has a different primary responsibility: it is designed to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudFormation",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CloudFormation"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates.",
+    "answerSource": "https://aws.amazon.com/cloudformation/"
+  },
+  {
+    "question": "A team needs to record AWS API activity for governance, auditing, and operational investigation. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "AWS CodeBuild is designed to compile source code, run tests, and produce build artifacts in managed build environments, so it does not match this question."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudTrail",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS CloudTrail"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation.",
+    "answerSource": "https://aws.amazon.com/cloudtrail/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to monitor metrics, logs, events, and alarms for AWS resources and applications?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true,
+        "explanation": "Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Amazon CloudWatch",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of Amazon CloudWatch"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+    "answerSource": "https://aws.amazon.com/cloudwatch/"
+  },
+  {
+    "question": "Which pairing correctly matches AWS Compute Optimizer with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Auto Scaling — recommend better-sized AWS resources based on utilization data",
+        "correct": false,
+        "explanation": "AWS Auto Scaling — recommend better-sized AWS resources based on utilization data concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Compute Optimizer — recommend better-sized AWS resources based on utilization data",
+        "correct": true,
+        "explanation": "AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudFormation — recommend better-sized AWS resources based on utilization data",
+        "correct": false,
+        "explanation": "AWS CloudFormation — recommend better-sized AWS resources based on utilization data concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS CloudTrail — recommend better-sized AWS resources based on utilization data",
+        "correct": false,
+        "explanation": "AWS CloudTrail — recommend better-sized AWS resources based on utilization data concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Compute Optimizer",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Compute Optimizer"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data.",
+    "answerSource": "https://aws.amazon.com/compute-optimizer/"
+  },
+  {
+    "question": "Which statement about AWS Config is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "It is used to adjust resource capacity automatically to maintain availability and performance. concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to define and provision AWS infrastructure as code using templates.",
+        "correct": false,
+        "explanation": "It is used to define and provision AWS infrastructure as code using templates. concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It is used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": false,
+        "explanation": "It is used to record AWS API activity for governance, auditing, and operational investigation. concerns a separate capability from the one being tested. AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Config",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Config"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history.",
+    "answerSource": "https://aws.amazon.com/config/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Control Tower?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Define and provision AWS infrastructure as code using templates",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "Record AWS API activity for governance, auditing, and operational investigation",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Adjust resource capacity automatically to maintain availability and performance",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Set up and govern a multi-account AWS environment using landing-zone guardrails",
+        "correct": true,
+        "explanation": "AWS Control Tower exists to set up and govern a multi-account AWS environment using landing-zone guardrails. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Control Tower",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Control Tower"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Control Tower exists to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+    "answerSource": "https://aws.amazon.com/controltower/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to show personalized information about AWS service events affecting accounts and resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "AWS Health Dashboard",
+        "correct": true,
+        "explanation": "Choose AWS Health Dashboard when the requirement is to show personalized information about AWS service events affecting accounts and resources."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Health Dashboard",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Health Dashboard"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Health Dashboard exists to show personalized information about AWS service events affecting accounts and resources.",
+    "answerSource": "https://aws.amazon.com/personal-health-dashboard/"
+  },
+  {
+    "question": "What is the primary purpose of AWS License Manager?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Adjust resource capacity automatically to maintain availability and performance",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Track and control software license usage across environments",
+        "correct": true,
+        "explanation": "AWS License Manager exists to track and control software license usage across environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Define and provision AWS infrastructure as code using templates",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "Record AWS API activity for governance, auditing, and operational investigation",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS License Manager",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS License Manager"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS License Manager exists to track and control software license usage across environments.",
+    "answerSource": "https://aws.amazon.com/license-manager/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to provide a browser-based interface for managing AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Management Console",
+        "correct": true,
+        "explanation": "AWS Management Console exists to provide a browser-based interface for managing AWS resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Management Console",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Management Console"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Management Console exists to provide a browser-based interface for managing AWS resources.",
+    "answerSource": "https://aws.amazon.com/console/"
+  },
+  {
+    "question": "A team needs to centrally manage multiple AWS accounts and apply policies and consolidated billing. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "AWS Organizations",
+        "correct": true,
+        "explanation": "AWS Organizations exists to centrally manage multiple AWS accounts and apply policies and consolidated billing. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Organizations",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Organizations"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Organizations exists to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+    "answerSource": "https://aws.amazon.com/organizations/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to create and govern an approved catalog of deployable IT products?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": true,
+        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Service Catalog",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Service Catalog"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products.",
+    "answerSource": "https://aws.amazon.com/servicecatalog/"
+  },
+  {
+    "question": "Which pairing correctly matches Service Quotas with its main responsibility?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Auto Scaling — view and manage limits on AWS resources and API operations",
+        "correct": false,
+        "explanation": "AWS Auto Scaling — view and manage limits on AWS resources and API operations concerns a separate capability from the one being tested. Service Quotas exists to view and manage limits on AWS resources and API operations. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "Service Quotas — view and manage limits on AWS resources and API operations",
+        "correct": true,
+        "explanation": "Service Quotas exists to view and manage limits on AWS resources and API operations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudFormation — view and manage limits on AWS resources and API operations",
+        "correct": false,
+        "explanation": "AWS CloudFormation — view and manage limits on AWS resources and API operations concerns a separate capability from the one being tested. Service Quotas exists to view and manage limits on AWS resources and API operations. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "AWS CloudTrail — view and manage limits on AWS resources and API operations",
+        "correct": false,
+        "explanation": "AWS CloudTrail — view and manage limits on AWS resources and API operations concerns a separate capability from the one being tested. Service Quotas exists to view and manage limits on AWS resources and API operations. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Service Quotas",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Identify the primary purpose of Service Quotas"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Service Quotas exists to view and manage limits on AWS resources and API operations.",
+    "answerSource": "https://aws.amazon.com/service-quotas/"
+  },
+  {
+    "question": "Which statement about AWS Systems Manager is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "It is used to view and control AWS and hybrid infrastructure and automate operational tasks.",
+        "correct": true,
+        "explanation": "AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "It is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "It is used to adjust resource capacity automatically to maintain availability and performance. concerns a separate capability from the one being tested. AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks. The distinction is important when selecting services for."
+      },
+      {
+        "text": "It is used to define and provision AWS infrastructure as code using templates.",
+        "correct": false,
+        "explanation": "It is used to define and provision AWS infrastructure as code using templates. concerns a separate capability from the one being tested. AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks. The distinction is important when selecting services for."
+      },
+      {
+        "text": "It is used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": false,
+        "explanation": "It is used to record AWS API activity for governance, auditing, and operational investigation. concerns a separate capability from the one being tested. AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks. The distinction is important when selecting services."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Systems Manager",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Systems Manager"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks.",
+    "answerSource": "https://aws.amazon.com/systems-manager/"
+  },
+  {
+    "question": "What is the primary purpose of AWS Trusted Advisor?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Define and provision AWS infrastructure as code using templates",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "Record AWS API activity for governance, auditing, and operational investigation",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Adjust resource capacity automatically to maintain availability and performance",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Inspect AWS environments and recommend improvements for cost, performance, security, and resilience",
+        "correct": true,
+        "explanation": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Trusted Advisor",
+      "questionType": "QT01",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Trusted Advisor"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Trusted Advisor exists to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+    "answerSource": "https://aws.amazon.com/trusted-advisor/"
+  },
+  {
+    "question": "Which AWS service is primarily designed to review workloads against AWS architectural best practices?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation has a different primary responsibility: it is designed to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail has a different primary responsibility: it is designed to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "AWS Well-Architected Tool",
+        "correct": true,
+        "explanation": "AWS Well-Architected Tool exists to review workloads against AWS architectural best practices. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling has a different primary responsibility: it is designed to adjust resource capacity automatically to maintain availability and performance."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Well-Architected Tool",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Identify the primary purpose of AWS Well-Architected Tool"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "AWS Well-Architected Tool exists to review workloads against AWS architectural best practices.",
+    "answerSource": "https://aws.amazon.com/well-architected-tool/"
+  },
+  {
+    "question": "Which service records API activity, while the other common monitoring services focus on metrics or configuration state?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is designed to monitor metrics, logs, events, and alarms for AWS resources and applications, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": false,
+        "explanation": "AWS X-Ray is designed to trace requests across distributed applications to analyze latency and faults, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS CloudTrail from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests.",
+    "answerSource": "https://aws.amazon.com/cloudtrail/"
+  },
+  {
+    "question": "Which service evaluates resource configurations against compliance rules?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Config",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail is designed to record AWS API activity for governance, auditing, and operational investigation, so it does not match the requirement in this question."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is designed to monitor metrics, logs, events, and alarms for AWS resources and applications, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false,
+        "explanation": "AWS Trusted Advisor is designed to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, so it does not match the requirement in this question."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS Config from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Config records and evaluates resource configuration; CloudTrail logs API calls, CloudWatch monitors telemetry, and Trusted Advisor provides recommendations.",
+    "answerSource": "https://aws.amazon.com/config/"
+  },
+  {
+    "question": "Which service manages infrastructure using declarative templates?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Systems Manager",
+        "correct": false,
+        "explanation": "AWS Systems Manager is designed to view and control AWS and hybrid infrastructure and automate operational tasks, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": false,
+        "explanation": "AWS Service Catalog is designed to create and govern an approved catalog of deployable IT products, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "AWS CodePipeline is designed to automate source, build, test, and deployment stages in a release pipeline, so it does not match the requirement in this question."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": true,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Service Comparisons"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Distinguish AWS CloudFormation from related AWS services"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products.",
+    "answerSource": "https://aws.amazon.com/cloudformation/"
+  },
+  {
+    "question": "Which AWS service is responsible for helping customers adjust resource capacity automatically to maintain availability and performance?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS License Manager",
+        "correct": false,
+        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": true,
+        "explanation": "AWS Auto Scaling exists to adjust resource capacity automatically to maintain availability and performance. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Health Dashboard",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is designed to show personalized information about AWS service events affecting accounts and resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Auto Scaling",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Select AWS Auto Scaling for a requirement to adjust resource capacity automatically to maintain availability and performance"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Auto Scaling when the requirement is to adjust resource capacity automatically to maintain availability and performance.",
+    "answerSource": "https://aws.amazon.com/autoscaling/"
+  },
+  {
+    "question": "Which AWS service should a team select to define and provision AWS infrastructure as code using templates?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Service Quotas",
+        "correct": false,
+        "explanation": "Service Quotas is designed to view and manage limits on AWS resources and API operations, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": true,
+        "explanation": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Well-Architected Tool",
+        "correct": false,
+        "explanation": "AWS Well-Architected Tool is designed to review workloads against AWS architectural best practices, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is designed to monitor metrics, logs, events, and alarms for AWS resources and applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudFormation",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS CloudFormation for a requirement to define and provision AWS infrastructure as code using templates"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS CloudFormation when the requirement is to define and provision AWS infrastructure as code using templates.",
+    "answerSource": "https://aws.amazon.com/cloudformation/"
+  },
+  {
+    "question": "A cloud practitioner must record AWS API activity for governance, auditing, and operational investigation. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Service Quotas",
+        "correct": false,
+        "explanation": "Service Quotas is designed to view and manage limits on AWS resources and API operations, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling is designed to adjust resource capacity automatically to maintain availability and performance, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation is designed to define and provision AWS infrastructure as code using templates, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudTrail",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS CloudTrail for a requirement to record AWS API activity for governance, auditing, and operational investigation"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS CloudTrail when the requirement is to record AWS API activity for governance, auditing, and operational investigation.",
+    "answerSource": "https://aws.amazon.com/cloudtrail/"
+  },
+  {
+    "question": "A team needs to monitor metrics, logs, events, and alarms for AWS resources and applications. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Health Dashboard",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is designed to show personalized information about AWS service events affecting accounts and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS License Manager",
+        "correct": false,
+        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": true,
+        "explanation": "Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Amazon CloudWatch",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Amazon CloudWatch for a requirement to monitor metrics, logs, events, and alarms for AWS resources and applications"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Amazon CloudWatch when the requirement is to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+    "answerSource": "https://aws.amazon.com/cloudwatch/"
+  },
+  {
+    "question": "Which AWS service should a team select to recommend better-sized AWS resources based on utilization data?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Control Tower",
+        "correct": false,
+        "explanation": "AWS Control Tower is designed to set up and govern a multi-account AWS environment using landing-zone guardrails, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Compute Optimizer",
+        "correct": true,
+        "explanation": "AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail is designed to record AWS API activity for governance, auditing, and operational investigation, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Compute Optimizer",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS Compute Optimizer for a requirement to recommend better-sized AWS resources based on utilization data"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS Compute Optimizer when the requirement is to recommend better-sized AWS resources based on utilization data.",
+    "answerSource": "https://aws.amazon.com/compute-optimizer/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to record resource configurations, evaluate compliance, and track configuration history?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Health Dashboard",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is designed to show personalized information about AWS service events affecting accounts and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Config",
+        "correct": true,
+        "explanation": "AWS Config exists to record resource configurations, evaluate compliance, and track configuration history. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Compute Optimizer",
+        "correct": false,
+        "explanation": "AWS Compute Optimizer is designed to recommend better-sized AWS resources based on utilization data, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Control Tower",
+        "correct": false,
+        "explanation": "AWS Control Tower is designed to set up and govern a multi-account AWS environment using landing-zone guardrails, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Config",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Config for a requirement to record resource configurations, evaluate compliance, and track configuration history"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Config when the requirement is to record resource configurations, evaluate compliance, and track configuration history.",
+    "answerSource": "https://aws.amazon.com/config/"
+  },
+  {
+    "question": "A cloud practitioner must set up and govern a multi-account AWS environment using landing-zone guardrails. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Control Tower",
+        "correct": true,
+        "explanation": "Choose AWS Control Tower when the requirement is to set up and govern a multi-account AWS environment using landing-zone guardrails."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Health Dashboard",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is designed to show personalized information about AWS service events affecting accounts and resources, so it does not match this requirement."
+      },
+      {
+        "text": "AWS License Manager",
+        "correct": false,
+        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Control Tower",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Control Tower for a requirement to set up and govern a multi-account AWS environment using landing-zone guardrails"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Control Tower when the requirement is to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+    "answerSource": "https://aws.amazon.com/controltower/"
+  },
+  {
+    "question": "A team needs to show personalized information about AWS service events affecting accounts and resources. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation is designed to define and provision AWS infrastructure as code using templates, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "explanation": "AWS CloudTrail is designed to record AWS API activity for governance, auditing, and operational investigation, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Compute Optimizer",
+        "correct": false,
+        "explanation": "AWS Compute Optimizer is designed to recommend better-sized AWS resources based on utilization data, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Health Dashboard",
+        "correct": true,
+        "explanation": "Choose AWS Health Dashboard when the requirement is to show personalized information about AWS service events affecting accounts and resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Health Dashboard",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Health Dashboard for a requirement to show personalized information about AWS service events affecting accounts and resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Health Dashboard when the requirement is to show personalized information about AWS service events affecting accounts and resources.",
+    "answerSource": "https://aws.amazon.com/personal-health-dashboard/"
+  },
+  {
+    "question": "Which AWS service should a team select to track and control software license usage across environments?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Organizations",
+        "correct": false,
+        "explanation": "AWS Organizations is designed to centrally manage multiple AWS accounts and apply policies and consolidated billing, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": false,
+        "explanation": "AWS Service Catalog is designed to create and govern an approved catalog of deployable IT products, so it does not match this requirement."
+      },
+      {
+        "text": "AWS License Manager",
+        "correct": true,
+        "explanation": "AWS License Manager exists to track and control software license usage across environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS License Manager",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS License Manager for a requirement to track and control software license usage across environments"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Choose AWS License Manager when the requirement is to track and control software license usage across environments.",
+    "answerSource": "https://aws.amazon.com/license-manager/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to provide a browser-based interface for managing AWS resources?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Systems Manager",
+        "correct": false,
+        "explanation": "AWS Systems Manager is designed to view and control AWS and hybrid infrastructure and automate operational tasks, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": true,
+        "explanation": "AWS Management Console exists to provide a browser-based interface for managing AWS resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Organizations",
+        "correct": false,
+        "explanation": "AWS Organizations is designed to centrally manage multiple AWS accounts and apply policies and consolidated billing, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": false,
+        "explanation": "AWS Service Catalog is designed to create and govern an approved catalog of deployable IT products, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Management Console",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Management Console for a requirement to provide a browser-based interface for managing AWS resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Management Console when the requirement is to provide a browser-based interface for managing AWS resources.",
+    "answerSource": "https://aws.amazon.com/console/"
+  },
+  {
+    "question": "Which AWS service should be selected when the requirement is to centrally manage multiple AWS accounts and apply policies and consolidated billing?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Organizations",
+        "correct": true,
+        "explanation": "AWS Organizations exists to centrally manage multiple AWS accounts and apply policies and consolidated billing. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false,
+        "explanation": "AWS Trusted Advisor is designed to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Well-Architected Tool",
+        "correct": false,
+        "explanation": "AWS Well-Architected Tool is designed to review workloads against AWS architectural best practices, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is designed to monitor metrics, logs, events, and alarms for AWS resources and applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Organizations",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select AWS Organizations for a requirement to centrally manage multiple AWS accounts and apply policies and consolidated billing"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Organizations when the requirement is to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+    "answerSource": "https://aws.amazon.com/organizations/"
+  },
+  {
+    "question": "Which AWS service is the best solution when the primary requirement is to create and govern an approved catalog of deployable IT products?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Compute Optimizer",
+        "correct": false,
+        "explanation": "AWS Compute Optimizer is designed to recommend better-sized AWS resources based on utilization data, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Control Tower",
+        "correct": false,
+        "explanation": "AWS Control Tower is designed to set up and govern a multi-account AWS environment using landing-zone guardrails, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": true,
+        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Service Catalog",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Select AWS Service Catalog for a requirement to create and govern an approved catalog of deployable IT products"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Service Catalog when the requirement is to create and govern an approved catalog of deployable IT products.",
+    "answerSource": "https://aws.amazon.com/servicecatalog/"
+  },
+  {
+    "question": "A team needs to view and manage limits on AWS resources and API operations. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS License Manager",
+        "correct": false,
+        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Management Console",
+        "correct": false,
+        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+      },
+      {
+        "text": "Service Quotas",
+        "correct": true,
+        "explanation": "Service Quotas exists to view and manage limits on AWS resources and API operations. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Health Dashboard",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is designed to show personalized information about AWS service events affecting accounts and resources, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Service Quotas",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select Service Quotas for a requirement to view and manage limits on AWS resources and API operations"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose Service Quotas when the requirement is to view and manage limits on AWS resources and API operations.",
+    "answerSource": "https://aws.amazon.com/service-quotas/"
+  },
+  {
+    "question": "A cloud practitioner must view and control AWS and hybrid infrastructure and automate operational tasks. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": false,
+        "explanation": "AWS Trusted Advisor is designed to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Systems Manager",
+        "correct": true,
+        "explanation": "Choose AWS Systems Manager when the requirement is to view and control AWS and hybrid infrastructure and automate operational tasks."
+      },
+      {
+        "text": "AWS Organizations",
+        "correct": false,
+        "explanation": "AWS Organizations is designed to centrally manage multiple AWS accounts and apply policies and consolidated billing, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Service Catalog",
+        "correct": false,
+        "explanation": "AWS Service Catalog is designed to create and govern an approved catalog of deployable IT products, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Systems Manager",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Systems Manager for a requirement to view and control AWS and hybrid infrastructure and automate operational tasks"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Systems Manager when the requirement is to view and control AWS and hybrid infrastructure and automate operational tasks.",
+    "answerSource": "https://aws.amazon.com/systems-manager/"
+  },
+  {
+    "question": "A team needs to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. Which AWS service best fits this requirement?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Trusted Advisor",
+        "correct": true,
+        "explanation": "Choose AWS Trusted Advisor when the requirement is to inspect AWS environments and recommend improvements for cost, performance, security, and resilience."
+      },
+      {
+        "text": "AWS Systems Manager",
+        "correct": false,
+        "explanation": "AWS Systems Manager is designed to view and control AWS and hybrid infrastructure and automate operational tasks, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Well-Architected Tool",
+        "correct": false,
+        "explanation": "AWS Well-Architected Tool is designed to review workloads against AWS architectural best practices, so it does not match this requirement."
+      },
+      {
+        "text": "Amazon CloudWatch",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is designed to monitor metrics, logs, events, and alarms for AWS resources and applications, so it does not match this requirement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Trusted Advisor",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select AWS Trusted Advisor for a requirement to inspect AWS environments and recommend improvements for cost, performance, security, and resilience"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Trusted Advisor when the requirement is to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+    "answerSource": "https://aws.amazon.com/trusted-advisor/"
+  },
+  {
+    "question": "A cloud practitioner must review workloads against AWS architectural best practices. Which AWS service should they choose?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Service Quotas",
+        "correct": false,
+        "explanation": "Service Quotas is designed to view and manage limits on AWS resources and API operations, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Auto Scaling",
+        "correct": false,
+        "explanation": "AWS Auto Scaling is designed to adjust resource capacity automatically to maintain availability and performance, so it does not match this requirement."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "AWS CloudFormation is designed to define and provision AWS infrastructure as code using templates, so it does not match this requirement."
+      },
+      {
+        "text": "AWS Well-Architected Tool",
+        "correct": true,
+        "explanation": "AWS Well-Architected Tool exists to review workloads against AWS architectural best practices. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Selection"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Well-Architected Tool",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Select AWS Well-Architected Tool for a requirement to review workloads against AWS architectural best practices"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Choose AWS Well-Architected Tool when the requirement is to review workloads against AWS architectural best practices.",
+    "answerSource": "https://aws.amazon.com/well-architected-tool/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Auto Scaling from AWS CloudFormation?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "That describes AWS Auto Scaling, but AWS CloudFormation is primarily used to define and provision AWS infrastructure as code using templates."
+      },
+      {
+        "text": "Both services are primarily used to define and provision AWS infrastructure as code using templates.",
+        "correct": false,
+        "explanation": "That describes AWS CloudFormation, but AWS Auto Scaling is primarily used to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS CloudFormation is used to define and provision AWS infrastructure as code using templates.",
+        "correct": true,
+        "explanation": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Auto Scaling is used to define and provision AWS infrastructure as code using templates, whereas AWS CloudFormation is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "AWS Auto Scaling is used to define and provision AWS infrastructure as code using templates, whereas AWS CloudFormation is used to adjust resource capacity automatically to maintain availability and performance. concerns a separate capability from the one being tested. AWS CloudFormation exists to define and provision."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Auto Scaling",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Auto Scaling from AWS CloudFormation"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance, while AWS CloudFormation is used to define and provision AWS infrastructure as code using templates.",
+    "answerSource": "https://aws.amazon.com/autoscaling/"
+  },
+  {
+    "question": "When should a team choose AWS CloudFormation instead of AWS Service Catalog?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The distinction is important when selecting services for an AWS."
+      },
+      {
+        "text": "When the requirement is to define and provision AWS infrastructure as code using templates, rather than to create and govern an approved catalog of deployable IT products.",
+        "correct": true,
+        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to create and govern an approved catalog of deployable IT products, rather than to define and provision AWS infrastructure as code using templates.",
+        "correct": false,
+        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The distinction is important when selecting services for an."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudFormation",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS CloudFormation from AWS Service Catalog"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CloudFormation is used to define and provision AWS infrastructure as code using templates, while AWS Service Catalog is used to create and govern an approved catalog of deployable IT products.",
+    "answerSource": "https://aws.amazon.com/cloudformation/"
+  },
+  {
+    "question": "A learner says AWS CloudTrail and AWS Config have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CloudTrail is used to record AWS API activity for governance, auditing, and operational investigation, whereas AWS Config is used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": true,
+        "explanation": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS CloudTrail is used to record resource configurations, evaluate compliance, and track configuration history, whereas AWS Config is used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": false,
+        "explanation": "AWS CloudTrail is used to record resource configurations, evaluate compliance, and track configuration history, whereas AWS Config is used to record AWS API activity for governance, auditing, and operational investigation. concerns a separate capability from the one being tested. AWS CloudTrail exists to record AWS API."
+      },
+      {
+        "text": "Both services are primarily used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": false,
+        "explanation": "That describes AWS CloudTrail, but AWS Config is primarily used to record resource configurations, evaluate compliance, and track configuration history."
+      },
+      {
+        "text": "Both services are primarily used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": false,
+        "explanation": "That describes AWS Config, but AWS CloudTrail is primarily used to record AWS API activity for governance, auditing, and operational investigation."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS CloudTrail",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS CloudTrail from AWS Config"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS CloudTrail is used to record AWS API activity for governance, auditing, and operational investigation, while AWS Config is used to record resource configurations, evaluate compliance, and track configuration history.",
+    "answerSource": "https://aws.amazon.com/cloudtrail/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Compute Optimizer from AWS Trusted Advisor?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Compute Optimizer is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to recommend better-sized AWS resources based on utilization data.",
+        "correct": false,
+        "explanation": "AWS Compute Optimizer is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to recommend better-sized AWS resources based on utilization data. concerns a separate capability from the one being tested. AWS Compute Optimizer exists."
+      },
+      {
+        "text": "Both services are primarily used to recommend better-sized AWS resources based on utilization data.",
+        "correct": false,
+        "explanation": "That describes AWS Compute Optimizer, but AWS Trusted Advisor is primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience."
+      },
+      {
+        "text": "Both services are primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": false,
+        "explanation": "That describes AWS Trusted Advisor, but AWS Compute Optimizer is primarily used to recommend better-sized AWS resources based on utilization data."
+      },
+      {
+        "text": "AWS Compute Optimizer is used to recommend better-sized AWS resources based on utilization data, whereas AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": true,
+        "explanation": "AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Compute Optimizer",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Compute Optimizer from AWS Trusted Advisor"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Compute Optimizer is used to recommend better-sized AWS resources based on utilization data, while AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+    "answerSource": "https://aws.amazon.com/compute-optimizer/"
+  },
+  {
+    "question": "A learner says AWS Config and AWS CloudTrail have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": false,
+        "explanation": "That describes AWS Config, but AWS CloudTrail is primarily used to record AWS API activity for governance, auditing, and operational investigation."
+      },
+      {
+        "text": "Both services are primarily used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": false,
+        "explanation": "That describes AWS CloudTrail, but AWS Config is primarily used to record resource configurations, evaluate compliance, and track configuration history."
+      },
+      {
+        "text": "AWS Config is used to record resource configurations, evaluate compliance, and track configuration history, whereas AWS CloudTrail is used to record AWS API activity for governance, auditing, and operational investigation.",
+        "correct": true,
+        "explanation": "AWS CloudTrail exists to record AWS API activity for governance, auditing, and operational investigation. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Config is used to record AWS API activity for governance, auditing, and operational investigation, whereas AWS CloudTrail is used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": false,
+        "explanation": "AWS Config is used to record AWS API activity for governance, auditing, and operational investigation, whereas AWS CloudTrail is used to record resource configurations, evaluate compliance, and track configuration history. concerns a separate capability from the one being tested. AWS CloudTrail exists to record AWS API."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Config",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Config from AWS CloudTrail"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Config is used to record resource configurations, evaluate compliance, and track configuration history, while AWS CloudTrail is used to record AWS API activity for governance, auditing, and operational investigation.",
+    "answerSource": "https://aws.amazon.com/config/"
+  },
+  {
+    "question": "Which relationship between AWS Control Tower and AWS Organizations is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+        "correct": false,
+        "explanation": "That describes AWS Organizations, but AWS Control Tower is primarily used to set up and govern a multi-account AWS environment using landing-zone guardrails."
+      },
+      {
+        "text": "AWS Control Tower is used to set up and govern a multi-account AWS environment using landing-zone guardrails, whereas AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+        "correct": true,
+        "explanation": "AWS Control Tower exists to set up and govern a multi-account AWS environment using landing-zone guardrails. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Control Tower is used to centrally manage multiple AWS accounts and apply policies and consolidated billing, whereas AWS Organizations is used to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+        "correct": false,
+        "explanation": "The statement about AWS Control Tower is used to centrally manage multiple AWS accounts and apply policies and consolidated billing, whereas AWS Organizations is used to set up and govern a multi-account AWS environment using landing-zone guardrails. describes a different technical behavior from the capability required."
+      },
+      {
+        "text": "Both services are primarily used to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+        "correct": false,
+        "explanation": "That describes AWS Control Tower, but AWS Organizations is primarily used to centrally manage multiple AWS accounts and apply policies and consolidated billing."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Control Tower",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Control Tower from AWS Organizations"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Control Tower is used to set up and govern a multi-account AWS environment using landing-zone guardrails, while AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+    "answerSource": "https://aws.amazon.com/controltower/"
+  },
+  {
+    "question": "Which relationship between AWS Health Dashboard and AWS Auto Scaling is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Health Dashboard is used to show personalized information about AWS service events affecting accounts and resources, whereas AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": true,
+        "explanation": "AWS Health Dashboard exists to show personalized information about AWS service events affecting accounts and resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Health Dashboard is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to show personalized information about AWS service events affecting accounts and resources.",
+        "correct": false,
+        "explanation": "AWS Health Dashboard is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to show personalized information about AWS service events affecting accounts and resources. concerns a separate capability from the one being tested. AWS Health Dashboard exists."
+      },
+      {
+        "text": "Both services are primarily used to show personalized information about AWS service events affecting accounts and resources.",
+        "correct": false,
+        "explanation": "That describes AWS Health Dashboard, but AWS Auto Scaling is primarily used to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Both services are primarily used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "That describes AWS Auto Scaling, but AWS Health Dashboard is primarily used to show personalized information about AWS service events affecting accounts and resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Health Dashboard",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Health Dashboard from AWS Auto Scaling"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Health Dashboard is used to show personalized information about AWS service events affecting accounts and resources, while AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+    "answerSource": "https://aws.amazon.com/personal-health-dashboard/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS License Manager from AWS Auto Scaling?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS License Manager is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to track and control software license usage across environments.",
+        "correct": false,
+        "explanation": "AWS License Manager is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to track and control software license usage across environments. concerns a separate capability from the one being tested. AWS License Manager exists to track and."
+      },
+      {
+        "text": "Both services are primarily used to track and control software license usage across environments.",
+        "correct": false,
+        "explanation": "That describes AWS License Manager, but AWS Auto Scaling is primarily used to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Both services are primarily used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "That describes AWS Auto Scaling, but AWS License Manager is primarily used to track and control software license usage across environments."
+      },
+      {
+        "text": "AWS License Manager is used to track and control software license usage across environments, whereas AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": true,
+        "explanation": "AWS License Manager exists to track and control software license usage across environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS License Manager",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS License Manager from AWS Auto Scaling"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS License Manager is used to track and control software license usage across environments, while AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+    "answerSource": "https://aws.amazon.com/license-manager/"
+  },
+  {
+    "question": "A learner says AWS Management Console and AWS CLI have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to provide a browser-based interface for managing AWS resources.",
+        "correct": false,
+        "explanation": "That describes AWS Management Console, but AWS CLI is primarily used to provide command-line access to AWS services and resources."
+      },
+      {
+        "text": "Both services are primarily used to provide command-line access to AWS services and resources.",
+        "correct": false,
+        "explanation": "That describes AWS CLI, but AWS Management Console is primarily used to provide a browser-based interface for managing AWS resources."
+      },
+      {
+        "text": "AWS Management Console is used to provide a browser-based interface for managing AWS resources, whereas AWS CLI is used to provide command-line access to AWS services and resources.",
+        "correct": true,
+        "explanation": "AWS Management Console exists to provide a browser-based interface for managing AWS resources. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Management Console is used to provide command-line access to AWS services and resources, whereas AWS CLI is used to provide a browser-based interface for managing AWS resources.",
+        "correct": false,
+        "explanation": "AWS Management Console is used to provide command-line access to AWS services and resources, whereas AWS CLI is used to provide a browser-based interface for managing AWS resources. concerns a separate capability from the one being tested. AWS Management Console exists to provide a browser-based interface."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Management Console",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Management Console from AWS CLI"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Management Console is used to provide a browser-based interface for managing AWS resources, while AWS CLI is used to provide command-line access to AWS services and resources.",
+    "answerSource": "https://aws.amazon.com/console/"
+  },
+  {
+    "question": "Which statement correctly distinguishes AWS Organizations from AWS Control Tower?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+        "correct": false,
+        "explanation": "That describes AWS Control Tower, but AWS Organizations is primarily used to centrally manage multiple AWS accounts and apply policies and consolidated billing."
+      },
+      {
+        "text": "AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing, whereas AWS Control Tower is used to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+        "correct": true,
+        "explanation": "AWS Control Tower exists to set up and govern a multi-account AWS environment using landing-zone guardrails. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Organizations is used to set up and govern a multi-account AWS environment using landing-zone guardrails, whereas AWS Control Tower is used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+        "correct": false,
+        "explanation": "The statement about AWS Organizations is used to set up and govern a multi-account AWS environment using landing-zone guardrails, whereas AWS Control Tower is used to centrally manage multiple AWS accounts and apply policies and consolidated billing. describes a different technical behavior from the capability required."
+      },
+      {
+        "text": "Both services are primarily used to centrally manage multiple AWS accounts and apply policies and consolidated billing.",
+        "correct": false,
+        "explanation": "That describes AWS Organizations, but AWS Control Tower is primarily used to set up and govern a multi-account AWS environment using landing-zone guardrails."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Organizations",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Distinguish AWS Organizations from AWS Control Tower"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Organizations is used to centrally manage multiple AWS accounts and apply policies and consolidated billing, while AWS Control Tower is used to set up and govern a multi-account AWS environment using landing-zone guardrails.",
+    "answerSource": "https://aws.amazon.com/organizations/"
+  },
+  {
+    "question": "When should a team choose AWS Service Catalog instead of AWS CloudFormation?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "When the requirement is to create and govern an approved catalog of deployable IT products, rather than to define and provision AWS infrastructure as code using templates.",
+        "correct": true,
+        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to define and provision AWS infrastructure as code using templates, rather than to create and govern an approved catalog of deployable IT products.",
+        "correct": false,
+        "explanation": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "Establish a dedicated network connection from a location to AWS",
+        "correct": false,
+        "explanation": "AWS Direct Connect exists to establish a dedicated network connection from a location to AWS. AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Service Catalog",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Service Catalog from AWS CloudFormation"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Service Catalog is used to create and govern an approved catalog of deployable IT products, while AWS CloudFormation is used to define and provision AWS infrastructure as code using templates.",
+    "answerSource": "https://aws.amazon.com/servicecatalog/"
+  },
+  {
+    "question": "A learner says AWS Systems Manager and AWS Config have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Systems Manager is used to record resource configurations, evaluate compliance, and track configuration history, whereas AWS Config is used to view and control AWS and hybrid infrastructure and automate operational tasks.",
+        "correct": false,
+        "explanation": "AWS Systems Manager is used to record resource configurations, evaluate compliance, and track configuration history, whereas AWS Config is used to view and control AWS and hybrid infrastructure and automate operational tasks. concerns a separate capability from the one being tested. AWS Systems Manager exists to."
+      },
+      {
+        "text": "Both services are primarily used to view and control AWS and hybrid infrastructure and automate operational tasks.",
+        "correct": false,
+        "explanation": "That describes AWS Systems Manager, but AWS Config is primarily used to record resource configurations, evaluate compliance, and track configuration history."
+      },
+      {
+        "text": "Both services are primarily used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": false,
+        "explanation": "That describes AWS Config, but AWS Systems Manager is primarily used to view and control AWS and hybrid infrastructure and automate operational tasks."
+      },
+      {
+        "text": "AWS Systems Manager is used to view and control AWS and hybrid infrastructure and automate operational tasks, whereas AWS Config is used to record resource configurations, evaluate compliance, and track configuration history.",
+        "correct": true,
+        "explanation": "AWS Systems Manager exists to view and control AWS and hybrid infrastructure and automate operational tasks. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Systems Manager",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish AWS Systems Manager from AWS Config"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Systems Manager is used to view and control AWS and hybrid infrastructure and automate operational tasks, while AWS Config is used to record resource configurations, evaluate compliance, and track configuration history.",
+    "answerSource": "https://aws.amazon.com/systems-manager/"
+  },
+  {
+    "question": "When should a team choose AWS Trusted Advisor instead of AWS Compute Optimizer?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "correct": false,
+        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is unrelated to the primary purpose of either service.",
+        "correct": false,
+        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "When the requirement is to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, rather than to recommend better-sized AWS resources based on utilization data.",
+        "correct": true,
+        "explanation": "AWS Compute Optimizer exists to recommend better-sized AWS resources based on utilization data. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "When the requirement is to recommend better-sized AWS resources based on utilization data, rather than to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": false,
+        "explanation": "When the requirement is to recommend better-sized AWS resources based on utilization data, rather than to inspect AWS environments and recommend improvements for cost, performance, security, and resilience. concerns a separate capability from the one being tested. AWS Compute Optimizer exists to recommend better-sized AWS resources."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Trusted Advisor",
+      "questionType": "QT19",
+      "coverageObjectives": [
+        "Distinguish AWS Trusted Advisor from AWS Compute Optimizer"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, while AWS Compute Optimizer is used to recommend better-sized AWS resources based on utilization data.",
+    "answerSource": "https://aws.amazon.com/trusted-advisor/"
+  },
+  {
+    "question": "Which relationship between AWS Well-Architected Tool and AWS Trusted Advisor is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Both services are primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": false,
+        "explanation": "That describes AWS Trusted Advisor, but AWS Well-Architected Tool is primarily used to review workloads against AWS architectural best practices."
+      },
+      {
+        "text": "AWS Well-Architected Tool is used to review workloads against AWS architectural best practices, whereas AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+        "correct": true,
+        "explanation": "AWS Well-Architected Tool exists to review workloads against AWS architectural best practices. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "AWS Well-Architected Tool is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to review workloads against AWS architectural best practices.",
+        "correct": false,
+        "explanation": "AWS Well-Architected Tool is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience, whereas AWS Trusted Advisor is used to review workloads against AWS architectural best practices. concerns a separate capability from the one being tested. AWS Well-Architected Tool exists to."
+      },
+      {
+        "text": "Both services are primarily used to review workloads against AWS architectural best practices.",
+        "correct": false,
+        "explanation": "That describes AWS Well-Architected Tool, but AWS Trusted Advisor is primarily used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "AWS Well-Architected Tool",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish AWS Well-Architected Tool from AWS Trusted Advisor"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "AWS Well-Architected Tool is used to review workloads against AWS architectural best practices, while AWS Trusted Advisor is used to inspect AWS environments and recommend improvements for cost, performance, security, and resilience.",
+    "answerSource": "https://aws.amazon.com/well-architected-tool/"
+  },
+  {
+    "question": "A learner says Amazon CloudWatch and AWS X-Ray have the same primary role. Which response corrects that misconception?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Amazon CloudWatch is used to monitor metrics, logs, events, and alarms for AWS resources and applications, whereas AWS X-Ray is used to trace requests across distributed applications to analyze latency and faults.",
+        "correct": true,
+        "explanation": "Amazon CloudWatch exists to monitor metrics, logs, events, and alarms for AWS resources and applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Amazon CloudWatch is used to trace requests across distributed applications to analyze latency and faults, whereas AWS X-Ray is used to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+        "correct": false,
+        "explanation": "Amazon CloudWatch is used to trace requests across distributed applications to analyze latency and faults, whereas AWS X-Ray is used to monitor metrics, logs, events, and alarms for AWS resources and applications. concerns a separate capability from the one being tested. Amazon CloudWatch exists to monitor."
+      },
+      {
+        "text": "Both services are primarily used to monitor metrics, logs, events, and alarms for AWS resources and applications.",
+        "correct": false,
+        "explanation": "That describes Amazon CloudWatch, but AWS X-Ray is primarily used to trace requests across distributed applications to analyze latency and faults."
+      },
+      {
+        "text": "Both services are primarily used to trace requests across distributed applications to analyze latency and faults.",
+        "correct": false,
+        "explanation": "That describes AWS X-Ray, but Amazon CloudWatch is primarily used to monitor metrics, logs, events, and alarms for AWS resources and applications."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Amazon CloudWatch",
+      "questionType": "QT39",
+      "coverageObjectives": [
+        "Distinguish Amazon CloudWatch from AWS X-Ray"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Amazon CloudWatch is used to monitor metrics, logs, events, and alarms for AWS resources and applications, while AWS X-Ray is used to trace requests across distributed applications to analyze latency and faults.",
+    "answerSource": "https://aws.amazon.com/cloudwatch/"
+  },
+  {
+    "question": "Which relationship between Service Quotas and AWS Auto Scaling is correct?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Service Quotas is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to view and manage limits on AWS resources and API operations.",
+        "correct": false,
+        "explanation": "Service Quotas is used to adjust resource capacity automatically to maintain availability and performance, whereas AWS Auto Scaling is used to view and manage limits on AWS resources and API operations. concerns a separate capability from the one being tested. AWS Auto Scaling exists to adjust."
+      },
+      {
+        "text": "Both services are primarily used to view and manage limits on AWS resources and API operations.",
+        "correct": false,
+        "explanation": "That describes Service Quotas, but AWS Auto Scaling is primarily used to adjust resource capacity automatically to maintain availability and performance."
+      },
+      {
+        "text": "Both services are primarily used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": false,
+        "explanation": "That describes AWS Auto Scaling, but Service Quotas is primarily used to view and manage limits on AWS resources and API operations."
+      },
+      {
+        "text": "Service Quotas is used to view and manage limits on AWS resources and API operations, whereas AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+        "correct": true,
+        "explanation": "AWS Auto Scaling exists to adjust resource capacity automatically to maintain availability and performance. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Management and Governance",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Management and Governance",
+      "subtopic": "Service Quotas",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Distinguish Service Quotas from AWS Auto Scaling"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 3,
+    "answerDescription": "Service Quotas is used to view and manage limits on AWS resources and API operations, while AWS Auto Scaling is used to adjust resource capacity automatically to maintain availability and performance.",
+    "answerSource": "https://aws.amazon.com/service-quotas/"
+  }
+]

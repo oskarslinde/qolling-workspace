@@ -1,0 +1,226 @@
+[
+  {
+    "question": "Which AWS service can be used to automate the deployment of machine learning models?",
+    "answers": [
+      {
+        "text": "AWS CodePipeline",
+        "correct": true,
+        "explanation": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. In this context, can, automate, the, deployment determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "EC2 provides virtual servers and operating-system control; Lambda and Fargate abstract servers, while Beanstalk manages application deployment infrastructure. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": false,
+        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "explanation": "RDS manages relational database engines; DynamoDB is key-value/document NoSQL, DocumentDB is document-oriented, and Neptune is a graph database. Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "AWS Services",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service can be used to automate the deployment of machine learning models?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is used to orchestrate steps in a machine learning pipeline, such as model training and deployment?",
+    "answers": [
+      {
+        "text": "AWS Step Functions",
+        "correct": true,
+        "explanation": "Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages. In this context, orchestrate, steps, machine, learning determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages."
+      },
+      {
+        "text": "AWS CodePipeline",
+        "correct": false,
+        "explanation": "Choose AWS CodePipeline when the requirement is to automate source, build, test, and deployment stages in a release pipeline. Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages."
+      },
+      {
+        "text": "Amazon MWAA",
+        "correct": false,
+        "explanation": "Amazon MWAA concerns a separate capability from the one being tested. Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "MLS-C01"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "MLS-C01",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is used to orchestrate steps in a machine learning pipeline, such as model training and deployment?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the AWS Well-Architected Machine Learning Lens?",
+    "answers": [
+      {
+        "text": "To provide best practices for architecting machine learning workloads on AWS.",
+        "correct": true,
+        "explanation": "To provide best practices for architecting machine learning workloads on AWS. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To offer guidelines for deploying web applications on AWS.",
+        "correct": false,
+        "explanation": "To offer guidelines for deploying web applications on AWS. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To help in managing databases on AWS.",
+        "correct": false,
+        "explanation": "To help in managing databases on AWS. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To provide DNS records for public websites.",
+        "correct": false,
+        "explanation": "To provide DNS records for public websites. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of the AWS Well-Architected Machine Learning Lens?"
+      ]
+    }
+  },
+  {
+    "question": "What is the main benefit of using linear deployment in ML model updates?",
+    "answers": [
+      {
+        "text": "Gradual traffic shifting reduces risk",
+        "correct": true,
+        "explanation": "Gradual traffic shifting reduces risk identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "All users get the update immediately",
+        "correct": false,
+        "explanation": "All users get the update immediately concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It requires no monitoring",
+        "correct": false,
+        "explanation": "It requires no monitoring concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It eliminates the need for version control",
+        "correct": false,
+        "explanation": "It eliminates the need for version control concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the main benefit of using linear deployment in ML model updates?"
+      ]
+    }
+  },
+  {
+    "question": "What is a common use case for linear deployments in ML workflows?",
+    "answers": [
+      {
+        "text": "Gradually increasing traffic to a new model version",
+        "correct": true,
+        "explanation": "Gradually increasing traffic to a new model version identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Training models on large datasets",
+        "correct": false,
+        "explanation": "Training models on large datasets concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Labeling data for supervised learning",
+        "correct": false,
+        "explanation": "Labeling data for supervised learning concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Performing hyperparameter tuning",
+        "correct": false,
+        "explanation": "Performing hyperparameter tuning concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a common use case for linear deployments in ML workflows?"
+      ]
+    }
+  }
+]

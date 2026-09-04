@@ -1,0 +1,2619 @@
+[
+  {
+    "question": "Which of the following are features of Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "Low latency content delivery",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "High transfer speeds",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false,
+        "explanation": "Amazon Redshift exists to run analytics and data-warehouse queries across large structured datasets. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Scalable object storage",
+        "correct": false,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of Amazon CloudFront?"
+      ]
+    }
+  },
+  {
+    "question": "What is the main function of Amazon RDS?",
+    "answers": [
+      {
+        "text": "To manage relational databases in the cloud",
+        "correct": true,
+        "explanation": "Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To provide scalable object storage",
+        "correct": false,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "To deliver content with low latency",
+        "correct": false,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "To provide scalable computing capacity",
+        "correct": false,
+        "explanation": "To provide scalable computing capacity concerns a separate capability from the one being tested. Amazon RDS exists to simplify setup, operation, and scaling of relational databases. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "Easy",
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "Easy"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "Easy",
+      "subtopic": "AWS Services",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the main function of Amazon RDS?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is designed to help you build and run applications without thinking about servers?",
+    "answers": [
+      {
+        "text": "AWS Lambda",
+        "correct": true,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. In this context, designed, help, you, build determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "EC2 provides virtual servers and operating-system control; Lambda and Fargate abstract servers, while Beanstalk manages application deployment infrastructure. Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs."
+      },
+      {
+        "text": "Amazon ECS",
+        "correct": false,
+        "explanation": "Amazon ECS concerns a separate capability from the one being tested. Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Fargate",
+        "correct": false,
+        "explanation": "Choose AWS Fargate when the requirement is to run containers without managing the underlying servers. Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is designed to help you build and run applications without thinking about servers?"
+      ]
+    }
+  },
+  {
+    "question": "What is Docker Daemon?",
+    "answers": [
+      {
+        "text": "A background service that manages Docker containers.",
+        "correct": true,
+        "explanation": "A background service that manages Docker containers. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool for building Docker images.",
+        "correct": false,
+        "explanation": "A tool for building Docker images. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A monitoring service for Docker containers.",
+        "correct": false,
+        "explanation": "A monitoring service for Docker containers. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service that stores application data in Amazon S3.",
+        "correct": false,
+        "explanation": "A service that stores application data in Amazon S3. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.docker.com/get-started/overview/",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Docker Daemon?"
+      ]
+    }
+  },
+  {
+    "question": "What is AWS Fargate?",
+    "answers": [
+      {
+        "text": "A serverless compute engine for containers.",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring cloud resources. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false,
+        "explanation": "A service for managing virtual machines. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A database management system.",
+        "correct": false,
+        "explanation": "A database management system. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is AWS Fargate?"
+      ]
+    }
+  },
+  {
+    "question": "What is MWAA in AWS?",
+    "answers": [
+      {
+        "text": "Managed Workflows for Apache Airflow",
+        "correct": true,
+        "explanation": "Managed Workflows for Apache Airflow identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Managed Web Application Architecture",
+        "correct": false,
+        "explanation": "Managed Web Application Architecture concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Managed Workflows for AWS Applications",
+        "correct": false,
+        "explanation": "Managed Workflows for AWS Applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Managed Web Application Automation",
+        "correct": false,
+        "explanation": "Managed Web Application Automation concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is MWAA in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What does BASE stand for in NoSQL databases?",
+    "answers": [
+      {
+        "text": "Basically Available, Soft state, Eventually consistent",
+        "correct": true,
+        "explanation": "Basically Available, Soft state, Eventually consistent identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Basic Availability, Strong state, Eventual consistency",
+        "correct": false,
+        "explanation": "Basic Availability, Strong state, Eventual consistency concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Basic Availability, Soft state, Strong consistency",
+        "correct": false,
+        "explanation": "Basic Availability, Soft state, Strong consistency concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Basic Availability, Stateless, Eventual consistency",
+        "correct": false,
+        "explanation": "Basic Availability, Stateless, Eventual consistency concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does BASE stand for in NoSQL databases?"
+      ]
+    }
+  },
+  {
+    "question": "You need to ensure that your containerized applications are highly available and can scale automatically. Which container orchestration service should you use?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": false,
+        "explanation": "Amazon ECS concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "Kubernetes (e.g., Amazon EKS)",
+        "correct": true,
+        "explanation": "Kubernetes (e.g., Amazon EKS) identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false,
+        "explanation": "Choose AWS Batch when the requirement is to run large numbers of batch computing jobs while managing compute resources for you. . These concepts belong to different layers of the workload: the option concerns a separate operational concern, while CLF-C02 provides the requested application capability."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: You need to ensure that your containerized applications are highly available and can scale automatically. Which container orchestration service should you use?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary goal of data masking?",
+    "answers": [
+      {
+        "text": "To permanently delete sensitive data",
+        "correct": false,
+        "explanation": "To permanently delete sensitive data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To obscure sensitive data while maintaining its usability",
+        "correct": true,
+        "explanation": "To obscure sensitive data while maintaining its usability identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To encrypt data for secure transmission",
+        "correct": false,
+        "explanation": "To encrypt data for secure transmission concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To compress data for storage efficiency",
+        "correct": false,
+        "explanation": "To compress data for storage efficiency concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary goal of data masking?"
+      ]
+    }
+  },
+  {
+    "question": "What should you avoid when designing for scalability in AWS?",
+    "answers": [
+      {
+        "text": "Using tightly coupled components",
+        "correct": true,
+        "explanation": "Using tightly coupled components identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Designing stateless applications",
+        "correct": false,
+        "explanation": "Designing stateless applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Relying on a single point of failure",
+        "correct": true,
+        "explanation": "Relying on a single point of failure identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ignoring horizontal scaling options",
+        "correct": true,
+        "explanation": "Ignoring horizontal scaling options identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: What should you avoid when designing for scalability in AWS?"
+      ]
+    }
+  },
+  {
+    "question": "What types of content can be delivered using Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "Data",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Videos",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Applications",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Relational database transactions",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: What types of content can be delivered using Amazon CloudFront?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service provides a managed service for running containerized applications?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": true,
+        "explanation": "Amazon ECS identifies the relevant AWS Services concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "EC2 provides virtual servers and operating-system control; Lambda and Fargate abstract servers, while Beanstalk manages application deployment infrastructure. . These concepts belong to different layers of the workload: the option concerns a separate operational concern, while AWS Services provides the requested application capability."
+      },
+      {
+        "text": "AWS Fargate",
+        "correct": false,
+        "explanation": "Choose AWS Fargate when the requirement is to run containers without managing the underlying servers. . The option addresses a different technical responsibility, whereas AWS Services provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service provides a managed service for running containerized applications?"
+      ]
+    }
+  },
+  {
+    "question": "What is Kubernetes?",
+    "answers": [
+      {
+        "text": "An open-source system for automating deployment, scaling, and management of containerized applications.",
+        "correct": true,
+        "explanation": "An open-source system for automating deployment, scaling, and management of containerized applications. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A proprietary cloud service for managing virtual machines.",
+        "correct": false,
+        "explanation": "A proprietary cloud service for managing virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A tool for monitoring network traffic.",
+        "correct": false,
+        "explanation": "A tool for monitoring network traffic. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A database management system.",
+        "correct": false,
+        "explanation": "A database management system. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Kubernetes?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon EKS?",
+    "answers": [
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": true,
+        "explanation": "A managed Kubernetes service. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring cloud resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false,
+        "explanation": "A service for managing virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A database management system.",
+        "correct": false,
+        "explanation": "A database management system. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon EKS?"
+      ]
+    }
+  },
+  {
+    "question": "What are Amazon Roles?",
+    "answers": [
+      {
+        "text": "A way to grant permissions to AWS services and users.",
+        "correct": true,
+        "explanation": "A way to grant permissions to AWS services and users. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A service for managing and deploying Docker containers.",
+        "correct": false,
+        "explanation": "A service for managing and deploying Docker containers. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A tool for monitoring application performance.",
+        "correct": false,
+        "explanation": "A tool for monitoring application performance. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A managed database service.",
+        "correct": false,
+        "explanation": "A managed database service. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are Amazon Roles?"
+      ]
+    }
+  },
+  {
+    "question": "What is CloudFormation?",
+    "answers": [
+      {
+        "text": "A service that helps you model and set up your Amazon Web Services resources.",
+        "correct": true,
+        "explanation": "A service that helps you model and set up your Amazon Web Services resources. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool for monitoring application performance.",
+        "correct": false,
+        "explanation": "A tool for monitoring application performance. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A managed database service.",
+        "correct": false,
+        "explanation": "A managed database service. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for deploying and managing applications in Docker containers.",
+        "correct": false,
+        "explanation": "A service for deploying and managing applications in Docker containers. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is CloudFormation?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is a component of a state machine in AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Choice",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Wait",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Relational database joins",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is a component of a state machine in AWS Step Functions?"
+      ]
+    }
+  },
+  {
+    "question": "Which state in AWS Step Functions allows you to perform a task?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Choice",
+        "correct": false,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Wait",
+        "correct": false,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "Parallel",
+        "correct": false,
+        "explanation": "Parallel concerns a separate capability from the one being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which state in AWS Step Functions allows you to perform a task?"
+      ]
+    }
+  },
+  {
+    "question": "Your team is debating between using Kubernetes and Amazon ECS for container orchestration. You need fine-grained control and want to integrate with open-source tools. Which option is more suitable?",
+    "answers": [
+      {
+        "text": "Amazon ECS",
+        "correct": false,
+        "explanation": "Amazon ECS concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "Kubernetes (e.g., Amazon EKS)",
+        "correct": true,
+        "explanation": "Kubernetes (e.g., Amazon EKS) identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Batch",
+        "correct": false,
+        "explanation": "Choose AWS Batch when the requirement is to run large numbers of batch computing jobs while managing compute resources for you. . These concepts belong to different layers of the workload: the option concerns a separate operational concern, while CLF-C02 provides the requested application capability."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 3,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Your team is debating between using Kubernetes and Amazon ECS for container orchestration. You need fine-grained control and want to integrate with open-source tools. Which option is more suitable?"
+      ]
+    }
+  },
+  {
+    "question": "Which statements are true about Docker vs Virtual Machines?",
+    "answers": [
+      {
+        "text": "Docker containers are more lightweight than virtual machines",
+        "correct": true,
+        "explanation": "Docker containers are more lightweight than virtual machines identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Docker containers share the host OS kernel",
+        "correct": true,
+        "explanation": "Docker containers share the host OS kernel identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Virtual machines provide stronger isolation than Docker containers",
+        "correct": true,
+        "explanation": "Virtual machines provide stronger isolation than Docker containers identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Docker containers require a hypervisor",
+        "correct": false,
+        "explanation": "Docker containers require a hypervisor concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.docker.com/get-started/overview/",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which statements are true about Docker vs Virtual Machines?"
+      ]
+    }
+  },
+  {
+    "question": "Which states are part of AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Choice",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Wait",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Relational database transactions",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which states are part of AWS Step Functions?"
+      ]
+    }
+  },
+  {
+    "question": "What are Amazon Roles used for?",
+    "answers": [
+      {
+        "text": "Defining permissions for AWS services",
+        "correct": true,
+        "explanation": "Defining permissions for AWS services identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Managing user identities",
+        "correct": true,
+        "explanation": "Managing user identities identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false,
+        "explanation": "Storing Docker container images concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false,
+        "explanation": "Running serverless applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are Amazon Roles used for?"
+      ]
+    }
+  },
+  {
+    "question": "What is the difference between ACID and BASE transactions?",
+    "answers": [
+      {
+        "text": "ACID is for relational databases, BASE is for NoSQL databases",
+        "correct": true,
+        "explanation": "ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling. In this context, the, difference, between, ACID determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "ACID is faster than BASE",
+        "correct": false,
+        "explanation": "ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling. ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling."
+      },
+      {
+        "text": "BASE is more secure than ACID",
+        "correct": false,
+        "explanation": "ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling. ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling."
+      },
+      {
+        "text": "ACID is for cloud storage, BASE is for on-premises storage",
+        "correct": false,
+        "explanation": "ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling. ACID describes database transaction properties: atomicity, consistency, isolation, and durability. These properties govern reliable transactional changes, not infrastructure scaling."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://en.wikipedia.org/wiki/ACID",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the difference between ACID and BASE transactions?"
+      ]
+    }
+  },
+  {
+    "question": "What are common Git commands?",
+    "answers": [
+      {
+        "text": "git clone",
+        "correct": true,
+        "explanation": "git clone creates a local copy of an existing repository, including its history and configured remote relationship. In this context, are, common, Git, commands determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "git commit",
+        "correct": true,
+        "explanation": "git commit records staged changes as a new local repository snapshot with a message and metadata. In this context, are, common, Git, commands determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "git push",
+        "correct": true,
+        "explanation": "git push sends local commits to a configured remote repository so other collaborators or systems can access them. In this context, are, common, Git, commands determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "docker build",
+        "correct": false,
+        "explanation": "docker build concerns a separate capability from the one being tested. git clone creates a local copy of an existing repository, including its history and configured remote relationship. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://git-scm.com/docs",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are common Git commands?"
+      ]
+    }
+  },
+  {
+    "question": "Which technique is commonly used in data anonymization?",
+    "answers": [
+      {
+        "text": "Tokenization",
+        "correct": false,
+        "explanation": "Tokenization concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Generalization",
+        "correct": true,
+        "explanation": "Generalization identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Compression",
+        "correct": false,
+        "explanation": "Compression concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Indexing",
+        "correct": false,
+        "explanation": "Indexing concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which technique is commonly used in data anonymization?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of Amazon EC2?",
+    "answers": [
+      {
+        "text": "To provide scalable computing capacity in the cloud",
+        "correct": true,
+        "explanation": "Amazon EC2 exists to provide resizable virtual servers and control over their operating environments. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To store and retrieve any amount of data",
+        "correct": false,
+        "explanation": "To store and retrieve any amount of data concerns a separate capability from the one being tested. Amazon EC2 exists to provide resizable virtual servers and control over their operating environments. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To manage relational databases",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon EC2 exists to provide resizable virtual servers and control over their operating environments."
+      },
+      {
+        "text": "To deliver content with low latency",
+        "correct": false,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Amazon EC2 exists to provide resizable virtual servers and control over their operating environments. Those services use different integration patterns and address different workload requirements."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of Amazon EC2?"
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of Amazon CloudFront?",
+    "answers": [
+      {
+        "text": "To deliver content with low latency",
+        "correct": true,
+        "explanation": "Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "To manage relational databases",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network."
+      },
+      {
+        "text": "To provide scalable object storage",
+        "correct": false,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. Those services use different integration patterns and address different workload requirements."
+      },
+      {
+        "text": "To provide scalable computing capacity",
+        "correct": false,
+        "explanation": "To provide scalable computing capacity concerns a separate capability from the one being tested. Amazon CloudFront exists to deliver content globally with low latency through a content delivery network. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the purpose of Amazon CloudFront?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following is an example of a time series forecasting problem?",
+    "answers": [
+      {
+        "text": "Predicting stock prices",
+        "correct": true,
+        "explanation": "Predicting stock prices identifies the relevant ML Theory concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Classifying emails as spam or not",
+        "correct": false,
+        "explanation": "Classifying emails as spam or not concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Grouping customers into segments",
+        "correct": false,
+        "explanation": "Review the explanation for each option to understand the answer set. . The option addresses a different technical responsibility, whereas ML Theory provides the capability required by this workload. For the, example, time, series, this affects the workload's architecture, operational behavior, and service selection."
+      },
+      {
+        "text": "Choosing a category for an image.",
+        "correct": false,
+        "explanation": "Choosing a category for an image. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "ML Theory",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "ML Theory"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "ML Theory",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following is an example of a time series forecasting problem?"
+      ]
+    }
+  },
+  {
+    "question": "What is the difference between Docker and Virtual Machines?",
+    "answers": [
+      {
+        "text": "Docker containers share the host OS kernel, while virtual machines have separate OS instances.",
+        "correct": true,
+        "explanation": "Docker containers share the host OS kernel, while virtual machines have separate OS instances. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Docker containers are slower to start than virtual machines.",
+        "correct": false,
+        "explanation": "Docker containers are slower to start than virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Docker containers require more resources than virtual machines.",
+        "correct": false,
+        "explanation": "Docker containers require more resources than virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A Docker container always includes a complete guest operating system.",
+        "correct": false,
+        "explanation": "A Docker container always includes a complete guest operating system. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.docker.com/get-started/overview/",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the difference between Docker and Virtual Machines?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon ECS?",
+    "answers": [
+      {
+        "text": "A fully managed container orchestration service.",
+        "correct": true,
+        "explanation": "A fully managed container orchestration service. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring cloud resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false,
+        "explanation": "A service for managing virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A database management system.",
+        "correct": false,
+        "explanation": "A database management system. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon ECS?"
+      ]
+    }
+  },
+  {
+    "question": "What is AWS CDK?",
+    "answers": [
+      {
+        "text": "A framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation.",
+        "correct": true,
+        "explanation": "A framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A managed Kubernetes service.",
+        "correct": false,
+        "explanation": "A managed Kubernetes service. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for running serverless applications.",
+        "correct": false,
+        "explanation": "A service for running serverless applications. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring and managing AWS resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is AWS CDK?"
+      ]
+    }
+  },
+  {
+    "question": "How do you define an AWS CDK stack in Java?",
+    "answers": [
+      {
+        "text": "Extend the Stack class and call the super constructor with scope, id, and props.",
+        "correct": true,
+        "explanation": "Extend the Stack class and call the super constructor with scope, id, and props. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Implement the Stack interface and override the build method.",
+        "correct": false,
+        "explanation": "Implement the Stack interface and override the build method. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Create a new instance of the Stack class and pass the scope, id, and props.",
+        "correct": false,
+        "explanation": "Create a new instance of the Stack class and pass the scope, id, and props. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use the StackBuilder class to define the stack.",
+        "correct": false,
+        "explanation": "Use the StackBuilder class to define the stack. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: How do you define an AWS CDK stack in Java?"
+      ]
+    }
+  },
+  {
+    "question": "Which method is used to add a resource to an AWS CDK stack in Java?",
+    "answers": [
+      {
+        "text": "addResource",
+        "correct": false,
+        "explanation": "addResource concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "createResource",
+        "correct": false,
+        "explanation": "createResource concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "defineResource",
+        "correct": false,
+        "explanation": "defineResource concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "add",
+        "correct": true,
+        "explanation": "add identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which method is used to add a resource to an AWS CDK stack in Java?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service allows you to connect applications using events from your own applications, integrated SaaS applications, and AWS services?",
+    "answers": [
+      {
+        "text": "AWS EventBridge",
+        "correct": true,
+        "explanation": "AWS EventBridge identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AWS Step Functions",
+        "correct": false,
+        "explanation": "Step Functions orchestrates stateful workflows; EventBridge routes events, SQS buffers messages, and CodePipeline automates delivery stages. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "Amazon SNS",
+        "correct": false,
+        "explanation": "Amazon SNS concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service allows you to connect applications using events from your own applications, integrated SaaS applications, and AWS services?"
+      ]
+    }
+  },
+  {
+    "question": "What is a DAG in Apache Airflow?",
+    "answers": [
+      {
+        "text": "Directed Acyclic Graph",
+        "correct": true,
+        "explanation": "Directed Acyclic Graph identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Data Aggregation Graph",
+        "correct": false,
+        "explanation": "Data Aggregation Graph concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Dynamic Application Graph",
+        "correct": false,
+        "explanation": "Dynamic Application Graph concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Distributed Acyclic Graph",
+        "correct": false,
+        "explanation": "Distributed Acyclic Graph concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a DAG in Apache Airflow?"
+      ]
+    }
+  },
+  {
+    "question": "What is the first step in building a data lake using AWS Lake Formation?",
+    "answers": [
+      {
+        "text": "Define the data lake",
+        "correct": true,
+        "explanation": "Define the data lake identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Ingest data",
+        "correct": false,
+        "explanation": "Ingest data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Set up permissions",
+        "correct": false,
+        "explanation": "Set up permissions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Catalog the data",
+        "correct": false,
+        "explanation": "Catalog the data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the first step in building a data lake using AWS Lake Formation?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are features of AWS Fargate?",
+    "answers": [
+      {
+        "text": "Serverless compute engine for containers",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Requires you to manage servers",
+        "correct": false,
+        "explanation": "Requires you to manage servers concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Supports Amazon ECS",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Supports Amazon EKS",
+        "correct": true,
+        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are features of AWS Fargate?"
+      ]
+    }
+  },
+  {
+    "question": "What is AWS CloudFormation used for?",
+    "answers": [
+      {
+        "text": "Defining and provisioning AWS infrastructure using code",
+        "correct": true,
+        "explanation": "AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false,
+        "explanation": "Managing virtual machines concerns a separate capability from the one being tested. AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false,
+        "explanation": "Running serverless applications concerns a separate capability from the one being tested. AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false,
+        "explanation": "Storing Docker container images concerns a separate capability from the one being tested. AWS CloudFormation exists to define and provision AWS infrastructure as code using templates. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is AWS CloudFormation used for?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are types of State Machine states in AWS Step Functions?",
+    "answers": [
+      {
+        "text": "Task",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Choice",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Wait",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Relational database joins",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are types of State Machine states in AWS Step Functions?"
+      ]
+    }
+  },
+  {
+    "question": "What is a key difference between anonymization and pseudonymization?",
+    "answers": [
+      {
+        "text": "Anonymization allows data to be re-identified later",
+        "correct": false,
+        "explanation": "Anonymization allows data to be re-identified later concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Pseudonymization replaces identifiers but allows re-identification",
+        "correct": true,
+        "explanation": "Pseudonymization replaces identifiers but allows re-identification identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Anonymization is reversible",
+        "correct": false,
+        "explanation": "Anonymization is reversible concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Pseudonymization deletes the original data",
+        "correct": false,
+        "explanation": "Pseudonymization deletes the original data concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT18",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is a key difference between anonymization and pseudonymization?"
+      ]
+    }
+  },
+  {
+    "question": "Which regulation emphasizes the importance of data anonymization for protecting personal data?",
+    "answers": [
+      {
+        "text": "HIPAA",
+        "correct": false,
+        "explanation": "HIPAA concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "GDPR",
+        "correct": true,
+        "explanation": "GDPR identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "SOX",
+        "correct": false,
+        "explanation": "SOX concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "PCI DSS",
+        "correct": false,
+        "explanation": "PCI DSS concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which regulation emphasizes the importance of data anonymization for protecting personal data?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are anti-patterns in Amazon DynamoDB usage?",
+    "answers": [
+      {
+        "text": "Using large item sizes exceeding 400KB",
+        "correct": true,
+        "explanation": "Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Designing access patterns before table schema",
+        "correct": false,
+        "explanation": "Designing access patterns before table schema concerns a separate capability from the one being tested. Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Using scan operations for frequent queries",
+        "correct": true,
+        "explanation": "Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Using partition keys with high cardinality",
+        "correct": false,
+        "explanation": "Using partition keys with high cardinality concerns a separate capability from the one being tested. Amazon DynamoDB exists to provide a managed serverless NoSQL key-value and document database. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are anti-patterns in Amazon DynamoDB usage?"
+      ]
+    }
+  },
+  {
+    "question": "Which AWS service is designed for building conversational interfaces using voice and text?",
+    "answers": [
+      {
+        "text": "Amazon Lex",
+        "correct": true,
+        "explanation": "Choose Amazon Lex when the requirement is to build conversational interfaces using voice and text. In this context, designed, for, building, conversational determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Polly",
+        "correct": false,
+        "explanation": "Polly performs text-to-speech; Transcribe performs speech recognition, Translate translates text, and Rekognition analyzes images and videos. Choose Amazon Lex when the requirement is to build conversational interfaces using voice and text."
+      },
+      {
+        "text": "Amazon Comprehend",
+        "correct": false,
+        "explanation": "Choose Amazon Comprehend when the requirement is to use natural language processing to discover insights and relationships in text. Choose Amazon Lex when the requirement is to build conversational interfaces using voice and text."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs. Choose Amazon Lex when the requirement is to build conversational interfaces using voice and text."
+      }
+    ],
+    "tags": [
+      "AWS Services",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "AWS Services"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "AWS Services",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which AWS service is designed for building conversational interfaces using voice and text?"
+      ]
+    }
+  },
+  {
+    "question": "What is Docker?",
+    "answers": [
+      {
+        "text": "A platform for developing, shipping, and running applications in containers.",
+        "correct": true,
+        "explanation": "A platform for developing, shipping, and running applications in containers. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A virtual machine management tool.",
+        "correct": false,
+        "explanation": "Virtual machine management provisions complete guest operating systems and virtual hardware. Containers package applications while sharing the host operating-system kernel. . These concepts belong to different layers of the workload: the option concerns a separate operational concern, while CLF-C02 provides the requested application capability."
+      },
+      {
+        "text": "A cloud storage service.",
+        "correct": false,
+        "explanation": "Cloud storage persists files or objects for later retrieval. It does not provide the runtime and packaging model used to build and run containerized applications. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      },
+      {
+        "text": "A relational database service for application data.",
+        "correct": false,
+        "explanation": "A relational database stores structured records and supports SQL queries and transactions; it is separate from the service capability being tested. . The option addresses a different technical responsibility, whereas CLF-C02 provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.docker.com/get-started/overview/",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Docker?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon ECR?",
+    "answers": [
+      {
+        "text": "A fully managed Docker container registry.",
+        "correct": true,
+        "explanation": "A fully managed Docker container registry. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A tool for monitoring cloud resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring cloud resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for managing virtual machines.",
+        "correct": false,
+        "explanation": "A service for managing virtual machines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A database management system.",
+        "correct": false,
+        "explanation": "A database management system. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon ECR?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon EFS?",
+    "answers": [
+      {
+        "text": "A scalable file storage service for use with Amazon EC2.",
+        "correct": true,
+        "explanation": "A scalable file storage service for use with Amazon EC2. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "A managed database service that supports multiple database engines.",
+        "correct": false,
+        "explanation": "A managed database service that supports multiple database engines. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A service for deploying and managing applications in Docker containers.",
+        "correct": false,
+        "explanation": "A service for deploying and managing applications in Docker containers. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A tool for monitoring and managing AWS resources.",
+        "correct": false,
+        "explanation": "A tool for monitoring and managing AWS resources. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon EFS?"
+      ]
+    }
+  },
+  {
+    "question": "What is the primary purpose of AWS CodeDeploy?",
+    "answers": [
+      {
+        "text": "Automating the deployment of applications to various compute services.",
+        "correct": true,
+        "explanation": "Automating the deployment of applications to various compute services. identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Managing source code repositories.",
+        "correct": false,
+        "explanation": "Managing source code repositories. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Building and testing code.",
+        "correct": false,
+        "explanation": "Building and testing code. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Orchestrating complex workflows.",
+        "correct": false,
+        "explanation": "Orchestrating complex workflows. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the primary purpose of AWS CodeDeploy?"
+      ]
+    }
+  },
+  {
+    "question": "What is AWS Step Functions used for?",
+    "answers": [
+      {
+        "text": "Orchestrating complex workflows by coordinating multiple AWS services.",
+        "correct": true,
+        "explanation": "AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Deploying applications to various compute services.",
+        "correct": false,
+        "explanation": "Deploying applications to various compute services. concerns a separate capability from the one being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing and versioning source code.",
+        "correct": false,
+        "explanation": "Storing and versioning source code. concerns a separate capability from the one being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Building and testing code.",
+        "correct": false,
+        "explanation": "Building and testing code. concerns a separate capability from the one being tested. AWS Step Functions exists to coordinate multi-step application workflows as visual state machines. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is AWS Step Functions used for?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following properties are part of ACID transactions?",
+    "answers": [
+      {
+        "text": "Atomicity",
+        "correct": true,
+        "explanation": "Atomicity identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Consistency",
+        "correct": true,
+        "explanation": "Consistency identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Isolation",
+        "correct": true,
+        "explanation": "Isolation identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Horizontal auto scaling",
+        "correct": false,
+        "explanation": "Horizontal auto scaling concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://en.wikipedia.org/wiki/ACID",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following properties are part of ACID transactions?"
+      ]
+    }
+  },
+  {
+    "question": "Which Git command is used to create a new branch?",
+    "answers": [
+      {
+        "text": "git branch <branch_name>",
+        "correct": true,
+        "explanation": "git branch <branch_name> identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "git checkout <branch_name>",
+        "correct": false,
+        "explanation": "git checkout <branch_name> concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "git merge <branch_name>",
+        "correct": false,
+        "explanation": "git merge <branch_name> concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "git init <branch_name>",
+        "correct": false,
+        "explanation": "git init <branch_name> concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://git-scm.com/docs",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which Git command is used to create a new branch?"
+      ]
+    }
+  },
+  {
+    "question": "Which features are specific to AWS CDK for Java?",
+    "answers": [
+      {
+        "text": "Strongly typed constructs",
+        "correct": true,
+        "explanation": "Strongly typed constructs identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Object-oriented programming",
+        "correct": true,
+        "explanation": "Object-oriented programming identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Integration with Maven",
+        "correct": true,
+        "explanation": "Integration with Maven identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Support for Lambda functions",
+        "correct": false,
+        "explanation": "Support for Lambda functions concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which features are specific to AWS CDK for Java?"
+      ]
+    }
+  },
+  {
+    "question": "What is Amazon ECR used for?",
+    "answers": [
+      {
+        "text": "Storing Docker container images",
+        "correct": true,
+        "explanation": "Storing Docker container images identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false,
+        "explanation": "Running serverless applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false,
+        "explanation": "Managing virtual machines concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Monitoring cloud resources",
+        "correct": false,
+        "explanation": "Monitoring cloud resources concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Amazon ECR used for?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are common Git commands?",
+    "answers": [
+      {
+        "text": "git clone",
+        "correct": true,
+        "explanation": "git clone creates a local copy of an existing repository, including its history and configured remote relationship. In this context, the, are, common, Git determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "git commit",
+        "correct": true,
+        "explanation": "git commit records staged changes as a new local repository snapshot with a message and metadata. In this context, the, are, common, Git determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "git push",
+        "correct": true,
+        "explanation": "git push sends local commits to a configured remote repository so other collaborators or systems can access them. In this context, the, are, common, Git determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "docker build",
+        "correct": false,
+        "explanation": "docker build concerns a separate capability from the one being tested. git clone creates a local copy of an existing repository, including its history and configured remote relationship. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://git-scm.com/docs",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are common Git commands?"
+      ]
+    }
+  },
+  {
+    "question": "What is MWAA (Managed Workflows for Apache Airflow) used for?",
+    "answers": [
+      {
+        "text": "Running Apache Airflow workflows on AWS",
+        "correct": true,
+        "explanation": "Running Apache Airflow workflows on AWS identifies the relevant CLF-C02 concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Managing virtual machines",
+        "correct": false,
+        "explanation": "Managing virtual machines concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Running serverless applications",
+        "correct": false,
+        "explanation": "Running serverless applications concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Storing Docker container images",
+        "correct": false,
+        "explanation": "Storing Docker container images concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "CLF-C02"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "CLF-C02",
+      "subtopic": "Core concepts",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is MWAA (Managed Workflows for Apache Airflow) used for?"
+      ]
+    }
+  },
+  {
+    "question": "What is Responsible AI?",
+    "answers": [
+      {
+        "text": "AI that is designed and deployed in a manner that is ethical, transparent, and accountable.",
+        "correct": true,
+        "explanation": "AI that is designed and deployed in a manner that is ethical, transparent, and accountable. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "AI that is used for entertainment purposes.",
+        "correct": false,
+        "explanation": "AI that is used for entertainment purposes. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AI that is only used in scientific research.",
+        "correct": false,
+        "explanation": "AI that is only used in scientific research. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "AI that is evaluated only by how quickly it produces a response.",
+        "correct": false,
+        "explanation": "AI that is evaluated only by how quickly it produces a response. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is Responsible AI?"
+      ]
+    }
+  },
+  {
+    "question": "What does fairness in AI entail?",
+    "answers": [
+      {
+        "text": "Ensuring that AI systems do not discriminate against any group.",
+        "correct": true,
+        "explanation": "Ensuring that AI systems do not discriminate against any group. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Making AI systems entertaining.",
+        "correct": false,
+        "explanation": "Making AI systems entertaining. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Ensuring AI systems are profitable.",
+        "correct": false,
+        "explanation": "Ensuring AI systems are profitable. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Ensuring AI systems are transparent.",
+        "correct": false,
+        "explanation": "Ensuring AI systems are transparent. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: What does fairness in AI entail?"
+      ]
+    }
+  },
+  {
+    "question": "What is the role of human reviewers in Amazon A2I?",
+    "answers": [
+      {
+        "text": "To review low-confidence predictions made by machine learning models.",
+        "correct": true,
+        "explanation": "To review low-confidence predictions made by machine learning models. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "To deploy machine learning models.",
+        "correct": false,
+        "explanation": "To deploy machine learning models. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To provide real-time predictions.",
+        "correct": false,
+        "explanation": "To provide real-time predictions. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "To monitor the quality of machine learning models in production.",
+        "correct": false,
+        "explanation": "To monitor the quality of machine learning models in production. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What is the role of human reviewers in Amazon A2I?"
+      ]
+    }
+  },
+  {
+    "question": "Which of the following are core dimensions of Responsible AI?",
+    "answers": [
+      {
+        "text": "Fairness",
+        "correct": true,
+        "explanation": "Fairness identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Transparency",
+        "correct": true,
+        "explanation": "Transparency makes an AI system's behavior, limitations, and decision basis easier for affected people and operators to understand and evaluate."
+      },
+      {
+        "text": "Accountability",
+        "correct": true,
+        "explanation": "Accountability identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Profitability",
+        "correct": false,
+        "explanation": "Profitability concerns a separate capability from the one being tested. Transparency makes an AI system's behavior, limitations, and decision basis easier for affected people and operators to understand and evaluate. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which of the following are core dimensions of Responsible AI?"
+      ]
+    }
+  },
+  {
+    "question": "Why is transparency important in AI systems?",
+    "answers": [
+      {
+        "text": "It helps build trust with users and stakeholders.",
+        "correct": true,
+        "explanation": "It helps build trust with users and stakeholders. identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "It ensures that AI systems are profitable.",
+        "correct": false,
+        "explanation": "It ensures that AI systems are profitable. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It allows for better entertainment value.",
+        "correct": false,
+        "explanation": "It allows for better entertainment value. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "It guarantees that every model prediction is profitable.",
+        "correct": false,
+        "explanation": "It guarantees that every model prediction is profitable. concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "CLF-C02"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "CLF-C02",
+      "topic": "New",
+      "subtopic": "CLF-C02",
+      "questionType": "QT35",
+      "coverageObjectives": [
+        "Understand the concept tested by: Why is transparency important in AI systems?"
+      ]
+    }
+  }
+]

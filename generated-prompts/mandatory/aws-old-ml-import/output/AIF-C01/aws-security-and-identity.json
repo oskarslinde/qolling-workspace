@@ -1,0 +1,725 @@
+[
+  {
+    "question": "Which two practices help assess whether an AI system has unfair outcomes for a demographic group?",
+    "answers": [
+      {
+        "text": "Compare relevant outcome metrics across demographic groups",
+        "correct": true,
+        "explanation": "Fairness assessment considers representative data and subgroup outcomes. In this context, two, practices, help, assess determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Review whether the training data represents relevant groups",
+        "correct": true,
+        "explanation": "Fairness assessment considers representative data and subgroup outcomes. In this context, two, practices, help, assess determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Increase the number of application servers",
+        "correct": false,
+        "explanation": "Increase the number of application servers concerns a separate capability from the one being tested. Fairness assessment considers representative data and subgroup outcomes. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Hide model outputs from reviewers",
+        "correct": false,
+        "explanation": "Hide model outputs from reviewers concerns a separate capability from the one being tested. Fairness assessment considers representative data and subgroup outcomes. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Responsible AI",
+      "AIF-C01",
+      "1.1.13"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Bias and fairness",
+      "subtopic": "Outcome assessment",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Identify basic bias and fairness assessment practices"
+      ]
+    },
+    "answerDescription": "Fairness assessment considers representative data and subgroup outcomes.",
+    "answerSource": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "An organization compares two generative-AI systems before production. Which two evaluation dimensions are directly relevant to responsible deployment?",
+    "answers": [
+      {
+        "text": "Accuracy or task quality on representative prompts",
+        "correct": true,
+        "explanation": "Evaluate both task quality and responsibility metrics on representative prompts. In this context, organization, compares, two, generative-AI determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Toxicity or other responsibility metrics",
+        "correct": true,
+        "explanation": "Evaluate both task quality and responsibility metrics on representative prompts. In this context, organization, compares, two, generative-AI determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "The color of the console theme",
+        "correct": false,
+        "explanation": "The color of the console theme concerns a separate capability from the one being tested. Evaluate both task quality and responsibility metrics on representative prompts. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "The number of IAM users in an unrelated account",
+        "correct": false,
+        "explanation": "The number of IAM users in an unrelated account concerns a separate capability from the one being tested. Evaluate both task quality and responsibility metrics on representative prompts. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Model evaluation",
+      "Responsible AI",
+      "AIF-C01",
+      "4.1.01"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Generative AI evaluation",
+      "subtopic": "Quality and responsibility",
+      "questionType": "QT20",
+      "coverageObjectives": [
+        "Match evaluation dimensions to responsible deployment"
+      ]
+    },
+    "answerDescription": "Evaluate both task quality and responsibility metrics on representative prompts.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "How can accountability be achieved in AI systems?",
+    "answers": [
+      {
+        "text": "By having clear policies and procedures for addressing issues that arise.",
+        "correct": true,
+        "explanation": "This is correct because AI accountability requires clear ownership, policies, and remediation processes; entertainment, profit, and transparency alone do not establish it."
+      },
+      {
+        "text": "By making AI systems entertaining.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: AI accountability requires clear ownership, policies, and remediation processes; entertainment, profit, and transparency alone do not establish it."
+      },
+      {
+        "text": "By ensuring AI systems are profitable.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: AI accountability requires clear ownership, policies, and remediation processes; entertainment, profit, and transparency alone do not establish it."
+      },
+      {
+        "text": "By ensuring AI systems are transparent.",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: AI accountability requires clear ownership, policies, and remediation processes; entertainment, profit, and transparency alone do not establish it."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01",
+      "4.1.01"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Machine learning foundations",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A customer service assistant must block harmful or off-topic model responses while preserving useful answers. Which Amazon Bedrock capability should the team configure?",
+    "answers": [
+      {
+        "text": "Amazon Bedrock Guardrails",
+        "correct": true,
+        "explanation": "This is correct because Amazon Bedrock Guardrails can apply configurable content filters and topic policies to model input and output."
+      },
+      {
+        "text": "A larger context window",
+        "correct": false,
+        "explanation": "A larger context window changes how much text a model can receive, but it does not enforce safety or topic policies."
+      },
+      {
+        "text": "SageMaker Clarify",
+        "correct": false,
+        "explanation": "SageMaker Clarify concerns a separate capability from the one being tested. Review the explanation for each option to understand the answer set. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Knowledge Bases for Amazon Bedrock",
+        "correct": false,
+        "explanation": "Knowledge Bases retrieve private source content to ground generated answers. Review the explanation for each option to understand the answer set. The option addresses a different technical responsibility, whereas Amazon Bedrock Guardrails provides the capability required by this workload."
+      }
+    ],
+    "tags": [
+      "AIF-C01",
+      "4.1.02"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Generative AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock Guardrails",
+      "subtopic": "Safety and responsible AI",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team needs to stop a Bedrock application from generating responses about a defined set of prohibited subjects. What should it configure?",
+    "answers": [
+      {
+        "text": "A denied-topic policy in Amazon Bedrock Guardrails",
+        "correct": true,
+        "explanation": "Guardrails apply configurable topic and content policies around model interactions. In this context, team, needs, stop, Bedrock determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "A higher top-p value",
+        "correct": false,
+        "explanation": "A higher top-p value concerns a separate capability from the one being tested. Guardrails apply configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "A VPC security group rule",
+        "correct": false,
+        "explanation": "A VPC security group rule concerns a separate capability from the one being tested. Guardrails apply configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "An S3 replication rule",
+        "correct": false,
+        "explanation": "An S3 replication rule concerns a separate capability from the one being tested. Guardrails apply configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Responsible AI",
+      "Amazon Bedrock",
+      "AIF-C01",
+      "4.1.02"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock Guardrails",
+      "subtopic": "Denied topics",
+      "questionType": "QT13",
+      "coverageObjectives": [
+        "Configure a topic policy for responsible AI"
+      ]
+    },
+    "answerDescription": "Guardrails apply configurable topic and content policies around model interactions.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A team wants to prevent an Amazon Bedrock application from discussing competitor products. Which capability is designed for this policy?",
+    "answers": [
+      {
+        "text": "A topic-denial policy in Amazon Bedrock Guardrails",
+        "correct": true,
+        "explanation": "Guardrails enforce configurable topic and content policies around model interactions. In this context, team, wants, prevent, Bedrock determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon CloudTrail data events",
+        "correct": false,
+        "explanation": "Amazon CloudTrail data events concerns a separate capability from the one being tested. Guardrails enforce configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "An Amazon VPC route table",
+        "correct": false,
+        "explanation": "An Amazon VPC route table concerns a separate capability from the one being tested. Guardrails enforce configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "S3 Lifecycle rules",
+        "correct": false,
+        "explanation": "S3 Lifecycle rules concerns a separate capability from the one being tested. Guardrails enforce configurable topic and content policies around model interactions. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Responsible AI",
+      "AIF-C01",
+      "4.1.02"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Bedrock Guardrails",
+      "subtopic": "Denied topics",
+      "questionType": "QT13",
+      "coverageObjectives": [
+        "Configure responsible-AI controls"
+      ]
+    },
+    "answerDescription": "Guardrails enforce configurable topic and content policies around model interactions.",
+    "answerSource": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which capability is the primary purpose of Amazon SageMaker Clarify in an ML workflow?",
+    "answers": [
+      {
+        "text": "Detecting potential bias and explaining model predictions",
+        "correct": true,
+        "explanation": "Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Serving every foundation model through a single public endpoint",
+        "correct": false,
+        "explanation": "Serving every foundation model through a single public endpoint concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an."
+      },
+      {
+        "text": "Replacing IAM policies with automatic authorization",
+        "correct": false,
+        "explanation": "Replacing IAM policies with automatic authorization concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Converting every text document into an embedding index",
+        "correct": false,
+        "explanation": "Converting every text document into an embedding index concerns a separate capability from the one being tested. Amazon SageMaker provides managed tools to build, train, and deploy machine learning models without managing every underlying infrastructure component. The distinction is important when selecting services for an AWS."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "SageMaker",
+      "Responsible AI",
+      "AIF-C01",
+      "4.1.08"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "SageMaker Clarify",
+      "subtopic": "Bias and explainability",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Identify the responsibility of a model analysis service"
+      ]
+    },
+    "answerDescription": "Clarify helps teams measure bias and understand model predictions.",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-explainability.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "An image moderation model is uncertain about a small set of high-impact predictions. Which AWS capability can route those predictions to human reviewers?",
+    "answers": [
+      {
+        "text": "Amazon Augmented AI (Amazon A2I)",
+        "correct": true,
+        "explanation": "A2I adds human review loops to ML prediction workflows. In this context, image, moderation, model, uncertain determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon Bedrock Prompt management",
+        "correct": false,
+        "explanation": "Amazon Bedrock Prompt management concerns a separate capability from the one being tested. A2I adds human review loops to ML prediction workflows. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon CloudWatch Logs only",
+        "correct": false,
+        "explanation": "Amazon CloudWatch Logs only concerns a separate capability from the one being tested. A2I adds human review loops to ML prediction workflows. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon S3 Transfer Acceleration",
+        "correct": false,
+        "explanation": "Amazon S3 Transfer Acceleration concerns a separate capability from the one being tested. A2I adds human review loops to ML prediction workflows. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Human review",
+      "Responsible AI",
+      "AIF-C01",
+      "4.1.09"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Augmented AI",
+      "subtopic": "Human review loops",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select a human-review capability for uncertain predictions"
+      ]
+    },
+    "answerDescription": "A2I adds human review loops to ML prediction workflows.",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which of the following are use cases for Amazon A2I?",
+    "answers": [
+      {
+        "text": "Document processing",
+        "correct": true,
+        "explanation": "This is correct because Amazon A2I adds human review to document processing, moderation, and fraud workflows rather than data warehousing."
+      },
+      {
+        "text": "Content moderation",
+        "correct": true,
+        "explanation": "This is correct because Amazon A2I adds human review to document processing, moderation, and fraud workflows rather than data warehousing."
+      },
+      {
+        "text": "Data warehousing",
+        "correct": false,
+        "explanation": "This does not satisfy the tested criterion: Amazon A2I adds human review to document processing, moderation, and fraud workflows rather than data warehousing."
+      },
+      {
+        "text": "Fraud detection",
+        "correct": true,
+        "explanation": "This is correct because Amazon A2I adds human review to document processing, moderation, and fraud workflows rather than data warehousing."
+      }
+    ],
+    "tags": [
+      "New",
+      "AIF-C01",
+      "4.1.09"
+    ],
+    "difficulty": 2,
+    "categories": [
+      "Machine Learning"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Amazon Augmented AI",
+      "subtopic": "AIF-C01 examination domain",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Assess practical understanding of the stated AWS AI or machine-learning concept"
+      ]
+    },
+    "answerDescription": "Review the explanation for each option to understand the answer set.",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/a2i.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which AWS IAM practice follows the principle of least privilege for an application that invokes an Amazon Bedrock model?",
+    "answers": [
+      {
+        "text": "Grant the workload role only the required Bedrock actions and resources",
+        "correct": true,
+        "explanation": "Use a narrowly scoped role for each workload. In this context, IAM, practice, follows, the determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Attach AdministratorAccess to the workload role",
+        "correct": false,
+        "explanation": "Attach AdministratorAccess to the workload role concerns a separate capability from the one being tested. Use a narrowly scoped role for each workload. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use the root user credentials in the application",
+        "correct": false,
+        "explanation": "Use the root user credentials in the application concerns a separate capability from the one being tested. Use a narrowly scoped role for each workload. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Share one access key across every workload",
+        "correct": false,
+        "explanation": "Share one access key across every workload concerns a separate capability from the one being tested. Use a narrowly scoped role for each workload. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "IAM",
+      "Security",
+      "AIF-C01",
+      "5.1.01"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Security"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "IAM",
+      "subtopic": "Least privilege",
+      "questionType": "QT28",
+      "coverageObjectives": [
+        "Apply least privilege to AI workloads"
+      ]
+    },
+    "answerDescription": "Use a narrowly scoped role for each workload.",
+    "answerSource": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "An AI application stores customer prompts in Amazon S3. Which control best protects the data at rest?",
+    "answers": [
+      {
+        "text": "Use server-side encryption with AWS KMS",
+        "correct": true,
+        "explanation": "Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+      },
+      {
+        "text": "Disable bucket versioning",
+        "correct": false,
+        "explanation": "Disable bucket versioning concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Place the bucket behind an internet gateway",
+        "correct": false,
+        "explanation": "Place the bucket behind an internet gateway concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Use a public bucket policy",
+        "correct": false,
+        "explanation": "Use a public bucket policy concerns a separate capability from the one being tested. Amazon S3 exists to store and retrieve virtually any amount of object data with high durability. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Security",
+      "AIF-C01",
+      "5.1.02"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Security"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Data protection",
+      "subtopic": "Encryption for AI workloads",
+      "questionType": "QT28",
+      "coverageObjectives": [
+        "Select encryption controls for AI data"
+      ]
+    },
+    "answerDescription": "Encrypt AI data at rest with S3 server-side encryption and a KMS key.",
+    "answerSource": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A model-training bucket must be reachable only from private training infrastructure. Which design best meets that requirement?",
+    "answers": [
+      {
+        "text": "Use a private S3 bucket with a restrictive bucket policy and VPC endpoint",
+        "correct": true,
+        "explanation": "Combine private storage, identity restrictions, and a private network path. In this context, model-training, bucket, must, reachable determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Allow anonymous read access and rely on obscured object names",
+        "correct": false,
+        "explanation": "Allow anonymous read access and rely on obscured object names concerns a separate capability from the one being tested. Combine private storage, identity restrictions, and a private network path. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Put the training instances in a public subnet with port 22 open",
+        "correct": false,
+        "explanation": "Put the training instances in a public subnet with port 22 open concerns a separate capability from the one being tested. Combine private storage, identity restrictions, and a private network path. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Store the data in an unencrypted local disk",
+        "correct": false,
+        "explanation": "Store the data in an unencrypted local disk concerns a separate capability from the one being tested. Combine private storage, identity restrictions, and a private network path. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Security",
+      "ML",
+      "AIF-C01",
+      "5.1.04"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "Security"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Secure ML data",
+      "subtopic": "Private data access",
+      "questionType": "QT09",
+      "coverageObjectives": [
+        "Choose layered controls for private AI data"
+      ]
+    },
+    "answerDescription": "Combine private storage, identity restrictions, and a private network path.",
+    "answerSource": "https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which statement describes the shared-responsibility boundary for an AI service such as Amazon Bedrock?",
+    "answers": [
+      {
+        "text": "AWS secures the managed service infrastructure while the customer secures identities, data, and configuration",
+        "correct": true,
+        "explanation": "AWS secures the service; the customer secures its use of the service. In this context, statement, describes, the, shared-responsibility determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "AWS is responsible for every prompt and IAM policy",
+        "correct": false,
+        "explanation": "AWS is responsible for every prompt and IAM policy concerns a separate capability from the one being tested. AWS secures the service; the customer secures its use of the service. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Customers must patch the managed model host operating system",
+        "correct": false,
+        "explanation": "Customers must patch the managed model host operating system concerns a separate capability from the one being tested. AWS secures the service; the customer secures its use of the service. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Shared responsibility applies only to storage services",
+        "correct": false,
+        "explanation": "Shared responsibility applies only to storage services concerns a separate capability from the one being tested. AWS secures the service; the customer secures its use of the service. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Governance",
+      "AIF-C01",
+      "5.1.05"
+    ],
+    "difficulty": 3,
+    "categories": [
+      "Security"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Shared responsibility",
+      "subtopic": "Managed AI services",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Distinguish AWS and customer security responsibilities"
+      ]
+    },
+    "answerDescription": "AWS secures the service; the customer secures its use of the service.",
+    "answerSource": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "A regulated organization wants model decisions to remain reviewable and accountable. Which two practices support that goal?",
+    "answers": [
+      {
+        "text": "Keep an audit trail of model inputs, outputs, and responsible principals",
+        "correct": true,
+        "explanation": "Accountability combines traceable records with human oversight for consequential decisions. In this context, regulated, organization, wants, model determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Define human escalation for high-impact or uncertain decisions",
+        "correct": true,
+        "explanation": "Accountability combines traceable records with human oversight for consequential decisions. In this context, regulated, organization, wants, model determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Remove all model records immediately after inference",
+        "correct": false,
+        "explanation": "Remove all model records immediately after inference concerns a separate capability from the one being tested. Accountability combines traceable records with human oversight for consequential decisions. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Allow every application to invoke the model with shared credentials",
+        "correct": false,
+        "explanation": "Allow every application to invoke the model with shared credentials concerns a separate capability from the one being tested. Accountability combines traceable records with human oversight for consequential decisions. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Governance",
+      "Responsible AI",
+      "AIF-C01",
+      "5.1.13"
+    ],
+    "difficulty": 5,
+    "categories": [
+      "Responsible AI"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "Responsible AI governance",
+      "subtopic": "Accountability and oversight",
+      "questionType": "QT28",
+      "coverageObjectives": [
+        "Select practices that support accountable AI decisions"
+      ]
+    },
+    "answerDescription": "Accountability combines traceable records with human oversight for consequential decisions.",
+    "answerSource": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  },
+  {
+    "question": "Which two controls help an AI team audit who invoked a foundation model and investigate unusual API activity?",
+    "answers": [
+      {
+        "text": "AWS CloudTrail",
+        "correct": true,
+        "explanation": "CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. In this context, two, controls, help, team determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "IAM identity policies",
+        "correct": true,
+        "explanation": "CloudTrail supplies audit evidence while IAM defines authorized callers. In this context, two, controls, help, team determine the required service responsibility, data flow, or model behavior for the workload."
+      },
+      {
+        "text": "Amazon S3 Transfer Acceleration",
+        "correct": false,
+        "explanation": "Amazon S3 Transfer Acceleration concerns a separate capability from the one being tested. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Amazon Route 53 health checks",
+        "correct": false,
+        "explanation": "Amazon Route 53 health checks concerns a separate capability from the one being tested. CloudTrail records API activity; CloudWatch monitors metrics and logs, Config tracks resource configuration, and X-Ray traces requests. The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "Governance",
+      "AIF-C01",
+      "5.1.13"
+    ],
+    "difficulty": 4,
+    "categories": [
+      "Security"
+    ],
+    "metadata": {
+      "track": "AWS Certified AI Practitioner",
+      "topic": "AI governance",
+      "subtopic": "Auditability",
+      "questionType": "QT37",
+      "coverageObjectives": [
+        "Identify controls that support AI auditability"
+      ]
+    },
+    "answerDescription": "CloudTrail supplies audit evidence while IAM defines authorized callers.",
+    "answerSource": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+    "answerSelectionType": "MULTI_SELECT",
+    "questionKind": "TECHNICAL"
+  }
+]

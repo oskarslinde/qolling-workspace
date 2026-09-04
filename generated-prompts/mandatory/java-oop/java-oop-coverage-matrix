@@ -1,0 +1,33 @@
+| Subtopic                        | Weight | Conceptual | Code-reading | Coding task | Debugging | Design/scenario | Target total |
+| ------------------------------- | -----: | ---------: | -----------: | ----------: | --------: | --------------: | -----------: |
+| Classes and objects             |     5x |         3x |           3x |          2x |        2x |              1x |          11x |
+| Constructors and initialization |     4x |         2x |           3x |          1x |        2x |              1x |           9x |
+| Encapsulation                   |      5x |         3x |           2x |          2x |        3x |              2x |          12x |
+| Access modifiers                |      4x |         2x |           2x |          1x |        2x |              1x |           8x |
+| Static vs instance              |      4x |         2x |           3x |          1x |        3x |              1x |          10x |
+| Inheritance                     |      4x |         2x |           3x |          2x |        2x |              2x |          11x |
+| Method overriding               |      5x |         3x |           4x |          2x |        3x |              1x |          13x |
+| Method overloading              |      4x |         2x |           4x |          1x |        2x |              1x |          10x |
+| Polymorphism                    |      5x |         3x |           4x |          3x |        2x |              3x |          15x |
+| Abstraction                     |      5x |         3x |           2x |          2x |        2x |              3x |          12x |
+| Interfaces                      |      5x |         3x |           3x |          3x |        2x |              3x |          14x |
+| Abstract classes                |      4x |         2x |           3x |          2x |        2x |              2x |          11x |
+| Interface vs abstract class     |      5x |         3x |           2x |          1x |        2x |              4x |          12x |
+| Composition vs inheritance      |      5x |         3x |           2x |          3x |        3x |              4x |          15x |
+| Object identity vs equality     |      5x |         3x |           4x |          1x |        3x |              1x |          12x |
+| `equals()` and `hashCode()`     |      5x |         3x |           4x |          3x |        4x |              2x |          16x |
+| `Object` methods                |      4x |         2x |           3x |          1x |        2x |              1x |           9x |
+| Immutability                    |      4x |         2x |           2x |          3x |        3x |              2x |          12x |
+| Mutable state risks             |      4x |         2x |           2x |          2x |        4x |              2x |          12x |
+| `final` keyword                 |      3x |         2x |           2x |          1x |        1x |              1x |           7x |
+| Records                         |      3x |         2x |           2x |          1x |        1x |              1x |           7x |
+| Sealed classes                  |      2x |         2x |           1x |          1x |        0x |              1x |           5x |
+| Nested and inner classes        |      2x |         1x |           2x |          1x |        1x |              0x |           5x |
+| Coupling and cohesion           |      4x |         2x |           2x |          2x |        2x |              4x |          12x |
+| SOLID principles                |      4x |         3x |           2x |          2x |        2x |              4x |          13x |
+| Liskov Substitution Principle   |      3x |         2x |           2x |          1x |        2x |              2x |           9x |
+| OOP in Spring Boot              |      5x |         2x |           2x |          2x |        3x |              4x |          13x |
+| Domain modeling                 |      4x |         2x |           1x |          3x |        2x |              4x |          12x |
+| DTO/entity/domain separation    |      4x |         2x |           2x |          2x |        3x |              3x |          12x |
+| Testability and OOP design      |      4x |         2x |           2x |          2x |        3x |              4x |          13x |
+| Framework/proxy limitations     |      2x |         1x |           1x |          0x |        2x |              2x |           6x |

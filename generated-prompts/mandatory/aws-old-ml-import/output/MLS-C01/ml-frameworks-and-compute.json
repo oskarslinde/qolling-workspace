@@ -1,0 +1,137 @@
+[
+  {
+    "question": "Which instance types are commonly used for inference workloads in machine learning?",
+    "answers": [
+      {
+        "text": "Inf1 and Inf2 instances",
+        "correct": true,
+        "explanation": "Inf1 and Inf2 instances identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "P4 instances",
+        "correct": false,
+        "explanation": "P4 instances concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "G5 instances",
+        "correct": true,
+        "explanation": "G5 instances identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "T3 instances",
+        "correct": false,
+        "explanation": "T3 instances concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which instance types are commonly used for inference workloads in machine learning?"
+      ]
+    }
+  },
+  {
+    "question": "Which TensorFlow component is used for model deployment?",
+    "answers": [
+      {
+        "text": "TensorFlow Serving",
+        "correct": true,
+        "explanation": "TensorFlow Serving identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "TensorFlow Lite",
+        "correct": false,
+        "explanation": "TensorFlow Lite concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "TensorBoard",
+        "correct": false,
+        "explanation": "TensorBoard concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "TensorFlow Datasets",
+        "correct": false,
+        "explanation": "TensorFlow Datasets concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 2,
+    "answerSelectionType": "SINGLE_CHOICE",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Understand the concept tested by: Which TensorFlow component is used for model deployment?"
+      ]
+    }
+  },
+  {
+    "question": "What are benefits of using Spot Instances for ML training?",
+    "answers": [
+      {
+        "text": "Lower cost compared to On-Demand instances",
+        "correct": true,
+        "explanation": "Lower cost compared to On-Demand instances identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Guaranteed availability",
+        "correct": false,
+        "explanation": "Guaranteed availability concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      },
+      {
+        "text": "Ideal for fault-tolerant training jobs",
+        "correct": true,
+        "explanation": "Ideal for fault-tolerant training jobs identifies the relevant New concept. It provides the behavior required by this workload, including the associated service responsibility and operational constraints."
+      },
+      {
+        "text": "Best suited for real-time inference",
+        "correct": false,
+        "explanation": "Best suited for real-time inference concerns a separate capability from the one being tested. . The distinction is important when selecting services for an AWS workload."
+      }
+    ],
+    "tags": [
+      "New",
+      "MLS-C01"
+    ],
+    "difficulty": 1,
+    "answerSelectionType": "MULTI_SELECT",
+    "categories": [
+      "New"
+    ],
+    "questionKind": "TECHNICAL",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+    "metadata": {
+      "track": "MLS-C01",
+      "topic": "New",
+      "subtopic": "MLS-C01",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand the concept tested by: What are benefits of using Spot Instances for ML training?"
+      ]
+    }
+  }
+]
