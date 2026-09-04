@@ -27,6 +27,7 @@ __pycache__/
 .menu-last-script
 task-manager/tasks/TASK_EXECUTION_*.json
 task-manager/tasks/TASK_TICKET_COUNTERS.json
+task-manager/TASK_TICKET_COUNTERS.json
 
 # IDE and operating-system files
 .idea/
