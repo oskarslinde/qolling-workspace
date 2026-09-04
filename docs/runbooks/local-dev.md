@@ -67,4 +67,4 @@ Google Cloud settings:
 
 ## Local Mongo Direction
 
-Default local development should use local Docker Mongo rather than cloud Atlas. The implementation is tracked as tasks in `task-manager/tasks/TASKS.md`; do not add runtime fallbacks that silently switch databases.
+Default local development should use local Docker Mongo rather than cloud Atlas; do not add runtime fallbacks that silently switch databases.

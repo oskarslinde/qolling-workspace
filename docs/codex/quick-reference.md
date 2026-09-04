@@ -15,7 +15,6 @@
 - Hera rules: `hera/docs/README.md`.
 - Zeus rules: `zeus/docs/README.md`.
 - Athena rules: `athena/docs/README.md` (or `athena/guidelines/` until project docs are fully bootstrapped).
-- Task board: `task-manager/tasks/TASKS.md`.
 
 ## Hera Map
 
@@ -41,6 +40,5 @@ Only run tests when the user asks. Otherwise suggest focused commands:
 ```powershell
 cd hera; npm run lint; npm run test:ui:report
 cd zeus; .\mvnw -Punit-tests test
-cd task-manager; npm test
 cd business-tests; npm run check:feature-coverage
 ```

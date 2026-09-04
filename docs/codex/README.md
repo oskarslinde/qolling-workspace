@@ -13,5 +13,4 @@ Human product and engineering docs live outside this folder in `docs/`, `hera/do
 ## Rules
 
 - Promote stable product, API, frontend, or backend rules into human docs.
-- Keep actionable follow-up work in `task-manager/tasks/TASKS.md`.
 - Delete stale research dumps, old plans, and migrated reviews once useful content is promoted.

@@ -53,26 +53,17 @@ Avoid:
 - Searching inside `dist`.
 - Editing generated files unless explicitly requested.
 
-## Documentation And Task Capture
+## Documentation
 
 - Human-facing docs live under `docs/`, `hera/docs/`, `zeus/docs/`, `athena/docs/`, `frontend-shared/docs/`, and `blog/docs/`.
 - Documentation sorting/grouping/naming and placement consistency must follow `docs/reference/documentation-standards.md` for existing and new projects.
 - Codex-facing project memory lives under `docs/codex/`.
-- Treat `task-manager/tasks/TASKS.md` as the primary place for actionable follow-up work.
-- When implementation or review uncovers a critical, high, or medium-priority follow-up, add it proactively to `task-manager/tasks/TASKS.md` instead of only mentioning it in chat.
-- Do not proactively add low-priority follow-up items to task-manager unless the user asks for full backlog capture.
-- New task entries should include a clear title, status, short description, likely files, and concrete acceptance criteria.
 
 ## Self-Improvement Capture
 
 - When the user corrects a recurring workflow, quality, or implementation mistake, create or update `docs/codex/lessons.md` with the pattern and a concrete prevention rule.
 - Keep lessons concise and project-specific. Do not add generic advice that would not change future behavior.
 - Review relevant lessons before starting similar future work.
-
-## Task Manager Execution Clarifications
-
-- Before executing a task via `$task-manager execute`, ask clarifying questions first when any requirement or implementation choice is ambiguous.
-- Prefer concise numbered answer options when asking those clarifications, and include a final option that explicitly allows a different user-provided answer.
 
 ## Test Execution Preference
 

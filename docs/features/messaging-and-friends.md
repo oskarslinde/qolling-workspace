@@ -39,14 +39,6 @@ Messaging API:
 - Hera should render system senders as `System` and resolve user display names through a cached profile summary lookup.
 - Thread keys and the `SYSTEM` sender value must remain coordinated between Hera and Zeus.
 
-## Captured Follow-Ups
-
-The old standalone messaging review was removed after promotion. Its actionable high-priority findings belong in `task-manager/tasks/TASKS.md`:
-
-- Batch user profile summary resolution.
-- Consistent thread-summary snapshot behavior.
-- Friend/message error mapping in Hera.
-- Unit coverage for new messaging pages and utilities.
 
 ## Important Files
 

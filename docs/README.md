@@ -2,7 +2,7 @@
 
 This folder is the human-facing cross-project documentation root. Use it for durable project memory: why the system works the way it does, how to run it, how Hera and Zeus coordinate, and which rules matter across repositories.
 
-Codex-only memory lives in [codex/](codex/). Actionable follow-up work lives in [../task-manager/tasks/TASKS.md](../task-manager/tasks/TASKS.md).
+Codex-only memory lives in [codex/](codex/).
 
 ## Start Here
 
@@ -30,7 +30,6 @@ Codex-only memory lives in [codex/](codex/). Actionable follow-up work lives in 
 - [Frontend shared package docs](../frontend-shared/docs/README.md)
 - [Blog docs](../blog/docs/README.md)
 - [Business tests](../business-tests/README.md)
-- [Task manager](../task-manager/README.md)
 
 ## Placement Rules
 

@@ -45,4 +45,3 @@ In local Docker Compose, Zeus exposes `http://localhost:8080`. Hera normally run
 - `frontend-shared/` owns only product-neutral frontend packages that can be versioned independently.
 - `blog/` owns the canonical public blog surface.
 - OpenAPI/Swagger files are generated API truth; Markdown only documents intent, coordination rules, and important usage notes.
-- The task-manager task files are the single Markdown backlog source.

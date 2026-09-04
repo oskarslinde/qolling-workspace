@@ -61,7 +61,7 @@ The section names above should remain stable for consistency across projects.
 - Prefer relative links between docs.
 - Keep descriptions short and behavior-oriented.
 - Do not manually duplicate generated truth (OpenAPI snapshots, generated dependency inventories, generated schemas).
-- Keep active follow-up work in `task-manager/tasks/TASKS.md`, not in documentation files.
+- Keep active follow-up work in the team's chosen planning tool, not in documentation files.
 
 ## New Project Bootstrap Rules
 
