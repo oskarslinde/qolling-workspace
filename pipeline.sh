@@ -3,8 +3,10 @@
 set -u
 set -o pipefail
 
-run_tests=true
-hera_prod=false
+run_unit_tests=false
+run_spring_tests=false
+run_testcontainers_tests=false
+hera_production_build=false
 
 prompt_yes_no() {
   local prompt="$1"
@@ -32,18 +34,30 @@ prompt_yes_no() {
 }
 
 echo "Qolling pipeline configuration"
-if prompt_yes_no "Run backend unit tests?" "Y"; then
-  run_tests=true
+if prompt_yes_no "Run backend unit tests?" "N"; then
+  run_unit_tests=true
 else
-  run_tests=false
+  run_unit_tests=false
 fi
-if prompt_yes_no "Build Hera for production?" "N"; then
-  hera_prod=true
+if prompt_yes_no "Run backend Spring integration tests?" "N"; then
+  run_spring_tests=true
 else
-  hera_prod=false
+  run_spring_tests=false
 fi
-if [[ "${run_tests}" == true ]]; then echo "Tests: enabled"; else echo "Tests: skipped"; fi
-if [[ "${hera_prod}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
+if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
+  run_testcontainers_tests=true
+else
+  run_testcontainers_tests=false
+fi
+if prompt_yes_no "Use Hera production build instead of the development server?" "N"; then
+  hera_production_build=true
+else
+  hera_production_build=false
+fi
+if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
+if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
+if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
 echo
 phase="init"
 backend_dir=""
@@ -248,6 +262,20 @@ run_backend_unit_tests() {
   ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests test failed in '${backend_dir}'."
 }
 
+run_backend_spring_tests() {
+  (
+    cd "${backend_dir}" || exit 1
+    run_backend_maven -Pspring-tests test
+  ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests test failed in '${backend_dir}'."
+}
+
+run_backend_testcontainers_tests() {
+  (
+    cd "${backend_dir}" || exit 1
+    run_backend_maven -Ptestcontainers-tests test
+  ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests test failed in '${backend_dir}'."
+}
+
 export_swagger_snapshots() {
   (
     cd "${backend_dir}" || exit 1
@@ -256,7 +284,7 @@ export_swagger_snapshots() {
 }
 
 compose_build() {
-  if [[ "${hera_prod}" == true ]]; then
+  if [[ "${hera_production_build}" == true ]]; then
     docker compose --env-file .env.dev build zeus hera || fail_phase "Docker compose build" "docker compose build zeus hera failed."
   else
     docker compose --env-file .env.dev build zeus || fail_phase "Docker compose build" "docker compose build zeus failed."
@@ -264,7 +292,7 @@ compose_build() {
 }
 
 compose_up_zeus_detached() {
-  if [[ "${hera_prod}" == true ]]; then
+  if [[ "${hera_production_build}" == true ]]; then
     docker compose --env-file .env.dev up -d zeus hera || fail_phase "Docker compose up services" "docker compose up -d zeus hera failed."
   else
     docker compose --env-file .env.dev up -d zeus || fail_phase "Docker compose up zeus" "docker compose up -d zeus failed."
@@ -316,24 +344,36 @@ run_phase "Stop existing Hera dev server" stop_existing_hera_dev_server "${hera_
 run_phase "Install Hera dependencies" install_hera_dependencies
 run_phase "Fix Hera lint issues" fix_hera_lint
 run_phase "Check Hera lint" check_hera_lint
-if [[ "${hera_prod}" == true ]]; then
+if [[ "${hera_production_build}" == true ]]; then
   run_phase "Build Hera production bundle" build_hera_production
 fi
 run_phase "Check Docker is running" check_docker
 run_phase "Tear down existing zeus container(s)" teardown_zeus_containers
 run_phase "Apply backend Spotless formatting" apply_backend_spotless
-if [[ "${run_tests}" == true ]]; then
+if [[ "${run_unit_tests}" == true ]]; then
   run_phase "Run backend unit tests" run_backend_unit_tests
 else
   echo
   echo "==> Phase: Run backend unit tests (skipped by selection)"
+fi
+if [[ "${run_spring_tests}" == true ]]; then
+  run_phase "Run backend Spring tests" run_backend_spring_tests
+else
+  echo
+  echo "==> Phase: Run backend Spring tests (skipped by selection)"
+fi
+if [[ "${run_testcontainers_tests}" == true ]]; then
+  run_phase "Run backend Testcontainers tests" run_backend_testcontainers_tests
+else
+  echo
+  echo "==> Phase: Run backend Testcontainers tests (skipped by selection)"
 fi
 run_phase "Build backend package (skip tests)" build_backend
 run_phase "Docker compose build" compose_build
 run_phase "Docker compose up Zeus" compose_up_zeus_detached
 run_phase "Wait for Zeus container" wait_for_zeus_container
 run_phase "Export Swagger snapshots" export_swagger_snapshots
-if [[ "${hera_prod}" == true ]]; then
+if [[ "${hera_production_build}" == true ]]; then
   echo
   echo "Hera is served by Nginx at http://localhost:3000 and Zeus is running detached."
 else
