@@ -276,6 +276,13 @@ run_backend_testcontainers_tests() {
   ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests test failed in '${backend_dir}'."
 }
 
+audit_backend_dependencies() {
+  (
+    cd "${backend_dir}" || exit 1
+    run_backend_maven -Pdependency-audit dependency-check:check
+  ) || fail_phase "Audit backend dependencies" "OWASP dependency vulnerability audit failed in '${backend_dir}'."
+}
+
 export_swagger_snapshots() {
   (
     cd "${backend_dir}" || exit 1
@@ -368,6 +375,7 @@ else
   echo
   echo "==> Phase: Run backend Testcontainers tests (skipped by selection)"
 fi
+run_phase "Audit backend dependencies" audit_backend_dependencies
 run_phase "Build backend package (skip tests)" build_backend
 run_phase "Docker compose build" compose_build
 run_phase "Docker compose up Zeus" compose_up_zeus_detached
