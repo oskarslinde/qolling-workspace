@@ -8,7 +8,7 @@ Qolling is split into independently deployable repositories inside one workspace
 - Athena: Vite, React 18, React Router, Tailwind, Vitest.
 - Frontend Shared: publishable frontend packages for product-neutral configuration and future headless shared logic.
 - Blog: standalone Astro site for the canonical public blog.
-- Zeus: Java 17, Spring Boot 3, Spring Security, MongoDB, Maven wrapper, Springdoc OpenAPI.
+- Zeus: Java 25, Spring Boot 3, Spring Security, MongoDB, Maven wrapper, Springdoc OpenAPI.
 - Business tests: Playwright project for browser-level flows.
 - Task manager: local Node app that reads and writes Markdown task boards.
 - Deployment: Docker Compose plus the root pipeline script.

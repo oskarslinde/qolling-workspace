@@ -49,7 +49,7 @@ echo "[10/15] ./mvnw clean package -DskipTests"
 
 echo "[11/15] create EC2 deploy-only Zeus Dockerfile"
 cat > "${DEPLOY_DOCKERFILE}" <<'EOF'
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:17
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:25
 WORKDIR /app
 COPY target/*.jar app.jar
 EXPOSE 8080
