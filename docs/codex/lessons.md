@@ -79,3 +79,8 @@
 
 - Pattern: I added overloaded DTO constructors that silently supplied a missing new field instead of updating the explicit call sites.
 - Prevention rule: When an early-phase model or contract intentionally gains a required field, update every production and test constructor call to state the intended value; do not add legacy or compatibility overloads unless the user explicitly asks.
+
+## Let Spotless Own Zeus Java Formatting
+
+- Pattern: I manually approximated Google Java Format, leaving small import-order and line-wrapping differences that Spotless corrected across the touched Java files.
+- Prevention rule: After changing Zeus Java, run `spotless:apply` with `-DspotlessFiles` scoped to the touched files, then run full `spotless:check` before handoff. Treat Spotless output as canonical and inspect the resulting Git diff; do not run repository-wide apply when only focused files need formatting.
