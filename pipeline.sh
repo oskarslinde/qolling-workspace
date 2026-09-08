@@ -6,6 +6,7 @@ set -o pipefail
 run_unit_tests=false
 run_spring_tests=false
 run_testcontainers_tests=false
+run_dependency_audit=false
 hera_production_build=false
 
 prompt_yes_no() {
@@ -20,9 +21,13 @@ prompt_yes_no() {
   fi
 
   while true; do
-    if ! IFS= read -r -p "${prompt} [Y/N]: " answer; then
+    if ! IFS= read -r -p "${prompt} [Y/N] (default: ${default_answer}): " answer; then
       answer="${default_answer}"
       echo "${default_answer}"
+    fi
+
+    if [[ -z "${answer}" ]]; then
+      answer="${default_answer}"
     fi
 
     case "${answer}" in
@@ -49,6 +54,11 @@ if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
 else
   run_testcontainers_tests=false
 fi
+if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then
+  run_dependency_audit=true
+else
+  run_dependency_audit=false
+fi
 if prompt_yes_no "Use Hera production build instead of the development server?" "N"; then
   hera_production_build=true
 else
@@ -57,6 +67,7 @@ fi
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+if [[ "${run_dependency_audit}" == true ]]; then echo "Backend dependency audit: enabled"; else echo "Backend dependency audit: skipped"; fi
 if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
 echo
 phase="init"
@@ -375,7 +386,12 @@ else
   echo
   echo "==> Phase: Run backend Testcontainers tests (skipped by selection)"
 fi
-run_phase "Audit backend dependencies" audit_backend_dependencies
+if [[ "${run_dependency_audit}" == true ]]; then
+  run_phase "Audit backend dependencies" audit_backend_dependencies
+else
+  echo
+  echo "==> Phase: Audit backend dependencies (skipped by selection)"
+fi
 run_phase "Build backend package (skip tests)" build_backend
 run_phase "Docker compose build" compose_build
 run_phase "Docker compose up Zeus" compose_up_zeus_detached
