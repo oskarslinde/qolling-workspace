@@ -68,6 +68,8 @@ Avoid:
 ## Test Execution Preference
 
 - Do not run tests in any project unless the user explicitly asks for that run in the current turn.
+- Exception: tests may be run when the user explicitly authorizes them in the current turn and the active model is
+  `gpt-5.6-luna`.
 - Instead, provide the relevant test command suggestions so the user can run them manually.
 - Do not run standalone Swagger regeneration as a separate manual follow-up. `pipeline.sh` owns Swagger
   snapshot export; use that pipeline when Swagger artifacts need to be refreshed.

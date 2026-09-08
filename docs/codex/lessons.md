@@ -5,6 +5,11 @@
 - Pattern: When asked to add workflow/tooling preferences to `AGENTS.md`, include the exact tool list and explicit exclusions instead of compressing them too much.
 - Prevention rule: Preserve user-provided CLI preference lists when they are actionable, then add only small project-specific additions such as Semgrep, Git Bash, Maven wrapper usage, and generated-directory guardrails.
 
+## Keep Test Authorization Model-Aware
+
+- Pattern: The default repository workflow prohibited test execution, but the user granted a conditional exception for explicit authorization when the active model is `gpt-5.6-luna`.
+- Prevention rule: Preserve the no-tests default; run tests only after explicit authorization in the current turn and only when the active model identifier is exactly `gpt-5.6-luna`.
+
 ## Remember Qolling Git Boundaries
 
 - Pattern: The Qolling workspace root at `C:\Users\user\java\qolling` is the `qolling-workspace` Git meta-repository; product repositories include `hera/`, `zeus/`, `athena/`, `frontend-shared/`, and `blog/` as submodules.
