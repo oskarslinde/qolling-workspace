@@ -1,106 +1,31 @@
-# Codex Execution Bundles
+# Optional Execution Bundles
 
-Use these bundles to execute common tasks directly without a planning phase.  
-Each bundle defines default scope, steps, and output expectations.
+Use this file only when a request matches one of these recurring shapes. Root and project `AGENTS.md` files remain authoritative.
 
-## Bundle A: UI Tweak (Single Page or Component)
+## UI Tweak
 
-Use when:
-- The request is visual/layout/copy behavior on an existing page or component.
+- Scope: target component/page, paired styles, skeleton, and nearest tests.
+- Preserve shared primitives, accessibility, responsive behavior, and existing async states.
+- Handoff: user-visible change, files, and permitted or suggested verification.
 
-Default scope:
-- Touch only the target page/component and directly related style/helper files.
-- Do not redesign unrelated sections.
+## API Contract Change
 
-Execution steps:
-1. Locate target component(s) and nearest existing pattern.
-2. Implement smallest change that satisfies requested behavior.
-3. Update related tests only if the user asks to run or update tests.
-4. Provide manual test steps for user verification.
+- Inspect the Zeus contract and every affected consumer before editing.
+- Update Zeus DTO/controller behavior, Hera mapping, focused tests, and the API map when its documented shape changes.
+- Refresh generated snapshots only through `pipeline.sh`.
 
-Deliverable format:
-- Files changed.
-- What changed in UI behavior.
-- Commands user can run to verify.
+## Play Flow Change
 
-## Bundle B: API Contract Adjustment (FE + BE)
+- Preserve the `QUESTION -> RESULT -> NEXT` state model unless the request changes it.
+- Check loading, transition, error, empty, keyboard, and reduced-motion behavior.
+- Keep changes inside the existing Play feature boundary where practical.
 
-Use when:
-- The request changes a field, endpoint payload, or data mapping across Hera and Zeus.
+## Navigation Or Layout Cleanup
 
-Default scope:
-- Update backend DTO/service/controller and frontend service/consumer mapping.
-- Keep compatibility with existing fields where feasible.
+- Start at shared shell/layout components, then remove obsolete props and dead wiring from callers.
+- Check representative desktop and mobile routes.
 
-Execution steps:
-1. Confirm current contract in Zeus and current consumer in Hera.
-2. Implement backend contract/data change.
-3. Implement frontend normalization/usage update.
-4. Update docs if contract map/checklist is affected.
-5. Provide manual verification commands for FE and BE.
+## Behavior-Preserving Refactor
 
-Deliverable format:
-- Contract before/after in one short paragraph.
-- Files changed in Zeus and Hera.
-- Manual verification commands.
-
-## Bundle C: PlayPage UX Iteration
-
-Use when:
-- The request targets `hera/src/pages/PlayPage/**` or `hera/src/features/play/**`.
-
-Default scope:
-- Keep existing play loop behavior intact (`QUESTION -> RESULT -> NEXT`).
-- Preserve accessibility attributes and reduced-motion behavior.
-- Keep layout within current shared width and avoid adding vertical clutter unless requested.
-
-Execution steps:
-1. Implement UX tweak in Play components/hooks.
-2. Ensure no regressions in transition/loading/error states.
-3. Keep new UI additive and removable (small, isolated component where possible).
-4. Provide focused manual checks for question, result, transition, and empty/error paths.
-
-Deliverable format:
-- Behavior change summary.
-- Files changed.
-- Manual steps for play-flow verification.
-
-## Bundle D: Navigation/Layout Cleanup
-
-Use when:
-- The request removes/changes shell-level layout controls (headers, back buttons, breadcrumbs, spacing).
-
-Default scope:
-- Start with shared layout components (`PageShell`, wrappers), then clean stale page props.
-- Remove dead code paths and obsolete service/hook wiring tied to removed layout features.
-
-Execution steps:
-1. Update shared shell/wrapper.
-2. Remove stale props/usages across pages.
-3. Remove dead hooks/services/constants tied to removed feature.
-4. Provide focused manual checks for representative pages.
-
-Deliverable format:
-- Shared component changes.
-- Cleanup/deletion list.
-- Manual checks for representative routes.
-
-## Bundle E: Safe Refactor (No Behavior Change)
-
-Use when:
-- The request is cleanup, naming, extraction, or duplication removal.
-
-Default scope:
-- No intentional behavior changes.
-- Keep API signatures unchanged unless explicitly requested.
-
-Execution steps:
-1. Refactor in small coherent slices.
-2. Keep call sites synchronized.
-3. Avoid opportunistic unrelated rewrites.
-4. Provide a quick behavior-equivalence checklist for user validation.
-
-Deliverable format:
-- Refactor intent and non-goals.
-- Files changed.
-- Behavior-equivalence verification steps.
+- Keep public contracts stable, update call sites together, and avoid unrelated cleanup.
+- State the invariant that proves before/after behavior is equivalent.

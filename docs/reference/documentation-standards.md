@@ -6,7 +6,7 @@ Purpose: keep documentation sorting, grouping, and naming consistent across curr
 
 - This file is the canonical documentation structure and naming standard.
 - Project-specific docs (`hera/docs/`, `zeus/docs/`, `athena/docs/`) must follow this standard.
-- If another helper (skill/script/checklist) disagrees with this file, this file wins.
+- For documentation placement and naming, this file overrides helper skills, scripts, and checklists. User, system, and applicable repository instructions still have higher precedence.
 
 ## Directory Grouping Model
 

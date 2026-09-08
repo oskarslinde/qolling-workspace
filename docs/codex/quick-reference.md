@@ -1,44 +1,26 @@
 # Qolling Quick Reference
 
-## Repositories
+Use this file only when a repository location is unfamiliar. Daily behavior rules live in `AGENTS.md`.
 
-- `hera/`, `zeus/`, and `athena/` are git repositories.
-- Check `git status` only inside those repo roots.
-- The workspace root is the `qolling-workspace` Git meta-repository for cross-project assets.
-- Check Git status at the workspace root for root-owned changes and inside a product repository for product-specific changes.
+## Repository Map
 
-## Docs
+| Repository | Purpose | Main source | Guidance |
+| --- | --- | --- | --- |
+| `hera/` | Social-learning frontend | `src/` | `hera/AGENTS.md`, `hera/docs/README.md` |
+| `zeus/` | Shared backend and API owner | `src/main/java/com/ednilo/app/` | `zeus/AGENTS.md`, `zeus/docs/README.md` |
+| `athena/` | Focused-learning product | `src/` | `athena/AGENTS.md`, `athena/docs/README.md` |
+| `frontend-shared/` | Product-neutral frontend packages | package roots | `frontend-shared/AGENTS.md` |
+| `blog/` | Public Astro blog | `src/` | `blog/AGENTS.md`, `blog/docs/README.md` |
 
-- Human index: `docs/README.md`.
-- Cross-project API map: `docs/reference/api-contract-map.md`.
-- Cross-project docs standard: `docs/reference/documentation-standards.md`.
-- Hera rules: `hera/docs/README.md`.
-- Zeus rules: `zeus/docs/README.md`.
-- Athena rules: `athena/docs/README.md` (or `athena/guidelines/` until project docs are fully bootstrapped).
+The workspace root owns cross-project scripts and docs. Check Git status only in repositories whose files will change.
 
-## Hera Map
+## Common Locations
 
-- Source: `hera/src/`.
-- UI primitives: `hera/src/components/ui/`.
-- Routes: `hera/src/config/routes.jsx`.
-- API constants: `hera/src/constants/apiConstants.js`.
-- Services: `hera/src/services/`.
-- Design system: `hera/docs/design-system.md`.
-
-## Zeus Map
-
-- Source: `zeus/src/main/java/com/ednilo/app/`.
-- Config: `zeus/src/main/resources/`.
-- Domain-first packages: `auth`, `email`, `friend`, `messaging`, `question`, `user`.
-- API contracts: `swagger.json` and `swagger.yaml`.
-- Backend rules: `zeus/docs/backend-guidelines.md`.
-
-## Default Verification Suggestions
-
-Only run tests when the user asks. Otherwise suggest focused commands:
-
-```powershell
-cd hera; npm run lint; npm run test:ui:report
-cd zeus; .\mvnw -Punit-tests test
-cd business-tests; npm run check:feature-coverage
-```
+- Hera routes: `hera/src/config/routes.tsx`
+- Hera UI primitives: `hera/src/components/ui/`
+- Hera API services: `hera/src/services/`
+- Zeus configuration: `zeus/src/main/resources/`
+- Zeus generated API snapshots: `zeus/swagger.json`, `zeus/swagger.yaml`
+- Cross-project docs index: `docs/README.md`
+- API integration map: `docs/reference/api-contract-map.md`
+- Runbooks: `docs/runbooks/`

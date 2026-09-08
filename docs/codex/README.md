@@ -1,16 +1,11 @@
 # Codex Project Memory
 
-This folder is for Codex-facing project memory: operating shortcuts, execution playbooks, quick references, and lessons from user corrections.
-
-Human product and engineering docs live outside this folder in `docs/`, `hera/docs/`, and `zeus/docs/`.
+Codex-specific shortcuts live here. Shared behavior rules live in root and project `AGENTS.md` files; human engineering and product truth lives in the normal docs tree.
 
 ## Files
 
-- [execution-bundles.md](execution-bundles.md) - direct-execution playbooks for common Qolling tasks.
-- [quick-reference.md](quick-reference.md) - compact map for future Codex work.
-- [lessons.md](lessons.md) - project-specific workflow corrections to remember.
+- [quick-reference.md](quick-reference.md): optional repository lookup when a location is unfamiliar.
+- [execution-bundles.md](execution-bundles.md): optional playbooks for a few recurring task shapes.
+- [lessons.md](lessons.md): targeted lookup of project-specific mistakes; search by keyword rather than reading it on every task.
 
-## Rules
-
-- Promote stable product, API, frontend, or backend rules into human docs.
-- Delete stale research dumps, old plans, and migrated reviews once useful content is promoted.
+Promote stable engineering or product rules into human docs, link instead of duplicating, and delete stale Codex-only material.
