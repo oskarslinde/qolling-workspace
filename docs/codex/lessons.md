@@ -7,6 +7,7 @@ Search this file by task keyword after a similar mistake. Do not load it routine
 - **Git boundaries:** Check status in the repository being edited; use the workspace root only for root-owned files.
 - **New files:** Stage files intentionally created by Codex. Never commit, amend, push, or rewrite history without explicit approval.
 - **Instruction drift:** Root `AGENTS.md` owns shared policy. Project files add only local rules; update one source instead of copying changes everywhere.
+- **Model visibility:** Do not make workflow permissions depend on an exact model variant; runtime metadata may expose only the model family. Use explicit standing permissions and task-level opt-outs instead.
 - **Zeus scripts:** Durable Zeus deployment tooling belongs in `zeus/scripts/`; root copies are temporary only when requested.
 
 ## Investigation
