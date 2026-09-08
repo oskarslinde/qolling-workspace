@@ -1,0 +1,11 @@
+name: GitHub Actions POC
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GitHub Actions is working"
