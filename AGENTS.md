@@ -33,15 +33,16 @@
 ## Plans And Delegation
 
 - Execute an approved plan autonomously, keep its status current, and continue until completion or a real blocker.
-- Test execution still follows the authorization rule below; a plan does not grant extra permission.
+- Test execution follows the standing permission below; a plan does not grant extra permission for destructive or deployment actions.
 - Delegate only when independent parallel work or review materially improves the result and a suitable agent is available. The main agent retains architecture, integration, and final verification ownership.
 - Do not make task completion depend on a particular model or unavailable specialist agent.
 
 ## Test Authorization
 
-- Do not run tests unless the user explicitly authorizes that run and the active model is exactly `gpt-5.6-luna`.
-- Other models may add or update tests, inspect them, and provide exact commands, but must not execute them.
-- This restriction applies to test suites, not ordinary focused lint, formatting, type-check, compile, or build verification within the requested task.
+- Tests may be run automatically for touched code without asking again. Prefer focused tests; run broader suites when the change's risk warrants them.
+- Do not run destructive operations or external deployments without explicit user approval.
+- The user may disable tests for a task with a clear instruction such as `tests off`.
+- The standing permission covers test suites; ordinary focused lint, formatting, type-check, compile, and build verification remain allowed within the requested task.
 - Do not regenerate Swagger manually. The root `pipeline.sh` owns Swagger snapshot export.
 
 ## Git And Files
