@@ -358,6 +358,7 @@ compose_attach_zeus() {
 
 run_phase "Validate project layout" validate_layout
 run_phase "Check MongoDB Atlas DNS" node ./scripts/check-mongodb-atlas-dns.mjs
+run_phase "Check MongoDB Atlas connection" python ./scripts/check-mongodb-atlas-connection.py
 run_phase "Stop existing Hera dev server" stop_existing_hera_dev_server "${hera_dev_port}"
 run_phase "Install Hera dependencies" install_hera_dependencies
 run_phase "Fix Hera lint issues" fix_hera_lint
