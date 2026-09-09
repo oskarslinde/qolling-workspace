@@ -8,6 +8,7 @@ run_spring_tests=false
 run_testcontainers_tests=false
 run_dependency_audit=false
 hera_production_build=false
+enable_springdoc=false
 
 prompt_yes_no() {
   local prompt="$1"
@@ -64,11 +65,17 @@ if prompt_yes_no "Use Hera production build instead of the development server?" 
 else
   hera_production_build=false
 fi
+if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run?" "N"; then
+  enable_springdoc=true
+else
+  enable_springdoc=false
+fi
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
 if [[ "${run_dependency_audit}" == true ]]; then echo "Backend dependency audit: enabled"; else echo "Backend dependency audit: skipped"; fi
 if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
+if [[ "${enable_springdoc}" == true ]]; then echo "SpringDoc: enabled for Swagger snapshot export"; else echo "SpringDoc: disabled"; fi
 echo
 phase="init"
 backend_dir=""
@@ -303,17 +310,17 @@ export_swagger_snapshots() {
 
 compose_build() {
   if [[ "${hera_production_build}" == true ]]; then
-    docker compose --env-file .env.dev build zeus hera || fail_phase "Docker compose build" "docker compose build zeus hera failed."
+    SPRINGDOC_API_DOCS_ENABLED="${enable_springdoc}" SPRINGDOC_SWAGGER_UI_ENABLED="${enable_springdoc}" docker compose --env-file .env.dev build zeus hera || fail_phase "Docker compose build" "docker compose build zeus hera failed."
   else
-    docker compose --env-file .env.dev build zeus || fail_phase "Docker compose build" "docker compose build zeus failed."
+    SPRINGDOC_API_DOCS_ENABLED="${enable_springdoc}" SPRINGDOC_SWAGGER_UI_ENABLED="${enable_springdoc}" docker compose --env-file .env.dev build zeus || fail_phase "Docker compose build" "docker compose build zeus failed."
   fi
 }
 
 compose_up_zeus_detached() {
   if [[ "${hera_production_build}" == true ]]; then
-    docker compose --env-file .env.dev up -d zeus hera || fail_phase "Docker compose up services" "docker compose up -d zeus hera failed."
+    SPRINGDOC_API_DOCS_ENABLED="${enable_springdoc}" SPRINGDOC_SWAGGER_UI_ENABLED="${enable_springdoc}" docker compose --env-file .env.dev up -d zeus hera || fail_phase "Docker compose up services" "docker compose up -d zeus hera failed."
   else
-    docker compose --env-file .env.dev up -d zeus || fail_phase "Docker compose up zeus" "docker compose up -d zeus failed."
+    SPRINGDOC_API_DOCS_ENABLED="${enable_springdoc}" SPRINGDOC_SWAGGER_UI_ENABLED="${enable_springdoc}" docker compose --env-file .env.dev up -d zeus || fail_phase "Docker compose up zeus" "docker compose up -d zeus failed."
   fi
 }
 
@@ -397,7 +404,12 @@ run_phase "Build backend package (skip tests)" build_backend
 run_phase "Docker compose build" compose_build
 run_phase "Docker compose up Zeus" compose_up_zeus_detached
 run_phase "Wait for Zeus container" wait_for_zeus_container
-run_phase "Export Swagger snapshots" export_swagger_snapshots
+if [[ "${enable_springdoc}" == true ]]; then
+  run_phase "Export Swagger snapshots" export_swagger_snapshots
+else
+  echo
+  echo "==> Phase: Export Swagger snapshots (skipped because SpringDoc is disabled)"
+fi
 if [[ "${hera_production_build}" == true ]]; then
   echo
   echo "Hera is served by Nginx at http://localhost:3000 and Zeus is running detached."

@@ -6,6 +6,9 @@ services:
     container_name: qolling-zeus
     env_file:
       - .env.dev
+    environment:
+      SPRINGDOC_API_DOCS_ENABLED: ${SPRINGDOC_API_DOCS_ENABLED:-false}
+      SPRINGDOC_SWAGGER_UI_ENABLED: ${SPRINGDOC_SWAGGER_UI_ENABLED:-false}
     volumes:
       - ./zeus/uploads/images:/app/uploads/images
       - ./zeus/logs:/app/logs
