@@ -41,25 +41,32 @@ prompt_yes_no() {
 }
 
 echo "Qolling pipeline configuration"
-if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then
-  run_code_coverage=true
-else
-  run_code_coverage=false
-fi
-if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend unit tests?" "N"; then
-  run_unit_tests=true
+if prompt_yes_no "Run backend tests?" "N"; then
+  if prompt_yes_no "Run backend unit tests?" "N"; then
+    run_unit_tests=true
+  else
+    run_unit_tests=false
+  fi
+  if prompt_yes_no "Run backend Spring integration tests?" "N"; then
+    run_spring_tests=true
+  else
+    run_spring_tests=false
+  fi
+  if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
+    run_testcontainers_tests=true
+  else
+    run_testcontainers_tests=false
+  fi
+  if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then
+    run_code_coverage=true
+  else
+    run_code_coverage=false
+  fi
 else
   run_unit_tests=false
-fi
-if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend Spring integration tests?" "N"; then
-  run_spring_tests=true
-else
   run_spring_tests=false
-fi
-if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend Testcontainers tests?" "N"; then
-  run_testcontainers_tests=true
-else
   run_testcontainers_tests=false
+  run_code_coverage=false
 fi
 if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then
   run_dependency_audit=true
@@ -76,12 +83,13 @@ if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run
 else
   enable_springdoc=false
 fi
+if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
+if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
+if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
 if [[ "${run_code_coverage}" == true ]]; then
-  echo "Backend combined JaCoCo coverage: enabled (all test suites)"
+  echo "Backend combined JaCoCo coverage: enabled (runs all suites; individual selections are superseded)"
 else
-  if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
-  if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
-  if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+  echo "Backend combined JaCoCo coverage: skipped"
 fi
 if [[ "${run_dependency_audit}" == true ]]; then echo "Backend dependency audit: enabled"; else echo "Backend dependency audit: skipped"; fi
 if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
