@@ -6,9 +6,11 @@ set -o pipefail
 run_unit_tests=false
 run_spring_tests=false
 run_testcontainers_tests=false
+run_code_coverage=false
 run_dependency_audit=false
 hera_production_build=false
 enable_springdoc=false
+backend_test_goal="test"
 
 prompt_yes_no() {
   local prompt="$1"
@@ -55,6 +57,13 @@ if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
 else
   run_testcontainers_tests=false
 fi
+if prompt_yes_no "Run JaCoCo code coverage checks for selected backend tests?" "N"; then
+  run_code_coverage=true
+  backend_test_goal="verify"
+else
+  run_code_coverage=false
+  backend_test_goal="test"
+fi
 if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then
   run_dependency_audit=true
 else
@@ -73,6 +82,7 @@ fi
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+if [[ "${run_code_coverage}" == true ]]; then echo "Backend JaCoCo coverage checks: enabled"; else echo "Backend JaCoCo coverage checks: skipped"; fi
 if [[ "${run_dependency_audit}" == true ]]; then echo "Backend dependency audit: enabled"; else echo "Backend dependency audit: skipped"; fi
 if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
 if [[ "${enable_springdoc}" == true ]]; then echo "SpringDoc: enabled for Swagger snapshot export"; else echo "SpringDoc: disabled"; fi
@@ -276,22 +286,22 @@ apply_backend_spotless() {
 run_backend_unit_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Punit-tests test
-  ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests test failed in '${backend_dir}'."
+    run_backend_maven -Punit-tests "${backend_test_goal}"
+  ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests ${backend_test_goal} failed in '${backend_dir}'."
 }
 
 run_backend_spring_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Pspring-tests test
-  ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests test failed in '${backend_dir}'."
+    run_backend_maven -Pspring-tests "${backend_test_goal}"
+  ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests ${backend_test_goal} failed in '${backend_dir}'."
 }
 
 run_backend_testcontainers_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Ptestcontainers-tests test
-  ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests test failed in '${backend_dir}'."
+    run_backend_maven -Ptestcontainers-tests "${backend_test_goal}"
+  ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests ${backend_test_goal} failed in '${backend_dir}'."
 }
 
 audit_backend_dependencies() {
