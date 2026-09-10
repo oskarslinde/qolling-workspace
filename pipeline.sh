@@ -10,7 +10,6 @@ run_code_coverage=false
 run_dependency_audit=false
 hera_production_build=false
 enable_springdoc=false
-backend_test_goal="test"
 
 prompt_yes_no() {
   local prompt="$1"
@@ -42,27 +41,25 @@ prompt_yes_no() {
 }
 
 echo "Qolling pipeline configuration"
-if prompt_yes_no "Run backend unit tests?" "N"; then
+if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then
+  run_code_coverage=true
+else
+  run_code_coverage=false
+fi
+if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend unit tests?" "N"; then
   run_unit_tests=true
 else
   run_unit_tests=false
 fi
-if prompt_yes_no "Run backend Spring integration tests?" "N"; then
+if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend Spring integration tests?" "N"; then
   run_spring_tests=true
 else
   run_spring_tests=false
 fi
-if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
+if [[ "${run_code_coverage}" == false ]] && prompt_yes_no "Run backend Testcontainers tests?" "N"; then
   run_testcontainers_tests=true
 else
   run_testcontainers_tests=false
-fi
-if prompt_yes_no "Run JaCoCo code coverage checks for selected backend tests?" "N"; then
-  run_code_coverage=true
-  backend_test_goal="verify"
-else
-  run_code_coverage=false
-  backend_test_goal="test"
 fi
 if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then
   run_dependency_audit=true
@@ -79,10 +76,13 @@ if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run
 else
   enable_springdoc=false
 fi
-if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
-if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
-if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
-if [[ "${run_code_coverage}" == true ]]; then echo "Backend JaCoCo coverage checks: enabled"; else echo "Backend JaCoCo coverage checks: skipped"; fi
+if [[ "${run_code_coverage}" == true ]]; then
+  echo "Backend combined JaCoCo coverage: enabled (all test suites)"
+else
+  if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
+  if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
+  if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+fi
 if [[ "${run_dependency_audit}" == true ]]; then echo "Backend dependency audit: enabled"; else echo "Backend dependency audit: skipped"; fi
 if [[ "${hera_production_build}" == true ]]; then echo "Hera: production-build"; else echo "Hera: development-server"; fi
 if [[ "${enable_springdoc}" == true ]]; then echo "SpringDoc: enabled for Swagger snapshot export"; else echo "SpringDoc: disabled"; fi
@@ -286,22 +286,33 @@ apply_backend_spotless() {
 run_backend_unit_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Punit-tests "${backend_test_goal}"
-  ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests ${backend_test_goal} failed in '${backend_dir}'."
+    run_backend_maven -Punit-tests test
+  ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests test failed in '${backend_dir}'."
 }
 
 run_backend_spring_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Pspring-tests "${backend_test_goal}"
-  ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests ${backend_test_goal} failed in '${backend_dir}'."
+    run_backend_maven -Pspring-tests test
+  ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests test failed in '${backend_dir}'."
 }
 
 run_backend_testcontainers_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Ptestcontainers-tests "${backend_test_goal}"
-  ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests ${backend_test_goal} failed in '${backend_dir}'."
+    run_backend_maven -Ptestcontainers-tests test
+  ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests test failed in '${backend_dir}'."
+}
+
+run_backend_combined_coverage() {
+  (
+    cd "${backend_dir}" || exit 1
+    run_backend_maven clean
+    run_backend_maven -Punit-tests test -Djacoco.destFile=target/jacoco-unit.exec
+    run_backend_maven -Pspring-tests test -Djacoco.destFile=target/jacoco-spring.exec
+    run_backend_maven -Ptestcontainers-tests test -Djacoco.destFile=target/jacoco-testcontainers.exec
+    run_backend_maven -Pcoverage-report verify -DskipTests -Djacoco.destFile=target/jacoco-finalize.exec
+  ) || fail_phase "Run combined backend coverage" "Combined JaCoCo coverage failed in '${backend_dir}'."
 }
 
 audit_backend_dependencies() {
@@ -386,23 +397,27 @@ fi
 run_phase "Check Docker is running" check_docker
 run_phase "Tear down existing zeus container(s)" teardown_zeus_containers
 run_phase "Apply backend Spotless formatting" apply_backend_spotless
-if [[ "${run_unit_tests}" == true ]]; then
-  run_phase "Run backend unit tests" run_backend_unit_tests
+if [[ "${run_code_coverage}" == true ]]; then
+  run_phase "Run combined backend coverage" run_backend_combined_coverage
 else
-  echo
-  echo "==> Phase: Run backend unit tests (skipped by selection)"
-fi
-if [[ "${run_spring_tests}" == true ]]; then
-  run_phase "Run backend Spring tests" run_backend_spring_tests
-else
-  echo
-  echo "==> Phase: Run backend Spring tests (skipped by selection)"
-fi
-if [[ "${run_testcontainers_tests}" == true ]]; then
-  run_phase "Run backend Testcontainers tests" run_backend_testcontainers_tests
-else
-  echo
-  echo "==> Phase: Run backend Testcontainers tests (skipped by selection)"
+  if [[ "${run_unit_tests}" == true ]]; then
+    run_phase "Run backend unit tests" run_backend_unit_tests
+  else
+    echo
+    echo "==> Phase: Run backend unit tests (skipped by selection)"
+  fi
+  if [[ "${run_spring_tests}" == true ]]; then
+    run_phase "Run backend Spring tests" run_backend_spring_tests
+  else
+    echo
+    echo "==> Phase: Run backend Spring tests (skipped by selection)"
+  fi
+  if [[ "${run_testcontainers_tests}" == true ]]; then
+    run_phase "Run backend Testcontainers tests" run_backend_testcontainers_tests
+  else
+    echo
+    echo "==> Phase: Run backend Testcontainers tests (skipped by selection)"
+  fi
 fi
 if [[ "${run_dependency_audit}" == true ]]; then
   run_phase "Audit backend dependencies" audit_backend_dependencies
