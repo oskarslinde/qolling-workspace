@@ -108,11 +108,50 @@ test.describe("Business feature scenarios coverage", () => {
   test("[F10] Edit Collection Metadata", async ({ page }) => {
     await withSession(page, "user");
     await installApiMocks(page);
-    await page.goto("/collections/my/col-1/edit");
+    let collection = {
+      id: "col-1",
+      name: "Mock Collection",
+      description: "Mock collection used by business tests",
+      state: "DRAFT",
+      questionCount: 5,
+      playableQuestionCount: 5,
+      questionIds: ["q-1", "q-2", "q-3", "q-4", "q-5"],
+      difficulty: "BEGINNER",
+      lastUpdatedAt: "2026-01-01T00:00:00Z",
+    };
+
+    await page.route("**/v1/question-collections/my**", async (route) => {
+      await route.fulfill({
+        status: 200,
+        contentType: "application/json",
+        body: JSON.stringify({ content: [collection], totalElements: 1, totalPages: 1 }),
+      });
+    });
+    await page.route("**/v1/question-collections/col-1", async (route) => {
+      if (route.request().method() === "PUT") {
+        collection = {
+          ...collection,
+          ...(route.request().postDataJSON() as Record<string, unknown>),
+          lastUpdatedAt: new Date().toISOString(),
+        };
+      }
+
+      await route.fulfill({
+        status: 200,
+        contentType: "application/json",
+        body: JSON.stringify(collection),
+      });
+    });
+
+    await page.goto("/collections/my");
+    await page.getByRole("button", { name: "Mock Collection" }).click();
+    await page.getByRole("button", { name: "Edit collection" }).click();
     await expect(page.getByRole("heading", { name: "Edit collection" })).toBeVisible();
-    await page.locator('label:has-text("Collection name")').locator("xpath=following-sibling::input[1]").fill("Updated name");
+    await page.getByRole("combobox", { name: "Difficulty" }).selectOption("ADVANCED");
     await page.getByRole("button", { name: "Save details" }).click();
     await expect(page.getByText("Collection details saved.")).toBeVisible();
+    await page.getByRole("button", { name: "Back to collection" }).click();
+    await expect(page.getByText("Updated just now")).toBeVisible();
   });
 
   test("[F11] Create Question Manually", async ({ page }) => {
