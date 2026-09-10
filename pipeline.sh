@@ -298,7 +298,7 @@ teardown_zeus_containers() {
 build_backend() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven clean package -DskipTests
+    run_backend_maven -Pquality-checks clean package -DskipTests
   ) || fail_phase "Build backend package (skip tests)" "Maven package command failed in '${backend_dir}'."
 }
 
@@ -312,21 +312,21 @@ apply_backend_spotless() {
 run_backend_unit_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Punit-tests test
+    run_backend_maven -Pquality-checks,unit-tests test
   ) || fail_phase "Run backend unit tests" "Maven wrapper -Punit-tests test failed in '${backend_dir}'."
 }
 
 run_backend_spring_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Pspring-tests test
+    run_backend_maven -Pquality-checks,spring-tests test
   ) || fail_phase "Run backend Spring tests" "Maven wrapper -Pspring-tests test failed in '${backend_dir}'."
 }
 
 run_backend_testcontainers_tests() {
   (
     cd "${backend_dir}" || exit 1
-    run_backend_maven -Ptestcontainers-tests test
+    run_backend_maven -Pquality-checks,testcontainers-tests test
   ) || fail_phase "Run backend Testcontainers tests" "Maven wrapper -Ptestcontainers-tests test failed in '${backend_dir}'."
 }
 
@@ -334,10 +334,10 @@ run_backend_combined_coverage() {
   (
     cd "${backend_dir}" || exit 1
     run_backend_maven clean
-    run_backend_maven -Punit-tests test -Djacoco.destFile=target/jacoco-unit.exec
-    run_backend_maven -Pspring-tests test -Djacoco.destFile=target/jacoco-spring.exec
-    run_backend_maven -Ptestcontainers-tests test -Djacoco.destFile=target/jacoco-testcontainers.exec
-    run_backend_maven -Pcoverage-report verify -DskipTests -Djacoco.destFile=target/jacoco-finalize.exec
+    run_backend_maven -Pquality-checks,unit-tests test -Djacoco.destFile=target/jacoco-unit.exec
+    run_backend_maven -Pquality-checks,spring-tests test -Djacoco.destFile=target/jacoco-spring.exec
+    run_backend_maven -Pquality-checks,testcontainers-tests test -Djacoco.destFile=target/jacoco-testcontainers.exec
+    run_backend_maven -Pquality-checks,coverage-report verify -DskipTests -Djacoco.destFile=target/jacoco-finalize.exec
   ) || fail_phase "Run combined backend coverage" "Combined JaCoCo coverage failed in '${backend_dir}'."
 }
 
