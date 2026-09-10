@@ -53,7 +53,7 @@ prompt_pipeline_preset() {
   echo "Choose a pipeline preset:"
   echo "  [Q] Quick — no backend tests or audit; development Hera; SpringDoc disabled"
   echo "  [B] Backend checks — unit and Spring tests"
-  echo "  [F] Full validation — combined coverage, dependency audit, production Hera, SpringDoc export"
+  echo "  [F] Full validation — combined coverage, dependency audit, development Hera, SpringDoc export"
   echo "  [C] Custom — choose each option"
 
   while true; do
@@ -85,7 +85,6 @@ case "${pipeline_preset}" in
   full)
     run_code_coverage=true
     run_dependency_audit=true
-    hera_production_build=true
     enable_springdoc=true
     ;;
   custom)
