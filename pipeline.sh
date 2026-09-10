@@ -6,6 +6,7 @@ set -o pipefail
 run_unit_tests=false
 run_spring_tests=false
 run_testcontainers_tests=false
+run_playwright_e2e_tests=false
 run_code_coverage=false
 run_dependency_audit=false
 hera_production_build=false
@@ -53,11 +54,12 @@ prompt_pipeline_preset() {
   echo "Choose a pipeline preset:"
   echo "  [Q] Quick — no backend tests or audit; development Hera; SpringDoc disabled"
   echo "  [B] Backend checks — unit and Spring tests"
+  echo "  [E] Browser E2E — Playwright business-flow tests"
   echo "  [F] Full validation — combined coverage, dependency audit, development Hera, SpringDoc export"
   echo "  [C] Custom — choose each option"
 
   while true; do
-    if ! IFS= read -r -p "Preset [Q/B/F/C] (default: Q): " answer; then
+    if ! IFS= read -r -p "Preset [Q/B/E/F/C] (default: Q): " answer; then
       answer="Q"
       echo "Q"
     fi
@@ -65,9 +67,10 @@ prompt_pipeline_preset() {
     case "${answer:-Q}" in
       [Qq]) pipeline_preset="quick"; return ;;
       [Bb]) pipeline_preset="backend"; return ;;
+      [Ee]) pipeline_preset="browser-e2e"; return ;;
       [Ff]) pipeline_preset="full"; return ;;
       [Cc]) pipeline_preset="custom"; return ;;
-      *) echo "Please choose Q, B, F, or C." ;;
+      *) echo "Please choose Q, B, E, F, or C." ;;
     esac
   done
 }
@@ -82,6 +85,9 @@ case "${pipeline_preset}" in
     run_unit_tests=true
     run_spring_tests=true
     ;;
+  browser-e2e)
+    run_playwright_e2e_tests=true
+    ;;
   full)
     run_code_coverage=true
     run_dependency_audit=true
@@ -94,6 +100,7 @@ case "${pipeline_preset}" in
       if prompt_yes_no "Run backend Testcontainers tests?" "N"; then run_testcontainers_tests=true; fi
       if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then run_code_coverage=true; fi
     fi
+    if prompt_yes_no "Run Playwright browser end-to-end tests?" "N"; then run_playwright_e2e_tests=true; fi
     if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then run_dependency_audit=true; fi
     if prompt_yes_no "Use Hera production build instead of the development server?" "N"; then hera_production_build=true; fi
     if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run?" "N"; then enable_springdoc=true; fi
@@ -104,6 +111,7 @@ echo "Pipeline preset: ${pipeline_preset}"
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+if [[ "${run_playwright_e2e_tests}" == true ]]; then echo "Playwright browser end-to-end tests: enabled"; else echo "Playwright browser end-to-end tests: skipped"; fi
 if [[ "${run_code_coverage}" == true ]]; then
   echo "Backend combined JaCoCo coverage: enabled (runs all suites; individual selections are superseded)"
 else
@@ -184,6 +192,36 @@ install_hera_dependencies() {
     npm ci
     printf '%s\\n' "${current_lock_checksum}" > "node_modules/.qolling-package-lock.sha256"
   ) || fail_phase "Install Hera dependencies" "Failed to install frontend dependencies in hera."
+}
+
+install_business_test_dependencies() {
+  local lockfile="business-tests/package-lock.json"
+  local install_marker="business-tests/node_modules/.qolling-package-lock.sha256"
+  local current_lock_checksum=""
+
+  [[ -f "${lockfile}" ]] || fail_phase "Install Playwright dependencies" "Missing ${lockfile}."
+  current_lock_checksum="$(sha256sum "${lockfile}")" || fail_phase "Install Playwright dependencies" "Could not checksum ${lockfile}."
+
+  if [[ "${BUSINESS_TESTS_FORCE_INSTALL:-false}" != "true" ]] \
+    && [[ -d "business-tests/node_modules" ]] \
+    && [[ -f "${install_marker}" ]] \
+    && [[ "$(<"${install_marker}")" == "${current_lock_checksum}" ]]; then
+    echo "Playwright dependencies already match package-lock.json; skipping npm ci."
+    return 0
+  fi
+
+  (
+    cd business-tests || exit 1
+    npm ci
+    printf '%s\\n' "${current_lock_checksum}" > "node_modules/.qolling-package-lock.sha256"
+  ) || fail_phase "Install Playwright dependencies" "Failed to install Playwright dependencies in business-tests."
+}
+
+install_playwright_browsers() {
+  (
+    cd business-tests || exit 1
+    npm run install:browsers
+  ) || fail_phase "Install Playwright browsers" "Failed to install Playwright browser binaries in business-tests."
 }
 
 fix_hera_lint() {
@@ -341,6 +379,22 @@ run_backend_combined_coverage() {
   ) || fail_phase "Run combined backend coverage" "Combined JaCoCo coverage failed in '${backend_dir}'."
 }
 
+run_playwright_e2e_tests() {
+  local playwright_base_url
+
+  if [[ "${hera_production_build}" == true ]]; then
+    playwright_base_url="http://127.0.0.1:3000"
+  else
+    playwright_base_url="http://127.0.0.1:${hera_dev_port}"
+  fi
+
+  (
+    cd business-tests || exit 1
+    PLAYWRIGHT_BASE_URL="${playwright_base_url}" npm run check:feature-coverage
+    PLAYWRIGHT_BASE_URL="${playwright_base_url}" npm test
+  ) || fail_phase "Run Playwright browser end-to-end tests" "Playwright business-flow tests failed in business-tests."
+}
+
 audit_backend_dependencies() {
   (
     cd "${backend_dir}" || exit 1
@@ -415,6 +469,10 @@ run_phase "Check MongoDB Atlas DNS" node ./scripts/check-mongodb-atlas-dns.mjs
 run_phase "Check MongoDB Atlas connection" python ./scripts/check-mongodb-atlas-connection.py
 run_phase "Stop existing Hera dev server" stop_existing_hera_dev_server "${hera_dev_port}"
 run_phase "Install Hera dependencies" install_hera_dependencies
+if [[ "${run_playwright_e2e_tests}" == true ]]; then
+  run_phase "Install Playwright dependencies" install_business_test_dependencies
+  run_phase "Install Playwright browsers" install_playwright_browsers
+fi
 run_phase "Fix Hera lint issues" fix_hera_lint
 run_phase "Check Hera lint" check_hera_lint
 if [[ "${hera_production_build}" == true ]]; then
@@ -455,6 +513,14 @@ run_phase "Build backend package (skip tests)" build_backend
 run_phase "Docker compose build" compose_build
 run_phase "Docker compose up Zeus" compose_up_zeus_detached
 run_phase "Wait for Zeus container" wait_for_zeus_container
+if [[ "${run_playwright_e2e_tests}" == true ]]; then
+  if [[ "${hera_production_build}" == true ]]; then
+    run_phase "Run Playwright browser end-to-end tests" run_playwright_e2e_tests
+  else
+    run_phase "Start Hera dev server for Playwright tests" start_hera_dev_server
+    run_phase "Run Playwright browser end-to-end tests" run_playwright_e2e_tests
+  fi
+fi
 if [[ "${enable_springdoc}" == true ]]; then
   run_phase "Export Swagger snapshots" export_swagger_snapshots
 else
@@ -465,7 +531,12 @@ if [[ "${hera_production_build}" == true ]]; then
   echo
   echo "Hera is served by Nginx at http://localhost:3000 and Zeus is running detached."
 else
-  run_phase "Start Hera dev server" start_hera_dev_server
+  if [[ -z "${hera_dev_pid}" ]]; then
+    run_phase "Start Hera dev server" start_hera_dev_server
+  else
+    echo
+    echo "Hera dev server is already running for Playwright tests."
+  fi
   run_phase "Docker compose attach Zeus" compose_attach_zeus
 fi
 
