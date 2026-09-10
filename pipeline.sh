@@ -10,6 +10,7 @@ run_code_coverage=false
 run_dependency_audit=false
 hera_production_build=false
 enable_springdoc=false
+pipeline_preset="quick"
 
 prompt_yes_no() {
   local prompt="$1"
@@ -40,49 +41,67 @@ prompt_yes_no() {
   done
 }
 
+prompt_pipeline_preset() {
+  local answer=""
+
+  if [[ ! -t 0 ]]; then
+    pipeline_preset="quick"
+    echo "Pipeline preset: Quick (non-interactive default)"
+    return
+  fi
+
+  echo "Choose a pipeline preset:"
+  echo "  [Q] Quick — no backend tests or audit; development Hera; SpringDoc disabled"
+  echo "  [B] Backend checks — unit and Spring tests"
+  echo "  [F] Full validation — combined coverage, dependency audit, production Hera, SpringDoc export"
+  echo "  [C] Custom — choose each option"
+
+  while true; do
+    if ! IFS= read -r -p "Preset [Q/B/F/C] (default: Q): " answer; then
+      answer="Q"
+      echo "Q"
+    fi
+
+    case "${answer:-Q}" in
+      [Qq]) pipeline_preset="quick"; return ;;
+      [Bb]) pipeline_preset="backend"; return ;;
+      [Ff]) pipeline_preset="full"; return ;;
+      [Cc]) pipeline_preset="custom"; return ;;
+      *) echo "Please choose Q, B, F, or C." ;;
+    esac
+  done
+}
+
 echo "Qolling pipeline configuration"
-if prompt_yes_no "Run backend tests?" "N"; then
-  if prompt_yes_no "Run backend unit tests?" "N"; then
+prompt_pipeline_preset
+
+case "${pipeline_preset}" in
+  quick)
+    ;;
+  backend)
     run_unit_tests=true
-  else
-    run_unit_tests=false
-  fi
-  if prompt_yes_no "Run backend Spring integration tests?" "N"; then
     run_spring_tests=true
-  else
-    run_spring_tests=false
-  fi
-  if prompt_yes_no "Run backend Testcontainers tests?" "N"; then
-    run_testcontainers_tests=true
-  else
-    run_testcontainers_tests=false
-  fi
-  if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then
+    ;;
+  full)
     run_code_coverage=true
-  else
-    run_code_coverage=false
-  fi
-else
-  run_unit_tests=false
-  run_spring_tests=false
-  run_testcontainers_tests=false
-  run_code_coverage=false
-fi
-if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then
-  run_dependency_audit=true
-else
-  run_dependency_audit=false
-fi
-if prompt_yes_no "Use Hera production build instead of the development server?" "N"; then
-  hera_production_build=true
-else
-  hera_production_build=false
-fi
-if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run?" "N"; then
-  enable_springdoc=true
-else
-  enable_springdoc=false
-fi
+    run_dependency_audit=true
+    hera_production_build=true
+    enable_springdoc=true
+    ;;
+  custom)
+    if prompt_yes_no "Run backend tests?" "N"; then
+      if prompt_yes_no "Run backend unit tests?" "N"; then run_unit_tests=true; fi
+      if prompt_yes_no "Run backend Spring integration tests?" "N"; then run_spring_tests=true; fi
+      if prompt_yes_no "Run backend Testcontainers tests?" "N"; then run_testcontainers_tests=true; fi
+      if prompt_yes_no "Run combined JaCoCo coverage across all backend test suites?" "N"; then run_code_coverage=true; fi
+    fi
+    if prompt_yes_no "Run backend dependency vulnerability audit?" "N"; then run_dependency_audit=true; fi
+    if prompt_yes_no "Use Hera production build instead of the development server?" "N"; then hera_production_build=true; fi
+    if prompt_yes_no "Enable SpringDoc API docs and Swagger UI for this pipeline run?" "N"; then enable_springdoc=true; fi
+    ;;
+esac
+
+echo "Pipeline preset: ${pipeline_preset}"
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
