@@ -20,6 +20,7 @@ Search this file by task keyword after a similar mistake. Do not load it routine
 
 - **Athena and Hera:** Use Hera as a behavioral reference when useful, but do not couple products or add runtime dependencies.
 - **Visual changes:** Confirm design-token values differ before claiming a size or color adjustment has visible effect.
+- **Detail-page navigation:** When a detail view has a parent list, prefer a compact top-level “← Back to …” text link above the page identity; keep it secondary to the title and retain any existing bottom action when needed.
 - **Collection edits:** Metadata actions must not resend membership or publication state unless that action owns those fields.
 - **Model changes:** Update explicit constructor call sites for new required fields; do not add compatibility overloads unless requested.
 - **Zeus formatting:** Let Spotless format touched Java files with scoped `spotless:apply`, then inspect the diff. Do not run repository-wide apply for a focused change.
