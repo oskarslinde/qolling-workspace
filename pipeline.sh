@@ -6,6 +6,7 @@ set -o pipefail
 run_unit_tests=false
 run_spring_tests=false
 run_testcontainers_tests=false
+run_hera_vitest_tests=false
 run_playwright_e2e_tests=false
 run_code_coverage=false
 run_dependency_audit=false
@@ -55,7 +56,7 @@ prompt_pipeline_preset() {
   echo "  [Q] Quick — no backend tests or audit; development Hera; SpringDoc disabled"
   echo "  [B] Backend checks — unit and Spring tests"
   echo "  [E] Browser E2E — Playwright business-flow tests"
-  echo "  [F] Full validation — combined coverage, dependency audit, development Hera, SpringDoc export"
+  echo "  [F] Full validation — Hera Vitest, combined coverage, dependency audit, development Hera, SpringDoc export"
   echo "  [C] Custom — choose each option"
 
   while true; do
@@ -89,11 +90,13 @@ case "${pipeline_preset}" in
     run_playwright_e2e_tests=true
     ;;
   full)
+    run_hera_vitest_tests=true
     run_code_coverage=true
     run_dependency_audit=true
     enable_springdoc=true
     ;;
   custom)
+    if prompt_yes_no "Run Hera Vitest UI tests?" "N"; then run_hera_vitest_tests=true; fi
     if prompt_yes_no "Run backend tests?" "N"; then
       if prompt_yes_no "Run backend unit tests?" "N"; then run_unit_tests=true; fi
       if prompt_yes_no "Run backend Spring integration tests?" "N"; then run_spring_tests=true; fi
@@ -111,6 +114,7 @@ echo "Pipeline preset: ${pipeline_preset}"
 if [[ "${run_unit_tests}" == true ]]; then echo "Backend unit tests: enabled"; else echo "Backend unit tests: skipped"; fi
 if [[ "${run_spring_tests}" == true ]]; then echo "Backend Spring tests: enabled"; else echo "Backend Spring tests: skipped"; fi
 if [[ "${run_testcontainers_tests}" == true ]]; then echo "Backend Testcontainers tests: enabled"; else echo "Backend Testcontainers tests: skipped"; fi
+if [[ "${run_hera_vitest_tests}" == true ]]; then echo "Hera Vitest UI tests: enabled"; else echo "Hera Vitest UI tests: skipped"; fi
 if [[ "${run_playwright_e2e_tests}" == true ]]; then echo "Playwright browser end-to-end tests: enabled"; else echo "Playwright browser end-to-end tests: skipped"; fi
 if [[ "${run_code_coverage}" == true ]]; then
   echo "Backend combined JaCoCo coverage: enabled (runs all suites; individual selections are superseded)"
@@ -236,6 +240,13 @@ check_hera_lint() {
     cd hera || exit 1
     npm run lint
   ) || fail_phase "Check Hera lint" "npm run lint failed in hera."
+}
+
+run_hera_vitest_tests() {
+  (
+    cd hera || exit 1
+    npm run test:ui
+  ) || fail_phase "Run Hera Vitest UI tests" "npm run test:ui failed in hera."
 }
 
 build_hera_production() {
@@ -475,6 +486,12 @@ if [[ "${run_playwright_e2e_tests}" == true ]]; then
 fi
 run_phase "Fix Hera lint issues" fix_hera_lint
 run_phase "Check Hera lint" check_hera_lint
+if [[ "${run_hera_vitest_tests}" == true ]]; then
+  run_phase "Run Hera Vitest UI tests" run_hera_vitest_tests
+else
+  echo
+  echo "==> Phase: Run Hera Vitest UI tests (skipped by selection)"
+fi
 if [[ "${hera_production_build}" == true ]]; then
   run_phase "Build Hera production bundle" build_hera_production
 fi
