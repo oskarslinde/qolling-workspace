@@ -8,8 +8,9 @@ Use the root pipeline when refreshing deployable artifacts:
 .\pipeline.sh
 ```
 
-The pipeline prompts whether backend tests should run and whether Hera should
-be built as a production bundle or started as a development server.
+The pipeline offers presets for quick checks, browser E2E, full validation, and custom runs. The
+**Backend checks** preset includes the Zeus unit and Spring selections, Hera Vitest UI tests, and
+combined JaCoCo coverage across the Zeus unit, Spring, and Testcontainers suites.
 
 The pipeline first verifies that the configured MongoDB Atlas SRV record resolves, then owns Hera install/lint checks, Zeus formatting/unit tests, the required backend dependency vulnerability audit, backend packaging, Docker Compose build, and Zeus startup. The audit blocks packaging and Docker image creation when a dependency reaches the configured CVSS threshold. Set `MONGODB_DNS_CHECK_TIMEOUT_SECONDS` to override the five-second Atlas DNS preflight timeout.
 

@@ -54,7 +54,7 @@ prompt_pipeline_preset() {
 
   echo "Choose a pipeline preset:"
   echo "  [Q] Quick — no backend tests or audit; development Hera; SpringDoc disabled"
-  echo "  [B] Backend checks — unit and Spring tests"
+  echo "  [B] Regular - BE + FE tests, dev Hera, SpringDoc disabled"
   echo "  [E] Browser E2E — Playwright business-flow tests"
   echo "  [F] Full validation — Hera Vitest, combined coverage, dependency audit, development Hera, SpringDoc export"
   echo "  [C] Custom — choose each option"
@@ -83,8 +83,11 @@ case "${pipeline_preset}" in
   quick)
     ;;
   backend)
+    run_hera_vitest_tests=true
     run_unit_tests=true
     run_spring_tests=true
+    run_testcontainers_tests=true
+    run_code_coverage=true
     ;;
   browser-e2e)
     run_playwright_e2e_tests=true
