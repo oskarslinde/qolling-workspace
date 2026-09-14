@@ -7,5 +7,6 @@ Codex-specific shortcuts live here. Shared behavior rules live in root and proje
 - [quick-reference.md](quick-reference.md): optional repository lookup when a location is unfamiliar.
 - [execution-bundles.md](execution-bundles.md): optional playbooks for a few recurring task shapes.
 - [lessons.md](lessons.md): targeted lookup of project-specific mistakes; search by keyword rather than reading it on every task.
+- [blocker-registry.md](blocker-registry.md): recurring environment, tooling, and permission blockers with safe alternate paths.
 
 Promote stable engineering or product rules into human docs, link instead of duplicating, and delete stale Codex-only material.
