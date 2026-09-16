@@ -1,28 +1,28 @@
 [
   {
-    "question": "Which pairing correctly matches Amazon Elastic Container Registry (Amazon ECR) with its main responsibility?",
+    "question": "Which capability does an Amazon ECR private repository provide?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon Elastic Container Registry (Amazon ECR) — store, manage, and deploy container images",
+        "text": "Schedule Kubernetes Pods onto nodes",
+        "correct": false,
+        "explanation": "Kubernetes scheduling is performed by the Kubernetes control plane and scheduler, not ECR."
+      },
+      {
+        "text": "Maintain a desired number of running tasks",
+        "correct": false,
+        "explanation": "Desired-count reconciliation is an ECS service responsibility; an image registry does not run tasks."
+      },
+      {
+        "text": "Store and retrieve container images",
         "correct": true,
-        "explanation": "Amazon Elastic Container Registry (Amazon ECR) exists to store, manage, and deploy container images. In this context, pairing, correctly, matches, Elastic determine the required service responsibility, data flow, or model behavior for the workload."
+        "explanation": "ECR private repositories store container images and let authorized clients push and pull them."
       },
       {
-        "text": "Amazon Athena — store, manage, and deploy container images",
+        "text": "Allocate serverless compute for a task",
         "correct": false,
-        "explanation": "Amazon Athena — store, manage, and deploy container images concerns a separate capability from the one being tested. Amazon Elastic Container Registry (Amazon ECR) exists to store, manage, and deploy container images. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "Amazon EMR — store, manage, and deploy container images",
-        "correct": false,
-        "explanation": "Amazon EMR — store, manage, and deploy container images concerns a separate capability from the one being tested. Amazon Elastic Container Registry (Amazon ECR) exists to store, manage, and deploy container images. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "AWS Glue — store, manage, and deploy container images",
-        "correct": false,
-        "explanation": "AWS Glue — store, manage, and deploy container images concerns a separate capability from the one being tested. Amazon Elastic Container Registry (Amazon ECR) exists to store, manage, and deploy container images. The distinction is important when selecting services for an AWS workload."
+        "explanation": "Fargate supplies compute capacity for compatible ECS or EKS workloads; ECR supplies image storage."
       }
     ],
     "tags": [
@@ -34,42 +34,136 @@
       "track": "AWS",
       "topic": "Containers",
       "subtopic": "Amazon Elastic Container Registry (Amazon ECR)",
-      "questionType": "QT35",
+      "questionType": "QT05",
       "coverageObjectives": [
-        "Identify the primary purpose of Amazon Elastic Container Registry (Amazon ECR)"
+        "Identify ECR as a private container image registry"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Identify ECR as a private container image registry",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html"
+  },
+  {
+    "question": "An image is tagged `api:2026-09` and pushed before a deployment. Where does the deployment platform pull that image from?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "An EKS cluster",
+        "correct": false,
+        "explanation": "An EKS cluster provides Kubernetes control-plane functionality and worker integration, but it does not store image layers."
+      },
+      {
+        "text": "A Fargate task",
+        "correct": false,
+        "explanation": "A Fargate task runs a selected container image after it has been pulled; it is not a source registry."
+      },
+      {
+        "text": "An ECS service",
+        "correct": false,
+        "explanation": "An ECS service maintains task instances after launch; it can reference an image but is not the image repository."
+      },
+      {
+        "text": "An Amazon ECR repository",
+        "correct": true,
+        "explanation": "An ECR repository holds tagged images, allowing a deployment definition to reference a particular image URI."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Containers"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Containers",
+      "subtopic": "Amazon Elastic Container Registry (Amazon ECR)",
+      "questionType": "QT10",
+      "coverageObjectives": [
+        "Explain ECR's role between image build and deployment"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Amazon Elastic Container Registry (Amazon ECR) exists to store, manage, and deploy container images.",
-    "answerSource": "https://aws.amazon.com/ecr/"
+    "answerDescription": "Explain ECR's role between image build and deployment",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html"
   },
   {
-    "question": "Which statement about Amazon Elastic Container Service (Amazon ECS) is correct?",
+    "question": "Which Amazon ECR feature can help identify operating-system package vulnerabilities in container images?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "It is used to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop.",
+        "text": "Task definition revisioning",
         "correct": false,
-        "explanation": "It is used to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop. concerns a separate capability from the one being tested. Amazon Elastic Container Service (Amazon ECS) exists to run and manage containerized applications using AWS orchestration. The distinction is."
+        "explanation": "ECS task definitions version runtime settings such as images and CPU, but do not scan image packages."
       },
       {
-        "text": "It is used to discover, prepare, transform, and catalog data for analytics workflows.",
+        "text": "Fargate platform versions",
         "correct": false,
-        "explanation": "It is used to discover, prepare, transform, and catalog data for analytics workflows. concerns a separate capability from the one being tested. Amazon Elastic Container Service (Amazon ECS) exists to run and manage containerized applications using AWS orchestration. The distinction is important when selecting services for."
+        "explanation": "A Fargate platform version identifies the runtime environment for a task, not a vulnerability-analysis feature."
       },
       {
-        "text": "It is used to query data in Amazon S3 using standard SQL without managing database infrastructure.",
+        "text": "Pod disruption budgets",
         "correct": false,
-        "explanation": "It is used to query data in Amazon S3 using standard SQL without managing database infrastructure. concerns a separate capability from the one being tested. Amazon Elastic Container Service (Amazon ECS) exists to run and manage containerized applications using AWS orchestration. The distinction is important when."
+        "explanation": "A Kubernetes pod disruption budget controls voluntary disruptions; it does not inspect container layers."
       },
       {
-        "text": "It is used to run and manage containerized applications using AWS orchestration.",
+        "text": "Image scanning",
         "correct": true,
-        "explanation": "Amazon Elastic Container Service (Amazon ECS) exists to run and manage containerized applications using AWS orchestration. In this context, statement, about, Elastic, Container determine the required service responsibility, data flow, or model behavior for the workload."
+        "explanation": "ECR supports image scanning so findings for known software vulnerabilities can be reviewed for repository images."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Containers"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Containers",
+      "subtopic": "Amazon Elastic Container Registry (Amazon ECR)",
+      "questionType": "QT03",
+      "coverageObjectives": [
+        "Recognize ECR image vulnerability scanning"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Recognize ECR image vulnerability scanning",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html"
+  },
+  {
+    "question": "Which ECS resource defines a container image, CPU and memory settings, ports, and other runtime parameters before tasks are launched?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "A service",
+        "correct": false,
+        "explanation": "An ECS service keeps a specified number of task instances running, using an existing task definition."
+      },
+      {
+        "text": "A cluster",
+        "correct": false,
+        "explanation": "An ECS cluster is a logical grouping for capacity and tasks; it does not itself specify container settings."
+      },
+      {
+        "text": "An ECR repository",
+        "correct": false,
+        "explanation": "An ECR repository stores image artifacts, while a task definition supplies the runtime configuration that uses an image."
+      },
+      {
+        "text": "A task definition",
+        "correct": true,
+        "explanation": "An ECS task definition is the blueprint used to describe one or more containers and their runtime configuration."
       }
     ],
     "tags": [
@@ -83,40 +177,134 @@
       "subtopic": "Amazon Elastic Container Service (Amazon ECS)",
       "questionType": "QT05",
       "coverageObjectives": [
-        "Identify the primary purpose of Amazon Elastic Container Service (Amazon ECS)"
+        "Identify an ECS task definition's responsibility"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Amazon Elastic Container Service (Amazon ECS) exists to run and manage containerized applications using AWS orchestration.",
-    "answerSource": "https://aws.amazon.com/ecs/"
+    "answerDescription": "Identify an ECS task definition's responsibility",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
   },
   {
-    "question": "What is the primary purpose of Amazon Elastic Kubernetes Service (Amazon EKS)?",
+    "question": "An ECS service has desired count 4. One task stops unexpectedly. What does the service scheduler attempt to do?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop",
+        "text": "Rebuild the container image in ECR",
         "correct": false,
-        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+        "explanation": "ECR stores images; a stopped task does not automatically trigger an image rebuild."
       },
       {
-        "text": "Discover, prepare, transform, and catalog data for analytics workflows",
-        "correct": false,
-        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
-      },
-      {
-        "text": "Run managed kubernetes control planes for container orchestration",
+        "text": "Launch a replacement task to restore four running tasks",
         "correct": true,
-        "explanation": "Amazon Elastic Kubernetes Service (Amazon EKS) exists to run managed Kubernetes control planes for container orchestration. In this context, the, primary, purpose, Elastic determine the required service responsibility, data flow, or model behavior for the workload."
+        "explanation": "An ECS service scheduler maintains the service's desired count and replaces tasks that stop when placement is possible."
       },
       {
-        "text": "Query data in Amazon S3 using standard SQL without managing database infrastructure",
+        "text": "Convert the service into a Kubernetes Deployment",
         "correct": false,
-        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+        "explanation": "ECS services and Kubernetes Deployments are different orchestrator resources; ECS does not translate one into the other."
+      },
+      {
+        "text": "Increase the task's Lambda timeout",
+        "correct": false,
+        "explanation": "Lambda timeout settings apply only to Lambda function invocations, not ECS service tasks."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Containers"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Containers",
+      "subtopic": "Amazon Elastic Container Service (Amazon ECS)",
+      "questionType": "QT10",
+      "coverageObjectives": [
+        "Explain ECS service desired-count reconciliation"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Explain ECS service desired-count reconciliation",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
+  },
+  {
+    "question": "Which ECS launch type lets a task run without the team managing Amazon EC2 instances in the cluster?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "ECR",
+        "correct": false,
+        "explanation": "ECR is an image registry and is not an ECS launch type or compute provider."
+      },
+      {
+        "text": "Fargate",
+        "correct": true,
+        "explanation": "With the Fargate launch type, AWS provides the compute capacity for ECS tasks so customers do not manage container-host EC2 instances."
+      },
+      {
+        "text": "EC2",
+        "correct": false,
+        "explanation": "The EC2 launch type places ECS tasks on EC2 instances that the customer provisions and manages."
+      },
+      {
+        "text": "External",
+        "correct": false,
+        "explanation": "The EXTERNAL launch type registers external instances for ECS; it does not provide AWS-managed serverless task compute."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Containers"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Containers",
+      "subtopic": "Amazon Elastic Container Service (Amazon ECS)",
+      "questionType": "QT06",
+      "coverageObjectives": [
+        "Select Fargate for ECS tasks without instance management"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Select Fargate for ECS tasks without instance management",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
+  },
+  {
+    "question": "What does Amazon EKS manage for a Kubernetes cluster?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "All worker-node operating systems",
+        "correct": false,
+        "explanation": "EKS managed node groups can simplify worker-node operations, but EKS's core service responsibility is the Kubernetes control plane rather than every node operating system."
+      },
+      {
+        "text": "The Kubernetes control plane",
+        "correct": true,
+        "explanation": "EKS manages the availability and scalability of the Kubernetes control plane for an EKS cluster."
+      },
+      {
+        "text": "Every application container image",
+        "correct": false,
+        "explanation": "An application container image remains an artifact in a registry such as ECR and is selected by a Kubernetes workload manifest."
+      },
+      {
+        "text": "Every application deployment pipeline",
+        "correct": false,
+        "explanation": "Release stages are commonly orchestrated by tooling such as CodePipeline; EKS runs Kubernetes workloads."
       }
     ],
     "tags": [
@@ -128,48 +316,95 @@
       "track": "AWS",
       "topic": "Containers",
       "subtopic": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "questionType": "QT01",
+      "questionType": "QT05",
       "coverageObjectives": [
-        "Identify the primary purpose of Amazon Elastic Kubernetes Service (Amazon EKS)"
+        "Identify EKS control-plane responsibility"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Amazon Elastic Kubernetes Service (Amazon EKS) exists to run managed Kubernetes control planes for container orchestration.",
-    "answerSource": "https://aws.amazon.com/eks/"
+    "difficulty": 1,
+    "answerDescription": "Identify EKS control-plane responsibility",
+    "answerSource": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html"
   },
   {
-    "question": "Which service is designed to store container images rather than run containers?",
+    "question": "A team needs Kubernetes APIs and controllers, but wants AWS to operate the highly available control-plane components. Which service fits?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon Elastic Container Service (Amazon ECS)",
+        "text": "Amazon ECR",
         "correct": false,
-        "explanation": "Amazon Elastic Container Service (Amazon ECS) is designed to run and manage containerized applications using AWS orchestration, so it does not match the requirement in this question."
+        "explanation": "ECR distributes container images but has no scheduler, API server, or Kubernetes controllers."
       },
       {
-        "text": "Amazon Elastic Container Registry (Amazon ECR)",
+        "text": "Amazon EKS",
         "correct": true,
-        "explanation": "Choose Amazon Elastic Container Registry (Amazon ECR) when the requirement is to store, manage, and deploy container images. In this context, designed, store, container, images determine the required service responsibility, data flow, or model behavior for the workload."
+        "explanation": "EKS is AWS's managed Kubernetes service and operates the Kubernetes control plane across multiple Availability Zones."
       },
       {
-        "text": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "text": "AWS Lambda",
         "correct": false,
-        "explanation": "Amazon Elastic Kubernetes Service (Amazon EKS) is designed to run managed Kubernetes control planes for container orchestration, so it does not match the requirement in this question."
+        "explanation": "Lambda executes event-driven functions and does not provide a persistent Kubernetes control plane."
+      },
+      {
+        "text": "Amazon ECS",
+        "correct": false,
+        "explanation": "ECS is AWS-native container orchestration and does not expose a Kubernetes control plane."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Containers"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Containers",
+      "subtopic": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select EKS for managed Kubernetes control planes"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerDescription": "Select EKS for managed Kubernetes control planes",
+    "answerSource": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html"
+  },
+  {
+    "question": "Which compute option can provide serverless capacity for both Amazon ECS tasks and Amazon EKS Pods?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "explanation": "CodeBuild creates temporary build environments for builds; it is not a workload compute option for ECS and EKS."
+      },
+      {
+        "text": "Amazon ECR",
+        "correct": false,
+        "explanation": "ECR provides container image registries that ECS and EKS can pull from; it supplies no task or Pod capacity."
       },
       {
         "text": "AWS Fargate",
+        "correct": true,
+        "explanation": "Fargate is serverless compute that works with both Amazon ECS and Amazon EKS, eliminating worker-server management for supported workloads."
+      },
+      {
+        "text": "AWS Lambda",
         "correct": false,
-        "explanation": "AWS Fargate is designed to run containers without managing the underlying servers, so it does not match the requirement in this question."
+        "explanation": "Lambda runs function invocations rather than acting as the compute provider for ECS tasks and EKS Pods."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Service Comparisons"
+      "Containers"
     ],
     "metadata": {
       "track": "AWS",
@@ -177,334 +412,93 @@
       "subtopic": "Similar AWS services",
       "questionType": "QT18",
       "coverageObjectives": [
-        "Distinguish Amazon Elastic Container Registry (Amazon ECR) from related AWS services"
+        "Recognize Fargate support for ECS and EKS"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 2,
-    "answerDescription": "ECR is the image registry; ECS and EKS orchestrate containers, and Fargate supplies serverless container compute.",
-    "answerSource": "https://aws.amazon.com/ecr/"
+    "difficulty": 3,
+    "answerDescription": "Recognize Fargate support for ECS and EKS",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
   },
   {
-    "question": "Which service is a managed Kubernetes control plane?",
+    "question": "Which statement accurately distinguishes Amazon ECS from Amazon EKS?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+        "text": "ECS provides a Kubernetes API, while EKS only runs standalone containers.",
+        "correct": false,
+        "explanation": "That reverses the services: EKS is the Kubernetes service, while ECS uses AWS-native orchestration primitives."
+      },
+      {
+        "text": "ECS requires EC2 hosts, while EKS requires Lambda functions.",
+        "correct": false,
+        "explanation": "Both ECS and EKS can use Fargate for supported serverless workloads, and neither requires Lambda functions."
+      },
+      {
+        "text": "ECS stores images, while EKS scans image vulnerabilities.",
+        "correct": false,
+        "explanation": "ECR stores and can scan container images; neither ECS nor EKS is the container image registry."
+      },
+      {
+        "text": "ECS uses AWS task and service constructs, while EKS provides Kubernetes-compatible control-plane APIs.",
         "correct": true,
-        "explanation": "Choose Amazon Elastic Kubernetes Service (Amazon EKS) when the requirement is to run managed Kubernetes control planes for container orchestration."
-      },
-      {
-        "text": "Amazon Elastic Container Service (Amazon ECS)",
-        "correct": false,
-        "explanation": "Amazon Elastic Container Service (Amazon ECS) is designed to run and manage containerized applications using AWS orchestration, so it does not match the requirement in this question."
-      },
-      {
-        "text": "Amazon Elastic Container Registry (Amazon ECR)",
-        "correct": false,
-        "explanation": "Amazon Elastic Container Registry (Amazon ECR) is designed to store, manage, and deploy container images, so it does not match the requirement in this question."
-      },
-      {
-        "text": "AWS Batch",
-        "correct": false,
-        "explanation": "Choose AWS Batch when the requirement is to run large numbers of batch computing jobs while managing compute resources for you. Choose Amazon Elastic Kubernetes Service (Amazon EKS) when the requirement is to run managed Kubernetes control planes for container orchestration."
+        "explanation": "ECS exposes its own task and service model. EKS provides Kubernetes control-plane functionality so teams use Kubernetes resources and APIs."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Service Comparisons"
+      "Containers"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "Containers",
       "subtopic": "Similar AWS services",
-      "questionType": "QT06",
-      "coverageObjectives": [
-        "Distinguish Amazon Elastic Kubernetes Service (Amazon EKS) from related AWS services"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "EKS provides managed Kubernetes; ECS is AWS-native orchestration, ECR stores images, and Fargate runs containers without server management.",
-    "answerSource": "https://aws.amazon.com/eks/"
-  },
-  {
-    "question": "Which AWS service should a team select to store, manage, and deploy container images?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon Elastic Block Store (Amazon EBS)",
-        "correct": false,
-        "explanation": "Amazon Elastic Block Store (Amazon EBS) is designed to provide persistent block storage volumes for EC2 instances, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon Elastic File System (Amazon EFS)",
-        "correct": false,
-        "explanation": "Amazon Elastic File System (Amazon EFS) is designed to provide elastic shared file storage for AWS compute resources, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon EventBridge",
-        "correct": false,
-        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon Elastic Container Registry (Amazon ECR)",
-        "correct": true,
-        "explanation": "Choose Amazon Elastic Container Registry (Amazon ECR) when the requirement is to store, manage, and deploy container images. In this context, should, team, select, store determine the required service responsibility, data flow, or model behavior for the workload."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Containers",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Containers",
-      "subtopic": "Amazon Elastic Container Registry (Amazon ECR)",
-      "questionType": "QT06",
-      "coverageObjectives": [
-        "Select Amazon Elastic Container Registry (Amazon ECR) for a requirement to store, manage, and deploy container images"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 2,
-    "answerDescription": "Choose Amazon Elastic Container Registry (Amazon ECR) when the requirement is to store, manage, and deploy container images.",
-    "answerSource": "https://aws.amazon.com/ecr/"
-  },
-  {
-    "question": "Which AWS service is the best solution when the primary requirement is to run and manage containerized applications using AWS orchestration?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon EventBridge",
-        "correct": false,
-        "explanation": "Amazon EventBridge is designed to route events between applications and AWS services using event buses and rules, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon FSx",
-        "correct": false,
-        "explanation": "Choose Amazon FSx when the requirement is to provide managed file systems for specialized workloads. Choose Amazon Elastic Container Service (Amazon ECS) when the requirement is to run and manage containerized applications using AWS orchestration. Those services use different integration patterns and address different workload requirements."
-      },
-      {
-        "text": "Amazon Elastic Container Service (Amazon ECS)",
-        "correct": true,
-        "explanation": "Choose Amazon Elastic Container Service (Amazon ECS) when the requirement is to run and manage containerized applications using AWS orchestration."
-      },
-      {
-        "text": "Amazon Elastic File System (Amazon EFS)",
-        "correct": false,
-        "explanation": "Amazon Elastic File System (Amazon EFS) is designed to provide elastic shared file storage for AWS compute resources, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Containers",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Containers",
-      "subtopic": "Amazon Elastic Container Service (Amazon ECS)",
-      "questionType": "QT09",
-      "coverageObjectives": [
-        "Select Amazon Elastic Container Service (Amazon ECS) for a requirement to run and manage containerized applications using AWS orchestration"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Choose Amazon Elastic Container Service (Amazon ECS) when the requirement is to run and manage containerized applications using AWS orchestration.",
-    "answerSource": "https://aws.amazon.com/ecs/"
-  },
-  {
-    "question": "Which AWS service is responsible for helping customers run managed Kubernetes control planes for container orchestration?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon Inspector",
-        "correct": false,
-        "explanation": "Amazon Inspector is designed to automatically scan workloads for software vulnerabilities and unintended network exposure, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-        "correct": true,
-        "explanation": "Choose Amazon Elastic Kubernetes Service (Amazon EKS) when the requirement is to run managed Kubernetes control planes for container orchestration."
-      },
-      {
-        "text": "Amazon FSx",
-        "correct": false,
-        "explanation": "Choose Amazon FSx when the requirement is to provide managed file systems for specialized workloads. Choose Amazon Elastic Kubernetes Service (Amazon EKS) when the requirement is to run managed Kubernetes control planes for container orchestration."
-      },
-      {
-        "text": "Amazon GuardDuty",
-        "correct": false,
-        "explanation": "Amazon GuardDuty is designed to continuously detect suspicious activity and threats in AWS environments, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Containers",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Containers",
-      "subtopic": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "questionType": "QT05",
-      "coverageObjectives": [
-        "Select Amazon Elastic Kubernetes Service (Amazon EKS) for a requirement to run managed Kubernetes control planes for container orchestration"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 2,
-    "answerDescription": "Choose Amazon Elastic Kubernetes Service (Amazon EKS) when the requirement is to run managed Kubernetes control planes for container orchestration.",
-    "answerSource": "https://aws.amazon.com/eks/"
-  },
-  {
-    "question": "Which statement correctly distinguishes Amazon Elastic Container Registry (Amazon ECR) from Amazon Elastic Container Service (Amazon ECS)?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon Elastic Container Registry (Amazon ECR) is used to store, manage, and deploy container images, whereas Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration.",
-        "correct": true,
-        "explanation": "This correctly separates the primary roles of Amazon Elastic Container Registry (Amazon ECR) and Amazon Elastic Container Service (Amazon ECS)."
-      },
-      {
-        "text": "Amazon Elastic Container Registry (Amazon ECR) is used to run and manage containerized applications using AWS orchestration, whereas Amazon Elastic Container Service (Amazon ECS) is used to store, manage, and deploy container images.",
-        "correct": false,
-        "explanation": "Amazon Elastic Container Registry (Amazon ECR) is used to run and manage containerized applications using AWS orchestration, whereas Amazon Elastic Container Service (Amazon ECS) is used to store, manage, and deploy container images. concerns a separate capability from the one being tested. Amazon Elastic Container Registry."
-      },
-      {
-        "text": "Both services are primarily used to store, manage, and deploy container images.",
-        "correct": false,
-        "explanation": "That describes Amazon Elastic Container Registry (Amazon ECR), but Amazon Elastic Container Service (Amazon ECS) is primarily used to run and manage containerized applications using AWS orchestration."
-      },
-      {
-        "text": "Both services are primarily used to run and manage containerized applications using AWS orchestration.",
-        "correct": false,
-        "explanation": "That describes Amazon Elastic Container Service (Amazon ECS), but Amazon Elastic Container Registry (Amazon ECR) is primarily used to store, manage, and deploy container images."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Containers",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Containers",
-      "subtopic": "Amazon Elastic Container Registry (Amazon ECR)",
       "questionType": "QT18",
       "coverageObjectives": [
-        "Distinguish Amazon Elastic Container Registry (Amazon ECR) from Amazon Elastic Container Service (Amazon ECS)"
+        "Compare AWS-native orchestration and managed Kubernetes"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "Amazon Elastic Container Registry (Amazon ECR) is used to store, manage, and deploy container images, while Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration.",
-    "answerSource": "https://aws.amazon.com/ecr/"
+    "answerDescription": "Compare AWS-native orchestration and managed Kubernetes",
+    "answerSource": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html"
   },
   {
-    "question": "A learner says Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS) have the same primary role. Which response corrects that misconception?",
+    "question": "A workload needs a Kubernetes-specific admission controller and custom resources. Which orchestration choice preserves those Kubernetes extension points?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon Elastic Container Service (Amazon ECS) is used to run managed Kubernetes control planes for container orchestration, whereas Amazon Elastic Kubernetes Service (Amazon EKS) is used to run and manage containerized applications using AWS orchestration.",
+        "text": "AWS Fargate alone",
         "correct": false,
-        "explanation": "The statement about Amazon Elastic Container Service (Amazon ECS) is used to run managed Kubernetes control planes for container orchestration, whereas Amazon Elastic Kubernetes Service (Amazon EKS) is used to run and manage containerized applications using AWS orchestration. describes a different technical behavior from the capability."
+        "explanation": "Fargate provides compute under an ECS or EKS orchestrator; it is not itself a Kubernetes control plane."
       },
       {
-        "text": "Both services are primarily used to run and manage containerized applications using AWS orchestration.",
-        "correct": false,
-        "explanation": "That describes Amazon Elastic Container Service (Amazon ECS), but Amazon Elastic Kubernetes Service (Amazon EKS) is primarily used to run managed Kubernetes control planes for container orchestration."
-      },
-      {
-        "text": "Both services are primarily used to run managed Kubernetes control planes for container orchestration.",
-        "correct": false,
-        "explanation": "That describes Amazon Elastic Kubernetes Service (Amazon EKS), but Amazon Elastic Container Service (Amazon ECS) is primarily used to run and manage containerized applications using AWS orchestration."
-      },
-      {
-        "text": "Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration, whereas Amazon Elastic Kubernetes Service (Amazon EKS) is used to run managed Kubernetes control planes for container orchestration.",
+        "text": "Amazon EKS",
         "correct": true,
-        "explanation": "This correctly separates the primary roles of Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Service (Amazon EKS)."
+        "explanation": "EKS runs Kubernetes control-plane components and supports Kubernetes APIs, including workloads that rely on Kubernetes extension mechanisms."
+      },
+      {
+        "text": "Amazon ECR",
+        "correct": false,
+        "explanation": "ECR can hold the workload image, but an image registry does not execute admission controllers or custom resources."
+      },
+      {
+        "text": "Amazon ECS",
+        "correct": false,
+        "explanation": "ECS can run containers but uses ECS task definitions and services rather than Kubernetes custom-resource APIs."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Containers",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Containers",
-      "subtopic": "Amazon Elastic Container Service (Amazon ECS)",
-      "questionType": "QT39",
-      "coverageObjectives": [
-        "Distinguish Amazon Elastic Container Service (Amazon ECS) from Amazon Elastic Kubernetes Service (Amazon EKS)"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration, while Amazon Elastic Kubernetes Service (Amazon EKS) is used to run managed Kubernetes control planes for container orchestration.",
-    "answerSource": "https://aws.amazon.com/ecs/"
-  },
-  {
-    "question": "When should a team choose Amazon Elastic Kubernetes Service (Amazon EKS) instead of Amazon Elastic Container Service (Amazon ECS)?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
-        "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested."
-      },
-      {
-        "text": "When the requirement is unrelated to the primary purpose of either service.",
-        "correct": false,
-        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested."
-      },
-      {
-        "text": "When the requirement is to run managed Kubernetes control planes for container orchestration, rather than to run and manage containerized applications using AWS orchestration.",
-        "correct": true,
-        "explanation": "Amazon Elastic Kubernetes Service (Amazon EKS) is used to run managed Kubernetes control planes for container orchestration, while Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration."
-      },
-      {
-        "text": "When the requirement is to run and manage containerized applications using AWS orchestration, rather than to run managed Kubernetes control planes for container orchestration.",
-        "correct": false,
-        "explanation": "That is when Amazon Elastic Container Service (Amazon ECS), not Amazon Elastic Kubernetes Service (Amazon EKS), is the closer fit."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Containers",
-      "Service Purpose"
+      "Containers"
     ],
     "metadata": {
       "track": "AWS",
@@ -512,14 +506,14 @@
       "subtopic": "Amazon Elastic Kubernetes Service (Amazon EKS)",
       "questionType": "QT19",
       "coverageObjectives": [
-        "Distinguish Amazon Elastic Kubernetes Service (Amazon EKS) from Amazon Elastic Container Service (Amazon ECS)"
+        "Choose EKS when Kubernetes extension APIs are required"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "Amazon Elastic Kubernetes Service (Amazon EKS) is used to run managed Kubernetes control planes for container orchestration, while Amazon Elastic Container Service (Amazon ECS) is used to run and manage containerized applications using AWS orchestration.",
-    "answerSource": "https://aws.amazon.com/eks/"
+    "answerDescription": "Choose EKS when Kubernetes extension APIs are required",
+    "answerSource": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html"
   }
 ]

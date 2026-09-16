@@ -1,28 +1,28 @@
 [
   {
-    "question": "What is the primary purpose of AWS IoT Core?",
+    "question": "Thousands of sensors must publish telemetry and receive messages through a managed MQTT broker. Which AWS service provides this device-facing capability?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Query data in Amazon S3 using standard SQL without managing database infrastructure",
+        "text": "Amazon Kinesis Data Streams",
         "correct": false,
-        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
+        "explanation": "Kinesis can ingest streaming records, but its stream API is not a device-facing MQTT broker."
       },
       {
-        "text": "Connect devices to the cloud and enable secure messaging and device interaction",
+        "text": "Amazon EventBridge",
+        "correct": false,
+        "explanation": "EventBridge routes application events; devices do not connect to its event bus as an MQTT broker."
+      },
+      {
+        "text": "AWS IoT Core",
         "correct": true,
-        "explanation": "AWS IoT Core exists to connect devices to the cloud and enable secure messaging and device interaction. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "IoT Core provides a message broker that supports device publishing and subscribing through MQTT."
       },
       {
-        "text": "Process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop",
+        "text": "Amazon API Gateway",
         "correct": false,
-        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
-      },
-      {
-        "text": "Discover, prepare, transform, and catalog data for analytics workflows",
-        "correct": false,
-        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+        "explanation": "API Gateway exposes APIs, including HTTP and WebSocket interfaces; it does not supply the IoT MQTT broker requested here."
       }
     ],
     "tags": [
@@ -34,90 +34,87 @@
       "track": "AWS",
       "topic": "Internet of Things (IoT)",
       "subtopic": "AWS IoT Core",
-      "questionType": "QT01",
+      "questionType": "QT07",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS IoT Core"
+        "Select IoT Core for device MQTT communications"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "AWS IoT Core exists to connect devices to the cloud and enable secure messaging and device interaction.",
-    "answerSource": "https://aws.amazon.com/iot-core/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html"
   },
   {
-    "question": "A cloud practitioner must connect devices to the cloud and enable secure messaging and device interaction. Which AWS service should they choose?",
+    "question": "A thermostat is offline when an app requests a new temperature. Which IoT Core feature can retain the requested state for the device to read after reconnecting?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS IoT Core",
+        "text": "A device shadow containing the desired state",
         "correct": true,
-        "explanation": "Choose AWS IoT Core when the requirement is to connect devices to the cloud and enable secure messaging and device interaction."
+        "explanation": "A shadow stores desired and reported device state in the cloud even while the physical device is disconnected."
       },
       {
-        "text": "AWS Lambda",
+        "text": "A registry attribute describing the device model",
         "correct": false,
-        "explanation": "AWS Lambda is designed to run code in response to events without provisioning or managing servers, so it does not match this requirement."
+        "explanation": "Registry attributes describe the thing; device shadows provide the desired/reported state synchronization mechanism."
       },
       {
-        "text": "AWS License Manager",
+        "text": "An IoT policy allowing the device to connect",
         "correct": false,
-        "explanation": "AWS License Manager is designed to track and control software license usage across environments, so it does not match this requirement."
+        "explanation": "An IoT policy grants permissions; it does not store the requested temperature."
       },
       {
-        "text": "AWS Management Console",
+        "text": "A device certificate used for authentication",
         "correct": false,
-        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
+        "explanation": "The certificate identifies the connecting device; it is not a store for application state."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Internet of Things (IoT)",
-      "Service Selection"
+      "Internet of Things (IoT)"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "Internet of Things (IoT)",
       "subtopic": "AWS IoT Core",
-      "questionType": "QT40",
+      "questionType": "QT07",
       "coverageObjectives": [
-        "Select AWS IoT Core for a requirement to connect devices to the cloud and enable secure messaging and device interaction"
+        "Understand device shadows across intermittent connectivity"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Choose AWS IoT Core when the requirement is to connect devices to the cloud and enable secure messaging and device interaction.",
-    "answerSource": "https://aws.amazon.com/iot-core/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html"
   },
   {
-    "question": "A learner says AWS IoT Core and Amazon EventBridge have the same primary role. Which response corrects that misconception?",
+    "question": "Telemetry messages already reach AWS IoT Core. What can an IoT rule do with those messages?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS IoT Core is used to route events between applications and AWS services using event buses and rules, whereas Amazon EventBridge is used to connect devices to the cloud and enable secure messaging and device interaction.",
+        "text": "Grant every publishing device administrator access",
         "correct": false,
-        "explanation": "The statement about AWS IoT Core is used to route events between applications and AWS services using event buses and rules, whereas Amazon EventBridge is used to connect devices to the cloud and enable secure messaging and device interaction. describes a different technical behavior from the."
+        "explanation": "Rules do not replace device authorization. Permissions still govern what a device and a rule action may do."
       },
       {
-        "text": "Both services are primarily used to connect devices to the cloud and enable secure messaging and device interaction.",
+        "text": "Replace the device firmware whenever a message arrives",
         "correct": false,
-        "explanation": "That describes AWS IoT Core, but Amazon EventBridge is primarily used to route events between applications and AWS services using event buses and rules."
+        "explanation": "Message rules process data; firmware deployment requires a device-management workflow and device-side support."
       },
       {
-        "text": "Both services are primarily used to route events between applications and AWS services using event buses and rules.",
+        "text": "Make disconnected devices publish immediately",
         "correct": false,
-        "explanation": "That describes Amazon EventBridge, but AWS IoT Core is primarily used to connect devices to the cloud and enable secure messaging and device interaction."
+        "explanation": "A rule can act on data received by the service; it cannot make an offline device establish a connection."
       },
       {
-        "text": "AWS IoT Core is used to connect devices to the cloud and enable secure messaging and device interaction, whereas Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
+        "text": "Filter message data and invoke an action such as a Lambda function",
         "correct": true,
-        "explanation": "Amazon EventBridge exists to route events between applications and AWS services using event buses and rules. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "IoT rules evaluate incoming message data and route results to configured actions in AWS services."
       }
     ],
     "tags": [
@@ -130,16 +127,15 @@
       "track": "AWS",
       "topic": "Internet of Things (IoT)",
       "subtopic": "AWS IoT Core",
-      "questionType": "QT39",
+      "questionType": "QT05",
       "coverageObjectives": [
-        "Distinguish AWS IoT Core from Amazon EventBridge"
+        "Identify message processing and routing by IoT rules"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "AWS IoT Core is used to connect devices to the cloud and enable secure messaging and device interaction, while Amazon EventBridge is used to route events between applications and AWS services using event buses and rules.",
-    "answerSource": "https://aws.amazon.com/iot-core/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html"
   }
 ]

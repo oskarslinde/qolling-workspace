@@ -1,6 +1,8 @@
 # AWS-SERVICES Coverage Matrix
 
-Source inventory: current AWS Certified Cloud Practitioner (CLF-C02) in-scope services, captured 2026-09-04.
+Source inventory: AWS Certified Cloud Practitioner (CLF-C02) in-scope service snapshot captured 2026-09-04. The 2026-09-15 editorial revision preserves this inventory; it is not a fresh assertion of current exam scope or service availability.
+
+Coverage counts represent three distinct foundational objectives for each listed service, rather than a required purpose/selection/comparison template. Questions remain reusable outside certification collections. See `PLAN.md` for editorial criteria and verification status.
 
 | Category | Service | Questions covered |
 |---|---|---:|
@@ -116,4 +118,4 @@ Source inventory: current AWS Certified Cloud Practitioner (CLF-C02) in-scope se
 | Storage | Amazon S3 Glacier | 3 |
 | Storage | AWS Storage Gateway | 3 |
 
-Comparison questions cover the major confusion groups: compute and containers; storage; databases; monitoring and governance; messaging and workflows; networking; identity and security; machine learning; analytics; and infrastructure delivery.
+Additional cross-service questions cover the major confusion groups: compute and containers; storage; databases; monitoring and governance; messaging and workflows; networking; identity and security; machine learning; analytics; and infrastructure delivery. These questions must add a distinct learning objective rather than repeat the service-specific questions with reordered names.

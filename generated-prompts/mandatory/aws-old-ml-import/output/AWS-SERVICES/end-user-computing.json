@@ -1,28 +1,28 @@
 [
   {
-    "question": "A team needs to stream desktop applications to users without installing them locally. Which AWS service best fits this requirement?",
+    "question": "A company wants users to access an existing desktop application through streaming, without installing that application on each laptop. Which offering is designed for this?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon Athena",
-        "correct": false,
-        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
-      },
-      {
-        "text": "Amazon AppStream 2.0",
+        "text": "Amazon WorkSpaces Applications (formerly AppStream 2.0)",
         "correct": true,
-        "explanation": "Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "WorkSpaces Applications runs desktop applications on AWS and streams access to users without rewriting them as web applications."
       },
       {
-        "text": "Amazon EMR",
+        "text": "Amazon WorkSpaces Secure Browser",
         "correct": false,
-        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
+        "explanation": "Secure Browser provides an isolated hosted browser for websites; it does not publish an arbitrary desktop application."
       },
       {
-        "text": "AWS Glue",
+        "text": "AWS Client VPN",
         "correct": false,
-        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+        "explanation": "Client VPN provides network access. It does not run or stream the desktop application."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "CloudFront delivers web content from edge locations; it does not execute a desktop application for an interactive streaming session."
       }
     ],
     "tags": [
@@ -36,278 +36,269 @@
       "subtopic": "Amazon AppStream 2.0",
       "questionType": "QT07",
       "coverageObjectives": [
-        "Identify the primary purpose of Amazon AppStream 2.0"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally.",
-    "answerSource": "https://aws.amazon.com/appstream/"
-  },
-  {
-    "question": "Which AWS service is primarily designed to provide managed virtual desktops for users?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon WorkSpaces",
-        "correct": true,
-        "explanation": "Amazon WorkSpaces exists to provide managed virtual desktops for users. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "Amazon Athena",
-        "correct": false,
-        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
-      },
-      {
-        "text": "Amazon EMR",
-        "correct": false,
-        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
-      },
-      {
-        "text": "AWS Glue",
-        "correct": false,
-        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "End User Computing"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "End User Computing",
-      "subtopic": "Amazon WorkSpaces",
-      "questionType": "QT02",
-      "coverageObjectives": [
-        "Identify the primary purpose of Amazon WorkSpaces"
+        "Recognize application streaming through WorkSpaces Applications"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Amazon WorkSpaces exists to provide managed virtual desktops for users.",
-    "answerSource": "https://aws.amazon.com/workspaces/"
+    "answerSource": "https://aws.amazon.com/workspaces/applications/"
   },
   {
-    "question": "Which pairing correctly matches Amazon WorkSpaces Secure Browser with its main responsibility?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon EMR — provide secure browser access to internal websites and SaaS applications",
-        "correct": false,
-        "explanation": "Amazon EMR — provide secure browser access to internal websites and SaaS applications concerns a separate capability from the one being tested. Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The distinction is important when selecting services for."
-      },
-      {
-        "text": "AWS Glue — provide secure browser access to internal websites and SaaS applications",
-        "correct": false,
-        "explanation": "AWS Glue — provide secure browser access to internal websites and SaaS applications concerns a separate capability from the one being tested. Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The distinction is important when selecting services for."
-      },
-      {
-        "text": "Amazon Athena — provide secure browser access to internal websites and SaaS applications",
-        "correct": false,
-        "explanation": "Amazon Athena — provide secure browser access to internal websites and SaaS applications concerns a separate capability from the one being tested. Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The distinction is important when selecting services for."
-      },
-      {
-        "text": "Amazon WorkSpaces Secure Browser — provide secure browser access to internal websites and SaaS applications",
-        "correct": true,
-        "explanation": "Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "End User Computing"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "End User Computing",
-      "subtopic": "Amazon WorkSpaces Secure Browser",
-      "questionType": "QT35",
-      "coverageObjectives": [
-        "Identify the primary purpose of Amazon WorkSpaces Secure Browser"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 2,
-    "answerDescription": "Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications.",
-    "answerSource": "https://aws.amazon.com/workspaces-web/"
-  },
-  {
-    "question": "Which AWS service should a team select to stream desktop applications to users without installing them locally?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon Athena",
-        "correct": false,
-        "explanation": "Amazon Athena is designed to query data in Amazon S3 using standard SQL without managing database infrastructure, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon Aurora",
-        "correct": false,
-        "explanation": "Amazon Aurora is designed to provide a MySQL- and PostgreSQL-compatible managed relational database engine, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon AppStream 2.0",
-        "correct": true,
-        "explanation": "Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "Amazon API Gateway",
-        "correct": false,
-        "explanation": "Amazon API Gateway is designed to create, publish, secure, monitor, and manage APIs at scale, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "End User Computing",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "End User Computing",
-      "subtopic": "Amazon AppStream 2.0",
-      "questionType": "QT06",
-      "coverageObjectives": [
-        "Select Amazon AppStream 2.0 for a requirement to stream desktop applications to users without installing them locally"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 2,
-    "answerDescription": "Choose Amazon AppStream 2.0 when the requirement is to stream desktop applications to users without installing them locally.",
-    "answerSource": "https://aws.amazon.com/appstream/"
-  },
-  {
-    "question": "Which AWS service is the best solution when the primary requirement is to provide managed virtual desktops for users?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Amazon AppStream 2.0",
-        "correct": false,
-        "explanation": "Amazon AppStream 2.0 is designed to stream desktop applications to users without installing them locally, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon WorkSpaces",
-        "correct": true,
-        "explanation": "Amazon WorkSpaces exists to provide managed virtual desktops for users. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "Migration Evaluator",
-        "correct": false,
-        "explanation": "Migration Evaluator is designed to estimate cloud migration costs and build a data-driven business case, so it does not match this requirement."
-      },
-      {
-        "text": "Service Quotas",
-        "correct": false,
-        "explanation": "Service Quotas is designed to view and manage limits on AWS resources and API operations, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "End User Computing",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "End User Computing",
-      "subtopic": "Amazon WorkSpaces",
-      "questionType": "QT09",
-      "coverageObjectives": [
-        "Select Amazon WorkSpaces for a requirement to provide managed virtual desktops for users"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Choose Amazon WorkSpaces when the requirement is to provide managed virtual desktops for users.",
-    "answerSource": "https://aws.amazon.com/workspaces/"
-  },
-  {
-    "question": "A cloud practitioner must provide secure browser access to internal websites and SaaS applications. Which AWS service should they choose?",
+    "question": "An employee needs a personalized cloud desktop assigned for their exclusive ongoing use. Which WorkSpaces option fits this requirement?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
         "text": "Amazon WorkSpaces Secure Browser",
+        "correct": false,
+        "explanation": "Secure Browser provides browser sessions rather than an individually assigned full desktop."
+      },
+      {
+        "text": "A shared non-persistent desktop session",
+        "correct": false,
+        "explanation": "A non-persistent shared environment does not provide the exclusively assigned desktop requested."
+      },
+      {
+        "text": "A VPN connection to the corporate network",
+        "correct": false,
+        "explanation": "Network connectivity alone does not provision a desktop or preserve its applications and settings."
+      },
+      {
+        "text": "Amazon WorkSpaces Personal",
         "correct": true,
-        "explanation": "Choose Amazon WorkSpaces Secure Browser when the requirement is to provide secure browser access to internal websites and SaaS applications."
-      },
-      {
-        "text": "Service Quotas",
-        "correct": false,
-        "explanation": "Service Quotas is designed to view and manage limits on AWS resources and API operations, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon AppStream 2.0",
-        "correct": false,
-        "explanation": "Amazon AppStream 2.0 is designed to stream desktop applications to users without installing them locally, so it does not match this requirement."
-      },
-      {
-        "text": "Amazon WorkSpaces",
-        "correct": false,
-        "explanation": "Amazon WorkSpaces exists to provide managed virtual desktops for users. Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. Those services use different integration patterns and address different workload requirements."
+        "explanation": "WorkSpaces Personal provides an individual persistent desktop, similar to a physical computer assigned to one employee."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "End User Computing",
-      "Service Selection"
+      "End User Computing"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "End User Computing",
-      "subtopic": "Amazon WorkSpaces Secure Browser",
-      "questionType": "QT40",
+      "subtopic": "Amazon WorkSpaces",
+      "questionType": "QT07",
       "coverageObjectives": [
-        "Select Amazon WorkSpaces Secure Browser for a requirement to provide secure browser access to internal websites and SaaS applications"
+        "Recognize the persistent personal-desktop model"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Choose Amazon WorkSpaces Secure Browser when the requirement is to provide secure browser access to internal websites and SaaS applications.",
-    "answerSource": "https://aws.amazon.com/workspaces-web/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces/latest/adminguide/managing-wsp-personal.html"
   },
   {
-    "question": "A learner says Amazon AppStream 2.0 and Amazon WorkSpaces have the same primary role. Which response corrects that misconception?",
+    "question": "Contractors only need private websites and SaaS applications through a cloud-hosted browser. Which service is designed for this access model?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon AppStream 2.0 is used to provide managed virtual desktops for users, whereas Amazon WorkSpaces is used to stream desktop applications to users without installing them locally.",
+        "text": "Amazon Cognito",
         "correct": false,
-        "explanation": "Amazon AppStream 2.0 is used to provide managed virtual desktops for users, whereas Amazon WorkSpaces is used to stream desktop applications to users without installing them locally. concerns a separate capability from the one being tested. Amazon AppStream 2.0 exists to stream desktop applications to users."
+        "explanation": "Cognito can authenticate application users, but authentication alone does not host or isolate their browser."
       },
       {
-        "text": "Both services are primarily used to stream desktop applications to users without installing them locally.",
-        "correct": false,
-        "explanation": "Both services are primarily used to stream desktop applications to users without installing them locally. concerns a separate capability from the one being tested. Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The distinction is important when selecting services for."
-      },
-      {
-        "text": "Both services are primarily used to provide managed virtual desktops for users.",
-        "correct": false,
-        "explanation": "That describes Amazon WorkSpaces, but Amazon AppStream 2.0 is primarily used to stream desktop applications to users without installing them locally."
-      },
-      {
-        "text": "Amazon AppStream 2.0 is used to stream desktop applications to users without installing them locally, whereas Amazon WorkSpaces is used to provide managed virtual desktops for users.",
+        "text": "Amazon WorkSpaces Secure Browser",
         "correct": true,
-        "explanation": "Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Secure Browser isolates the browser in AWS and streams web content to the user's existing browser."
+      },
+      {
+        "text": "AWS Client VPN",
+        "correct": false,
+        "explanation": "A VPN connects the user device to a network; it does not provide a hosted, isolated browser session."
+      },
+      {
+        "text": "Amazon CloudFront",
+        "correct": false,
+        "explanation": "CloudFront distributes web content; it is not an interactive browser running on behalf of each contractor."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "End User Computing"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "End User Computing",
+      "subtopic": "Amazon WorkSpaces Secure Browser",
+      "questionType": "QT07",
+      "coverageObjectives": [
+        "Select isolated browser access for web-only workloads"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/what-is-workspaces-secure-browser.html"
+  },
+  {
+    "question": "In a fleet-based WorkSpaces Applications deployment, what does the application image contain?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "The rule that determines how many instances to run",
+        "correct": false,
+        "explanation": "Fleet scaling configuration controls capacity; an image describes what software runs on those instances."
+      },
+      {
+        "text": "The installed applications and baseline configuration used by streaming instances",
+        "correct": true,
+        "explanation": "An image supplies the software and default settings used to create the application-streaming environment."
+      },
+      {
+        "text": "The network routes connecting every office to AWS",
+        "correct": false,
+        "explanation": "VPC and network configuration provide connectivity; an application image is not a network routing table."
+      },
+      {
+        "text": "The list of users currently connected to a session",
+        "correct": false,
+        "explanation": "Session membership is runtime state; it is not the installed software template stored in an image."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "End User Computing"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "End User Computing",
+      "subtopic": "Amazon AppStream 2.0",
+      "questionType": "QT13",
+      "coverageObjectives": [
+        "Understand the role of an application-streaming image"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/pdfs/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/best-practices-for-deploying-amazon-appstream-2.pdf"
+  },
+  {
+    "question": "Which choice can an administrator make when provisioning an Amazon WorkSpace?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Choose the physical host serial number in an AWS data center",
+        "correct": false,
+        "explanation": "WorkSpaces abstracts the underlying host infrastructure rather than exposing physical host selection."
+      },
+      {
+        "text": "Grant the user unrestricted AWS account permissions",
+        "correct": false,
+        "explanation": "Desktop access and AWS account administration are separate permissions; provisioning a WorkSpace does not grant administrator access."
+      },
+      {
+        "text": "Make every application on the desktop license-free",
+        "correct": false,
+        "explanation": "Desktop provisioning does not remove software licensing obligations."
+      },
+      {
+        "text": "Select a supported hardware and software configuration",
+        "correct": true,
+        "explanation": "WorkSpaces provides configurations for the desktop's compute resources and software environment."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "End User Computing"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "End User Computing",
+      "subtopic": "Amazon WorkSpaces",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Recognize configurable desktop resources"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html"
+  },
+  {
+    "question": "An administrator wants to restrict copying and file transfers during WorkSpaces Secure Browser sessions. Where should these restrictions be enforced?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Only in instructions emailed to users",
+        "correct": false,
+        "explanation": "Instructions do not technically enforce clipboard or download restrictions in a browser session."
+      },
+      {
+        "text": "In the portal's browser and user session settings",
+        "correct": true,
+        "explanation": "Secure Browser supports centralized controls for clipboard use, file transfer, printing, and browser behavior."
+      },
+      {
+        "text": "By changing the website's DNS record",
+        "correct": false,
+        "explanation": "DNS determines where a name resolves, not whether a session may copy data or transfer files."
+      },
+      {
+        "text": "By raising the AWS account service quota",
+        "correct": false,
+        "explanation": "A quota controls capacity limits; it does not define data-transfer behavior inside a user session."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "End User Computing"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "End User Computing",
+      "subtopic": "Amazon WorkSpaces Secure Browser",
+      "questionType": "QT13",
+      "coverageObjectives": [
+        "Understand centrally managed browser-session controls"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/what-is-workspaces-secure-browser.html"
+  },
+  {
+    "question": "When a user interacts with an application streamed by WorkSpaces Applications, where does the application execute?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "On the administrator's image-building machine for every session",
+        "correct": false,
+        "explanation": "An image builder prepares software; user sessions run on streaming resources created from the deployment configuration."
+      },
+      {
+        "text": "Inside the DNS server that resolves the streaming URL",
+        "correct": false,
+        "explanation": "DNS resolves names; it does not host the interactive application process."
+      },
+      {
+        "text": "On compute resources in AWS",
+        "correct": true,
+        "explanation": "The application runs in the AWS-hosted environment while the user interacts with the streamed session."
+      },
+      {
+        "text": "Inside a newly installed copy on the user's laptop",
+        "correct": false,
+        "explanation": "Application streaming does not require a local installation of the streamed application."
       }
     ],
     "tags": [
@@ -320,42 +311,41 @@
       "track": "AWS",
       "topic": "End User Computing",
       "subtopic": "Amazon AppStream 2.0",
-      "questionType": "QT39",
+      "questionType": "QT05",
       "coverageObjectives": [
-        "Distinguish Amazon AppStream 2.0 from Amazon WorkSpaces"
+        "Distinguish streamed execution from local installation"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Amazon AppStream 2.0 is used to stream desktop applications to users without installing them locally, while Amazon WorkSpaces is used to provide managed virtual desktops for users.",
-    "answerSource": "https://aws.amazon.com/appstream/"
+    "difficulty": 1,
+    "answerSource": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html"
   },
   {
-    "question": "When should a team choose Amazon WorkSpaces instead of Amazon AppStream 2.0?",
+    "question": "What remains an administrative responsibility when an organization adopts Amazon WorkSpaces?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "text": "Running the physical network switches used by the service",
         "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The distinction is important when selecting services for an AWS."
+        "explanation": "AWS operates its physical network; the customer configures access and logical network settings."
       },
       {
-        "text": "When the requirement is unrelated to the primary purpose of either service.",
-        "correct": false,
-        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "When the requirement is to provide managed virtual desktops for users, rather than to stream desktop applications to users without installing them locally.",
+        "text": "Deciding which users can access desktops and managing their application configuration",
         "correct": true,
-        "explanation": "Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "WorkSpaces manages desktop infrastructure, while the organization still manages users and the software experience it provides."
       },
       {
-        "text": "When the requirement is to stream desktop applications to users without installing them locally, rather than to provide managed virtual desktops for users.",
+        "text": "Installing the data-center hypervisor for each desktop",
         "correct": false,
-        "explanation": "When the requirement is to stream desktop applications to users without installing them locally, rather than to provide managed virtual desktops for users. concerns a separate capability from the one being tested. Amazon AppStream 2.0 exists to stream desktop applications to users without installing them locally.."
+        "explanation": "The managed desktop service supplies the virtualization infrastructure."
+      },
+      {
+        "text": "Replacing failed physical disks in AWS data centers",
+        "correct": false,
+        "explanation": "AWS operates the underlying physical infrastructure that hosts WorkSpaces."
       }
     ],
     "tags": [
@@ -368,42 +358,41 @@
       "track": "AWS",
       "topic": "End User Computing",
       "subtopic": "Amazon WorkSpaces",
-      "questionType": "QT19",
+      "questionType": "QT28",
       "coverageObjectives": [
-        "Distinguish Amazon WorkSpaces from Amazon AppStream 2.0"
+        "Distinguish managed desktop infrastructure from user administration"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Amazon WorkSpaces is used to provide managed virtual desktops for users, while Amazon AppStream 2.0 is used to stream desktop applications to users without installing them locally.",
-    "answerSource": "https://aws.amazon.com/workspaces/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html"
   },
   {
-    "question": "Which statement correctly distinguishes Amazon WorkSpaces Secure Browser from Amazon WorkSpaces?",
+    "question": "Knowing a WorkSpaces Secure Browser portal URL is not enough to begin a session. What else is required?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Both services are primarily used to provide managed virtual desktops for users.",
+        "text": "A public S3 bucket containing the company's websites",
         "correct": false,
-        "explanation": "That describes Amazon WorkSpaces, but Amazon WorkSpaces Secure Browser is primarily used to provide secure browser access to internal websites and SaaS applications."
+        "explanation": "Private application access does not require making company content publicly readable in S3."
       },
       {
-        "text": "Amazon WorkSpaces Secure Browser is used to provide secure browser access to internal websites and SaaS applications, whereas Amazon WorkSpaces is used to provide managed virtual desktops for users.",
+        "text": "The AWS root password for the account hosting the portal",
+        "correct": false,
+        "explanation": "End users authenticate to the portal; they should not receive the AWS root account password."
+      },
+      {
+        "text": "Administrator permissions in the AWS Management Console",
+        "correct": false,
+        "explanation": "Portal access is separate from AWS console administration and does not require granting it to users."
+      },
+      {
+        "text": "Valid credentials accepted by the portal's authentication configuration",
         "correct": true,
-        "explanation": "Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "Amazon WorkSpaces Secure Browser is used to provide managed virtual desktops for users, whereas Amazon WorkSpaces is used to provide secure browser access to internal websites and SaaS applications.",
-        "correct": false,
-        "explanation": "Amazon WorkSpaces Secure Browser is used to provide managed virtual desktops for users, whereas Amazon WorkSpaces is used to provide secure browser access to internal websites and SaaS applications. concerns a separate capability from the one being tested. Amazon WorkSpaces Secure Browser exists to provide secure."
-      },
-      {
-        "text": "Both services are primarily used to provide secure browser access to internal websites and SaaS applications.",
-        "correct": false,
-        "explanation": "Both services are primarily used to provide secure browser access to internal websites and SaaS applications. concerns a separate capability from the one being tested. Amazon WorkSpaces Secure Browser exists to provide secure browser access to internal websites and SaaS applications. The distinction is important when."
+        "explanation": "The portal may be reachable on the internet, but users must authenticate successfully before starting a browser session."
       }
     ],
     "tags": [
@@ -416,16 +405,15 @@
       "track": "AWS",
       "topic": "End User Computing",
       "subtopic": "Amazon WorkSpaces Secure Browser",
-      "questionType": "QT18",
+      "questionType": "QT28",
       "coverageObjectives": [
-        "Distinguish Amazon WorkSpaces Secure Browser from Amazon WorkSpaces"
+        "Recognize authentication as a boundary for hosted browser access"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Amazon WorkSpaces Secure Browser is used to provide secure browser access to internal websites and SaaS applications, while Amazon WorkSpaces is used to provide managed virtual desktops for users.",
-    "answerSource": "https://aws.amazon.com/workspaces-web/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/data-encryption.html"
   }
 ]

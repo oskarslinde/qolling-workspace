@@ -22,6 +22,7 @@ Search this file by task keyword after a similar mistake. Do not load it routine
 - **Visual changes:** Confirm design-token values differ before claiming a size or color adjustment has visible effect.
 - **Detail-page navigation:** When a detail view has a parent list, prefer a compact top-level “← Back to …” text link above the page identity; keep it secondary to the title and retain any existing bottom action when needed.
 - **Collection edits:** Metadata actions must not resend membership or publication state unless that action owns those fields.
+- **Technical question quality:** A passing generator validator is not an editorial review. Inspect every stem, option, and explanation for certification-role filler, answer leakage, implausible alternatives, and repeated objectives; never pad explanations to satisfy a word minimum. Follow the question-generator skill's quality workflow.
 - **Model changes:** Update explicit constructor call sites for new required fields; do not add compatibility overloads unless requested.
 - **Dependency injection:** Keep service dependencies `final` and constructor-injected via Lombok; do not use setter/field injection to avoid updating constructor call sites.
 - **Zeus formatting:** Let Spotless format touched Java files with scoped `spotless:apply`, then inspect the diff. Do not run repository-wide apply for a focused change.

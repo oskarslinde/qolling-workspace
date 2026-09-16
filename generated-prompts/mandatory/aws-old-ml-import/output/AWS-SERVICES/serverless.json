@@ -1,28 +1,28 @@
 [
   {
-    "question": "Which AWS service is primarily designed to run containers without managing the underlying servers?",
+    "question": "Which AWS compute option runs compatible container workloads for Amazon ECS and Amazon EKS without managing servers?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
+        "text": "Amazon EC2",
+        "correct": false,
+        "explanation": "EC2 provides virtual servers that customers select, configure, patch, and scale for their workloads."
+      },
+      {
+        "text": "AWS Lambda",
+        "correct": false,
+        "explanation": "Lambda invokes functions in response to events; it is not the task and Pod compute provider for ECS and EKS."
+      },
+      {
         "text": "AWS Fargate",
         "correct": true,
-        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Fargate supplies serverless compute for supported ECS tasks and EKS Pods, removing the need to operate the underlying servers."
       },
       {
-        "text": "Amazon Athena",
+        "text": "Amazon ECR",
         "correct": false,
-        "explanation": "Amazon Athena has a different primary responsibility: it is designed to query data in Amazon S3 using standard SQL without managing database infrastructure."
-      },
-      {
-        "text": "Amazon EMR",
-        "correct": false,
-        "explanation": "Amazon EMR has a different primary responsibility: it is designed to process and analyze large datasets with managed open-source frameworks such as Spark and Hadoop."
-      },
-      {
-        "text": "AWS Glue",
-        "correct": false,
-        "explanation": "AWS Glue has a different primary responsibility: it is designed to discover, prepare, transform, and catalog data for analytics workflows."
+        "explanation": "ECR stores container images, but an image repository does not allocate compute to run those images."
       }
     ],
     "tags": [
@@ -34,42 +34,89 @@
       "track": "AWS",
       "topic": "Serverless",
       "subtopic": "AWS Fargate",
-      "questionType": "QT02",
+      "questionType": "QT05",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Fargate"
+        "Identify Fargate as serverless container compute for ECS and EKS"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 1,
+    "answerDescription": "Identify Fargate as serverless container compute for ECS and EKS",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
+  },
+  {
+    "question": "A Fargate task is launched through ECS. Which operational responsibility is removed from the application team?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Provisioning and managing the container host servers",
+        "correct": true,
+        "explanation": "Fargate runs the task on AWS-managed compute capacity, so the team does not operate the underlying EC2 hosts."
+      },
+      {
+        "text": "Defining the task's CPU, memory, and image",
+        "correct": false,
+        "explanation": "The team still supplies an ECS task definition that specifies the application container configuration."
+      },
+      {
+        "text": "Writing the application's health behavior",
+        "correct": false,
+        "explanation": "Fargate manages compute infrastructure, but the application and its container behavior remain the team's responsibility."
+      },
+      {
+        "text": "Assigning IAM permissions to the workload",
+        "correct": false,
+        "explanation": "Workload permissions remain a customer configuration concern, commonly through an ECS task role."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Serverless"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Serverless",
+      "subtopic": "AWS Fargate",
+      "questionType": "QT05",
+      "coverageObjectives": [
+        "Explain server-management responsibility removed by Fargate"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Fargate exists to run containers without managing the underlying servers.",
-    "answerSource": "https://aws.amazon.com/fargate/"
+    "answerDescription": "Explain server-management responsibility removed by Fargate",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
   },
   {
-    "question": "Which pairing correctly matches AWS Lambda with its main responsibility?",
+    "question": "Which AWS Lambda setting limits how long one function invocation may run before Lambda stops it?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Amazon EMR — run code in response to events without provisioning or managing servers",
+        "text": "Ephemeral storage",
         "correct": false,
-        "explanation": "Amazon EMR — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
+        "explanation": "Ephemeral storage controls temporary disk space available to an invocation, not its allowed runtime."
       },
       {
-        "text": "AWS Glue — run code in response to events without provisioning or managing servers",
+        "text": "Reserved concurrency",
         "correct": false,
-        "explanation": "AWS Glue — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
+        "explanation": "Reserved concurrency controls how many concurrent executions a function can use, not the duration of one execution."
       },
       {
-        "text": "Amazon Athena — run code in response to events without provisioning or managing servers",
-        "correct": false,
-        "explanation": "Amazon Athena — run code in response to events without provisioning or managing servers concerns a separate capability from the one being tested. AWS Lambda exists to run code in response to events without provisioning or managing servers. The distinction is important when selecting services for."
-      },
-      {
-        "text": "AWS Lambda — run code in response to events without provisioning or managing servers",
+        "text": "Timeout",
         "correct": true,
-        "explanation": "AWS Lambda exists to run code in response to events without provisioning or managing servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "A Lambda function timeout sets the maximum invocation duration. Lambda stops an invocation that exceeds the configured timeout."
+      },
+      {
+        "text": "Memory size",
+        "correct": false,
+        "explanation": "Memory size allocates memory and proportionate CPU, but it does not establish the invocation's maximum wall-clock duration."
       }
     ],
     "tags": [
@@ -81,144 +128,142 @@
       "track": "AWS",
       "topic": "Serverless",
       "subtopic": "AWS Lambda",
-      "questionType": "QT35",
+      "questionType": "QT13",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Lambda"
+        "Identify Lambda timeout configuration"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Lambda exists to run code in response to events without provisioning or managing servers.",
-    "answerSource": "https://aws.amazon.com/lambda/"
+    "answerDescription": "Identify Lambda timeout configuration",
+    "answerSource": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html"
   },
   {
-    "question": "Which service is the best fit for running code in response to events without managing servers?",
+    "question": "What is the maximum configurable timeout for a standard AWS Lambda invocation?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Fargate",
+        "text": "30 minutes",
         "correct": false,
-        "explanation": "AWS Fargate is designed to run containers without managing the underlying servers, so it does not match the requirement in this question."
+        "explanation": "Thirty minutes exceeds Lambda's 900-second invocation timeout limit; a longer-running design needs another execution approach."
       },
       {
-        "text": "AWS Batch",
+        "text": "60 seconds",
         "correct": false,
-        "explanation": "Choose AWS Batch when the requirement is to run large numbers of batch computing jobs while managing compute resources for you. Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs."
+        "explanation": "A one-minute timeout is a valid choice but is not Lambda's maximum configurable duration."
       },
       {
-        "text": "AWS Lambda",
+        "text": "15 minutes",
         "correct": true,
-        "explanation": "CloudFormation provisions infrastructure from templates; CodePipeline automates delivery, Systems Manager operates infrastructure, and Service Catalog governs approved products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Lambda supports a timeout from 1 second to 900 seconds, so a standard invocation cannot be configured to run longer than 15 minutes."
       },
       {
-        "text": "Amazon EC2",
+        "text": "24 hours",
         "correct": false,
-        "explanation": "Amazon EC2 is designed to provide resizable virtual servers and control over their operating environments, so it does not match the requirement in this question."
+        "explanation": "Lambda functions are not intended for day-long invocations; the timeout configuration is capped at 15 minutes."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Service Comparisons"
+      "Serverless"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "Serverless",
-      "subtopic": "Similar AWS services",
-      "questionType": "QT09",
+      "subtopic": "AWS Lambda",
+      "questionType": "QT21",
       "coverageObjectives": [
-        "Distinguish AWS Lambda from related AWS services"
+        "Recognize Lambda's 15-minute maximum duration"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose Lambda for event-driven serverless functions; EC2 provides virtual servers, Fargate runs containers, and Batch schedules batch jobs.",
-    "answerSource": "https://aws.amazon.com/lambda/"
+    "answerDescription": "Recognize Lambda's 15-minute maximum duration",
+    "answerSource": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html"
   },
   {
-    "question": "Which AWS service should a team select to run containers without managing the underlying servers?",
+    "question": "A containerized worker must run for 40 minutes and the team does not want to manage EC2 instances. Which option is appropriate?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Glue",
+        "text": "Increase a Lambda timeout to 40 minutes",
         "correct": false,
-        "explanation": "AWS Glue is designed to discover, prepare, transform, and catalog data for analytics workflows, so it does not match this requirement."
+        "explanation": "Lambda timeout is capped at 900 seconds, so it cannot be configured for a 40-minute invocation."
       },
       {
-        "text": "AWS Fargate",
+        "text": "Run the worker as a Fargate task",
         "correct": true,
-        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Fargate runs compatible ECS or EKS container workloads without the 15-minute Lambda invocation limit or customer-managed hosts."
       },
       {
-        "text": "AWS Firewall Manager",
+        "text": "Use CodeBuild as the production worker",
         "correct": false,
-        "explanation": "AWS Firewall Manager is designed to centrally configure and manage firewall rules across accounts and resources, so it does not match this requirement."
+        "explanation": "CodeBuild executes build jobs; it is not the normal runtime service for a continuously scheduled application worker."
       },
       {
-        "text": "AWS Global Accelerator",
+        "text": "Store the worker image only in ECR",
         "correct": false,
-        "explanation": "AWS Global Accelerator is designed to improve availability and performance for internet applications using the AWS global network, so it does not match this requirement."
+        "explanation": "ECR retains the image, but a registry does not start or supervise the worker process."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Serverless",
-      "Service Selection"
+      "Serverless"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "Serverless",
       "subtopic": "AWS Fargate",
-      "questionType": "QT06",
+      "questionType": "QT09",
       "coverageObjectives": [
-        "Select AWS Fargate for a requirement to run containers without managing the underlying servers"
+        "Choose Fargate for container work exceeding Lambda duration"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 2,
-    "answerDescription": "Choose AWS Fargate when the requirement is to run containers without managing the underlying servers.",
-    "answerSource": "https://aws.amazon.com/fargate/"
+    "difficulty": 3,
+    "answerDescription": "Choose Fargate for container work exceeding Lambda duration",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
   },
   {
-    "question": "A team needs to run code in response to events without provisioning or managing servers. Which AWS service best fits this requirement?",
+    "question": "An S3 object-created event should invoke code that generates a thumbnail and completes within seconds. Which compute model fits best?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Lambda",
+        "text": "A CodePipeline release",
+        "correct": false,
+        "explanation": "CodePipeline responds to software-delivery stages, not each object-created event in an application bucket."
+      },
+      {
+        "text": "A manually provisioned EC2 server",
+        "correct": false,
+        "explanation": "EC2 can run the code but requires managing server capacity for a brief event-driven task."
+      },
+      {
+        "text": "An ECR repository",
+        "correct": false,
+        "explanation": "An ECR repository stores images and does not subscribe to S3 events or execute thumbnail code."
+      },
+      {
+        "text": "An AWS Lambda function",
         "correct": true,
-        "explanation": "AWS Lambda exists to run code in response to events without provisioning or managing servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "AWS Management Console",
-        "correct": false,
-        "explanation": "AWS Management Console is designed to provide a browser-based interface for managing AWS resources, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Marketplace",
-        "correct": false,
-        "explanation": "AWS Marketplace is designed to discover, purchase, and deploy third-party software and services for AWS, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Migration Hub",
-        "correct": false,
-        "explanation": "AWS Migration Hub is designed to track migration progress across multiple AWS migration tools, so it does not match this requirement."
+        "explanation": "Lambda can be invoked by AWS events and is suited to short-lived processing such as generating a thumbnail after an object upload."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Serverless",
-      "Service Selection"
+      "Serverless"
     ],
     "metadata": {
       "track": "AWS",
@@ -226,110 +271,61 @@
       "subtopic": "AWS Lambda",
       "questionType": "QT07",
       "coverageObjectives": [
-        "Select AWS Lambda for a requirement to run code in response to events without provisioning or managing servers"
+        "Select Lambda for short event-driven processing"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Choose AWS Lambda when the requirement is to run code in response to events without provisioning or managing servers.",
-    "answerSource": "https://aws.amazon.com/lambda/"
+    "difficulty": 2,
+    "answerDescription": "Select Lambda for short event-driven processing",
+    "answerSource": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html"
   },
   {
-    "question": "Which relationship between AWS Fargate and AWS Lambda is correct?",
+    "question": "Which statement accurately compares Lambda and Fargate?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Fargate is used to run code in response to events without provisioning or managing servers, whereas AWS Lambda is used to run containers without managing the underlying servers.",
+        "text": "Fargate is an image registry, while Lambda is a Kubernetes control plane.",
         "correct": false,
-        "explanation": "AWS Fargate is used to run code in response to events without provisioning or managing servers, whereas AWS Lambda is used to run containers without managing the underlying servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing."
+        "explanation": "ECR is the image registry and EKS provides the Kubernetes control plane. Fargate and Lambda are compute services."
       },
       {
-        "text": "Both services are primarily used to run containers without managing the underlying servers.",
-        "correct": false,
-        "explanation": "That describes AWS Fargate, but AWS Lambda is primarily used to run code in response to events without provisioning or managing servers."
-      },
-      {
-        "text": "Both services are primarily used to run code in response to events without provisioning or managing servers.",
-        "correct": false,
-        "explanation": "Both services are primarily used to run code in response to events without provisioning or managing servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "AWS Fargate is used to run containers without managing the underlying servers, whereas AWS Lambda is used to run code in response to events without provisioning or managing servers.",
+        "text": "Lambda executes event-driven function invocations, while Fargate supplies serverless compute for ECS tasks or EKS Pods.",
         "correct": true,
-        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Lambda's unit of execution is a function invocation. Fargate is container compute selected by an ECS or EKS workload definition."
+      },
+      {
+        "text": "Lambda can run without a timeout, while Fargate requires every container to stop after 15 minutes.",
+        "correct": false,
+        "explanation": "Lambda has a configurable maximum of 15 minutes; Fargate does not impose that Lambda invocation timeout model on a container task."
+      },
+      {
+        "text": "Fargate can be used only with ECS and never with EKS.",
+        "correct": false,
+        "explanation": "Fargate supports compatible workloads in both Amazon ECS and Amazon EKS."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Serverless",
-      "Service Purpose"
+      "Containers"
     ],
     "metadata": {
       "track": "AWS",
-      "topic": "Serverless",
-      "subtopic": "AWS Fargate",
-      "questionType": "QT35",
+      "topic": "Containers",
+      "subtopic": "Similar AWS services",
+      "questionType": "QT18",
       "coverageObjectives": [
-        "Distinguish AWS Fargate from AWS Lambda"
+        "Compare event-driven functions with serverless container tasks"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Fargate is used to run containers without managing the underlying servers, while AWS Lambda is used to run code in response to events without provisioning or managing servers.",
-    "answerSource": "https://aws.amazon.com/fargate/"
-  },
-  {
-    "question": "When should a team choose AWS Lambda instead of AWS Fargate?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
-        "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "When the requirement is unrelated to the primary purpose of either service.",
-        "correct": false,
-        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "When the requirement is to run code in response to events without provisioning or managing servers, rather than to run containers without managing the underlying servers.",
-        "correct": true,
-        "explanation": "AWS Fargate exists to run containers without managing the underlying servers. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "When the requirement is to run containers without managing the underlying servers, rather than to run code in response to events without provisioning or managing servers.",
-        "correct": false,
-        "explanation": "When the requirement is to run containers without managing the underlying servers, rather than to run code in response to events without provisioning or managing servers. concerns a separate capability from the one being tested. AWS Fargate exists to run containers without managing the underlying servers.."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Serverless",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Serverless",
-      "subtopic": "AWS Lambda",
-      "questionType": "QT19",
-      "coverageObjectives": [
-        "Distinguish AWS Lambda from AWS Fargate"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "AWS Lambda is used to run code in response to events without provisioning or managing servers, while AWS Fargate is used to run containers without managing the underlying servers.",
-    "answerSource": "https://aws.amazon.com/lambda/"
+    "answerDescription": "Compare event-driven functions with serverless container tasks",
+    "answerSource": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
   }
 ]

@@ -1,28 +1,28 @@
 [
   {
-    "question": "Which AWS service is primarily designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds?",
+    "question": "A project owner wants an email when actual or forecast AWS spending crosses a chosen monthly threshold. Which tool fits?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Budgets",
-        "correct": true,
-        "explanation": "Choose AWS Budgets when the requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds."
-      },
-      {
-        "text": "AWS Cost and Usage Reports",
+        "text": "AWS Pricing Calculator",
         "correct": false,
-        "explanation": "AWS Cost and Usage Reports has a different primary responsibility: it is designed to deliver detailed AWS cost and usage data for analysis."
+        "explanation": "The calculator estimates a proposed workload; it does not monitor this account for budget threshold crossings."
       },
       {
         "text": "AWS Cost Explorer",
         "correct": false,
-        "explanation": "AWS Cost Explorer has a different primary responsibility: it is designed to visualize, filter, and analyze historical AWS costs and usage."
+        "explanation": "Cost Explorer supports interactive cost analysis; a budget defines the threshold and notification requested here."
       },
       {
-        "text": "AWS Marketplace",
+        "text": "AWS Cost and Usage Reports",
         "correct": false,
-        "explanation": "AWS Marketplace has a different primary responsibility: it is designed to discover, purchase, and deploy third-party software and services for AWS."
+        "explanation": "CUR supplies billing data for analysis, but exporting report files does not configure a spending alert."
+      },
+      {
+        "text": "AWS Budgets",
+        "correct": true,
+        "explanation": "Budgets compares spending or forecasts with configured amounts and can send threshold notifications."
       }
     ],
     "tags": [
@@ -34,42 +34,41 @@
       "track": "AWS",
       "topic": "Cloud Financial Management",
       "subtopic": "AWS Budgets",
-      "questionType": "QT02",
+      "questionType": "QT07",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Budgets"
+        "Choose a budget alert for a spending threshold"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
-    "answerSource": "https://aws.amazon.com/budgets/"
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
   },
   {
-    "question": "Which pairing correctly matches AWS Cost and Usage Reports with its main responsibility?",
+    "question": "Where are files from a configured legacy AWS Cost and Usage Report delivered?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Cost Explorer — deliver detailed AWS cost and usage data for analysis",
+        "text": "An Amazon RDS database created automatically",
         "correct": false,
-        "explanation": "AWS Cost Explorer — deliver detailed AWS cost and usage data for analysis concerns a separate capability from the one being tested. AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis. The distinction is important when selecting services for."
+        "explanation": "CUR does not provision a relational database; customers choose how to analyze the delivered files."
       },
       {
-        "text": "AWS Marketplace — deliver detailed AWS cost and usage data for analysis",
-        "correct": false,
-        "explanation": "AWS Marketplace — deliver detailed AWS cost and usage data for analysis concerns a separate capability from the one being tested. AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "AWS Budgets — deliver detailed AWS cost and usage data for analysis",
-        "correct": false,
-        "explanation": "AWS Budgets — deliver detailed AWS cost and usage data for analysis concerns a separate capability from the one being tested. AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "AWS Cost and Usage Reports — deliver detailed AWS cost and usage data for analysis",
+        "text": "An Amazon S3 bucket selected for the report",
         "correct": true,
-        "explanation": "AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Legacy CUR publishes billing report files to a customer-owned S3 bucket."
+      },
+      {
+        "text": "An email attachment sent to every account administrator",
+        "correct": false,
+        "explanation": "The report is stored in S3, not distributed as an attachment to each administrator."
+      },
+      {
+        "text": "An Amazon SQS queue containing one message per charge",
+        "correct": false,
+        "explanation": "CUR is delivered as report files, rather than a queue of individual billing events."
       }
     ],
     "tags": [
@@ -81,42 +80,41 @@
       "track": "AWS",
       "topic": "Cloud Financial Management",
       "subtopic": "AWS Cost and Usage Reports",
-      "questionType": "QT35",
+      "questionType": "QT01",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Cost and Usage Reports"
+        "Identify the delivery destination of legacy CUR"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 2,
-    "answerDescription": "AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis.",
-    "answerSource": "https://aws.amazon.com/cost-management/"
+    "difficulty": 1,
+    "answerSource": "https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html"
   },
   {
-    "question": "Which statement about AWS Cost Explorer is correct?",
+    "question": "Which AWS tool provides interactive charts for investigating historical account costs and usage?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "It is used to deliver detailed AWS cost and usage data for analysis.",
-        "correct": false,
-        "explanation": "It is used to deliver detailed AWS cost and usage data for analysis. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS."
-      },
-      {
-        "text": "It is used to discover, purchase, and deploy third-party software and services for AWS.",
-        "correct": false,
-        "explanation": "It is used to discover, purchase, and deploy third-party software and services for AWS. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "It is used to visualize, filter, and analyze historical AWS costs and usage.",
+        "text": "AWS Cost Explorer",
         "correct": true,
-        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Cost Explorer lets users inspect spending trends and drill into cost and usage data."
       },
       {
-        "text": "It is used to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
+        "text": "AWS Budgets",
         "correct": false,
-        "explanation": "It is used to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when."
+        "explanation": "Budgets tracks targets and notifications; Cost Explorer supplies the interactive cost-investigation view."
+      },
+      {
+        "text": "AWS Marketplace",
+        "correct": false,
+        "explanation": "Marketplace supports procurement of products and services; it is not the account cost-analysis tool."
+      },
+      {
+        "text": "AWS Pricing Calculator",
+        "correct": false,
+        "explanation": "Pricing Calculator models expected costs for a proposed setup rather than charting the account's actual usage."
       }
     ],
     "tags": [
@@ -128,42 +126,41 @@
       "track": "AWS",
       "topic": "Cloud Financial Management",
       "subtopic": "AWS Cost Explorer",
-      "questionType": "QT05",
+      "questionType": "QT02",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Cost Explorer"
+        "Recognize interactive cost analysis in Cost Explorer"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 2,
-    "answerDescription": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage.",
-    "answerSource": "https://aws.amazon.com/cost-explorer/"
+    "difficulty": 1,
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
   },
   {
-    "question": "What is the primary purpose of AWS Marketplace?",
+    "question": "What is AWS Marketplace primarily used for?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Set cost or usage budgets and alert when actual or forecast spending reaches thresholds",
-        "correct": false,
-        "explanation": "AWS Budgets has a different primary responsibility: it is designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds."
-      },
-      {
-        "text": "Discover, purchase, and deploy third-party software and services for AWS",
+        "text": "Finding and subscribing to software, data, and services from sellers",
         "correct": true,
-        "explanation": "AWS Marketplace exists to discover, purchase, and deploy third-party software and services for AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Marketplace provides product listings and procurement workflows for offerings that customers can use with AWS."
       },
       {
-        "text": "Deliver detailed AWS cost and usage data for analysis",
+        "text": "Producing resource-utilization recommendations",
         "correct": false,
-        "explanation": "AWS Cost and Usage Reports has a different primary responsibility: it is designed to deliver detailed AWS cost and usage data for analysis."
+        "explanation": "Utilization-based recommendations are a resource-optimization capability, rather than the purpose of a procurement catalog."
       },
       {
-        "text": "Visualize, filter, and analyze historical AWS costs and usage",
+        "text": "Defining infrastructure stacks from templates",
         "correct": false,
-        "explanation": "AWS Cost Explorer has a different primary responsibility: it is designed to visualize, filter, and analyze historical AWS costs and usage."
+        "explanation": "CloudFormation provisions templates; Marketplace concerns obtaining products, even when a product offers template-based deployment."
+      },
+      {
+        "text": "Setting spending alerts for AWS resources",
+        "correct": false,
+        "explanation": "Spending thresholds and notifications are configured in AWS Budgets."
       }
     ],
     "tags": [
@@ -177,95 +174,324 @@
       "subtopic": "AWS Marketplace",
       "questionType": "QT01",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Marketplace"
+        "Recognize software procurement through Marketplace"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "AWS Marketplace exists to discover, purchase, and deploy third-party software and services for AWS.",
-    "answerSource": "https://aws.amazon.com/marketplace/"
+    "difficulty": 1,
+    "answerSource": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/what-is-marketplace.html"
   },
   {
-    "question": "Which AWS service is the best solution when the primary requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds?",
+    "question": "A cost budget has only an email notification configured. Its threshold is exceeded. What should the owner expect?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Budgets",
+        "text": "Automatic reversal of charges above the budget amount",
+        "correct": false,
+        "explanation": "A budget is a tracking target, not a contractual limit that causes excess charges to be refunded."
+      },
+      {
+        "text": "Automatic cancellation of all software subscriptions",
+        "correct": false,
+        "explanation": "A cost notification does not cancel Marketplace agreements or other subscriptions."
+      },
+      {
+        "text": "A notification, while resources can continue incurring charges",
         "correct": true,
-        "explanation": "Choose AWS Budgets when the requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds."
+        "explanation": "An alert reports a threshold crossing; it is not a hard spending cap, and billing-data delays can allow further charges."
       },
       {
-        "text": "AWS Marketplace",
+        "text": "Immediate shutdown of all resources in the account",
         "correct": false,
-        "explanation": "AWS Marketplace is designed to discover, purchase, and deploy third-party software and services for AWS, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Cost Explorer",
-        "correct": false,
-        "explanation": "AWS Cost Explorer is designed to visualize, filter, and analyze historical AWS costs and usage, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Batch",
-        "correct": false,
-        "explanation": "AWS Batch exists to run large numbers of batch computing jobs while managing compute resources for you. AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. Those services use different integration patterns and address different workload requirements."
+        "explanation": "An email-only budget has no resource-stop action configured."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Selection"
+      "Cloud Financial Management"
     ],
     "metadata": {
       "track": "AWS",
       "topic": "Cloud Financial Management",
       "subtopic": "AWS Budgets",
-      "questionType": "QT09",
+      "questionType": "QT10",
       "coverageObjectives": [
-        "Select AWS Budgets for a requirement to set cost or usage budgets and alert when actual or forecast spending reaches thresholds"
+        "Distinguish a budget notification from spending enforcement"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "Choose AWS Budgets when the requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
-    "answerSource": "https://aws.amazon.com/budgets/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
   },
   {
-    "question": "A team needs to deliver detailed AWS cost and usage data for analysis. Which AWS service best fits this requirement?",
+    "question": "A legacy Cost and Usage Report has several versions for the same billing month. Why should an analyst avoid summing all versions as separate usage?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Budgets",
+        "text": "The earlier versions contain only next month's estimates",
         "correct": false,
-        "explanation": "AWS Budgets is designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, so it does not match this requirement."
+        "explanation": "Versions for a billing period describe that period, rather than forecasts for the following month."
       },
       {
-        "text": "AWS Cost Explorer",
-        "correct": false,
-        "explanation": "AWS Cost Explorer is designed to visualize, filter, and analyze historical AWS costs and usage, so it does not match this requirement."
-      },
-      {
-        "text": "AWS CLI",
-        "correct": false,
-        "explanation": "AWS CLI is designed to provide command-line access to AWS services and resources, so it does not match this question."
-      },
-      {
-        "text": "AWS Cost and Usage Reports",
+        "text": "Updates cover the same billing period and can contain overlapping data",
         "correct": true,
-        "explanation": "Choose AWS Cost and Usage Reports when the requirement is to deliver detailed AWS cost and usage data for analysis."
+        "explanation": "A new CUR version updates the period's report; adding old and new versions can count the same usage more than once."
+      },
+      {
+        "text": "Report versioning changes the prices charged for resources",
+        "correct": false,
+        "explanation": "Versioning determines how report files are retained; it does not set service prices."
+      },
+      {
+        "text": "Each version always contains only the previous hour",
+        "correct": false,
+        "explanation": "CUR versioning is not a stream of disjoint hourly increments."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Cloud Financial Management"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Cloud Financial Management",
+      "subtopic": "AWS Cost and Usage Reports",
+      "questionType": "QT12",
+      "coverageObjectives": [
+        "Recognize cumulative CUR versions and avoid double counting"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/cur/latest/userguide/understanding-report-versions.html"
+  },
+  {
+    "question": "In Cost Explorer, how can an analyst compare EC2 spending across member accounts for the same month?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "Group only by service without selecting account details",
+        "correct": false,
+        "explanation": "A service breakdown aggregates account spending instead of comparing the member accounts."
+      },
+      {
+        "text": "Set a different budget amount for every EC2 instance",
+        "correct": false,
+        "explanation": "Budget targets do not produce the historical per-account cost comparison requested."
+      },
+      {
+        "text": "Change the billing currency separately for each account",
+        "correct": false,
+        "explanation": "Changing currency is not the mechanism for attributing costs to member accounts."
+      },
+      {
+        "text": "Filter to EC2 and group the costs by linked account",
+        "correct": true,
+        "explanation": "The service filter narrows the data to EC2, while linked-account grouping separates the member accounts."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Cloud Financial Management"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Cloud Financial Management",
+      "subtopic": "AWS Cost Explorer",
+      "questionType": "QT40",
+      "coverageObjectives": [
+        "Apply filters and grouping to cost attribution"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-filtering.html"
+  },
+  {
+    "question": "A software vendor negotiates pricing and contract terms for one buyer in AWS Marketplace. How can those terms be presented to that buyer?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "A resource tag naming the software vendor",
+        "correct": false,
+        "explanation": "Tags label resources; adding one does not establish negotiated product pricing or a contract."
+      },
+      {
+        "text": "A private offer for the designated AWS account",
+        "correct": true,
+        "explanation": "The seller can issue a private offer containing negotiated pricing and terms for the identified buyer."
+      },
+      {
+        "text": "A cost budget with a higher monthly target",
+        "correct": false,
+        "explanation": "A budget changes spending tracking; it does not amend a seller's commercial terms."
+      },
+      {
+        "text": "A new Cost Explorer report",
+        "correct": false,
+        "explanation": "A cost report analyzes charges and does not create a procurement agreement."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Cloud Financial Management"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Cloud Financial Management",
+      "subtopic": "AWS Marketplace",
+      "questionType": "QT02",
+      "coverageObjectives": [
+        "Understand buyer-specific Marketplace private offers"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers.html"
+  },
+  {
+    "question": "A budget should apply a configured policy when a spending threshold is crossed. What must be configured in addition to the threshold?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "A budget action with the required permissions and approval mode",
+        "correct": true,
+        "explanation": "Budget actions can apply IAM or service control policies and can run automatically or after approval."
+      },
+      {
+        "text": "Only a Cost Explorer grouping by service",
+        "correct": false,
+        "explanation": "Cost Explorer grouping changes a report view; it does not configure a budget-triggered policy action."
+      },
+      {
+        "text": "Only a new name for the budget",
+        "correct": false,
+        "explanation": "Renaming a budget does not configure its enforcement behavior."
+      },
+      {
+        "text": "Only another email recipient",
+        "correct": false,
+        "explanation": "Adding a recipient expands notification delivery but does not authorize a policy-changing action."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
       "Cloud Financial Management",
-      "Service Selection"
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Cloud Financial Management",
+      "subtopic": "AWS Budgets",
+      "questionType": "QT13",
+      "coverageObjectives": [
+        "Understand explicitly configured budget actions"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-controls.html"
+  },
+  {
+    "question": "How should a Cost Explorer spending forecast be interpreted?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "An estimate based on available usage history that can differ from the final bill",
+        "correct": true,
+        "explanation": "Forecasting projects future spending from observed patterns; future workload changes can alter the result."
+      },
+      {
+        "text": "A command that reserves capacity for the predicted workload",
+        "correct": false,
+        "explanation": "Forecast generation does not purchase reservations or allocate resources."
+      },
+      {
+        "text": "An invoice for charges already finalized",
+        "correct": false,
+        "explanation": "A forecast concerns expected future spending, whereas an invoice records billed charges."
+      },
+      {
+        "text": "A guaranteed maximum charge for the forecast period",
+        "correct": false,
+        "explanation": "A forecast does not cap resource use or establish a maximum bill."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Cloud Financial Management",
+      "Service Purpose"
+    ],
+    "metadata": {
+      "track": "AWS",
+      "topic": "Cloud Financial Management",
+      "subtopic": "AWS Cost Explorer",
+      "questionType": "QT21",
+      "coverageObjectives": [
+        "Treat a cost forecast as an estimate rather than a guarantee"
+      ]
+    },
+    "categories": [
+      "AWS Services"
+    ],
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-forecast.html"
+  },
+  {
+    "question": "An organization already receives legacy CUR files in S3 and wants to query them using SQL without loading a separate warehouse. Which service can query the report data?",
+    "answerSelectionType": "SINGLE_CHOICE",
+    "questionKind": "TECHNICAL",
+    "answers": [
+      {
+        "text": "AWS Marketplace",
+        "correct": false,
+        "explanation": "Marketplace is a procurement service, not an engine for SQL analysis of billing exports."
+      },
+      {
+        "text": "Amazon Athena",
+        "correct": true,
+        "explanation": "Athena can query CUR data in S3 when the report and table configuration are prepared for that integration."
+      },
+      {
+        "text": "AWS Budgets",
+        "correct": false,
+        "explanation": "Budgets evaluates tracking thresholds; it is not a SQL engine over S3 report files."
+      },
+      {
+        "text": "AWS Pricing Calculator",
+        "correct": false,
+        "explanation": "The calculator models proposed usage rather than querying existing CUR files."
+      }
+    ],
+    "tags": [
+      "AWS",
+      "AWS-SERVICES",
+      "Cloud Financial Management",
+      "Service Purpose"
     ],
     "metadata": {
       "track": "AWS",
@@ -273,280 +499,39 @@
       "subtopic": "AWS Cost and Usage Reports",
       "questionType": "QT07",
       "coverageObjectives": [
-        "Select AWS Cost and Usage Reports for a requirement to deliver detailed AWS cost and usage data for analysis"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Choose AWS Cost and Usage Reports when the requirement is to deliver detailed AWS cost and usage data for analysis.",
-    "answerSource": "https://aws.amazon.com/cost-management/"
-  },
-  {
-    "question": "Which AWS service is responsible for helping customers visualize, filter, and analyze historical AWS costs and usage?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "AWS Budgets",
-        "correct": false,
-        "explanation": "AWS Budgets is designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Certificate Manager (ACM)",
-        "correct": false,
-        "explanation": "AWS Certificate Manager (ACM) is designed to provision, manage, and renew TLS certificates for AWS resources, so it does not match this question."
-      },
-      {
-        "text": "AWS Cost Explorer",
-        "correct": true,
-        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "AWS Marketplace",
-        "correct": false,
-        "explanation": "AWS Marketplace is designed to discover, purchase, and deploy third-party software and services for AWS, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Cloud Financial Management",
-      "subtopic": "AWS Cost Explorer",
-      "questionType": "QT05",
-      "coverageObjectives": [
-        "Select AWS Cost Explorer for a requirement to visualize, filter, and analyze historical AWS costs and usage"
+        "Use Athena to analyze delivered CUR data"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose AWS Cost Explorer when the requirement is to visualize, filter, and analyze historical AWS costs and usage.",
-    "answerSource": "https://aws.amazon.com/cost-explorer/"
+    "answerSource": "https://docs.aws.amazon.com/cur/latest/userguide/cur-query-athena.html"
   },
   {
-    "question": "A cloud practitioner must discover, purchase, and deploy third-party software and services for AWS. Which AWS service should they choose?",
+    "question": "A company wants to limit new AWS Marketplace purchases to products its procurement team has approved. Which capability addresses this?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Client VPN",
+        "text": "A monthly forecast in Cost Explorer",
         "correct": false,
-        "explanation": "AWS Client VPN is designed to provide managed VPN access for individual users to AWS and on-premises networks, so it does not match this question."
+        "explanation": "A forecast estimates spending rather than controlling which products buyers may subscribe to."
       },
       {
-        "text": "AWS Marketplace",
+        "text": "A Cost and Usage Report with resource IDs",
+        "correct": false,
+        "explanation": "A billing export provides visibility after usage and purchases; it does not approve catalog products."
+      },
+      {
+        "text": "A private offer from one software vendor",
+        "correct": false,
+        "explanation": "A private offer sets negotiated commercial terms for that product; it does not curate purchases across the marketplace."
+      },
+      {
+        "text": "A governing Private Marketplace experience",
         "correct": true,
-        "explanation": "AWS Marketplace exists to discover, purchase, and deploy third-party software and services for AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "AWS Budgets",
-        "correct": false,
-        "explanation": "AWS Budgets is designed to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Cost Explorer",
-        "correct": false,
-        "explanation": "AWS Cost Explorer is designed to visualize, filter, and analyze historical AWS costs and usage, so it does not match this requirement."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Selection"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Cloud Financial Management",
-      "subtopic": "AWS Marketplace",
-      "questionType": "QT40",
-      "coverageObjectives": [
-        "Select AWS Marketplace for a requirement to discover, purchase, and deploy third-party software and services for AWS"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "Choose AWS Marketplace when the requirement is to discover, purchase, and deploy third-party software and services for AWS.",
-    "answerSource": "https://aws.amazon.com/marketplace/"
-  },
-  {
-    "question": "When should a team choose AWS Budgets instead of AWS Cost Explorer?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "When the requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, rather than to visualize, filter, and analyze historical AWS costs and usage.",
-        "correct": true,
-        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "When the requirement is to visualize, filter, and analyze historical AWS costs and usage, rather than to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
-        "correct": false,
-        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. Those services use different integration patterns and address different workload requirements."
-      },
-      {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
-        "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS."
-      },
-      {
-        "text": "When the requirement is unrelated to the primary purpose of either service.",
-        "correct": false,
-        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS workload."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Cloud Financial Management",
-      "subtopic": "AWS Budgets",
-      "questionType": "QT19",
-      "coverageObjectives": [
-        "Distinguish AWS Budgets from AWS Cost Explorer"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "AWS Budgets is used to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, while AWS Cost Explorer is used to visualize, filter, and analyze historical AWS costs and usage.",
-    "answerSource": "https://aws.amazon.com/budgets/"
-  },
-  {
-    "question": "When should a team choose AWS Cost Explorer instead of AWS Budgets?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "When the requirement is to set cost or usage budgets and alert when actual or forecast spending reaches thresholds, rather than to visualize, filter, and analyze historical AWS costs and usage.",
-        "correct": false,
-        "explanation": "AWS Budgets exists to set cost or usage budgets and alert when actual or forecast spending reaches thresholds. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. Those services use different integration patterns and address different workload requirements."
-      },
-      {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
-        "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS."
-      },
-      {
-        "text": "Define and provision AWS infrastructure as code using templates",
-        "correct": false,
-        "explanation": "Define and provision AWS infrastructure as code using templates concerns a separate capability from the one being tested. AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "When the requirement is to visualize, filter, and analyze historical AWS costs and usage, rather than to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
-        "correct": true,
-        "explanation": "AWS Cost Explorer exists to visualize, filter, and analyze historical AWS costs and usage. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Cloud Financial Management",
-      "subtopic": "AWS Cost Explorer",
-      "questionType": "QT19",
-      "coverageObjectives": [
-        "Distinguish AWS Cost Explorer from AWS Budgets"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "AWS Cost Explorer is used to visualize, filter, and analyze historical AWS costs and usage, while AWS Budgets is used to set cost or usage budgets and alert when actual or forecast spending reaches thresholds.",
-    "answerSource": "https://aws.amazon.com/cost-explorer/"
-  },
-  {
-    "question": "Which statement correctly distinguishes AWS Cost and Usage Reports from AWS Cost Explorer?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Both services are primarily used to deliver detailed AWS cost and usage data for analysis.",
-        "correct": false,
-        "explanation": "That describes AWS Cost and Usage Reports, but AWS Cost Explorer is primarily used to visualize, filter, and analyze historical AWS costs and usage."
-      },
-      {
-        "text": "Both services are primarily used to visualize, filter, and analyze historical AWS costs and usage.",
-        "correct": false,
-        "explanation": "That describes AWS Cost Explorer, but AWS Cost and Usage Reports is primarily used to deliver detailed AWS cost and usage data for analysis."
-      },
-      {
-        "text": "AWS Cost and Usage Reports is used to deliver detailed AWS cost and usage data for analysis, whereas AWS Cost Explorer is used to visualize, filter, and analyze historical AWS costs and usage.",
-        "correct": true,
-        "explanation": "AWS Cost and Usage Reports exists to deliver detailed AWS cost and usage data for analysis. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "AWS Cost and Usage Reports is used to visualize, filter, and analyze historical AWS costs and usage, whereas AWS Cost Explorer is used to deliver detailed AWS cost and usage data for analysis.",
-        "correct": false,
-        "explanation": "AWS Cost and Usage Reports is used to visualize, filter, and analyze historical AWS costs and usage, whereas AWS Cost Explorer is used to deliver detailed AWS cost and usage data for analysis. concerns a separate capability from the one being tested. AWS Cost and Usage."
-      }
-    ],
-    "tags": [
-      "AWS",
-      "AWS-SERVICES",
-      "Cloud Financial Management",
-      "Service Purpose"
-    ],
-    "metadata": {
-      "track": "AWS",
-      "topic": "Cloud Financial Management",
-      "subtopic": "AWS Cost and Usage Reports",
-      "questionType": "QT18",
-      "coverageObjectives": [
-        "Distinguish AWS Cost and Usage Reports from AWS Cost Explorer"
-      ]
-    },
-    "categories": [
-      "AWS Services"
-    ],
-    "difficulty": 3,
-    "answerDescription": "AWS Cost and Usage Reports is used to deliver detailed AWS cost and usage data for analysis, while AWS Cost Explorer is used to visualize, filter, and analyze historical AWS costs and usage.",
-    "answerSource": "https://aws.amazon.com/cost-management/"
-  },
-  {
-    "question": "Which relationship between AWS Marketplace and AWS Service Catalog is correct?",
-    "answerSelectionType": "SINGLE_CHOICE",
-    "questionKind": "TECHNICAL",
-    "answers": [
-      {
-        "text": "Both services are primarily used to create and govern an approved catalog of deployable IT products.",
-        "correct": false,
-        "explanation": "That describes AWS Service Catalog, but AWS Marketplace is primarily used to discover, purchase, and deploy third-party software and services for AWS."
-      },
-      {
-        "text": "AWS Marketplace is used to discover, purchase, and deploy third-party software and services for AWS, whereas AWS Service Catalog is used to create and govern an approved catalog of deployable IT products.",
-        "correct": true,
-        "explanation": "AWS Service Catalog exists to create and govern an approved catalog of deployable IT products. The option describes a capability that follows from this service's architecture and primary workload responsibility."
-      },
-      {
-        "text": "AWS Marketplace is used to create and govern an approved catalog of deployable IT products, whereas AWS Service Catalog is used to discover, purchase, and deploy third-party software and services for AWS.",
-        "correct": false,
-        "explanation": "AWS Marketplace is used to create and govern an approved catalog of deployable IT products, whereas AWS Service Catalog is used to discover, purchase, and deploy third-party software and services for AWS. concerns a separate capability from the one being tested. AWS Service Catalog exists to."
-      },
-      {
-        "text": "Both services are primarily used to discover, purchase, and deploy third-party software and services for AWS.",
-        "correct": false,
-        "explanation": "That describes AWS Marketplace, but AWS Service Catalog is primarily used to create and govern an approved catalog of deployable IT products."
+        "explanation": "Private Marketplace lets administrators curate approved products and govern what their assigned audience can procure."
       }
     ],
     "tags": [
@@ -559,16 +544,15 @@
       "track": "AWS",
       "topic": "Cloud Financial Management",
       "subtopic": "AWS Marketplace",
-      "questionType": "QT35",
+      "questionType": "QT07",
       "coverageObjectives": [
-        "Distinguish AWS Marketplace from AWS Service Catalog"
+        "Recognize Private Marketplace procurement controls"
       ]
     },
     "categories": [
       "AWS Services"
     ],
-    "difficulty": 3,
-    "answerDescription": "AWS Marketplace is used to discover, purchase, and deploy third-party software and services for AWS, while AWS Service Catalog is used to create and govern an approved catalog of deployable IT products.",
-    "answerSource": "https://aws.amazon.com/marketplace/"
+    "difficulty": 2,
+    "answerSource": "https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace-current.html"
   }
 ]

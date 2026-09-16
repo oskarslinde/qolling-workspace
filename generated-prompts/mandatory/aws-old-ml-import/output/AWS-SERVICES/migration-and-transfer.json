@@ -1,28 +1,28 @@
 [
   {
-    "question": "What is the primary purpose of AWS Application Discovery Service?",
+    "question": "For an existing AWS Application Discovery Service customer, which information does the service gather to plan migration?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Move databases and data stores to AWS while keeping source systems available",
+        "text": "Operating-system images for EC2 conversion",
         "correct": false,
-        "explanation": "Move databases and data stores to AWS while keeping source systems available concerns a separate capability from the one being tested. AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration."
+        "explanation": "MGN replicates server blocks and converts servers for AWS launch, rather than Discovery Service."
       },
       {
-        "text": "Estimate cloud migration costs and build a data-driven business case",
+        "text": "Billing records for AWS invoices",
         "correct": false,
-        "explanation": "Migration Evaluator has a different primary responsibility: it is designed to estimate cloud migration costs and build a data-driven business case."
+        "explanation": "Billing services process charges; Discovery Service collects technical migration-planning information."
       },
       {
-        "text": "Collect information about on-premises servers and applications to plan migration",
+        "text": "Server configuration, utilization, and dependency data",
         "correct": true,
-        "explanation": "AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Discovery Service gathers configuration, usage, and behavior data so teams can understand on-premises workloads and dependencies."
       },
       {
-        "text": "Replicate and migrate physical, virtual, or cloud servers to AWS",
+        "text": "Database change records for replication",
         "correct": false,
-        "explanation": "AWS Application Migration Service has a different primary responsibility: it is designed to replicate and migrate physical, virtual, or cloud servers to AWS."
+        "explanation": "DMS reads database changes for replication; Discovery Service inventories servers for planning."
       }
     ],
     "tags": [
@@ -36,40 +36,40 @@
       "subtopic": "AWS Application Discovery Service",
       "questionType": "QT01",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Application Discovery Service"
+        "Recognize migration-planning data collected by Application Discovery Service for existing customers"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration.",
-    "answerSource": "https://aws.amazon.com/application-discovery/"
+    "answerDescription": "Discovery Service supplies server planning data.",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html"
   },
   {
-    "question": "Which AWS service is primarily designed to replicate and migrate physical, virtual, or cloud servers to AWS?",
+    "question": "Which AWS service performs continuous block-level replication before converting and launching migrated servers on AWS?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
+        "text": "AWS Transform MGN",
+        "correct": true,
+        "explanation": "MGN continuously replicates source-server blocks, converts the server, and supports low-downtime rehosting to AWS."
+      },
+      {
+        "text": "AWS Database Migration Service",
+        "correct": false,
+        "explanation": "DMS replicates database data through endpoints and tasks, not complete operating-system servers."
+      },
+      {
         "text": "AWS Application Discovery Service",
         "correct": false,
-        "explanation": "AWS Application Discovery Service has a different primary responsibility: it is designed to collect information about on-premises servers and applications to plan migration."
+        "explanation": "Discovery Service gathers inventory data; it neither replicates disks nor launches servers."
       },
       {
-        "text": "AWS Application Migration Service",
-        "correct": true,
-        "explanation": "Choose AWS Application Migration Service when the requirement is to replicate and migrate physical, virtual, or cloud servers to AWS."
-      },
-      {
-        "text": "AWS Database Migration Service (AWS DMS)",
+        "text": "AWS DataSync",
         "correct": false,
-        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available. AWS Application Migration Service exists to replicate and migrate physical, virtual, or cloud servers to AWS."
-      },
-      {
-        "text": "Migration Evaluator",
-        "correct": false,
-        "explanation": "Migration Evaluator has a different primary responsibility: it is designed to estimate cloud migration costs and build a data-driven business case."
+        "explanation": "DataSync transfers files between storage systems and does not convert whole servers to EC2 instances."
       }
     ],
     "tags": [
@@ -83,40 +83,40 @@
       "subtopic": "AWS Application Migration Service",
       "questionType": "QT02",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Application Migration Service"
+        "Identify Transform MGN as the current name and server-replication service"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Application Migration Service exists to replicate and migrate physical, virtual, or cloud servers to AWS.",
-    "answerSource": "https://aws.amazon.com/mgn/"
+    "answerDescription": "MGN is the current name for the automated server rehosting service.",
+    "answerSource": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html"
   },
   {
-    "question": "A team needs to move databases and data stores to AWS while keeping source systems available. Which AWS service best fits this requirement?",
+    "question": "A database cutover needs an initial copy followed by ongoing changes. Which service performs that replication?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
         "text": "AWS Database Migration Service (AWS DMS)",
         "correct": true,
-        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available."
+        "explanation": "DMS migrates existing data and can replicate ongoing changes to keep the target synchronized until cutover."
       },
       {
         "text": "AWS Application Discovery Service",
         "correct": false,
-        "explanation": "AWS Application Discovery Service has a different primary responsibility: it is designed to collect information about on-premises servers and applications to plan migration."
+        "explanation": "Discovery Service captures planning inventory and has no database replication task."
       },
       {
-        "text": "AWS Application Migration Service",
+        "text": "AWS Transform MGN",
         "correct": false,
-        "explanation": "AWS Application Migration Service has a different primary responsibility: it is designed to replicate and migrate physical, virtual, or cloud servers to AWS."
+        "explanation": "MGN replicates server block storage for rehosting, not logical database table data."
       },
       {
-        "text": "AWS Config",
+        "text": "AWS Schema Conversion Tool (AWS SCT)",
         "correct": false,
-        "explanation": "AWS Config is designed to record resource configurations, evaluate compliance, and track configuration history, so it does not match this question."
+        "explanation": "SCT converts schemas and code but does not provide ongoing source-to-target data replication."
       }
     ],
     "tags": [
@@ -130,40 +130,40 @@
       "subtopic": "AWS Database Migration Service (AWS DMS)",
       "questionType": "QT07",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Database Migration Service (AWS DMS)"
+        "Select DMS for initial load with ongoing change replication"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Database Migration Service (AWS DMS) exists to move databases and data stores to AWS while keeping source systems available.",
-    "answerSource": "https://aws.amazon.com/dms/"
+    "answerDescription": "DMS supports full loads and ongoing data replication.",
+    "answerSource": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
   },
   {
-    "question": "Which AWS service is primarily designed to estimate cloud migration costs and build a data-driven business case?",
+    "question": "What is the central output of a Migration Evaluator assessment?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Application Migration Service",
+        "text": "A continuously replicated source database",
         "correct": false,
-        "explanation": "AWS Application Migration Service has a different primary responsibility: it is designed to replicate and migrate physical, virtual, or cloud servers to AWS."
+        "explanation": "DMS migration tasks replicate database data; Migration Evaluator does not execute data migration."
       },
       {
-        "text": "AWS Control Tower",
+        "text": "An EC2 instance from a source server",
         "correct": false,
-        "explanation": "AWS Control Tower is designed to set up and govern a multi-account AWS environment using landing-zone guardrails, so it does not match this question."
+        "explanation": "MGN converts source servers for EC2 launch; Migration Evaluator creates assessment output."
       },
       {
-        "text": "AWS Application Discovery Service",
-        "correct": false,
-        "explanation": "AWS Application Discovery Service has a different primary responsibility: it is designed to collect information about on-premises servers and applications to plan migration."
-      },
-      {
-        "text": "Migration Evaluator",
+        "text": "A data-driven business case with projected AWS costs",
         "correct": true,
-        "explanation": "Migration Evaluator exists to estimate cloud migration costs and build a data-driven business case. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Migration Evaluator analyzes environment data to produce a migration business case and projected AWS costs."
+      },
+      {
+        "text": "A converted target-database schema",
+        "correct": false,
+        "explanation": "SCT or DMS Schema Conversion prepares target schemas; Migration Evaluator estimates migration economics."
       }
     ],
     "tags": [
@@ -177,40 +177,40 @@
       "subtopic": "Migration Evaluator",
       "questionType": "QT02",
       "coverageObjectives": [
-        "Identify the primary purpose of Migration Evaluator"
+        "Identify Migration Evaluator business-case output"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Migration Evaluator exists to estimate cloud migration costs and build a data-driven business case.",
+    "answerDescription": "Migration Evaluator informs migration economics rather than executing migration.",
     "answerSource": "https://aws.amazon.com/migration-evaluator/"
   },
   {
-    "question": "Which pairing correctly matches AWS Migration Hub with its main responsibility?",
+    "question": "An existing AWS Migration Hub customer must complete an in-flight project. Which statement is accurate after November 7, 2025?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Application Migration Service — track migration progress across multiple AWS migration tools",
-        "correct": false,
-        "explanation": "AWS Application Migration Service — track migration progress across multiple AWS migration tools concerns a separate capability from the one being tested. AWS Migration Hub exists to track migration progress across multiple AWS migration tools. The distinction is important when selecting services for an AWS workload."
-      },
-      {
-        "text": "AWS Database Migration Service (AWS DMS) — track migration progress across multiple AWS migration tools",
-        "correct": false,
-        "explanation": "AWS Database Migration Service (AWS DMS) — track migration progress across multiple AWS migration tools concerns a separate capability from the one being tested. AWS Migration Hub exists to track migration progress across multiple AWS migration tools. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "AWS Migration Hub — track migration progress across multiple AWS migration tools",
+        "text": "The customer can continue; AWS Transform is recommended for new projects",
         "correct": true,
-        "explanation": "AWS Migration Hub exists to track migration progress across multiple AWS migration tools. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Migration Hub stopped accepting new customers, while existing customers can finish ongoing projects; AWS recommends Transform for new projects."
       },
       {
-        "text": "AWS Application Discovery Service — track migration progress across multiple AWS migration tools",
+        "text": "Migration Hub is recommended for a new customer",
         "correct": false,
-        "explanation": "AWS Application Discovery Service — track migration progress across multiple AWS migration tools concerns a separate capability from the one being tested. AWS Migration Hub exists to track migration progress across multiple AWS migration tools. The distinction is important when selecting services for an AWS workload."
+        "explanation": "New customers are no longer accepted for Migration Hub; AWS Transform is the recommended alternative."
+      },
+      {
+        "text": "Migration Hub immediately shut down for every customer",
+        "correct": false,
+        "explanation": "AWS maintains availability and security updates for existing customers completing Migration Hub projects."
+      },
+      {
+        "text": "The customer must export project data before viewing it",
+        "correct": false,
+        "explanation": "AWS states historical data and ongoing projects remain accessible, with no formal transition data migration required."
       }
     ],
     "tags": [
@@ -224,40 +224,40 @@
       "subtopic": "AWS Migration Hub",
       "questionType": "QT35",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Migration Hub"
+        "Recognize Migration Hub availability and transition guidance"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Migration Hub exists to track migration progress across multiple AWS migration tools.",
-    "answerSource": "https://aws.amazon.com/migration-hub/"
+    "answerDescription": "Existing customers can finish projects; new ones start in AWS Transform.",
+    "answerSource": "https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/migrationhub-availability-change.html"
   },
   {
-    "question": "Which statement about AWS Schema Conversion Tool (AWS SCT) is correct?",
+    "question": "Which task belongs to AWS Schema Conversion Tool (AWS SCT) before a heterogeneous database migration?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "It is used to collect information about on-premises servers and applications to plan migration.",
+        "text": "Collect CPU utilization from physical servers",
         "correct": false,
-        "explanation": "It is used to collect information about on-premises servers and applications to plan migration. concerns a separate capability from the one being tested. AWS Schema Conversion Tool (AWS SCT) exists to convert database schemas and code between different database engines. The distinction is important when selecting."
+        "explanation": "Application Discovery Service collects server utilization information for migration planning."
       },
       {
-        "text": "It is used to convert database schemas and code between different database engines.",
+        "text": "Assess and convert source schema objects and SQL code",
         "correct": true,
-        "explanation": "AWS Schema Conversion Tool (AWS SCT) exists to convert database schemas and code between different database engines. In this context, statement, about, Schema, Conversion determine the required service responsibility, data flow, or model behavior for the workload."
+        "explanation": "SCT assesses source schemas and converts supported database objects, stored procedures, and application SQL for a target engine."
       },
       {
-        "text": "It is used to replicate and migrate physical, virtual, or cloud servers to AWS.",
+        "text": "Capture ongoing source changes after a full load",
         "correct": false,
-        "explanation": "It is used to replicate and migrate physical, virtual, or cloud servers to AWS. concerns a separate capability from the one being tested. AWS Schema Conversion Tool (AWS SCT) exists to convert database schemas and code between different database engines. The distinction is important when selecting."
+        "explanation": "DMS handles ongoing replication after a full load; SCT prepares schemas and code."
       },
       {
-        "text": "It is used to move databases and data stores to AWS while keeping source systems available.",
+        "text": "Convert a physical server disk into EC2",
         "correct": false,
-        "explanation": "It is used to move databases and data stores to AWS while keeping source systems available. concerns a separate capability from the one being tested. AWS Schema Conversion Tool (AWS SCT) exists to convert database schemas and code between different database engines."
+        "explanation": "MGN converts replicated source servers for AWS launch, while SCT works with databases."
       }
     ],
     "tags": [
@@ -271,47 +271,46 @@
       "subtopic": "AWS Schema Conversion Tool (AWS SCT)",
       "questionType": "QT05",
       "coverageObjectives": [
-        "Identify the primary purpose of AWS Schema Conversion Tool (AWS SCT)"
+        "Identify SCT schema and SQL conversion responsibility"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "AWS Schema Conversion Tool (AWS SCT) exists to convert database schemas and code between different database engines.",
-    "answerSource": "https://aws.amazon.com/schema-conversion-tool/"
+    "answerDescription": "SCT prepares heterogeneous targets by converting schema and code.",
+    "answerSource": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
   },
   {
-    "question": "Which AWS service should a team select to collect information about on-premises servers and applications to plan migration?",
+    "question": "A new customer wants server-dependency discovery before migration planning. Which offering should they begin with?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Application Discovery Service",
+        "text": "AWS Transform",
         "correct": true,
-        "explanation": "Choose AWS Application Discovery Service when the requirement is to collect information about on-premises servers and applications to plan migration."
+        "explanation": "Application Discovery Service is closed to new customers; AWS directs new customers to Transform for similar discovery capabilities."
       },
       {
-        "text": "AWS Migration Hub",
+        "text": "AWS Database Migration Service",
         "correct": false,
-        "explanation": "AWS Migration Hub is designed to track migration progress across multiple AWS migration tools, so it does not match this requirement."
+        "explanation": "DMS migrates data stores and does not replace the current discovery path for new customers."
       },
       {
-        "text": "AWS Schema Conversion Tool (AWS SCT)",
+        "text": "AWS Schema Conversion Tool",
         "correct": false,
-        "explanation": "AWS Schema Conversion Tool (AWS SCT) is designed to convert database schemas and code between different database engines, so it does not match this requirement."
+        "explanation": "AWS SCT analyzes database schemas and SQL code, not dependencies across an on-premises server estate."
       },
       {
-        "text": "Migration Evaluator",
+        "text": "AWS Application Discovery Service",
         "correct": false,
-        "explanation": "Migration Evaluator is designed to estimate cloud migration costs and build a data-driven business case, so it does not match this requirement."
+        "explanation": "Existing customers can use Discovery Service, but it stopped accepting new customers on November 7, 2025."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -319,47 +318,46 @@
       "subtopic": "AWS Application Discovery Service",
       "questionType": "QT06",
       "coverageObjectives": [
-        "Select AWS Application Discovery Service for a requirement to collect information about on-premises servers and applications to plan migration"
+        "Select the new-customer alternative to Application Discovery Service"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose AWS Application Discovery Service when the requirement is to collect information about on-premises servers and applications to plan migration.",
-    "answerSource": "https://aws.amazon.com/application-discovery/"
+    "answerDescription": "AWS Transform is the new-customer path for discovery.",
+    "answerSource": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html"
   },
   {
-    "question": "Which AWS service is the best solution when the primary requirement is to replicate and migrate physical, virtual, or cloud servers to AWS?",
+    "question": "A team must rehost VMware VMs but policy prohibits guest OS agents. Which MGN approach fits?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Schema Conversion Tool (AWS SCT)",
-        "correct": false,
-        "explanation": "AWS Schema Conversion Tool (AWS SCT) is designed to convert database schemas and code between different database engines, so it does not match this requirement."
-      },
-      {
-        "text": "Migration Evaluator",
-        "correct": false,
-        "explanation": "Migration Evaluator is designed to estimate cloud migration costs and build a data-driven business case, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Application Discovery Service",
-        "correct": false,
-        "explanation": "AWS Application Discovery Service is designed to collect information about on-premises servers and applications to plan migration, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Application Migration Service",
+        "text": "Use agentless replication for the VMware environment",
         "correct": true,
-        "explanation": "Choose AWS Application Migration Service when the requirement is to replicate and migrate physical, virtual, or cloud servers to AWS."
+        "explanation": "MGN supports agentless replication for VMware, which suits restrictions on guest operating-system agents."
+      },
+      {
+        "text": "Use AWS SCT to avoid a migration agent",
+        "correct": false,
+        "explanation": "SCT converts database schemas and code, but it cannot migrate VM disks agentlessly."
+      },
+      {
+        "text": "Use DMS change data capture for virtual machines",
+        "correct": false,
+        "explanation": "DMS change data capture replicates database changes, not VM operating systems and block storage."
+      },
+      {
+        "text": "Use agentless replication for any physical server",
+        "correct": false,
+        "explanation": "MGN agentless replication is limited to VMware; physical and non-VMware sources use supported agent-based replication."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -367,47 +365,46 @@
       "subtopic": "AWS Application Migration Service",
       "questionType": "QT09",
       "coverageObjectives": [
-        "Select AWS Application Migration Service for a requirement to replicate and migrate physical, virtual, or cloud servers to AWS"
+        "Choose MGN agentless replication for VMware with guest-agent restrictions"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "Choose AWS Application Migration Service when the requirement is to replicate and migrate physical, virtual, or cloud servers to AWS.",
-    "answerSource": "https://aws.amazon.com/mgn/"
+    "answerDescription": "MGN agentless replication is VMware-only.",
+    "answerSource": "https://docs.aws.amazon.com/mgn/latest/ug/migration_at_scale.html"
   },
   {
-    "question": "Which AWS service should a team select to move databases and data stores to AWS while keeping source systems available?",
+    "question": "Which AWS DMS task setting copies existing data and then continues replicating later changes?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Schema Conversion Tool (AWS SCT)",
-        "correct": false,
-        "explanation": "AWS Schema Conversion Tool (AWS SCT) is designed to convert database schemas and code between different database engines, so it does not match this requirement."
-      },
-      {
-        "text": "Migration Evaluator",
-        "correct": false,
-        "explanation": "Migration Evaluator is designed to estimate cloud migration costs and build a data-driven business case, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Database Migration Service (AWS DMS)",
+        "text": "Migrate existing data and replicate ongoing changes",
         "correct": true,
-        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available."
+        "explanation": "This DMS migration type runs a full load and continues replication, synchronizing later source changes."
       },
       {
-        "text": "AWS Migration Hub",
+        "text": "An MGN launch template",
         "correct": false,
-        "explanation": "AWS Migration Hub is designed to track migration progress across multiple AWS migration tools, so it does not match this requirement."
+        "explanation": "MGN launch templates configure rehosted servers; DMS migration behavior is set in its task."
+      },
+      {
+        "text": "A schema conversion assessment report",
+        "correct": false,
+        "explanation": "An SCT report identifies conversion work; it does not control DMS full-load or replication behavior."
+      },
+      {
+        "text": "Replicate ongoing changes only",
+        "correct": false,
+        "explanation": "This choice lacks the requested initial full load of existing data."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -415,47 +412,46 @@
       "subtopic": "AWS Database Migration Service (AWS DMS)",
       "questionType": "QT06",
       "coverageObjectives": [
-        "Select AWS Database Migration Service (AWS DMS) for a requirement to move databases and data stores to AWS while keeping source systems available"
+        "Configure DMS for full load followed by ongoing replication"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available.",
-    "answerSource": "https://aws.amazon.com/dms/"
+    "answerDescription": "DMS tasks define full-load and ongoing replication behavior.",
+    "answerSource": "https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted.Replication.html"
   },
   {
-    "question": "Which AWS service is responsible for helping customers estimate cloud migration costs and build a data-driven business case?",
+    "question": "Before detailed utilization collection, what does Migration Evaluator use to establish assessment scope?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Directory Service",
-        "correct": false,
-        "explanation": "AWS Directory Service is designed to provide managed directory services and Microsoft Active Directory integration, so it does not match this question."
-      },
-      {
-        "text": "Migration Evaluator",
+        "text": "An inventory of the on-premises environment and workloads",
         "correct": true,
-        "explanation": "Migration Evaluator exists to estimate cloud migration costs and build a data-driven business case. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Migration Evaluator scopes the estate, then analyzes resource data to model costs and a migration business case."
       },
       {
-        "text": "AWS Application Discovery Service",
+        "text": "Converted target-database stored procedures",
         "correct": false,
-        "explanation": "AWS Application Discovery Service is designed to collect information about on-premises servers and applications to plan migration, so it does not match this requirement."
+        "explanation": "Converted procedures are a schema conversion output, not an assessment-scoping input."
       },
       {
-        "text": "AWS Application Migration Service",
+        "text": "A completed DMS replication task",
         "correct": false,
-        "explanation": "AWS Application Migration Service is designed to replicate and migrate physical, virtual, or cloud servers to AWS, so it does not match this requirement."
+        "explanation": "DMS executes data migration after endpoints are configured; Evaluator can assess before migration."
+      },
+      {
+        "text": "An EC2 AMI from every source server",
+        "correct": false,
+        "explanation": "Evaluator uses sizing and utilization information; it does not require source-server images."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -463,47 +459,46 @@
       "subtopic": "Migration Evaluator",
       "questionType": "QT05",
       "coverageObjectives": [
-        "Select Migration Evaluator for a requirement to estimate cloud migration costs and build a data-driven business case"
+        "Recognize Migration Evaluator assessment inputs before cost modeling"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose Migration Evaluator when the requirement is to estimate cloud migration costs and build a data-driven business case.",
+    "answerDescription": "Evaluator scopes an estate before business-case modeling.",
     "answerSource": "https://aws.amazon.com/migration-evaluator/"
   },
   {
-    "question": "Which AWS service is responsible for helping customers track migration progress across multiple AWS migration tools?",
+    "question": "Which action is appropriate for a new project formerly suited to Migration Hub Orchestrator workflows?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Migration Hub",
+        "text": "Use DMS to track milestones across tools",
+        "correct": false,
+        "explanation": "DMS runs database migration tasks, not program-wide workflow tracking."
+      },
+      {
+        "text": "Create a new Migration Hub customer account",
+        "correct": false,
+        "explanation": "Migration Hub stopped accepting new customers on November 7, 2025."
+      },
+      {
+        "text": "Start the project in AWS Transform",
         "correct": true,
-        "explanation": "AWS Migration Hub exists to track migration progress across multiple AWS migration tools. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "AWS Transform is the recommended service for new projects and includes former Migration Hub capabilities with enhanced automation."
       },
       {
-        "text": "AWS Application Discovery Service",
+        "text": "Use SCT to orchestrate workflow steps",
         "correct": false,
-        "explanation": "AWS Application Discovery Service is designed to collect information about on-premises servers and applications to plan migration, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Application Migration Service",
-        "correct": false,
-        "explanation": "AWS Application Migration Service is designed to replicate and migrate physical, virtual, or cloud servers to AWS, so it does not match this requirement."
-      },
-      {
-        "text": "AWS Database Migration Service (AWS DMS)",
-        "correct": false,
-        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available. AWS Migration Hub exists to track migration progress across multiple AWS migration tools."
+        "explanation": "SCT converts database schemas and code; it does not provide cross-tool migration orchestration."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -511,47 +506,46 @@
       "subtopic": "AWS Migration Hub",
       "questionType": "QT05",
       "coverageObjectives": [
-        "Select AWS Migration Hub for a requirement to track migration progress across multiple AWS migration tools"
+        "Select Transform for new projects requiring former Migration Hub capabilities"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose AWS Migration Hub when the requirement is to track migration progress across multiple AWS migration tools.",
-    "answerSource": "https://aws.amazon.com/migration-hub/"
+    "answerDescription": "AWS Transform is the new-project successor.",
+    "answerSource": "https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/migrationhub-availability-change.html"
   },
   {
-    "question": "Which AWS service is responsible for helping customers convert database schemas and code between different database engines?",
-    "answerSelectionType": "SINGLE_CHOICE",
+    "question": "An Oracle-to-PostgreSQL project needs a heterogeneous migration. Which steps should it use? Select TWO.",
+    "answerSelectionType": "MULTI_SELECT",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Application Discovery Service",
+        "text": "Use Discovery Service to convert stored procedures",
         "correct": false,
-        "explanation": "AWS Application Discovery Service is designed to collect information about on-premises servers and applications to plan migration, so it does not match this requirement."
+        "explanation": "Discovery Service inventories servers; it does not convert database procedures or schema."
       },
       {
-        "text": "AWS Application Migration Service",
+        "text": "Use MGN to copy Oracle tables between engines",
         "correct": false,
-        "explanation": "AWS Application Migration Service is designed to replicate and migrate physical, virtual, or cloud servers to AWS, so it does not match this requirement."
+        "explanation": "MGN rehosts complete servers and does not perform table-level heterogeneous database migration."
       },
       {
-        "text": "AWS Database Migration Service (AWS DMS)",
-        "correct": false,
-        "explanation": "Choose AWS Database Migration Service (AWS DMS) when the requirement is to move databases and data stores to AWS while keeping source systems available. Choose AWS Schema Conversion Tool (AWS SCT) when the requirement is to convert database schemas and code between different database engines."
-      },
-      {
-        "text": "AWS Schema Conversion Tool (AWS SCT)",
+        "text": "Use SCT to assess and convert the source schema",
         "correct": true,
-        "explanation": "Choose AWS Schema Conversion Tool (AWS SCT) when the requirement is to convert database schemas and code between different database engines."
+        "explanation": "SCT assesses compatibility and converts supported schema objects and code for the PostgreSQL engine."
+      },
+      {
+        "text": "Use DMS to migrate data after applying converted schema",
+        "correct": true,
+        "explanation": "After the converted target schema is applied, DMS moves source data and can replicate ongoing changes."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Selection"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -559,47 +553,46 @@
       "subtopic": "AWS Schema Conversion Tool (AWS SCT)",
       "questionType": "QT05",
       "coverageObjectives": [
-        "Select AWS Schema Conversion Tool (AWS SCT) for a requirement to convert database schemas and code between different database engines"
+        "Combine SCT conversion with DMS migration for heterogeneous databases"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 2,
-    "answerDescription": "Choose AWS Schema Conversion Tool (AWS SCT) when the requirement is to convert database schemas and code between different database engines.",
-    "answerSource": "https://aws.amazon.com/schema-conversion-tool/"
+    "answerDescription": "SCT converts schema and code; DMS moves data.",
+    "answerSource": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
   },
   {
-    "question": "A learner says AWS Application Discovery Service and AWS Migration Hub have the same primary role. Which response corrects that misconception?",
+    "question": "Which statement distinguishes Application Discovery Service from Migration Hub for existing customers?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Both services are primarily used to collect information about on-premises servers and applications to plan migration.",
-        "correct": false,
-        "explanation": "That describes AWS Application Discovery Service, but AWS Migration Hub is primarily used to track migration progress across multiple AWS migration tools."
-      },
-      {
-        "text": "Both services are primarily used to track migration progress across multiple AWS migration tools.",
-        "correct": false,
-        "explanation": "That describes AWS Migration Hub, but AWS Application Discovery Service is primarily used to collect information about on-premises servers and applications to plan migration."
-      },
-      {
-        "text": "AWS Application Discovery Service is used to collect information about on-premises servers and applications to plan migration, whereas AWS Migration Hub is used to track migration progress across multiple AWS migration tools.",
+        "text": "Discovery gathers environment data; Migration Hub tracks progress",
         "correct": true,
-        "explanation": "AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Discovery Service collects server data for planning, while Migration Hub provides existing customers progress tracking across migration tools."
       },
       {
-        "text": "AWS Application Discovery Service is used to track migration progress across multiple AWS migration tools, whereas AWS Migration Hub is used to collect information about on-premises servers and applications to plan migration.",
+        "text": "Discovery rehosts servers; Migration Hub replicates databases",
         "correct": false,
-        "explanation": "AWS Application Discovery Service is used to track migration progress across multiple AWS migration tools, whereas AWS Migration Hub is used to collect information about on-premises servers and applications to plan migration. concerns a separate capability from the one being tested. AWS Application Discovery Service exists."
+        "explanation": "MGN rehosts servers and DMS replicates databases; neither function belongs to these planning services."
+      },
+      {
+        "text": "Both accept new customers for new projects",
+        "correct": false,
+        "explanation": "Both services have availability changes for new customers, who should use AWS Transform."
+      },
+      {
+        "text": "Discovery tracks progress; Migration Hub converts schemas",
+        "correct": false,
+        "explanation": "Migration Hub tracks progress rather than converting schemas, and SCT performs schema conversion."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -607,47 +600,46 @@
       "subtopic": "AWS Application Discovery Service",
       "questionType": "QT39",
       "coverageObjectives": [
-        "Distinguish AWS Application Discovery Service from AWS Migration Hub"
+        "Distinguish discovery inventory from existing-customer progress tracking"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Application Discovery Service is used to collect information about on-premises servers and applications to plan migration, while AWS Migration Hub is used to track migration progress across multiple AWS migration tools.",
-    "answerSource": "https://aws.amazon.com/application-discovery/"
+    "answerDescription": "Discovery collects planning data; Migration Hub tracks progress.",
+    "answerSource": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html"
   },
   {
-    "question": "Which relationship between AWS Application Migration Service and AWS Elastic Disaster Recovery is correct?",
+    "question": "Which statement correctly distinguishes AWS Transform MGN from AWS Elastic Disaster Recovery?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Both services are primarily used to replicate workloads and recover them in AWS after disruptive events.",
-        "correct": false,
-        "explanation": "That describes AWS Elastic Disaster Recovery, but AWS Application Migration Service is primarily used to replicate and migrate physical, virtual, or cloud servers to AWS."
-      },
-      {
-        "text": "AWS Application Migration Service is used to replicate and migrate physical, virtual, or cloud servers to AWS, whereas AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events.",
+        "text": "MGN rehosts servers; Elastic Disaster Recovery recovers workloads after disruption",
         "correct": true,
-        "explanation": "AWS Application Migration Service exists to replicate and migrate physical, virtual, or cloud servers to AWS. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "MGN migrates through source-server conversion and launch; Elastic Disaster Recovery supports recovery to AWS after disruptive events."
       },
       {
-        "text": "AWS Application Migration Service is used to replicate workloads and recover them in AWS after disruptive events, whereas AWS Elastic Disaster Recovery is used to replicate and migrate physical, virtual, or cloud servers to AWS.",
+        "text": "MGN provides disaster recovery; Elastic Disaster Recovery migrates servers",
         "correct": false,
-        "explanation": "The statement about AWS Application Migration Service is used to replicate workloads and recover them in AWS after disruptive events, whereas AWS Elastic Disaster Recovery is used to replicate and migrate physical, virtual, or cloud servers to AWS. describes a different technical behavior from the capability."
+        "explanation": "These responsibilities are reversed: MGN is a migration service and Elastic Disaster Recovery is for recovery."
       },
       {
-        "text": "Both services are primarily used to replicate and migrate physical, virtual, or cloud servers to AWS.",
+        "text": "Both only collect inventory data",
         "correct": false,
-        "explanation": "That describes AWS Application Migration Service, but AWS Elastic Disaster Recovery is primarily used to replicate workloads and recover them in AWS after disruptive events."
+        "explanation": "Inventory collection belongs to discovery tools, whereas these services replicate workloads for operational outcomes."
+      },
+      {
+        "text": "Both convert schemas between database engines",
+        "correct": false,
+        "explanation": "SCT or DMS Schema Conversion convert database schemas; these services replicate workloads."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -655,47 +647,46 @@
       "subtopic": "AWS Application Migration Service",
       "questionType": "QT35",
       "coverageObjectives": [
-        "Distinguish AWS Application Migration Service from AWS Elastic Disaster Recovery"
+        "Distinguish MGN rehosting from disaster recovery"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Application Migration Service is used to replicate and migrate physical, virtual, or cloud servers to AWS, while AWS Elastic Disaster Recovery is used to replicate workloads and recover them in AWS after disruptive events.",
-    "answerSource": "https://aws.amazon.com/mgn/"
+    "answerDescription": "MGN migrates; Elastic Disaster Recovery restores workloads.",
+    "answerSource": "https://docs.aws.amazon.com/mgn/latest/ug/what-is-mgn.html"
   },
   {
-    "question": "A learner says AWS Database Migration Service (AWS DMS) and AWS Schema Conversion Tool (AWS SCT) have the same primary role. Which response corrects that misconception?",
+    "question": "Which statement accurately separates schema work from database data replication?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "AWS Database Migration Service (AWS DMS) is used to move databases and data stores to AWS while keeping source systems available, whereas AWS Schema Conversion Tool (AWS SCT) is used to convert database schemas and code between different database engines.",
+        "text": "Both create EC2 instances from source servers",
+        "correct": false,
+        "explanation": "MGN creates launchable AWS servers; SCT and DMS work with database definitions and data."
+      },
+      {
+        "text": "DMS converts procedures; SCT captures change records",
+        "correct": false,
+        "explanation": "The roles are reversed: SCT converts objects and code, while DMS provides ongoing replication."
+      },
+      {
+        "text": "SCT converts schema and code; DMS migrates data and changes",
         "correct": true,
-        "explanation": "This correctly separates the primary roles of AWS Database Migration Service (AWS DMS) and AWS Schema Conversion Tool (AWS SCT)."
+        "explanation": "SCT prepares heterogeneous schemas and code, while DMS migration tasks move data and optionally synchronize later changes."
       },
       {
-        "text": "AWS Database Migration Service (AWS DMS) is used to convert database schemas and code between different database engines, whereas AWS Schema Conversion Tool (AWS SCT) is used to move databases and data stores to AWS while keeping source systems available.",
+        "text": "Both only gather server utilization metrics",
         "correct": false,
-        "explanation": "AWS Database Migration Service (AWS DMS) is used to convert database schemas and code between different database engines, whereas AWS Schema Conversion Tool (AWS SCT) is used to move databases and data stores to AWS while keeping source systems available. For learner, says, Database, Migration, this affects the workload's architecture, operational behavior, and service selection."
-      },
-      {
-        "text": "Both services are primarily used to move databases and data stores to AWS while keeping source systems available.",
-        "correct": false,
-        "explanation": "That describes AWS Database Migration Service (AWS DMS), but AWS Schema Conversion Tool (AWS SCT) is primarily used to convert database schemas and code between different database engines."
-      },
-      {
-        "text": "Both services are primarily used to convert database schemas and code between different database engines.",
-        "correct": false,
-        "explanation": "Both services are primarily used to convert database schemas and code between different database engines. concerns a separate capability from the one being tested."
+        "explanation": "Discovery and assessment tools gather utilization metrics; SCT and DMS perform database migration functions."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -703,47 +694,46 @@
       "subtopic": "AWS Database Migration Service (AWS DMS)",
       "questionType": "QT39",
       "coverageObjectives": [
-        "Distinguish AWS Database Migration Service (AWS DMS) from AWS Schema Conversion Tool (AWS SCT)"
+        "Distinguish DMS data replication from SCT conversion"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Database Migration Service (AWS DMS) is used to move databases and data stores to AWS while keeping source systems available, while AWS Schema Conversion Tool (AWS SCT) is used to convert database schemas and code between different database engines.",
-    "answerSource": "https://aws.amazon.com/dms/"
+    "answerDescription": "Heterogeneous moves separate conversion from replication.",
+    "answerSource": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
   },
   {
-    "question": "When should a team choose AWS Migration Hub instead of AWS Application Discovery Service?",
+    "question": "An existing customer needs Migration Hub progress visibility, while a new customer needs a similar project. Which pairing is correct?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "When the requirement is to collect information about on-premises servers and applications to plan migration, rather than to track migration progress across multiple AWS migration tools.",
+        "text": "Existing: SCT; new: Migration Hub",
         "correct": false,
-        "explanation": "When the requirement is to collect information about on-premises servers and applications to plan migration, rather than to track migration progress across multiple AWS migration tools. concerns a separate capability from the one being tested. AWS Application Discovery Service exists to collect information about on-premises servers."
+        "explanation": "SCT converts schemas, not cross-tool progress, and Migration Hub does not accept new customers."
       },
       {
-        "text": "Whenever both requirements are identical and either service has the same primary role.",
+        "text": "Existing: MGN; new: Migration Hub",
         "correct": false,
-        "explanation": "Whenever both requirements are identical and either service has the same primary role. concerns a separate capability from the one being tested. AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The distinction is important when selecting services for."
+        "explanation": "MGN rehosts servers instead of tracking programs, and Migration Hub is unavailable to new customers."
       },
       {
-        "text": "When the requirement is unrelated to the primary purpose of either service.",
-        "correct": false,
-        "explanation": "When the requirement is unrelated to the primary purpose of either service. concerns a separate capability from the one being tested. AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The distinction is important when selecting services for an."
-      },
-      {
-        "text": "When the requirement is to track migration progress across multiple AWS migration tools, rather than to collect information about on-premises servers and applications to plan migration.",
+        "text": "Existing: Migration Hub; new: AWS Transform",
         "correct": true,
-        "explanation": "AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Existing customers can complete Migration Hub projects, but AWS recommends Transform for new migration projects."
+      },
+      {
+        "text": "Existing: DMS; new: Discovery Service",
+        "correct": false,
+        "explanation": "DMS replicates data and Discovery Service is also closed to new customers, so this does not meet either condition."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -751,47 +741,46 @@
       "subtopic": "AWS Migration Hub",
       "questionType": "QT19",
       "coverageObjectives": [
-        "Distinguish AWS Migration Hub from AWS Application Discovery Service"
+        "Apply Migration Hub guidance to existing and new customers"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Migration Hub is used to track migration progress across multiple AWS migration tools, while AWS Application Discovery Service is used to collect information about on-premises servers and applications to plan migration.",
-    "answerSource": "https://aws.amazon.com/migration-hub/"
+    "answerDescription": "Migration Hub remains for existing projects; Transform serves new ones.",
+    "answerSource": "https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/migrationhub-availability-change.html"
   },
   {
-    "question": "Which statement correctly distinguishes AWS Schema Conversion Tool (AWS SCT) from AWS Database Migration Service (AWS DMS)?",
+    "question": "What should a team review in AWS SCT after converting a heterogeneous source schema?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Both services are primarily used to convert database schemas and code between different database engines.",
+        "text": "DMS source endpoint password rotation",
         "correct": false,
-        "explanation": "Both services are primarily used to convert database schemas and code between different database engines. concerns a separate capability from the one being tested."
+        "explanation": "Endpoint credentials affect DMS connectivity but do not identify unconverted schema objects."
       },
       {
-        "text": "Both services are primarily used to move databases and data stores to AWS while keeping source systems available.",
-        "correct": false,
-        "explanation": "That describes AWS Database Migration Service (AWS DMS), but AWS Schema Conversion Tool (AWS SCT) is primarily used to convert database schemas and code between different database engines."
-      },
-      {
-        "text": "AWS Schema Conversion Tool (AWS SCT) is used to convert database schemas and code between different database engines, whereas AWS Database Migration Service (AWS DMS) is used to move databases and data stores to AWS while keeping source systems available.",
+        "text": "Assessment findings and objects that did not convert automatically",
         "correct": true,
-        "explanation": "This correctly separates the primary roles of AWS Schema Conversion Tool (AWS SCT) and AWS Database Migration Service (AWS DMS)."
+        "explanation": "SCT assessment and conversion results expose incompatible objects requiring manual remediation before applying the target schema."
       },
       {
-        "text": "AWS Schema Conversion Tool (AWS SCT) is used to move databases and data stores to AWS while keeping source systems available, whereas AWS Database Migration Service (AWS DMS) is used to convert database schemas and code between different database engines.",
+        "text": "Migration Hub completion percentage",
         "correct": false,
-        "explanation": "AWS Schema Conversion Tool (AWS SCT) is used to move databases and data stores to AWS while keeping source systems available, whereas AWS Database Migration Service (AWS DMS) is used to convert database schemas and code between different database engines. For statement, correctly, distinguishes, Schema, this affects the workload's architecture, operational behavior, and service selection."
+        "explanation": "Migration Hub tracks program progress; SCT assessment findings address database conversion complexity."
+      },
+      {
+        "text": "Source-server block replication lag",
+        "correct": false,
+        "explanation": "Block replication lag belongs to MGN server migration, not SCT database conversion review."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -799,47 +788,46 @@
       "subtopic": "AWS Schema Conversion Tool (AWS SCT)",
       "questionType": "QT18",
       "coverageObjectives": [
-        "Distinguish AWS Schema Conversion Tool (AWS SCT) from AWS Database Migration Service (AWS DMS)"
+        "Recognize SCT remediation review after conversion"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "AWS Schema Conversion Tool (AWS SCT) is used to convert database schemas and code between different database engines, while AWS Database Migration Service (AWS DMS) is used to move databases and data stores to AWS while keeping source systems available.",
-    "answerSource": "https://aws.amazon.com/schema-conversion-tool/"
+    "answerDescription": "SCT conversion needs review of assessment findings and manual work.",
+    "answerSource": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_GettingStarted.html"
   },
   {
-    "question": "A learner says Migration Evaluator and AWS Application Discovery Service have the same primary role. Which response corrects that misconception?",
+    "question": "Which statement correctly contrasts Migration Evaluator with Application Discovery Service?",
     "answerSelectionType": "SINGLE_CHOICE",
     "questionKind": "TECHNICAL",
     "answers": [
       {
-        "text": "Both services are primarily used to collect information about on-premises servers and applications to plan migration.",
+        "text": "Evaluator collects dependencies; Discovery replicates databases",
         "correct": false,
-        "explanation": "That describes AWS Application Discovery Service, but Migration Evaluator is primarily used to estimate cloud migration costs and build a data-driven business case."
+        "explanation": "DMS replicates databases. Migration Evaluator is an assessment and cost-modeling service, not a discovery collector."
       },
       {
-        "text": "Migration Evaluator is used to estimate cloud migration costs and build a data-driven business case, whereas AWS Application Discovery Service is used to collect information about on-premises servers and applications to plan migration.",
+        "text": "Evaluator converts schemas; Discovery launches EC2 servers",
+        "correct": false,
+        "explanation": "SCT converts schemas and MGN launches servers; these are not assessment-tool responsibilities."
+      },
+      {
+        "text": "Evaluator builds a cost business case; Discovery collects environment data",
         "correct": true,
-        "explanation": "AWS Application Discovery Service exists to collect information about on-premises servers and applications to plan migration. The option describes a capability that follows from this service's architecture and primary workload responsibility."
+        "explanation": "Migration Evaluator models projected costs and a business case, whereas Discovery Service gathers server configuration, usage, and dependency data."
       },
       {
-        "text": "Migration Evaluator is used to collect information about on-premises servers and applications to plan migration, whereas AWS Application Discovery Service is used to estimate cloud migration costs and build a data-driven business case.",
+        "text": "Both are the new-customer replacement for Migration Hub",
         "correct": false,
-        "explanation": "Migration Evaluator is used to collect information about on-premises servers and applications to plan migration, whereas AWS Application Discovery Service is used to estimate cloud migration costs and build a data-driven business case. concerns a separate capability from the one being tested. AWS Application Discovery Service."
-      },
-      {
-        "text": "Both services are primarily used to estimate cloud migration costs and build a data-driven business case.",
-        "correct": false,
-        "explanation": "That describes Migration Evaluator, but AWS Application Discovery Service is primarily used to collect information about on-premises servers and applications to plan migration."
+        "explanation": "AWS Transform is the recommended successor for new Migration Hub projects, rather than either assessment service."
       }
     ],
     "tags": [
       "AWS",
       "AWS-SERVICES",
-      "Migration and Transfer",
-      "Service Purpose"
+      "Migration and Transfer"
     ],
     "metadata": {
       "track": "AWS",
@@ -847,14 +835,14 @@
       "subtopic": "Migration Evaluator",
       "questionType": "QT39",
       "coverageObjectives": [
-        "Distinguish Migration Evaluator from AWS Application Discovery Service"
+        "Distinguish Evaluator business-case modeling from Discovery collection"
       ]
     },
     "categories": [
       "AWS Services"
     ],
     "difficulty": 3,
-    "answerDescription": "Migration Evaluator is used to estimate cloud migration costs and build a data-driven business case, while AWS Application Discovery Service is used to collect information about on-premises servers and applications to plan migration.",
+    "answerDescription": "Evaluator models economics; Discovery supplies planning data.",
     "answerSource": "https://aws.amazon.com/migration-evaluator/"
   }
 ]
