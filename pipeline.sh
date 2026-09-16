@@ -248,8 +248,8 @@ check_hera_lint() {
 run_hera_vitest_tests() {
   (
     cd hera || exit 1
-    npm run test:ui
-  ) || fail_phase "Run Hera Vitest UI tests" "npm run test:ui failed in hera."
+    npm run test:ui:report
+  ) || fail_phase "Run Hera Vitest UI tests" "npm run test:ui:report failed in hera."
 }
 
 build_hera_production() {

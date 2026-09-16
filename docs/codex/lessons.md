@@ -28,6 +28,7 @@ Search this file by task keyword after a similar mistake. Do not load it routine
 - **Zeus formatting:** Let Spotless format touched Java files with scoped `spotless:apply`, then inspect the diff. Do not run repository-wide apply for a focused change.
 - **Windows Maven:** Use the known-good `mvn` or `cmd /c mvn` path on Windows; reserve `./mvnw` for Git Bash or Unix-like shells.
 - **Windows Java environment:** A persistent user-level `JAVA_HOME` change does not update an already-running Codex host. If each new Codex command still inherits a stale JDK path, correct the terminal/Codex launch environment and restart that host before retrying Maven.
+- **Current project context:** There are no active users beyond the solo maintainer. This does not relax ownership rules: users and admins may compose collections and collection groups only from content they created.
 
 ## Maintaining This File
 
