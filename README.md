@@ -12,11 +12,13 @@ Qolling is a question and learning workspace with React frontends, a Spring Boot
 
 The top-level `qolling` folder is the `qolling-workspace` Git meta-repository for shared tooling, documentation, CI, and business tests. Product repositories are registered as submodules: `hera/`, `athena/`, `zeus/`, `frontend-shared/`, and `blog/`.
 
-After cloning, enable the staged-secret scan once:
+After cloning, enable the local Git hooks once. They scan staged changes for secrets and block direct pushes to `main`:
 
 ```bash
 ./scripts/setup-git-hooks.sh
 ```
+
+This is a local safety net. Enable branch protection for `main` in GitHub as well, since a local hook can be skipped with `git push --no-verify`.
 
 ## Local Start
 
