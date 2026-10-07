@@ -55,11 +55,8 @@ describe_script() {
     hera-dev-server.sh) echo "Start Hera dev server with local port/process checks" ;;
     verify-dependencies.sh) echo "Run dependency hygiene checks across repos" ;;
     verify-coverage.sh) echo "Validate test coverage thresholds and reports" ;;
-    pipeline.sh) echo "Run interactive pipeline flow and deploy sequence" ;;
+    pipeline.sh) echo "Run interactive local validation and pipeline flow" ;;
     run-tests.sh) echo "Run all configured test suites" ;;
-    deploy-only.sh) echo "Deploy Zeus + Hera with no npm install" ;;
-    deploy-refresh.sh) echo "EC2-style refresh deploy (includes git pull)" ;;
-    deploy-refresh-ec2.sh) echo "EC2 refresh deploy with custom Zeus Dockerfile (includes git pull)" ;;
     check-hygiene-all.sh) echo "Run combined backend + frontend hygiene checks" ;;
     check-frontend-hygiene.sh) echo "Run frontend hygiene checks only" ;;
     check-backend-hygiene.sh) echo "Run backend hygiene checks only" ;;

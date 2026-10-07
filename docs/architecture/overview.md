@@ -11,7 +11,7 @@ Qolling is split into independently deployable repositories inside one workspace
 - Zeus: Java 25, Spring Boot 4, Spring Security, MongoDB, Maven wrapper, Springdoc OpenAPI.
 - Business tests: Playwright project for browser-level flows.
 - Task manager: local Node app that reads and writes Markdown task boards.
-- Deployment: Docker Compose plus the root pipeline script.
+- Production deployment: Hera on Cloudflare Pages; Zeus images built by GitHub Actions, stored in GHCR, and run on AWS Lightsail. Root Docker Compose and the pipeline script are local tooling.
 
 ## Runtime Flow
 
@@ -27,7 +27,7 @@ flowchart LR
   Zeus --> "Email provider"
 ```
 
-In local Docker Compose, Zeus exposes `http://localhost:8080`. Hera normally runs at `http://localhost:5173` during development and uses the `/api/v1` Zeus servlet path through the configured API base. Athena uses the same Zeus backend through its own frontend configuration. The blog is a separate public web surface and does not need Zeus for ordinary static page delivery.
+In production, Hera is served by Cloudflare Pages at `https://qolling.com` and is configured to call Zeus through `https://api.qolling.com/api/v1`. Zeus runs on AWS Lightsail and uses MongoDB Atlas. In local Docker Compose, Zeus exposes `http://localhost:8080`. Hera normally runs at `http://localhost:5173` during development and uses the `/api/v1` Zeus servlet path through the configured API base. Athena uses the same Zeus backend through its own frontend configuration. The blog is a separate public web surface and does not need Zeus for ordinary static page delivery.
 
 ## Main Domains
 

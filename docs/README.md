@@ -12,7 +12,7 @@ Codex-only memory lives in [codex/](codex/).
 - [Documentation standards](reference/documentation-standards.md) - sorting, grouping, naming, and placement rules for all docs.
 - [Product UX principles](product/ux-principles.md) - cross-project product and play-loop guidance.
 - [Local development runbook](runbooks/local-dev.md) - common local setup and runtime commands.
-- [Deployment runbook](runbooks/deploy.md) - pipeline and deployment notes.
+- [Deployment runbook](runbooks/deploy.md) - current production topology, CI, and deployment status.
 
 ## Feature Docs
 
